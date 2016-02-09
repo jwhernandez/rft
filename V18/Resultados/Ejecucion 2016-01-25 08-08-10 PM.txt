@@ -1,0 +1,5 @@
+DATOS;
+CPCPCurso;NroPedido;1-1790719510;
+CPCPCurso;Paso1;NE;
+CPCPCurso;Paso2;NE;
+Errores;

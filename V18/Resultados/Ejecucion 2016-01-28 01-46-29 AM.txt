@@ -1,0 +1,3 @@
+DATOS;
+CP12;Paso1;OK;
+Errores;

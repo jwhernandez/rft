@@ -1,0 +1,9 @@
+DATOS;
+CPCPCurso;NroPedido;1-1790719510;
+CPCPCurso;NroServicio;10042915;
+CPCPCurso;Paso1;NE;
+CPCPCurso;Paso2;NE;
+CPCPCurso;Paso3;NE;
+CPCPCurso;Paso4;OK;
+Errores;
+CPCPCurso;Error en script: Scripts.PasosFunc.fObtenerMorosidad;Consulta de Morosidad Falló;

@@ -1,0 +1,1449 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestLog>
+	<Event dpIter="0">
+		<Event Timestamp="01-Feb-2016 05:00:10.257 PM" Type="Script Start" Headline="Script start [Scripts.CasosPrueba.CasosPrueba]" Result="INFORMATION">
+			<Property line_number="1"/>
+			<Property script_iter_count="0"/>
+			<dpStore>
+			<dpVariable NumPaso="1"/>
+			<dpVariable CPCP13Pasos="fVista360"/>
+			<dpVariable CPCP13Ejecuta="true"/>
+			<dpVariable CP13CPParam="NA"/>
+			<dpVariable CPCP13ErrorStop="true"/>
+			<dpVariable CP13Pasos="fVista360"/>
+			<dpVariable CP13Ejecuta="true"/>
+			<dpVariable CP13Param="NA"/>
+			<dpVariable CP13ErrorStop="false"/>
+			<dpVariable CP12Pasos="fAdministrarLOV"/>
+			<dpVariable CP12Ejecuta="true"/>
+			<dpVariable CP12Param="1"/>
+			<dpVariable CP12ErrorStop="true"/>
+			<dpVariable CP20Pasos="fValidarLOV"/>
+			<dpVariable CP20Ejecuta="false"/>
+			<dpVariable CP20Param="0"/>
+			<dpVariable CP20ErrorStop="true"/>
+			<dpVariable CP03Pasos="fVista360"/>
+			<dpVariable CP03Ejecuta="true"/>
+			<dpVariable CP03Param="NA"/>
+			<dpVariable CP03ErrorStop="true"/>
+			<dpVariable CP56Pasos="fValidarLOV"/>
+			<dpVariable CP56Ejecuta="false"/>
+			<dpVariable CP56Param="NA"/>
+			<dpVariable CP56ErrorStop="true"/>
+			<dpVariable CP05Pasos="fValidarLOV"/>
+			<dpVariable CP05Ejecuta="false"/>
+			<dpVariable CP05ErrorStop="true"/>
+			<dpVariable CP05Param="NA"/></dpStore>
+			<Property script_name="Scripts.CasosPrueba.CasosPrueba"/>
+			<Property script_id="Scripts.CasosPrueba.CasosPrueba.java"/>
+			<Property scriptDpName="\Datos\DP_Pasos.rftdp"/>
+		</Event>
+		<Event Timestamp="01-Feb-2016 05:00:10.292 PM" Type="General" Headline="Starting datapool row 0" Result="INFORMATION">
+			<Property script_name="Scripts.CasosPrueba.CasosPrueba"/>
+			<Property line_number="107"/>
+			<Property script_id="Scripts.CasosPrueba.CasosPrueba.java"/>
+		</Event>
+		<Event Timestamp="01-Feb-2016 05:00:10.292 PM" Type="General" Headline="Starting datapool row 1" Result="INFORMATION">
+			<Property script_name="Scripts.CasosPrueba.CasosPrueba"/>
+			<Property line_number="107"/>
+			<Property script_id="Scripts.CasosPrueba.CasosPrueba.java"/>
+		</Event>
+		<Event Timestamp="01-Feb-2016 05:00:10.297 PM" Type="General" Headline="Starting datapool row 2" Result="INFORMATION">
+			<Property script_name="Scripts.CasosPrueba.CasosPrueba"/>
+			<Property line_number="107"/>
+			<Property script_id="Scripts.CasosPrueba.CasosPrueba.java"/>
+		</Event>
+		<Event Timestamp="01-Feb-2016 05:00:10.297 PM" Type="General" Headline="Starting datapool row 3" Result="INFORMATION">
+			<Property script_name="Scripts.CasosPrueba.CasosPrueba"/>
+			<Property line_number="107"/>
+			<Property script_id="Scripts.CasosPrueba.CasosPrueba.java"/>
+		</Event>
+		<Event Timestamp="01-Feb-2016 05:00:10.327 PM" Type="Call Script" Headline="Call script [Scripts.Comun.InfomarPaso]" Result="INFORMATION">
+			<Property name="Scripts.Comun.InfomarPaso"/>
+			<Property line_number="125"/>
+			<Property script_name="Scripts.CasosPrueba.CasosPrueba"/>
+			<Property script_id="Scripts.CasosPrueba.CasosPrueba.java"/>
+			<Event dpIter="0">
+				<Event Timestamp="01-Feb-2016 05:00:10.332 PM" Type="Script Start" Headline="Script start [Scripts.Comun.InfomarPaso]" Result="INFORMATION">
+					<Property line_number="1"/>
+					<Property script_iter_count="0"/>
+					<Property script_name="Scripts.Comun.InfomarPaso"/>
+					<Property script_id="Scripts.Comun.InfomarPaso.java"/>
+				</Event>
+				<Event Timestamp="01-Feb-2016 05:00:10.342 PM" Type="General" Headline="Inicio de 4" Result="INFORMATION">
+					<Property script_name="Scripts.Comun.InfomarPaso"/>
+					<Property line_number="28"/>
+					<Property script_id="Scripts.Comun.InfomarPaso.java"/>
+				</Event>
+				<Event Timestamp="01-Feb-2016 05:00:10.347 PM" Type="Script End" Headline="Script end [Scripts.Comun.InfomarPaso]" Result="PASS">
+					<Property script_name="Scripts.Comun.InfomarPaso"/>
+					<Property script_id="Scripts.Comun.InfomarPaso.java"/>
+				</Event>
+			</Event>
+		</Event>
+		<Event Timestamp="01-Feb-2016 05:00:10.352 PM" Type="General" Headline="CP13Pasos[Ljava.lang.String;@e941e6fb" Result="INFORMATION">
+			<Property script_name="Scripts.CasosPrueba.CasosPrueba"/>
+			<Property line_number="129"/>
+			<Property script_id="Scripts.CasosPrueba.CasosPrueba.java"/>
+		</Event>
+		<Event Timestamp="01-Feb-2016 05:00:10.362 PM" Type="Call Script" Headline="Call script [Scripts.PasosFunc.fObtenerMorosidad]" Result="INFORMATION">
+			<Property name="Scripts.PasosFunc.fObtenerMorosidad"/>
+			<Property line_number="130"/>
+			<Property script_name="Scripts.CasosPrueba.CasosPrueba"/>
+			<Property script_id="Scripts.CasosPrueba.CasosPrueba.java"/>
+			<Event dpIter="0">
+				<Event Timestamp="01-Feb-2016 05:00:10.387 PM" Type="Script Start" Headline="Script start [Scripts.PasosFunc.fObtenerMorosidad]" Result="INFORMATION">
+					<Property line_number="1"/>
+					<Property script_iter_count="0"/>
+					<Property script_name="Scripts.PasosFunc.fObtenerMorosidad"/>
+					<Property script_id="Scripts.PasosFunc.fObtenerMorosidad.java"/>
+				</Event>
+				<Event Timestamp="01-Feb-2016 05:00:10.437 PM" Type="Call Script" Headline="Call script [Scripts.Comun.ObtenerMorosidad]" Result="INFORMATION">
+					<Property name="Scripts.Comun.ObtenerMorosidad"/>
+					<Property line_number="35"/>
+					<Property script_name="Scripts.PasosFunc.fObtenerMorosidad"/>
+					<Property script_id="Scripts.PasosFunc.fObtenerMorosidad.java"/>
+					<Event dpIter="0">
+						<Event Timestamp="01-Feb-2016 05:00:10.442 PM" Type="Script Start" Headline="Script start [Scripts.Comun.ObtenerMorosidad]" Result="INFORMATION">
+							<Property line_number="1"/>
+							<Property script_iter_count="0"/>
+							<Property script_name="Scripts.Comun.ObtenerMorosidad"/>
+							<Property script_id="Scripts.Comun.ObtenerMorosidad.java"/>
+						</Event>
+						<Event Timestamp="01-Feb-2016 05:00:34.462 PM" Type="Script End" Headline="Script end [Scripts.Comun.ObtenerMorosidad]" Result="PASS">
+							<Property script_name="Scripts.Comun.ObtenerMorosidad"/>
+							<Property script_id="Scripts.Comun.ObtenerMorosidad.java"/>
+						</Event>
+					</Event>
+				</Event>
+				<Event Timestamp="01-Feb-2016 05:00:34.462 PM" Type="Script End" Headline="Script end [Scripts.PasosFunc.fObtenerMorosidad]" Result="PASS">
+					<Property script_name="Scripts.PasosFunc.fObtenerMorosidad"/>
+					<Property script_id="Scripts.PasosFunc.fObtenerMorosidad.java"/>
+				</Event>
+			</Event>
+		</Event>
+		<Event Timestamp="01-Feb-2016 05:00:34.472 PM" Type="General" Headline="Starting datapool row 4" Result="INFORMATION">
+			<Property script_name="Scripts.CasosPrueba.CasosPrueba"/>
+			<Property line_number="107"/>
+			<Property script_id="Scripts.CasosPrueba.CasosPrueba.java"/>
+		</Event>
+		<Event Timestamp="01-Feb-2016 05:00:34.502 PM" Type="Call Script" Headline="Call script [Scripts.Comun.InfomarPaso]" Result="INFORMATION">
+			<Property name="Scripts.Comun.InfomarPaso"/>
+			<Property line_number="125"/>
+			<Property script_name="Scripts.CasosPrueba.CasosPrueba"/>
+			<Property script_id="Scripts.CasosPrueba.CasosPrueba.java"/>
+			<Event dpIter="0">
+				<Event Timestamp="01-Feb-2016 05:00:34.522 PM" Type="Script Start" Headline="Script start [Scripts.Comun.InfomarPaso]" Result="INFORMATION">
+					<Property line_number="1"/>
+					<Property script_iter_count="0"/>
+					<Property script_name="Scripts.Comun.InfomarPaso"/>
+					<Property script_id="Scripts.Comun.InfomarPaso.java"/>
+				</Event>
+				<Event Timestamp="01-Feb-2016 05:00:34.562 PM" Type="General" Headline="Inicio de 5" Result="INFORMATION">
+					<Property script_name="Scripts.Comun.InfomarPaso"/>
+					<Property line_number="28"/>
+					<Property script_id="Scripts.Comun.InfomarPaso.java"/>
+				</Event>
+				<Event Timestamp="01-Feb-2016 05:00:34.562 PM" Type="Script End" Headline="Script end [Scripts.Comun.InfomarPaso]" Result="PASS">
+					<Property script_name="Scripts.Comun.InfomarPaso"/>
+					<Property script_id="Scripts.Comun.InfomarPaso.java"/>
+				</Event>
+			</Event>
+		</Event>
+		<Event Timestamp="01-Feb-2016 05:00:34.562 PM" Type="General" Headline="CP13Pasos[Ljava.lang.String;@e941e6fb" Result="INFORMATION">
+			<Property script_name="Scripts.CasosPrueba.CasosPrueba"/>
+			<Property line_number="129"/>
+			<Property script_id="Scripts.CasosPrueba.CasosPrueba.java"/>
+		</Event>
+		<Event Timestamp="01-Feb-2016 05:00:34.622 PM" Type="Call Script" Headline="Call script [Scripts.PasosFunc.fIngresarAutenticacion]" Result="INFORMATION">
+			<Property name="Scripts.PasosFunc.fIngresarAutenticacion"/>
+			<Property line_number="130"/>
+			<Property script_name="Scripts.CasosPrueba.CasosPrueba"/>
+			<Property script_id="Scripts.CasosPrueba.CasosPrueba.java"/>
+			<Event dpIter="0">
+				<Event Timestamp="01-Feb-2016 05:00:34.822 PM" Type="Script Start" Headline="Script start [Scripts.PasosFunc.fIngresarAutenticacion]" Result="INFORMATION">
+					<Property line_number="1"/>
+					<Property script_iter_count="0"/>
+					<dpStore>
+					<dpVariable NumeroCaso="CP03"/>
+					<dpVariable Ambiente="DESA"/>
+					<dpVariable Tramite="Venta"/>
+					<dpVariable LOV1=""/>
+					<dpVariable LOV_VAL1=""/>
+					<dpVariable LOV_Accion1=""/>
+					<dpVariable NroCuentaCte="101784954044"/>
+					<dpVariable Identificacion=""/>
+					<dpVariable TipoCuenta=""/>
+					<dpVariable Tempo_Prod1=""/>
+					<dpVariable Tempo_Accion1=""/>
+					<dpVariable Tempo_Valor1=""/>
+					<dpVariable Contrato="Inactivo"/>
+					<dpVariable TipoPerfilCtaCliente="Postpago"/>
+					<dpVariable TipoPerfilCorrecto="Prepago"/>
+					<dpVariable Plan="Super Chip"/>
+					<dpVariable Servicio=""/>
+					<dpVariable Informe=""/>
+					<dpVariable SIMIncorrecta="89506010613114851171"/>
+					<dpVariable SIMCorrecta="89506010511110639592"/>
+					<dpVariable TerminalCliente="false"/>
+					<dpVariable TerminalClienteActivo="false"/>
+					<dpVariable IMEI_Incorrecto="012449002890718"/>
+					<dpVariable IMEI_Correcto="352214043680272"/>
+					<dpVariable IMEIdelactivo=""/>
+					<dpVariable IMEI1=""/>
+					<dpVariable IMEI_Lugar1=""/>
+					<dpVariable IMEI2=""/>
+					<dpVariable IMEI_Lugar2=""/>
+					<dpVariable IMEI3=""/>
+					<dpVariable IMEI_Lugar3=""/>
+					<dpVariable IMEI4=""/>
+					<dpVariable IMEI_Lugar4=""/>
+					<dpVariable IMEI5=""/>
+					<dpVariable IMEI_Lugar5=""/>
+					<dpVariable IMEI6=""/>
+					<dpVariable IMEI_Lugar6=""/>
+					<dpVariable NumeroServicio=""/>
+					<dpVariable NombreTerminal="SAMSUNG GALAXY SIII MINI AZUL"/>
+					<dpVariable Agencia=""/>
+					<dpVariable PROD_Accion1="Alta"/>
+					<dpVariable PROD_Categoria1="Facilidades Telefonia Movil"/>
+					<dpVariable PROD1="No Caller Id"/>
+					<dpVariable PROD_Padre1=""/>
+					<dpVariable PROD_Accion2=""/>
+					<dpVariable PROD_Categoria2=""/>
+					<dpVariable PROD2=""/>
+					<dpVariable PROD_Padre2=""/>
+					<dpVariable VCT_Prod1=""/>
+					<dpVariable VCT_Editable1=""/>
+					<dpVariable VCT_Prod2=""/>
+					<dpVariable VCT_Editable2=""/>
+					<dpVariable Canal=""/>
+					<dpVariable Tipo="Documentos"/>
+					<dpVariable ProductoFAVNum=""/>
+					<dpVariable LETipo0=""/>
+					<dpVariable LEDesdePed0=""/>
+					<dpVariable LEVolverPed0=""/>
+					<dpVariable LETel0=""/>
+					<dpVariable LEMsj0=""/>
+					<dpVariable LETipo1=""/>
+					<dpVariable LEDesdePed1=""/>
+					<dpVariable LEVolverPed1=""/>
+					<dpVariable LETel1=""/>
+					<dpVariable LEMsj1=""/>
+					<dpVariable LETipo2=""/>
+					<dpVariable LEDesdePed2=""/>
+					<dpVariable LEVolverPed2=""/>
+					<dpVariable LETel2=""/>
+					<dpVariable LEMsj2=""/>
+					<dpVariable LETipo3=""/>
+					<dpVariable LEDesdePed3=""/>
+					<dpVariable LEVolverPed3=""/>
+					<dpVariable LETel3=""/>
+					<dpVariable LEMsj3=""/>
+					<dpVariable LETipo4=""/>
+					<dpVariable LEDesdePed4=""/>
+					<dpVariable LEVolverPed4=""/>
+					<dpVariable LETel4=""/>
+					<dpVariable LEMsj4=""/>
+					<dpVariable LETipo5=""/>
+					<dpVariable LEDesdePed5=""/>
+					<dpVariable LEVolverPed5=""/>
+					<dpVariable LETel5=""/>
+					<dpVariable LEMsj5=""/>
+					<dpVariable NumEspPrimerNum2daopcion1=""/>
+					<dpVariable NumEspIrAdmin1=""/>
+					<dpVariable NumEspPrimerNum2daopcion2=""/>
+					<dpVariable NumEspIrAdmin2=""/>
+					<dpVariable ProxNum0=""/>
+					<dpVariable ProxNumValidar0=""/>
+					<dpVariable ProxNum1=""/>
+					<dpVariable ProxNumValidar1=""/></dpStore>
+					<Property script_name="Scripts.PasosFunc.fIngresarAutenticacion"/>
+					<Property script_id="Scripts.PasosFunc.fIngresarAutenticacion.java"/>
+					<Property scriptDpName="\Datos\DP_DatosEntrada.rftdp"/>
+				</Event>
+				<Event Timestamp="01-Feb-2016 05:00:34.847 PM" Type="Call Script" Headline="Call script [Scripts.Comun.IngresarAutenticacion]" Result="INFORMATION">
+					<Property name="Scripts.Comun.IngresarAutenticacion"/>
+					<Property line_number="48"/>
+					<Property script_name="Scripts.PasosFunc.fIngresarAutenticacion"/>
+					<Property script_id="Scripts.PasosFunc.fIngresarAutenticacion.java"/>
+					<Event dpIter="0">
+						<Event Timestamp="01-Feb-2016 05:00:34.847 PM" Type="Script Start" Headline="Script start [Scripts.Comun.IngresarAutenticacion]" Result="INFORMATION">
+							<Property line_number="1"/>
+							<Property script_iter_count="0"/>
+							<Property script_name="Scripts.Comun.IngresarAutenticacion"/>
+							<Property script_id="Scripts.Comun.IngresarAutenticacion.java"/>
+						</Event>
+						<Event Timestamp="01-Feb-2016 05:00:38.347 PM" Type="Export Event" Headline="getProperty on the ComboBox TipoAutenticacion" Result="PASS">
+							<Property line_number="33"/>
+							<Property script_name="Scripts.Comun.IngresarAutenticacion"/>
+						</Event>
+						<Event Timestamp="01-Feb-2016 05:00:38.547 PM" Type="Export Event" Headline="getProperty on the ComboBox TipoAutenticacion" Result="PASS">
+							<Property line_number="34"/>
+							<Property script_name="Scripts.Comun.IngresarAutenticacion"/>
+						</Event>
+						<Event Timestamp="01-Feb-2016 05:00:39.257 PM" Type="Script End" Headline="Script end [Scripts.Comun.IngresarAutenticacion]" Result="PASS">
+							<Property script_name="Scripts.Comun.IngresarAutenticacion"/>
+							<Property script_id="Scripts.Comun.IngresarAutenticacion.java"/>
+						</Event>
+					</Event>
+				</Event>
+				<Event Timestamp="01-Feb-2016 05:00:39.257 PM" Type="Script End" Headline="Script end [Scripts.PasosFunc.fIngresarAutenticacion]" Result="PASS">
+					<Property script_name="Scripts.PasosFunc.fIngresarAutenticacion"/>
+					<Property script_id="Scripts.PasosFunc.fIngresarAutenticacion.java"/>
+				</Event>
+			</Event>
+		</Event>
+		<Event Timestamp="01-Feb-2016 05:00:39.262 PM" Type="General" Headline="Starting datapool row 5" Result="INFORMATION">
+			<Property script_name="Scripts.CasosPrueba.CasosPrueba"/>
+			<Property line_number="107"/>
+			<Property script_id="Scripts.CasosPrueba.CasosPrueba.java"/>
+		</Event>
+		<Event Timestamp="01-Feb-2016 05:00:39.272 PM" Type="Call Script" Headline="Call script [Scripts.Comun.InfomarPaso]" Result="INFORMATION">
+			<Property name="Scripts.Comun.InfomarPaso"/>
+			<Property line_number="125"/>
+			<Property script_name="Scripts.CasosPrueba.CasosPrueba"/>
+			<Property script_id="Scripts.CasosPrueba.CasosPrueba.java"/>
+			<Event dpIter="0">
+				<Event Timestamp="01-Feb-2016 05:00:39.272 PM" Type="Script Start" Headline="Script start [Scripts.Comun.InfomarPaso]" Result="INFORMATION">
+					<Property line_number="1"/>
+					<Property script_iter_count="0"/>
+					<Property script_name="Scripts.Comun.InfomarPaso"/>
+					<Property script_id="Scripts.Comun.InfomarPaso.java"/>
+				</Event>
+				<Event Timestamp="01-Feb-2016 05:00:39.272 PM" Type="General" Headline="Inicio de 6" Result="INFORMATION">
+					<Property script_name="Scripts.Comun.InfomarPaso"/>
+					<Property line_number="28"/>
+					<Property script_id="Scripts.Comun.InfomarPaso.java"/>
+				</Event>
+				<Event Timestamp="01-Feb-2016 05:00:39.272 PM" Type="Script End" Headline="Script end [Scripts.Comun.InfomarPaso]" Result="PASS">
+					<Property script_name="Scripts.Comun.InfomarPaso"/>
+					<Property script_id="Scripts.Comun.InfomarPaso.java"/>
+				</Event>
+			</Event>
+		</Event>
+		<Event Timestamp="01-Feb-2016 05:00:39.282 PM" Type="General" Headline="CP13Pasos[Ljava.lang.String;@e941e6fb" Result="INFORMATION">
+			<Property script_name="Scripts.CasosPrueba.CasosPrueba"/>
+			<Property line_number="129"/>
+			<Property script_id="Scripts.CasosPrueba.CasosPrueba.java"/>
+		</Event>
+		<Event Timestamp="01-Feb-2016 05:00:39.292 PM" Type="Call Script" Headline="Call script [Scripts.PasosFunc.fValidarAgencia]" Result="INFORMATION">
+			<Property name="Scripts.PasosFunc.fValidarAgencia"/>
+			<Property line_number="130"/>
+			<Property script_name="Scripts.CasosPrueba.CasosPrueba"/>
+			<Property script_id="Scripts.CasosPrueba.CasosPrueba.java"/>
+			<Event dpIter="0">
+				<Event Timestamp="01-Feb-2016 05:00:39.307 PM" Type="Script Start" Headline="Script start [Scripts.PasosFunc.fValidarAgencia]" Result="INFORMATION">
+					<Property line_number="1"/>
+					<Property script_iter_count="0"/>
+					<Property script_name="Scripts.PasosFunc.fValidarAgencia"/>
+					<Property script_id="Scripts.PasosFunc.fValidarAgencia.java"/>
+				</Event>
+				<Event Timestamp="01-Feb-2016 05:00:39.352 PM" Type="Call Script" Headline="Call script [Scripts.Comun.ValidarAgencia]" Result="INFORMATION">
+					<Property name="Scripts.Comun.ValidarAgencia"/>
+					<Property line_number="36"/>
+					<Property script_name="Scripts.PasosFunc.fValidarAgencia"/>
+					<Property script_id="Scripts.PasosFunc.fValidarAgencia.java"/>
+					<Event dpIter="0">
+						<Event Timestamp="01-Feb-2016 05:00:39.352 PM" Type="Script Start" Headline="Script start [Scripts.Comun.ValidarAgencia]" Result="INFORMATION">
+							<Property line_number="1"/>
+							<Property script_iter_count="0"/>
+							<Property script_name="Scripts.Comun.ValidarAgencia"/>
+							<Property script_id="Scripts.Comun.ValidarAgencia.java"/>
+						</Event>
+						<Event Timestamp="01-Feb-2016 05:00:40.122 PM" Type="Export Event" Headline="getProperty on the ComboBox Agencia" Result="PASS">
+							<Property line_number="26"/>
+							<Property script_name="Scripts.Comun.ValidarAgencia"/>
+						</Event>
+						<Event Timestamp="01-Feb-2016 05:00:40.372 PM" Type="Verification Point" Headline="Agencia" Result="FAIL">
+							<Property vp_type="object_data"/>
+							<Property name="Agencia"/>
+							<Property script_name="Scripts.Comun.ValidarAgencia"/>
+							<Property line_number="27"/>
+							<Property script_id="Scripts.Comun.ValidarAgencia.java"/>
+							<Property expected="ValidarAgencia.0000.Agencia.exp.rftvp"/>
+							<Property actual="ValidarAgencia.0000.0000.Agencia.act.rftvp"/>
+						</Event>
+						<Event Timestamp="01-Feb-2016 05:00:40.442 PM" Type="Script End" Headline="Script end [Scripts.Comun.ValidarAgencia]" Result="FAIL">
+							<Property script_name="Scripts.Comun.ValidarAgencia"/>
+							<Property script_id="Scripts.Comun.ValidarAgencia.java"/>
+						</Event>
+					</Event>
+				</Event>
+				<Event Timestamp="01-Feb-2016 05:00:40.442 PM" Type="Script End" Headline="Script end [Scripts.PasosFunc.fValidarAgencia]" Result="FAIL">
+					<Property script_name="Scripts.PasosFunc.fValidarAgencia"/>
+					<Property script_id="Scripts.PasosFunc.fValidarAgencia.java"/>
+				</Event>
+			</Event>
+		</Event>
+		<Event Timestamp="01-Feb-2016 05:00:40.442 PM" Type="General" Headline="Starting datapool row 6" Result="INFORMATION">
+			<Property script_name="Scripts.CasosPrueba.CasosPrueba"/>
+			<Property line_number="107"/>
+			<Property script_id="Scripts.CasosPrueba.CasosPrueba.java"/>
+		</Event>
+		<Event Timestamp="01-Feb-2016 05:00:40.517 PM" Type="Call Script" Headline="Call script [Scripts.Comun.InfomarPaso]" Result="INFORMATION">
+			<Property name="Scripts.Comun.InfomarPaso"/>
+			<Property line_number="125"/>
+			<Property script_name="Scripts.CasosPrueba.CasosPrueba"/>
+			<Property script_id="Scripts.CasosPrueba.CasosPrueba.java"/>
+			<Event dpIter="0">
+				<Event Timestamp="01-Feb-2016 05:00:40.517 PM" Type="Script Start" Headline="Script start [Scripts.Comun.InfomarPaso]" Result="INFORMATION">
+					<Property line_number="1"/>
+					<Property script_iter_count="0"/>
+					<Property script_name="Scripts.Comun.InfomarPaso"/>
+					<Property script_id="Scripts.Comun.InfomarPaso.java"/>
+				</Event>
+				<Event Timestamp="01-Feb-2016 05:00:40.562 PM" Type="General" Headline="Inicio de 7" Result="INFORMATION">
+					<Property script_name="Scripts.Comun.InfomarPaso"/>
+					<Property line_number="28"/>
+					<Property script_id="Scripts.Comun.InfomarPaso.java"/>
+				</Event>
+				<Event Timestamp="01-Feb-2016 05:00:40.562 PM" Type="Script End" Headline="Script end [Scripts.Comun.InfomarPaso]" Result="PASS">
+					<Property script_name="Scripts.Comun.InfomarPaso"/>
+					<Property script_id="Scripts.Comun.InfomarPaso.java"/>
+				</Event>
+			</Event>
+		</Event>
+		<Event Timestamp="01-Feb-2016 05:00:40.562 PM" Type="General" Headline="CP13Pasos[Ljava.lang.String;@e941e6fb" Result="INFORMATION">
+			<Property script_name="Scripts.CasosPrueba.CasosPrueba"/>
+			<Property line_number="129"/>
+			<Property script_id="Scripts.CasosPrueba.CasosPrueba.java"/>
+		</Event>
+		<Event Timestamp="01-Feb-2016 05:00:40.697 PM" Type="Call Script" Headline="Call script [Scripts.PasosFunc.fValorarTodo]" Result="INFORMATION">
+			<Property name="Scripts.PasosFunc.fValorarTodo"/>
+			<Property line_number="130"/>
+			<Property script_name="Scripts.CasosPrueba.CasosPrueba"/>
+			<Property script_id="Scripts.CasosPrueba.CasosPrueba.java"/>
+			<Event dpIter="0">
+				<Event Timestamp="01-Feb-2016 05:00:40.697 PM" Type="Script Start" Headline="Script start [Scripts.PasosFunc.fValorarTodo]" Result="INFORMATION">
+					<Property line_number="1"/>
+					<Property script_iter_count="0"/>
+					<Property script_name="Scripts.PasosFunc.fValorarTodo"/>
+					<Property script_id="Scripts.PasosFunc.fValorarTodo.java"/>
+				</Event>
+				<Event Timestamp="01-Feb-2016 05:00:40.722 PM" Type="Call Script" Headline="Call script [Scripts.Comun.ValorarTodo]" Result="INFORMATION">
+					<Property name="Scripts.Comun.ValorarTodo"/>
+					<Property line_number="35"/>
+					<Property script_name="Scripts.PasosFunc.fValorarTodo"/>
+					<Property script_id="Scripts.PasosFunc.fValorarTodo.java"/>
+					<Event dpIter="0">
+						<Event Timestamp="01-Feb-2016 05:00:40.732 PM" Type="Script Start" Headline="Script start [Scripts.Comun.ValorarTodo]" Result="INFORMATION">
+							<Property line_number="1"/>
+							<Property script_iter_count="0"/>
+							<dpStore>
+							<dpVariable DPM0001="Verifique que antes de realizar una consulta de la lista de números disponibles se haya asignado un Sim(SBL-EXL-00151)(SBL-EXL-00151)"/>
+							<dpVariable DPM0002="El SIM no está disponible, favor de seleccionar otro número(SBL-EXL-00151)(SBL-EXL-00151)"/>
+							<dpVariable DPM0003="El tipo pago del producto debe ser el mismo que el tipo de pago del perfil de facturación. Por favor revisar. (SBL-APS-00802)"/>
+							<dpVariable DPM0004="Cuenta de facturación generada con exito(SBL-EXL-00151)"/>
+							<dpVariable DPM0005="Otro usuario modificó el registro seleccionado cuando éste se recuperó. Continúe.(SBL-DAT-00523)
+Otro usuario modificó el registro seleccionado cuando éste se recuperó. Continúe.(SBL-DAT-00523)
+Otro usuario modificó el registro seleccionado cuando éste se recuperó. Continúe.(SBL-DAT-00523)
+Otro usuario modificó el registro seleccionado cuando éste se recuperó. Continúe.(SBL-DAT-00523)
+Otro usuario modificó el registro seleccionado cuando éste se recuperó. Continúe.(SBL-DAT-00523)
+Otro usuario modificó el registro seleccionado cuando éste se recuperó. Continúe.(SBL-DAT-00523)
+Otro usuario modificó el registro seleccionado cuando éste se recuperó. Continúe.(SBL-DAT-00523)
+"/>
+							<dpVariable DPM0006="El campo IMEI es requerido (SBL-APS-00802)"/>
+							<dpVariable DPM0007="MODELO NO CORRESPONDEN EN EL SIPV(SBL-EXL-00151)(SBL-EXL-00151)(SBL-EXL-00151)"/>
+							<dpVariable DPM0008="La cuenta sólo puede tener un perfil de facturación (SBL-APS-00802)"/>
+							<dpVariable DPM0009="Se ha producido al obtener el primer número disponible un error con el código: y el siguiente mensaje: No hay números disponibles(SBL-EXL-00151)(SBL-EXL-00151)"/>
+							<dpVariable DPM0010="Se ha producido al obtener el primer número disponible un error con el código: 99 y el siguiente mensaje: Ha ocurrido un error ejecutando el servicio para obtener el siguiente número disponible.(SBL-EXL-00151)(SBL-EXL-00151)"/>
+							<dpVariable DPM0012="Antes de esta acción debe presionar el botón &quot;Volver a valorar todo&quot; a nivel de los detalles del pedido (SBL-APS-00802)"/>
+							<dpVariable DPM0013="Asegurese de ofrecer Favorito VOZ ya que se encuentra en promocion. Asegurese de ofrecer Favorito SMS ya que se encuentra en promocion."/>
+							<dpVariable DPM0014="Asegurese de ofrecer Favorito VOZ ya que se encuentra en promocion. "/>
+							<dpVariable DPM0015="Debe ingresar lista de numeros favoritos.(SBL-EXL-00151)(SBL-EXL-00151)(SBL-EXL-00151)"/>
+							<dpVariable DPM0016="La lista de números que está intentando asignar no posee números. Modifique la lista actual o cree una nueva.(SBL-EXL-00151)"/>
+							<dpVariable DPM0017="La lista de números que está intentando asignar no coincide con el producto en el que está posicionado, asegúrese de asignar la lista correcta a cada producto.(SBL-EXL-00151)"/>
+							<dpVariable DPM0018="El formato de teléfono ingresado no es válido. Verifique por favor(SBL-EXL-00151)(SBL-EXL-00151)"/>
+							<dpVariable DPM0019="NO EXISTE INFORMACION PARA EL SERVICIO SOLICITADO.(SBL-EXL-00151)(SBL-EXL-00151)"/>
+							<dpVariable DPM0020="Se libero exitosamente el número.(SBL-EXL-00151)(SBL-EXL-00151)(SBL-EXL-00151)"/>
+							<dpVariable DPM0021="Asegurese de ofrecer Favorito SMS ya que se encuentra en promocion."/>
+							<dpVariable DPM0022="Se requiere crear una cuenta de facturación para el pedido(SBL-EXL-00151)(SBL-EXL-00151)(SBL-EXL-00151)"/>
+							<dpVariable DPM0023="No se ha podido liberar el número, favor de consultar al administrador(SBL-EXL-00151)(SBL-EXL-00151)"/>
+							<dpVariable DPM0024="El campo Contacto es requerido (SBL-APS-00802)"/>
+							<dpVariable DPM130013="No existen registros de Existencia"/></dpStore>
+							<Property script_name="Scripts.Comun.ValorarTodo"/>
+							<Property script_id="Scripts.Comun.ValorarTodo.java"/>
+							<Property scriptDpName="\Datos\DP_Mensajes.rftdp"/>
+						</Event>
+						<Event Timestamp="01-Feb-2016 05:00:46.912 PM" Type="Script End" Headline="Script end [Scripts.Comun.ValorarTodo]" Result="PASS">
+							<Property script_name="Scripts.Comun.ValorarTodo"/>
+							<Property script_id="Scripts.Comun.ValorarTodo.java"/>
+						</Event>
+					</Event>
+				</Event>
+				<Event Timestamp="01-Feb-2016 05:00:46.912 PM" Type="Script End" Headline="Script end [Scripts.PasosFunc.fValorarTodo]" Result="PASS">
+					<Property script_name="Scripts.PasosFunc.fValorarTodo"/>
+					<Property script_id="Scripts.PasosFunc.fValorarTodo.java"/>
+				</Event>
+			</Event>
+		</Event>
+		<Event Timestamp="01-Feb-2016 05:00:46.917 PM" Type="General" Headline="Starting datapool row 7" Result="INFORMATION">
+			<Property script_name="Scripts.CasosPrueba.CasosPrueba"/>
+			<Property line_number="107"/>
+			<Property script_id="Scripts.CasosPrueba.CasosPrueba.java"/>
+		</Event>
+		<Event Timestamp="01-Feb-2016 05:00:46.942 PM" Type="Call Script" Headline="Call script [Scripts.Comun.InfomarPaso]" Result="INFORMATION">
+			<Property name="Scripts.Comun.InfomarPaso"/>
+			<Property line_number="125"/>
+			<Property script_name="Scripts.CasosPrueba.CasosPrueba"/>
+			<Property script_id="Scripts.CasosPrueba.CasosPrueba.java"/>
+			<Event dpIter="0">
+				<Event Timestamp="01-Feb-2016 05:00:46.942 PM" Type="Script Start" Headline="Script start [Scripts.Comun.InfomarPaso]" Result="INFORMATION">
+					<Property line_number="1"/>
+					<Property script_iter_count="0"/>
+					<Property script_name="Scripts.Comun.InfomarPaso"/>
+					<Property script_id="Scripts.Comun.InfomarPaso.java"/>
+				</Event>
+				<Event Timestamp="01-Feb-2016 05:00:46.942 PM" Type="General" Headline="Inicio de 8" Result="INFORMATION">
+					<Property script_name="Scripts.Comun.InfomarPaso"/>
+					<Property line_number="28"/>
+					<Property script_id="Scripts.Comun.InfomarPaso.java"/>
+				</Event>
+				<Event Timestamp="01-Feb-2016 05:00:46.942 PM" Type="Script End" Headline="Script end [Scripts.Comun.InfomarPaso]" Result="PASS">
+					<Property script_name="Scripts.Comun.InfomarPaso"/>
+					<Property script_id="Scripts.Comun.InfomarPaso.java"/>
+				</Event>
+			</Event>
+		</Event>
+		<Event Timestamp="01-Feb-2016 05:00:46.947 PM" Type="General" Headline="CP13Pasos[Ljava.lang.String;@e941e6fb" Result="INFORMATION">
+			<Property script_name="Scripts.CasosPrueba.CasosPrueba"/>
+			<Property line_number="129"/>
+			<Property script_id="Scripts.CasosPrueba.CasosPrueba.java"/>
+		</Event>
+		<Event Timestamp="01-Feb-2016 05:00:46.952 PM" Type="Call Script" Headline="Call script [Scripts.PasosFunc.fExpandiryBuscar]" Result="INFORMATION">
+			<Property name="Scripts.PasosFunc.fExpandiryBuscar"/>
+			<Property line_number="130"/>
+			<Property script_name="Scripts.CasosPrueba.CasosPrueba"/>
+			<Property script_id="Scripts.CasosPrueba.CasosPrueba.java"/>
+			<Event dpIter="0">
+				<Event Timestamp="01-Feb-2016 05:00:46.987 PM" Type="Script Start" Headline="Script start [Scripts.PasosFunc.fExpandiryBuscar]" Result="INFORMATION">
+					<Property line_number="1"/>
+					<Property script_iter_count="0"/>
+					<dpStore>
+					<dpVariable NumeroCaso="CP03"/>
+					<dpVariable Ambiente="DESA"/>
+					<dpVariable Tramite="Venta"/>
+					<dpVariable LOV1=""/>
+					<dpVariable LOV_VAL1=""/>
+					<dpVariable LOV_Accion1=""/>
+					<dpVariable NroCuentaCte="101784954044"/>
+					<dpVariable Identificacion=""/>
+					<dpVariable TipoCuenta=""/>
+					<dpVariable Tempo_Prod1=""/>
+					<dpVariable Tempo_Accion1=""/>
+					<dpVariable Tempo_Valor1=""/>
+					<dpVariable Contrato="Inactivo"/>
+					<dpVariable TipoPerfilCtaCliente="Postpago"/>
+					<dpVariable TipoPerfilCorrecto="Prepago"/>
+					<dpVariable Plan="Super Chip"/>
+					<dpVariable Servicio=""/>
+					<dpVariable Informe=""/>
+					<dpVariable SIMIncorrecta="89506010613114851171"/>
+					<dpVariable SIMCorrecta="89506010511110639592"/>
+					<dpVariable TerminalCliente="false"/>
+					<dpVariable TerminalClienteActivo="false"/>
+					<dpVariable IMEI_Incorrecto="012449002890718"/>
+					<dpVariable IMEI_Correcto="352214043680272"/>
+					<dpVariable IMEIdelactivo=""/>
+					<dpVariable IMEI1=""/>
+					<dpVariable IMEI_Lugar1=""/>
+					<dpVariable IMEI2=""/>
+					<dpVariable IMEI_Lugar2=""/>
+					<dpVariable IMEI3=""/>
+					<dpVariable IMEI_Lugar3=""/>
+					<dpVariable IMEI4=""/>
+					<dpVariable IMEI_Lugar4=""/>
+					<dpVariable IMEI5=""/>
+					<dpVariable IMEI_Lugar5=""/>
+					<dpVariable IMEI6=""/>
+					<dpVariable IMEI_Lugar6=""/>
+					<dpVariable NumeroServicio=""/>
+					<dpVariable NombreTerminal="SAMSUNG GALAXY SIII MINI AZUL"/>
+					<dpVariable Agencia=""/>
+					<dpVariable PROD_Accion1="Alta"/>
+					<dpVariable PROD_Categoria1="Facilidades Telefonia Movil"/>
+					<dpVariable PROD1="No Caller Id"/>
+					<dpVariable PROD_Padre1=""/>
+					<dpVariable PROD_Accion2=""/>
+					<dpVariable PROD_Categoria2=""/>
+					<dpVariable PROD2=""/>
+					<dpVariable PROD_Padre2=""/>
+					<dpVariable VCT_Prod1=""/>
+					<dpVariable VCT_Editable1=""/>
+					<dpVariable VCT_Prod2=""/>
+					<dpVariable VCT_Editable2=""/>
+					<dpVariable Canal=""/>
+					<dpVariable Tipo="Documentos"/>
+					<dpVariable ProductoFAVNum=""/>
+					<dpVariable LETipo0=""/>
+					<dpVariable LEDesdePed0=""/>
+					<dpVariable LEVolverPed0=""/>
+					<dpVariable LETel0=""/>
+					<dpVariable LEMsj0=""/>
+					<dpVariable LETipo1=""/>
+					<dpVariable LEDesdePed1=""/>
+					<dpVariable LEVolverPed1=""/>
+					<dpVariable LETel1=""/>
+					<dpVariable LEMsj1=""/>
+					<dpVariable LETipo2=""/>
+					<dpVariable LEDesdePed2=""/>
+					<dpVariable LEVolverPed2=""/>
+					<dpVariable LETel2=""/>
+					<dpVariable LEMsj2=""/>
+					<dpVariable LETipo3=""/>
+					<dpVariable LEDesdePed3=""/>
+					<dpVariable LEVolverPed3=""/>
+					<dpVariable LETel3=""/>
+					<dpVariable LEMsj3=""/>
+					<dpVariable LETipo4=""/>
+					<dpVariable LEDesdePed4=""/>
+					<dpVariable LEVolverPed4=""/>
+					<dpVariable LETel4=""/>
+					<dpVariable LEMsj4=""/>
+					<dpVariable LETipo5=""/>
+					<dpVariable LEDesdePed5=""/>
+					<dpVariable LEVolverPed5=""/>
+					<dpVariable LETel5=""/>
+					<dpVariable LEMsj5=""/>
+					<dpVariable NumEspPrimerNum2daopcion1=""/>
+					<dpVariable NumEspIrAdmin1=""/>
+					<dpVariable NumEspPrimerNum2daopcion2=""/>
+					<dpVariable NumEspIrAdmin2=""/>
+					<dpVariable ProxNum0=""/>
+					<dpVariable ProxNumValidar0=""/>
+					<dpVariable ProxNum1=""/>
+					<dpVariable ProxNumValidar1=""/></dpStore>
+					<Property script_name="Scripts.PasosFunc.fExpandiryBuscar"/>
+					<Property script_id="Scripts.PasosFunc.fExpandiryBuscar.java"/>
+					<Property scriptDpName="\Datos\DP_DatosEntrada.rftdp"/>
+				</Event>
+				<Event Timestamp="01-Feb-2016 05:00:47.012 PM" Type="Call Script" Headline="Call script [Scripts.Comun.ExpandiryBuscar]" Result="INFORMATION">
+					<Property name="Scripts.Comun.ExpandiryBuscar"/>
+					<Property line_number="45"/>
+					<Property script_name="Scripts.PasosFunc.fExpandiryBuscar"/>
+					<Property script_id="Scripts.PasosFunc.fExpandiryBuscar.java"/>
+					<Event dpIter="0">
+						<Event Timestamp="01-Feb-2016 05:00:47.012 PM" Type="Script Start" Headline="Script start [Scripts.Comun.ExpandiryBuscar]" Result="INFORMATION">
+							<Property line_number="1"/>
+							<Property script_iter_count="0"/>
+							<Property script_name="Scripts.Comun.ExpandiryBuscar"/>
+							<Property script_id="Scripts.Comun.ExpandiryBuscar.java"/>
+						</Event>
+						<Event Timestamp="01-Feb-2016 05:00:47.022 PM" Type="Call Script" Headline="Call script [Scripts.Comun.ExpandirLinea]" Result="INFORMATION">
+							<Property name="Scripts.Comun.ExpandirLinea"/>
+							<Property line_number="38"/>
+							<Property script_name="Scripts.Comun.ExpandiryBuscar"/>
+							<Property script_id="Scripts.Comun.ExpandiryBuscar.java"/>
+							<Event dpIter="0">
+								<Event Timestamp="01-Feb-2016 05:00:47.022 PM" Type="Script Start" Headline="Script start [Scripts.Comun.ExpandirLinea]" Result="INFORMATION">
+									<Property line_number="1"/>
+									<Property script_iter_count="0"/>
+									<Property script_name="Scripts.Comun.ExpandirLinea"/>
+									<Property script_id="Scripts.Comun.ExpandirLinea.java"/>
+								</Event>
+								<Event Timestamp="01-Feb-2016 05:00:47.037 PM" Type="Call Script" Headline="Call script [Scripts.Comun.BuscarProducto]" Result="INFORMATION">
+									<Property name="Scripts.Comun.BuscarProducto"/>
+									<Property line_number="36"/>
+									<Property script_name="Scripts.Comun.ExpandirLinea"/>
+									<Property script_id="Scripts.Comun.ExpandirLinea.java"/>
+									<Event dpIter="0">
+										<Event Timestamp="01-Feb-2016 05:00:47.042 PM" Type="Script Start" Headline="Script start [Scripts.Comun.BuscarProducto]" Result="INFORMATION">
+											<Property line_number="1"/>
+											<Property script_iter_count="0"/>
+											<Property script_name="Scripts.Comun.BuscarProducto"/>
+											<Property script_id="Scripts.Comun.BuscarProducto.java"/>
+										</Event>
+										<Event Timestamp="01-Feb-2016 05:00:47.937 PM" Type="Export Event" Headline="getProperty on the Applet AppletLineasPedido" Result="PASS">
+											<Property line_number="30"/>
+											<Property script_name="Scripts.Comun.BuscarProducto"/>
+										</Event>
+										<Event Timestamp="01-Feb-2016 05:00:47.957 PM" Type="Call Script" Headline="Call script [Scripts.Comun.RecordCount]" Result="INFORMATION">
+											<Property name="Scripts.Comun.RecordCount"/>
+											<Property line_number="32"/>
+											<Property script_name="Scripts.Comun.BuscarProducto"/>
+											<Property script_id="Scripts.Comun.BuscarProducto.java"/>
+											<Event dpIter="0">
+												<Event Timestamp="01-Feb-2016 05:00:47.962 PM" Type="Script Start" Headline="Script start [Scripts.Comun.RecordCount]" Result="INFORMATION">
+													<Property line_number="1"/>
+													<Property script_iter_count="0"/>
+													<Property script_name="Scripts.Comun.RecordCount"/>
+													<Property script_id="Scripts.Comun.RecordCount.java"/>
+												</Event>
+												<Event Timestamp="01-Feb-2016 05:00:47.962 PM" Type="Script End" Headline="Script end [Scripts.Comun.RecordCount]" Result="PASS">
+													<Property script_name="Scripts.Comun.RecordCount"/>
+													<Property script_id="Scripts.Comun.RecordCount.java"/>
+												</Event>
+											</Event>
+											<Event Timestamp="01-Feb-2016 05:00:48.207 PM" Type="Export Event" Headline="getProperty on the List LineasPedido" Result="PASS">
+												<Property line_number="37"/>
+												<Property script_name="Scripts.Comun.BuscarProducto"/>
+											</Event>
+										</Event>
+										<Event Timestamp="01-Feb-2016 05:00:50.622 PM" Type="Script End" Headline="Script end [Scripts.Comun.BuscarProducto]" Result="PASS">
+											<Property script_name="Scripts.Comun.BuscarProducto"/>
+											<Property script_id="Scripts.Comun.BuscarProducto.java"/>
+										</Event>
+									</Event>
+								</Event>
+								<Event Timestamp="01-Feb-2016 05:00:52.072 PM" Type="Script End" Headline="Script end [Scripts.Comun.ExpandirLinea]" Result="PASS">
+									<Property script_name="Scripts.Comun.ExpandirLinea"/>
+									<Property script_id="Scripts.Comun.ExpandirLinea.java"/>
+								</Event>
+							</Event>
+						</Event>
+						<Event Timestamp="01-Feb-2016 05:00:52.112 PM" Type="Call Script" Headline="Call script [Scripts.Comun.BuscarProducto]" Result="INFORMATION">
+							<Property name="Scripts.Comun.BuscarProducto"/>
+							<Property line_number="41"/>
+							<Property script_name="Scripts.Comun.ExpandiryBuscar"/>
+							<Property script_id="Scripts.Comun.ExpandiryBuscar.java"/>
+							<Event dpIter="0">
+								<Event Timestamp="01-Feb-2016 05:00:52.112 PM" Type="Script Start" Headline="Script start [Scripts.Comun.BuscarProducto]" Result="INFORMATION">
+									<Property line_number="1"/>
+									<Property script_iter_count="0"/>
+									<Property script_name="Scripts.Comun.BuscarProducto"/>
+									<Property script_id="Scripts.Comun.BuscarProducto.java"/>
+								</Event>
+								<Event Timestamp="01-Feb-2016 05:00:53.052 PM" Type="Export Event" Headline="getProperty on the Applet AppletLineasPedido" Result="PASS">
+									<Property line_number="30"/>
+									<Property script_name="Scripts.Comun.BuscarProducto"/>
+								</Event>
+								<Event Timestamp="01-Feb-2016 05:00:53.112 PM" Type="Call Script" Headline="Call script [Scripts.Comun.RecordCount]" Result="INFORMATION">
+									<Property name="Scripts.Comun.RecordCount"/>
+									<Property line_number="32"/>
+									<Property script_name="Scripts.Comun.BuscarProducto"/>
+									<Property script_id="Scripts.Comun.BuscarProducto.java"/>
+									<Event dpIter="0">
+										<Event Timestamp="01-Feb-2016 05:00:53.112 PM" Type="Script Start" Headline="Script start [Scripts.Comun.RecordCount]" Result="INFORMATION">
+											<Property line_number="1"/>
+											<Property script_iter_count="0"/>
+											<Property script_name="Scripts.Comun.RecordCount"/>
+											<Property script_id="Scripts.Comun.RecordCount.java"/>
+										</Event>
+										<Event Timestamp="01-Feb-2016 05:00:53.112 PM" Type="Script End" Headline="Script end [Scripts.Comun.RecordCount]" Result="PASS">
+											<Property script_name="Scripts.Comun.RecordCount"/>
+											<Property script_id="Scripts.Comun.RecordCount.java"/>
+										</Event>
+									</Event>
+									<Event Timestamp="01-Feb-2016 05:00:53.292 PM" Type="Export Event" Headline="getProperty on the List LineasPedido" Result="PASS">
+										<Property line_number="37"/>
+										<Property script_name="Scripts.Comun.BuscarProducto"/>
+									</Event>
+								</Event>
+								<Event Timestamp="01-Feb-2016 05:01:08.817 PM" Type="Script End" Headline="Script end [Scripts.Comun.BuscarProducto]" Result="PASS">
+									<Property script_name="Scripts.Comun.BuscarProducto"/>
+									<Property script_id="Scripts.Comun.BuscarProducto.java"/>
+								</Event>
+							</Event>
+						</Event>
+						<Event Timestamp="01-Feb-2016 05:01:08.817 PM" Type="Script End" Headline="Script end [Scripts.Comun.ExpandiryBuscar]" Result="PASS">
+							<Property script_name="Scripts.Comun.ExpandiryBuscar"/>
+							<Property script_id="Scripts.Comun.ExpandiryBuscar.java"/>
+						</Event>
+					</Event>
+				</Event>
+				<Event Timestamp="01-Feb-2016 05:01:08.817 PM" Type="Script End" Headline="Script end [Scripts.PasosFunc.fExpandiryBuscar]" Result="PASS">
+					<Property script_name="Scripts.PasosFunc.fExpandiryBuscar"/>
+					<Property script_id="Scripts.PasosFunc.fExpandiryBuscar.java"/>
+				</Event>
+			</Event>
+		</Event>
+		<Event Timestamp="01-Feb-2016 05:01:08.822 PM" Type="General" Headline="Starting datapool row 8" Result="INFORMATION">
+			<Property script_name="Scripts.CasosPrueba.CasosPrueba"/>
+			<Property line_number="107"/>
+			<Property script_id="Scripts.CasosPrueba.CasosPrueba.java"/>
+		</Event>
+		<Event Timestamp="01-Feb-2016 05:01:08.822 PM" Type="General" Headline="Starting datapool row 9" Result="INFORMATION">
+			<Property script_name="Scripts.CasosPrueba.CasosPrueba"/>
+			<Property line_number="107"/>
+			<Property script_id="Scripts.CasosPrueba.CasosPrueba.java"/>
+		</Event>
+		<Event Timestamp="01-Feb-2016 05:01:08.832 PM" Type="Call Script" Headline="Call script [Scripts.Comun.InfomarPaso]" Result="INFORMATION">
+			<Property name="Scripts.Comun.InfomarPaso"/>
+			<Property line_number="125"/>
+			<Property script_name="Scripts.CasosPrueba.CasosPrueba"/>
+			<Property script_id="Scripts.CasosPrueba.CasosPrueba.java"/>
+			<Event dpIter="0">
+				<Event Timestamp="01-Feb-2016 05:01:08.832 PM" Type="Script Start" Headline="Script start [Scripts.Comun.InfomarPaso]" Result="INFORMATION">
+					<Property line_number="1"/>
+					<Property script_iter_count="0"/>
+					<Property script_name="Scripts.Comun.InfomarPaso"/>
+					<Property script_id="Scripts.Comun.InfomarPaso.java"/>
+				</Event>
+				<Event Timestamp="01-Feb-2016 05:01:08.832 PM" Type="General" Headline="Inicio de 10" Result="INFORMATION">
+					<Property script_name="Scripts.Comun.InfomarPaso"/>
+					<Property line_number="28"/>
+					<Property script_id="Scripts.Comun.InfomarPaso.java"/>
+				</Event>
+				<Event Timestamp="01-Feb-2016 05:01:08.832 PM" Type="Script End" Headline="Script end [Scripts.Comun.InfomarPaso]" Result="PASS">
+					<Property script_name="Scripts.Comun.InfomarPaso"/>
+					<Property script_id="Scripts.Comun.InfomarPaso.java"/>
+				</Event>
+			</Event>
+		</Event>
+		<Event Timestamp="01-Feb-2016 05:01:08.837 PM" Type="General" Headline="CP13Pasos[Ljava.lang.String;@e941e6fb" Result="INFORMATION">
+			<Property script_name="Scripts.CasosPrueba.CasosPrueba"/>
+			<Property line_number="129"/>
+			<Property script_id="Scripts.CasosPrueba.CasosPrueba.java"/>
+		</Event>
+		<Event Timestamp="01-Feb-2016 05:01:08.842 PM" Type="Call Script" Headline="Call script [Scripts.PasosFunc.fIngresarIMEI]" Result="INFORMATION">
+			<Property name="Scripts.PasosFunc.fIngresarIMEI"/>
+			<Property line_number="130"/>
+			<Property script_name="Scripts.CasosPrueba.CasosPrueba"/>
+			<Property script_id="Scripts.CasosPrueba.CasosPrueba.java"/>
+			<Event dpIter="0">
+				<Event Timestamp="01-Feb-2016 05:01:08.892 PM" Type="Script Start" Headline="Script start [Scripts.PasosFunc.fIngresarIMEI]" Result="INFORMATION">
+					<Property line_number="1"/>
+					<Property script_iter_count="0"/>
+					<dpStore>
+					<dpVariable NumeroCaso="CP03"/>
+					<dpVariable Ambiente="DESA"/>
+					<dpVariable Tramite="Venta"/>
+					<dpVariable LOV1=""/>
+					<dpVariable LOV_VAL1=""/>
+					<dpVariable LOV_Accion1=""/>
+					<dpVariable NroCuentaCte="101784954044"/>
+					<dpVariable Identificacion=""/>
+					<dpVariable TipoCuenta=""/>
+					<dpVariable Tempo_Prod1=""/>
+					<dpVariable Tempo_Accion1=""/>
+					<dpVariable Tempo_Valor1=""/>
+					<dpVariable Contrato="Inactivo"/>
+					<dpVariable TipoPerfilCtaCliente="Postpago"/>
+					<dpVariable TipoPerfilCorrecto="Prepago"/>
+					<dpVariable Plan="Super Chip"/>
+					<dpVariable Servicio=""/>
+					<dpVariable Informe=""/>
+					<dpVariable SIMIncorrecta="89506010613114851171"/>
+					<dpVariable SIMCorrecta="89506010511110639592"/>
+					<dpVariable TerminalCliente="false"/>
+					<dpVariable TerminalClienteActivo="false"/>
+					<dpVariable IMEI_Incorrecto="012449002890718"/>
+					<dpVariable IMEI_Correcto="352214043680272"/>
+					<dpVariable IMEIdelactivo=""/>
+					<dpVariable IMEI1=""/>
+					<dpVariable IMEI_Lugar1=""/>
+					<dpVariable IMEI2=""/>
+					<dpVariable IMEI_Lugar2=""/>
+					<dpVariable IMEI3=""/>
+					<dpVariable IMEI_Lugar3=""/>
+					<dpVariable IMEI4=""/>
+					<dpVariable IMEI_Lugar4=""/>
+					<dpVariable IMEI5=""/>
+					<dpVariable IMEI_Lugar5=""/>
+					<dpVariable IMEI6=""/>
+					<dpVariable IMEI_Lugar6=""/>
+					<dpVariable NumeroServicio=""/>
+					<dpVariable NombreTerminal="SAMSUNG GALAXY SIII MINI AZUL"/>
+					<dpVariable Agencia=""/>
+					<dpVariable PROD_Accion1="Alta"/>
+					<dpVariable PROD_Categoria1="Facilidades Telefonia Movil"/>
+					<dpVariable PROD1="No Caller Id"/>
+					<dpVariable PROD_Padre1=""/>
+					<dpVariable PROD_Accion2=""/>
+					<dpVariable PROD_Categoria2=""/>
+					<dpVariable PROD2=""/>
+					<dpVariable PROD_Padre2=""/>
+					<dpVariable VCT_Prod1=""/>
+					<dpVariable VCT_Editable1=""/>
+					<dpVariable VCT_Prod2=""/>
+					<dpVariable VCT_Editable2=""/>
+					<dpVariable Canal=""/>
+					<dpVariable Tipo="Documentos"/>
+					<dpVariable ProductoFAVNum=""/>
+					<dpVariable LETipo0=""/>
+					<dpVariable LEDesdePed0=""/>
+					<dpVariable LEVolverPed0=""/>
+					<dpVariable LETel0=""/>
+					<dpVariable LEMsj0=""/>
+					<dpVariable LETipo1=""/>
+					<dpVariable LEDesdePed1=""/>
+					<dpVariable LEVolverPed1=""/>
+					<dpVariable LETel1=""/>
+					<dpVariable LEMsj1=""/>
+					<dpVariable LETipo2=""/>
+					<dpVariable LEDesdePed2=""/>
+					<dpVariable LEVolverPed2=""/>
+					<dpVariable LETel2=""/>
+					<dpVariable LEMsj2=""/>
+					<dpVariable LETipo3=""/>
+					<dpVariable LEDesdePed3=""/>
+					<dpVariable LEVolverPed3=""/>
+					<dpVariable LETel3=""/>
+					<dpVariable LEMsj3=""/>
+					<dpVariable LETipo4=""/>
+					<dpVariable LEDesdePed4=""/>
+					<dpVariable LEVolverPed4=""/>
+					<dpVariable LETel4=""/>
+					<dpVariable LEMsj4=""/>
+					<dpVariable LETipo5=""/>
+					<dpVariable LEDesdePed5=""/>
+					<dpVariable LEVolverPed5=""/>
+					<dpVariable LETel5=""/>
+					<dpVariable LEMsj5=""/>
+					<dpVariable NumEspPrimerNum2daopcion1=""/>
+					<dpVariable NumEspIrAdmin1=""/>
+					<dpVariable NumEspPrimerNum2daopcion2=""/>
+					<dpVariable NumEspIrAdmin2=""/>
+					<dpVariable ProxNum0=""/>
+					<dpVariable ProxNumValidar0=""/>
+					<dpVariable ProxNum1=""/>
+					<dpVariable ProxNumValidar1=""/></dpStore>
+					<Property script_name="Scripts.PasosFunc.fIngresarIMEI"/>
+					<Property script_id="Scripts.PasosFunc.fIngresarIMEI.java"/>
+					<Property scriptDpName="\Datos\DP_DatosEntrada.rftdp"/>
+				</Event>
+				<Event Timestamp="01-Feb-2016 05:01:08.922 PM" Type="Call Script" Headline="Call script [Scripts.Comun.IngresarIMEI]" Result="INFORMATION">
+					<Property name="Scripts.Comun.IngresarIMEI"/>
+					<Property line_number="43"/>
+					<Property script_name="Scripts.PasosFunc.fIngresarIMEI"/>
+					<Property script_id="Scripts.PasosFunc.fIngresarIMEI.java"/>
+					<Event dpIter="0">
+						<Event Timestamp="01-Feb-2016 05:01:08.932 PM" Type="Script Start" Headline="Script start [Scripts.Comun.IngresarIMEI]" Result="INFORMATION">
+							<Property line_number="1"/>
+							<Property script_iter_count="0"/>
+							<dpStore>
+							<dpVariable ServicioPrepago="Servicio Telefonia Movil Prepago"/>
+							<dpVariable ServicioPostpago="Servicio de Telefonia Movil"/>
+							<dpVariable Terminales="Terminales Promocionales"/>
+							<dpVariable SIPVUsuario="110440882"/>
+							<dpVariable SIPVClave="110440882"/></dpStore>
+							<Property script_name="Scripts.Comun.IngresarIMEI"/>
+							<Property script_id="Scripts.Comun.IngresarIMEI.java"/>
+							<Property scriptDpName="\Datos\DP_Parametria.rftdp"/>
+						</Event>
+						<Event Timestamp="01-Feb-2016 05:01:08.937 PM" Type="Call Script" Headline="Call script [Scripts.Comun.BuscarProducto]" Result="INFORMATION">
+							<Property name="Scripts.Comun.BuscarProducto"/>
+							<Property line_number="57"/>
+							<Property script_name="Scripts.Comun.IngresarIMEI"/>
+							<Property script_id="Scripts.Comun.IngresarIMEI.java"/>
+							<Event dpIter="0">
+								<Event Timestamp="01-Feb-2016 05:01:08.942 PM" Type="Script Start" Headline="Script start [Scripts.Comun.BuscarProducto]" Result="INFORMATION">
+									<Property line_number="1"/>
+									<Property script_iter_count="0"/>
+									<Property script_name="Scripts.Comun.BuscarProducto"/>
+									<Property script_id="Scripts.Comun.BuscarProducto.java"/>
+								</Event>
+								<Event Timestamp="01-Feb-2016 05:01:09.782 PM" Type="Export Event" Headline="getProperty on the Applet AppletLineasPedido" Result="PASS">
+									<Property line_number="30"/>
+									<Property script_name="Scripts.Comun.BuscarProducto"/>
+								</Event>
+								<Event Timestamp="01-Feb-2016 05:01:09.792 PM" Type="Call Script" Headline="Call script [Scripts.Comun.RecordCount]" Result="INFORMATION">
+									<Property name="Scripts.Comun.RecordCount"/>
+									<Property line_number="32"/>
+									<Property script_name="Scripts.Comun.BuscarProducto"/>
+									<Property script_id="Scripts.Comun.BuscarProducto.java"/>
+									<Event dpIter="0">
+										<Event Timestamp="01-Feb-2016 05:01:09.792 PM" Type="Script Start" Headline="Script start [Scripts.Comun.RecordCount]" Result="INFORMATION">
+											<Property line_number="1"/>
+											<Property script_iter_count="0"/>
+											<Property script_name="Scripts.Comun.RecordCount"/>
+											<Property script_id="Scripts.Comun.RecordCount.java"/>
+										</Event>
+										<Event Timestamp="01-Feb-2016 05:01:09.797 PM" Type="Script End" Headline="Script end [Scripts.Comun.RecordCount]" Result="PASS">
+											<Property script_name="Scripts.Comun.RecordCount"/>
+											<Property script_id="Scripts.Comun.RecordCount.java"/>
+										</Event>
+									</Event>
+									<Event Timestamp="01-Feb-2016 05:01:09.977 PM" Type="Export Event" Headline="getProperty on the List LineasPedido" Result="PASS">
+										<Property line_number="37"/>
+										<Property script_name="Scripts.Comun.BuscarProducto"/>
+									</Event>
+								</Event>
+								<Event Timestamp="01-Feb-2016 05:01:12.597 PM" Type="Script End" Headline="Script end [Scripts.Comun.BuscarProducto]" Result="PASS">
+									<Property script_name="Scripts.Comun.BuscarProducto"/>
+									<Property script_id="Scripts.Comun.BuscarProducto.java"/>
+								</Event>
+							</Event>
+						</Event>
+						<Event Timestamp="01-Feb-2016 05:01:14.882 PM" Type="General" Headline="ICE IMEI Posicion0flag Encontrado" Result="INFORMATION">
+							<Property script_name="Scripts.Comun.IngresarIMEI"/>
+							<Property line_number="71"/>
+							<Property script_id="Scripts.Comun.IngresarIMEI.java"/>
+						</Event>
+						<Event Timestamp="01-Feb-2016 05:01:16.512 PM" Type="Script End" Headline="Script end [Scripts.Comun.IngresarIMEI]" Result="PASS">
+							<Property script_name="Scripts.Comun.IngresarIMEI"/>
+							<Property script_id="Scripts.Comun.IngresarIMEI.java"/>
+						</Event>
+					</Event>
+				</Event>
+				<Event Timestamp="01-Feb-2016 05:01:16.512 PM" Type="Script End" Headline="Script end [Scripts.PasosFunc.fIngresarIMEI]" Result="PASS">
+					<Property script_name="Scripts.PasosFunc.fIngresarIMEI"/>
+					<Property script_id="Scripts.PasosFunc.fIngresarIMEI.java"/>
+				</Event>
+			</Event>
+		</Event>
+		<Event Timestamp="01-Feb-2016 05:01:16.512 PM" Type="General" Headline="Starting datapool row 10" Result="INFORMATION">
+			<Property script_name="Scripts.CasosPrueba.CasosPrueba"/>
+			<Property line_number="107"/>
+			<Property script_id="Scripts.CasosPrueba.CasosPrueba.java"/>
+		</Event>
+		<Event Timestamp="01-Feb-2016 05:01:16.527 PM" Type="Call Script" Headline="Call script [Scripts.Comun.InfomarPaso]" Result="INFORMATION">
+			<Property name="Scripts.Comun.InfomarPaso"/>
+			<Property line_number="125"/>
+			<Property script_name="Scripts.CasosPrueba.CasosPrueba"/>
+			<Property script_id="Scripts.CasosPrueba.CasosPrueba.java"/>
+			<Event dpIter="0">
+				<Event Timestamp="01-Feb-2016 05:01:16.532 PM" Type="Script Start" Headline="Script start [Scripts.Comun.InfomarPaso]" Result="INFORMATION">
+					<Property line_number="1"/>
+					<Property script_iter_count="0"/>
+					<Property script_name="Scripts.Comun.InfomarPaso"/>
+					<Property script_id="Scripts.Comun.InfomarPaso.java"/>
+				</Event>
+				<Event Timestamp="01-Feb-2016 05:01:16.532 PM" Type="General" Headline="Inicio de 11" Result="INFORMATION">
+					<Property script_name="Scripts.Comun.InfomarPaso"/>
+					<Property line_number="28"/>
+					<Property script_id="Scripts.Comun.InfomarPaso.java"/>
+				</Event>
+				<Event Timestamp="01-Feb-2016 05:01:16.532 PM" Type="Script End" Headline="Script end [Scripts.Comun.InfomarPaso]" Result="PASS">
+					<Property script_name="Scripts.Comun.InfomarPaso"/>
+					<Property script_id="Scripts.Comun.InfomarPaso.java"/>
+				</Event>
+			</Event>
+		</Event>
+		<Event Timestamp="01-Feb-2016 05:01:16.532 PM" Type="General" Headline="CP13Pasos[Ljava.lang.String;@e941e6fb" Result="INFORMATION">
+			<Property script_name="Scripts.CasosPrueba.CasosPrueba"/>
+			<Property line_number="129"/>
+			<Property script_id="Scripts.CasosPrueba.CasosPrueba.java"/>
+		</Event>
+		<Event Timestamp="01-Feb-2016 05:01:16.537 PM" Type="Call Script" Headline="Call script [Scripts.PasosFunc.fValorarTodo]" Result="INFORMATION">
+			<Property name="Scripts.PasosFunc.fValorarTodo"/>
+			<Property line_number="130"/>
+			<Property script_name="Scripts.CasosPrueba.CasosPrueba"/>
+			<Property script_id="Scripts.CasosPrueba.CasosPrueba.java"/>
+			<Event dpIter="0">
+				<Event Timestamp="01-Feb-2016 05:01:16.542 PM" Type="Script Start" Headline="Script start [Scripts.PasosFunc.fValorarTodo]" Result="INFORMATION">
+					<Property line_number="1"/>
+					<Property script_iter_count="0"/>
+					<Property script_name="Scripts.PasosFunc.fValorarTodo"/>
+					<Property script_id="Scripts.PasosFunc.fValorarTodo.java"/>
+				</Event>
+				<Event Timestamp="01-Feb-2016 05:01:16.542 PM" Type="Call Script" Headline="Call script [Scripts.Comun.ValorarTodo]" Result="INFORMATION">
+					<Property name="Scripts.Comun.ValorarTodo"/>
+					<Property line_number="35"/>
+					<Property script_name="Scripts.PasosFunc.fValorarTodo"/>
+					<Property script_id="Scripts.PasosFunc.fValorarTodo.java"/>
+					<Event dpIter="0">
+						<Event Timestamp="01-Feb-2016 05:01:16.547 PM" Type="Script Start" Headline="Script start [Scripts.Comun.ValorarTodo]" Result="INFORMATION">
+							<Property line_number="1"/>
+							<Property script_iter_count="0"/>
+							<dpStore>
+							<dpVariable DPM0001="Verifique que antes de realizar una consulta de la lista de números disponibles se haya asignado un Sim(SBL-EXL-00151)(SBL-EXL-00151)"/>
+							<dpVariable DPM0002="El SIM no está disponible, favor de seleccionar otro número(SBL-EXL-00151)(SBL-EXL-00151)"/>
+							<dpVariable DPM0003="El tipo pago del producto debe ser el mismo que el tipo de pago del perfil de facturación. Por favor revisar. (SBL-APS-00802)"/>
+							<dpVariable DPM0004="Cuenta de facturación generada con exito(SBL-EXL-00151)"/>
+							<dpVariable DPM0005="Otro usuario modificó el registro seleccionado cuando éste se recuperó. Continúe.(SBL-DAT-00523)
+Otro usuario modificó el registro seleccionado cuando éste se recuperó. Continúe.(SBL-DAT-00523)
+Otro usuario modificó el registro seleccionado cuando éste se recuperó. Continúe.(SBL-DAT-00523)
+Otro usuario modificó el registro seleccionado cuando éste se recuperó. Continúe.(SBL-DAT-00523)
+Otro usuario modificó el registro seleccionado cuando éste se recuperó. Continúe.(SBL-DAT-00523)
+Otro usuario modificó el registro seleccionado cuando éste se recuperó. Continúe.(SBL-DAT-00523)
+Otro usuario modificó el registro seleccionado cuando éste se recuperó. Continúe.(SBL-DAT-00523)
+"/>
+							<dpVariable DPM0006="El campo IMEI es requerido (SBL-APS-00802)"/>
+							<dpVariable DPM0007="MODELO NO CORRESPONDEN EN EL SIPV(SBL-EXL-00151)(SBL-EXL-00151)(SBL-EXL-00151)"/>
+							<dpVariable DPM0008="La cuenta sólo puede tener un perfil de facturación (SBL-APS-00802)"/>
+							<dpVariable DPM0009="Se ha producido al obtener el primer número disponible un error con el código: y el siguiente mensaje: No hay números disponibles(SBL-EXL-00151)(SBL-EXL-00151)"/>
+							<dpVariable DPM0010="Se ha producido al obtener el primer número disponible un error con el código: 99 y el siguiente mensaje: Ha ocurrido un error ejecutando el servicio para obtener el siguiente número disponible.(SBL-EXL-00151)(SBL-EXL-00151)"/>
+							<dpVariable DPM0012="Antes de esta acción debe presionar el botón &quot;Volver a valorar todo&quot; a nivel de los detalles del pedido (SBL-APS-00802)"/>
+							<dpVariable DPM0013="Asegurese de ofrecer Favorito VOZ ya que se encuentra en promocion. Asegurese de ofrecer Favorito SMS ya que se encuentra en promocion."/>
+							<dpVariable DPM0014="Asegurese de ofrecer Favorito VOZ ya que se encuentra en promocion. "/>
+							<dpVariable DPM0015="Debe ingresar lista de numeros favoritos.(SBL-EXL-00151)(SBL-EXL-00151)(SBL-EXL-00151)"/>
+							<dpVariable DPM0016="La lista de números que está intentando asignar no posee números. Modifique la lista actual o cree una nueva.(SBL-EXL-00151)"/>
+							<dpVariable DPM0017="La lista de números que está intentando asignar no coincide con el producto en el que está posicionado, asegúrese de asignar la lista correcta a cada producto.(SBL-EXL-00151)"/>
+							<dpVariable DPM0018="El formato de teléfono ingresado no es válido. Verifique por favor(SBL-EXL-00151)(SBL-EXL-00151)"/>
+							<dpVariable DPM0019="NO EXISTE INFORMACION PARA EL SERVICIO SOLICITADO.(SBL-EXL-00151)(SBL-EXL-00151)"/>
+							<dpVariable DPM0020="Se libero exitosamente el número.(SBL-EXL-00151)(SBL-EXL-00151)(SBL-EXL-00151)"/>
+							<dpVariable DPM0021="Asegurese de ofrecer Favorito SMS ya que se encuentra en promocion."/>
+							<dpVariable DPM0022="Se requiere crear una cuenta de facturación para el pedido(SBL-EXL-00151)(SBL-EXL-00151)(SBL-EXL-00151)"/>
+							<dpVariable DPM0023="No se ha podido liberar el número, favor de consultar al administrador(SBL-EXL-00151)(SBL-EXL-00151)"/>
+							<dpVariable DPM0024="El campo Contacto es requerido (SBL-APS-00802)"/>
+							<dpVariable DPM130013="No existen registros de Existencia"/></dpStore>
+							<Property script_name="Scripts.Comun.ValorarTodo"/>
+							<Property script_id="Scripts.Comun.ValorarTodo.java"/>
+							<Property scriptDpName="\Datos\DP_Mensajes.rftdp"/>
+						</Event>
+						<Event Timestamp="01-Feb-2016 05:01:22.007 PM" Type="Script End" Headline="Script end [Scripts.Comun.ValorarTodo]" Result="PASS">
+							<Property script_name="Scripts.Comun.ValorarTodo"/>
+							<Property script_id="Scripts.Comun.ValorarTodo.java"/>
+						</Event>
+					</Event>
+				</Event>
+				<Event Timestamp="01-Feb-2016 05:01:22.012 PM" Type="Script End" Headline="Script end [Scripts.PasosFunc.fValorarTodo]" Result="PASS">
+					<Property script_name="Scripts.PasosFunc.fValorarTodo"/>
+					<Property script_id="Scripts.PasosFunc.fValorarTodo.java"/>
+				</Event>
+			</Event>
+		</Event>
+		<Event Timestamp="01-Feb-2016 05:01:22.012 PM" Type="General" Headline="Starting datapool row 11" Result="INFORMATION">
+			<Property script_name="Scripts.CasosPrueba.CasosPrueba"/>
+			<Property line_number="107"/>
+			<Property script_id="Scripts.CasosPrueba.CasosPrueba.java"/>
+		</Event>
+		<Event Timestamp="01-Feb-2016 05:01:22.027 PM" Type="Call Script" Headline="Call script [Scripts.Comun.InfomarPaso]" Result="INFORMATION">
+			<Property name="Scripts.Comun.InfomarPaso"/>
+			<Property line_number="125"/>
+			<Property script_name="Scripts.CasosPrueba.CasosPrueba"/>
+			<Property script_id="Scripts.CasosPrueba.CasosPrueba.java"/>
+			<Event dpIter="0">
+				<Event Timestamp="01-Feb-2016 05:01:22.032 PM" Type="Script Start" Headline="Script start [Scripts.Comun.InfomarPaso]" Result="INFORMATION">
+					<Property line_number="1"/>
+					<Property script_iter_count="0"/>
+					<Property script_name="Scripts.Comun.InfomarPaso"/>
+					<Property script_id="Scripts.Comun.InfomarPaso.java"/>
+				</Event>
+				<Event Timestamp="01-Feb-2016 05:01:22.032 PM" Type="General" Headline="Inicio de 12" Result="INFORMATION">
+					<Property script_name="Scripts.Comun.InfomarPaso"/>
+					<Property line_number="28"/>
+					<Property script_id="Scripts.Comun.InfomarPaso.java"/>
+				</Event>
+				<Event Timestamp="01-Feb-2016 05:01:22.052 PM" Type="Script End" Headline="Script end [Scripts.Comun.InfomarPaso]" Result="PASS">
+					<Property script_name="Scripts.Comun.InfomarPaso"/>
+					<Property script_id="Scripts.Comun.InfomarPaso.java"/>
+				</Event>
+			</Event>
+		</Event>
+		<Event Timestamp="01-Feb-2016 05:01:22.052 PM" Type="General" Headline="CP13Pasos[Ljava.lang.String;@e941e6fb" Result="INFORMATION">
+			<Property script_name="Scripts.CasosPrueba.CasosPrueba"/>
+			<Property line_number="129"/>
+			<Property script_id="Scripts.CasosPrueba.CasosPrueba.java"/>
+		</Event>
+		<Event Timestamp="01-Feb-2016 05:01:22.062 PM" Type="Call Script" Headline="Call script [Scripts.PasosFunc.fExpandiryBuscar]" Result="INFORMATION">
+			<Property name="Scripts.PasosFunc.fExpandiryBuscar"/>
+			<Property line_number="130"/>
+			<Property script_name="Scripts.CasosPrueba.CasosPrueba"/>
+			<Property script_id="Scripts.CasosPrueba.CasosPrueba.java"/>
+			<Event dpIter="0">
+				<Event Timestamp="01-Feb-2016 05:01:22.072 PM" Type="Script Start" Headline="Script start [Scripts.PasosFunc.fExpandiryBuscar]" Result="INFORMATION">
+					<Property line_number="1"/>
+					<Property script_iter_count="0"/>
+					<dpStore>
+					<dpVariable NumeroCaso="CP03"/>
+					<dpVariable Ambiente="DESA"/>
+					<dpVariable Tramite="Venta"/>
+					<dpVariable LOV1=""/>
+					<dpVariable LOV_VAL1=""/>
+					<dpVariable LOV_Accion1=""/>
+					<dpVariable NroCuentaCte="101784954044"/>
+					<dpVariable Identificacion=""/>
+					<dpVariable TipoCuenta=""/>
+					<dpVariable Tempo_Prod1=""/>
+					<dpVariable Tempo_Accion1=""/>
+					<dpVariable Tempo_Valor1=""/>
+					<dpVariable Contrato="Inactivo"/>
+					<dpVariable TipoPerfilCtaCliente="Postpago"/>
+					<dpVariable TipoPerfilCorrecto="Prepago"/>
+					<dpVariable Plan="Super Chip"/>
+					<dpVariable Servicio=""/>
+					<dpVariable Informe=""/>
+					<dpVariable SIMIncorrecta="89506010613114851171"/>
+					<dpVariable SIMCorrecta="89506010511110639592"/>
+					<dpVariable TerminalCliente="false"/>
+					<dpVariable TerminalClienteActivo="false"/>
+					<dpVariable IMEI_Incorrecto="012449002890718"/>
+					<dpVariable IMEI_Correcto="352214043680272"/>
+					<dpVariable IMEIdelactivo=""/>
+					<dpVariable IMEI1=""/>
+					<dpVariable IMEI_Lugar1=""/>
+					<dpVariable IMEI2=""/>
+					<dpVariable IMEI_Lugar2=""/>
+					<dpVariable IMEI3=""/>
+					<dpVariable IMEI_Lugar3=""/>
+					<dpVariable IMEI4=""/>
+					<dpVariable IMEI_Lugar4=""/>
+					<dpVariable IMEI5=""/>
+					<dpVariable IMEI_Lugar5=""/>
+					<dpVariable IMEI6=""/>
+					<dpVariable IMEI_Lugar6=""/>
+					<dpVariable NumeroServicio=""/>
+					<dpVariable NombreTerminal="SAMSUNG GALAXY SIII MINI AZUL"/>
+					<dpVariable Agencia=""/>
+					<dpVariable PROD_Accion1="Alta"/>
+					<dpVariable PROD_Categoria1="Facilidades Telefonia Movil"/>
+					<dpVariable PROD1="No Caller Id"/>
+					<dpVariable PROD_Padre1=""/>
+					<dpVariable PROD_Accion2=""/>
+					<dpVariable PROD_Categoria2=""/>
+					<dpVariable PROD2=""/>
+					<dpVariable PROD_Padre2=""/>
+					<dpVariable VCT_Prod1=""/>
+					<dpVariable VCT_Editable1=""/>
+					<dpVariable VCT_Prod2=""/>
+					<dpVariable VCT_Editable2=""/>
+					<dpVariable Canal=""/>
+					<dpVariable Tipo="Documentos"/>
+					<dpVariable ProductoFAVNum=""/>
+					<dpVariable LETipo0=""/>
+					<dpVariable LEDesdePed0=""/>
+					<dpVariable LEVolverPed0=""/>
+					<dpVariable LETel0=""/>
+					<dpVariable LEMsj0=""/>
+					<dpVariable LETipo1=""/>
+					<dpVariable LEDesdePed1=""/>
+					<dpVariable LEVolverPed1=""/>
+					<dpVariable LETel1=""/>
+					<dpVariable LEMsj1=""/>
+					<dpVariable LETipo2=""/>
+					<dpVariable LEDesdePed2=""/>
+					<dpVariable LEVolverPed2=""/>
+					<dpVariable LETel2=""/>
+					<dpVariable LEMsj2=""/>
+					<dpVariable LETipo3=""/>
+					<dpVariable LEDesdePed3=""/>
+					<dpVariable LEVolverPed3=""/>
+					<dpVariable LETel3=""/>
+					<dpVariable LEMsj3=""/>
+					<dpVariable LETipo4=""/>
+					<dpVariable LEDesdePed4=""/>
+					<dpVariable LEVolverPed4=""/>
+					<dpVariable LETel4=""/>
+					<dpVariable LEMsj4=""/>
+					<dpVariable LETipo5=""/>
+					<dpVariable LEDesdePed5=""/>
+					<dpVariable LEVolverPed5=""/>
+					<dpVariable LETel5=""/>
+					<dpVariable LEMsj5=""/>
+					<dpVariable NumEspPrimerNum2daopcion1=""/>
+					<dpVariable NumEspIrAdmin1=""/>
+					<dpVariable NumEspPrimerNum2daopcion2=""/>
+					<dpVariable NumEspIrAdmin2=""/>
+					<dpVariable ProxNum0=""/>
+					<dpVariable ProxNumValidar0=""/>
+					<dpVariable ProxNum1=""/>
+					<dpVariable ProxNumValidar1=""/></dpStore>
+					<Property script_name="Scripts.PasosFunc.fExpandiryBuscar"/>
+					<Property script_id="Scripts.PasosFunc.fExpandiryBuscar.java"/>
+					<Property scriptDpName="\Datos\DP_DatosEntrada.rftdp"/>
+				</Event>
+				<Event Timestamp="01-Feb-2016 05:01:22.097 PM" Type="Call Script" Headline="Call script [Scripts.Comun.ExpandiryBuscar]" Result="INFORMATION">
+					<Property name="Scripts.Comun.ExpandiryBuscar"/>
+					<Property line_number="45"/>
+					<Property script_name="Scripts.PasosFunc.fExpandiryBuscar"/>
+					<Property script_id="Scripts.PasosFunc.fExpandiryBuscar.java"/>
+					<Event dpIter="0">
+						<Event Timestamp="01-Feb-2016 05:01:22.097 PM" Type="Script Start" Headline="Script start [Scripts.Comun.ExpandiryBuscar]" Result="INFORMATION">
+							<Property line_number="1"/>
+							<Property script_iter_count="0"/>
+							<Property script_name="Scripts.Comun.ExpandiryBuscar"/>
+							<Property script_id="Scripts.Comun.ExpandiryBuscar.java"/>
+						</Event>
+						<Event Timestamp="01-Feb-2016 05:01:22.107 PM" Type="Call Script" Headline="Call script [Scripts.Comun.ExpandirLinea]" Result="INFORMATION">
+							<Property name="Scripts.Comun.ExpandirLinea"/>
+							<Property line_number="38"/>
+							<Property script_name="Scripts.Comun.ExpandiryBuscar"/>
+							<Property script_id="Scripts.Comun.ExpandiryBuscar.java"/>
+							<Event dpIter="0">
+								<Event Timestamp="01-Feb-2016 05:01:22.107 PM" Type="Script Start" Headline="Script start [Scripts.Comun.ExpandirLinea]" Result="INFORMATION">
+									<Property line_number="1"/>
+									<Property script_iter_count="0"/>
+									<Property script_name="Scripts.Comun.ExpandirLinea"/>
+									<Property script_id="Scripts.Comun.ExpandirLinea.java"/>
+								</Event>
+								<Event Timestamp="01-Feb-2016 05:01:22.122 PM" Type="Call Script" Headline="Call script [Scripts.Comun.BuscarProducto]" Result="INFORMATION">
+									<Property name="Scripts.Comun.BuscarProducto"/>
+									<Property line_number="36"/>
+									<Property script_name="Scripts.Comun.ExpandirLinea"/>
+									<Property script_id="Scripts.Comun.ExpandirLinea.java"/>
+									<Event dpIter="0">
+										<Event Timestamp="01-Feb-2016 05:01:22.127 PM" Type="Script Start" Headline="Script start [Scripts.Comun.BuscarProducto]" Result="INFORMATION">
+											<Property line_number="1"/>
+											<Property script_iter_count="0"/>
+											<Property script_name="Scripts.Comun.BuscarProducto"/>
+											<Property script_id="Scripts.Comun.BuscarProducto.java"/>
+										</Event>
+										<Event Timestamp="01-Feb-2016 05:01:22.912 PM" Type="Export Event" Headline="getProperty on the Applet AppletLineasPedido" Result="PASS">
+											<Property line_number="30"/>
+											<Property script_name="Scripts.Comun.BuscarProducto"/>
+										</Event>
+										<Event Timestamp="01-Feb-2016 05:01:22.917 PM" Type="Call Script" Headline="Call script [Scripts.Comun.RecordCount]" Result="INFORMATION">
+											<Property name="Scripts.Comun.RecordCount"/>
+											<Property line_number="32"/>
+											<Property script_name="Scripts.Comun.BuscarProducto"/>
+											<Property script_id="Scripts.Comun.BuscarProducto.java"/>
+											<Event dpIter="0">
+												<Event Timestamp="01-Feb-2016 05:01:22.917 PM" Type="Script Start" Headline="Script start [Scripts.Comun.RecordCount]" Result="INFORMATION">
+													<Property line_number="1"/>
+													<Property script_iter_count="0"/>
+													<Property script_name="Scripts.Comun.RecordCount"/>
+													<Property script_id="Scripts.Comun.RecordCount.java"/>
+												</Event>
+												<Event Timestamp="01-Feb-2016 05:01:22.927 PM" Type="Script End" Headline="Script end [Scripts.Comun.RecordCount]" Result="PASS">
+													<Property script_name="Scripts.Comun.RecordCount"/>
+													<Property script_id="Scripts.Comun.RecordCount.java"/>
+												</Event>
+											</Event>
+											<Event Timestamp="01-Feb-2016 05:01:23.137 PM" Type="Export Event" Headline="getProperty on the List LineasPedido" Result="PASS">
+												<Property line_number="37"/>
+												<Property script_name="Scripts.Comun.BuscarProducto"/>
+											</Event>
+										</Event>
+										<Event Timestamp="01-Feb-2016 05:01:25.387 PM" Type="Script End" Headline="Script end [Scripts.Comun.BuscarProducto]" Result="PASS">
+											<Property script_name="Scripts.Comun.BuscarProducto"/>
+											<Property script_id="Scripts.Comun.BuscarProducto.java"/>
+										</Event>
+									</Event>
+								</Event>
+								<Event Timestamp="01-Feb-2016 05:01:26.717 PM" Type="Script End" Headline="Script end [Scripts.Comun.ExpandirLinea]" Result="PASS">
+									<Property script_name="Scripts.Comun.ExpandirLinea"/>
+									<Property script_id="Scripts.Comun.ExpandirLinea.java"/>
+								</Event>
+							</Event>
+						</Event>
+						<Event Timestamp="01-Feb-2016 05:01:26.722 PM" Type="Call Script" Headline="Call script [Scripts.Comun.BuscarProducto]" Result="INFORMATION">
+							<Property name="Scripts.Comun.BuscarProducto"/>
+							<Property line_number="41"/>
+							<Property script_name="Scripts.Comun.ExpandiryBuscar"/>
+							<Property script_id="Scripts.Comun.ExpandiryBuscar.java"/>
+							<Event dpIter="0">
+								<Event Timestamp="01-Feb-2016 05:01:26.722 PM" Type="Script Start" Headline="Script start [Scripts.Comun.BuscarProducto]" Result="INFORMATION">
+									<Property line_number="1"/>
+									<Property script_iter_count="0"/>
+									<Property script_name="Scripts.Comun.BuscarProducto"/>
+									<Property script_id="Scripts.Comun.BuscarProducto.java"/>
+								</Event>
+								<Event Timestamp="01-Feb-2016 05:01:27.797 PM" Type="Export Event" Headline="getProperty on the Applet AppletLineasPedido" Result="PASS">
+									<Property line_number="30"/>
+									<Property script_name="Scripts.Comun.BuscarProducto"/>
+								</Event>
+								<Event Timestamp="01-Feb-2016 05:01:27.802 PM" Type="Call Script" Headline="Call script [Scripts.Comun.RecordCount]" Result="INFORMATION">
+									<Property name="Scripts.Comun.RecordCount"/>
+									<Property line_number="32"/>
+									<Property script_name="Scripts.Comun.BuscarProducto"/>
+									<Property script_id="Scripts.Comun.BuscarProducto.java"/>
+									<Event dpIter="0">
+										<Event Timestamp="01-Feb-2016 05:01:27.802 PM" Type="Script Start" Headline="Script start [Scripts.Comun.RecordCount]" Result="INFORMATION">
+											<Property line_number="1"/>
+											<Property script_iter_count="0"/>
+											<Property script_name="Scripts.Comun.RecordCount"/>
+											<Property script_id="Scripts.Comun.RecordCount.java"/>
+										</Event>
+										<Event Timestamp="01-Feb-2016 05:01:27.807 PM" Type="Script End" Headline="Script end [Scripts.Comun.RecordCount]" Result="PASS">
+											<Property script_name="Scripts.Comun.RecordCount"/>
+											<Property script_id="Scripts.Comun.RecordCount.java"/>
+										</Event>
+									</Event>
+									<Event Timestamp="01-Feb-2016 05:01:27.967 PM" Type="Export Event" Headline="getProperty on the List LineasPedido" Result="PASS">
+										<Property line_number="37"/>
+										<Property script_name="Scripts.Comun.BuscarProducto"/>
+									</Event>
+								</Event>
+								<Event Timestamp="01-Feb-2016 05:01:41.397 PM" Type="Script End" Headline="Script end [Scripts.Comun.BuscarProducto]" Result="PASS">
+									<Property script_name="Scripts.Comun.BuscarProducto"/>
+									<Property script_id="Scripts.Comun.BuscarProducto.java"/>
+								</Event>
+							</Event>
+						</Event>
+						<Event Timestamp="01-Feb-2016 05:01:41.397 PM" Type="Script End" Headline="Script end [Scripts.Comun.ExpandiryBuscar]" Result="PASS">
+							<Property script_name="Scripts.Comun.ExpandiryBuscar"/>
+							<Property script_id="Scripts.Comun.ExpandiryBuscar.java"/>
+						</Event>
+					</Event>
+				</Event>
+				<Event Timestamp="01-Feb-2016 05:01:41.407 PM" Type="Call Script" Headline="Call script [Scripts.Comun.TerminarCasoError]" Result="INFORMATION">
+					<Property name="Scripts.Comun.TerminarCasoError"/>
+					<Property line_number="63"/>
+					<Property script_name="Scripts.PasosFunc.fExpandiryBuscar"/>
+					<Property script_id="Scripts.PasosFunc.fExpandiryBuscar.java"/>
+					<Event dpIter="0">
+						<Event Timestamp="01-Feb-2016 05:01:41.412 PM" Type="Script Start" Headline="Script start [Scripts.Comun.TerminarCasoError]" Result="INFORMATION">
+							<Property line_number="1"/>
+							<Property script_iter_count="0"/>
+							<dpStore>
+							<dpVariable NombreScript="fAdministrarLOV"/>
+							<dpVariable Mensaje="Problemas con administración de la LOV"/></dpStore>
+							<Property script_name="Scripts.Comun.TerminarCasoError"/>
+							<Property script_id="Scripts.Comun.TerminarCasoError.java"/>
+							<Property scriptDpName="\Datos\DP_MsjErrorPaso.rftdp"/>
+						</Event>
+						<Event Timestamp="01-Feb-2016 05:01:41.412 PM" Type="General" Headline="Mensaje de Error: Producto: Servicio de Telefonia Movil/Cambio de aparatoEncontrado Debe parar la ejecución del CP: Si" Result="INFORMATION">
+							<Property script_name="Scripts.Comun.TerminarCasoError"/>
+							<Property line_number="42"/>
+							<Property script_id="Scripts.Comun.TerminarCasoError.java"/>
+						</Event>
+						<Event Timestamp="01-Feb-2016 05:01:41.417 PM" Type="General" Headline="CRFCN0596E: Scripts.Comun.TerminarCasoError.testMain user requested a script shutdown [Scripts.Comun.TerminarCasoError]." Result="FAIL">
+							<Property exception_name="com.rational.test.ft.UserStoppedScriptError"/>
+							<Property exception_message="CRFCN0515E: stop() method called"/>
+							<Property script_name="Scripts.Comun.TerminarCasoError"/>
+							<Property script_id="Scripts.Comun.TerminarCasoError.java"/>
+							<Property line_number="52"/>
+							<Property exception_stack="	at com.rational.test.ft.script.RationalTestScript.stop(RationalTestScript.java:2602)
+	at Scripts.Comun.TerminarCasoError.testMain(TerminarCasoError.java:52)
+	at Scripts.PasosFunc.fExpandiryBuscar.testMain(fExpandiryBuscar.java:63)
+	at Scripts.CasosPrueba.CasosPrueba.testMain(CasosPrueba.java:130)
+	at org.eclipse.equinox.internal.app.EclipseAppContainer.callMethodWithException(EclipseAppContainer.java:587)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:198)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1438)
+	at org.eclipse.core.launcher.Main.main(Main.java:34)
+"/>
+						</Event>
+						<Event Timestamp="01-Feb-2016 05:01:41.417 PM" Type="Script End" Headline="Script end [Scripts.Comun.TerminarCasoError]" Result="FAIL">
+							<Property script_name="Scripts.Comun.TerminarCasoError"/>
+							<Property script_id="Scripts.Comun.TerminarCasoError.java"/>
+						</Event>
+					</Event>
+				</Event>
+				<Event Timestamp="01-Feb-2016 05:01:41.552 PM" Type="General" Headline="CRFCN0647E: Scripts.PasosFunc.fExpandiryBuscar.testMain had an unhandled error in called script [Scripts.Comun.TerminarCasoError]." Result="FAIL">
+					<Property exception_name="com.rational.test.ft.UserStoppedScriptError"/>
+					<Property exception_message="CRFCN0515E: stop() method called"/>
+					<Property script_name="Scripts.PasosFunc.fExpandiryBuscar"/>
+					<Property script_id="Scripts.PasosFunc.fExpandiryBuscar.java"/>
+					<Property line_number="63"/>
+					<Property exception_stack="	at com.rational.test.ft.script.RationalTestScript.stop(RationalTestScript.java:2602)
+	at Scripts.Comun.TerminarCasoError.testMain(TerminarCasoError.java:52)
+	at Scripts.PasosFunc.fExpandiryBuscar.testMain(fExpandiryBuscar.java:63)
+	at Scripts.CasosPrueba.CasosPrueba.testMain(CasosPrueba.java:130)
+	at org.eclipse.equinox.internal.app.EclipseAppContainer.callMethodWithException(EclipseAppContainer.java:587)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:198)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1438)
+	at org.eclipse.core.launcher.Main.main(Main.java:34)
+"/>
+				</Event>
+				<Event Timestamp="01-Feb-2016 05:01:41.552 PM" Type="Script End" Headline="Script end [Scripts.PasosFunc.fExpandiryBuscar]" Result="FAIL">
+					<Property script_name="Scripts.PasosFunc.fExpandiryBuscar"/>
+					<Property script_id="Scripts.PasosFunc.fExpandiryBuscar.java"/>
+				</Event>
+			</Event>
+		</Event>
+		<Event Timestamp="01-Feb-2016 05:01:41.557 PM" Type="General" Headline="CRFCN0647E: Scripts.CasosPrueba.CasosPrueba.testMain had an unhandled error in called script [Scripts.PasosFunc.fExpandiryBuscar]." Result="FAIL">
+			<Property exception_name="com.rational.test.ft.UserStoppedScriptError"/>
+			<Property exception_message="CRFCN0515E: stop() method called"/>
+			<Property script_name="Scripts.CasosPrueba.CasosPrueba"/>
+			<Property script_id="Scripts.CasosPrueba.CasosPrueba.java"/>
+			<Property line_number="130"/>
+			<Property exception_stack="	at com.rational.test.ft.script.RationalTestScript.stop(RationalTestScript.java:2602)
+	at Scripts.Comun.TerminarCasoError.testMain(TerminarCasoError.java:52)
+	at Scripts.PasosFunc.fExpandiryBuscar.testMain(fExpandiryBuscar.java:63)
+	at Scripts.CasosPrueba.CasosPrueba.testMain(CasosPrueba.java:130)
+	at org.eclipse.equinox.internal.app.EclipseAppContainer.callMethodWithException(EclipseAppContainer.java:587)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:198)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1438)
+	at org.eclipse.core.launcher.Main.main(Main.java:34)
+"/>
+		</Event>
+		<Event Timestamp="01-Feb-2016 05:01:41.622 PM" Type="Script End" Headline="Script end [Scripts.CasosPrueba.CasosPrueba]" Result="FAIL">
+			<Property script_name="Scripts.CasosPrueba.CasosPrueba"/>
+			<Property script_id="Scripts.CasosPrueba.CasosPrueba.java"/>
+		</Event>
+	</Event>
+</TestLog>

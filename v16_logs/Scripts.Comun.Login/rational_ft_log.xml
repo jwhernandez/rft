@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestLog>
+	<Event dpIter="0">
+		<Event Timestamp="01-Feb-2016 03:26:02.631 PM" Type="Script Start" Headline="Script start [Scripts.Comun.Login]" Result="INFORMATION">
+			<Property line_number="1"/>
+			<Property script_iter_count="0"/>
+			<Property script_name="Scripts.Comun.Login"/>
+			<Property script_id="Scripts.Comun.Login.java"/>
+		</Event>
+		<Event Timestamp="01-Feb-2016 03:26:02.725 PM" Type="Application Start" Headline="Start application [SiebelQA]" Result="INFORMATION">
+			<Property name="SiebelQA"/>
+			<Property line_number="31"/>
+			<Property script_name="Scripts.Comun.Login"/>
+			<Property script_id="Scripts.Comun.Login.java"/>
+			<Property startapp_type="HTML"/>
+			<Property startapp_executable="iexplore"/>
+			<Property startapp_working_directory="http://crmqa.intranet.ice/ecommunications_esn/start.swe?SWECmd=AutoOn"/>
+		</Event>
+		<Event Timestamp="01-Feb-2016 03:26:19.629 PM" Type="Script End" Headline="Script end [Scripts.Comun.Login]" Result="PASS">
+			<Property script_name="Scripts.Comun.Login"/>
+			<Property script_id="Scripts.Comun.Login.java"/>
+		</Event>
+	</Event>
+</TestLog>

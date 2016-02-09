@@ -1,0 +1,5 @@
+DATOS;
+CPCPCurso;NroPedido;null;
+CPCPCurso;Paso1;OK;
+CPCPCurso;Paso2;OK;
+Errores;
