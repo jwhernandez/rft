@@ -13,6 +13,7 @@ import com.rational.test.ft.value.*;
 import com.rational.test.ft.vp.*;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
+ * --Probando que git sirva--
  * Script Name   : <b>AdministrarLOV</b>
  * Description   : Functional Test Script
  * @Param 0) IN Nombre de la LOV 1) IN  Accion Consultar / Setear 
