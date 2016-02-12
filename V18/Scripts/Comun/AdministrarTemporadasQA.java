@@ -21,6 +21,7 @@ import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
  * @since  2016/01/15
  * @author Sandra
  * Precond Estar dentro de Siebel en cualquier pantalla
+ * commmment pbas
  */
 public class AdministrarTemporadasQA extends AdministrarTemporadasQAHelper
 {
