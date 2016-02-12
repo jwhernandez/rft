@@ -27,7 +27,7 @@ public class AdministrarTemporadasQA extends AdministrarTemporadasQAHelper
 {
 	public void testMain(Object[] argu) throws RationalTestException
 	{
-		argu[2] = "NOK";
+		66argu[2] = "NOK";
 		argu[3] = "NA";
 		
 		Pestañas().gotoScreen("Products Screen");
