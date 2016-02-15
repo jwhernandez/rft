@@ -1,7 +1,0 @@
-DATOS;
-CP12;NroPedido;null;
-CP12;Paso1;NE;
-CP12;Paso2;NE;
-CP12;Paso3;OK;
-CP12;Paso4;OK;
-Errores;

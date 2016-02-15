@@ -1,8 +1,0 @@
-DATOS;
-CPCPCurso;NroPedido;null;
-CPCPCurso;NroPedido;1-1790719510;
-CPCPCurso;Paso1;OK;
-CPCPCurso;Paso2;OK;
-CPCPCurso;Paso3;OK;
-Errores;
-CPCPCurso;Error en script: Scripts.PasosFunc.fNuevoCambioPlan;CP no encontro plan destino;

@@ -1,3 +1,0 @@
-DATOS;
-CPCPCurso;Paso1;OK;
-Errores;

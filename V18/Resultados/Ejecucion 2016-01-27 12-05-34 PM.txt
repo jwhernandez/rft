@@ -1,8 +1,0 @@
-DATOS;
-CPCPCurso;NroPedido;null;
-CPCPCurso;NroPedido;1-1720088668;
-CPCPCurso;Paso1;OK;
-CPCPCurso;Paso2;OK;
-CPCPCurso;Paso3;OK;
-CPCPCurso;Paso4;OK;
-Errores;
