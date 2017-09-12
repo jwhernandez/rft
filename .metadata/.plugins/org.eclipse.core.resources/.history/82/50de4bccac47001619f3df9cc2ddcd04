@@ -1,0 +1,41 @@
+/**
+ * 
+ */
+package libreria;
+/**
+ * @author Fernanda
+ *
+ */
+import javax.swing.JLabel;
+import javax.swing.JFrame;
+import javax.swing.*;
+
+import libreria.GUI.Script1;
+
+public class Interfaz {
+	
+	private JLabel texto1, texto2;
+	
+	public Interfaz () {
+	setLayout(null);s	texto1=new JLabel("¡Hola Mundo!");
+	texto2=new JLabel("www.geekytheory.com");
+	texto1.setBounds(100,100,200,40);
+	texto2.setBounds(70,140,200,40);
+	add(texto1);
+	add(texto2);
+
+	}
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Apéndice de método generado automáticamente
+		Interfaz ventana=new Interfaz();
+		ventana.setBounds(500,250,300,250);
+		ventana.setVisible(true);
+		ventana.setResizable(false);
+
+	}
+
+}

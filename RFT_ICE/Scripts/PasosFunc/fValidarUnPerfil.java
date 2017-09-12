@@ -16,12 +16,13 @@ import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
  * Script Name   : <b>fValidarUnPerfil</b>
  * Description   : Functional Test Script
  * @since  2015/12/28
- * @author Sandra
+ * @author SS
  */
 public class fValidarUnPerfil extends fValidarUnPerfilHelper
 {
 	public void testMain(Object[] args) 
 	{
+		ImpreEncabezadoScript(getScriptArgs(), getScriptName( ).toString());
 		// ValidarUnPerfil
 		String[] Perfil;
 		Perfil = new String[2];

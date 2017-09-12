@@ -7,7 +7,7 @@
 // file will be lost when automatically updated.
 
 package resources.Scripts.PasosFunc;
-
+import libreria.Accion;
 import com.rational.test.ft.object.interfaces.*;
 import com.rational.test.ft.object.interfaces.SAP.*;
 import com.rational.test.ft.object.interfaces.WPF.*;
@@ -20,14 +20,14 @@ import com.rational.test.ft.vp.IFtVerificationPoint;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
  * Script Name   : <b>fTerminalCliente</b><br>
- * Generated     : <b>2015/12/23 17:06:58</b><br>
+ * Generated     : <b>2016/11/08 11:54:57 AM</b><br>
  * Description   : Helper class for script<br>
  * Original Host : Windows 7 x86 6.1 <br>
  * 
- * @since  diciembre 23, 2015
- * @author Sandra
+ * @since  noviembre 08, 2016
+ * @author rft
  */
-public abstract class fTerminalClienteHelper extends RationalTestScript
+public abstract class fTerminalClienteHelper extends libreria.Accion
 {
 	
 

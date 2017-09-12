@@ -1,0 +1,56 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: CP76_CD1 Desde paso: 0 Modo:Real
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatosEntrada'                                                  'OK'                          
+'Paso    0  -  GrabarDatosSalida'                                                 'OK'                          
+'Paso    1  -  fLogin'                                                            'OK'                          
+'Paso    2  -  fVista360'                                                         'OK'                          
+'Paso    3  -  fNuevaVenta'                                                       'OK'                          
+'Paso    4  -  fBuscarPedidoVenta'                                                'NE'                          
+'Paso    5  -  fObtenerMorosidad'                                                 'OK'                          
+'Paso    6  -  fIngresarAutenticacion'                                            'OK'                          
+'Paso    7  -  fCompraPlanCategoriaCatalogo'                                      'OK'                          
+'Paso    8  -  fIngresarSIM'                                                      'OK'                          
+'Paso    9  -  fGenerarCtaFact'                                                   'OK'                          
+'Paso   10  -  fSeleccionarTerminal'                                              'OK'                          
+'Paso   11  -  fValorarTodo'                                                      'OK'                          
+
+
+Informe de DATOS de salida
+-----------------------------------------------------------------------------------------
+'Paso    0  -  CasosPrueba'                        'Usuario Alternativo '         'JVALERIO1'                   
+'Paso    0  -  CasosPrueba'                        'Clave Alternativa '           'jvalerio1'                   
+'Paso    3  -  GrabarDatosSalida'                  'T1_NroPedido'                 '1-1730266792'                
+'Paso    3  -  fNuevaVenta'                        'NroPedido'                    '1-1730266792'                
+
+
+Informe de Bugs
+-----------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------
+Tipo Parada         = Excepción en Método
+Mensaje de Parada   = Script=IngresarIMEI Línea=169 Método=SetText Error=
+SetText(" "); Error:(-1022) - System error. Debug info: Failed to execute method id 16 with args (( )). Reason: Blocked. Clase=com.rational.test.ft.Domain.Siebel.SiebelMethodExecutionFailureException Objeto=siebel.SiebTextAreaTestObject(Name: Descripcion, Map: Description)
+Parada en paso	    = 12
+
+
+-----------------------------------------------------------------------------------------
+Fin del Informe del Caso Prueba_Conj Datos: CP76_CD1
+-----------------------------------------------------------------------------------------
+
+
+Informe de Errores imprevistos de sistema
+-----------------------------------------------------------------------------------------
+'Paso   12  -  Accion'                             'Excepción en Método'          'Script=IngresarIMEI Línea=169 Método=SetText Error=
+SetText(" "); Error:(-1022) - System error. Debug info: Failed to execute method id 16 with args (( )). Reason: Blocked. Clase=com.rational.test.ft.Domain.Siebel.SiebelMethodExecutionFailureException Objeto=siebel.SiebTextAreaTestObject(Name: Descripcion, Map: Description)'
+
+'Paso   12  -  Accion'                             'Excepción no esperada'        'Script=IngresarIMEI Línea=0 Error=
+SetText(" "); Error:(-1022) - System error. Debug info: Failed to execute method id 16 with args (( )). Reason: Blocked.'
+
+'Paso   12  -  Accion'                             'Excepción no esperada'        'Script=fIngresarIMEI Línea=0 Error=CRFCN0018E: The 169 line of the 169 script contains an exception.'
+

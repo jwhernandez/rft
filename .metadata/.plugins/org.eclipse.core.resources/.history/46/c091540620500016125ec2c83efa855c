@@ -1,0 +1,106 @@
+package GUI;
+
+import javax.swing.*;
+import java.awt.*;
+
+public class CP12 extends JMenuBar{
+
+	private JLabel nroCuentaL,planL,SimActivoL ,IMEINuevoL, nroServicioL, IdentificacionL,IMEICoL;
+	private JTextField nroCuentaTF, planTF, SimAcTF, IMEINuTF, nroServicioTF, IdentificacionTF,IMEICoTF;
+	public CP12()
+	{
+	      JFrame frame = new JFrame();
+	      frame.setTitle("Automatizacion de Pruebas Regresivas");
+	      frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	      frame.pack(  );
+	      frame.setSize(600, 600);
+	      frame.setVisible(true);
+		  JPanel panelLabel  = new JPanel();
+	      JPanel panelTF  = new JPanel();
+	      JPanel panelIntegracion  = new JPanel();
+	      JPanel panelab  = new JPanel();
+	      JPanel panelex = new JPanel();
+	      JButton boton1 = new JButton();
+	      JButton boton2 = new JButton();
+	      
+          frame.setLayout(new FlowLayout());      
+	      frame.setResizable(false);
+	      
+	      
+	    // nroCuentaL,planL,SimActivoL ,IMEINuevoL, nroServicioL, IdentificacionL,planL,IMEICoL;
+	      
+	      //INSTANCIAS DE LABELS
+	      nroCuentaL = new JLabel();
+	      nroCuentaL.setText("Numero de cuenta");
+	      planL = new JLabel();
+	      planL.setText("Plan");
+	      SimActivoL = new JLabel();
+	      SimActivoL.setText("SIM Activo");
+	      IMEINuevoL = new JLabel();
+	      IMEINuevoL.setText("IMEI:");
+	      nroServicioL = new JLabel();
+	      nroServicioL.setText("Nuemero de Servicio");      
+	      IdentificacionL = new JLabel();
+	      IdentificacionL.setText("Identificacion");     
+	      IMEICoL = new JLabel();
+	      IMEICoL.setText("IMEI:");
+
+	      //INSTANCIAS DE TEXTFIELD
+	      nroCuentaTF = new JTextField();
+	      planTF = new JTextField();
+	      SimAcTF = new JTextField();
+	      IMEINuTF = new JTextField();
+	      nroServicioTF = new JTextField();   
+	      IdentificacionTF = new JTextField();
+	      IMEICoTF = new JTextField();
+	      
+	      //AGREGAR LOS LABELS AL PANEL
+	      panelLabel.setLayout(new GridLayout(7,0));
+	      panelLabel.add(nroCuentaL);
+	      panelLabel.add(planL);
+	      panelLabel.add(SimActivoL);
+	      panelLabel.add(IMEINuevoL);
+	      panelLabel.add(nroServicioL);
+	      panelLabel.add(IdentificacionL);
+	      panelLabel.add(IMEICoL);
+	    
+	      //AGREGAR LOS TEXTFIELD AL PANEL
+	      panelTF.setLayout(new GridLayout(7,0));
+	      panelTF.add(nroCuentaTF);
+	      panelTF.add(planTF);
+	      panelTF.add(SimAcTF);
+	      panelTF.add(IMEINuTF);
+	      panelTF.add(nroServicioTF);
+	      panelTF.add(IdentificacionTF);  
+	      panelTF.add(IMEICoTF);
+	     
+	      //AGREGAR AMBOS PANELES PARA DISTRIBUIRLO EN COLUMNAS
+	      panelIntegracion.setLayout(new GridLayout(1,1));
+	      panelIntegracion.setPreferredSize(new Dimension(500,400));
+	      panelIntegracion.add(panelLabel);
+	      panelIntegracion.add(panelTF);
+	                
+	      //AGREGAR EL PANEL DE BOTONES
+	      boton1.setText("Ejecutar");
+	      boton2.setText("Cancelar");
+	      panelab.setLayout(new FlowLayout());
+	      panelab.setPreferredSize(new Dimension(200,100));
+	      panelab.add(boton1);
+	      panelab.add(boton2);
+	      
+	      //AGREGAR LOS PANELES FINALES
+	      panelex.setLayout(new GridLayout(2,0));
+	      panelex.add(panelIntegracion);
+	      panelex.add(panelab);
+	     
+	      //AGREGAR EL PANEL AL FRAME
+	      frame.add(panelex);
+	      
+	}
+	 
+	
+	public static void main(String[] args)  
+	{
+		CP12 caso5 = new CP12();
+	}	
+}

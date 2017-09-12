@@ -1,0 +1,31 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: GRAL_CD2 Desde paso: A Modo:Real
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+---------------------------
+
+
+Informe de DATOS de salida
+---------------------------
+
+
+Informe de Bugs
+-----------------
+
+
+Informe de Errores imprevistos de sistema
+------------------------------------------------
+GRAL_CD2;Mensaje UE;Script=Comun.IngresarDataPoolPasos Línea=0 Error=No se ha podido generar el XML: C:\Users\Sandra\IBM\rationalsdp\workspace\RFT_ICE\Datos\DP_Pasos.rftdp. Razón: No se ha podido crear archivo: C:\Users\Sandra\IBM\rationalsdp\workspace\RFT_ICE\Datos\DP_Pasos.rftdp
+¿Ha [Sandra] tiene privilegios de modificación para este archivo? .
+ No se pudo completar la grabación del script de prueba.;
+
+
+----------------------------------------------------------------------------------------------------------
+Tipo Parada:UnhandledException - Mensaje de Parada: Script=Comun.IngresarDataPoolPasos Línea=0 Error=No se ha podido generar el XML: C:\Users\Sandra\IBM\rationalsdp\workspace\RFT_ICE\Datos\DP_Pasos.rftdp. Razón: No se ha podido crear archivo: C:\Users\Sandra\IBM\rationalsdp\workspace\RFT_ICE\Datos\DP_Pasos.rftdp
+¿Ha [Sandra] tiene privilegios de modificación para este archivo? .
+ No se pudo completar la grabación del script de prueba.
+- Fin del Informe del Caso Prueba_Conj Datos: GRAL_CD2
+----------------------------------------------------------------------------------------------------------

@@ -1,0 +1,146 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: CPXX_CD1 Desde paso: 87 Modo:Real
+Modulo desde Paso : 1 Hasta paso: 200
+Hora de Inicio de la Ejecucion : 2017/09/05 15:03:18
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatosEntrada'                                                  'OK'                          
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'                                         'OK'                          
+'Paso    0  -  LeerDatosSalida'                                                   'OK'                          
+'Paso    1  -  fLogin'                                                            'OK'                          
+'Paso    2  -  fLeerVariableCondicionanteDP'                                      'NE'                          
+'Paso    3  -  fLeerVariableCondicionanteDP'                                      'NE'                          
+'Paso    4  -  fVista360'                                                         'NE'                          
+'Paso    5  -  fBuscarActivo'                                                     'NE'                          
+'Paso    6  -  fNuevoCambioPlan'                                                  'NE'                          
+'Paso    7  -  fBuscarPedidoVenta'                                                'NE'                          
+'Paso    8  -  fValidarAgencia'                                                   'NE'                          
+'Paso    9  -  fIngresarAutenticacion'                                            'NE'                          
+'Paso   10  -  fBuscarProducto'                                                   'NE'                          
+'Paso   11  -  fValidarAccion'                                                    'NE'                          
+'Paso   12  -  fBuscarProducto'                                                   'NE'                          
+'Paso   13  -  fValidarAccion'                                                    'NE'                          
+'Paso   14  -  fValidarCapturarAccionProd'                                        'NE'                          
+'Paso   15  -  fAgregarContacto_RepLegal'                                         'NE'                          
+'Paso   16  -  fBuscarProducto'                                                   'NE'                          
+'Paso   17  -  fTerminalCliente'                                                  'NE'                          
+'Paso   18  -  fSeleccionarTerminal'                                              'NE'                          
+'Paso   19  -  fIngresarIMEI'                                                     'NE'                          
+'Paso   20  -  fIngresarIMEI'                                                     'NE'                          
+'Paso   21  -  fIngresarIMEI'                                                     'NE'                          
+'Paso   22  -  fValorarTodo'                                                      'NE'                          
+'Paso   23  -  fBuscarProducto'                                                   'NE'                          
+'Paso   24  -  fExpandiryBuscar'                                                  'NE'                          
+'Paso   25  -  fCheckPagoFact'                                                    'NE'                          
+'Paso   26  -  fCrearRED'                                                         'NE'                          
+'Paso   27  -  fEsperaEstadoRED'                                                  'NE'                          
+'Paso   28  -  fVEP_Login'                                                        'NE'                          
+'Paso   29  -  fVEP_PagarREDNew'                                                  'NE'                          
+'Paso   30  -  fVEP_Logout'                                                       'NE'                          
+'Paso   31  -  fEsperaEstado'                                                     'NE'                          
+'Paso   32  -  fEnviarPedido'                                                     'NE'                          
+'Paso   33  -  fEsperaEstado'                                                     'NE'                          
+'Paso   34  -  fATV_Login'                                                        'NE'                          
+'Paso   35  -  fATV_BuscarTerminal_Plan'                                          'NE'                          
+'Paso   36  -  fConsultaREDporIDREDATV'                                           'NE'                          
+'Paso   37  -  fATV_Logout'                                                       'NE'                          
+'Paso   38  -  fVEP_Login'                                                        'NE'                          
+'Paso   39  -  fVEP_PagarRED'                                                     'NE'                          
+'Paso   40  -  fVEP_Logout'                                                       'NE'                          
+'Paso   41  -  fNuevoTramite'                                                     'NE'                          
+'Paso   42  -  fVista360'                                                         'NE'                          
+'Paso   43  -  fBuscarActivo'                                                     'NE'                          
+'Paso   44  -  fBuscarCtaFact'                                                    'NE'                          
+'Paso   45  -  fNuevaPostvta'                                                     'NE'                          
+'Paso   46  -  fBuscarPedidoVenta'                                                'NE'                          
+'Paso   47  -  fPersonalizarFavoritoNew'                                          'NE'                          
+'Paso   48  -  fCrearLE'                                                          'NE'                          
+'Paso   49  -  fAgregarNum_a_LE'                                                  'NE'                          
+'Paso   50  -  fBuscarProducto'                                                   'NE'                          
+'Paso   51  -  fExpandiryBuscar'                                                  'NE'                          
+'Paso   52  -  fExpandiryBuscar'                                                  'NE'                          
+'Paso   53  -  fExpandiryBuscar'                                                  'NE'                          
+'Paso   54  -  fAsociarListaEspecial'                                             'NE'                          
+'Paso   55  -  fIngresarAutenticacion'                                            'NE'                          
+'Paso   56  -  fValorarTodo'                                                      'NE'                          
+'Paso   57  -  fEnviarPedido'                                                     'NE'                          
+'Paso   58  -  fEsperaEstado'                                                     'NE'                          
+'Paso   59  -  fNuevoTramite'                                                     'NE'                          
+'Paso   60  -  fLeerVariableCondicionanteDP'                                      'NE'                          
+'Paso   61  -  fLeerVariableCondicionanteDP'                                      'NE'                          
+'Paso   62  -  fVista360'                                                         'NE'                          
+'Paso   63  -  fBuscarActivo'                                                     'NE'                          
+'Paso   64  -  fNuevoCambioPlan'                                                  'NE'                          
+'Paso   65  -  fBuscarPedidoVenta'                                                'NE'                          
+'Paso   66  -  fValidarAgencia'                                                   'NE'                          
+'Paso   67  -  fIngresarAutenticacion'                                            'NE'                          
+'Paso   68  -  fBuscarProducto'                                                   'NE'                          
+'Paso   69  -  fValidarAccion'                                                    'NE'                          
+'Paso   70  -  fBuscarProducto'                                                   'NE'                          
+'Paso   71  -  fValidarAccion'                                                    'NE'                          
+'Paso   72  -  fValidarCapturarAccionProd'                                        'NE'                          
+'Paso   73  -  fAgregarContacto_RepLegal'                                         'NE'                          
+'Paso   74  -  fBuscarProducto'                                                   'NE'                          
+'Paso   75  -  fTerminalCliente'                                                  'NE'                          
+'Paso   76  -  fSeleccionarTerminal'                                              'NE'                          
+'Paso   77  -  fIngresarIMEI'                                                     'NE'                          
+'Paso   78  -  fIngresarIMEI'                                                     'NE'                          
+'Paso   79  -  fIngresarIMEI'                                                     'NE'                          
+'Paso   80  -  fValorarTodo'                                                      'NE'                          
+'Paso   81  -  fBuscarProducto'                                                   'NE'                          
+'Paso   82  -  fExpandiryBuscar'                                                  'NE'                          
+'Paso   83  -  fCheckPagoFact'                                                    'NE'                          
+'Paso   84  -  fCrearRED'                                                         'NE'                          
+'Paso   85  -  fEsperaEstadoRED'                                                  'NE'                          
+'Paso   86  -  fVEP_Login'                                                        'NE'                          
+'Paso   87  -  fEvaluarExpresionCondicionante'                                    'OK'                          
+'Paso   87  -  fVEP_PagarREDNew'                                                  'OK'                          
+'Paso   88  -  fEvaluarExpresionCondicionante'                                    'OK'                          
+'Paso   88  -  fVEP_Logout'                                                       'OK'                          
+'Paso   89  -  fEvaluarExpresionCondicionante'                                    'OK'                          
+'Paso   89  -  fEsperaEstado'                                                     'OK'                          
+'Paso   90  -  fEnviarPedido'                                                     'OK'                          
+'Paso   91  -  fEsperaEstado'                                                     'OK'                          
+
+
+Informe de DATOS de salida
+-----------------------------------------------------------------------------------------
+'Paso    0  -  CasosPrueba'                        'Usuario Alternativo '         'JVALERIO1'                   
+'Paso    0  -  CasosPrueba'                        'Clave Alternativa '           'jvalerio1'                   
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoPasoOK'                 '86'                          
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoTramite'                '3'                           
+'Paso    0  -  LeerDatosSalida'                    'T3_NroPedido'                 '1-1776439006'                
+'Paso    0  -  LeerDatosSalida'                    'T3_NroPedidoAnt'              '1-1776425680'                
+'Paso    0  -  LeerDatosSalida'                    'T3_NroPedidoAntAnt'           '1-1776374764'                
+'Paso    0  -  LeerDatosSalida'                    'NroServicio'                  '89846777'                    
+'Paso    0  -  LeerDatosSalida'                    'T3_NroRED'                    '9162930'                     
+'Paso   87  -  fVEP_PagarREDNew'                   'Expresion'                    'true'                        
+'Paso   88  -  fVEP_Logout'                        'Expresion'                    'true'                        
+'Paso   89  -  fEsperaEstado'                      'Expresion'                    'true'                        
+
+
+Informe de Bugs
+-----------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------
+Tipo Parada         = Excepción no esperada
+Mensaje de Parada   = Script=CasosPrueba Línea=0 Error=null
+Parada en paso	    = 92
+
+
+-----------------------------------------------------------------------------------------
+Fin del Informe del Caso Prueba_Conj Datos: CPXX_CD1
+-----------------------------------------------------------------------------------------
+
+
+Informe de Errores imprevistos de sistema
+-----------------------------------------------------------------------------------------
+'Paso   92  -  Accion'                             'Excepción no esperada'        'Script=CasosPrueba Línea=0 Error=null'
+
+
+Hora de Finalizacion de la Ejecucion: 2017/09/05 15:15:17
+-----------------------------------------------------------------------------------------

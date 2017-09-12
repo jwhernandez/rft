@@ -7,7 +7,7 @@
 // file will be lost when automatically updated.
 
 package resources.Scripts.Comun;
-
+import libreria.Accion;
 import com.rational.test.ft.object.interfaces.*;
 import com.rational.test.ft.object.interfaces.SAP.*;
 import com.rational.test.ft.object.interfaces.WPF.*;
@@ -20,59 +20,59 @@ import com.rational.test.ft.vp.IFtVerificationPoint;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
  * Script Name   : <b>PagarRED</b><br>
- * Generated     : <b>2015/12/16 11:30:27</b><br>
+ * Generated     : <b>2016/02/16 08:29:45</b><br>
  * Description   : Helper class for script<br>
  * Original Host : Windows 7 x86 6.1 <br>
  * 
- * @since  diciembre 16, 2015
+ * @since  febrero 16, 2016
  * @author Sandra
  */
-public abstract class PagarREDHelper extends RationalTestScript
+public abstract class PagarREDHelper extends libreria.Accion
 {
 	/**
-	 * ICEEstadoRED: with default state.
+	 * EstadoPedido: with default state.
 	 *		ClassName : SiebPicklist
 	 * 		.class : SiebPicklist
-	 * 		RepositoryName : ICEEstadoRED
+	 * 		RepositoryName : Status
 	 */
-	protected SiebPicklistTestObject EstadoPedidoAdmin() 
+	protected SiebPicklistTestObject EstadoPedido() 
 	{
 		return new SiebPicklistTestObject(
-                        getMappedTestObject("EstadoPedidoAdmin"));
+                        getMappedTestObject("EstadoPedido"));
 	}
 	/**
-	 * ICEEstadoRED: with specific test context and state.
+	 * EstadoPedido: with specific test context and state.
 	 *		ClassName : SiebPicklist
 	 * 		.class : SiebPicklist
-	 * 		RepositoryName : ICEEstadoRED
+	 * 		RepositoryName : Status
 	 */
-	protected SiebPicklistTestObject EstadoPedidoAdmin(TestObject anchor, long flags) 
+	protected SiebPicklistTestObject EstadoPedido(TestObject anchor, long flags) 
 	{
 		return new SiebPicklistTestObject(
-                        getMappedTestObject("EstadoPedidoAdmin"), anchor, flags);
+                        getMappedTestObject("EstadoPedido"), anchor, flags);
 	}
 	
 	/**
-	 * Status: with default state.
+	 * EstadoRED: with default state.
 	 *		ClassName : SiebPicklist
 	 * 		.class : SiebPicklist
-	 * 		RepositoryName : Status
+	 * 		RepositoryName : ICEEstadoRED
 	 */
-	protected SiebPicklistTestObject EstadoREDAdmin() 
+	protected SiebPicklistTestObject EstadoRED() 
 	{
 		return new SiebPicklistTestObject(
-                        getMappedTestObject("EstadoREDAdmin"));
+                        getMappedTestObject("EstadoRED"));
 	}
 	/**
-	 * Status: with specific test context and state.
+	 * EstadoRED: with specific test context and state.
 	 *		ClassName : SiebPicklist
 	 * 		.class : SiebPicklist
-	 * 		RepositoryName : Status
+	 * 		RepositoryName : ICEEstadoRED
 	 */
-	protected SiebPicklistTestObject EstadoREDAdmin(TestObject anchor, long flags) 
+	protected SiebPicklistTestObject EstadoRED(TestObject anchor, long flags) 
 	{
 		return new SiebPicklistTestObject(
-                        getMappedTestObject("EstadoREDAdmin"), anchor, flags);
+                        getMappedTestObject("EstadoRED"), anchor, flags);
 	}
 	
 	/**
@@ -99,29 +99,6 @@ public abstract class PagarREDHelper extends RationalTestScript
 	}
 	
 	/**
-	 * ICEMontoRED: with default state.
-	 *		ClassName : SiebCalculator
-	 * 		.class : SiebCalculator
-	 * 		RepositoryName : ICEMontoRED
-	 */
-	protected SiebCalculatorTestObject MontoREDAdmin() 
-	{
-		return new SiebCalculatorTestObject(
-                        getMappedTestObject("MontoREDAdmin"));
-	}
-	/**
-	 * ICEMontoRED: with specific test context and state.
-	 *		ClassName : SiebCalculator
-	 * 		.class : SiebCalculator
-	 * 		RepositoryName : ICEMontoRED
-	 */
-	protected SiebCalculatorTestObject MontoREDAdmin(TestObject anchor, long flags) 
-	{
-		return new SiebCalculatorTestObject(
-                        getMappedTestObject("MontoREDAdmin"), anchor, flags);
-	}
-	
-	/**
 	 * NewQuery: with default state.
 	 *		ClassName : SiebButton
 	 * 		.class : SiebButton
@@ -145,7 +122,30 @@ public abstract class PagarREDHelper extends RationalTestScript
 	}
 	
 	/**
-	 * OrderNumber: with default state.
+	 * NroPedido: with default state.
+	 *		ClassName : SiebText
+	 * 		.class : SiebText
+	 * 		RepositoryName : OrderNumber
+	 */
+	protected SiebTextTestObject NroPedido() 
+	{
+		return new SiebTextTestObject(
+                        getMappedTestObject("NroPedido"));
+	}
+	/**
+	 * NroPedido: with specific test context and state.
+	 *		ClassName : SiebText
+	 * 		.class : SiebText
+	 * 		RepositoryName : OrderNumber
+	 */
+	protected SiebTextTestObject NroPedido(TestObject anchor, long flags) 
+	{
+		return new SiebTextTestObject(
+                        getMappedTestObject("NroPedido"), anchor, flags);
+	}
+	
+	/**
+	 * NroPedidoAdmin: with default state.
 	 *		ClassName : SiebText
 	 * 		.class : SiebText
 	 * 		RepositoryName : OrderNumber
@@ -156,7 +156,7 @@ public abstract class PagarREDHelper extends RationalTestScript
                         getMappedTestObject("NroPedidoAdmin"));
 	}
 	/**
-	 * OrderNumber: with specific test context and state.
+	 * NroPedidoAdmin: with specific test context and state.
 	 *		ClassName : SiebText
 	 * 		.class : SiebText
 	 * 		RepositoryName : OrderNumber
@@ -168,72 +168,95 @@ public abstract class PagarREDHelper extends RationalTestScript
 	}
 	
 	/**
-	 * ICERecipientNumber: with default state.
+	 * NroRED: with default state.
 	 *		ClassName : SiebText
 	 * 		.class : SiebText
 	 * 		RepositoryName : ICE Recipient Number
 	 */
-	protected SiebTextTestObject NroREDAdmin() 
+	protected SiebTextTestObject NroRED() 
 	{
 		return new SiebTextTestObject(
-                        getMappedTestObject("NroREDAdmin"));
+                        getMappedTestObject("NroRED"));
 	}
 	/**
-	 * ICERecipientNumber: with specific test context and state.
+	 * NroRED: with specific test context and state.
 	 *		ClassName : SiebText
 	 * 		.class : SiebText
 	 * 		RepositoryName : ICE Recipient Number
 	 */
-	protected SiebTextTestObject NroREDAdmin(TestObject anchor, long flags) 
+	protected SiebTextTestObject NroRED(TestObject anchor, long flags) 
 	{
 		return new SiebTextTestObject(
-                        getMappedTestObject("NroREDAdmin"), anchor, flags);
+                        getMappedTestObject("NroRED"), anchor, flags);
 	}
 	
 	/**
-	 * SiebPageTabs: with default state.
+	 * PestañasPedido: with default state.
 	 *		ClassName : SiebPageTabs
 	 * 		.class : SiebPageTabs
 	 * 		RepositoryName : SiebPageTabs
 	 */
-	protected SiebPageTabsTestObject PestanasPedido() 
+	protected SiebPageTabsTestObject PestañasPedido() 
 	{
 		return new SiebPageTabsTestObject(
-                        getMappedTestObject("PestanasPedido"));
+                        getMappedTestObject("PestañasPedido"));
 	}
 	/**
-	 * SiebPageTabs: with specific test context and state.
+	 * PestañasPedido: with specific test context and state.
 	 *		ClassName : SiebPageTabs
 	 * 		.class : SiebPageTabs
 	 * 		RepositoryName : SiebPageTabs
 	 */
-	protected SiebPageTabsTestObject PestanasPedido(TestObject anchor, long flags) 
+	protected SiebPageTabsTestObject PestañasPedido(TestObject anchor, long flags) 
 	{
 		return new SiebPageTabsTestObject(
-                        getMappedTestObject("PestanasPedido"), anchor, flags);
+                        getMappedTestObject("PestañasPedido"), anchor, flags);
 	}
 	
 	/**
-	 * OrderNumber: with default state.
-	 *		ClassName : SiebText
-	 * 		.class : SiebText
-	 * 		RepositoryName : OrderNumber
+	 * Total: with default state.
+	 *		ClassName : SiebCurrency
+	 * 		.class : SiebCurrency
+	 * 		RepositoryName : Total
 	 */
-	protected SiebTextTestObject text_orderNumber() 
+	protected SiebCurrencyTestObject Total() 
 	{
-		return new SiebTextTestObject(
-                        getMappedTestObject("text_orderNumber"));
+		return new SiebCurrencyTestObject(
+                        getMappedTestObject("Total"));
 	}
 	/**
-	 * OrderNumber: with specific test context and state.
-	 *		ClassName : SiebText
-	 * 		.class : SiebText
-	 * 		RepositoryName : OrderNumber
+	 * Total: with specific test context and state.
+	 *		ClassName : SiebCurrency
+	 * 		.class : SiebCurrency
+	 * 		RepositoryName : Total
 	 */
-	protected SiebTextTestObject text_orderNumber(TestObject anchor, long flags) 
+	protected SiebCurrencyTestObject Total(TestObject anchor, long flags) 
 	{
-		return new SiebTextTestObject(
-                        getMappedTestObject("text_orderNumber"), anchor, flags);
+		return new SiebCurrencyTestObject(
+                        getMappedTestObject("Total"), anchor, flags);
+	}
+	
+	/**
+	 * TotalAdmin: with default state.
+	 *		ClassName : SiebCalculator
+	 * 		.class : SiebCalculator
+	 * 		RepositoryName : ICEMontoRED
+	 */
+	protected SiebCalculatorTestObject TotalAdmin() 
+	{
+		return new SiebCalculatorTestObject(
+                        getMappedTestObject("TotalAdmin"));
+	}
+	/**
+	 * TotalAdmin: with specific test context and state.
+	 *		ClassName : SiebCalculator
+	 * 		.class : SiebCalculator
+	 * 		RepositoryName : ICEMontoRED
+	 */
+	protected SiebCalculatorTestObject TotalAdmin(TestObject anchor, long flags) 
+	{
+		return new SiebCalculatorTestObject(
+                        getMappedTestObject("TotalAdmin"), anchor, flags);
 	}
 	
 	

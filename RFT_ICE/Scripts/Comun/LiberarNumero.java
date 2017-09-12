@@ -23,6 +23,7 @@ public class LiberarNumero extends LiberarNumeroHelper
 {
 	public void testMain(Object[] argu) 
 	{
+		ImpreEncabezadoScript(getScriptArgs(), getScriptName( ).toString());
 		String[] Producto;
 		Producto = new String[4];
 		
@@ -72,6 +73,7 @@ public class LiberarNumero extends LiberarNumeroHelper
 				}
 			}
 		}
+		ImpreResultadoScript(getScriptName( ).toString(), argu[1].toString() );
 	}
 }
 

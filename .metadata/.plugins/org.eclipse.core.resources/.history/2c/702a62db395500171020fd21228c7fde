@@ -1,0 +1,46 @@
+package Scripts.Comun;
+import resources.Scripts.Comun.ValidarPedidoVentaHelper;
+
+import com.rational.test.ft.*;
+import com.rational.test.ft.object.interfaces.*;
+import com.rational.test.ft.object.interfaces.SAP.*;
+import com.rational.test.ft.object.interfaces.WPF.*;
+import com.rational.test.ft.object.interfaces.dojo.*;
+import com.rational.test.ft.object.interfaces.siebel.*;
+import com.rational.test.ft.object.interfaces.flex.*;
+import com.rational.test.ft.object.interfaces.generichtmlsubdomain.*;
+import com.rational.test.ft.script.*;
+import com.rational.test.ft.value.*;
+import com.rational.test.ft.vp.*;
+import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
+/**
+ * Script Name   : <b>ValidarPedidoVenta</b>
+ * Generated     : <b>jun. 19, 2017 4:46:43 PM</b>
+ * Description   : FVerifica que en el resumen de la cuenta de facturación en la cuenta cliente NO aparezca el pedido de venta
+ * Original Host : WinNT Version 6.1  Build 7601 (S)
+ * @param 0) OK/NOK 1) Nro de pedido
+ * @since  2017/06/19
+ * @author VC
+ */
+public class ValidarPedidoVenta extends ValidarPedidoVentaHelper
+{
+	
+	public void testMain(Object[] argu) 
+	{
+		ImpreEncabezadoScript(getScriptArgs(), getScriptName( ).toString());
+		String[] Validaciones;
+		Validaciones = new String[4];
+
+		argu[0] = "NOK";
+		try{
+			Consultar().performAction();
+			
+		}catch(Exception e){
+			
+		}
+		
+		
+		ImpreResultadoScript(getScriptName( ).toString(), argu[0].toString());
+	}
+}
+

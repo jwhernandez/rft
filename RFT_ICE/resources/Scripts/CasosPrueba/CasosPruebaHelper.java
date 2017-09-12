@@ -20,12 +20,12 @@ import com.rational.test.ft.vp.IFtVerificationPoint;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
  * Script Name   : <b>CasosPrueba</b><br>
- * Generated     : <b>2016/01/26 11:30:48</b><br>
+ * Generated     : <b>2017/09/11 2:24:02 PM</b><br>
  * Description   : Helper class for script<br>
  * Original Host : Windows 7 x86 6.1 <br>
  * 
- * @since  enero 26, 2016
- * @author Sandra
+ * @since  septiembre 11, 2017
+ * @author rft
  */
 public abstract class CasosPruebaHelper extends libreria.Accion
 {

@@ -7,7 +7,7 @@
 // file will be lost when automatically updated.
 
 package resources.Scripts.Comun;
-
+import libreria.Accion;
 import com.rational.test.ft.object.interfaces.*;
 import com.rational.test.ft.object.interfaces.SAP.*;
 import com.rational.test.ft.object.interfaces.WPF.*;
@@ -20,14 +20,14 @@ import com.rational.test.ft.vp.IFtVerificationPoint;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
  * Script Name   : <b>Informar</b><br>
- * Generated     : <b>2015/12/10 16:09:56</b><br>
+ * Generated     : <b>2016/03/30 08:32:48</b><br>
  * Description   : Helper class for script<br>
  * Original Host : Windows 7 x86 6.1 <br>
  * 
- * @since  diciembre 10, 2015
+ * @since  marzo 30, 2016
  * @author Sandra
  */
-public abstract class InformarHelper extends RationalTestScript
+public abstract class InformarHelper extends libreria.Accion
 {
 	
 

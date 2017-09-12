@@ -20,11 +20,11 @@ import com.rational.test.ft.vp.IFtVerificationPoint;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
  * Script Name   : <b>ValidarCategoria</b><br>
- * Generated     : <b>2016/01/13 09:46:07</b><br>
+ * Generated     : <b>2017/03/15 12:41:39</b><br>
  * Description   : Helper class for script<br>
  * Original Host : Windows 7 x86 6.1 <br>
  * 
- * @since  enero 13, 2016
+ * @since  marzo 15, 2017
  * @author Sandra
  */
 public abstract class ValidarCategoriaHelper extends libreria.Accion
@@ -50,6 +50,29 @@ public abstract class ValidarCategoriaHelper extends libreria.Accion
 	{
 		return new SiebTextTestObject(
                         getMappedTestObject("CatCrediticia"), anchor, flags);
+	}
+	
+	/**
+	 * ICECreditCategory: with default state.
+	 *		ClassName : SiebText
+	 * 		.class : SiebText
+	 * 		RepositoryName : ICE Credit Category
+	 */
+	protected SiebTextTestObject CatCrediticiaPI() 
+	{
+		return new SiebTextTestObject(
+                        getMappedTestObject("CatCrediticiaPI"));
+	}
+	/**
+	 * ICECreditCategory: with specific test context and state.
+	 *		ClassName : SiebText
+	 * 		.class : SiebText
+	 * 		RepositoryName : ICE Credit Category
+	 */
+	protected SiebTextTestObject CatCrediticiaPI(TestObject anchor, long flags) 
+	{
+		return new SiebTextTestObject(
+                        getMappedTestObject("CatCrediticiaPI"), anchor, flags);
 	}
 	
 	

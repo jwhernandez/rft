@@ -1,0 +1,64 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: CPCP_CDX Desde paso: 5 Modo:Real
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatosEntrada'                                                  'OK'                          
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'                                         'OK'                          
+'Paso    0  -  LeerDatosSalida'                                                   'OK'                          
+'Paso    1  -  fLogin'                                                            'OK'                          
+'Paso    2  -  fVista360'                                                         'NE'                          
+'Paso    3  -  fBuscarActivo'                                                     'NE'                          
+'Paso    4  -  fNuevoCambioPlan'                                                  'NE'                          
+'Paso    5  -  fBuscarPedidoVenta'                                                'OK'                          
+'Paso    6  -  fObtenerMorosidad'                                                 'OK'                          
+'Paso    7  -  fIngresarAutenticacion'                                            'OK'                          
+'Paso    8  -  fAgregarContacto_RepLegal'                                         'OK'                          
+
+
+Informe de DATOS de salida
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoPasoOK'                 '4'                           
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoTramite'                '1'                           
+'Paso    0  -  LeerDatosSalida'                    'T1_NroPedido'                 '1-1729157289'                
+
+
+Informe de Bugs
+-----------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------
+Tipo Parada         = Reconocimiento Ambiguo
+Mensaje de Parada   = Menú
+Parada en paso	    = 9
+
+
+-----------------------------------------------------------------------------------------
+Fin del Informe del Caso Prueba_Conj Datos: CPCP_CDX
+-----------------------------------------------------------------------------------------
+
+
+Informe de Errores imprevistos de sistema
+-----------------------------------------------------------------------------------------
+'Paso    9  -  Accion'                             'Reconocimiento Ambiguo'       'TestObjectMethodState {AMBIGUOUS_RECOGNITION,testObjectClassName=GuiTestObject(Nombre: Menu, Correlación: Menu),method=ensureObjectIsVisible,signature=null,args=null}'
+
+'Paso    9  -  Accion'                             'Reconocimiento Ambiguo'       'Menú'                        
+
+'Paso    9  -  Accion'                             'Reconocimiento Ambiguo'       'TestObjectMethodState {AMBIGUOUS_RECOGNITION,testObjectClassName=GuiTestObject(Nombre: Menu, Correlación: Menu),method=ensureObjectIsVisible,signature=null,args=null}'
+
+'Paso    9  -  Accion'                             'Reconocimiento Ambiguo'       'Menú'                        
+
+'Paso    9  -  Accion'                             'Reconocimiento Ambiguo'       'TestObjectMethodState {AMBIGUOUS_RECOGNITION,testObjectClassName=GuiTestObject(Nombre: Menu, Correlación: Menu),method=ensureObjectIsVisible,signature=null,args=null}'
+
+'Paso    9  -  Accion'                             'Excepción en Método'          'Script=BuscarProducto Línea=41 Método=getProperty Error=CRFCP0048E: No se ha encontrado la propiedad .text. 
+La reproducción del script no se puede completar. Clase=com.rational.test.ft.PropertyNotFoundException Objeto=BrowserTestObject(Ref:RemoteProxyReference{testContext:214830004c9e8, objectId:6993, testObjectClass:BrowserTestObject})'
+
+'Paso    9  -  Accion'                             'Excepción no esperada'        'Script=BuscarProducto Línea=0 Error=CRFCP0048E: No se ha encontrado la propiedad .text. 
+La reproducción del script no se puede completar.'
+
+'Paso    9  -  Accion'                             'Excepción no esperada'        'Script=TerminalCliente Línea=0 Error=CRFCN0018E: La línea 41 del script 41 contiene una excepción.'
+
+'Paso    9  -  Accion'                             'Excepción no esperada'        'Script=fTerminalCliente Línea=0 Error=CRFCN0018E: La línea 55 del script 55 contiene una excepción.'
+

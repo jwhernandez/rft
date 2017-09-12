@@ -1,0 +1,36 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: CP32_CD1 Desde paso: A Modo:Real
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatosEntrada'                                                  'OK'                          
+
+
+Informe de DATOS de salida
+-----------------------------------------------------------------------------------------
+
+
+Informe de Bugs
+-----------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------
+Tipo Parada         = Excepción no esperada
+Mensaje de Parada   = Script=LeerDatoSalidaUltPasoEjec Línea=0 Error=Could not read datapool file: [C:\Users\rft\IBM\rationalsdp\workspace\RFT_ICE_USR_CP32\Regresion\QA\_SeguimientoEjecucion.rftdp]. It might be missing or be in a wrong format.
+Parada en paso	    = 0
+
+
+-----------------------------------------------------------------------------------------
+Fin del Informe del Caso Prueba_Conj Datos: CP32_CD1
+-----------------------------------------------------------------------------------------
+
+
+Informe de Errores imprevistos de sistema
+-----------------------------------------------------------------------------------------
+'Paso    0  -  Accion'                             'Excepción no esperada'        'Script=LeerDatoSalidaUltPasoEjec Línea=0 Error=Could not read datapool file: [C:\Users\rft\IBM\rationalsdp\workspace\RFT_ICE_USR_CP32\Regresion\QA\_SeguimientoEjecucion.rftdp]. It might be missing or be in a wrong format.'
+
+
+Hora de Finalizacion de la Ejecucion: 2017/01/27 11:40:48
+-----------------------------------------------------------------------------------------

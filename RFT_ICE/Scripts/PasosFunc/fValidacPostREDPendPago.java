@@ -15,19 +15,23 @@ import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
  * Script Name   : <b>fValidacPostREDPagado</b>
  * Description   : Valida que botón Generar Cta Facturación, Liberar Número,
- * valorar todo y prime número disponible este habilitado
+ * valorar todo y primer número disponible este habilitado
+ * En el caso de Port-In solo valida generar cta fact
  * @Param 0) Numero de caso 1) argumentos que na y 2) Ambiente
  * @since  2015/12/27
- * @author Sandra
+ * @author SS
+ * ult modif 4/4/2017 se agrega el tramite port-in
+ * Param 1 = NA
  */
 public class fValidacPostREDPendPago extends fValidacPostREDPendPagoHelper
 {
 
-	public void testMain(Object[] args) 
+	public void testMain(Object[] args) throws RationalTestException
 	{
+		ImpreEncabezadoScript(getScriptArgs(), getScriptName( ).toString());
 		String[] Validac;
-		Validac = new String[2];
-		// Parámetros	   : 0) Postpago / Prepago 1) OK/NOK 
+		Validac = new String[3];
+		// Parámetros	   : 0) OK/NOK 1) Postpago / Prepago   2) Tramite
 
 		String[] MensError;
 		MensError = new String[4];
@@ -43,10 +47,11 @@ public class fValidacPostREDPendPago extends fValidacPostREDPendPagoHelper
 		 * Validaciones post red pendiente de pago
 		 */
 
-		Validac[0]=dpString("TipoPerfilCorrecto");
+		Validac[1]=dpString("TipoPerfilCorrecto");
+		Validac[2]=dpString("Tramite");
 		callScript("Scripts.Comun.ValidacPostREDPendPago",Validac);
 
-		if  (Validac[1].toString().equals("NOK")){
+		if  (Validac[0].toString().equals("NOK")){
 			MensError[0] = "Validaciones Post RED pendiente de pago con error";
 			//MensError[0] = "xDefecto";
 			MensError[1] = args[3].toString();

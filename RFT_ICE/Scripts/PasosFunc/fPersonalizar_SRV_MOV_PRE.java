@@ -15,18 +15,19 @@ import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
  * Script Name   : <b>fPersonalizar_SRV_MOV_PRE</b>
  * Descripcion   : Selecciona la facilidad indicada en el argumento
- * @Param  0) nombre del caso 1) digito de iteracion en el dp
+ * @Param  0) nombre del caso 1) digito de iteracion en el dp 2) IN Ambiente 3) IN ErrorStop (Si / No)
  * @since  2015/12/27
  * @author SS
  */
 public class fPersonalizar_SRV_MOV_PRE extends fPersonalizar_SRV_MOV_PREHelper
 {
-	public void testMain(Object[] args) 
+	public void testMain(Object[] args) throws RationalTestException
 	{
-
+		ImpreEncabezadoScript(getScriptArgs(), getScriptName( ).toString());
 		String[] Personalizacion;
-		Personalizacion = new String[5];
-		//@Param 0) Alta / Baja 1) Facilidades Telefonia Movil 2) Producto 4) Encontrado  / No Encontrado            
+		Personalizacion = new String[7];
+		//@Param 0) Alta / Baja 1) Facilidades Telefonia Movil 2) Producto 
+		// 3) aun no utilizado 4) Encontrado  / No Encontrado 5)Ambiente 6)Tramite           
 
 		String[] MensError;
 		MensError = new String[4];
@@ -47,10 +48,12 @@ public class fPersonalizar_SRV_MOV_PRE extends fPersonalizar_SRV_MOV_PREHelper
 		Personalizacion[1] = dpString("PROD_Categoria" +i); // Facilidades Telefonia Movil
 		Personalizacion[2] = dpString("PROD"+i); // No Caller Id
 		Personalizacion[3] = "No importa";
+		Personalizacion[5] = args[2].toString();
+		Personalizacion[6] = dpString("Tramite");
 		callScript("Scripts.Comun.Personalizar_SRV_MOV_PRE", Personalizacion);
 		System.out.println(Personalizacion[4]);
 
-		if  (Personalizacion[4].toString().equals("NOK")){
+		if  (Personalizacion[4].toString().equals("No Encontrado")){
 			MensError[0] = "Agregar Facilidad falló";
 			//MensError[0] = "xDefecto";
 			MensError[1] = args[3].toString();

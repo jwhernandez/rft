@@ -22,6 +22,7 @@ public class fValidarEstructuraCP extends fValidarEstructuraCPHelper
 {
 	public void testMain(Object[] args) 
 	{
+		ImpreEncabezadoScript(getScriptArgs(), getScriptName( ).toString());
 		String[] MensError;
 		MensError = new String[4];
 

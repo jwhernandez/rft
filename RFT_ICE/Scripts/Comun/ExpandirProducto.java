@@ -22,6 +22,7 @@ public class ExpandirProducto extends ExpandirProductoHelper
 {
 	public void testMain(Object[] argu)  throws RationalTestException
 	{
+		ImpreEncabezadoScript(getScriptArgs(), getScriptName( ).toString());
 		String[] RecordCount;
 		RecordCount = new String[4];
 		
@@ -77,6 +78,9 @@ public class ExpandirProducto extends ExpandirProductoHelper
 			System.out.println("Subtotal = " + iSubtotal + " Total = " + iTotal );
 			System.out.println("Subtotal < Total" +  (iSubtotal < iTotal) );
 			if (iSubtotal < iTotal) {
+				logWarning("This is a warning", getRootTestObject().getScreenSnapshot()); 
+				logInfo("This is an info message", getRootTestObject().getScreenSnapshot());
+				
 				LineasPedido().nextRowSet();
 				RecordCount[0] = AppletLineasPedido().getProperty("RecordCounter").toString();
 				callScript("Scripts.Comun.RecordCount",RecordCount);
@@ -94,9 +98,10 @@ public class ExpandirProducto extends ExpandirProductoHelper
 			sleep(2);
 		} ;
 
-		logWarning("This is a warning", getRootTestObject().getScreenSnapshot()); // Ver como asegurarse estar en la pantalla correcta
+		logWarning("This is a warning", getRootTestObject().getScreenSnapshot()); 
+		// Ver como asegurarse estar en la pantalla correcta
 		logInfo("This is an info message", getRootTestObject().getScreenSnapshot());
-	}
-
+		ImpreResultadoScript(getScriptName( ).toString(), "Sin parametro de retorno");
+		}
 }
 

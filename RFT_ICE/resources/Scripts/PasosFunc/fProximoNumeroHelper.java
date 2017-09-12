@@ -20,12 +20,12 @@ import com.rational.test.ft.vp.IFtVerificationPoint;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
  * Script Name   : <b>fProximoNumero</b><br>
- * Generated     : <b>2015/12/27 20:22:08</b><br>
+ * Generated     : <b>2016/11/16 10:31:32 AM</b><br>
  * Description   : Helper class for script<br>
  * Original Host : Windows 7 x86 6.1 <br>
  * 
- * @since  diciembre 27, 2015
- * @author Sandra
+ * @since  noviembre 16, 2016
+ * @author rft
  */
 public abstract class fProximoNumeroHelper extends libreria.Accion
 {

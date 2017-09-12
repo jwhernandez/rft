@@ -15,8 +15,8 @@ import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
  * Script Name   : <b>ValidacPostEnvio2</b>
  * Description   : Que SimTech esté inhabilitado, que IMSI este inahabilitado (esto solo en la línea del servicio). 
- * @ Param	0) OK / NOK
- * Precondiciones: estar en el servicio
+ * @ Param	0) OK / NOK 1) Prepago / Postpago
+ * Precondiciones: estar en el pedido
  * @since  2015/12/27
  * @author Sandra
  */
@@ -24,6 +24,30 @@ public class ValidacPostEnvio2 extends ValidacPostEnvio2Helper
 {
 	public void testMain(Object[] argu) 
 	{
+		ImpreEncabezadoScript(getScriptArgs(), getScriptName( ).toString());
+		String[] ProductoObjetivo;
+		ProductoObjetivo = new String[4];
+		// 0) IN Nombre del producto 1) Encontrado/No Encontrado 2)posicion y 3)action code 
+		
+		switch (argu[1].toString()) {
+		case "Prepago":
+			ProductoObjetivo[0]=dpString("ServicioPrepago");
+			System.out.println("Prepago-Servicio");
+			break;
+		case "Postpago":
+			ProductoObjetivo[0]=dpString("ServicioPostpago");
+			System.out.println("Postpago-Servicio");
+			break;
+		default:  
+			System.out.println("Stop");
+			break; 
+		} // end del switch
+		
+		callScript("Scripts.Comun.BuscarProducto",ProductoObjetivo);
+		int iPosicion = Integer.parseInt (ProductoObjetivo[2].toString());
+		
+		LineasPedido().activateRow(iPosicion); 
+
 		argu[0] = "OK";
 
 		//  Chequear que el pedido este en completado
@@ -39,7 +63,7 @@ public class ValidacPostEnvio2 extends ValidacPostEnvio2Helper
 				argu[0] = "NOK";
 			} else {
 				IFtVerificationPoint  SimTechVP;
-				SimTechVP = vpManual("SimTech",false,SIMTech().isEnabled() );
+				SimTechVP = vpManual("SimTech",false,Tecnologia().isEnabled() );
 				if  (!SimTechVP.performTest()){
 					argu[0] = "NOK";
 				} else {
@@ -55,6 +79,7 @@ public class ValidacPostEnvio2 extends ValidacPostEnvio2Helper
 	
 		System.out.println("Resultado de ValidacPostEnvio: " + argu[0]);
 		logInfo("Resultado de ValidacPostEnvio: " + argu[0]);
+		ImpreResultadoScript(getScriptName( ).toString(), argu[0].toString());
 	}
 }
 

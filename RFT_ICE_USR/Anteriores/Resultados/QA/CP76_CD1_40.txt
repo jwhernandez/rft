@@ -1,0 +1,74 @@
+
+---------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: CP76_CD1 Desde paso: 40 Modo:Real
+---------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+---------------------------
+CP76_CD1_T1;LeerDatosEntrada;OK;
+CP76_CD1_T1;LeerDatoSalidaUltPasoEjec;OK;
+CP76_CD1_T1;LeerDatosSalida;OK;
+CP76_CD1_T1;Paso1:fLogin;NE;
+CP76_CD1_T1;Paso2:fLoginIf;OK;
+CP76_CD1_T1;Paso3:fVista360;NE;
+CP76_CD1_T1;Paso4:fValidarPerfilFactCuenta;NE;
+CP76_CD1_T1;Paso5:fCrearPerfilFacCuenta;NE;
+CP76_CD1_T1;Paso6:fNuevaVenta;NE;
+CP76_CD1_T1;Paso7:fBuscarPedidoVenta;NE;
+CP76_CD1_T1;Paso8:fObtenerMorosidad;NE;
+CP76_CD1_T1;Paso9:fIngresarAutenticacion;NE;
+CP76_CD1_T1;Paso10:fCompraPlanCatalogo;NE;
+CP76_CD1_T1;Paso11:fIngresarSIM;NE;
+CP76_CD1_T1;Paso12:fGenerarCtaFact;NE;
+CP76_CD1_T1;Paso13:fSeleccionarTerminal;NE;
+CP76_CD1_T1;Paso14:fValorarTodo;NE;
+CP76_CD1_T1;Paso15:fIngresarIMEI;NE;
+CP76_CD1_T1;Paso16:fIngresarIMEI;NE;
+CP76_CD1_T1;Paso17:fBuscarProducto;NE;
+CP76_CD1_T1;Paso18:fExpandiryBuscar;NE;
+CP76_CD1_T1;Paso19:fIngresarIMEI;NE;
+CP76_CD1_T1;Paso20:fCheckPagoFact;NE;
+CP76_CD1_T1;Paso21:fIngresarNroServicioAdmin;NE;
+CP76_CD1_T1;Paso22:fEnviarPedido;NE;
+CP76_CD1_T1;Paso23:fEsperaEstado;NE;
+CP76_CD1_T1;Paso24:fATV_Login;NE;
+CP76_CD1_T1;Paso25:fATV_BuscarTerminal_Plan;NE;
+CP76_CD1_T1;Paso26:fATV_ValidarEstadoTerminal_Plan;NE;
+CP76_CD1_T1;Paso27:fATV_Logout;NE;
+CP76_CD1_T2;Paso28:fNuevoTramite;OK;
+CP76_CD1_T2;Paso29:fVista360;OK;
+CP76_CD1_T2;Paso30:fBuscarActivo;OK;
+CP76_CD1_T2;Paso31:fNuevoCambioPlan;NE;
+CP76_CD1_T2;Paso32:fBuscarPedidoVenta;OK;
+CP76_CD1_T2;Paso33:fObtenerMorosidad;NE;
+CP76_CD1_T2;Paso34:fIngresarAutenticacion;NE;
+CP76_CD1_T2;Paso35:fAgregarContacto_RepLegal;NE;
+CP76_CD1_T2;Paso36:fSeleccionarTerminal;NE;
+CP76_CD1_T2;Paso37:fValorarTodo;NE;
+CP76_CD1_T2;Paso38:fIngresarIMEI;NE;
+CP76_CD1_T2;Paso39:fIngresarIMEI;NE;
+CP76_CD1_T2;Paso40:fBuscarProducto;NE;
+CP76_CD1_T2;Paso41:fExpandiryBuscar;NE;
+CP76_CD1_T2;Paso42:fIngresarIMEI;OK;
+CP76_CD1_T2;Paso43:fCheckPagoFact;OK;
+CP76_CD1_T2;Paso44:fValidarDescEnProducto;NE;
+CP76_CD1_T2;Paso45:fATV_Login;OK;
+
+
+Informe de DATOS de salida
+---------------------------
+CP76_CD1;UltimoPasoOK;43;
+CP76_CD1;UltimoTramite;2;
+CP76_CD1;T2_NroPedido;1-1735576628;
+CP76_CD1;NroServicio;10101010;
+CP76_CD1_T2;NroServicio;10101010;
+
+
+Informe de Errores
+-----------------
+
+----------------------------------------------------------------------------------------------------------
+Tipo Error:Bug Mensaje de Error:null
+Fin del Informe del Caso Prueba y Conj Datos: CP76_CD1
+----------------------------------------------------------------------------------------------------------

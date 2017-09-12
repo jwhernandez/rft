@@ -20,11 +20,11 @@ import com.rational.test.ft.vp.IFtVerificationPoint;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
  * Script Name   : <b>BuscarPedidoVenta</b><br>
- * Generated     : <b>2016/01/05 18:34:33</b><br>
+ * Generated     : <b>2016/12/21 12:12:32</b><br>
  * Description   : Helper class for script<br>
  * Original Host : Windows 7 x86 6.1 <br>
  * 
- * @since  enero 05, 2016
+ * @since  diciembre 21, 2016
  * @author Sandra
  */
 public abstract class BuscarPedidoVentaHelper extends libreria.Accion
@@ -90,15 +90,15 @@ public abstract class BuscarPedidoVentaHelper extends libreria.Accion
 	}
 	
 	/**
-	 * NºDePedido: with default state.
+	 * NroPedido: with default state.
 	 *		.id : s_7_1_11_0
 	 * 		.type : text
 	 * 		OT : SiebWebText
 	 * 		.title : 
 	 * 		.class : Html.INPUT.text
 	 * 		RN : Order Entry - Orders Home Search Virtual Form Applet (Sales).Order Number
-	 * 		.name : s_7_1_11_0
 	 * 		UN : Nº de pedido
+	 * 		.name : s_7_1_11_0
 	 * 		.classIndex : 0
 	 */
 	protected TextGuiTestObject NroPedido() 
@@ -107,15 +107,15 @@ public abstract class BuscarPedidoVentaHelper extends libreria.Accion
                         getMappedTestObject("NroPedido"));
 	}
 	/**
-	 * NºDePedido: with specific test context and state.
+	 * NroPedido: with specific test context and state.
 	 *		.id : s_7_1_11_0
 	 * 		.type : text
 	 * 		OT : SiebWebText
 	 * 		.title : 
 	 * 		.class : Html.INPUT.text
 	 * 		RN : Order Entry - Orders Home Search Virtual Form Applet (Sales).Order Number
-	 * 		.name : s_7_1_11_0
 	 * 		UN : Nº de pedido
+	 * 		.name : s_7_1_11_0
 	 * 		.classIndex : 0
 	 */
 	protected TextGuiTestObject NroPedido(TestObject anchor, long flags) 
@@ -148,7 +148,7 @@ public abstract class BuscarPedidoVentaHelper extends libreria.Accion
 	}
 	
 	/**
-	 * SiebScreenViews: with default state.
+	 * TabsPedidoVta: with default state.
 	 *		ClassName : SiebScreenViews
 	 * 		.class : SiebScreenViews
 	 * 		RepositoryName : SiebScreenViews
@@ -159,7 +159,7 @@ public abstract class BuscarPedidoVentaHelper extends libreria.Accion
                         getMappedTestObject("TabsPedido"));
 	}
 	/**
-	 * SiebScreenViews: with specific test context and state.
+	 * TabsPedidoVta: with specific test context and state.
 	 *		ClassName : SiebScreenViews
 	 * 		.class : SiebScreenViews
 	 * 		RepositoryName : SiebScreenViews

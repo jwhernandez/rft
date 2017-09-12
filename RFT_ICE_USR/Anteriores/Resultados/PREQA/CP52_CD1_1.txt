@@ -1,0 +1,32 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: CP52_CD1 Desde paso: 1 Modo:Real
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+-----------------------------------------------------------------------------------------
+
+
+Informe de DATOS de salida
+-----------------------------------------------------------------------------------------
+
+
+Informe de Bugs
+-----------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------
+Tipo Parada         = Excepción no esperada
+Mensaje de Parada   = Script=CasosPrueba Línea=0 Error=Could not read datapool file: [C:\Users\rft\IBM\rationalsdp\workspace\RFT_ICE\Datos\DP_Pasos_SA.rftdp]. It might be missing or be in a wrong format.
+Parada en paso	    = 0
+
+
+-----------------------------------------------------------------------------------------
+Fin del Informe del Caso Prueba_Conj Datos: CP52_CD1
+-----------------------------------------------------------------------------------------
+
+
+Informe de Errores imprevistos de sistema
+-----------------------------------------------------------------------------------------
+'Paso    0  -  Accion'                             'Excepción no esperada'        'Script=CasosPrueba Línea=0 Error=Could not read datapool file: [C:\Users\rft\IBM\rationalsdp\workspace\RFT_ICE\Datos\DP_Pasos_SA.rftdp]. It might be missing or be in a wrong format.'
+

@@ -1,0 +1,80 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: CP32_CD1 Desde paso: 44 Modo:Real
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatosEntrada'                                                  'OK'                          
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'                                         'OK'                          
+'Paso    0  -  LeerDatosSalida'                                                   'OK'                          
+'Paso    1  -  fLogin'                                                            'OK'                          
+'Paso    2  -  fASRM_Login'                                                       'NE'                          
+'Paso    3  -  fASRM_ModificarEstadoServicio'                                     'NE'                          
+'Paso    4  -  fASRM_Logout'                                                      'NE'                          
+'Paso    5  -  fVista360'                                                         'NE'                          
+'Paso    6  -  fNuevoPedidoPortIn'                                                'NE'                          
+'Paso    7  -  fValidarMensaje'                                                   'NE'                          
+'Paso    8  -  fValidarEstadoPedPIenLista'                                        'NE'                          
+'Paso    9  -  fASRM_Login'                                                       'NE'                          
+'Paso   10  -  fASRM_ModificarEstadoServicio'                                     'NE'                          
+'Paso   11  -  fASRM_Logout'                                                      'NE'                          
+'Paso   12  -  fVista360'                                                         'NE'                          
+'Paso   13  -  fNuevoPedidoPortIn'                                                'NE'                          
+'Paso   14  -  fValidarMensaje'                                                   'NE'                          
+'Paso   15  -  fValidarEstadoPedPIenLista'                                        'NE'                          
+'Paso   16  -  fASRM_Login'                                                       'NE'                          
+'Paso   17  -  fASRM_ModificarEstadoServicio'                                     'NE'                          
+'Paso   18  -  fASRM_Logout'                                                      'NE'                          
+'Paso   19  -  fVista360'                                                         'NE'                          
+'Paso   20  -  fNuevoPedidoPortIn'                                                'NE'                          
+'Paso   21  -  fValidarMensaje'                                                   'NE'                          
+'Paso   22  -  fValidarEstadoPedPIenLista'                                        'NE'                          
+'Paso   23  -  fVista360'                                                         'NE'                          
+'Paso   24  -  fNuevoPedidoPortIn'                                                'NE'                          
+'Paso   25  -  fValidarMensaje'                                                   'NE'                          
+'Paso   26  -  fCapturarPedidoPortIn'                                             'NE'                          
+'Paso   27  -  fValidarServicioPedPIenLista'                                      'NE'                          
+
+
+Informe de DATOS de salida
+-----------------------------------------------------------------------------------------
+'Paso    0  -  CasosPrueba'                        'Usuario Alternativo '         'fragar'                      
+'Paso    0  -  CasosPrueba'                        'Clave Alternativa '           'fgarcia21'                   
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoPasoOK'                 '43'                          
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoTramite'                '1'                           
+'Paso    0  -  LeerDatosSalida'                    'T1_NroPedido'                 '1-1746554297'                
+'Paso    0  -  LeerDatosSalida'                    'NroServicio'                  '89840999'                    
+
+
+Informe de Bugs
+-----------------------------------------------------------------------------------------
+'Paso    1  -  AceptarVtnasSBL'                    'Antes de esta acción debe presionar el botón "Volver a valorar todo" a nivel de los detalles del pedido (SBL-APS-00802)'
+'Paso    1  -  AceptarVtnasSBL'                    'Antes de esta acción debe presionar el botón "Volver a valorar todo" a nivel de los detalles del pedido (SBL-APS-00802)'
+'Paso    1  -  AceptarVtnasSBL'                    'Antes de esta acción debe presionar el botón "Volver a valorar todo" a nivel de los detalles del pedido (SBL-APS-00802)'
+
+-----------------------------------------------------------------------------------------
+Tipo Parada         = Excepción en Método
+Mensaje de Parada   = Script=BuscarPedidoVentaPI Línea=61 Método=Goto Error=
+IsExists("ICE Order Entry - All Orders View (Port)", "L2"); Error:(-1016) - Failed to create object "Siebel Power Communications.Port Order Screen.SiebScreenViews" of class "SiebScreenViews". Clase=com.rational.test.ft.Domain.Siebel.SiebelMethodExecutionFailureException Objeto=siebel.SiebScreenViewsTestObject(Name: TabsPedidoPortabilidad, Map: TabsPedidoPortabilidad)
+Parada en paso	    = 28
+
+
+-----------------------------------------------------------------------------------------
+Fin del Informe del Caso Prueba_Conj Datos: CP32_CD1
+-----------------------------------------------------------------------------------------
+
+
+Informe de Errores imprevistos de sistema
+-----------------------------------------------------------------------------------------
+'Paso   28  -  Accion'                             'Excepción en Método'          'Script=BuscarPedidoVentaPI Línea=61 Método=Goto Error=
+IsExists("ICE Order Entry - All Orders View (Port)", "L2"); Error:(-1016) - Failed to create object "Siebel Power Communications.Port Order Screen.SiebScreenViews" of class "SiebScreenViews". Clase=com.rational.test.ft.Domain.Siebel.SiebelMethodExecutionFailureException Objeto=siebel.SiebScreenViewsTestObject(Name: TabsPedidoPortabilidad, Map: TabsPedidoPortabilidad)'
+
+'Paso   28  -  Accion'                             'Excepción no esperada'        'Script=fBuscarPedidoVentaPI Línea=0 Error="Stop button was hit"'
+
+'Paso   28  -  Accion'                             'Excepción no esperada'        'Script=CasosPrueba Línea=0 Error="Stop button was hit"'
+
+
+Hora de Finalizacion de la Ejecucion: 2017/02/03 11:30:56
+-----------------------------------------------------------------------------------------

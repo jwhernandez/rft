@@ -1,0 +1,42 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: CP09_CD1 Desde paso: 17 Modo:Real
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+---------------------------
+CP09_CD1_T1;LeerDatosEntrada;OK;
+CP09_CD1_T1;LeerDatoSalidaUltPasoEjec;OK;
+CP09_CD1_T1;LeerDatosSalida;OK;
+CP09_CD1_T1;Paso1:fLogin;OK;
+CP09_CD1_T1;Paso2:fValidarActivoSuspendido;NE;
+CP09_CD1_T1;Paso3:fIraActivoDesdeActivo;NE;
+CP09_CD1_T1;Paso4:fNuevaPostvta;NE;
+CP09_CD1_T1;Paso5:fNuevaPostvta;NE;
+
+
+Informe de DATOS de salida
+---------------------------
+CP09_CD1;UltimoPasoOK;16;
+CP09_CD1;UltimoTramite;1;
+CP09_CD1;T1_NroPedido;1-1740001078;
+
+
+Informe de Bugs
+-----------------
+
+
+Informe de Errores imprevistos de sistema
+------------------------------------------------
+CP09_CD1;Mensaje ME;Script=Comun.BuscarPedidoVenta Línea=27 Método=getProperty Error=Object reference not set to an instance of an object. Clase=System.NullReferenceException Objeto=siebel.SiebPageTabsTestObject(Ref:RemoteProxyReference{testContext:d0457000346bc, objectId:2, testObjectClass:SiebPageTabsTestObject});
+
+CP09_CD1;Mensaje UE;Script=Comun.BuscarPedidoVenta Línea=0 Error=Object reference not set to an instance of an object.;
+
+CP09_CD1;Mensaje UE;Script=PasosFunc.fBuscarPedidoVenta Línea=0 Error=CRFCN0018E: The 27 line of the 27 script contains an exception.;
+
+
+----------------------------------------------------------------------------------------------------------
+Tipo Parada:ObjectMethodException - Mensaje de Parada: Script=Comun.BuscarPedidoVenta Línea=27 Método=getProperty Error=Object reference not set to an instance of an object. Clase=System.NullReferenceException Objeto=siebel.SiebPageTabsTestObject(Ref:RemoteProxyReference{testContext:d0457000346bc, objectId:2, testObjectClass:SiebPageTabsTestObject})
+- Fin del Informe del Caso Prueba_Conj Datos: CP09_CD1
+----------------------------------------------------------------------------------------------------------

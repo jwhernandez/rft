@@ -20,11 +20,11 @@ import com.rational.test.ft.vp.IFtVerificationPoint;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
  * Script Name   : <b>SeleccionarProductosCP</b><br>
- * Generated     : <b>2016/01/05 15:15:30</b><br>
+ * Generated     : <b>2016/03/30 09:02:05</b><br>
  * Description   : Helper class for script<br>
  * Original Host : Windows 7 x86 6.1 <br>
  * 
- * @since  enero 05, 2016
+ * @since  marzo 30, 2016
  * @author Sandra
  */
 public abstract class SeleccionarProductosCPHelper extends libreria.Accion
@@ -55,7 +55,7 @@ public abstract class SeleccionarProductosCPHelper extends libreria.Accion
 	}
 	
 	/**
-	 * Arbol_lista: with default state.
+	 * LineasPedido: with default state.
 	 *		ActiveRow : 9
 	 * 		ClassName : SiebList
 	 * 		.class : SiebList
@@ -68,7 +68,7 @@ public abstract class SeleccionarProductosCPHelper extends libreria.Accion
                         getMappedTestObject("LineasPedido"));
 	}
 	/**
-	 * Arbol_lista: with specific test context and state.
+	 * LineasPedido: with specific test context and state.
 	 *		ActiveRow : 9
 	 * 		ClassName : SiebList
 	 * 		.class : SiebList

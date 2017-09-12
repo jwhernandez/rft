@@ -1,0 +1,55 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: CPCP_CDX Desde paso: 1 Modo:Real
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatosEntrada'                                                  'OK'                          
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'                                         'OK'                          
+'Paso    0  -  GrabarDatosSalida'                                                 'OK'                          
+'Paso    1  -  fLogin'                                                            'OK'                          
+
+
+Informe de DATOS de salida
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoPasoOK'                 '0'                           
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoTramite'                '1'                           
+
+
+Informe de Bugs
+-----------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------
+Tipo Parada         = Excepción en Método
+Mensaje de Parada   = Script=Vista360 Línea=37 Método=getProperty Error=
+GetProperty(".text"); Error:(-1014) - Invalid argument value for method name "GetProperty" for argument "Property Name". Input value: ".text". Clase=com.rational.test.ft.Domain.Siebel.SiebelMethodExecutionFailureException Objeto=siebel.SiebPageTabsTestObject(Ref:RemoteProxyReference{testContext:8e5180509390e, objectId:2, testObjectClass:SiebPageTabsTestObject})
+Parada en paso	    = 2
+
+
+-----------------------------------------------------------------------------------------
+Fin del Informe del Caso Prueba_Conj Datos: CPCP_CDX
+-----------------------------------------------------------------------------------------
+
+
+Informe de Errores imprevistos de sistema
+-----------------------------------------------------------------------------------------
+'Paso    1  -  Accion'                             'Excepción en Método'          'Script=AceptarVtnasIEBrowser Línea=38 Método=findChildrenWithProperties Error=null Clase=null Objeto=DomainTestObject(Ref:RemoteProxyReference{testContext:8ff960002b26c, objectId:Siebel, testObjectClass:com.rational.test.ft.object.interfaces.DomainTestObject})'
+
+'Paso    1  -  Accion'                             'Excepción en Método'          'Script=AceptarVtnasIEBrowser Línea=38 Método=findChildrenWithProperties Error=null Clase=null Objeto=DomainTestObject(Ref:RemoteProxyReference{testContext:8ff960002b26c, objectId:Siebel, testObjectClass:com.rational.test.ft.object.interfaces.DomainTestObject})'
+
+'Paso    1  -  Accion'                             'Excepción en Método'          'Script=CerrarIE Línea=69 Método=findChildrenWithProperties Error=null Clase=null Objeto=DomainTestObject(Ref:RemoteProxyReference{testContext:8ff960002b26c, objectId:Siebel, testObjectClass:com.rational.test.ft.object.interfaces.DomainTestObject})'
+
+'Paso    1  -  Accion'                             'Excepción en Método'          'Script=AceptarVtnasIEBrowser Línea=38 Método=findChildrenWithProperties Error=null Clase=null Objeto=DomainTestObject(Ref:RemoteProxyReference{testContext:8ff960002b26c, objectId:Siebel, testObjectClass:com.rational.test.ft.object.interfaces.DomainTestObject})'
+
+'Paso    2  -  Accion'                             'Reconocimiento Ambiguo'       'TestObjectMethodState {AMBIGUOUS_RECOGNITION,testObjectClassName=siebel.SiebPageTabsTestObject(Nombre: Pestañas, Correlación: Pestañas),method=GotoScreen,signature=(L.String;),args=[Ljava.lang.Object;@bfe69de5}'
+
+'Paso    2  -  Accion'                             'Excepción en Método'          'Script=Vista360 Línea=37 Método=getProperty Error=
+GetProperty(".text"); Error:(-1014) - Invalid argument value for method name "GetProperty" for argument "Property Name". Input value: ".text". Clase=com.rational.test.ft.Domain.Siebel.SiebelMethodExecutionFailureException Objeto=siebel.SiebPageTabsTestObject(Ref:RemoteProxyReference{testContext:8e5180509390e, objectId:2, testObjectClass:SiebPageTabsTestObject})'
+
+'Paso    2  -  Accion'                             'Excepción no esperada'        'Script=Vista360 Línea=0 Error=
+GetProperty(".text"); Error:(-1014) - Invalid argument value for method name "GetProperty" for argument "Property Name". Input value: ".text".'
+
+'Paso    2  -  Accion'                             'Excepción no esperada'        'Script=fVista360 Línea=0 Error=CRFCN0018E: La línea 37 del script 37 contiene una excepción.'
+

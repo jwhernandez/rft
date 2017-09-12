@@ -1,0 +1,48 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: GRAL_CD2 Desde paso: 2 Modo:simulacion
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatosEntrada'                                                  'NE'                          
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'                                         'OK'                          
+'Paso    0  -  LeerDatosSalida'                                                   'OK'                          
+'Paso    1  -  fLogin'                                                            'OK'                          
+'Paso    2  -  fIraActivoDesdeActivo'                                             'OK'                          
+'Paso    3  -  fNuevaPostvta'                                                     'OK'                          
+'Paso    4  -  fBuscarPedidoVenta'                                                'OK'                          
+'Paso    5  -  fCancelarPedido'                                                   'OK'                          
+'Paso    6  -  fNuevoTramite'                                                     'OK'                          
+'Paso    7  -  fIraActivoDesdeActivo'                                             'OK'                          
+'Paso    8  -  fNuevaPostvta'                                                     'OK'                          
+'Paso    9  -  fBuscarPedidoVenta'                                                'OK'                          
+'Paso   10  -  fCancelarPedido'                                                   'OK'                          
+'Paso   11  -  fNuevoTramite'                                                     'OK'                          
+'Paso   12  -  fIraActivoDesdeActivo'                                             'OK'                          
+'Paso   13  -  fNuevaPostvta'                                                     'OK'                          
+'Paso   14  -  fBuscarPedidoVenta'                                                'OK'                          
+'Paso   15  -  fCancelarPedido'                                                   'OK'                          
+'Paso   15  -  Fin del caso'                                                      'OK'                          
+
+
+Informe de DATOS de salida
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoPasoOK'                 '1'                           
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoTramite'                '1'                           
+'Paso    6  -  GrabarDatosSalida'                  'UltTramite'                   '2'                           
+'Paso   11  -  GrabarDatosSalida'                  'UltTramite'                   '3'                           
+
+
+Informe de Bugs
+-----------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------
+Tipo Parada         = FIN
+Mensaje de Parada   = FIN del caso en paso 16
+
+
+-----------------------------------------------------------------------------------------
+Fin del Informe del Caso Prueba_Conj Datos: GRAL_CD2
+-----------------------------------------------------------------------------------------

@@ -1,0 +1,78 @@
+package Scripts.Comun.SistemasExternos;
+import resources.Scripts.Comun.SistemasExternos.ASRM_ModificarEstadoServicioHelper;
+
+import com.rational.test.ft.*;
+import com.rational.test.ft.object.interfaces.*;
+import com.rational.test.ft.object.interfaces.SAP.*;
+import com.rational.test.ft.object.interfaces.WPF.*;
+import com.rational.test.ft.object.interfaces.dojo.*;
+import com.rational.test.ft.object.interfaces.siebel.*;
+import com.rational.test.ft.object.interfaces.flex.*;
+import com.rational.test.ft.object.interfaces.generichtmlsubdomain.*;
+import com.rational.test.ft.script.*;
+import com.rational.test.ft.value.*;
+import com.rational.test.ft.vp.*;
+import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
+/**
+ * Description   : Modifica el estado de un servicio en ASRM
+ * Script Name   : <b>ASRM_ModificarEstadoServicio</b>
+ * @since  2016/10/14
+ * Parametros: 0) Resultado = OK/NOK 1) Servicio 2) estadodeseado
+ * ej  res  89781331 RESERVADO
+ * @author SS
+ */
+public class ASRM_ModificarEstadoServicio extends ASRM_ModificarEstadoServicioHelper
+{
+	public void testMain(Object[] argu) throws RationalTestException
+	{
+		ImpreEncabezadoScript(getScriptArgs(), getScriptName( ).toString());
+		argu[0] = "NOK";
+
+		String sEstadoLeido=null;
+		String sNroLeido=null;
+
+		Tabs().click(atName("Recurso Numeros") );
+		NroServicio().waitForExistence();
+		NroServicio().setProperty(".value", argu[1].toString());
+
+		if (Informacion().exists()) okbutton().click(); // El nro no se encuentra
+		else 
+		{
+			sNroLeido = NroConsultado().getProperty(".value").toString();
+			sEstadoLeido = Estado().getProperty(".value").toString();		
+
+			if (sNroLeido.equals(argu[1].toString()) )
+			{
+				if(!sEstadoLeido.equals(argu[2].toString()))
+				{
+				System.out.println("Se cambiara el estado actual" + sEstadoLeido);	
+				
+				//System.out.println("Cantidad de filas del tipo de autenticacion: "+ NuevoEstado().getProperty("numChildern"));	
+				int iTotal = 3;
+				ITestDataList dataList = (ITestDataList)NuevoEstado().getTestData("list");
+				ITestDataElementList elementList = (ITestDataElementList)dataList.getElements();
+
+				for (int i=0; i<iTotal ;i++) {
+					System.out.println("Número de ítem de la lista de autenticación: "+elementList.getElement(i).getElement().toString());
+						i=iTotal+1;
+					}
+				
+				NuevoEstado().setProperty(".value", argu[2].toString());
+				NuevoEstado().setState(CHECK);
+				System.out.println(NuevoEstado().getProperties());		
+				
+				openbutton().click();
+				closebutton().click();
+	
+				sleep(3);
+				ModificarEstadoWindow().click(atPoint(315,51));
+				okbutton().click();
+				argu[0] = "OK";
+				} else 			argu[0] = "OK";
+			}			
+		}	
+
+		ImpreResultadoScript(getScriptName( ).toString(), "Resultado " + argu[0]);
+	}
+}
+

@@ -1,0 +1,101 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: CP76_CD1 Desde paso: 59 Modo:Real
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+---------------------------
+CP76_CD1_T1;LeerDatosEntrada;OK;
+CP76_CD1_T1;LeerDatoSalidaUltPasoEjec;OK;
+CP76_CD1_T1;LeerDatosSalida;OK;
+CP76_CD1_T1;Paso1:fLogin;NE;
+CP76_CD1_T1;Paso2:fLoginIf;OK;
+CP76_CD1_T1;Paso3:fVista360;NE;
+CP76_CD1_T1;Paso4:fValidarPerfilFactCuenta;NE;
+CP76_CD1_T1;Paso5:fCrearPerfilFacCuenta;NE;
+CP76_CD1_T1;Paso6:fNuevaVenta;NE;
+CP76_CD1_T1;Paso7:fBuscarPedidoVenta;NE;
+CP76_CD1_T1;Paso8:fObtenerMorosidad;NE;
+CP76_CD1_T1;Paso9:fIngresarAutenticacion;NE;
+CP76_CD1_T1;Paso10:fCompraPlanCatalogo;NE;
+CP76_CD1_T1;Paso11:fIngresarSIM;NE;
+CP76_CD1_T1;Paso12:fGenerarCtaFact;NE;
+CP76_CD1_T1;Paso13:fSeleccionarTerminal;NE;
+CP76_CD1_T1;Paso14:fValorarTodo;NE;
+CP76_CD1_T1;Paso15:fIngresarIMEI;NE;
+CP76_CD1_T1;Paso16:fIngresarIMEI;NE;
+CP76_CD1_T1;Paso17:fIngresarIMEI;NE;
+CP76_CD1_T1;Paso18:fCheckPagoFact;NE;
+CP76_CD1_T1;Paso19:fValidarDescEnProducto;NE;
+CP76_CD1_T1;Paso20:fASRM_ModificarEstadoServicio;NE;
+CP76_CD1_T1;Paso21:fProximoNumero;NE;
+CP76_CD1_T1;Paso22:fIngresarNroServicioAdmin;NE;
+CP76_CD1_T1;Paso23:fEnviarPedido;NE;
+CP76_CD1_T1;Paso24:fEsperaEstado;NE;
+CP76_CD1_T1;Paso25:fATV_Login;NE;
+CP76_CD1_T1;Paso26:fATV_BuscarTerminal_Plan;NE;
+CP76_CD1_T1;Paso27:fATV_ValidarEstadoTerminal_Plan;NE;
+CP76_CD1_T1;Paso28:fATV_Logout;NE;
+CP76_CD1_T2;Paso29:fNuevoTramite;OK;
+CP76_CD1_T2;Paso30:fVista360;NE;
+CP76_CD1_T2;Paso31:fBuscarActivo;NE;
+CP76_CD1_T2;Paso32:fNuevoCambioPlan;NE;
+CP76_CD1_T2;Paso33:fBuscarPedidoVenta;NE;
+CP76_CD1_T2;Paso34:fObtenerMorosidad;NE;
+CP76_CD1_T2;Paso35:fIngresarAutenticacion;NE;
+CP76_CD1_T2;Paso36:fAgregarContacto_RepLegal;NE;
+CP76_CD1_T2;Paso37:fSeleccionarTerminal;NE;
+CP76_CD1_T2;Paso38:fValorarTodo;NE;
+CP76_CD1_T2;Paso39:fIngresarIMEI;NE;
+CP76_CD1_T2;Paso40:fIngresarIMEI;NE;
+CP76_CD1_T2;Paso41:fIngresarIMEI;NE;
+CP76_CD1_T2;Paso42:fCheckPagoFact;NE;
+CP76_CD1_T2;Paso43:fValidarDescEnProducto;NE;
+CP76_CD1_T2;Paso44:fATV_Login;NE;
+CP76_CD1_T2;Paso45:fATV_ModificarRegRetencion;NE;
+CP76_CD1_T2;Paso46:fATV_Logout;NE;
+CP76_CD1_T2;Paso47:fEnviarPedido;NE;
+CP76_CD1_T2;Paso48:fEsperaEstado;NE;
+CP76_CD1_T2;Paso49:fATV_Login;NE;
+CP76_CD1_T2;Paso50:fATV_BuscarTerminal_Plan;NE;
+CP76_CD1_T2;Paso51:fATV_ValidarEstadoTerminal_Plan;NE;
+CP76_CD1_T2;Paso52:fATV_BuscarTerminal_Plan;NE;
+CP76_CD1_T2;Paso53:fATV_ValidarEstadoTerminal_Plan;NE;
+CP76_CD1_T2;Paso54:fATV_ValidarPosibMultas;NE;
+CP76_CD1_T2;Paso55:fATV_ValidarFormulaMultas;NE;
+CP76_CD1_T2;Paso56:fATV_ValidarPosibMultas;NE;
+CP76_CD1_T2;Paso57:fATV_ValidarFormulaMultas;NE;
+CP76_CD1_T2;Paso58:fATV_Logout;NE;
+CP76_CD1_T3;Paso59:fNuevoTramite;OK;
+CP76_CD1_T3;Paso60:fAdministrarLOV;NE;
+
+
+Informe de DATOS de salida
+---------------------------
+CP76_CD1;UltimoPasoOK;58;
+CP76_CD1;UltimoTramite;2;
+CP76_CD1;T2_NroPedido;1-1735576628;
+CP76_CD1;T2_NroPedidoAnt;1-1735047671;
+CP76_CD1;NroServicio;10101010;
+
+
+Informe de Bugs
+-----------------
+
+
+Informe de Errores imprevistos de sistema
+------------------------------------------------
+CP76_CD1;Mensaje ME;Script=Comun.AceptarVtnasIEBrowser Línea=36 Método=findChildrenWithProperties Error=
+GetChildren(); Error:(-1018) - Could not find Siebel application object. Clase=com.rational.test.ft.Domain.Siebel.SiebelMethodExecutionFailureException Objeto=DomainTestObject(Ref:RemoteProxyReference{testContext:4e28b0004b578, objectId:Siebel, testObjectClass:com.rational.test.ft.object.interfaces.DomainTestObject});
+
+CP76_CD1;Mensaje UE;Script=Comun.Vista360 Línea=0 Error=null;
+
+CP76_CD1;Mensaje UE;Script=PasosFunc.fVista360 Línea=0 Error=CRFCN0018E: La línea 41 del script 41 contiene una excepción.;
+
+
+----------------------------------------------------------------------------------------------------------
+Tipo Error:Bug Mensaje de Error:Script=Comun.AceptarVtnasIEBrowser Línea=36 Método=findChildrenWithProperties Error=
+GetChildren(); Error:(-1018) - Could not find Siebel application object. Clase=com.rational.test.ft.Domain.Siebel.SiebelMethodExecutionFailureException Objeto=DomainTestObject(Ref:RemoteProxyReference{testContext:4e28b0004b578, objectId:Siebel, testObjectClass:com.rational.test.ft.object.interfaces.DomainTestObject})
+Fin del Informe del Caso Prueba y Conj Datos: CP76_CD1
+----------------------------------------------------------------------------------------------------------

@@ -1,0 +1,28 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: CPUNI_CD1 Desde paso: A Modo:Real
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+-----------------------------------------------------------------------------------------
+
+
+Informe de DATOS de salida
+-----------------------------------------------------------------------------------------
+
+
+Informe de Bugs
+-----------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------
+Tipo Parada         = UnhandledException
+Mensaje de Parada   = Script=Comun.LeerDatosEntrada Línea=0 Error=No se ha podido generar el XML: C:\Users\Sandra\IBM\rationalsdp\workspace\RFT_ICE\Datos\DP_DatosEntrada.rftdp. Razón: No se ha podido crear archivo: C:\Users\Sandra\IBM\rationalsdp\workspace\RFT_ICE\Datos\DP_DatosEntrada.rftdp
+¿Ha [Sandra] tiene privilegios de modificación para este archivo? .
+ No se pudo completar la grabación del script de prueba.
+Parada en paso	    = 0
+
+
+-----------------------------------------------------------------------------------------
+Fin del Informe del Caso Prueba_Conj Datos: CPUNI_CD1
+-----------------------------------------------------------------------------------------

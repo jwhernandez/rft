@@ -20,17 +20,44 @@ import com.rational.test.ft.vp.IFtVerificationPoint;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
  * Script Name   : <b>ExpandirLinea</b><br>
- * Generated     : <b>2016/01/19 20:06:28</b><br>
+ * Generated     : <b>2017/03/23 13:23:18</b><br>
  * Description   : Helper class for script<br>
  * Original Host : Windows 7 x86 6.1 <br>
  * 
- * @since  enero 19, 2016
+ * @since  marzo 23, 2017
  * @author Sandra
  */
 public abstract class ExpandirLineaHelper extends libreria.Accion
 {
 	/**
-	 * Arbol_lista: with default state.
+	 * HtmlTable_0: with default state.
+	 *		.id : 
+	 * 		.title : 
+	 * 		.class : Html.TABLE
+	 * 		.caption : 
+	 * 		.classIndex : 0
+	 */
+	protected StatelessGuiSubitemTestObject EncabezadoLineas() 
+	{
+		return new StatelessGuiSubitemTestObject(
+                        getMappedTestObject("EncabezadoLineas"));
+	}
+	/**
+	 * HtmlTable_0: with specific test context and state.
+	 *		.id : 
+	 * 		.title : 
+	 * 		.class : Html.TABLE
+	 * 		.caption : 
+	 * 		.classIndex : 0
+	 */
+	protected StatelessGuiSubitemTestObject EncabezadoLineas(TestObject anchor, long flags) 
+	{
+		return new StatelessGuiSubitemTestObject(
+                        getMappedTestObject("EncabezadoLineas"), anchor, flags);
+	}
+	
+	/**
+	 * LineasPedido: with default state.
 	 *		ActiveRow : 9
 	 * 		ClassName : SiebList
 	 * 		.class : SiebList
@@ -43,7 +70,7 @@ public abstract class ExpandirLineaHelper extends libreria.Accion
                         getMappedTestObject("LineasPedido"));
 	}
 	/**
-	 * Arbol_lista: with specific test context and state.
+	 * LineasPedido: with specific test context and state.
 	 *		ActiveRow : 9
 	 * 		ClassName : SiebList
 	 * 		.class : SiebList
@@ -54,6 +81,29 @@ public abstract class ExpandirLineaHelper extends libreria.Accion
 	{
 		return new SiebListTestObject(
                         getMappedTestObject("LineasPedido"), anchor, flags);
+	}
+	
+	/**
+	 * LineasPedidoPI: with default state.
+	 *		ClassName : SiebList
+	 * 		.class : SiebList
+	 * 		RepositoryName : SiebList
+	 */
+	protected SiebListTestObject LineasPedido_PI() 
+	{
+		return new SiebListTestObject(
+                        getMappedTestObject("LineasPedido_PI"));
+	}
+	/**
+	 * LineasPedidoPI: with specific test context and state.
+	 *		ClassName : SiebList
+	 * 		.class : SiebList
+	 * 		RepositoryName : SiebList
+	 */
+	protected SiebListTestObject LineasPedido_PI(TestObject anchor, long flags) 
+	{
+		return new SiebListTestObject(
+                        getMappedTestObject("LineasPedido_PI"), anchor, flags);
 	}
 	
 	

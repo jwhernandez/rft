@@ -1,0 +1,70 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: CP52_CD1 Desde paso: 17 Modo:Real
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatosEntrada'                                                  'OK'                          
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'                                         'OK'                          
+'Paso    0  -  LeerDatosSalida'                                                   'OK'                          
+'Paso    1  -  fLogin'                                                            'OK'                          
+'Paso    2  -  fVista360'                                                         'NE'                          
+'Paso    3  -  fBuscarActivo'                                                     'NE'                          
+'Paso    4  -  fBuscarCtaFact'                                                    'NE'                          
+'Paso    5  -  fNuevaPostvta'                                                     'NE'                          
+'Paso    6  -  fBuscarPedidoVenta'                                                'NE'                          
+'Paso    7  -  fIngresarAutenticacion'                                            'NE'                          
+'Paso    8  -  fValidarAccion'                                                    'NE'                          
+'Paso    9  -  fValidarNroServicio_SIM_IMEI'                                      'NE'                          
+'Paso   10  -  fValidarMotivoPedido'                                              'NE'                          
+'Paso   11  -  fIngresarIMEI'                                                     'NE'                          
+'Paso   12  -  fExpandiryBuscar'                                                  'NE'                          
+'Paso   13  -  fValidarAccion'                                                    'NE'                          
+'Paso   14  -  fEnviarPedido'                                                     'NE'                          
+'Paso   15  -  fValidarMensaje'                                                   'NE'                          
+'Paso   16  -  fValorarTodo'                                                      'NE'                          
+'Paso   17  -  fEnviarPedido'                                                     'OK'                          
+'Paso   18  -  fValidarMensaje'                                                   'OK'                          
+'Paso   19  -  fBuscarProducto'                                                   'OK'                          
+'Paso   20  -  fTerminalCliente'                                                  'OK'                          
+'Paso   21  -  fExpandiryBuscar'                                                  'OK'                          
+'Paso   22  -  fValidarGenCtaFact'                                                'OK'                          
+'Paso   23  -  fValidarBtonLiberarNumero'                                         'OK'                          
+'Paso   24  -  fValidarBtonNumDisp'                                               'OK'                          
+'Paso   25  -  fEnviarPedido'                                                     'OK'                          
+'Paso   26  -  fEsperaEstado'                                                     'OK'                          
+'Paso   27  -  fLogout'                                                           'OK'                          
+'Paso   28  -  fBRM_Login'                                                        'OK'                          
+'Paso   29  -  fBRM_BuscarCliente'                                                'OK'                          
+'Paso   30  -  fBRM_ValidarProductos'                                             'OK'                          
+'Paso   31  -  fBRM_Logout'                                                       'OK'                          
+'Paso   32  -  Fin del caso'                                                      'OK'                          
+
+
+Informe de DATOS de salida
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoPasoOK'                 '16'                          
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoTramite'                '1'                           
+'Paso    0  -  LeerDatosSalida'                    'T1_NroPedido'                 '1-1742593067'                
+'Paso   30  -  BRM_ValidarProductos'               'Productos filtrados por estado ' '=Not Set'                    
+'Paso   30  -  BRM_ValidarProductos'               'Cantidad - Producto - Estado:' '1-Paquete 25 Minutos Promo-1-Activo'
+
+
+Informe de Bugs
+-----------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------
+Tipo Parada         = FIN
+Mensaje de Parada   = FIN del caso en paso 32
+Parada en paso	    = 32
+
+
+-----------------------------------------------------------------------------------------
+Fin del Informe del Caso Prueba_Conj Datos: CP52_CD1
+-----------------------------------------------------------------------------------------
+
+
+Informe de Errores imprevistos de sistema
+-----------------------------------------------------------------------------------------

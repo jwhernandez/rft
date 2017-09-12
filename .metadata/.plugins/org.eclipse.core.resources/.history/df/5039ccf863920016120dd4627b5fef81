@@ -1,0 +1,123 @@
+package Scripts.Comun.SistemasExternos;
+import resources.Scripts.Comun.SistemasExternos.ASRM_ModificarEstadoServicioHelper;
+
+import com.rational.test.ft.*;
+import com.rational.test.ft.object.interfaces.*;
+import com.rational.test.ft.object.interfaces.SAP.*;
+import com.rational.test.ft.object.interfaces.WPF.*;
+import com.rational.test.ft.object.interfaces.dojo.*;
+import com.rational.test.ft.object.interfaces.siebel.*;
+import com.rational.test.ft.object.interfaces.flex.*;
+import com.rational.test.ft.object.interfaces.generichtmlsubdomain.*;
+import com.rational.test.ft.script.*;
+import com.rational.test.ft.value.*;
+import com.rational.test.ft.vp.*;
+import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
+/**
+ * Description   : Modifica el estado de un servicio en ASRM
+ * Script Name   : <b>ASRM_ModificarEstadoServicio</b>
+ * @since  2016/10/14
+ * Parametros: 0) Resultado = OK/NOK 1) Servicio 2) estadodeseado
+ * ej  res  89781331 RESERVADO
+ * @author SS
+ */
+public class ASRM_ModificarEstadoServicio extends ASRM_ModificarEstadoServicioHelper
+{
+	public void testMain(Object[] argu) throws RationalTestException
+	{
+		ImpreEncabezadoScript(getScriptArgs(), getScriptName( ).toString());
+		argu[0] = "NOK";
+
+		String sEstadoLeido=null;
+		String sNroLeido=null;
+
+		Tabs().ensureObjectIsVisible();
+		Tabs().click(atName("Recurso Numeros") );
+		NroServicio().waitForExistence();
+		NroServicio().setProperty(".value", argu[1].toString());
+
+		if (Informacion().exists()) okbutton().click(); // El nro no se encuentra
+		else 
+		{
+			sNroLeido = NroConsultado().getProperty(".value").toString();
+			sEstadoLeido = Estado().getProperty(".value").toString();		
+
+			if (sNroLeido.equals(argu[1].toString()) )
+			{
+				if(!sEstadoLeido.equals(argu[2].toString()))
+				{
+				System.out.println("Se cambiara el estado actual" + sEstadoLeido);	
+
+				openbutton().click();
+				//NuevoEstado().setProperty(".value", argu[2].toString());
+		
+		// Window: Project_Actualizar_ASRM.exe: Actualizar Información
+		closebutton().click(atPoint(7,9));
+		openbutton().click(atPoint(7,9));
+		closebutton().click(atPoint(8,9));
+		openbutton().click(atPoint(7,9));
+		openbutton().click(atPoint(2,12));
+		openbutton().click(atPoint(7,15));
+		openbutton().click(atPoint(7,14));
+		openbutton().click(atPoint(9,10));
+		openbutton().click(atPoint(6,14));
+		openbutton().click(atPoint(12,10));
+		openbutton().click(atPoint(10,7));
+		openbutton().click(atPoint(6,14));
+		openbutton().click(atPoint(14,13));
+		openbutton().click(atPoint(4,14));
+		openbutton().click(atPoint(7,12));
+		openbutton().click(atPoint(12,10));
+		openbutton().click(atPoint(4,13));
+		openbutton().click(atPoint(9,9));
+		openbutton().click(atPoint(10,11));
+		openbutton().click(atPoint(11,7));
+		closebutton().click(atPoint(11,11));
+		openbutton().click(atPoint(11,14));
+		closebutton().click(atPoint(9,14));
+		openbutton().click(atPoint(9,14));
+		closebutton().dragToScreenPoint(atPoint(2,15), atPoint(868,648));
+		modificarEstadoDeNumerowindow().drag(atPoint(166,85), 
+                                       atPoint(259,74));
+		openbutton().drag(atPoint(0,13), atPoint(7,10));
+		closebutton().click(atPoint(7,10));
+		openbutton().dragToScreenPoint(atPoint(6,12), atPoint(825,666));
+		modificarEstadoDeNumerowindow().click(atPoint(313,50));
+		actualizarInformaciónwindow(ANY,DISABLED).clickDisabled();
+		
+		// Window: Project_Actualizar_ASRM.exe: Information
+		Informacion().drag(atPoint(202,87), atPoint(185,91));
+		okbutton().click(atPoint(31,11));
+		
+		// Window: Project_Actualizar_ASRM.exe: Actualizar Información
+		openbutton().click(atPoint(14,10));
+		closebutton().click(atPoint(8,11));
+		modificarEstadoDeNumerowindow().click(atPoint(267,76));
+		modificarEstadoDeNumerowindow().drag(atPoint(179,131), 
+                                       atPoint(268,61));
+		reservadowindow().click(atPoint(174,21));
+		modificarEstadoDeNumerowindow().drag(atPoint(260,65), 
+                                       atPoint(267,59));
+		caducirtext().doubleClick(atPoint(170,16));
+		openbutton().drag(atPoint(4,10), atPoint(9,11));
+		closebutton().dragToScreenPoint(atPoint(0,13), atPoint(865,645));
+		modificarEstadoDeNumerowindow().drag(atPoint(260,65), 
+                                       atPoint(267,59));
+		caducirtext().click(atPoint(174,5));
+		openbutton().click(atPoint(5,6));
+
+
+				//closebutton().click();
+	
+/*				sleep(3);
+				ModificarEstadoWindow().click(atPoint(315,51));
+				okbutton().click();*/
+				argu[0] = "OK";
+				} else 			argu[0] = "OK";
+			}			
+		}	
+
+		ImpreResultadoScript(getScriptName( ).toString(), "Resultado " + argu[0]);
+	}
+}
+

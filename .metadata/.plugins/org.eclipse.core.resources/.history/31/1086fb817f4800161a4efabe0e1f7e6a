@@ -1,0 +1,87 @@
+package libreria.GUI;
+
+import java.awt.BorderLayout;
+import java.awt.EventQueue;
+import java.awt.event.ItemEvent;
+import java.awt.event.ItemListener;
+import java.awt.event.KeyEvent;
+
+import javax.swing.*;
+import javax.swing.*;
+
+import libreria.CheckBoxMenuItemEx;
+
+
+public class IntroExample extends JFrame {
+    private JLabel statusbar;
+	private JLabel texto1;
+	private JLabel Usuario, Contrasena, Paso, Caso;
+	JTextField jtfTextUsuario, jtfContrasena, jtfPaso, jftCaso;
+	
+	
+	
+    private void createMenuBar() {
+
+        JMenuBar menubar = new JMenuBar();
+        JMenu fileMenu = new JMenu("Ambiente PreQA");
+        fileMenu.setMnemonic(KeyEvent.VK_F);
+
+        JMenu viewMenu = new JMenu("Ambiente QA");
+        viewMenu.setMnemonic(KeyEvent.VK_V);
+
+        JCheckBoxMenuItem sbarMi = new JCheckBoxMenuItem("Escenario 56");
+        sbarMi.setMnemonic(KeyEvent.VK_S);
+        sbarMi.setDisplayedMnemonicIndex(5);
+        sbarMi.setSelected(true);
+
+        sbarMi.addItemListener(new ItemListener() {
+
+            @Override
+            public void itemStateChanged(ItemEvent e) {
+                
+                if (e.getStateChange() == ItemEvent.SELECTED) {
+                	
+            		
+                } else {
+                    statusbar.setVisible(false);
+                }
+                
+            }
+
+        });
+
+        viewMenu.add(sbarMi);
+
+        menubar.add(fileMenu);
+        menubar.add(viewMenu);
+        setJMenuBar(menubar);
+    }
+
+    
+	public IntroExample() {
+
+        JPanel panel = new JPanel();
+        createMenuBar();
+        
+	    JButton okButton = new JButton("OK");
+	    panel.add(okButton);
+	    JButton cancelButton = new JButton("Cancel");
+	    panel.add(cancelButton);
+	    CheckBoxMenuItemEx  frame = new CheckBoxMenuItemEx();
+	    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	    frame.add(panel);
+	    frame.setSize(600, 600);
+	    frame.setVisible(true);
+    	
+    }
+	
+	public void Integra(){
+		new IntroExample();
+	}
+    
+    public static void main(String[] args) {
+         InGuI();
+         
+      
+    }
+    }

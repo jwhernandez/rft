@@ -1,0 +1,79 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: CP09_CD1 Desde paso: 41 Modo:Real
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatosEntrada'                                                  'OK'                          
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'                                         'OK'                          
+'Paso    0  -  LeerDatosSalida'                                                   'OK'                          
+'Paso    1  -  fLogin'                                                            'OK'                          
+'Paso    2  -  fValidarActivoEstadoenActivo'                                      'NE'                          
+'Paso    3  -  fIraActivoDesdeActivo'                                             'NE'                          
+'Paso    4  -  fNuevaPostvta'                                                     'NE'                          
+'Paso    5  -  fNuevaPostvta'                                                     'NE'                          
+'Paso    6  -  fBuscarPedidoVenta'                                                'NE'                          
+'Paso    7  -  fValidarAgencia'                                                   'NE'                          
+'Paso    8  -  fIngresarAutenticacion'                                            'NE'                          
+'Paso    9  -  fIngresarIMEI'                                                     'NE'                          
+'Paso   10  -  fTerminalCliente'                                                  'NE'                          
+'Paso   11  -  fIngresarSIM'                                                      'NE'                          
+'Paso   12  -  fExpandiryBuscar'                                                  'NE'                          
+'Paso   13  -  fCheckPagoFact'                                                    'NE'                          
+'Paso   14  -  fValidarAccion'                                                    'NE'                          
+'Paso   15  -  fExpandiryBuscar'                                                  'NE'                          
+'Paso   16  -  fCheckPagoFact'                                                    'NE'                          
+'Paso   17  -  fValidarAccion'                                                    'NE'                          
+'Paso   18  -  fExpandiryBuscar'                                                  'NE'                          
+'Paso   19  -  fCheckPagoFact'                                                    'NE'                          
+'Paso   20  -  fValidarAccion'                                                    'NE'                          
+'Paso   21  -  fEnviarPedido'                                                     'NE'                          
+'Paso   22  -  fValidarMensaje'                                                   'NE'                          
+'Paso   23  -  fValorarTodo'                                                      'NE'                          
+'Paso   24  -  fExpandiryBuscar'                                                  'NE'                          
+'Paso   25  -  fCheckPagoFact'                                                    'NE'                          
+'Paso   26  -  fExpandiryBuscar'                                                  'NE'                          
+'Paso   27  -  fCheckPagoFact'                                                    'NE'                          
+'Paso   28  -  fExpandiryBuscar'                                                  'NE'                          
+'Paso   29  -  fCheckPagoFact'                                                    'NE'                          
+'Paso   30  -  fEnviarPedido'                                                     'NE'                          
+'Paso   31  -  fEsperaEstado'                                                     'NE'                          
+'Paso   32  -  fValidacPostEnvio1'                                                'NE'                          
+'Paso   33  -  fValidacPostEnvio2'                                                'NE'                          
+'Paso   34  -  fVista360'                                                         'OK'                          
+'Paso   35  -  fBuscarActivo'                                                     'OK'                          
+'Paso   36  -  fValidarUnPerfil'                                                  'NE'                          
+'Paso   37  -  fBuscarCtaFact'                                                    'OK'                          
+'Paso   38  -  fValidarUnPerfil'                                                  'NE'                          
+'Paso   39  -  fBuscarProductoActivo'                                             'NE'                          
+'Paso   40  -  fValidarActivoEstadoyMotivoenCtaFact'                                'NE'                          
+'Paso   41  -  fBuscarProductoActivo'                                             'OK'                          
+'Paso   42  -  fValidarActivoEstadoyMotivoenCtaFact'                                'OK'                          
+'Paso   43  -  fValidarActivoSIMenCtaFact'                                        'OK'                          
+
+
+Informe de DATOS de salida
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoPasoOK'                 '40'                          
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoTramite'                '1'                           
+'Paso    0  -  LeerDatosSalida'                    'T1_NroPedido'                 '1-1741886108'                
+'Paso   35  -  fBuscarActivo'                      'NroServicio'                  '85975959'                    
+'Paso   35  -  fBuscarActivo'                      'NroServicio'                  '85975959'                    
+'Paso   37  -  fBuscarCtaFact'                     'NroCtaFact'                   '101741178570'                
+'Paso   42  -  ValidarActivoEstadoyMotivoenCtaFact' 'Estado'                       'Activo'                      
+'Paso   43  -  ValidarActivoSIMenCtaFact'          'SIM'                          '89506010909214631053'        
+
+
+Informe de Bugs
+-----------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------
+Tipo Parada         = UnhandledException
+Mensaje de Parada   = Script=PasosFunc.fASRM_Login Línea=0 Error="Stop button was hit"
+
+
+-----------------------------------------------------------------------------------------
+Fin del Informe del Caso Prueba_Conj Datos: CP09_CD1
+-----------------------------------------------------------------------------------------

@@ -20,17 +20,90 @@ import com.rational.test.ft.vp.IFtVerificationPoint;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
  * Script Name   : <b>Personalizar_SRV_MOV_PRE</b><br>
- * Generated     : <b>2015/12/27 21:02:05</b><br>
+ * Generated     : <b>2016/12/21 12:34:51</b><br>
  * Description   : Helper class for script<br>
  * Original Host : Windows 7 x86 6.1 <br>
  * 
- * @since  diciembre 27, 2015
+ * @since  diciembre 21, 2016
  * @author Sandra
  */
 public abstract class Personalizar_SRV_MOV_PREHelper extends libreria.Accion
 {
 	/**
-	 * GRPITEMGrpItemId12LINK: with default state.
+	 * Advertencia: with default state.
+	 *		.id : 
+	 * 		.title : 
+	 * 		.class : Html.TABLE
+	 * 		.caption : 
+	 * 		.classIndex : 1
+	 */
+	protected StatelessGuiSubitemTestObject Advertencia() 
+	{
+		return new StatelessGuiSubitemTestObject(
+                        getMappedTestObject("Advertencia"));
+	}
+	/**
+	 * Advertencia: with specific test context and state.
+	 *		.id : 
+	 * 		.title : 
+	 * 		.class : Html.TABLE
+	 * 		.caption : 
+	 * 		.classIndex : 1
+	 */
+	protected StatelessGuiSubitemTestObject Advertencia(TestObject anchor, long flags) 
+	{
+		return new StatelessGuiSubitemTestObject(
+                        getMappedTestObject("Advertencia"), anchor, flags);
+	}
+	
+	/**
+	 * ButtonOk: with default state.
+	 *		ClassName : SiebButton
+	 * 		.class : SiebButton
+	 * 		RepositoryName : ButtonOk
+	 */
+	protected SiebButtonTestObject ButtonOk() 
+	{
+		return new SiebButtonTestObject(
+                        getMappedTestObject("ButtonOk"));
+	}
+	/**
+	 * ButtonOk: with specific test context and state.
+	 *		ClassName : SiebButton
+	 * 		.class : SiebButton
+	 * 		RepositoryName : ButtonOk
+	 */
+	protected SiebButtonTestObject ButtonOk(TestObject anchor, long flags) 
+	{
+		return new SiebButtonTestObject(
+                        getMappedTestObject("ButtonOk"), anchor, flags);
+	}
+	
+	/**
+	 * ErrorMessage: with default state.
+	 *		ClassName : SiebTextArea
+	 * 		.class : SiebTextArea
+	 * 		RepositoryName : Error Message
+	 */
+	protected SiebTextAreaTestObject ErrorMessage() 
+	{
+		return new SiebTextAreaTestObject(
+                        getMappedTestObject("ErrorMessage"));
+	}
+	/**
+	 * ErrorMessage: with specific test context and state.
+	 *		ClassName : SiebTextArea
+	 * 		.class : SiebTextArea
+	 * 		RepositoryName : Error Message
+	 */
+	protected SiebTextAreaTestObject ErrorMessage(TestObject anchor, long flags) 
+	{
+		return new SiebTextAreaTestObject(
+                        getMappedTestObject("ErrorMessage"), anchor, flags);
+	}
+	
+	/**
+	 * Facilidades Telefonia Movil - Prepago: with default state.
 	 *		.text : Facilidades Telefonia Movil
 	 * 		.id : GRPITEM[~^`grpItemId12`^~[LINK
 	 * 		.href : javascript:processInput("GRPITEM[~^`grpItemId12", "ChangeCurrentObj","linkMethod ...
@@ -45,7 +118,7 @@ public abstract class Personalizar_SRV_MOV_PREHelper extends libreria.Accion
                         getMappedTestObject("Facilidades_Telefonia_Movil"));
 	}
 	/**
-	 * GRPITEMGrpItemId12LINK: with specific test context and state.
+	 * Facilidades Telefonia Movil - Prepago: with specific test context and state.
 	 *		.text : Facilidades Telefonia Movil
 	 * 		.id : GRPITEM[~^`grpItemId12`^~[LINK
 	 * 		.href : javascript:processInput("GRPITEM[~^`grpItemId12", "ChangeCurrentObj","linkMethod ...
@@ -61,8 +134,39 @@ public abstract class Personalizar_SRV_MOV_PREHelper extends libreria.Accion
 	}
 	
 	/**
-	 * _1RZHDEJPORT178LSK: with default state.
-	 *		.id : 1-RZHDEJ`^~[PORT[~^`1-78LSK
+	 * Finalicelo: with default state.
+	 *		.text : Finalícelo
+	 * 		.id : RegularExpression(GRPITEM.*LINK)
+	 * 		.href : RegularExpression(javascript:processInput\("GRPITEM.*"FinishIt","linkMethod"\))
+	 * 		.title : 
+	 * 		.class : Html.A
+	 * 		.name : 
+	 * 		.classIndex : 0
+	 */
+	protected GuiTestObject Finalicelo() 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("Finalicelo"));
+	}
+	/**
+	 * Finalicelo: with specific test context and state.
+	 *		.text : Finalícelo
+	 * 		.id : RegularExpression(GRPITEM.*LINK)
+	 * 		.href : RegularExpression(javascript:processInput\("GRPITEM.*"FinishIt","linkMethod"\))
+	 * 		.title : 
+	 * 		.class : Html.A
+	 * 		.name : 
+	 * 		.classIndex : 0
+	 */
+	protected GuiTestObject Finalicelo(TestObject anchor, long flags) 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("Finalicelo"), anchor, flags);
+	}
+	
+	/**
+	 * Items_Facilidades_Telefonia_Movil: with default state.
+	 *		.id : RegularExpression(.*PORT.*1-78LSK)
 	 * 		.title : 
 	 * 		.class : Html.TABLE
 	 * 		.caption : 
@@ -74,8 +178,8 @@ public abstract class Personalizar_SRV_MOV_PREHelper extends libreria.Accion
                         getMappedTestObject("Items_Facilidades_Telefonia_Movil"));
 	}
 	/**
-	 * _1RZHDEJPORT178LSK: with specific test context and state.
-	 *		.id : 1-RZHDEJ`^~[PORT[~^`1-78LSK
+	 * Items_Facilidades_Telefonia_Movil: with specific test context and state.
+	 *		.id : RegularExpression(.*PORT.*1-78LSK)
 	 * 		.title : 
 	 * 		.class : Html.TABLE
 	 * 		.caption : 
@@ -88,7 +192,7 @@ public abstract class Personalizar_SRV_MOV_PREHelper extends libreria.Accion
 	}
 	
 	/**
-	 * Breconfig: with default state.
+	 * Personalizar: with default state.
 	 *		ClassName : SiebButton
 	 * 		.class : SiebButton
 	 * 		RepositoryName : Breconfig
@@ -99,7 +203,7 @@ public abstract class Personalizar_SRV_MOV_PREHelper extends libreria.Accion
                         getMappedTestObject("Personalizar"));
 	}
 	/**
-	 * Breconfig: with specific test context and state.
+	 * Personalizar: with specific test context and state.
 	 *		ClassName : SiebButton
 	 * 		.class : SiebButton
 	 * 		RepositoryName : Breconfig
@@ -111,10 +215,33 @@ public abstract class Personalizar_SRV_MOV_PREHelper extends libreria.Accion
 	}
 	
 	/**
+	 * PersonalizarPI: with default state.
+	 *		ClassName : SiebButton
+	 * 		.class : SiebButton
+	 * 		RepositoryName : Breconfig
+	 */
+	protected SiebButtonTestObject PersonalizarPI() 
+	{
+		return new SiebButtonTestObject(
+                        getMappedTestObject("PersonalizarPI"));
+	}
+	/**
+	 * PersonalizarPI: with specific test context and state.
+	 *		ClassName : SiebButton
+	 * 		.class : SiebButton
+	 * 		RepositoryName : Breconfig
+	 */
+	protected SiebButtonTestObject PersonalizarPI(TestObject anchor, long flags) 
+	{
+		return new SiebButtonTestObject(
+                        getMappedTestObject("PersonalizarPI"), anchor, flags);
+	}
+	
+	/**
 	 * Terminado: with default state.
 	 *		.text : Terminado
-	 * 		.id : GRPITEM[~^`grpItemId3`^~[LINK
-	 * 		.href : javascript:processInput("GRPITEM[~^`grpItemId3", "DoneConfig","linkMethod")
+	 * 		.id : RegularExpression(GRPITEM.*LINK)
+	 * 		.href : RegularExpression(javascript:processInput\("GRPITEM.*"DoneConfig","linkMethod"\) ...
 	 * 		.title : 
 	 * 		.class : Html.A
 	 * 		.name : 
@@ -128,8 +255,8 @@ public abstract class Personalizar_SRV_MOV_PREHelper extends libreria.Accion
 	/**
 	 * Terminado: with specific test context and state.
 	 *		.text : Terminado
-	 * 		.id : GRPITEM[~^`grpItemId3`^~[LINK
-	 * 		.href : javascript:processInput("GRPITEM[~^`grpItemId3", "DoneConfig","linkMethod")
+	 * 		.id : RegularExpression(GRPITEM.*LINK)
+	 * 		.href : RegularExpression(javascript:processInput\("GRPITEM.*"DoneConfig","linkMethod"\) ...
 	 * 		.title : 
 	 * 		.class : Html.A
 	 * 		.name : 

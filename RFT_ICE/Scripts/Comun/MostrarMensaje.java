@@ -22,6 +22,7 @@ public class MostrarMensaje extends MostrarMensajeHelper
 {
 	public void testMain(Object[] args) 
 	{
+		ImpreEncabezadoScript(getScriptArgs(), getScriptName( ).toString());
 		Object[] options = {"OK"};
 		JOptionPane.showOptionDialog(null, "Click OK to continue", "Warning", 
 		JOptionPane.DEFAULT_OPTION, JOptionPane.WARNING_MESSAGE,

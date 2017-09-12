@@ -16,20 +16,23 @@ import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
  * Script Name   : <b>fBuscarProducto</b>
  * Description   : Busca el producto indicado en el argumento
  * @Param 0) Nombre del caso 1) indice que indica el valor a usar en el DP
- * 2) Ambiente 3) Si / No para reportar error
+ * 2) Ambiente 3) true / false para reportar error 4) nro paso
  * @since  2015/12/27
  * @author SS
+ * CP12_CD1_T1 1 QA NA NA 
  */
 public class fBuscarProducto extends fBuscarProductoHelper
 {
-	public void testMain(Object[] args) 
+	public void testMain(Object[] args) throws RationalTestException 
 	{
+		ImpreEncabezadoScript(getScriptArgs(), getScriptName( ).toString());
 		String[] MensError;
 		MensError = new String[4];
 
 		String[] BuscProd;
-		BuscProd = new String[4];
-		//Parámetros: 0) Nombre del producto 1) Encontrado/No Encontrado 2)posicion y 3)action code 
+		BuscProd = new String[6];
+		//Parámetros: 0) Nombre del producto 1) Encontrado/No Encontrado 2)posicion y 
+		// 3)action code 4) desde la linea o no (Si= desde el comienzo No = desde la linea actual) 5)Tramite 
 		/**
 		 * Itera el data pools de datos del caso para buscar la row correcta
 		 */
@@ -39,8 +42,15 @@ public class fBuscarProducto extends fBuscarProductoHelper
 			dpNext(); 
 		} 
 
-		int i = Integer.parseInt(args[1].toString());
+		int i = Integer.parseInt(args[1].toString());	
 		BuscProd[0] = dpString("PROD"+i); // No Caller Id
+		BuscProd[4] = "Si"; // Que busque desde el principio 	
+		if (dpString("BuscaDesdeIni"+i)!=null && 
+				dpString("BuscaDesdeIni"+i).toLowerCase().equals("no")) 
+			BuscProd[4] = "No";
+
+		BuscProd[5] = dpString("Tramite"); 	
+		
 		callScript("Scripts.Comun.BuscarProducto", BuscProd);
 
 		if  ((BuscProd[1].toString().equals("No Encontrado"))){

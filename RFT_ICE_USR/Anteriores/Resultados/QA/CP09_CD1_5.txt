@@ -1,0 +1,34 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: CP09_CD1 Desde paso: 5 Modo:Real
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatosEntrada'                                                  'OK'                          
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'                                         'OK'                          
+'Paso    0  -  LeerDatosSalida'                                                   'OK'                          
+'Paso    1  -  fLogin'                                                            'OK'                          
+'Paso    2  -  fValidarActivoEstadoenActivo'                                      'NE'                          
+'Paso    3  -  fIraActivoDesdeActivo'                                             'NE'                          
+'Paso    4  -  fNuevaPostvta'                                                     'NE'                          
+
+
+Informe de DATOS de salida
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoPasoOK'                 '4'                           
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoTramite'                '1'                           
+
+
+Informe de Bugs
+-----------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------
+Tipo Parada         = ObjectMethodException
+Mensaje de Parada   = Script=Comun.NuevaPostvta Línea=54 Método=Select Error=SiebPickList.Select(""), Listitem "" is not valid Clase=com.rational.test.ft.Domain.Siebel.SiebelSubitemNotFoundException Objeto=siebel.SiebPicklistTestObject(Name: Subtramite, Map: Tramite)
+
+
+-----------------------------------------------------------------------------------------
+Fin del Informe del Caso Prueba_Conj Datos: CP09_CD1
+-----------------------------------------------------------------------------------------

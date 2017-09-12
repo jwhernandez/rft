@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Suprimir elemento de proyecto &apos;JAVA_ICE_3&apos;&#x0D;&#x0A;- Proyecto original: &apos;JAVA_ICE_3&apos;&#x0D;&#x0A;- Elemento original: &apos;JAVA_ICE_3/src/help&apos;" description="Suprimir elemento" element1="/src&lt;help" elements="1" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1470671325855" subPackages="false" version="1.0"/>
+</session>

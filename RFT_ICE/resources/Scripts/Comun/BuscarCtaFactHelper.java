@@ -20,17 +20,40 @@ import com.rational.test.ft.vp.IFtVerificationPoint;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
  * Script Name   : <b>BuscarCtaFact</b><br>
- * Generated     : <b>2016/01/12 09:26:56</b><br>
+ * Generated     : <b>2017/07/11 3:49:01 PM</b><br>
  * Description   : Helper class for script<br>
  * Original Host : Windows 7 x86 6.1 <br>
  * 
- * @since  enero 12, 2016
- * @author Sandra
+ * @since  julio 11, 2017
+ * @author rft
  */
 public abstract class BuscarCtaFactHelper extends libreria.Accion
 {
 	/**
-	 * SiebList: with default state.
+	 * NewQuery: with default state.
+	 *		ClassName : SiebButton
+	 * 		.class : SiebButton
+	 * 		RepositoryName : NewQuery
+	 */
+	protected SiebButtonTestObject Consulta() 
+	{
+		return new SiebButtonTestObject(
+                        getMappedTestObject("Consulta"));
+	}
+	/**
+	 * NewQuery: with specific test context and state.
+	 *		ClassName : SiebButton
+	 * 		.class : SiebButton
+	 * 		RepositoryName : NewQuery
+	 */
+	protected SiebButtonTestObject Consulta(TestObject anchor, long flags) 
+	{
+		return new SiebButtonTestObject(
+                        getMappedTestObject("Consulta"), anchor, flags);
+	}
+	
+	/**
+	 * LineasPlanesVista360: with default state.
 	 *		ClassName : SiebList
 	 * 		.class : SiebList
 	 * 		RepositoryName : SiebList
@@ -41,7 +64,7 @@ public abstract class BuscarCtaFactHelper extends libreria.Accion
                         getMappedTestObject("LineasActivoPlanes"));
 	}
 	/**
-	 * SiebList: with specific test context and state.
+	 * LineasPlanesVista360: with specific test context and state.
 	 *		ClassName : SiebList
 	 * 		.class : SiebList
 	 * 		RepositoryName : SiebList
@@ -53,7 +76,7 @@ public abstract class BuscarCtaFactHelper extends libreria.Accion
 	}
 	
 	/**
-	 * SiebList: with default state.
+	 * LineasActivoCtaFact: with default state.
 	 *		ClassName : SiebList
 	 * 		.class : SiebList
 	 * 		RepositoryName : SiebList
@@ -64,7 +87,7 @@ public abstract class BuscarCtaFactHelper extends libreria.Accion
                         getMappedTestObject("LineasActivoServicio"));
 	}
 	/**
-	 * SiebList: with specific test context and state.
+	 * LineasActivoCtaFact: with specific test context and state.
 	 *		ClassName : SiebList
 	 * 		.class : SiebList
 	 * 		RepositoryName : SiebList
@@ -145,6 +168,29 @@ public abstract class BuscarCtaFactHelper extends libreria.Accion
 	}
 	
 	/**
+	 * AccountNumber: with default state.
+	 *		ClassName : SiebText
+	 * 		.class : SiebText
+	 * 		RepositoryName : Account Number
+	 */
+	protected SiebTextTestObject NroCtaFactRO() 
+	{
+		return new SiebTextTestObject(
+                        getMappedTestObject("NroCtaFactRO"));
+	}
+	/**
+	 * AccountNumber: with specific test context and state.
+	 *		ClassName : SiebText
+	 * 		.class : SiebText
+	 * 		RepositoryName : Account Number
+	 */
+	protected SiebTextTestObject NroCtaFactRO(TestObject anchor, long flags) 
+	{
+		return new SiebTextTestObject(
+                        getMappedTestObject("NroCtaFactRO"), anchor, flags);
+	}
+	
+	/**
 	 * NroServicio: with default state.
 	 *		ClassName : SiebText
 	 * 		.class : SiebText
@@ -191,6 +237,29 @@ public abstract class BuscarCtaFactHelper extends libreria.Accion
 	}
 	
 	/**
+	 * ExecuteQuery: with default state.
+	 *		ClassName : SiebButton
+	 * 		.class : SiebButton
+	 * 		RepositoryName : ExecuteQuery
+	 */
+	protected SiebButtonTestObject button_executeQuery() 
+	{
+		return new SiebButtonTestObject(
+                        getMappedTestObject("button_executeQuery"));
+	}
+	/**
+	 * ExecuteQuery: with specific test context and state.
+	 *		ClassName : SiebButton
+	 * 		.class : SiebButton
+	 * 		RepositoryName : ExecuteQuery
+	 */
+	protected SiebButtonTestObject button_executeQuery(TestObject anchor, long flags) 
+	{
+		return new SiebButtonTestObject(
+                        getMappedTestObject("button_executeQuery"), anchor, flags);
+	}
+	
+	/**
 	 * MostrarMasMenos: with default state.
 	 *		ClassName : SiebButton
 	 * 		.class : SiebButton
@@ -211,6 +280,29 @@ public abstract class BuscarCtaFactHelper extends libreria.Accion
 	{
 		return new SiebButtonTestObject(
                         getMappedTestObject("button_toggleListRowCount"), anchor, flags);
+	}
+	
+	/**
+	 * SerialNumber: with default state.
+	 *		ClassName : SiebText
+	 * 		.class : SiebText
+	 * 		RepositoryName : Serial Number
+	 */
+	protected SiebTextTestObject text_serialNumber() 
+	{
+		return new SiebTextTestObject(
+                        getMappedTestObject("text_serialNumber"));
+	}
+	/**
+	 * SerialNumber: with specific test context and state.
+	 *		ClassName : SiebText
+	 * 		.class : SiebText
+	 * 		RepositoryName : Serial Number
+	 */
+	protected SiebTextTestObject text_serialNumber(TestObject anchor, long flags) 
+	{
+		return new SiebTextTestObject(
+                        getMappedTestObject("text_serialNumber"), anchor, flags);
 	}
 	
 	

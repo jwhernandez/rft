@@ -1,0 +1,6 @@
+2017-09-12 10:07:20,627 [main] INFO  org.eclipse.jetty.server.Server - jetty-8.1.16.v20140903
+2017-09-12 10:07:20,705 [main] INFO  o.e.j.w.StandardDescriptorProcessor - NO JSP Support for /, did not find org.apache.jasper.servlet.JspServlet
+2017-09-12 10:07:20,752 [main] INFO  o.e.jetty.server.AbstractConnector - Started SelectChannelConnector@0.0.0.0:9100
+2017-09-12 10:53:57,097 [main] INFO  org.eclipse.jetty.server.Server - jetty-8.1.16.v20140903
+2017-09-12 10:53:57,144 [main] INFO  o.e.j.w.StandardDescriptorProcessor - NO JSP Support for /, did not find org.apache.jasper.servlet.JspServlet
+2017-09-12 10:53:57,191 [main] INFO  o.e.jetty.server.AbstractConnector - Started SelectChannelConnector@0.0.0.0:9100

@@ -1,0 +1,75 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: CP09_CD1 Desde paso: 36 Modo:Real
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+---------------------------
+CP09_CD1_T1;LeerDatosEntrada;OK;
+CP09_CD1_T1;LeerDatoSalidaUltPasoEjec;OK;
+CP09_CD1_T1;LeerDatosSalida;OK;
+CP09_CD1_T1;Paso1:fLogin;OK;
+CP09_CD1_T1;Paso2:fValidarActivoSuspendido;NE;
+CP09_CD1_T1;Paso3:fIraActivoDesdeActivo;NE;
+CP09_CD1_T1;Paso4:fNuevaPostvta;NE;
+CP09_CD1_T1;Paso5:fNuevaPostvta;NE;
+CP09_CD1_T1;Paso6:fBuscarPedidoVenta;OK;
+CP09_CD1_T1;Paso7:fValidarAgencia;NE;
+CP09_CD1_T1;Paso8:fIngresarAutenticacion;NE;
+CP09_CD1_T1;Paso9:fIngresarIMEI;NE;
+CP09_CD1_T1;Paso10:fIngresarSIM;NE;
+CP09_CD1_T1;Paso11:fExpandiryBuscar;NE;
+CP09_CD1_T1;Paso12:fCheckPagoFact;NE;
+CP09_CD1_T1;Paso13:fValidarAccion;NE;
+CP09_CD1_T1;Paso14:fExpandiryBuscar;NE;
+CP09_CD1_T1;Paso15:fCheckPagoFact;NE;
+CP09_CD1_T1;Paso16:fValidarAccion;NE;
+CP09_CD1_T1;Paso17:fExpandiryBuscar;NE;
+CP09_CD1_T1;Paso18:fCheckPagoFact;NE;
+CP09_CD1_T1;Paso19:fValidarAccion;NE;
+CP09_CD1_T1;Paso20:fEnviarPedido;NE;
+CP09_CD1_T1;Paso21:fValidarMensaje;NE;
+CP09_CD1_T1;Paso22:fValorarTodo;NE;
+CP09_CD1_T1;Paso23:fExpandiryBuscar;NE;
+CP09_CD1_T1;Paso24:fCheckPagoFact;NE;
+CP09_CD1_T1;Paso25:fExpandiryBuscar;NE;
+CP09_CD1_T1;Paso26:fCheckPagoFact;NE;
+CP09_CD1_T1;Paso27:fExpandiryBuscar;NE;
+CP09_CD1_T1;Paso28:fCheckPagoFact;NE;
+CP09_CD1_T1;Paso29:fEnviarPedido;NE;
+CP09_CD1_T1;Paso30:fEsperaEstado;NE;
+CP09_CD1_T1;Paso31:fValidacPostEnvio1;NE;
+CP09_CD1_T1;Paso32:fValidacPostEnvio2;NE;
+CP09_CD1_T1;Paso33:fVista360;NE;
+CP09_CD1_T1;Paso34:fBuscarActivo;NE;
+CP09_CD1_T1;Paso35:fValidarUnPerfil;NE;
+
+
+Informe de DATOS de salida
+---------------------------
+CP09_CD1;UltimoPasoOK;35;
+CP09_CD1;UltimoTramite;1;
+CP09_CD1;T1_NroPedido;1-1740046348;
+CP09_CD1_T1;NroPedido;1-1740046348;
+CP09_CD1_T1;NroServicio;89844774;
+
+
+Informe de Bugs
+-----------------
+
+
+Informe de Errores imprevistos de sistema
+------------------------------------------------
+CP09_CD1;onObjectNotFound;TestObjectMethodState {OBJECT_NOT_FOUND,testObjectClassName=siebel.SiebButtonTestObject(Name: NewQuery, Map: NewQuery),method=PerformAction,signature=null,args=null};
+
+CP09_CD1;Mensaje UE;Script=Comun.BuscarActivo Línea=0 Error=CRFCN0565E: Script playback cannot be completed as the test object is not in the correct state.
+  Looking for [siebel.SiebButtonTestObject(Name: NewQuery, Map: NewQuery)] with state [ENABLED|VISIBLE|READY], possibile failing candidate[{ClassName=SiebButton, RepositoryName=ValidateSO}] with incorrect state [DISABLED];
+
+CP09_CD1;Mensaje UE;Script=PasosFunc.fBuscarActivo Línea=0 Error=CRFCN0018E: The 35 line of the 35 script contains an exception.;
+
+
+----------------------------------------------------------------------------------------------------------
+Tipo Parada:onObjectNotFound - Mensaje de Parada: TestObjectMethodState {OBJECT_NOT_FOUND,testObjectClassName=siebel.SiebButtonTestObject(Name: NewQuery, Map: NewQuery),method=PerformAction,signature=null,args=null}
+- Fin del Informe del Caso Prueba_Conj Datos: CP09_CD1
+----------------------------------------------------------------------------------------------------------

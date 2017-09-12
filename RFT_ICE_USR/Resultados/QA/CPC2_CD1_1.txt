@@ -1,0 +1,161 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: CPC2_CD1 Desde paso: 1 Modo:Real
+Modulo desde Paso : 1 Hasta paso: 200
+Hora de Inicio de la Ejecucion : 2017/09/11 15:08:35
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatosEntrada'                                                  'OK'                          
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'                                         'OK'                          
+'Paso    0  -  GrabarDatosSalida'                                                 'OK'                          
+'Paso    0  -  ResetVariablesCondicionantes'                                      'OK'                          
+'Paso    1  -  fLeerVariableCondicionanteDP'                                      'OK'                          
+'Paso    2  -  fLeerVariableCondicionanteDP'                                      'OK'                          
+'Paso    3  -  fLeerVariableCondicionanteDP'                                      'OK'                          
+'Paso    4  -  fLogin'                                                            'OK'                          
+'Paso    5  -  fVista360'                                                         'OK'                          
+'Paso    6  -  fBuscarActivo'                                                     'OK'                          
+'Paso    7  -  fBuscarCtaFact'                                                    'OK'                          
+'Paso    8  -  fNuevaPostvta'                                                     'OK'                          
+'Paso    9  -  fBuscarPedidoVenta'                                                'OK'                          
+'Paso   10  -  fValidarAgencia'                                                   'OK'                          
+'Paso   11  -  fIngresarAutenticacion'                                            'OK'                          
+'Paso   12  -  fValidarAccion'                                                    'OK'                          
+'Paso   13  -  fValidarMotivoPedido'                                              'NE'                          
+'Paso   14  -  fEvaluarExpresionCondicionante'                                    'OK'                          
+'Paso   14  -  fIngresarIMEI'                                                     'NA'                          
+'Paso   15  -  fEvaluarExpresionCondicionante'                                    'OK'                          
+'Paso   15  -  fTerminalCliente'                                                  'NA'                          
+'Paso   16  -  fEvaluarExpresionCondicionante'                                    'OK'                          
+'Paso   16  -  fIngresarSIM'                                                      'NA'                          
+'Paso   17  -  fEvaluarExpresionCondicionante'                                    'OK'                          
+'Paso   17  -  fBuscarProducto'                                                   'NA'                          
+'Paso   18  -  fEvaluarExpresionCondicionante'                                    'OK'                          
+'Paso   18  -  fTerminalCliente'                                                  'NA'                          
+'Paso   19  -  fEvaluarExpresionCondicionante'                                    'OK'                          
+'Paso   19  -  fASRM_Login'                                                       'NA'                          
+'Paso   20  -  fEvaluarExpresionCondicionante'                                    'OK'                          
+'Paso   20  -  fASRM_ModificarEstadoServicio'                                     'NA'                          
+'Paso   21  -  fEvaluarExpresionCondicionante'                                    'OK'                          
+'Paso   21  -  fASRM_Logout'                                                      'NA'                          
+'Paso   22  -  fEvaluarExpresionCondicionante'                                    'OK'                          
+'Paso   22  -  fNumeroEspecial'                                                   'NA'                          
+'Paso   23  -  fEvaluarExpresionCondicionante'                                    'OK'                          
+'Paso   23  -  fValidacPostServicio'                                              'NA'                          
+'Paso   24  -  fEvaluarExpresionCondicionante'                                    'OK'                          
+'Paso   24  -  fExpandiryBuscar'                                                  'NA'                          
+'Paso   25  -  fEvaluarExpresionCondicionante'                                    'OK'                          
+'Paso   25  -  fCheckPagoFact'                                                    'NA'                          
+'Paso   26  -  fEvaluarExpresionCondicionante'                                    'OK'                          
+'Paso   26  -  fPersonalizar_SRV_MOV_POS'                                         'NA'                          
+'Paso   27  -  fEvaluarExpresionCondicionante'                                    'OK'                          
+'Paso   27  -  fPersonalizarFavoritoNew'                                          'OK'                          
+'Paso   28  -  fEvaluarExpresionCondicionante'                                    'OK'                          
+'Paso   28  -  fBuscarProducto'                                                   'OK'                          
+'Paso   29  -  fEvaluarExpresionCondicionante'                                    'OK'                          
+'Paso   29  -  fCrearLE'                                                          'OK'                          
+'Paso   30  -  fEvaluarExpresionCondicionante'                                    'OK'                          
+'Paso   30  -  fAgregarNum_a_LE'                                                  'OK'                          
+'Paso   31  -  fEvaluarExpresionCondicionante'                                    'OK'                          
+'Paso   31  -  fBuscarProducto'                                                   'OK'                          
+'Paso   32  -  fEvaluarExpresionCondicionante'                                    'OK'                          
+'Paso   32  -  fExpandiryBuscar'                                                  'OK'                          
+'Paso   33  -  fEvaluarExpresionCondicionante'                                    'OK'                          
+'Paso   33  -  fExpandiryBuscar'                                                  'OK'                          
+'Paso   34  -  fEvaluarExpresionCondicionante'                                    'OK'                          
+'Paso   34  -  fExpandiryBuscar'                                                  'OK'                          
+'Paso   35  -  fEvaluarExpresionCondicionante'                                    'OK'                          
+'Paso   35  -  fAsociarListaEspecial'                                             'OK'                          
+'Paso   36  -  fEnviarPedido'                                                     'OK'                          
+'Paso   37  -  fValidarMensaje'                                                   'OK'                          
+'Paso   38  -  fValorarTodo'                                                      'OK'                          
+'Paso   39  -  fEnviarPedido'                                                     'OK'                          
+'Paso   40  -  fEsperaEstado'                                                     'OK'                          
+'Paso   41  -  fValidacPostEnvio1'                                                'OK'                          
+'Paso   42  -  Fin del caso'                                                      'OK'                          
+
+
+Informe de DATOS de salida
+-----------------------------------------------------------------------------------------
+'Paso    0  -  CasosPrueba'                        'Usuario Alternativo '         'JVALERIO1'                   
+'Paso    0  -  CasosPrueba'                        'Clave Alternativa '           'jvalerio1'                   
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoPasoOK'                 '0'                           
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoTramite'                '1'                           
+'Paso    6  -  fBuscarActivo'                      'NroServicio'                  '89847007'                    
+'Paso    7  -  GrabarDatosSalida'                  'T1_NroCtaFact'                '101774855392'                
+'Paso    7  -  fBuscarCtaFact'                     'NroCtaFact'                   '101774855392'                
+'Paso    8  -  fNuevaPostvta'                      'NroPedido'                    '1-1776722976'                
+'Paso    8  -  GrabarDatosSalida'                  'T1_NroPedido'                 '1-1776722976'                
+'Paso   12  -  ValidarNuevaAccion'                 'Accion'                       'Modificación'                
+'Paso   14  -  fIngresarIMEI'                      'Expresion'                    'false'                       
+'Paso   15  -  fTerminalCliente'                   'Expresion'                    'false'                       
+'Paso   16  -  fIngresarSIM'                       'Expresion'                    'false'                       
+'Paso   17  -  fBuscarProducto'                    'Expresion'                    'false'                       
+'Paso   18  -  fTerminalCliente'                   'Expresion'                    'false'                       
+'Paso   19  -  fASRM_Login'                        'Expresion'                    'false'                       
+'Paso   20  -  fASRM_ModificarEstadoServicio'      'Expresion'                    'false'                       
+'Paso   21  -  fASRM_Logout'                       'Expresion'                    'false'                       
+'Paso   22  -  fNumeroEspecial'                    'Expresion'                    'false'                       
+'Paso   23  -  fValidacPostServicio'               'Expresion'                    'false'                       
+'Paso   24  -  fExpandiryBuscar'                   'Expresion'                    'false'                       
+'Paso   25  -  fCheckPagoFact'                     'Expresion'                    'false'                       
+'Paso   26  -  fPersonalizar_SRV_MOV_POS'          'Expresion'                    'false'                       
+'Paso   27  -  fPersonalizarFavoritoNew'           'Expresion'                    'true'                        
+'Paso   28  -  fBuscarProducto'                    'Expresion'                    'true'                        
+'Paso   29  -  fCrearLE'                           'Expresion'                    'true'                        
+'Paso   29  -  GrabarDatosSalida'                  'T1_NomListaEspecial'          '1-1776723694'                
+'Paso   29  -  fCrearLE'                           'NomListaEspecial'             '1-1776723694'                
+'Paso   30  -  fAgregarNum_a_LE'                   'Expresion'                    'true'                        
+'Paso   31  -  fBuscarProducto'                    'Expresion'                    'true'                        
+'Paso   32  -  fExpandiryBuscar'                   'Expresion'                    'true'                        
+'Paso   33  -  fExpandiryBuscar'                   'Expresion'                    'true'                        
+'Paso   34  -  fExpandiryBuscar'                   'Expresion'                    'true'                        
+'Paso   35  -  fAsociarListaEspecial'              'Expresion'                    'true'                        
+
+
+Informe de Bugs
+-----------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------
+Tipo Parada         = Reconocimiento Ambiguo
+Mensaje de Parada   = Consulta
+Parada en paso	    = 42
+
+
+-----------------------------------------------------------------------------------------
+Fin del Informe del Caso Prueba_Conj Datos: CPC2_CD1
+-----------------------------------------------------------------------------------------
+
+
+Informe de Errores imprevistos de sistema
+-----------------------------------------------------------------------------------------
+'Paso   11  -  Accion'                             'Reconocimiento Ambiguo'       'TestObjectMethodState {AMBIGUOUS_RECOGNITION,testObjectClassName=GuiTestObject(Name: BtonConsultaPedido, Map: BtonConsultaPedido),method=ensureObjectIsVisible,signature=null,args=null}'
+
+'Paso   11  -  Accion'                             'Reconocimiento Ambiguo'       'Consulta'                    
+
+'Paso   11  -  Accion'                             'Reconocimiento Ambiguo'       'TestObjectMethodState {AMBIGUOUS_RECOGNITION,testObjectClassName=GuiTestObject(Name: BtonConsultaPedido, Map: BtonConsultaPedido),method=ensureObjectIsVisible,signature=null,args=null}'
+
+'Paso   11  -  Accion'                             'Reconocimiento Ambiguo'       'Consulta'                    
+
+'Paso   27  -  Accion'                             'Reconocimiento Ambiguo'       'TestObjectMethodState {AMBIGUOUS_RECOGNITION,testObjectClassName=GuiTestObject(Name: BtonNuevo, Map: BtonNuevo),method=ping,signature=()V,args=null}'
+
+'Paso   27  -  Accion'                             'Reconocimiento Ambiguo'       'Enviar'                      
+
+'Paso   27  -  Accion'                             'Reconocimiento Ambiguo'       'TestObjectMethodState {AMBIGUOUS_RECOGNITION,testObjectClassName=GuiTestObject(Name: BtonNuevo, Map: BtonNuevo),method=ping,signature=()V,args=null}'
+
+'Paso   27  -  Accion'                             'Reconocimiento Ambiguo'       'Enviar'                      
+
+'Paso   27  -  Accion'                             'Reconocimiento Ambiguo'       'TestObjectMethodState {AMBIGUOUS_RECOGNITION,testObjectClassName=GuiTestObject(Name: BtonConsultaPedido, Map: BtonConsultaPedido),method=ping,signature=()V,args=null}'
+
+'Paso   27  -  Accion'                             'Reconocimiento Ambiguo'       'Consulta'                    
+
+'Paso   27  -  Accion'                             'Reconocimiento Ambiguo'       'TestObjectMethodState {AMBIGUOUS_RECOGNITION,testObjectClassName=GuiTestObject(Name: BtonConsultaPedido, Map: BtonConsultaPedido),method=ping,signature=()V,args=null}'
+
+'Paso   27  -  Accion'                             'Reconocimiento Ambiguo'       'Consulta'                    
+
+
+Hora de Finalizacion de la Ejecucion: 2017/09/11 15:20:38
+-----------------------------------------------------------------------------------------

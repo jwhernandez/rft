@@ -1,0 +1,100 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: CP14_CD1 Desde paso: 21 Modo:Real
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatosEntrada'                                                  'OK'                          
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'                                         'OK'                          
+'Paso    0  -  LeerDatosSalida'                                                   'OK'                          
+'Paso    1  -  fLogin'                                                            'NE'                          
+'Paso    2  -  fAdministrarTemporadas'                                            'NE'                          
+'Paso    3  -  fLogout'                                                           'NE'                          
+'Paso    4  -  fLogin'                                                            'OK'                          
+'Paso    5  -  fVista360'                                                         'NE'                          
+'Paso    6  -  fBuscarActivo'                                                     'NE'                          
+'Paso    7  -  fValidarAccionPosvta'                                              'NE'                          
+'Paso    8  -  fBuscarCtaFact'                                                    'NE'                          
+'Paso    9  -  fNuevaPostvta'                                                     'NE'                          
+'Paso   10  -  fBuscarPedidoVenta'                                                'OK'                          
+'Paso   11  -  fPersonalizar_SRV_MOV_POS'                                         'NE'                          
+'Paso   12  -  fExpandiryBuscar'                                                  'NE'                          
+'Paso   13  -  fValidarAgencia'                                                   'NE'                          
+'Paso   14  -  fExpandiryBuscar'                                                  'NE'                          
+'Paso   15  -  fValidarPrecioenPedido'                                            'NE'                          
+'Paso   16  -  fValidarAccion'                                                    'NE'                          
+'Paso   17  -  fBuscarProducto'                                                   'NE'                          
+'Paso   18  -  fExpandiryBuscar'                                                  'NE'                          
+'Paso   19  -  fExpandiryBuscar'                                                  'NE'                          
+'Paso   20  -  fPersonalizarFavorito'                                             'NE'                          
+'Paso   21  -  fExpandiryBuscar'                                                  'OK'                          
+'Paso   22  -  fExpandiryBuscar'                                                  'OK'                          
+'Paso   23  -  fExpandiryBuscar'                                                  'OK'                          
+'Paso   24  -  fExpandiryBuscar'                                                  'OK'                          
+
+
+Informe de DATOS de salida
+-----------------------------------------------------------------------------------------
+'Paso    0  -  CasosPrueba'                        'Usuario Alternativo '         'JVALERIO1'                   
+'Paso    0  -  CasosPrueba'                        'Clave Alternativa '           'jvalerio1'                   
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoPasoOK'                 '20'                          
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoTramite'                '1'                           
+'Paso    0  -  LeerDatosSalida'                    'T1_NroPedido'                 '1-1730055279'                
+
+
+Informe de Bugs
+-----------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------
+Tipo Parada         = Excepción en Método
+Mensaje de Parada   = Script=CrearLENew Línea=44 Método=Goto Error=SiebScreenView.Goto("SWI Special Rating Orders Profile View", "L4"), L4 view repository name "SWI Special Rating Orders Profile View" is not valid; Clase=com.rational.test.ft.Domain.Siebel.SiebelItemNotFoundException Objeto=siebel.SiebScreenViewsTestObject(Name: SubPestañas, Map: TabsPedidoVta)
+Parada en paso	    = 25
+
+
+-----------------------------------------------------------------------------------------
+Fin del Informe del Caso Prueba_Conj Datos: CP14_CD1
+-----------------------------------------------------------------------------------------
+
+
+Informe de Errores imprevistos de sistema
+-----------------------------------------------------------------------------------------
+'Paso   21  -  Accion'                             'Reconocimiento Ambiguo'       'TestObjectMethodState {AMBIGUOUS_RECOGNITION,testObjectClassName=GuiTestObject(Name: Menu, Map: Menu),method=ensureObjectIsVisible,signature=null,args=null}'
+
+'Paso   21  -  Accion'                             'Reconocimiento Ambiguo'       'Menú'                        
+
+'Paso   21  -  Accion'                             'Reconocimiento Ambiguo'       'TestObjectMethodState {AMBIGUOUS_RECOGNITION,testObjectClassName=GuiTestObject(Name: Menu, Map: Menu),method=ensureObjectIsVisible,signature=null,args=null}'
+
+'Paso   21  -  Accion'                             'Reconocimiento Ambiguo'       'Menú'                        
+
+'Paso   22  -  Accion'                             'Reconocimiento Ambiguo'       'TestObjectMethodState {AMBIGUOUS_RECOGNITION,testObjectClassName=GuiTestObject(Name: Menu, Map: Menu),method=ensureObjectIsVisible,signature=null,args=null}'
+
+'Paso   22  -  Accion'                             'Reconocimiento Ambiguo'       'Menú'                        
+
+'Paso   22  -  Accion'                             'Reconocimiento Ambiguo'       'TestObjectMethodState {AMBIGUOUS_RECOGNITION,testObjectClassName=GuiTestObject(Name: Menu, Map: Menu),method=ensureObjectIsVisible,signature=null,args=null}'
+
+'Paso   22  -  Accion'                             'Reconocimiento Ambiguo'       'Menú'                        
+
+'Paso   23  -  Accion'                             'Reconocimiento Ambiguo'       'TestObjectMethodState {AMBIGUOUS_RECOGNITION,testObjectClassName=GuiTestObject(Name: Menu, Map: Menu),method=ensureObjectIsVisible,signature=null,args=null}'
+
+'Paso   23  -  Accion'                             'Reconocimiento Ambiguo'       'Menú'                        
+
+'Paso   23  -  Accion'                             'Reconocimiento Ambiguo'       'TestObjectMethodState {AMBIGUOUS_RECOGNITION,testObjectClassName=GuiTestObject(Name: Menu, Map: Menu),method=ensureObjectIsVisible,signature=null,args=null}'
+
+'Paso   23  -  Accion'                             'Reconocimiento Ambiguo'       'Menú'                        
+
+'Paso   24  -  Accion'                             'Reconocimiento Ambiguo'       'TestObjectMethodState {AMBIGUOUS_RECOGNITION,testObjectClassName=GuiTestObject(Name: Menu, Map: Menu),method=ensureObjectIsVisible,signature=null,args=null}'
+
+'Paso   24  -  Accion'                             'Reconocimiento Ambiguo'       'Menú'                        
+
+'Paso   24  -  Accion'                             'Reconocimiento Ambiguo'       'TestObjectMethodState {AMBIGUOUS_RECOGNITION,testObjectClassName=GuiTestObject(Name: Menu, Map: Menu),method=ensureObjectIsVisible,signature=null,args=null}'
+
+'Paso   24  -  Accion'                             'Reconocimiento Ambiguo'       'Menú'                        
+
+'Paso   25  -  Accion'                             'Excepción en Método'          'Script=CrearLENew Línea=44 Método=Goto Error=SiebScreenView.Goto("SWI Special Rating Orders Profile View", "L4"), L4 view repository name "SWI Special Rating Orders Profile View" is not valid; Clase=com.rational.test.ft.Domain.Siebel.SiebelItemNotFoundException Objeto=siebel.SiebScreenViewsTestObject(Name: SubPestañas, Map: TabsPedidoVta)'
+
+'Paso   25  -  Accion'                             'Excepción no esperada'        'Script=CrearLENew Línea=0 Error=SiebScreenView.Goto("SWI Special Rating Orders Profile View", "L4"), L4 view repository name "SWI Special Rating Orders Profile View" is not valid;'
+
+'Paso   25  -  Accion'                             'Excepción no esperada'        'Script=fCrearLENew Línea=0 Error=CRFCN0018E: The 44 line of the 44 script contains an exception.'
+

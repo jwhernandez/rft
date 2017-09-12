@@ -1,0 +1,50 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: CP10_CD1 Desde paso: 1 Modo:Real
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatosEntrada'                                                  'OK'                          
+'Paso    0  -  GrabarDatosSalida'                                                 'OK'                          
+'Paso    1  -  fLogin'                                                            'OK'                          
+'Paso    2  -  fVista360'                                                         'OK'                          
+'Paso    3  -  fValidarUnPerfil'                                                  'OK'                          
+'Paso    4  -  fBuscarActivo'                                                     'OK'                          
+'Paso    5  -  fBuscarCtaFact'                                                    'OK'                          
+'Paso    6  -  fValidarUnPerfil'                                                  'OK'                          
+'Paso    7  -  fVista360'                                                         'OK'                          
+'Paso    8  -  fBuscarActivo'                                                     'OK'                          
+
+
+Informe de DATOS de salida
+-----------------------------------------------------------------------------------------
+'Paso    4  -  fBuscarActivo'                      'NroServicio'                  '87154222'                    
+'Paso    4  -  fBuscarActivo'                      'NroServicio'                  '87154222'                    
+'Paso    5  -  fBuscarCtaFact'                     'NroCtaFact'                   '101744757571'                
+'Paso    8  -  fBuscarActivo'                      'NroServicio'                  '87154222'                    
+
+
+Informe de Bugs
+-----------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------
+Tipo Parada         = Excepción en Método
+Mensaje de Parada   = Script=BuscarCtaFact Línea=41 Método=DrillDownColumn Error=SiebelList.DrillDownColumn(..,0), Row index 0 is not valid or visible; Valid range is [0..-1]; Clase=com.rational.test.ft.Domain.Siebel.SiebelItemNotFoundException Objeto=siebel.SiebListTestObject(Name: LineasActivoPlanes, Map: LineasPlanesVista360)
+Parada en paso	    = 9
+
+
+-----------------------------------------------------------------------------------------
+Fin del Informe del Caso Prueba_Conj Datos: CP10_CD1
+-----------------------------------------------------------------------------------------
+
+
+Informe de Errores imprevistos de sistema
+-----------------------------------------------------------------------------------------
+'Paso    9  -  Accion'                             'Excepción en Método'          'Script=BuscarCtaFact Línea=41 Método=DrillDownColumn Error=SiebelList.DrillDownColumn(..,0), Row index 0 is not valid or visible; Valid range is [0..-1]; Clase=com.rational.test.ft.Domain.Siebel.SiebelItemNotFoundException Objeto=siebel.SiebListTestObject(Name: LineasActivoPlanes, Map: LineasPlanesVista360)'
+
+'Paso    9  -  Accion'                             'Excepción no esperada'        'Script=BuscarCtaFact Línea=0 Error=SiebelList.DrillDownColumn(..,0), Row index 0 is not valid or visible; Valid range is [0..-1];'
+
+'Paso    9  -  Accion'                             'Excepción no esperada'        'Script=fBuscarCtaFact Línea=0 Error=CRFCN0018E: The 41 line of the 41 script contains an exception.'
+

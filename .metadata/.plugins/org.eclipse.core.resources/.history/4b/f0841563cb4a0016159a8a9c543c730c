@@ -1,0 +1,170 @@
+package GUI;
+
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.*;
+
+import javax.swing.*;
+
+import GUI.PanelMensaje;
+import GUI.Coordinador;
+import GUI.QA.Escenario03;
+
+
+public class VentanaPrincipal extends JDialog implements ActionListener {
+
+	private static final long	serialVersionUID	= 1L;
+	JLabel labelTitulo;/*declaramos el objeto Label*/
+
+	public JButton salir;
+	public JButton botonPanelInicial,botonPanelDos;
+	public JButton botonInicio;
+	public javax.swing.JScrollPane scrollPaneles;
+	String[ ] fileItems = new String[ ] { "Escenario 03", "Escenario 05", "Escenario 12", "Escenario 13", "Escenario 29" };
+	public JFrame frame;
+	public JPanel paneliz,panelde,panelab,panelar,panelex;
+	public JLabel nombre,apellidos,telefono,dni;
+	public JTextField text1,text2,text4;
+
+	Coordinador miCoorDinador;
+	
+    /**
+     * Constructor de Clase
+     * @param parent
+     * @param modal
+     */
+    public VentanaPrincipal() {
+
+    	{
+    	    JMenu editMenu = new JMenu("Ambiente PreQA");
+            
+        
+         
+   
+        editMenu.insertSeparator(1);
+        JMenuItem item;
+
+        otherMenu.add(item = new JCheckBoxMenuItem("Escenario 03"));
+        item.addActionListener(printListener);
+        otherMenu.add(item = new JCheckBoxMenuItem("Escenario 05"));
+        item.addActionListener(printListener);
+        otherMenu.add(item = new JCheckBoxMenuItem("Escenario 12"));
+        item.addActionListener(printListener);
+        otherMenu.add(item = new JCheckBoxMenuItem("Escenario 13"));
+        item.addActionListener(printListener);
+        otherMenu.add(item = new JCheckBoxMenuItem("Escenario 20"));
+        item.addActionListener(printListener);
+        otherMenu.add(item = new JCheckBoxMenuItem("Escenario 29"));
+        item.addActionListener(printListener);
+        otherMenu.add(item = new JCheckBoxMenuItem("Escenario 50"));
+        item.addActionListener(printListener);
+        otherMenu.add(item = new JCheckBoxMenuItem("Escenario 54"));
+        item.addActionListener(printListener);
+         
+        getContentPane().add(fileMenu);
+        getContentPane().add(otherMenu);
+        getContentPane().add(editMenu);
+    	
+    	
+    	initComponents();
+        setSize(600,600);
+        setTitle("Automatizacion de Pruebas Regresivas");
+        setLocationRelativeTo(null);
+        setResizable(false);
+        getContentPane().setLayout(null);
+         
+     }
+    }
+    /*
+     * Inicialización de Componentes
+     */
+    private void initComponents() {
+
+    	scrollPaneles = new javax.swing.JScrollPane();
+
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        
+     
+        salir=new JButton();
+		salir.setBounds(610,455,60,30);
+		salir.addActionListener(this);
+		getContentPane().add(salir);
+		
+		botonPanelInicial=new JButton();
+        botonPanelInicial.setText("Ambiente Pre-QA");
+        botonPanelInicial.setBounds(20, 80, 180, 50);
+        botonPanelInicial.addActionListener(this);
+        getContentPane().add(botonPanelInicial);
+        
+        botonPanelDos=new JButton();
+        botonPanelDos.setText("Ambiente QA");
+        botonPanelDos.setBounds(220, 80, 180, 50);
+        botonPanelDos.addActionListener(this);
+        getContentPane().add(botonPanelDos);
+        
+        botonInicio=new JButton();
+        botonInicio.setText("Inicio");
+        botonInicio.setBounds(780, 80, 180, 50);
+        botonInicio.addActionListener(this);
+        getContentPane().add(botonInicio);
+        
+        /*Propiedades del Label, lo instanciamos, posicionamos y
+		 * activamos los eventos*/
+		labelTitulo= new JLabel();
+		labelTitulo.setFont(new java.awt.Font("Tahoma", 0, 28));
+		labelTitulo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+		labelTitulo.setText("Automatizacion Pruebas Regresivas");
+		labelTitulo.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.LOWERED));
+	    labelTitulo.setBounds(90, 10, 500, 40);
+	    getContentPane().add(labelTitulo);
+        
+        scrollPaneles.setAutoscrolls(true);
+        scrollPaneles.setPreferredSize(new java.awt.Dimension(990, 1915));
+        scrollPaneles.setWheelScrollingEnabled(false);
+        getContentPane().add(scrollPaneles);
+        scrollPaneles.setBounds(20, 150, 650, 300);
+        pack();
+    }
+    
+    /**
+	 * Define el panel introduccion para mostrar en la ventana
+	 * @param introduccion
+	 */
+	public void definirPanel(Escenario03 introduccion) {
+		scrollPaneles.setViewportView(introduccion);
+	}
+	
+	public void definirPanel(PanelMensaje miPanelMensaje) {
+		scrollPaneles.setViewportView(miPanelMensaje);
+	}    
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		if (e.getSource()==botonPanelInicial)
+		{
+			miCoorDinador.cargarPaneles(1);
+		}
+		
+		if (e.getSource()==botonPanelDos)
+		{
+			miCoorDinador.cargarPaneles(2);
+		}
+		
+		if (e.getSource()==salir)
+		{
+			int respuesta = JOptionPane.showConfirmDialog(this,
+					"Esta seguro que desea salir?", "Confirmación",
+					JOptionPane.YES_NO_OPTION);
+			if (respuesta == JOptionPane.YES_NO_OPTION)
+			{
+				System.exit(0);
+			}
+		}
+	}
+
+	public void setCoordinador(Coordinador coordinador) {
+		miCoorDinador=coordinador;
+	}
+	
+}

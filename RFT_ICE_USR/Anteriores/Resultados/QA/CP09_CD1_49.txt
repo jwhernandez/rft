@@ -1,0 +1,35 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: CP09_CD1 Desde paso: 49 Modo:Real
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatosEntrada'                                                  'OK'                          
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'                                         'OK'                          
+'Paso    0  -  LeerDatosSalida'                                                   'OK'                          
+'Paso    1  -  fLogin'                                                            'OK'                          
+'Paso    2  -  fValidarActivoEstadoenActivo'                                      'NE'                          
+'Paso    3  -  fIraActivoDesdeActivo'                                             'NE'                          
+'Paso    4  -  fNuevaPostvta'                                                     'NE'                          
+'Paso    5  -  fNuevaPostvta'                                                     'NE'                          
+
+
+Informe de DATOS de salida
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoPasoOK'                 '48'                          
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoTramite'                '1'                           
+
+
+Informe de Bugs
+-----------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------
+Tipo Parada         = ObjectMethodException
+Mensaje de Parada   = Script=Comun.BuscarPedidoVenta Línea=38 Método=DrillDownColumn Error=SiebelList.DrillDownColumn(..,0), Row index 0 is not valid or visible; Valid range is [0..-1]; Clase=com.rational.test.ft.Domain.Siebel.SiebelItemNotFoundException Objeto=siebel.SiebListTestObject(Name: ListaPedidos, Map: SiebList)
+
+
+-----------------------------------------------------------------------------------------
+Fin del Informe del Caso Prueba_Conj Datos: CP09_CD1
+-----------------------------------------------------------------------------------------

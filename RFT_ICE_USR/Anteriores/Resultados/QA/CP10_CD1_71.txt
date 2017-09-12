@@ -1,0 +1,142 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: CP10_CD1 Desde paso: 71 Modo:Real
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+---------------------------
+CP10_CD1_T1;LeerDatosEntrada;OK;
+CP10_CD1_T1;LeerDatoSalidaUltPasoEjec;OK;
+CP10_CD1_T1;LeerDatosSalida;OK;
+CP10_CD1_T1;Paso1:fLogin;OK;
+CP10_CD1_T1;Paso2:fCambiarVIstaUsuario;NE;
+CP10_CD1_T1;Paso3:fVista360;NE;
+CP10_CD1_T1;Paso4:fValidarUnPerfil;NE;
+CP10_CD1_T1;Paso5:fBuscarActivo;NE;
+CP10_CD1_T1;Paso6:fBuscarCtaFact;NE;
+CP10_CD1_T1;Paso7:fValidarUnPerfil;NE;
+CP10_CD1_T1;Paso8:fVista360;NE;
+CP10_CD1_T1;Paso9:fBuscarActivo;NE;
+CP10_CD1_T1;Paso10:fBuscarCtaFact;NE;
+CP10_CD1_T1;Paso11:fNuevaPostvta;NE;
+CP10_CD1_T1;Paso12:fBuscarPedidoVenta;NE;
+CP10_CD1_T1;Paso13:fValidarAgencia;NE;
+CP10_CD1_T1;Paso14:fIngresarAutenticacion;NE;
+CP10_CD1_T1;Paso15:fASRM_Login;NE;
+CP10_CD1_T1;Paso16:fASRM_ModificarEstadoServicio;NE;
+CP10_CD1_T1;Paso17:fASRM_Logout;NE;
+CP10_CD1_T1;Paso18:fProximoNumero;NE;
+CP10_CD1_T1;Paso19:fValidacPostServicio;NE;
+CP10_CD1_T1;Paso20:fExpandiryBuscar;NE;
+CP10_CD1_T1;Paso21:fCheckPagoFact;NE;
+CP10_CD1_T1;Paso22:fEnviarPedido;NE;
+CP10_CD1_T1;Paso23:fValidarMensaje;NE;
+CP10_CD1_T1;Paso24:fValorarTodo;NE;
+CP10_CD1_T1;Paso25:fEnviarPedido;NE;
+CP10_CD1_T1;Paso26:fEsperaEstado;NE;
+CP10_CD1_T1;Paso27:fValidacPostEnvio1;NE;
+CP10_CD1_T1;Paso28:fVista360;NE;
+CP10_CD1_T1;Paso29:fBuscarActivo;NE;
+CP10_CD1_T1;Paso30:fBRM_Login;NE;
+CP10_CD1_T1;Paso31:fBRM.FavoritoValidarCambioNum;NE;
+CP10_CD1_T1;Paso32:fBRM_Logout;NE;
+CP10_CD1_T1;Paso33:fCambiarVIstaUsuario;NE;
+CP10_CD1_T1;Paso34:fAdministrarTemporadas;NE;
+CP10_CD1_T1;Paso35:fCambiarVIstaUsuario;NE;
+CP10_CD1_T1;Paso36:fVista360;OK;
+CP10_CD1_T1;Paso37:fBuscarActivo;OK;
+CP10_CD1_T1;Paso38:fBuscarCtaFact;OK;
+CP10_CD1_T1;Paso39:fNuevaPostvta;NE;
+CP10_CD1_T1;Paso40:fBuscarPedidoVenta;NE;
+CP10_CD1_T1;Paso41:fPersonalizarFavorito;NE;
+CP10_CD1_T1;Paso42:fIngresarAutenticacion;NE;
+CP10_CD1_T1;Paso43:fExpandiryBuscar;NE;
+CP10_CD1_T1;Paso44:fExpandiryBuscar;NE;
+CP10_CD1_T1;Paso45:fExpandiryBuscar;NE;
+CP10_CD1_T1;Paso46:fBuscarProducto;NE;
+CP10_CD1_T1;Paso47:fBuscarProducto;NE;
+CP10_CD1_T1;Paso48:fBuscarProducto;NE;
+CP10_CD1_T1;Paso49:fCrearLE;NE;
+CP10_CD1_T1;Paso50:fBuscarPedidoVenta;OK;
+CP10_CD1_T1;Paso51:fExpandiryBuscar;NE;
+CP10_CD1_T1;Paso52:fExpandiryBuscar;NE;
+CP10_CD1_T1;Paso53:fExpandiryBuscar;NE;
+CP10_CD1_T1;Paso54:fAsociarListaEspecial;NE;
+CP10_CD1_T1;Paso55:fValidarMensaje;NE;
+CP10_CD1_T1;Paso56:fAgregarNum_a_LE;NE;
+CP10_CD1_T1;Paso57:fAgregarNum_a_LE;NE;
+CP10_CD1_T1;Paso58:fAgregarNum_a_LE;NE;
+CP10_CD1_T1;Paso59:fAgregarNum_a_LE;NE;
+CP10_CD1_T1;Paso60:fAgregarNum_a_LE;NE;
+CP10_CD1_T1;Paso61:fExpandiryBuscar;NE;
+CP10_CD1_T1;Paso62:fExpandiryBuscar;NE;
+CP10_CD1_T1;Paso63:fExpandiryBuscar;NE;
+CP10_CD1_T1;Paso64:fValidarPrecioenPedido;NE;
+CP10_CD1_T1;Paso65:fExpandiryBuscar;NE;
+CP10_CD1_T1;Paso66:fExpandiryBuscar;NE;
+CP10_CD1_T1;Paso67:fCheckPagoFact;NE;
+CP10_CD1_T1;Paso68:fCheckPagoFact;NE;
+CP10_CD1_T1;Paso69:fEnviarPedido;NE;
+CP10_CD1_T1;Paso70:fValidarMensaje;NE;
+CP10_CD1_T1;Paso71:fExpandiryBuscar;OK;
+CP10_CD1_T1;Paso72:fExpandiryBuscar;OK;
+CP10_CD1_T1;Paso73:fExpandiryBuscar;OK;
+CP10_CD1_T1;Paso74:fAsociarListaEspecial;OK;
+CP10_CD1_T1;Paso75:fValorarTodo;OK;
+CP10_CD1_T1;Paso76:fEnviarPedido;OK;
+
+
+Informe de DATOS de salida
+---------------------------
+CP10_CD1;UltimoPasoOK;70;
+CP10_CD1;UltimoTramite;1;
+CP10_CD1;T1_NroPedido;1-1741427767;
+CP10_CD1;NroServicio;85976767;
+CP10_CD1;T1_NomListaEspecial;1-1741428231;
+CP10_CD1_T1;NroServicio;85980202;
+CP10_CD1_T1;NroServicio;85980202;
+CP10_CD1_T1;NroCtaFact;101741013213;
+CP10_CD1;UltPasoOK;71;
+CP10_CD1;UltPasoOK;72;
+CP10_CD1;UltPasoOK;73;
+CP10_CD1;UltPasoOK;74;
+CP10_CD1;UltPasoOK;75;
+CP10_CD1;UltPasoOK;76;
+
+
+Informe de Bugs
+-----------------
+
+
+Informe de Errores imprevistos de sistema
+------------------------------------------------
+CP10_CD1;testObjectMethodState;TestObjectMethodState {AMBIGUOUS_RECOGNITION,testObjectClassName=GuiTestObject(Name: BotonConsultaPedido, Map: BtonConsultaPedido),method=ensureObjectIsVisible,signature=null,args=null};
+
+CP10_CD1;Reconocimiento Ambiguo;Consulta;
+
+CP10_CD1;testObjectMethodState;TestObjectMethodState {AMBIGUOUS_RECOGNITION,testObjectClassName=GuiTestObject(Name: BotonConsultaPedido, Map: BtonConsultaPedido),method=ensureObjectIsVisible,signature=null,args=null};
+
+CP10_CD1;Reconocimiento Ambiguo;Consulta;
+
+CP10_CD1;testObjectMethodState;TestObjectMethodState {AMBIGUOUS_RECOGNITION,testObjectClassName=GuiTestObject(Name: BtonNuevo, Map: BtonNuevo),method=ping,signature=()V,args=null};
+
+CP10_CD1;Reconocimiento Ambiguo;Enviar;
+
+CP10_CD1;testObjectMethodState;TestObjectMethodState {AMBIGUOUS_RECOGNITION,testObjectClassName=GuiTestObject(Name: BtonNuevo, Map: BtonNuevo),method=ping,signature=()V,args=null};
+
+CP10_CD1;Reconocimiento Ambiguo;Enviar;
+
+CP10_CD1;Mensaje ME;Script=Comun.EsperaEstado Línea=62 Método=SetText Error=
+SetText("Enrute directo"); Error:(-1022) - System error. Debug info: Failed to execute method id 7 with args (()). Reason: Blocked. Clase=com.rational.test.ft.Domain.Siebel.SiebelMethodExecutionFailureException Objeto=siebel.SiebPicklistTestObject(Name: TipoAutenticacion, Map: TipoAutenticacion);
+
+CP10_CD1;Mensaje UE;Script=Comun.EsperaEstado Línea=0 Error=
+SetText("Enrute directo"); Error:(-1022) - System error. Debug info: Failed to execute method id 7 with args (()). Reason: Blocked.;
+
+CP10_CD1;Mensaje UE;Script=PasosFunc.fEsperaEstado Línea=0 Error=CRFCN0018E: The 62 line of the 62 script contains an exception.;
+
+
+----------------------------------------------------------------------------------------------------------
+Tipo Parada:AmbiguousRecognition - Mensaje de Parada: Consulta
+- Fin del Informe del Caso Prueba_Conj Datos: CP10_CD1
+----------------------------------------------------------------------------------------------------------

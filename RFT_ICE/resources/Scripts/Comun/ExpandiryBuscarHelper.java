@@ -20,11 +20,11 @@ import com.rational.test.ft.vp.IFtVerificationPoint;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
  * Script Name   : <b>ExpandiryBuscar</b><br>
- * Generated     : <b>2016/01/19 20:34:59</b><br>
+ * Generated     : <b>2016/10/26 11:50:55</b><br>
  * Description   : Helper class for script<br>
  * Original Host : Windows 7 x86 6.1 <br>
  * 
- * @since  enero 19, 2016
+ * @since  octubre 26, 2016
  * @author Sandra
  */
 public abstract class ExpandiryBuscarHelper extends libreria.Accion

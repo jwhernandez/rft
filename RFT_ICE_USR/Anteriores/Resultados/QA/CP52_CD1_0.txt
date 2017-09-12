@@ -1,0 +1,43 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: CP52_CD1 Desde paso: 0 Modo:Real
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatosEntrada'                                                  'OK'                          
+'Paso    0  -  GrabarDatosSalida'                                                 'OK'                          
+'Paso    1  -  fLogin'                                                            'OK'                          
+'Paso    2  -  fVista360'                                                         'OK'                          
+'Paso    3  -  fBuscarActivo'                                                     'OK'                          
+'Paso    4  -  fBuscarCtaFact'                                                    'OK'                          
+
+
+Informe de DATOS de salida
+-----------------------------------------------------------------------------------------
+'Paso    3  -  fBuscarActivo'                      'NroServicio'                  '87154334'                    
+'Paso    3  -  fBuscarActivo'                      'NroServicio'                  '87154334'                    
+'Paso    4  -  fBuscarCtaFact'                     'NroCtaFact'                   '101744563389'                
+
+
+Informe de Bugs
+-----------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------
+Tipo Parada         = Excepción no esperada
+Mensaje de Parada   = Script=fNuevaPostvta Línea=0 Error="Stop button was hit"
+Parada en paso	    = 5
+
+
+-----------------------------------------------------------------------------------------
+Fin del Informe del Caso Prueba_Conj Datos: CP52_CD1
+-----------------------------------------------------------------------------------------
+
+
+Informe de Errores imprevistos de sistema
+-----------------------------------------------------------------------------------------
+'Paso    5  -  Accion'                             'Excepción no esperada'        'Script=fNuevaPostvta Línea=0 Error="Stop button was hit"'
+
+'Paso    5  -  Accion'                             'Excepción no esperada'        'Script=CasosPrueba Línea=0 Error="Stop button was hit"'
+

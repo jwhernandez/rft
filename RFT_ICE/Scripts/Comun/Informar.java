@@ -24,6 +24,7 @@ public class Informar extends InformarHelper
 	 */
 	public void testMain(Object[] argu) 
 	{
+		ImpreEncabezadoScript(getScriptArgs(), getScriptName( ).toString());
 		logInfo("Mensaje: **" + argu[0] + "**" );
 		System.out.println("Mensaje: **" + argu[0] + "**" );
 

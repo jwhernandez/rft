@@ -20,17 +20,44 @@ import com.rational.test.ft.vp.IFtVerificationPoint;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
  * Script Name   : <b>ValidarIMEICP</b><br>
- * Generated     : <b>2016/01/29 17:14:10</b><br>
+ * Generated     : <b>2016/06/06 13:51:23</b><br>
  * Description   : Helper class for script<br>
  * Original Host : Windows 7 x86 6.1 <br>
  * 
- * @since  enero 29, 2016
+ * @since  junio 06, 2016
  * @author Sandra
  */
 public abstract class ValidarIMEICPHelper extends libreria.Accion
 {
 	/**
-	 * ICEIMEI: with default state.
+	 * ICETerminalCliente: with default state.
+	 *		IsChecked : false
+	 * 		ClassName : SiebCheckbox
+	 * 		.class : SiebCheckbox
+	 * 		IsEnabled : true
+	 * 		RepositoryName : ICE Terminal Cliente
+	 */
+	protected SiebCheckboxTestObject CheckTerminalCliente() 
+	{
+		return new SiebCheckboxTestObject(
+                        getMappedTestObject("CheckTerminalCliente"));
+	}
+	/**
+	 * ICETerminalCliente: with specific test context and state.
+	 *		IsChecked : false
+	 * 		ClassName : SiebCheckbox
+	 * 		.class : SiebCheckbox
+	 * 		IsEnabled : true
+	 * 		RepositoryName : ICE Terminal Cliente
+	 */
+	protected SiebCheckboxTestObject CheckTerminalCliente(TestObject anchor, long flags) 
+	{
+		return new SiebCheckboxTestObject(
+                        getMappedTestObject("CheckTerminalCliente"), anchor, flags);
+	}
+	
+	/**
+	 * IMEI: with default state.
 	 *		ClassName : SiebText
 	 * 		.class : SiebText
 	 * 		RepositoryName : ICE IMEI
@@ -41,7 +68,7 @@ public abstract class ValidarIMEICPHelper extends libreria.Accion
                         getMappedTestObject("IMEI"));
 	}
 	/**
-	 * ICEIMEI: with specific test context and state.
+	 * IMEI: with specific test context and state.
 	 *		ClassName : SiebText
 	 * 		.class : SiebText
 	 * 		RepositoryName : ICE IMEI
@@ -53,7 +80,7 @@ public abstract class ValidarIMEICPHelper extends libreria.Accion
 	}
 	
 	/**
-	 * Arbol_lista: with default state.
+	 * LineasPedido: with default state.
 	 *		ActiveRow : 9
 	 * 		ClassName : SiebList
 	 * 		.class : SiebList
@@ -66,7 +93,7 @@ public abstract class ValidarIMEICPHelper extends libreria.Accion
                         getMappedTestObject("LineasPedido"));
 	}
 	/**
-	 * Arbol_lista: with specific test context and state.
+	 * LineasPedido: with specific test context and state.
 	 *		ActiveRow : 9
 	 * 		ClassName : SiebList
 	 * 		.class : SiebList

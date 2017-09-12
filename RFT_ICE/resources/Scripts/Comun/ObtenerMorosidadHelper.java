@@ -20,82 +20,105 @@ import com.rational.test.ft.vp.IFtVerificationPoint;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
  * Script Name   : <b>ObtenerMorosidad</b><br>
- * Generated     : <b>2016/01/21 14:00:44</b><br>
+ * Generated     : <b>2016/03/30 12:13:33</b><br>
  * Description   : Helper class for script<br>
  * Original Host : Windows 7 x86 6.1 <br>
  * 
- * @since  enero 21, 2016
+ * @since  marzo 30, 2016
  * @author Sandra
  */
 public abstract class ObtenerMorosidadHelper extends libreria.Accion
 {
 	/**
-	 * ConsultaMorosidad: with default state.
+	 * ConsultaMorosidadPI: with default state.
 	 *		ClassName : SiebButton
 	 * 		.class : SiebButton
 	 * 		RepositoryName : ConsultaMorosidad
 	 */
-	protected SiebButtonTestObject ConsultaMorosidad() 
+	protected SiebButtonTestObject ConsultaMorosidadPI() 
 	{
 		return new SiebButtonTestObject(
-                        getMappedTestObject("ConsultaMorosidad"));
+                        getMappedTestObject("ConsultaMorosidadPI"));
 	}
 	/**
-	 * ConsultaMorosidad: with specific test context and state.
+	 * ConsultaMorosidadPI: with specific test context and state.
 	 *		ClassName : SiebButton
 	 * 		.class : SiebButton
 	 * 		RepositoryName : ConsultaMorosidad
 	 */
-	protected SiebButtonTestObject ConsultaMorosidad(TestObject anchor, long flags) 
+	protected SiebButtonTestObject ConsultaMorosidadPI(TestObject anchor, long flags) 
 	{
 		return new SiebButtonTestObject(
-                        getMappedTestObject("ConsultaMorosidad"), anchor, flags);
+                        getMappedTestObject("ConsultaMorosidadPI"), anchor, flags);
 	}
 	
 	/**
-	 * SiebScreenViews: with default state.
+	 * ConsultaMorosidadVta: with default state.
+	 *		ClassName : SiebButton
+	 * 		.class : SiebButton
+	 * 		RepositoryName : ConsultaMorosidad
+	 */
+	protected SiebButtonTestObject ConsultaMorosidadVta() 
+	{
+		return new SiebButtonTestObject(
+                        getMappedTestObject("ConsultaMorosidadVta"));
+	}
+	/**
+	 * ConsultaMorosidadVta: with specific test context and state.
+	 *		ClassName : SiebButton
+	 * 		.class : SiebButton
+	 * 		RepositoryName : ConsultaMorosidad
+	 */
+	protected SiebButtonTestObject ConsultaMorosidadVta(TestObject anchor, long flags) 
+	{
+		return new SiebButtonTestObject(
+                        getMappedTestObject("ConsultaMorosidadVta"), anchor, flags);
+	}
+	
+	/**
+	 * TabsPedidoPortabilidad: with default state.
 	 *		ClassName : SiebScreenViews
 	 * 		.class : SiebScreenViews
 	 * 		RepositoryName : SiebScreenViews
 	 */
-	protected SiebScreenViewsTestObject PestañasPedido() 
+	protected SiebScreenViewsTestObject TabsPedidoPortabilidad() 
 	{
 		return new SiebScreenViewsTestObject(
-                        getMappedTestObject("PestañasPedido"));
+                        getMappedTestObject("TabsPedidoPortabilidad"));
 	}
 	/**
-	 * SiebScreenViews: with specific test context and state.
+	 * TabsPedidoPortabilidad: with specific test context and state.
 	 *		ClassName : SiebScreenViews
 	 * 		.class : SiebScreenViews
 	 * 		RepositoryName : SiebScreenViews
 	 */
-	protected SiebScreenViewsTestObject PestañasPedido(TestObject anchor, long flags) 
+	protected SiebScreenViewsTestObject TabsPedidoPortabilidad(TestObject anchor, long flags) 
 	{
 		return new SiebScreenViewsTestObject(
-                        getMappedTestObject("PestañasPedido"), anchor, flags);
+                        getMappedTestObject("TabsPedidoPortabilidad"), anchor, flags);
 	}
 	
 	/**
-	 * BrowserIE: with default state.
-	 *		.class : Html.HtmlBrowser
-	 * 		.browserName : MS Internet Explorer
-	 * 		.processName : iexplore.exe
+	 * TabsPedidoVta: with default state.
+	 *		ClassName : SiebScreenViews
+	 * 		.class : SiebScreenViews
+	 * 		RepositoryName : SiebScreenViews
 	 */
-	protected BrowserTestObject browser_browserIE() 
+	protected SiebScreenViewsTestObject TabsPedidoVta() 
 	{
-		return new BrowserTestObject(
-                        getMappedTestObject("browser_browserIE"));
+		return new SiebScreenViewsTestObject(
+                        getMappedTestObject("TabsPedidoVta"));
 	}
 	/**
-	 * BrowserIE: with specific test context and state.
-	 *		.class : Html.HtmlBrowser
-	 * 		.browserName : MS Internet Explorer
-	 * 		.processName : iexplore.exe
+	 * TabsPedidoVta: with specific test context and state.
+	 *		ClassName : SiebScreenViews
+	 * 		.class : SiebScreenViews
+	 * 		RepositoryName : SiebScreenViews
 	 */
-	protected BrowserTestObject browser_browserIE(TestObject anchor, long flags) 
+	protected SiebScreenViewsTestObject TabsPedidoVta(TestObject anchor, long flags) 
 	{
-		return new BrowserTestObject(
-                        getMappedTestObject("browser_browserIE"), anchor, flags);
+		return new SiebScreenViewsTestObject(
+                        getMappedTestObject("TabsPedidoVta"), anchor, flags);
 	}
 	
 	

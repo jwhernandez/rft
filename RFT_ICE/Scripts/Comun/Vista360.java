@@ -17,37 +17,48 @@ import com.rational.test.ft.sys.SpyMemory;
 import com.rational.test.ft.sys.SpyMemoryStatistics; 
 
 /**
- * Descripción: Ir a la vista 360 Parámetros: Recibe el número de cuenta cliente
+ * Descripción: Ir a la vista 360 
+ * Parámetros: Recibe el número de cuenta cliente
  * Script Name   : <b>Vista360</b>
- * Parametros 0) Nro de cuenta 1)OK/NOK
- * ej: 101784954044 res
+ * Parametros 0) OK/NOK 1) Identificacion 2) Clase cuenta: Cliente / Facturación
+ * ej: res 405890652 Cliente
  * Precondiciones: Estar en siebel en cualquier pantalla 
- * @since  2016/01/12
- * @author Sandra
+ * @since  2016/01/12 modificado a usar identificacion 19/10
+ * @author SS
  */
 public class Vista360 extends Vista360Helper {
 	public void testMain(Object[] argu) throws RationalTestException{
 		
-		argu[1] = "NOK";
+		ImpreEncabezadoScript(getScriptArgs(), getScriptName( ).toString());
+ 
+		argu[0] = "NOK";
 		LogoOracle().waitForExistence();
 
 		Pestañas().gotoScreen("Accounts Screen");
- 
+		
 		NroCuenta().waitForExistence();
 		// Ingresar número de cuenta recibido como parámetro
-		String NroCuenta = argu[0].toString();
-		NroCuenta().setText(NroCuenta);
+		String Identificacion = argu[1].toString();
+		Identificación().setText(Identificacion);
+		ClaseCuenta().select(argu[2].toString());
+		System.out.println("Clase de cuenta ingresada :" +ClaseCuenta().getProperty(".value") );
+		if (!ClaseCuenta().getProperty(".value").equals(argu[2].toString()))
+			ClaseCuenta().select(argu[2].toString());
 		Ir().click();
-		NuevaConsuta().waitForExistence(); // no se hace en la lista pues no funciona
-		
-		sleep(5);
  
+		Nuevo().waitForExistence(); // dado que la anterior sentencia no funciona se agrega esta
+		Nuevo().ensureObjectIsVisible(); // se agrega esta sentencia para que no pierda el menu de la visibilidad y de error
+		
+		sleep(1);
+		
 		SiebScreenViews().goTo("All Account List View", "L2");
 		sleep(2);
 		ListaCuentas().drillDownColumn("Name", 0); // es la vista de todas las cuentas
 		
 		sleep(1);
 		NroPedido().waitForExistence();
-		argu[1] = "OK";
+		argu[0] = "OK";
+		
+		ImpreResultadoScript(getScriptName( ).toString(), argu[1].toString());
 	}
 }

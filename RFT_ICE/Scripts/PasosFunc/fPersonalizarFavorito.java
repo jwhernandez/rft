@@ -31,10 +31,10 @@ public class fPersonalizarFavorito extends fPersonalizarFavoritoHelper
 		PersFavSMS[0] = "SMSFav";
 		PersFavSMS[0] = args[1].toString();
 		PersFavSMS[1] = "Agregar";
-		callScript("Scripts.Comun.PersonalizarGrupoSVA", PersFavSMS);
+		callScript("Scripts.Comun.PersonalizarGrupoSVANew", PersFavSMS);
 
 		if  (!PersFavSMS[2].toString().equals("Agregado")){
-			MensError[0] = "Agregar SMS Favorito falló";
+			MensError[0] = "Agregar SMS Favorito fatext_specialRatingListName().lló";
 			//MensError[0] = "xDefecto";
 			MensError[1] = args[3].toString();
 			MensError[2] = args[0].toString();

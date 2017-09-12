@@ -20,17 +20,17 @@ import com.rational.test.ft.vp.IFtVerificationPoint;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
  * Script Name   : <b>NuevaVenta</b><br>
- * Generated     : <b>2016/01/12 11:53:41</b><br>
+ * Generated     : <b>2016/12/14 10:57:56</b><br>
  * Description   : Helper class for script<br>
  * Original Host : Windows 7 x86 6.1 <br>
  * 
- * @since  enero 12, 2016
+ * @since  diciembre 14, 2016
  * @author Sandra
  */
 public abstract class NuevaVentaHelper extends libreria.Accion
 {
 	/**
-	 * ConsultaMorosidad: with default state.
+	 * ConsultaMorosidadVta: with default state.
 	 *		ClassName : SiebButton
 	 * 		.class : SiebButton
 	 * 		RepositoryName : ConsultaMorosidad
@@ -41,7 +41,7 @@ public abstract class NuevaVentaHelper extends libreria.Accion
                         getMappedTestObject("Morosidad"));
 	}
 	/**
-	 * ConsultaMorosidad: with specific test context and state.
+	 * ConsultaMorosidadVta: with specific test context and state.
 	 *		ClassName : SiebButton
 	 * 		.class : SiebButton
 	 * 		RepositoryName : ConsultaMorosidad
@@ -53,7 +53,7 @@ public abstract class NuevaVentaHelper extends libreria.Accion
 	}
 	
 	/**
-	 * OrderNumber: with default state.
+	 * NroPedido: with default state.
 	 *		ClassName : SiebText
 	 * 		.class : SiebText
 	 * 		RepositoryName : OrderNumber
@@ -64,7 +64,7 @@ public abstract class NuevaVentaHelper extends libreria.Accion
                         getMappedTestObject("NroPedido"));
 	}
 	/**
-	 * OrderNumber: with specific test context and state.
+	 * NroPedido: with specific test context and state.
 	 *		ClassName : SiebText
 	 * 		.class : SiebText
 	 * 		RepositoryName : OrderNumber
@@ -99,7 +99,7 @@ public abstract class NuevaVentaHelper extends libreria.Accion
 	}
 	
 	/**
-	 * SiebList: with default state.
+	 * Pedidos: with default state.
 	 *		ClassName : SiebList
 	 * 		.class : SiebList
 	 * 		RepositoryName : SiebList
@@ -110,7 +110,7 @@ public abstract class NuevaVentaHelper extends libreria.Accion
                         getMappedTestObject("Pedidos"));
 	}
 	/**
-	 * SiebList: with specific test context and state.
+	 * Pedidos: with specific test context and state.
 	 *		ClassName : SiebList
 	 * 		.class : SiebList
 	 * 		RepositoryName : SiebList
@@ -122,7 +122,7 @@ public abstract class NuevaVentaHelper extends libreria.Accion
 	}
 	
 	/**
-	 * SiebScreenViews: with default state.
+	 * TabsPedidoVta: with default state.
 	 *		ClassName : SiebScreenViews
 	 * 		.class : SiebScreenViews
 	 * 		RepositoryName : SiebScreenViews
@@ -133,7 +133,7 @@ public abstract class NuevaVentaHelper extends libreria.Accion
                         getMappedTestObject("TabsPedido"));
 	}
 	/**
-	 * SiebScreenViews: with specific test context and state.
+	 * TabsPedidoVta: with specific test context and state.
 	 *		ClassName : SiebScreenViews
 	 * 		.class : SiebScreenViews
 	 * 		RepositoryName : SiebScreenViews

@@ -1,0 +1,96 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: Generico Desde paso: A Modo:Real
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+---------------------------
+CP76_CD1_T1;LeerDatosEntrada;OK;
+CP76_CD1_T1;LeerDatoSalidaUltPasoEjec;OK;
+CP76_CD1_T1;LeerDatosSalida;OK;
+CP76_CD1_T1;Paso1:fLogin;NE;
+CP76_CD1_T1;Paso2:fLoginIf;OK;
+CP76_CD1_T1;Paso3:fVista360;NE;
+CP76_CD1_T1;Paso4:fValidarPerfilFactCuenta;NE;
+CP76_CD1_T1;Paso5:fCrearPerfilFacCuenta;NE;
+CP76_CD1_T1;Paso6:fNuevaVenta;NE;
+CP76_CD1_T1;Paso7:fBuscarPedidoVenta;NE;
+CP76_CD1_T1;Paso8:fObtenerMorosidad;NE;
+CP76_CD1_T1;Paso9:fIngresarAutenticacion;NE;
+CP76_CD1_T1;Paso10:fCompraPlanCatalogo;NE;
+CP76_CD1_T1;Paso11:fIngresarSIM;NE;
+CP76_CD1_T1;Paso12:fGenerarCtaFact;NE;
+CP76_CD1_T1;Paso13:fSeleccionarTerminal;NE;
+CP76_CD1_T1;Paso14:fValorarTodo;NE;
+CP76_CD1_T1;Paso15:fIngresarIMEI;NE;
+CP76_CD1_T1;Paso16:fIngresarIMEI;NE;
+CP76_CD1_T1;Paso17:fIngresarIMEI;NE;
+CP76_CD1_T1;Paso18:fCheckPagoFact;NE;
+CP76_CD1_T1;Paso19:fValidarDescEnProducto;NE;
+CP76_CD1_T1;Paso20:fASRM_ModificarEstadoServicio;NE;
+CP76_CD1_T1;Paso21:fProximoNumero;NE;
+CP76_CD1_T1;Paso22:fIngresarNroServicioAdmin;NE;
+CP76_CD1_T1;Paso23:fEnviarPedido;NE;
+CP76_CD1_T1;Paso24:fEsperaEstado;NE;
+CP76_CD1_T1;Paso25:fATV_Login;NE;
+CP76_CD1_T1;Paso26:fATV_BuscarTerminal_Plan;NE;
+CP76_CD1_T1;Paso27:fATV_ValidarEstadoTerminal_Plan;NE;
+CP76_CD1_T1;Paso28:fATV_Logout;NE;
+CP76_CD1_T1;Paso29:fNuevoTramite;NE;
+CP76_CD1_T1;Paso30:fVista360;NE;
+CP76_CD1_T1;Paso31:fBuscarActivo;NE;
+CP76_CD1_T1;Paso32:fNuevoCambioPlan;NE;
+CP76_CD1_T1;Paso33:fBuscarPedidoVenta;NE;
+CP76_CD1_T1;Paso34:fObtenerMorosidad;NE;
+CP76_CD1_T1;Paso35:fIngresarAutenticacion;NE;
+CP76_CD1_T1;Paso36:fAgregarContacto_RepLegal;NE;
+CP76_CD1_T1;Paso37:fSeleccionarTerminal;NE;
+CP76_CD1_T1;Paso38:fValorarTodo;NE;
+CP76_CD1_T1;Paso39:fIngresarIMEI;NE;
+CP76_CD1_T1;Paso40:fIngresarIMEI;NE;
+CP76_CD1_T1;Paso41:fIngresarIMEI;NE;
+CP76_CD1_T1;Paso42:fCheckPagoFact;NE;
+CP76_CD1_T1;Paso43:fValidarDescEnProducto;NE;
+CP76_CD1_T1;Paso44:fATV_Login;NE;
+CP76_CD1_T1;Paso45:fATV_ModificarRegRetencion;NE;
+CP76_CD1_T1;Paso46:fATV_Logout;NE;
+CP76_CD1_T1;Paso47:fEnviarPedido;NE;
+CP76_CD1_T1;Paso48:fEsperaEstado;NE;
+CP76_CD1_T1;Paso49:fATV_Login;OK;
+CP76_CD1_T1;Paso50:fATV_BuscarTerminal_Plan;OK;
+CP76_CD1_T1;Paso51:fATV_ValidarEstadoTerminal_Plan;OK;
+CP76_CD1_T1;Paso52:fATV_BuscarTerminal_Plan;OK;
+CP76_CD1_T1;Paso53:fATV_ValidarEstadoTerminal_Plan;OK;
+CP76_CD1_T1;Paso54:fATV_ValidarPosibMultas;NE;
+CP76_CD1_T1;Paso55:fATV_ValidarFormulaMultas;NE;
+CP76_CD1_T1;Paso56:fATV_ValidarPosibMultas;NE;
+CP76_CD1_T1;Paso57:fATV_ValidarFormulaMultas;NE;
+CP76_CD1_T1;Paso58:fATV_Logout;OK;
+CP76_CD1_T3;Paso59:fNuevoTramite;OK;
+
+
+Informe de DATOS de salida
+---------------------------
+CP76_CD1;UltimoPasoOK;49;
+CP76_CD1;UltimoTramite;2;
+CP76_CD1;T2_NroPedido;1-1735576628;
+CP76_CD1;T2_NroPedidoAnt;1-1735047671;
+CP76_CD1;NroServicio;10101010;
+
+
+Informe de Bugs
+-----------------
+
+
+Informe de Errores imprevistos de sistema
+------------------------------------------------
+Generico;Mensaje UE;Script=PasosFunc.fAdministrarLOV Línea=0 Error="Se ha pulsado el botón Detener";
+
+Generico;Mensaje UE;Script=CasosPrueba.CasosPruebav2 Línea=0 Error="Se ha pulsado el botón Detener";
+
+
+----------------------------------------------------------------------------------------------------------
+Tipo Error:Bug Mensaje de Error:Script=PasosFunc.fAdministrarLOV Línea=0 Error="Se ha pulsado el botón Detener"
+Fin del Informe del Caso Prueba y Conj Datos: Generico
+----------------------------------------------------------------------------------------------------------

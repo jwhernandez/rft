@@ -37,7 +37,7 @@ public class ValidarEstructuraCP extends ValidarEstructuraCPHelper
 {
 	public void testMain(Object[] args) 
 	{
-
+		ImpreEncabezadoScript(getScriptArgs(), getScriptName( ).toString());
 		String[] columnNames = {"Producto","Categoria", "Codigo"};
 		Object[][] data = null;
 		JTable table = new JTable(data, columnNames);
@@ -58,9 +58,9 @@ public class ValidarEstructuraCP extends ValidarEstructuraCPHelper
 		if (ValidaEstruct[1].toString().equals("OK")) {
 			tablaOrdenada.setRowSorter(sorter);
 			
-			List <RowSorter.SortKey> sortKeys = new ArrayList<RowSorter.SortKey>();
-            sortKeys.add(new RowSorter.SortKey(1, SortOrder.ASCENDING));
-            sorter.setSortKeys(sortKeys);
+			//List <RowSorter.SortKey> sortKeys = new ArrayList<RowSorter.SortKey>();
+           // sortKeys.add(new RowSorter.SortKey(1, SortOrder.ASCENDING));
+           // sorter.setSortKeys(sortKeys);
             
            	String sCodAccion1 = data[0][2].toString(); // codigo
         	String sCat1 = data[0][1].toString(); // categoria
@@ -91,8 +91,7 @@ public class ValidarEstructuraCP extends ValidarEstructuraCPHelper
 		} else {
 			args[0] = "NOK";
 		}
-
-		
+		ImpreResultadoScript(getScriptName( ).toString(), args[0].toString());
 	}
 }
 

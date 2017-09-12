@@ -1,0 +1,146 @@
+package Scripts.Comun;
+import resources.Scripts.Comun.AgregarNum_a_LE_PedHelper;
+import com.rational.test.ft.*;
+import com.rational.test.ft.object.interfaces.*;
+import com.rational.test.ft.object.interfaces.SAP.*;
+import com.rational.test.ft.object.interfaces.WPF.*;
+import com.rational.test.ft.object.interfaces.dojo.*;
+import com.rational.test.ft.object.interfaces.siebel.*;
+import com.rational.test.ft.object.interfaces.flex.*;
+import com.rational.test.ft.object.interfaces.generichtmlsubdomain.*;
+import com.rational.test.ft.script.*;
+import com.rational.test.ft.sys.SpyMemory;
+import com.rational.test.ft.value.*;
+import com.rational.test.ft.vp.*;
+import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
+import com.ibm.xtq.ast.nodes.ValueOf;
+/**
+ * Descripción: Agregar un numero a una lista especial pasada como parametro
+ * @param 0) NOK / OK 1) Nombre lista 2) Ir al pedido true o false 
+ * 3) volver a pedido true false 4) NumTel 
+ * 5) Msj a validar o NA 6) out Msj real 7) out false o true si coincide 8)Tramite
+ * Precondiciones: Estar en la pantalla de lista especial
+ * Luego de la ejecución del script si el parametro 2 es volver al pedido volverá al pedido.
+ * Ejemplo: res 1-xxx true 24314578 DPM019 res res  (ejemplo de pedido = 1-1721952061)	 
+ * res 1-1722248362 true true 10656936 NA res res Venta
+ * res 1-1723207852 true true 10771291 NA res res Venta
+ * @author SS 
+ * Script Name   : <b>AgregarNum_a_LE_Ped</b>
+ * @since Oct 2016/11/18
+ */
+public class AgregarNum_a_LE_Ped extends AgregarNum_a_LE_PedHelper
+{
+	public void testMain(Object[] argu) throws RationalTestException
+	{
+		ImpreEncabezadoScript(getScriptArgs(), getScriptName( ).toString());
+		String[] Validaciones;
+		Validaciones = new String[4];
+		//  Invoca a Validaciones con los siguientes parámetros:
+		// Parámetros: 0) Recibe código de mensaje a validar, 
+		// 1) devuelve mensaje y 2) un boolean true / false (indicando true si el mensaje coincide)
+		// 3) recibe un tipo de mensaje si no es HTML el mensaje a validar (opcional) HTML, BrowserScript
+
+		argu[0] = "NOK"; // // Argumento de salida x defecto
+		argu[7] = "true"; // Argumento de salida x defecto
+		// Parámetros de entrada
+		String sLista = argu[1].toString();
+		boolean bLEDesdePed =Boolean.parseBoolean(argu[2].toString().toLowerCase());
+		boolean bLEVolverPed =Boolean.parseBoolean(argu[3].toString().toLowerCase());
+		String sTel = argu[4].toString();
+		String sMsj = argu[5].toString();	
+		String sTramite = argu[8].toString();	
+		boolean bNumOK = false; 
+
+		// Si esta en el pedido va a la pantalla de lista especial
+		if (bLEDesdePed) 
+		{
+			if (!sTramite.equals("PortIn")) 
+			{
+				BtonConsultaPedido().ensureObjectIsVisible();	
+				SubPestañas().goTo("SWI Special Rating Orders Profile View", "L4");
+			} else
+			{
+				BtonConsultaPedidoPI().ensureObjectIsVisible();	
+				//SubPestañas().goTo("", "L4");
+				System.out.println("Paso no implementado para portin");
+			}
+			sleep(3);
+		}
+		
+		NumerosLE().ensureObjectIsVisible();
+		sleep(1);
+		
+		Buscar().performAction();
+		NombreLE().setText(sLista);
+		EjecutarBuscar().performAction();
+		
+		// Si se le paso un num de tel se lo ingresa en la lista
+		System.out.println("Numero de Telefono: " + sTel);
+
+		NuevoNumero().performAction();
+		// workaround para evitar que no permita ingresar el numero especial por no estar visible
+		NumerosLE().ensureObjectIsVisible();
+		sleep(2);
+		NumTel().setText(sTel);
+
+		//Si se incuyó Msja se llama a script de validar Msj
+		System.out.println("Mensaje a validar: " + sMsj);
+		if (!(sMsj.equals("NA"))) 
+		{ 
+			Validaciones[0]=sMsj;  
+			Validaciones[3]="HTML";  
+			callScript("Scripts.Comun.ValidarMensaje", Validaciones);
+			argu[6] = Validaciones[1];
+			argu[7] = Validaciones[2];
+
+			Siebel().processKeyboardAccelerator("Esc");
+
+			if (sMsj.equals("NA")) 
+			{ // Significa que debió actualizar entonces chequea
+				NumTel().getProperty("Text");
+				if (!(NumTel().getProperty("Text").toString().equals(sTel)))
+				{
+					//Siebel().processKeyboardAccelerator("Esc");
+					Siebel().processKeyboardAccelerator("Ctrl+U"); // Deshace el número ingresado
+				} else 
+				{ 
+					Siebel().processKeyboardAccelerator("Ctrl+S"); // graba el número
+					bNumOK = true;
+				}
+			} else 
+			{// El mensaje es <> de NA, no se controla que haya grabado el número y controla
+				// controla si el mensaje conincide
+				if (argu[7].toString().equals("true")) 	bNumOK = true; 	
+				Siebel().processKeyboardAccelerator("Ctrl+U"); // Deshace el número ingresado
+
+			}
+		} else bNumOK = true;
+
+
+		// Retornar si el argumento lo indica 
+		if ((bLEVolverPed) && bNumOK ) 
+		{
+			LogoICE().ensureObjectIsVisible();
+			sleep(2);
+			if (!sTramite.equals("PortIn")) 
+			{
+				BtonConsultaPedido().ensureObjectIsVisible();	
+				sleep(1);	
+				SubPestañas().goTo("Order Entry - Line Items Detail View (Sales)", "L4");
+				sleep(2);			
+				BtonConsultaPedido().ensureObjectIsVisible();	
+				argu[0] = "OK";
+			} else
+			{
+				BtonConsultaPedidoPI().ensureObjectIsVisible();	
+				sleep(1);	
+				//SubPestañas().goTo("", "L4");
+				System.out.println("Paso no implementado para portin");
+				BtonConsultaPedidoPI().ensureObjectIsVisible();	
+			}
+		} if (bNumOK) argu[0] = "OK";
+
+		ImpreResultadoScript(getScriptName( ).toString(), argu[0].toString());
+	}
+}
+

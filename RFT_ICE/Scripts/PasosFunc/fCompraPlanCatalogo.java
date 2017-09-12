@@ -19,10 +19,12 @@ import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
  * SS Nov 2015 */
 public class fCompraPlanCatalogo extends fCompraPlanCatalogoHelper
 {
-	public void testMain(Object[] args) 
+	public void testMain(Object[] args) throws RationalTestException 
 	{
+		ImpreEncabezadoScript(getScriptArgs(), getScriptName( ).toString());
 		String[] Plan;
-		Plan = new String[2];
+		Plan = new String[3];
+		//  0) OK/NOK 1) IN Producto a comprar 2) tramite
 		
 		String[] MensError;
 		MensError = new String[4];
@@ -37,18 +39,18 @@ public class fCompraPlanCatalogo extends fCompraPlanCatalogoHelper
 		/** 
 		 * Comprar un plan
 		 */
-		Plan[0] = dpString("Plan");
+		Plan[1] = dpString("Plan");
+		Plan[2] = dpString("Tramite");
 		callScript("Scripts.Comun.CompraPlanCatalogo", Plan);
 
-		if  ((Plan[1].equals("NOK"))){
-			MensError[0] = "Plan no se encontró en catálogo";
-			//MensError[0] = "xDefecto";
+		if  ((Plan[0].equals("NOK"))){
+			//MensError[0] = "Plan no se encontró en catálogo";
+			MensError[0] = "xDefecto";
 			MensError[1] = args[3].toString();
 			MensError[2] = args[0].toString();
 			MensError[3] = getScriptName( );
 			callScript("Scripts.Comun.TerminarCasoError", MensError);
 		}
-	}
 	}
 }
 

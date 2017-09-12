@@ -20,19 +20,138 @@ import com.rational.test.ft.vp.IFtVerificationPoint;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
  * Script Name   : <b>EnviarPedido</b><br>
- * Generated     : <b>2015/12/11 13:58:12</b><br>
+ * Generated     : <b>2017/06/12 10:16:34 AM</b><br>
  * Description   : Helper class for script<br>
  * Original Host : Windows 7 x86 6.1 <br>
  * 
- * @since  diciembre 11, 2015
- * @author Sandra
+ * @since  junio 12, 2017
+ * @author rft
  */
 public abstract class EnviarPedidoHelper extends libreria.Accion
 {
 	/**
+	 * BtonConsultaPedido: with default state.
+	 *		.text : Consulta
+	 * 		.id : RegularExpression(s.*mb)
+	 * 		.href : javascript:void(0)
+	 * 		.title : 
+	 * 		.class : Html.A
+	 * 		.name : 
+	 * 		.classIndex : 0
+	 */
+	protected GuiTestObject BotonConsultaPedido() 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("BotonConsultaPedido"));
+	}
+	/**
+	 * BtonConsultaPedido: with specific test context and state.
+	 *		.text : Consulta
+	 * 		.id : RegularExpression(s.*mb)
+	 * 		.href : javascript:void(0)
+	 * 		.title : 
+	 * 		.class : Html.A
+	 * 		.name : 
+	 * 		.classIndex : 0
+	 */
+	protected GuiTestObject BotonConsultaPedido(TestObject anchor, long flags) 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("BotonConsultaPedido"), anchor, flags);
+	}
+	
+	/**
+	 * s_1_1_151_0_mb: with default state.
+	 *		.text : Consulta
+	 * 		.href : javascript:void(0)
+	 * 		.id : s_1_1_151_0_mb
+	 * 		.title : 
+	 * 		.class : Html.A
+	 * 		.name : 
+	 * 		.classIndex : 0
+	 */
+	protected GuiTestObject BotonConsultaPedidoAjustado() 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("BotonConsultaPedidoAjustado"));
+	}
+	/**
+	 * s_1_1_151_0_mb: with specific test context and state.
+	 *		.text : Consulta
+	 * 		.href : javascript:void(0)
+	 * 		.id : s_1_1_151_0_mb
+	 * 		.title : 
+	 * 		.class : Html.A
+	 * 		.name : 
+	 * 		.classIndex : 0
+	 */
+	protected GuiTestObject BotonConsultaPedidoAjustado(TestObject anchor, long flags) 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("BotonConsultaPedidoAjustado"), anchor, flags);
+	}
+	
+	/**
+	 * BtonNuevo: with default state.
+	 *		.text : Enviar
+	 * 		.id : s_1_1_146_0_mb
+	 * 		.href : javascript:void(0)
+	 * 		.title : 
+	 * 		.class : Html.A
+	 * 		.name : 
+	 * 		.classIndex : 0
+	 */
+	protected GuiTestObject BtonNuevo() 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("BtonNuevo"));
+	}
+	/**
+	 * BtonNuevo: with specific test context and state.
+	 *		.text : Enviar
+	 * 		.id : s_1_1_146_0_mb
+	 * 		.href : javascript:void(0)
+	 * 		.title : 
+	 * 		.class : Html.A
+	 * 		.name : 
+	 * 		.classIndex : 0
+	 */
+	protected GuiTestObject BtonNuevo(TestObject anchor, long flags) 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("BtonNuevo"), anchor, flags);
+	}
+	
+	/**
+	 * NroPedidoLabel: with default state.
+	 *		.id : s_1_1_80_0
+	 * 		.title : 
+	 * 		.class : Html.SPAN
+	 * 		.classIndex : 0
+	 */
+	protected GuiTestObject NroPedidoLabel() 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("NroPedidoLabel"));
+	}
+	/**
+	 * NroPedidoLabel: with specific test context and state.
+	 *		.id : s_1_1_80_0
+	 * 		.title : 
+	 * 		.class : Html.SPAN
+	 * 		.classIndex : 0
+	 */
+	protected GuiTestObject NroPedidoLabel(TestObject anchor, long flags) 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("NroPedidoLabel"), anchor, flags);
+	}
+	
+	/**
 	 * Submit: with default state.
 	 *		ClassName : SiebButton
 	 * 		.class : SiebButton
+	 * 		IsEnabled : false
 	 * 		RepositoryName : Submit
 	 */
 	protected SiebButtonTestObject enviarPedido() 
@@ -44,12 +163,36 @@ public abstract class EnviarPedidoHelper extends libreria.Accion
 	 * Submit: with specific test context and state.
 	 *		ClassName : SiebButton
 	 * 		.class : SiebButton
+	 * 		IsEnabled : false
 	 * 		RepositoryName : Submit
 	 */
 	protected SiebButtonTestObject enviarPedido(TestObject anchor, long flags) 
 	{
 		return new SiebButtonTestObject(
                         getMappedTestObject("enviarPedido"), anchor, flags);
+	}
+	
+	/**
+	 * Submit: with default state.
+	 *		ClassName : SiebButton
+	 * 		.class : SiebButton
+	 * 		RepositoryName : Submit
+	 */
+	protected SiebButtonTestObject enviarPedido_PI() 
+	{
+		return new SiebButtonTestObject(
+                        getMappedTestObject("enviarPedido_PI"));
+	}
+	/**
+	 * Submit: with specific test context and state.
+	 *		ClassName : SiebButton
+	 * 		.class : SiebButton
+	 * 		RepositoryName : Submit
+	 */
+	protected SiebButtonTestObject enviarPedido_PI(TestObject anchor, long flags) 
+	{
+		return new SiebButtonTestObject(
+                        getMappedTestObject("enviarPedido_PI"), anchor, flags);
 	}
 	
 	

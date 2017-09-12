@@ -1,0 +1,64 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: AE_CD1 Desde paso: 5 Modo:Real
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+---------------------------
+AE_CD1_T1;LeerDatosEntrada;OK;
+AE_CD1_T1;LeerDatoSalidaUltPasoEjec;OK;
+AE_CD1_T1;LeerDatosSalida;OK;
+AE_CD1_T1;Paso1:fASRM_Login;NE;
+AE_CD1_T1;Paso2:fASRM_ConsultaEstadoSIM;NE;
+AE_CD1_T1;Paso3:fASRM_ModificarEstadoServicio;NE;
+AE_CD1_T1;Paso4:fASRM_Logout;NE;
+AE_CD1_T1;Paso5:fATV_Login;OK;
+
+
+Informe de DATOS de salida
+---------------------------
+AE_CD1;UltimoPasoOK;6;
+AE_CD1;UltimoTramite;1;
+AE_CD1;T1_NroPedido;1-1735576628;
+AE_CD1;NroServicio;10101010;
+AE_CD1;T1_NroCtaFact;;
+AE_CD1;T1_NroRED;;
+AE_CD1;T1_NomListaEspecial;;
+AE_CD1;T1_Fecha CM=;;
+AE_CD1;T1_Id Task;;
+AE_CD1;Tenencia ;35;
+AE_CD1;Permanencia ;730;
+AE_CD1;DiasRestan ;695;
+AE_CD1;DescDiario ;581.5523;
+AE_CD1;Gastos ;21,420.2200;
+AE_CD1;PrecioVenta ;93,805.31;
+AE_CD1;PrecioPlan ;9,734.51;
+AE_CD1;RPT ;84,070.80;
+AE_CD1;CPT_i;20,354.33;
+AE_CD1;RPB ;80,040.01;
+AE_CD1;CPB ;425,599.07;
+AE_CD1;Plan ;PLAN MENSAJERO 2 24 M;
+AE_CD1;Terminal ;HUAWEI ASCEND G610 BLANCO;
+AE_CD1;RPT_Calc ;84070.8;
+AE_CD1;RPB_Calc ;20354.330499999996;
+AE_CD1;CPB_Calc ;425599.06849999994;
+AE_CD1;CPT_s_Calc ;80040.00821917808;
+AE_CD1;CPT_i_Calc ;101460.22821917808;
+
+
+Informe de Bugs
+-----------------
+
+
+Informe de Errores imprevistos de sistema
+------------------------------------------------
+AE_CD1;Mensaje UE;Script=PasosFunc.fATV_ValidarPosibMultas Línea=0 Error="Se ha pulsado el botón Detener";
+
+AE_CD1;Mensaje UE;Script=CasosPrueba.CasosPrueba Línea=0 Error="Se ha pulsado el botón Detener";
+
+
+----------------------------------------------------------------------------------------------------------
+Tipo Parada:UnhandledException - Mensaje de Parada: Script=PasosFunc.fATV_ValidarPosibMultas Línea=0 Error="Se ha pulsado el botón Detener"
+- Fin del Informe del Caso Prueba_Conj Datos: AE_CD1
+----------------------------------------------------------------------------------------------------------

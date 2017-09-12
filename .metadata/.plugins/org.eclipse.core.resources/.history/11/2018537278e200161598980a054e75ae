@@ -1,0 +1,95 @@
+package Scripts.Comun.SistemasExternos;
+import resources.Scripts.Comun.SistemasExternos.BRM_ValidarIMSI_ServicioHelper;
+
+import com.rational.test.ft.*;
+import com.rational.test.ft.object.interfaces.*;
+import com.rational.test.ft.object.interfaces.SAP.*;
+import com.rational.test.ft.object.interfaces.WPF.*;
+import com.rational.test.ft.object.interfaces.dojo.*;
+import com.rational.test.ft.object.interfaces.siebel.*;
+import com.rational.test.ft.object.interfaces.flex.*;
+import com.rational.test.ft.object.interfaces.generichtmlsubdomain.*;
+import com.rational.test.ft.script.*;
+import com.rational.test.ft.value.*;
+import com.rational.test.ft.vp.*;
+import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
+/**
+ * Description   : Valida un cambio de número en BRM  
+ * Script Name   : <b>BRM_ValidarIMSI_Servicio</b>
+ * @since  2016/12/02
+ * @author FF VC
+ * Parametros: 0) Resultado = OK/NOK 1) NumeroServicio
+ * ej res 85976565 TELCO/GSM/TELEPHONY
+ */
+public class BRM_ValidarIMSI_Servicio extends BRM_ValidarIMSI_ServicioHelper
+{
+	public void testMain(Object[] argu) 
+	{
+		ImpreEncabezadoScript(getScriptArgs(), getScriptName( ).toString());
+    	//infoPaso(sScriptName, Tipo.DATO,"Validar vigencia: ", sVigencia);
+		
+		argu[0] = "NOK";
+		
+		pestañas().click(atText("Services"));
+		sleep(5);
+
+		Servicios().waitForExistence(); // no funciona
+		
+		boolean encontrado = false;
+		String sServicio = "";
+		String sServicioDeseado = argu[1].toString();
+		String sTipo = "";
+		ITestDataTable iDataTable = (ITestDataTable) Servicios().getTestData("contents");
+		int rows = iDataTable.getRowCount();
+		
+		for (int i = 0; i < rows; i++) {
+			sTipo = iDataTable.getCell(i, 0).toString();
+			if (sTipo.equals("/service/telco/gsm/telephony")) {
+				Servicios()
+				.click(atCell(atRow(atIndex(i)),
+						atColumn("Type")));
+				encontrado = true;
+				break;
+			}
+		}
+		
+		if(encontrado){
+			Acciones().click();
+			popUpAcciones().click(atPath("View Aliases"));
+			
+			iDataTable = (ITestDataTable) ServiceAliases().getTestData("contents");
+			int rowsService = iDataTable.getRowCount();
+
+			encontrado = false;
+			for (int i = 0; i < rowsService; i++) {
+				sServicio = iDataTable.getCell(i, 0).toString();
+				
+				// Valida que el estado sea activo y que el producto sea el deseado
+				if (sServicio.equals(sServicioDeseado)) {
+					ServiceAliases()
+							.click(atCell(atRow(atIndex(i)),
+									atColumn(0)));
+					sleep(10);
+
+					encontrado = true;
+					break;
+				}
+			}
+			
+			OKServiceAliases().click();
+		}else{
+			System.out.println("Tipo no encontrado " + sTipo);
+		}
+		
+		if(encontrado){
+			argu[0] = "OK";
+			System.out.println("El número de servicio coincide " + sServicio + " - " + sServicioDeseado);
+		}
+		else System.out.println("El número de servicio no coincide " + sServicio + " - " + sServicioDeseado);
+		
+		
+		ImpreResultadoScript(getScriptName( ).toString(), "Resultado " + argu[0]);
+
+	}
+}
+

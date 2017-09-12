@@ -1,0 +1,41 @@
+
+-------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: CP76_CD1
+-------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+---------------------------
+CP76_CD1;LeerDatosEntrada;OK;
+CP76_CD1;GrabarDatosSalida;OK;
+CP76_CD1;Paso1:fLogin;OK;
+CP76_CD1;Paso2:fVista360;OK;
+CP76_CD1;Paso3:fValidarPerfilFactCuenta;NE;
+CP76_CD1;Paso4:fCrearPerfilFacCuenta;NE;
+CP76_CD1;Paso5:fNuevaVenta;OK;
+CP76_CD1;Paso6:fBuscarPedidoVenta;OK;
+CP76_CD1;Paso7:fObtenerMorosidad;OK;
+CP76_CD1;Paso8:fIngresarAutenticacion;OK;
+CP76_CD1;Paso9:fCompraPlanCatalogo;OK;
+CP76_CD1;Paso10:fIngresarSIM;OK;
+CP76_CD1;Paso11:fGenerarCtaFact;OK;
+CP76_CD1;Paso12:fSeleccionarTerminal;OK;
+CP76_CD1;Paso13:fValorarTodo;OK;
+CP76_CD1;Paso14:fIngresarIMEI;OK;
+CP76_CD1;Paso15:fIngresarIMEI;OK;
+CP76_CD1;Paso16:fBuscarProducto;OK;
+CP76_CD1;Paso17:fExpandiryBuscar;OK;
+CP76_CD1;Paso18:fIngresarIMEI;OK;
+CP76_CD1;Fin del caso;OK;
+
+
+Informe de DATOS de salida
+---------------------------
+
+
+Informe de Errores
+-----------------
+
+-------------------------------------------------------------------
+Fin del Informe del Caso Prueba y Conj Datos: CP76_CD1
+-------------------------------------------------------------------

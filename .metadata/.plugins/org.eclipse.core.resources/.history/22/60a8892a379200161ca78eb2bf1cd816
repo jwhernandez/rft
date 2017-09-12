@@ -1,0 +1,36 @@
+package Scripts.PasosFunc;
+import resources.Scripts.PasosFunc.fASRM_ConsultaEstadoServicioHelper;
+import resources.Scripts.PasosFunc.ASRM_ConsultaEstadoServicioHelper;
+import com.rational.test.ft.*;
+import com.rational.test.ft.object.interfaces.*;
+import com.rational.test.ft.object.interfaces.SAP.*;
+import com.rational.test.ft.object.interfaces.WPF.*;
+import com.rational.test.ft.object.interfaces.dojo.*;
+import com.rational.test.ft.object.interfaces.siebel.*;
+import com.rational.test.ft.object.interfaces.flex.*;
+import com.rational.test.ft.object.interfaces.generichtmlsubdomain.*;
+import com.rational.test.ft.script.*;
+import com.rational.test.ft.value.*;
+import com.rational.test.ft.vp.*;
+import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
+/**
+ * Description   : Functional Test Script
+ * @author rft
+ */
+public class fASRM_ConsultaEstadoServicio extends fASRM_ConsultaEstadoServicioHelper
+{
+	/**
+	 * Script Name   : <b>ASRM_ConsultaEstadoServicio</b>
+	 * Generated     : <b>oct. 14, 2016 12:53:02 PM</b>
+	 * Description   : Functional Test Script
+	 * Original Host : WinNT Version 6.1  Build 7601 (S)
+	 * 
+	 * @since  2016/10/14
+	 * @author rft
+	 */
+	public void testMain(Object[] args) 
+	{
+		// PENDIENTE Insertar código aquí
+	}
+}
+

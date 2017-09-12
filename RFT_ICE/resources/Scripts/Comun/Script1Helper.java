@@ -20,40 +20,15 @@ import com.rational.test.ft.vp.IFtVerificationPoint;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
  * Script Name   : <b>Script1</b><br>
- * Generated     : <b>2016/01/25 23:34:22</b><br>
+ * Generated     : <b>2017/03/16 14:17:48</b><br>
  * Description   : Helper class for script<br>
  * Original Host : Windows 7 x86 6.1 <br>
  * 
- * @since  enero 25, 2016
+ * @since  marzo 16, 2017
  * @author Sandra
  */
 public abstract class Script1Helper extends libreria.Accion
 {
-	/**
-	 * s_S_A1_div: with default state.
-	 *		.id : s_S_A1_div
-	 * 		.title : 
-	 * 		.class : Html.DIV
-	 * 		.classIndex : 0
-	 */
-	protected GuiTestObject html_s_S_A1_div() 
-	{
-		return new GuiTestObject(
-                        getMappedTestObject("html_s_S_A1_div"));
-	}
-	/**
-	 * s_S_A1_div: with specific test context and state.
-	 *		.id : s_S_A1_div
-	 * 		.title : 
-	 * 		.class : Html.DIV
-	 * 		.classIndex : 0
-	 */
-	protected GuiTestObject html_s_S_A1_div(TestObject anchor, long flags) 
-	{
-		return new GuiTestObject(
-                        getMappedTestObject("html_s_S_A1_div"), anchor, flags);
-	}
-	
 	
 
 	protected Script1Helper()

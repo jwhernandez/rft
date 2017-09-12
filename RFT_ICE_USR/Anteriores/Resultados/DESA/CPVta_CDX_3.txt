@@ -1,0 +1,46 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: CPVta_CDX Desde paso: 3 Modo:Real
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatosEntrada'                                                  'OK'                          
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'                                         'OK'                          
+'Paso    0  -  LeerDatosSalida'                                                   'OK'                          
+'Paso    1  -  fLogin'                                                            'OK'                          
+'Paso    2  -  fVista360'                                                         'NE'                          
+
+
+Informe de DATOS de salida
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoPasoOK'                 '2'                           
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoTramite'                '1'                           
+
+
+Informe de Bugs
+-----------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------
+Tipo Parada         = Excepción en Método
+Mensaje de Parada   = Script=NuevaVenta Línea=33 Método=DrillDownColumn Error=
+IsColumnExists("Order Number"); Error:(-1016) - Failed to create object "Siebel Power Communications.Accounts Screen.ICE SIS OM Customer Account Portal Resume View" of class "". Clase=com.rational.test.ft.Domain.Siebel.SiebelMethodExecutionFailureException Objeto=siebel.SiebListTestObject(Nombre: Pedidos, Correlación: Pedidos)
+Parada en paso	    = 3
+
+
+-----------------------------------------------------------------------------------------
+Fin del Informe del Caso Prueba_Conj Datos: CPVta_CDX
+-----------------------------------------------------------------------------------------
+
+
+Informe de Errores imprevistos de sistema
+-----------------------------------------------------------------------------------------
+'Paso    3  -  Accion'                             'Excepción en Método'          'Script=NuevaVenta Línea=33 Método=DrillDownColumn Error=
+IsColumnExists("Order Number"); Error:(-1016) - Failed to create object "Siebel Power Communications.Accounts Screen.ICE SIS OM Customer Account Portal Resume View" of class "". Clase=com.rational.test.ft.Domain.Siebel.SiebelMethodExecutionFailureException Objeto=siebel.SiebListTestObject(Nombre: Pedidos, Correlación: Pedidos)'
+
+'Paso    3  -  Accion'                             'Excepción no esperada'        'Script=NuevaVenta Línea=0 Error=
+IsColumnExists("Order Number"); Error:(-1016) - Failed to create object "Siebel Power Communications.Accounts Screen.ICE SIS OM Customer Account Portal Resume View" of class "".'
+
+'Paso    3  -  Accion'                             'Excepción no esperada'        'Script=fNuevaVenta Línea=0 Error=CRFCN0018E: La línea 33 del script 33 contiene una excepción.'
+

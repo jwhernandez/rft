@@ -1,0 +1,27 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: CP09_CD1_A Desde paso: 1 Modo:null
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+---------------------------
+
+
+Informe de DATOS de salida
+---------------------------
+
+
+Informe de Bugs
+-----------------
+
+
+Informe de Errores imprevistos de sistema
+------------------------------------------------
+CP09_CD1_A;Mensaje UE;Script=CasosPrueba.CasosPrueba Línea=0 Error=For input string: "NA";
+
+
+----------------------------------------------------------------------------------------------------------
+Tipo Parada:UnhandledException - Mensaje de Parada: Script=CasosPrueba.CasosPrueba Línea=0 Error=For input string: "NA"
+- Fin del Informe del Caso Prueba_Conj Datos: CP09_CD1_A
+----------------------------------------------------------------------------------------------------------

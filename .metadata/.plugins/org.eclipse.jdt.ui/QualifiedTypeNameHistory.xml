@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.sun.corba.se.impl.encoding.CodeSetConversion.BTCConverter"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="java.io.BufferedReader"/>
+<fullyQualifiedTypeName name="java.io.FileReader"/>
+<fullyQualifiedTypeName name="java.io.IOException"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="java.io.File"/>
+<fullyQualifiedTypeName name="org.eclipse.hyades.edit.datapool.IDatapool"/>
+<fullyQualifiedTypeName name="com.rational.test.ft.datapool.DatapoolFactory"/>
+<fullyQualifiedTypeName name="com.rational.test.ft.datapool.impl.DatapoolEquivalenceClass"/>
+<fullyQualifiedTypeName name="java.lang.Exception"/>
+</qualifiedTypeNameHistroy>

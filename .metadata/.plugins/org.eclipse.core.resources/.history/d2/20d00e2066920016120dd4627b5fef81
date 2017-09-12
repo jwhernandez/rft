@@ -1,0 +1,93 @@
+package Scripts.Comun.SistemasExternos;
+import resources.Scripts.Comun.SistemasExternos.ASRM_ModificarEstadoServicioHelper;
+
+import com.rational.test.ft.*;
+import com.rational.test.ft.object.interfaces.*;
+import com.rational.test.ft.object.interfaces.SAP.*;
+import com.rational.test.ft.object.interfaces.WPF.*;
+import com.rational.test.ft.object.interfaces.dojo.*;
+import com.rational.test.ft.object.interfaces.siebel.*;
+import com.rational.test.ft.object.interfaces.flex.*;
+import com.rational.test.ft.object.interfaces.generichtmlsubdomain.*;
+import com.rational.test.ft.script.*;
+import com.rational.test.ft.value.*;
+import com.rational.test.ft.vp.*;
+import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
+/**
+ * Description   : Modifica el estado de un servicio en ASRM
+ * Script Name   : <b>ASRM_ModificarEstadoServicio</b>
+ * @since  2016/10/14
+ * Parametros: 0) Resultado = OK/NOK 1) Servicio 2) estadodeseado
+ * ej  res  89781331 RESERVADO
+ * @author SS
+ */
+public class ASRM_ModificarEstadoServicio extends ASRM_ModificarEstadoServicioHelper
+{
+	public void testMain(Object[] argu) throws RationalTestException
+	{
+		ImpreEncabezadoScript(getScriptArgs(), getScriptName( ).toString());
+		argu[0] = "NOK";
+
+		String sEstadoLeido=null;
+		String sNroLeido=null;
+
+		Tabs().ensureObjectIsVisible();
+		Tabs().click(atName("Recurso Numeros") );
+		NroServicio().waitForExistence();
+		NroServicio().setProperty(".value", argu[1].toString());
+
+		if (Informacion().exists()) okbutton().click(); // El nro no se encuentra
+		else 
+		{
+			sNroLeido = NroConsultado().getProperty(".value").toString();
+			sEstadoLeido = Estado().getProperty(".value").toString();		
+
+			if (sNroLeido.equals(argu[1].toString()) )
+			{
+				if(!sEstadoLeido.equals(argu[2].toString()))
+				{
+				System.out.println("Se cambiara el estado actual" + sEstadoLeido);	
+
+				openbutton().click();
+
+		
+		// Window: Project_Actualizar_ASRM.exe: Actualizar Información
+		//openbutton().click(atPoint(7,6));
+		//caducirtext().click(atPoint(58,8));
+
+
+		//openbutton().click(atPoint(10,7));
+
+		//ModificarNumero().click(atPoint(301,11));
+				
+//NuevoEstado().setProperty(".value", argu[2].toString());
+		
+		// Window: Project_Actualizar_ASRM.exe: Actualizar Información
+		ActualizarWindow().inputKeys("^{ExtPgDn}");
+		//caducirtext().click(atPoint(100,11));
+//ActualizarWindow().inputKeys("{ExtDown}{ExtUp}");
+
+		//caducirtext().click(atPoint(174,5));
+
+		
+		// Window: Project_Actualizar_ASRM.exe: Actualizar Información
+		ModificarNumero().click(atPoint(323,52));
+		
+		// Window: Project_Actualizar_ASRM.exe: Information
+		okbutton().click(atPoint(45,10));
+
+
+				//closebutton().click();
+	
+/*				sleep(3);
+				ModificarEstadoWindow().click(atPoint(315,51));
+				okbutton().click();*/
+				argu[0] = "OK";
+				} else 			argu[0] = "OK";
+			}			
+		}	
+
+		ImpreResultadoScript(getScriptName( ).toString(), "Resultado " + argu[0]);
+	}
+}
+

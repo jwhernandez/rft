@@ -20,11 +20,11 @@ import com.rational.test.ft.vp.IFtVerificationPoint;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
  * Script Name   : <b>ValidarGenCtaFact</b><br>
- * Generated     : <b>2016/02/15 07:25:53</b><br>
+ * Generated     : <b>2016/06/30 14:45:38</b><br>
  * Description   : Helper class for script<br>
  * Original Host : Windows 7 x86 6.1 <br>
  * 
- * @since  febrero 15, 2016
+ * @since  junio 30, 2016
  * @author Sandra
  */
 public abstract class ValidarGenCtaFactHelper extends libreria.Accion
@@ -50,6 +50,29 @@ public abstract class ValidarGenCtaFactHelper extends libreria.Accion
 	{
 		return new SiebButtonTestObject(
                         getMappedTestObject("GenCtaFact"), anchor, flags);
+	}
+	
+	/**
+	 * GenCtaFactPI: with default state.
+	 *		ClassName : SiebButton
+	 * 		.class : SiebButton
+	 * 		RepositoryName : ICEGenBillingAccount
+	 */
+	protected SiebButtonTestObject GenCtaFactPI() 
+	{
+		return new SiebButtonTestObject(
+                        getMappedTestObject("GenCtaFactPI"));
+	}
+	/**
+	 * GenCtaFactPI: with specific test context and state.
+	 *		ClassName : SiebButton
+	 * 		.class : SiebButton
+	 * 		RepositoryName : ICEGenBillingAccount
+	 */
+	protected SiebButtonTestObject GenCtaFactPI(TestObject anchor, long flags) 
+	{
+		return new SiebButtonTestObject(
+                        getMappedTestObject("GenCtaFactPI"), anchor, flags);
 	}
 	
 	

@@ -20,15 +20,61 @@ import com.rational.test.ft.vp.IFtVerificationPoint;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
  * Script Name   : <b>RefrescarGuardarPedido</b><br>
- * Generated     : <b>2016/01/08 08:12:33</b><br>
+ * Generated     : <b>2016/12/21 12:35:56</b><br>
  * Description   : Helper class for script<br>
  * Original Host : Windows 7 x86 6.1 <br>
  * 
- * @since  enero 08, 2016
+ * @since  diciembre 21, 2016
  * @author Sandra
  */
 public abstract class RefrescarGuardarPedidoHelper extends libreria.Accion
 {
+	/**
+	 * SiebMenu: with default state.
+	 *		ClassName : SiebMenu
+	 * 		.class : SiebMenu
+	 * 		RepositoryName : SiebMenu
+	 */
+	protected SiebMenuTestObject Menu() 
+	{
+		return new SiebMenuTestObject(
+                        getMappedTestObject("Menu"));
+	}
+	/**
+	 * SiebMenu: with specific test context and state.
+	 *		ClassName : SiebMenu
+	 * 		.class : SiebMenu
+	 * 		RepositoryName : SiebMenu
+	 */
+	protected SiebMenuTestObject Menu(TestObject anchor, long flags) 
+	{
+		return new SiebMenuTestObject(
+                        getMappedTestObject("Menu"), anchor, flags);
+	}
+	
+	/**
+	 * MenuPI: with default state.
+	 *		ClassName : SiebMenu
+	 * 		.class : SiebMenu
+	 * 		RepositoryName : SiebMenu
+	 */
+	protected SiebMenuTestObject MenuPI() 
+	{
+		return new SiebMenuTestObject(
+                        getMappedTestObject("MenuPI"));
+	}
+	/**
+	 * MenuPI: with specific test context and state.
+	 *		ClassName : SiebMenu
+	 * 		.class : SiebMenu
+	 * 		RepositoryName : SiebMenu
+	 */
+	protected SiebMenuTestObject MenuPI(TestObject anchor, long flags) 
+	{
+		return new SiebMenuTestObject(
+                        getMappedTestObject("MenuPI"), anchor, flags);
+	}
+	
 	/**
 	 * SiebelPowerCommunications: with default state.
 	 *		ClassName : SiebApplication
@@ -50,33 +96,6 @@ public abstract class RefrescarGuardarPedidoHelper extends libreria.Accion
 	{
 		return new SiebApplicationTestObject(
                         getMappedTestObject("SiebApplication"), anchor, flags);
-	}
-	
-	/**
-	 * Arbol_lista: with default state.
-	 *		ActiveRow : 9
-	 * 		ClassName : SiebList
-	 * 		.class : SiebList
-	 * 		RepositoryName : SiebList
-	 * 		SelectedRows : 9
-	 */
-	protected SiebListTestObject list_arbol_lista() 
-	{
-		return new SiebListTestObject(
-                        getMappedTestObject("list_arbol_lista"));
-	}
-	/**
-	 * Arbol_lista: with specific test context and state.
-	 *		ActiveRow : 9
-	 * 		ClassName : SiebList
-	 * 		.class : SiebList
-	 * 		RepositoryName : SiebList
-	 * 		SelectedRows : 9
-	 */
-	protected SiebListTestObject list_arbol_lista(TestObject anchor, long flags) 
-	{
-		return new SiebListTestObject(
-                        getMappedTestObject("list_arbol_lista"), anchor, flags);
 	}
 	
 	

@@ -1,0 +1,46 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: CP76_CD1 Desde paso: 12 Modo:Real
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatosEntrada'                                                  'OK'                          
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'                                         'OK'                          
+'Paso    0  -  LeerDatosSalida'                                                   'OK'                          
+'Paso    1  -  fLogin'                                                            'OK'                          
+'Paso    2  -  fVista360'                                                         'NE'                          
+'Paso    3  -  fNuevaVenta'                                                       'NE'                          
+
+
+Informe de DATOS de salida
+-----------------------------------------------------------------------------------------
+'Paso    0  -  CasosPrueba'                        'Usuario Alternativo '         'JVALERIO1'                   
+'Paso    0  -  CasosPrueba'                        'Clave Alternativa '           'jvalerio1'                   
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoPasoOK'                 '11'                          
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoTramite'                '3'                           
+
+
+Informe de Bugs
+-----------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------
+Tipo Parada         = Excepción en Método
+Mensaje de Parada   = Script=BuscarPedidoVenta Línea=27 Método=getProperties Error=Object reference not set to an instance of an object. Clase=System.NullReferenceException Objeto=siebel.SiebPageTabsTestObject(Ref:RemoteProxyReference{testContext:882940002ac92, objectId:2, testObjectClass:SiebPageTabsTestObject})
+Parada en paso	    = 4
+
+
+-----------------------------------------------------------------------------------------
+Fin del Informe del Caso Prueba_Conj Datos: CP76_CD1
+-----------------------------------------------------------------------------------------
+
+
+Informe de Errores imprevistos de sistema
+-----------------------------------------------------------------------------------------
+'Paso    4  -  Accion'                             'Excepción en Método'          'Script=BuscarPedidoVenta Línea=27 Método=getProperties Error=Object reference not set to an instance of an object. Clase=System.NullReferenceException Objeto=siebel.SiebPageTabsTestObject(Ref:RemoteProxyReference{testContext:882940002ac92, objectId:2, testObjectClass:SiebPageTabsTestObject})'
+
+'Paso    4  -  Accion'                             'Excepción no esperada'        'Script=BuscarPedidoVenta Línea=0 Error=Object reference not set to an instance of an object.'
+
+'Paso    4  -  Accion'                             'Excepción no esperada'        'Script=fBuscarPedidoVenta Línea=0 Error=CRFCN0018E: The 27 line of the 27 script contains an exception.'
+

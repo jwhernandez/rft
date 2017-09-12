@@ -1,0 +1,134 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: CPC1_CD1 Desde paso: 1 Modo:Real
+Modulo desde Paso : 1 Hasta paso: 100
+Hora de Inicio de la Ejecucion : 2017/08/29 14:51:09
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatosEntrada'                                                  'OK'                          
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'                                         'OK'                          
+'Paso    0  -  GrabarDatosSalida'                                                 'OK'                          
+'Paso    0  -  ResetVariablesCondicionantes'                                      'OK'                          
+'Paso    1  -  fLeerVariableCondicionanteDP'                                      'OK'                          
+'Paso    2  -  fLeerVariableCondicionanteDP'                                      'OK'                          
+'Paso    3  -  fLeerVariableCondicionanteDP'                                      'OK'                          
+'Paso    4  -  fLeerVariableCondicionanteDP'                                      'OK'                          
+'Paso    5  -  fLogin'                                                            'OK'                          
+'Paso    6  -  fVista360'                                                         'OK'                          
+'Paso    7  -  fNuevaVenta'                                                       'OK'                          
+'Paso    8  -  fBuscarPedidoVenta'                                                'NE'                          
+'Paso    9  -  fValidarAgencia'                                                   'OK'                          
+'Paso   10  -  fIngresarAutenticacion'                                            'OK'                          
+'Paso   11  -  fObtenerMorosidad'                                                 'OK'                          
+'Paso   12  -  fValidarCategoria'                                                 'OK'                          
+'Paso   13  -  fCompraPlanCategoriaCatalogoNew'                                   'OK'                          
+'Paso   14  -  fIngresarSIM'                                                      'OK'                          
+'Paso   15  -  fEvaluarExpresionCondicionante'                                    'OK'                          
+'Paso   15  -  fTerminalCliente'                                                  'NA'                          
+'Paso   16  -  fEvaluarExpresionCondicionante'                                    'OK'                          
+'Paso   16  -  fSeleccionarTerminal'                                              'OK'                          
+'Paso   17  -  fIngresarIMEI'                                                     'OK'                          
+'Paso   18  -  fEvaluarExpresionCondicionante'                                    'OK'                          
+'Paso   18  -  fIngresarIMEI'                                                     'OK'                          
+'Paso   19  -  fEvaluarExpresionCondicionante'                                    'OK'                          
+'Paso   19  -  fIngresarIMEI'                                                     'OK'                          
+'Paso   20  -  fGenerarCtaFact'                                                   'OK'                          
+'Paso   21  -  fASRM_Login'                                                       'OK'                          
+'Paso   22  -  fASRM_ModificarEstadoServicio'                                     'OK'                          
+'Paso   23  -  fASRM_Logout'                                                      'OK'                          
+'Paso   24  -  fEvaluarExpresionCondicionante'                                    'OK'                          
+'Paso   24  -  fBuscarProducto'                                                   'NA'                          
+'Paso   25  -  fEvaluarExpresionCondicionante'                                    'OK'                          
+'Paso   25  -  fBuscarProducto'                                                   'OK'                          
+'Paso   26  -  fEvaluarExpresionCondicionante'                                    'OK'                          
+'Paso   26  -  fBuscarProducto'                                                   'NA'                          
+'Paso   27  -  fNumeroEspecial'                                                   'OK'                          
+'Paso   28  -  fProximoNumero'                                                    'NA'                          
+'Paso   29  -  fValorarTodo'                                                      'OK'                          
+'Paso   30  -  fEvaluarExpresionCondicionante'                                    'OK'                          
+'Paso   30  -  fBuscarProducto'                                                   'NA'                          
+'Paso   31  -  fEvaluarExpresionCondicionante'                                    'OK'                          
+'Paso   31  -  fExpandiryBuscar'                                                  'NA'                          
+'Paso   32  -  fEvaluarExpresionCondicionante'                                    'OK'                          
+'Paso   32  -  fCheckPagoFact'                                                    'NA'                          
+'Paso   33  -  fEvaluarExpresionCondicionante'                                    'OK'                          
+'Paso   33  -  fBuscarProducto'                                                   'OK'                          
+'Paso   34  -  fEvaluarExpresionCondicionante'                                    'OK'                          
+'Paso   34  -  fExpandiryBuscar'                                                  'OK'                          
+'Paso   35  -  fEvaluarExpresionCondicionante'                                    'OK'                          
+'Paso   35  -  fCheckPagoFact'                                                    'OK'                          
+'Paso   36  -  fEvaluarExpresionCondicionante'                                    'OK'                          
+'Paso   36  -  fCheckPagoFact'                                                    'NA'                          
+'Paso   37  -  fEvaluarExpresionCondicionante'                                    'OK'                          
+'Paso   37  -  fCrearRED'                                                         'NA'                          
+'Paso   38  -  fEvaluarExpresionCondicionante'                                    'OK'                          
+'Paso   38  -  fEsperaEstadoRED'                                                  'NA'                          
+'Paso   39  -  fEvaluarExpresionCondicionante'                                    'OK'                          
+'Paso   39  -  fVEP_Login'                                                        'NA'                          
+'Paso   40  -  fEvaluarExpresionCondicionante'                                    'OK'                          
+'Paso   40  -  fVEP_PagarRED'                                                     'NA'                          
+'Paso   41  -  fEvaluarExpresionCondicionante'                                    'OK'                          
+'Paso   41  -  fVEP_Logout'                                                       'NA'                          
+'Paso   42  -  fEvaluarExpresionCondicionante'                                    'OK'                          
+'Paso   42  -  fEsperaEstadoRED'                                                  'NA'                          
+'Paso   43  -  fEnviarPedido'                                                     'OK'                          
+'Paso   44  -  fEsperaEstado'                                                     'OK'                          
+'Paso   45  -  Fin del caso'                                                      'OK'                          
+
+
+Informe de DATOS de salida
+-----------------------------------------------------------------------------------------
+'Paso    0  -  CasosPrueba'                        'Usuario Alternativo '         'JVALERIO1'                   
+'Paso    0  -  CasosPrueba'                        'Clave Alternativa '           'jvalerio1'                   
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoPasoOK'                 '0'                           
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoTramite'                '1'                           
+'Paso    7  -  GrabarDatosSalida'                  'T1_NroPedido'                 '1-1775202362'                
+'Paso    7  -  fNuevaVenta'                        'NroPedido'                    '1-1775202362'                
+'Paso   15  -  fTerminalCliente'                   'Expresion'                    'false'                       
+'Paso   16  -  fSeleccionarTerminal'               'Expresion'                    'true'                        
+'Paso   18  -  fIngresarIMEI'                      'Expresion'                    'true'                        
+'Paso   19  -  fIngresarIMEI'                      'Expresion'                    'true'                        
+'Paso   24  -  fBuscarProducto'                    'Expresion'                    'false'                       
+'Paso   25  -  fBuscarProducto'                    'Expresion'                    'true'                        
+'Paso   26  -  fBuscarProducto'                    'Expresion'                    'false'                       
+'Paso   27  -  GrabarDatosSalida'                  'T1_NroServicio'               '89846999'                    
+'Paso   27  -  fNumeroEspecial'                    'NroServicio'                  '89846999'                    
+'Paso   30  -  fBuscarProducto'                    'Expresion'                    'false'                       
+'Paso   31  -  fExpandiryBuscar'                   'Expresion'                    'false'                       
+'Paso   32  -  fCheckPagoFact'                     'Expresion'                    'false'                       
+'Paso   33  -  fBuscarProducto'                    'Expresion'                    'true'                        
+'Paso   34  -  fExpandiryBuscar'                   'Expresion'                    'true'                        
+'Paso   35  -  fCheckPagoFact'                     'Expresion'                    'true'                        
+'Paso   36  -  fCheckPagoFact'                     'Expresion'                    'false'                       
+'Paso   37  -  fCrearRED'                          'Expresion'                    'false'                       
+'Paso   38  -  fEsperaEstadoRED'                   'Expresion'                    'false'                       
+'Paso   39  -  fVEP_Login'                         'Expresion'                    'false'                       
+'Paso   40  -  fVEP_PagarRED'                      'Expresion'                    'false'                       
+'Paso   41  -  fVEP_Logout'                        'Expresion'                    'false'                       
+'Paso   42  -  fEsperaEstadoRED'                   'Expresion'                    'false'                       
+
+
+Informe de Bugs
+-----------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------
+Tipo Parada         = Excepción en Método
+Mensaje de Parada   = Script=GenerarCtaFact Línea=91 Método=PerformAction Error=null Clase=null Objeto=siebel.SiebButtonTestObject(Name: GenCtaFact, Map: GenCtaFact)
+Parada en paso	    = 45
+
+
+-----------------------------------------------------------------------------------------
+Fin del Informe del Caso Prueba_Conj Datos: CPC1_CD1
+-----------------------------------------------------------------------------------------
+
+
+Informe de Errores imprevistos de sistema
+-----------------------------------------------------------------------------------------
+'Paso   20  -  Accion'                             'Excepción en Método'          'Script=GenerarCtaFact Línea=91 Método=PerformAction Error=null Clase=null Objeto=siebel.SiebButtonTestObject(Name: GenCtaFact, Map: GenCtaFact)'
+
+
+Hora de Finalizacion de la Ejecucion: 2017/08/29 15:06:59
+-----------------------------------------------------------------------------------------

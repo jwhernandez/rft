@@ -23,18 +23,23 @@ public class fValidacPostEnvio2 extends fValidacPostEnvio2Helper
 {
 	public void testMain(Object[] args) 
 	{
+		ImpreEncabezadoScript(getScriptArgs(), getScriptName( ).toString());
 		String[] Validac;
-		Validac = new String[1];
-		// Parámetros	   : 0)  OK/NOK 
+		Validac = new String[2];
+		// Parámetros	   : 0)  OK/NOK  1) Prepago o Postpago
 
 		String[] MensError;
 		MensError = new String[4];
 	
-		/** 
-		 * Validaciones post envio
-		 */
-
-		callScript("Scripts.Comun.ValidacPostEnvio",Validac);
+		dpReset();
+		while (!dpDone() &&  !(dpString("NumeroCaso").equals(args[0]) && 
+				dpString("Ambiente").equals(args[2]))) {
+			dpNext(); 
+		} 	
+		//  Validaciones post envio
+	
+		Validac[1]=dpString("TipoPerfilCorrecto");
+		callScript("Scripts.Comun.ValidacPostEnvio2",Validac);
 
 		if  (Validac[0].toString().equals("NOK")){
 			MensError[0] = "Validaciones post envio 2 fallaron";

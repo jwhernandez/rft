@@ -1,0 +1,52 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: CPUNI_CD1 Desde paso: 19 Modo:Real
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatosEntrada'                                                  'OK'                          
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'                                         'OK'                          
+'Paso    0  -  LeerDatosSalida'                                                   'OK'                          
+'Paso    1  -  fLogin'                                                            'NE'                          
+'Paso    2  -  fBRM_Login'                                                        'NE'                          
+'Paso    3  -  fBRM_BuscarCliente'                                                'NE'                          
+'Paso    4  -  fBRM_FavoritoValidarCambioNum'                                     'NE'                          
+'Paso    5  -  fBRM_Logout'                                                       'NE'                          
+'Paso    6  -  fBRM_ValidarProductos'                                             'NE'                          
+'Paso    7  -  fBRM_ValidarProductos'                                             'NE'                          
+'Paso    8  -  fValidarAtributosPedido'                                           'NE'                          
+'Paso    9  -  fCompraPlanCategoriaCatalogo'                                      'NE'                          
+'Paso   10  -  fBRM_Logout'                                                       'NE'                          
+'Paso   11  -  fCrearLE_Ped'                                                      'NE'                          
+'Paso   12  -  fCrearLE_Ped'                                                      'NE'                          
+'Paso   13  -  AgregarNum_a_LE_Ped'                                               'NE'                          
+'Paso   14  -  AgregarNum_a_LE_Ped'                                               'NE'                          
+'Paso   15  -  fBRM_Login'                                                        'OK'                          
+'Paso   16  -  fBRM_BuscarCliente'                                                'OK'                          
+'Paso   17  -  fBRM_FavoritoValidarCambioNum'                                     'OK'                          
+'Paso   18  -  fBRM_Logout'                                                       'OK'                          
+'Paso   19  -  Fin del caso'                                                      'OK'                          
+
+
+Informe de DATOS de salida
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoPasoOK'                 '18'                          
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoTramite'                '1'                           
+'Paso   17  -  BRM_FavoritoValidarCambioNum'       'Billing Type'                 'TELCO/GSM/SMS: <unknown429-20161122-112943-1-13775-1-facute01>'
+'Paso   17  -  BRM_FavoritoValidarCambioNum'       'Producto Fav '                'Numero Kolbi SMS Favorito'   
+'Paso   17  -  BRM_FavoritoValidarCambioNum'       'Num Fav'                      '85542594'                    
+
+
+Informe de Bugs
+-----------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------
+Tipo Parada         = FIN
+Mensaje de Parada   = FIN del caso en paso 19
+
+
+-----------------------------------------------------------------------------------------
+Fin del Informe del Caso Prueba_Conj Datos: CPUNI_CD1
+-----------------------------------------------------------------------------------------

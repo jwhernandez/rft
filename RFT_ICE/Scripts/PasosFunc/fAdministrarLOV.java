@@ -14,23 +14,26 @@ import com.rational.test.ft.vp.*;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
  * Script Name   : <b>fAdministrarLOV</b>
- * Description   : Functional Test Script
- * @Param 0)
- *@since  2016/01/15
+ * Description   : Administra la tabla de LOVs
+ * @Param 0) Caso 1) param 2) ambiente 3) true / false para parar frente a errror
+ * eJ CP20 1 PREQA true
+ * @since  2016/01/15
  * @author Sandra
+ * ej: 
  */
 public class fAdministrarLOV extends fAdministrarLOVHelper
 {
 	public void testMain(Object[] args) throws RationalTestException 
 	{
+		ImpreEncabezadoScript(getScriptArgs(), getScriptName( ).toString());
 		String[] MensError;
 		MensError = new String[4];
 
 		String[] LOV;
-		LOV = new String[4];
+		LOV = new String[5];
 		/**
 		 * @param0) IN Nombre de la LOV 1) IN  Accion Consultar / Setear 
-		 * 2) Valor deseado en la LOV o NA 3) OUT OK/NOK 
+		 * 2) Valor deseado en la LOV o NA 3) OUT OK/NOK 4)LIC
 		 */
 
 		/**
@@ -45,7 +48,9 @@ public class fAdministrarLOV extends fAdministrarLOVHelper
 		int i = Integer.parseInt(args[1].toString());
 		LOV[0] = dpString("LOV"+i); 
 		LOV[1] = dpString("LOV_Accion"+i); 
-		LOV[2] = dpString("LOV_VAL"+i); 
+		LOV[2] = dpString("LOV_VAL"+i);
+		if (dpString("LOV_LIC1")==null ) 	LOV[4]="NA"; 
+		else 					     		LOV[4] = dpString("LOV_LIC"+i); 
 		logInfo (getScriptName( ) + LOV[0] + LOV[1] + LOV[2]);
 		callScript("Scripts.Comun.AdministrarLOV", LOV);
 

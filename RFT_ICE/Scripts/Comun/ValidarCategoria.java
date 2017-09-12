@@ -17,17 +17,36 @@ import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
  * Script Name   : <b>ValidarCategoria</b>
  * @Param 0)Valor a validar 1)OK/NO
  * @since  2016/01/13
- * @author Sandra
- */
+ * Param 0) OK/NOK 1) CatCrediticia 2) Tramite
+ * @author SS
+ * res A PortIn
+ * Última modificación VC 20170207
+ *  ult modificacion ss 15 03 2017 se agrega opcion para port-in
+  */
 public class ValidarCategoria extends ValidarCategoriaHelper
 {
-	public void testMain(Object[] argu) 
+	public void testMain(Object[] argu) throws RationalTestException
 	{
-		argu[1] = "OK";
-		IFtVerificationPoint agenciaVP = vpManual("CatCreditica", argu[0].toString(), CatCrediticia().getProperty("ActiveItem"));
-		if (agenciaVP.performTest()) {
-			argu[1] = "NOK";
+		ImpreEncabezadoScript(getScriptArgs(), getScriptName( ).toString());
+		argu[0] = "NOK";
+		String sTramite = argu[2].toString(); // tramite  15 3 2017
+		IFtVerificationPoint agenciaVP = null;
+		System.out.println("Tramite " + sTramite);
+		if (!sTramite.equals("PortIn")) 
+		{
+			//Se cambia el getProperty("ActiveItem") por getProperty("Text") 20170207
+			agenciaVP = vpManual("CatCreditica", argu[1].toString(), CatCrediticia().getProperty("Text"));
 		}
+		if (sTramite.equals("PortIn")) 
+		{
+			System.out.println("Tramite de port-in");
+			agenciaVP = vpManual("CatCreditica", argu[1].toString(), CatCrediticiaPI().getProperty("Text"));
+		}
+		
+		if (agenciaVP.performTest()) {
+			argu[0] = "OK";
+		}
+		ImpreResultadoScript(getScriptName( ).toString(), argu[0].toString());
 	}
 }
 

@@ -1,0 +1,72 @@
+
+Hora de Inicio de la Ejecucion: 2017/01/16 11:32:56
+-----------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: CP52_CD1 Desde paso: 26 Modo:Real
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatosEntrada'                                                  'OK'                          
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'                                         'OK'                          
+'Paso    0  -  LeerDatosSalida'                                                   'OK'                          
+'Paso    1  -  fLogin'                                                            'OK'                          
+'Paso    2  -  fVista360'                                                         'NE'                          
+'Paso    3  -  fBuscarActivo'                                                     'NE'                          
+'Paso    4  -  fBuscarCtaFact'                                                    'NE'                          
+'Paso    5  -  fNuevaPostvta'                                                     'NE'                          
+'Paso    6  -  fBuscarPedidoVenta'                                                'NE'                          
+'Paso    7  -  fIngresarAutenticacion'                                            'NE'                          
+'Paso    8  -  fValidarAccion'                                                    'NE'                          
+'Paso    9  -  fValidarNroServicio_SIM_IMEI'                                      'NE'                          
+'Paso   10  -  fValidarMotivoPedido'                                              'NE'                          
+'Paso   11  -  fIngresarIMEI'                                                     'NE'                          
+'Paso   12  -  fExpandiryBuscar'                                                  'NE'                          
+'Paso   13  -  fValidarAccion'                                                    'NE'                          
+'Paso   14  -  fEnviarPedido'                                                     'NE'                          
+'Paso   15  -  fValidarMensaje'                                                   'NE'                          
+'Paso   16  -  fValorarTodo'                                                      'NE'                          
+'Paso   17  -  fEnviarPedido'                                                     'NE'                          
+'Paso   18  -  fValidarMensaje'                                                   'NE'                          
+'Paso   19  -  fBuscarProducto'                                                   'NE'                          
+'Paso   20  -  fTerminalCliente'                                                  'NE'                          
+'Paso   21  -  fExpandiryBuscar'                                                  'NE'                          
+'Paso   22  -  fValidarGenCtaFact'                                                'NE'                          
+'Paso   23  -  fValidarBtonLiberarNumero'                                         'NE'                          
+'Paso   24  -  fValidarBtonNumDisp'                                               'NE'                          
+'Paso   25  -  fEnviarPedido'                                                     'NE'                          
+
+
+Informe de DATOS de salida
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoPasoOK'                 '25'                          
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoTramite'                '1'                           
+
+
+Informe de Bugs
+-----------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------
+Tipo Parada         = Excepción en Método
+Mensaje de Parada   = Script=EsperaEstado Línea=61 Método=getProperties Error=Object reference not set to an instance of an object. Clase=System.NullReferenceException Objeto=siebel.SiebPicklistTestObject(Ref:RemoteProxyReference{testContext:9c28e0003b854, objectId:11, testObjectClass:SiebPicklistTestObject})
+Parada en paso	    = 26
+
+
+-----------------------------------------------------------------------------------------
+Fin del Informe del Caso Prueba_Conj Datos: CP52_CD1
+-----------------------------------------------------------------------------------------
+
+
+Informe de Errores imprevistos de sistema
+-----------------------------------------------------------------------------------------
+'Paso   26  -  Accion'                             'Excepción en Método'          'Script=EsperaEstado Línea=61 Método=getProperties Error=Object reference not set to an instance of an object. Clase=System.NullReferenceException Objeto=siebel.SiebPicklistTestObject(Ref:RemoteProxyReference{testContext:9c28e0003b854, objectId:11, testObjectClass:SiebPicklistTestObject})'
+
+'Paso   26  -  Accion'                             'Excepción no esperada'        'Script=EsperaEstado Línea=0 Error=Object reference not set to an instance of an object.'
+
+'Paso   26  -  Accion'                             'Excepción no esperada'        'Script=fEsperaEstado Línea=0 Error=CRFCN0018E: The 61 line of the 61 script contains an exception.'
+
+
+Hora de Finalizacion de la Ejecucion: 2017/01/16 11:32:56
+-----------------------------------------------------------------------------------------

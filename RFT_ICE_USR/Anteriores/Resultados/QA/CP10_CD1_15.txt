@@ -1,0 +1,51 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: CP10_CD1 Desde paso: 15 Modo:Real
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatosEntrada'                                                  'OK'                          
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'                                         'OK'                          
+'Paso    0  -  LeerDatosSalida'                                                   'OK'                          
+'Paso    1  -  fLogin'                                                            'OK'                          
+'Paso    2  -  fVista360'                                                         'NE'                          
+'Paso    3  -  fValidarUnPerfil'                                                  'NE'                          
+'Paso    4  -  fBuscarActivo'                                                     'NE'                          
+'Paso    5  -  fBuscarCtaFact'                                                    'NE'                          
+'Paso    6  -  fValidarUnPerfil'                                                  'NE'                          
+'Paso    7  -  fVista360'                                                         'OK'                          
+'Paso    8  -  fBuscarActivo'                                                     'OK'                          
+'Paso    9  -  fBuscarCtaFact'                                                    'OK'                          
+'Paso   10  -  fNuevaPostvta'                                                     'NE'                          
+'Paso   11  -  fBuscarPedidoVenta'                                                'OK'                          
+'Paso   12  -  fValidarAgencia'                                                   'NE'                          
+'Paso   13  -  fIngresarAutenticacion'                                            'NE'                          
+'Paso   14  -  fASRM_Login'                                                       'NE'                          
+
+
+Informe de DATOS de salida
+-----------------------------------------------------------------------------------------
+'Paso    0  -  CasosPrueba'                        'Usuario Alternativo '         'JVALERIO1'                   
+'Paso    0  -  CasosPrueba'                        'Clave Alternativa '           'jvalerio1'                   
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoPasoOK'                 '14'                          
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoTramite'                '1'                           
+'Paso    0  -  LeerDatosSalida'                    'T1_NroPedido'                 '1-1742079661'                
+'Paso    8  -  fBuscarActivo'                      'NroServicio'                  '89787999'                    
+'Paso    8  -  fBuscarActivo'                      'NroServicio'                  '89787999'                    
+'Paso    9  -  fBuscarCtaFact'                     'NroCtaFact'                   '101741977992'                
+
+
+Informe de Bugs
+-----------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------
+Tipo Parada         = onObjectNotFound
+Mensaje de Parada   = TestObjectMethodState {OBJECT_NOT_FOUND,testObjectClassName=GuiSubitemTestObject(Nombre: Tabs, Correlación: Pagetablist),method=ensureObjectIsVisible,signature=null,args=null}
+Parada en paso	    = 15
+
+
+-----------------------------------------------------------------------------------------
+Fin del Informe del Caso Prueba_Conj Datos: CP10_CD1
+-----------------------------------------------------------------------------------------

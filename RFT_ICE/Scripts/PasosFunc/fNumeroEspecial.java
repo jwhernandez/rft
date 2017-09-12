@@ -19,11 +19,16 @@ import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
  * Pre-condiciones : Estar en la vista del pedido. No hace falta estar en el producto.
  * Toma del DP el nro de servicio deseado
  * SS Nov 2015
+ * Ult Modifs
+ * ss 24-11-2016 corrección de nombre de variable donde guarda servicio. Se agrega el trámite.
+ * vc 1/12/2016 se agrega el i
  */
 public class fNumeroEspecial extends fNumeroEspecialHelper
 {
 	public void testMain(Object[] args) throws RationalTestException 
 	{
+		ImpreEncabezadoScript(getScriptArgs(), getScriptName( ).toString());
+		String sScriptName=getScriptName().toString(); // 22/11/2016
 		String[] NroEspecial;
 		NroEspecial = new String[7];
 		//Parámetros: 0) tipo (Postpago / Prepago) 1) nro pedido  2) nro especial 1era opcion
@@ -32,6 +37,11 @@ public class fNumeroEspecial extends fNumeroEspecialHelper
 
 		String[] MensError;
 		MensError = new String[4];
+		
+		String[] DatoSalida;
+		DatoSalida = new String[5];
+		// 0) OK/NOK 1) Nro CP 2) Ambiente 3) Nombre variable 4)valor variable
+		
 		/**
 		 * Itera el data pools de datos del caso para buscar la row correcta
 		 */
@@ -48,11 +58,10 @@ public class fNumeroEspecial extends fNumeroEspecialHelper
 		NroEspecial[0] = dpString("TipoPerfilCorrecto");
 		NroEspecial[1] = getNroPedido();
 		System. out.println("Numero Pedido" + NroEspecial[1]);
-		NroEspecial[2] = dpString("NumeroServicio");
+		NroEspecial[2] = dpString("NumeroServicio"+i); // vc 1/12/2016 se agrega el i
 		NroEspecial[3] = dpString("NumEspPrimerNum2daopcion" + i);
 		NroEspecial[4] = dpString("NumEspIrAdmin"+i);
-		System.out.println("Parametros con los que invoca:"+ NroEspecial[0]+"*"+
-				NroEspecial[1]+"*"+NroEspecial[2]+"*"+NroEspecial[3]+"*"+NroEspecial[4]);
+
 		callScript("Scripts.Comun.NumeroEspecial", NroEspecial);
 
 		if  (NroEspecial[5].toString().equals("NOK")){
@@ -63,8 +72,17 @@ public class fNumeroEspecial extends fNumeroEspecialHelper
 			MensError[3] = getScriptName( );
 			callScript("Scripts.Comun.TerminarCasoError", MensError);
 		} else {
+			
 			setNroServicio(NroEspecial[6].toString());
-			infoPaso(args[0].toString(), Tipo.DATO,"NroServicio",getNroServicio());
+			
+			int sLong = args[0].toString().length(); // nro caso CPnn_CDi_Tj
+			DatoSalida[1]= args[0].toString().substring(0, sLong-3);
+			DatoSalida[2]=args[2].toString(); // nro ambiente
+			DatoSalida[3]="T"+ getUltimoTramite()+"_NroServicio"; // Nombre variable // Se modifica de nrotramite a este valor de variable
+			DatoSalida[4]=NroEspecial[6].toString(); // Valor de la variable
+			callScript("Scripts.Comun.GrabarDatosSalida",DatoSalida);
+			
+			infoPaso(sScriptName, Tipo.DATO,"NroServicio",getNroServicio());
 		}
 	}
 }

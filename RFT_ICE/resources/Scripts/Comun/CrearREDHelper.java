@@ -20,17 +20,17 @@ import com.rational.test.ft.vp.IFtVerificationPoint;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
  * Script Name   : <b>CrearRED</b><br>
- * Generated     : <b>2015/12/10 18:44:08</b><br>
+ * Generated     : <b>2016/05/20 08:31:32</b><br>
  * Description   : Helper class for script<br>
  * Original Host : Windows 7 x86 6.1 <br>
  * 
- * @since  diciembre 10, 2015
+ * @since  mayo 20, 2016
  * @author Sandra
  */
 public abstract class CrearREDHelper extends libreria.Accion
 {
 	/**
-	 * ICECreaRED: with default state.
+	 * CrearRed: with default state.
 	 *		ClassName : SiebButton
 	 * 		.class : SiebButton
 	 * 		IsEnabled : false
@@ -42,7 +42,7 @@ public abstract class CrearREDHelper extends libreria.Accion
                         getMappedTestObject("CrearRed"));
 	}
 	/**
-	 * ICECreaRED: with specific test context and state.
+	 * CrearRed: with specific test context and state.
 	 *		ClassName : SiebButton
 	 * 		.class : SiebButton
 	 * 		IsEnabled : false
@@ -55,28 +55,26 @@ public abstract class CrearREDHelper extends libreria.Accion
 	}
 	
 	/**
-	 * AceptarMensajeHTMLSiebel: with default state.
-	 *		.text : Aceptar
-	 * 		.class : Html.DialogButton
-	 * 		.disabled : false
-	 * 		.classIndex : 0
+	 * CrearRedPI: with default state.
+	 *		ClassName : SiebButton
+	 * 		.class : SiebButton
+	 * 		RepositoryName : ICECreaRED
 	 */
-	protected GuiTestObject button_aceptarMensajeHTMLSiebe() 
+	protected SiebButtonTestObject CrearRedPI() 
 	{
-		return new GuiTestObject(
-                        getMappedTestObject("button_aceptarMensajeHTMLSiebe"));
+		return new SiebButtonTestObject(
+                        getMappedTestObject("CrearRedPI"));
 	}
 	/**
-	 * AceptarMensajeHTMLSiebel: with specific test context and state.
-	 *		.text : Aceptar
-	 * 		.class : Html.DialogButton
-	 * 		.disabled : false
-	 * 		.classIndex : 0
+	 * CrearRedPI: with specific test context and state.
+	 *		ClassName : SiebButton
+	 * 		.class : SiebButton
+	 * 		RepositoryName : ICECreaRED
 	 */
-	protected GuiTestObject button_aceptarMensajeHTMLSiebe(TestObject anchor, long flags) 
+	protected SiebButtonTestObject CrearRedPI(TestObject anchor, long flags) 
 	{
-		return new GuiTestObject(
-                        getMappedTestObject("button_aceptarMensajeHTMLSiebe"), anchor, flags);
+		return new SiebButtonTestObject(
+                        getMappedTestObject("CrearRedPI"), anchor, flags);
 	}
 	
 	

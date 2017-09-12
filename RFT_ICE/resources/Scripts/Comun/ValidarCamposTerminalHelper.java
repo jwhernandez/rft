@@ -20,17 +20,17 @@ import com.rational.test.ft.vp.IFtVerificationPoint;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
  * Script Name   : <b>ValidarCamposTerminal</b><br>
- * Generated     : <b>2016/01/21 12:30:28</b><br>
+ * Generated     : <b>2016/04/05 09:37:14</b><br>
  * Description   : Helper class for script<br>
  * Original Host : Windows 7 x86 6.1 <br>
  * 
- * @since  enero 21, 2016
+ * @since  abril 05, 2016
  * @author Sandra
  */
 public abstract class ValidarCamposTerminalHelper extends libreria.Accion
 {
 	/**
-	 * Arbol_lista: with default state.
+	 * LineasPedido: with default state.
 	 *		ActiveRow : 9
 	 * 		ClassName : SiebList
 	 * 		.class : SiebList
@@ -43,7 +43,7 @@ public abstract class ValidarCamposTerminalHelper extends libreria.Accion
                         getMappedTestObject("LineasPedido"));
 	}
 	/**
-	 * Arbol_lista: with specific test context and state.
+	 * LineasPedido: with specific test context and state.
 	 *		ActiveRow : 9
 	 * 		ClassName : SiebList
 	 * 		.class : SiebList
@@ -80,6 +80,29 @@ public abstract class ValidarCamposTerminalHelper extends libreria.Accion
 	}
 	
 	/**
+	 * MarcaPI: with default state.
+	 *		ClassName : SiebText
+	 * 		.class : SiebText
+	 * 		RepositoryName : ICE Marca
+	 */
+	protected SiebTextTestObject MarcaPI() 
+	{
+		return new SiebTextTestObject(
+                        getMappedTestObject("MarcaPI"));
+	}
+	/**
+	 * MarcaPI: with specific test context and state.
+	 *		ClassName : SiebText
+	 * 		.class : SiebText
+	 * 		RepositoryName : ICE Marca
+	 */
+	protected SiebTextTestObject MarcaPI(TestObject anchor, long flags) 
+	{
+		return new SiebTextTestObject(
+                        getMappedTestObject("MarcaPI"), anchor, flags);
+	}
+	
+	/**
 	 * ICEModelo: with default state.
 	 *		ClassName : SiebText
 	 * 		.class : SiebText
@@ -100,6 +123,29 @@ public abstract class ValidarCamposTerminalHelper extends libreria.Accion
 	{
 		return new SiebTextTestObject(
                         getMappedTestObject("Modelo"), anchor, flags);
+	}
+	
+	/**
+	 * ModeloPI: with default state.
+	 *		ClassName : SiebText
+	 * 		.class : SiebText
+	 * 		RepositoryName : ICE Modelo
+	 */
+	protected SiebTextTestObject ModeloPI() 
+	{
+		return new SiebTextTestObject(
+                        getMappedTestObject("ModeloPI"));
+	}
+	/**
+	 * ModeloPI: with specific test context and state.
+	 *		ClassName : SiebText
+	 * 		.class : SiebText
+	 * 		RepositoryName : ICE Modelo
+	 */
+	protected SiebTextTestObject ModeloPI(TestObject anchor, long flags) 
+	{
+		return new SiebTextTestObject(
+                        getMappedTestObject("ModeloPI"), anchor, flags);
 	}
 	
 	/**
@@ -126,26 +172,72 @@ public abstract class ValidarCamposTerminalHelper extends libreria.Accion
 	}
 	
 	/**
-	 * ICEVersionSoftware: with default state.
+	 * SeriePI: with default state.
 	 *		ClassName : SiebText
 	 * 		.class : SiebText
-	 * 		RepositoryName : ICE Version Software
+	 * 		RepositoryName : ICE Serie
 	 */
-	protected SiebTextTestObject VersionSoftware() 
+	protected SiebTextTestObject SeriePI() 
 	{
 		return new SiebTextTestObject(
-                        getMappedTestObject("VersionSoftware"));
+                        getMappedTestObject("SeriePI"));
 	}
 	/**
-	 * ICEVersionSoftware: with specific test context and state.
+	 * SeriePI: with specific test context and state.
+	 *		ClassName : SiebText
+	 * 		.class : SiebText
+	 * 		RepositoryName : ICE Serie
+	 */
+	protected SiebTextTestObject SeriePI(TestObject anchor, long flags) 
+	{
+		return new SiebTextTestObject(
+                        getMappedTestObject("SeriePI"), anchor, flags);
+	}
+	
+	/**
+	 * Version: with default state.
 	 *		ClassName : SiebText
 	 * 		.class : SiebText
 	 * 		RepositoryName : ICE Version Software
 	 */
-	protected SiebTextTestObject VersionSoftware(TestObject anchor, long flags) 
+	protected SiebTextTestObject Version() 
 	{
 		return new SiebTextTestObject(
-                        getMappedTestObject("VersionSoftware"), anchor, flags);
+                        getMappedTestObject("Version"));
+	}
+	/**
+	 * Version: with specific test context and state.
+	 *		ClassName : SiebText
+	 * 		.class : SiebText
+	 * 		RepositoryName : ICE Version Software
+	 */
+	protected SiebTextTestObject Version(TestObject anchor, long flags) 
+	{
+		return new SiebTextTestObject(
+                        getMappedTestObject("Version"), anchor, flags);
+	}
+	
+	/**
+	 * VersionPI: with default state.
+	 *		ClassName : SiebText
+	 * 		.class : SiebText
+	 * 		RepositoryName : ICE Version Software
+	 */
+	protected SiebTextTestObject VersionPI() 
+	{
+		return new SiebTextTestObject(
+                        getMappedTestObject("VersionPI"));
+	}
+	/**
+	 * VersionPI: with specific test context and state.
+	 *		ClassName : SiebText
+	 * 		.class : SiebText
+	 * 		RepositoryName : ICE Version Software
+	 */
+	protected SiebTextTestObject VersionPI(TestObject anchor, long flags) 
+	{
+		return new SiebTextTestObject(
+                        getMappedTestObject("VersionPI"), anchor, flags);
 	}
 	
 	

@@ -1,0 +1,103 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: CP08_CD1 Desde paso: 1 Modo:Real
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatosEntrada'                                                  'OK'                          
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'                                         'OK'                          
+'Paso    0  -  GrabarDatosSalida'                                                 'OK'                          
+'Paso    1  -  fLogin'                                                            'OK'                          
+'Paso    2  -  fVista360'                                                         'OK'                          
+'Paso    3  -  fBuscarActivo'                                                     'OK'                          
+'Paso    4  -  fBuscarCtaFact'                                                    'OK'                          
+'Paso    5  -  fNuevaPostvta'                                                     'OK'                          
+'Paso    6  -  fBuscarPedidoVenta'                                                'OK'                          
+'Paso    7  -  fValidarAgencia'                                                   'OK'                          
+'Paso    8  -  fIngresarAutenticacion'                                            'OK'                          
+'Paso    9  -  fValidarNuevaAccion'                                               'OK'                          
+'Paso   10  -  fValidarMotivoPedido'                                              'OK'                          
+'Paso   11  -  fExpandiryBuscar'                                                  'OK'                          
+'Paso   12  -  fCheckPagoFact'                                                    'OK'                          
+'Paso   13  -  fEnviarPedido'                                                     'OK'                          
+'Paso   14  -  fValidarMensaje'                                                   'OK'                          
+'Paso   15  -  fValorarTodo'                                                      'OK'                          
+'Paso   16  -  fCheckPagoFact'                                                    'OK'                          
+'Paso   17  -  fEnviarPedido'                                                     'OK'                          
+'Paso   18  -  fEsperaEstado'                                                     'OK'                          
+'Paso   19  -  fValidarBtonValorarTodo'                                           'OK'                          
+'Paso   20  -  fVista360'                                                         'OK'                          
+'Paso   21  -  fBuscarActivo'                                                     'OK'                          
+'Paso   22  -  fBuscarCtaFact'                                                    'OK'                          
+'Paso   23  -  fBuscarProductoActivo'                                             'OK'                          
+'Paso   24  -  fValidarActivoEstadoyMotivoenCtaFact'                                'OK'                          
+'Paso   25  -  fVista360'                                                         'OK'                          
+'Paso   26  -  fBuscarActivo'                                                     'OK'                          
+'Paso   27  -  fValidarActivoEstadoenCtaCte'                                      'OK'                          
+'Paso   28  -  fLogout'                                                           'OK'                          
+'Paso   29  -  Fin del caso'                                                      'OK'                          
+
+
+Informe de DATOS de salida
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoPasoOK'                 '0'                           
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoTramite'                '1'                           
+'Paso    3  -  fBuscarActivo'                      'NroServicio'                  '89773883'                    
+'Paso    3  -  fBuscarActivo'                      'NroServicio'                  '89773883'                    
+'Paso    4  -  fBuscarCtaFact'                     'NroCtaFact'                   '101742540655'                
+'Paso    5  -  fNuevaPostvta'                      'NroPedido'                    '1-1742559275'                
+'Paso    5  -  GrabarDatosSalida'                  'T1_NroPedido'                 '1-1742559275'                
+'Paso    9  -  ValidarNuevaAccion'                 'Accion'                       'Suspensión'                  
+'Paso   10  -  ValidarNuevaAccion'                 'Accion'                       'Suspensión'                  
+'Paso   21  -  fBuscarActivo'                      'NroServicio'                  '89773883'                    
+'Paso   21  -  fBuscarActivo'                      'NroServicio'                  '89773883'                    
+'Paso   22  -  fBuscarCtaFact'                     'NroCtaFact'                   '101742540655'                
+'Paso   24  -  ValidarActivoEstadoyMotivoenCtaFact' 'Estado'                       'Suspensión'                  
+'Paso   24  -  ValidarActivoEstadoyMotivoenCtaFact' 'Motivo'                       'Robo'                        
+'Paso   26  -  fBuscarActivo'                      'NroServicio'                  '89773883'                    
+'Paso   26  -  fBuscarActivo'                      'NroServicio'                  '89773883'                    
+'Paso   27  -  CP08_CD1'                           'Estado'                       'Suspensión'                  
+
+
+Informe de Bugs
+-----------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------
+Tipo Parada         = FIN
+Mensaje de Parada   = FIN del caso en paso 29
+Parada en paso	    = 29
+
+
+-----------------------------------------------------------------------------------------
+Fin del Informe del Caso Prueba_Conj Datos: CP08_CD1
+-----------------------------------------------------------------------------------------
+
+
+Informe de Errores imprevistos de sistema
+-----------------------------------------------------------------------------------------
+'Paso    8  -  Accion'                             'Reconocimiento Ambiguo'       'TestObjectMethodState {AMBIGUOUS_RECOGNITION,testObjectClassName=GuiTestObject(Name: BtonConsultaPedido, Map: BtonConsultaPedido),method=ensureObjectIsVisible,signature=null,args=null}'
+
+'Paso    8  -  Accion'                             'Reconocimiento Ambiguo'       'Consulta'                    
+
+'Paso    8  -  Accion'                             'Reconocimiento Ambiguo'       'TestObjectMethodState {AMBIGUOUS_RECOGNITION,testObjectClassName=GuiTestObject(Name: BtonConsultaPedido, Map: BtonConsultaPedido),method=ensureObjectIsVisible,signature=null,args=null}'
+
+'Paso    8  -  Accion'                             'Reconocimiento Ambiguo'       'Consulta'                    
+
+'Paso   13  -  Accion'                             'Reconocimiento Ambiguo'       'TestObjectMethodState {AMBIGUOUS_RECOGNITION,testObjectClassName=GuiTestObject(Name: BotonConsultaPedido, Map: BtonConsultaPedido),method=ensureObjectIsVisible,signature=null,args=null}'
+
+'Paso   13  -  Accion'                             'Reconocimiento Ambiguo'       'Consulta'                    
+
+'Paso   13  -  Accion'                             'Reconocimiento Ambiguo'       'TestObjectMethodState {AMBIGUOUS_RECOGNITION,testObjectClassName=GuiTestObject(Name: BotonConsultaPedido, Map: BtonConsultaPedido),method=ensureObjectIsVisible,signature=null,args=null}'
+
+'Paso   13  -  Accion'                             'Reconocimiento Ambiguo'       'Consulta'                    
+
+'Paso   17  -  Accion'                             'Reconocimiento Ambiguo'       'TestObjectMethodState {AMBIGUOUS_RECOGNITION,testObjectClassName=GuiTestObject(Name: BotonConsultaPedido, Map: BtonConsultaPedido),method=ensureObjectIsVisible,signature=null,args=null}'
+
+'Paso   17  -  Accion'                             'Reconocimiento Ambiguo'       'Consulta'                    
+
+'Paso   17  -  Accion'                             'Reconocimiento Ambiguo'       'TestObjectMethodState {AMBIGUOUS_RECOGNITION,testObjectClassName=GuiTestObject(Name: BotonConsultaPedido, Map: BtonConsultaPedido),method=ensureObjectIsVisible,signature=null,args=null}'
+
+'Paso   17  -  Accion'                             'Reconocimiento Ambiguo'       'Consulta'                    
+

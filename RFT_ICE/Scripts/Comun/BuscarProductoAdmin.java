@@ -15,31 +15,56 @@ import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 
 /**
  * Descripción: Permite seleccionar una línea del pedido desde el applet de administracion
- * Parámetros: 0) Nombre del producto 1) OK "Encontrado"/ NOK "No Encontrado"  
- * 2) posicion en la que se encontro el objeto
+ * Parámetros: 0) Nombre del producto 1) OK "Encontrado"/ NOK "No Encontrado" 
+ * 2) posicion en la que se encontro el objeto 3)Tramite 
  * SS Nov 2015
  */
-public class BuscarProductoAdmin extends BuscarProductoAdminHelper
+public class  BuscarProductoAdmin extends BuscarProductoAdminHelper
 {
 	public void testMain(Object[] argu) throws RationalTestException
 	{
+		ImpreEncabezadoScript(getScriptArgs(), getScriptName( ).toString());
+
 		String sProductoObjetivo = argu[0].toString();
 		argu[1] = "NOK";
-
-		String sProducto = (String) LineasPedidoAdmin().getCellText("Product", 0);
-		int i = 0;
-		int iTotal = (int) LineasPedidoAdmin().getProperty("RowsCount");
-		while (i < iTotal - 1 && !(sProducto.equals(sProductoObjetivo))) {
-			i = i + 1;
-			sProducto = (String) LineasPedidoAdmin().getCellText("Product", i);
+		String sTramite = "Venta";
+		if (argu.length >= 4 ) { 
+			sTramite = argu[3].toString(); // tramite
 		}
+		
+		String sProducto="NA"; 
+		int i = 0;
+		int iTotal=0;
+		
+		if (!sTramite.equals("PortIn")){
+			sProducto = (String) LineasPedidoAdmin().getCellText("Product", 0);
+			iTotal = (int) LineasPedidoAdmin().getProperty("RowsCount");
+		}
+		if (sTramite.equals("PortIn")){
+			sProducto = (String) LineasPedidoPIAdmin().getCellText("Product", 0);
+			iTotal = (int) LineasPedidoPIAdmin().getProperty("RowsCount");
+		}
+
+
+		while (i < iTotal - 1 && !(sProducto.equals(sProductoObjetivo))) 
+		{
+			i = i + 1;
+			if (!sTramite.equals("PortIn")){
+			sProducto = (String) LineasPedidoAdmin().getCellText("Product", i);
+			}
+			if (sTramite.equals("PortIn")){
+			sProducto = (String) LineasPedidoPIAdmin().getCellText("Product", i);
+			}
+		}
+		
 		if (sProducto.equals(sProductoObjetivo)) {
 			argu[1] = "OK";
 			System.out.println("Producto Seleccionado: "
-					+ LineasPedidoAdmin().getCellText("Product", i)
+					+ sProducto
 					+ " en posición: " + i);
 			argu[2] = Integer.toString(i);
 		}
+		ImpreResultadoScript(getScriptName( ).toString(), argu[1].toString());
 	}
 }
 

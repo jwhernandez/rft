@@ -1,0 +1,58 @@
+package Scripts.Comun;
+import resources.Scripts.Comun.GenerarContratoHelper;
+import com.rational.test.ft.*;
+import com.rational.test.ft.object.interfaces.*;
+import com.rational.test.ft.object.interfaces.SAP.*;
+import com.rational.test.ft.object.interfaces.WPF.*;
+import com.rational.test.ft.object.interfaces.dojo.*;
+import com.rational.test.ft.object.interfaces.siebel.*;
+import com.rational.test.ft.object.interfaces.flex.*;
+import com.rational.test.ft.object.interfaces.generichtmlsubdomain.*;
+import com.rational.test.ft.script.*;
+import com.rational.test.ft.value.*;
+import com.rational.test.ft.vp.*;
+import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
+/**
+ * Script Name   : <b>GenerarContrato</b>
+ * Generated     : <b>jul. 27, 2017 12:36:28 PM</b>
+ * Description   : Presiona el botón generar contrato o valida si está o no activo
+ * Original Host : WinNT Version 6.1  Build 7601 (S)
+ * @Param 0) NOK/OK 1) NA, true false
+ * @since  2017/07/27
+ * @author VC
+ */
+public class GenerarContrato extends GenerarContratoHelper
+{
+	
+	public void testMain(Object[] argu) 
+	{
+		ImpreEncabezadoScript(getScriptArgs(), getScriptName( ).toString());
+		argu[0] = "NOK";
+		
+		if(argu[1].toString().equals("NA")){ // Presiona el botón
+			try{
+				button_generarContrato().performAction();
+				argu[0] = "OK";
+			} catch(Exception e){
+				System.out.println("Error al presionar el botón de generar contrato." + e);
+			}
+		} else if(argu[1].toString().equals("true")){
+			if(button_generarContrato().isEnabled()){
+				argu[0] = "OK";
+			}else{
+				System.out.println("Error, el botón no se encuentra habilitado.");
+			}
+		} else if(argu[1].toString().equals("false")){
+			if(!button_generarContrato().isEnabled()){
+				argu[0] = "OK";
+			}else{
+				System.out.println("Error, el botón no se encuentra deshabilitado.");
+			}
+		} else{
+			System.out.println("Error, opción no valida.");
+		}
+		
+		ImpreResultadoScript(getScriptName( ).toString(), argu[0].toString());
+	}
+}
+

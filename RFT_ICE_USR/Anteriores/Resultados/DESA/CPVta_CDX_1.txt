@@ -1,0 +1,43 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: CPVta_CDX Desde paso: 1 Modo:Real
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatosEntrada'                                                  'OK'                          
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'                                         'OK'                          
+'Paso    0  -  GrabarDatosSalida'                                                 'OK'                          
+'Paso    1  -  fLogin'                                                            'OK'                          
+
+
+Informe de DATOS de salida
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoPasoOK'                 '0'                           
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoTramite'                '1'                           
+
+
+Informe de Bugs
+-----------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------
+Tipo Parada         = Objeto no encontrado
+Mensaje de Parada   = TestObjectMethodState {OBJECT_NOT_FOUND,testObjectClassName=GuiTestObject(Nombre: Nuevo, Correlación: s_1_1_7_0_mb),method=ping,signature=()V,args=null}
+Parada en paso	    = 2
+
+
+-----------------------------------------------------------------------------------------
+Fin del Informe del Caso Prueba_Conj Datos: CPVta_CDX
+-----------------------------------------------------------------------------------------
+
+
+Informe de Errores imprevistos de sistema
+-----------------------------------------------------------------------------------------
+'Paso    2  -  Accion'                             'Objeto no encontrado'         'TestObjectMethodState {OBJECT_NOT_FOUND,testObjectClassName=GuiTestObject(Nombre: Nuevo, Correlación: s_1_1_7_0_mb),method=ping,signature=()V,args=null}'
+
+'Paso    2  -  Accion'                             'Excepción no esperada'        'Script=Vista360 Línea=0 Error=CRFCN0661W: La puntuación de reconocimiento del objeto encontrado no permite calificar al objeto como una coincidencia.
+ Buscando [GuiTestObject(Nombre: Nuevo, Correlación: s_1_1_7_0_mb)], la mejor puntuación de candidato erróneo fue [9800] con la mejor descripción errónea [{.text=Nuevo, .href=javascript:void(0), .id=s_1_1_7_0_mb, .title=, .name=, .classIndex=0}]'
+
+'Paso    2  -  Accion'                             'Excepción no esperada'        'Script=fVista360 Línea=0 Error=CRFCN0018E: La línea 49 del script 49 contiene una excepción.'
+

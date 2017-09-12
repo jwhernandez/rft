@@ -1,0 +1,158 @@
+package GUI;
+
+import javax.swing.*;
+
+import java.awt.event.*;
+import java.awt.*;
+import java.io.IOException;
+
+
+public class CP05 extends JMenuBar{
+
+	private JLabel nroCuentaL, IdentificacionL, planL, nroServicioL, SimInL, MarcaL, ModeloL, SerieL, VersionL, Letel1L , Letel2L, Letel3L, Letel4L, Letel5L, SimCoL, TerminalL, IMEICoL, IMEIInL, TituloL;
+	private JTextField nroCuentaTF,IdentificacionTF,planTF,nroServicioTF,SimCoTF, MarcaTF,ModeloTF,SerieTF,VersionTF,Letel1TF,Letel2TF,Letel3TF,Letel4TF,Letel5TF,IMEICoTF,SimInTF;
+	
+	public CP05()
+	{
+	      JFrame frame = new JFrame();
+	      frame.setTitle("Automatizacion de Pruebas Regresivas");
+	      frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	      //frame.setJMenuBar(new CP03(  ));
+	      frame.pack(  );
+	      frame.setSize(600, 600);
+	      frame.setVisible(true);
+		  JPanel panelLabel  = new JPanel();
+	      JPanel panelTF  = new JPanel();
+	      JPanel panelIntegracion  = new JPanel();
+	      JPanel panelTitulo = new JPanel();
+	      JPanel panelab  = new JPanel();
+	      JPanel panelex = new JPanel();
+	      JButton boton1 = new JButton();
+	      JButton boton2 = new JButton();
+	      
+          frame.setLayout(new FlowLayout());      
+	      frame.setResizable(false);
+	        
+	    //Instanciar los labels
+	      nroCuentaL = new JLabel();
+	      nroCuentaL.setText("Numero de cuenta");
+	      IdentificacionL = new JLabel();
+	      IdentificacionL.setText("Identificacion");     
+	      planL = new JLabel();
+	      planL.setText("Plan");
+	      nroServicioL = new JLabel();
+	      nroServicioL.setText("Nuemero de Servicio");     
+	      SimCoL = new JLabel();
+	      SimCoL.setText("SIM Correcta");
+	      MarcaL = new JLabel();
+	      MarcaL.setText("Marca:");
+	      ModeloL = new JLabel();
+	      ModeloL.setText("Modelo:");
+	      SerieL = new JLabel();
+	      SerieL.setText("Serie:");
+	      VersionL = new JLabel();
+	      VersionL.setText("Version:");
+	      Letel1L = new JLabel();
+	      Letel1L.setText("Letel1");
+	      Letel2L = new JLabel();
+	      Letel2L.setText("Letel2");
+	      Letel3L = new JLabel();
+	      Letel3L.setText("Letel3");
+	      Letel4L = new JLabel();
+	      Letel4L.setText("Letel4");
+	      Letel5L = new JLabel();
+	      Letel5L.setText("Letel5");
+	      IMEICoL = new JLabel();
+	      IMEICoL.setText("IMEI:");
+	      SimInL = new JLabel();
+	      SimInL.setText("SIM Incorrecta");
+	      
+	      TituloL = new JLabel();
+	      TituloL.setText("Escenario 03");
+	      
+	      nroCuentaTF = new JTextField();
+	      IdentificacionTF = new JTextField();
+	      planTF = new JTextField();
+	      nroServicioTF = new JTextField();
+	      SimCoTF = new JTextField();
+	      MarcaTF= new JTextField();
+	      ModeloTF = new JTextField();
+	      SerieTF = new JTextField();
+	      VersionTF = new JTextField();
+	      Letel1TF = new JTextField();
+	      Letel2TF = new JTextField();
+	      Letel3TF = new JTextField();
+	      Letel4TF = new JTextField();
+	      Letel5TF = new JTextField();
+	      IMEICoTF = new JTextField();
+	      SimInTF = new JTextField();
+	      
+	      panelLabel.setLayout(new GridLayout(15,0));
+	      panelLabel.add(nroCuentaL);
+	      panelLabel.add(planL);
+	      panelLabel.add(nroServicioL);
+	      panelLabel.add(SimCoL);
+	      panelLabel.add(MarcaL);
+	      panelLabel.add(ModeloL);
+	      panelLabel.add(SerieL);
+	      panelLabel.add(VersionL);  
+	      panelLabel.add(Letel1L);
+	      panelLabel.add(Letel2L);
+	      panelLabel.add(Letel3L);
+	      panelLabel.add(Letel4L);
+	      panelLabel.add(Letel5L);
+	      panelLabel.add(IMEICoL);
+	      panelLabel.add(SimInL);  
+	  
+	      panelTF.setLayout(new GridLayout(15,0));
+	      panelTF.add(nroCuentaTF);
+	      panelTF.add(planTF);
+	      panelTF.add(nroServicioTF);
+	      panelTF.add(SimCoTF);
+	      panelTF.add(MarcaTF);
+	      panelTF.add(ModeloTF);
+	      panelTF.add(SerieTF);
+	      panelTF.add(VersionTF);  
+	      panelTF.add(Letel1TF);
+	      panelTF.add(Letel2TF);
+	      panelTF.add(Letel3TF);
+	      panelTF.add(Letel4TF);
+	      panelTF.add(Letel5TF);
+	      panelTF.add(IMEICoTF);
+	      panelTF.add(SimInTF);  
+	      
+	      panelIntegracion.setLayout(new GridLayout(1,1));
+	      panelIntegracion.setPreferredSize(new Dimension(500,500));
+	      panelIntegracion.add(panelLabel);
+	      panelIntegracion.add(panelTF);
+	                
+	      panelab.setLayout(new FlowLayout());
+	      panelab.setPreferredSize(new Dimension(100,100));
+	      boton1.setText("Ejecutar");
+	      boton2.setText("Cancelar");
+	      panelab.add(boton1);
+	      panelab.add(boton2);
+	      
+	      panelTitulo.setLayout(new FlowLayout());
+	      panelTitulo.setPreferredSize(new Dimension(100,100));
+	      panelTitulo.add(TituloL);
+	      //panelab.add(boton2);*/
+	        
+	      panelex.setLayout(new GridLayout(3,0));
+	      panelex.add(panelTitulo);
+	      panelex.add(panelIntegracion);
+	      panelex.add(panelab);
+	     
+	      
+	     
+	      //frame.add(panelTitulo);
+	      frame.add(panelex);
+	      
+	}
+	 
+	
+	public static void main(String[] args)  
+	{
+		CP05 casita = new CP05();
+	}	
+}

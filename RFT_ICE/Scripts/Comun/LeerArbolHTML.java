@@ -30,7 +30,7 @@ public class LeerArbolHTML extends LeerArbolHTMLHelper
 	public void testMain(Object[] args) 
 	{
 
-		ITestDataTree iTreeData = (ITestDataTree) tree2().getTestData("tree");
+		ITestDataTree iTreeData = (ITestDataTree) tree2A().getTestData("tree");
 		//  System.out.println(LineasPedido().getTestData("tree")); no funciona sobre siebel
         ITestDataTreeNodes iNodes = iTreeData.getTreeNodes();
        System.out.println("node count:"+iNodes.getNodeCount());

@@ -17,13 +17,15 @@ import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
  * Script Name   : <b>fValidarIMEICP</b>
  * @author Sandra
  * @since  2016/02/01
+ * @Param 0)nro caso 1) NA 2) ambiente 3) true / false 4) nropaso
  */
 public class fValidarIMEICP extends fValidarIMEICPHelper
 {
 	public void testMain(Object[] args) 
 	{
+		ImpreEncabezadoScript(getScriptArgs(), getScriptName( ).toString());
 		String[] ValIMEICP;
-		ValIMEICP = new String[3];
+		ValIMEICP = new String[4];
 		//0) IN Terminal Cliente activo true / false 1) IMEI del activo / NA 
 		// 2)OK/NOK 3) Postpago / Prepago
 		String[] MensError;

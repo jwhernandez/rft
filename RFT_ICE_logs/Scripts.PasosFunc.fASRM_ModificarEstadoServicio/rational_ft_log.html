@@ -1,0 +1,1284 @@
+<HTML xmlns:xalan="http://xml.apache.org/xslt">
+<HEAD>
+<META http-equiv="Content-Type" content="IE=EmulateIE8; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8">
+<title>IBM Rational Functional Tester XML log</title>
+<link rel="stylesheet" type="text/css" href="../Log_Assistive_Files/log.css">
+</HEAD>
+<BODY class="claro">
+<script type="text/javascript">
+          var dojoLocation = location.search;
+
+          if(dojoLocation)
+          {
+          dojoLocation = dojoLocation.substr(1);
+          dojoLocation = dojoLocation.replace(/\\/g,"/");
+          dojoLocation = "file:///" + dojoLocation;
+          var dojoRoot = dojoLocation.replace(/\/dojo\/dojo.js/,"");
+          var dojoDir = dojoRoot + "/dojo";
+          var dijitDir = dojoRoot + "/dijit";
+          var dojoxDir = dojoRoot + "/dojox";
+
+
+        
+
+        dojoConfig ={
+        baseUrl: dojoDir,
+      //  isDebug: true, // enables debug
+        async: true, // enables AMD loader
+        parseOnLoad: false,
+      //  gfxRenderer: "svg,silverlight,vml",
+        packages: [
+        {
+        "name": "dojo",
+        "location": dojoDir
+        },
+        {
+        "name": "dijit",
+        "location": dijitDir
+        },
+        {
+        "name": "dojox",
+        "location": dojoxDir
+        }
+        ]
+        };
+        
+        }
+      </script><script type="text/javascript" src="../Log_Assistive_Files/dojo.js"></script><script type="text/javascript">
+        var dojoCSS = require.toUrl("dojo/resources/dojo.css");
+        var stl1 = document.createElement("link");
+        stl1.type = "text/css";
+        stl1.rel="stylesheet";
+        stl1.href = dojoCSS.toString();
+
+        var claroCSS= require.toUrl("dijit/themes/claro/claro.css");
+        var stl2 = document.createElement("link");
+        stl2.type = "text/css";
+        stl2.rel="stylesheet";
+        stl2.href = claroCSS.toString();
+
+        var docCSS= require.toUrl("dijit/themes/claro/document.css");
+        var stl3 = document.createElement("link");
+        stl3.type = "text/css";
+        stl3.rel="stylesheet";
+        stl3.href = docCSS.toString();
+
+
+        var expandoCSS= require.toUrl("dojox/layout/resources/ExpandoPane.css");
+        var stl4 = document.createElement("link");
+        stl4.type = "text/css";
+        stl4.rel="stylesheet";
+        stl4.href = expandoCSS.toString();
+
+        document.getElementsByTagName("head")[0].appendChild(stl1);
+        document.getElementsByTagName("head")[0].appendChild(stl2);
+        document.getElementsByTagName("head")[0].appendChild(stl3);
+        document.getElementsByTagName("head")[0].appendChild(stl4);
+
+        var continentStore;
+        var failedVerdictStore;
+        var verificationPointStore;
+        var warningVerdictStore;
+        var succesPercent;
+        function isRoot(idValue)
+        {
+        var index = idValue.lastIndexOf("_root");
+        return (index > 1);
+        }
+
+      </script>
+<div id="TopPane" data-dojo-type="dijit/layout/BorderContainer" style="width: 100%; height:100%;" liveSplitters="false" gutters="false">
+<div data-dojo-type="dijit/layout/ContentPane" class="top" region="top" id="banner" width="100%" border="0" splitter="false" style="height:'46px'; padding:'0'">
+<img height="46px" width="80px" src="../Log_Assistive_Files/IBM_logo_banner.gif" align="right" border="0" alt="IBM Logo"></div>
+<div id="VerdictPane" data-dojo-type="dijit/layout/BorderContainer" data-dojo-props="liveSplitters:false,   splitter:false,region:'center',design:'sidebar', gutters:false">
+<div data-dojo-type="dijit/layout/BorderContainer" data-dojo-props="region:'leading', splitter:true, minSize:20" style="width: 285px;" id="LeftVerdictOverviewContainer">
+<div id="LeftVerdictOverviewPane" data-dojo-type="dijit/layout/ContentPane" data-dojo-props="region:'top',   splitter:true, minSize:20" style="height: 60%;">
+<div id="LeftVerdictOverviewDescPane" data-dojo-type="dijit/TitlePane" open="true" title="Test Verdict">Select the filter<div id="verdictFilterToolbar1" data-dojo-type="dijit/Toolbar">
+<div data-dojo-type="dijit/form/CheckBox" id="successFilterCkb" onChange="passFilterChecked" checked="checked"></div>
+<button data-dojo-type="dijit/form/Button" type="button" id="successFilter" iconClass="passIcon" onClick="toggleFilterCheckbox('successFilterCkb')" showLabel="true">Success</button><span data-dojo-type="dijit/ToolbarSeparator"></span>
+<div data-dojo-type="dijit/form/CheckBox" id="failureFilterCkb" onChange="failureFilterChecked" checked="checked"></div>
+<button data-dojo-type="dijit/form/Button" id="failureFilter" type="button" iconClass="failureIcon" onClick="toggleFilterCheckbox('failureFilterCkb')" showLabel="true">Failures</button><span data-dojo-type="dijit/ToolbarSeparator"></span>
+<div data-dojo-type="dijit/form/CheckBox" id="warningFilterCkb" onChange="warningFilterChecked" checked="checked"></div>
+<button data-dojo-type="dijit/form/Button" type="button" id="warningFilter" iconClass="warningIcon" onClick="toggleFilterCheckbox('warningFilterCkb')" showLabel="true">Warnings</button><span data-dojo-type="dijit/ToolbarSeparator"></span>
+<div data-dojo-type="dijit/form/CheckBox" id="messageFilterCkb" onChange="messageFilterChecked" checked="checked"></div>
+<button data-dojo-type="dijit/form/Button" type="button" id="messageFilter" iconClass="informationIcon" onClick="toggleFilterCheckbox('messageFilterCkb')" showLabel="true">Messages</button>
+</div>
+</div>
+<div data-dojo-type="rftModel" data-dojo-id="myModel" data-dojo-props="store:continentStore, query:{eventType:'rftevent'},   rootId:'event_Script5_AbT0_root'  , rootLabel:'Verdict', childrenAttrs:['events']"></div>
+<div data-dojo-type="rftTree" id="LeftVerdictOverviewTreePane" data-dojo-props="model:myModel"></div>
+</div>
+<div id="LeftVerdictSpecificsContainer" data-dojo-type="dijit/layout/AccordionContainer" duration="200" region="center" overflow="hidden">
+<div id="LeftVerdictVerificationPane" data-dojo-type="dijit/layout/ContentPane" title="Verification Points">
+<div data-dojo-type="dijit/tree/ForestStoreModel" data-dojo-id="vpModel" data-dojo-props="store:verificationPointStore, rootLabel:'Verdict', query:{eventType:'rftevent'},      childrenAttrs:['events']"></div>
+<div data-dojo-type="rftTree" id="LeftVerdictVerificationTree" data-dojo-props="model:vpModel"></div>
+</div>
+<div id="LeftVerdictFailuresPane" data-dojo-type="dijit.layout.ContentPane" title="Failure Verdicts">
+<div data-dojo-type="dijit/tree/ForestStoreModel" data-dojo-id="failModel" data-dojo-props="store:failedVerdictStore, rootLabel:'Verdict',query:{eventType:'rftevent'},      childrenAttrs:['events']"></div>
+<div data-dojo-type="rftTree" id="LeftVerdictFailureTree" data-dojo-props="model:failModel"></div>
+</div>
+<div id="LeftVerdictWarningsPane" data-dojo-type="dijit.layout.ContentPane" title="Warning Verdicts">
+<div data-dojo-type="dijit/tree/ForestStoreModel" data-dojo-id="warningModel" data-dojo-props="store:warningVerdictStore, rootLabel:'Verdict', query:{eventType:'rftevent'},      childrenAttrs:['events']"></div>
+<div data-dojo-type="rftTree" id="LeftVerdictWarningTree" data-dojo-props="model:warningModel"></div>
+</div>
+</div>
+</div>
+<div id="RightVerdictDetailContainer" data-dojo-type="dijit/layout/BorderContainer" data-dojo-props="region:'center',splitter:true ">
+<div id="RightVerdictDetailPane" data-dojo-type="dijit/layout/ContentPane" data-dojo-props="region:'center', splitter:true, minSize:20">
+<div id="RightVerdictDetailOverview" data-dojo-type="dijit/TitlePane" open="true" title="Overall Verdict">
+<table width="100%" rules="rows" border="0">
+<tr>
+<td>
+<table>
+<tr>
+<td>
+<div class="pass">Overall Success</div>
+</td><td>:</td><td>
+<div class="pass" id="successPercent"></div>
+</td>
+</tr>
+</table>
+<div id="CircularGauge" background="{color:'rgba(0,0,0,0)'}" useTooltip="true" interactionMode="none" data-dojo-type="dojox/dgauges/components/green/CircularLinearGauge" data-dojo-props="value:succesPercent" style="width:225px;height:225px;"></div>
+</td><td>
+<br>
+<div id="chart4" style="width: 300px; height: 300px;"></div>
+<td>
+<table align="center">
+<tr>
+<td class="passIcon" width="10px"></td><td>
+<div class="pass">Success</div>
+</td><td>:</td><td>
+<div class="pass" id="SuccessList"></div>
+</td>
+</tr>
+<tr>
+<td class="failureIcon" width="10px"></td><td>
+<div class="fail">Failures</div>
+</td><td>:</td><td align="center">
+<div class="fail" id="FailureList"></div>
+</td>
+</tr>
+<tr>
+<td class="warningIcon" width="10px"></td><td>
+<div class="warn">Warnings</div>
+</td><td>:</td><td>
+<div class="warn" id="WarningList"></div>
+</td>
+</tr>
+<tr>
+<td class="informationIcon" width="10px"></td><td>
+<div class="info">Messages</div>
+</td><td>:</td><td>
+<div class="info" id="MessageList"></div>
+</td>
+</tr>
+</table>
+</td></td>
+</tr>
+<tr>
+<td>
+<table>
+<tr>
+<td class="vpPassIcon" width="10px"></td><td>
+<div class="pass">Successful Verification Points</div>
+</td><td>:</td><td>
+<div class="pass" id="SuccessVPList"></div>
+</td>
+</tr>
+<tr>
+<td class="vpFailIcon" width="10px"></td><td>
+<div class="fail">Failed Verification Points</div>
+</td><td>:</td><td>
+<div class="fail" id="FailureVPList"></div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<TABLE id="RightVerdictDetailsTable" border="1" rules="rows" width="100%">
+<TR id="event_Scripts.PasosFunc.fASRM_ModificarEstadoServicio_AbT0">
+<TD class="info">INFORMATION</TD><TD class="time">08-Sep-2017 02:32:57.486 PM</TD><TD class="note">Script start [Scripts.PasosFunc.fASRM_ModificarEstadoServicio]</TD>
+</TR>
+<TR>
+<TD COLSPAN="3">
+<UL>
+<LI>
+<em>Line Number = </em>1</LI>
+<LI>
+<em>Iteration Count = </em>0</LI>
+<LI>
+<em>Script Name = </em>Scripts.PasosFunc.fASRM_ModificarEstadoServicio</LI>
+<LI>
+<em>Script ID = </em>Scripts.PasosFunc.fASRM_ModificarEstadoServicio.java</LI>
+<LI>\Datos\DP_DatosEntrada.rftdp</LI>
+</UL>
+</TD>
+</TR>
+<TR id="event_Scripts.PasosFunc.fASRM_ModificarEstadoServicio_AbT1">
+<TD class="fail">FAIL</TD><TD class="time">08-Sep-2017 02:32:57.501 PM</TD><TD class="note">Scripts.PasosFunc.fASRM_ModificarEstadoServicio.testMain had an unhandled exception.</TD>
+</TR>
+<TR>
+<TD COLSPAN="3">
+<UL>
+<LI>
+<em>Exception Name = </em>java.lang.ArrayIndexOutOfBoundsException</LI>
+<LI>
+<em>Exception Message = </em>Array index out of range: 1</LI>
+<LI>
+<em>Script Name = </em>Scripts.PasosFunc.fASRM_ModificarEstadoServicio</LI>
+<LI>
+<em>Script ID = </em>Scripts.PasosFunc.fASRM_ModificarEstadoServicio.java</LI>
+<LI>
+<em>Line Number = </em>44</LI>
+<LI>
+<em>Exception Stack = </em> at Scripts.PasosFunc.fASRM_ModificarEstadoServicio.testMain(fASRM_ModificarEstadoServicio.java:44)  at org.eclipse.equinox.internal.app.EclipseAppContainer.callMethodWithException(EclipseAppContainer.java:587)  at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:198)  at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)  at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)  at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)  at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)  at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)  at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)  at org.eclipse.equinox.launcher.Main.run(Main.java:1465)  at org.eclipse.equinox.launcher.Main.main(Main.java:1438)  at org.eclipse.core.launcher.Main.main(Main.java:34) </LI>
+</UL>
+</TD>
+</TR>
+<TR id="event_Scripts.PasosFunc.fASRM_ModificarEstadoServicio_AbT2">
+<TD class="fail">FAIL</TD><TD class="time">08-Sep-2017 02:32:57.531 PM</TD><TD class="note">Script end [Scripts.PasosFunc.fASRM_ModificarEstadoServicio]</TD>
+</TR>
+<TR>
+<TD COLSPAN="3">
+<UL>
+<LI>
+<em>Script Name = </em>Scripts.PasosFunc.fASRM_ModificarEstadoServicio</LI>
+<LI>
+<em>Script ID = </em>Scripts.PasosFunc.fASRM_ModificarEstadoServicio.java</LI>
+</UL>
+</TD>
+</TR>
+</TABLE>
+</div>
+<div id="RightVerdictBottomContainer" data-dojo-type="dojox/layout/ExpandoPane" region="right" splitter="true" title="Datapool Details" style="width: 30%;">
+<div data-dojo-type="dijit/layout/AccordionContainer">
+<div id="RightVerdictBottomDatapool" data-dojo-type="dijit/layout/ContentPane" title="Datapool Values">
+<table id="dpTable" border="1">
+<tr id="dpVariable" align="center"></tr>
+<tr id="dpValue" align="center"></tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+      require(["dojo/dom", "dojo/on", "dojo/parser", "dojo/ready", "dojo/_base/declare",  "dijit/Tree",
+
+      "dojo/data/ItemFileReadStore", "dojo/data/ItemFileWriteStore", "dijit/tree/ForestStoreModel" ,
+      "dojox/charting/Chart",
+      "dojox/charting/themes/ThreeD",
+      "dojox/charting/plot2d/Pie",
+      "dojox/charting/action2d/Tooltip",
+      "dojox/charting/action2d/MoveSlice",
+      "dojox/charting/action2d/Highlight",
+      "dojox/charting/widget/SelectableLegend",
+      "dojox/fx/scroll",
+      "dojox/fx",
+      "dojox/charting/plot2d/Markers",
+      "dojox/charting/axis2d/Default"],
+      function(dom, on, parser, ready, declare, Tree, ItemFileReadStore, ItemFileWriteStore, ForestStoreModel,  Chart,
+
+      theme, Pie, Tooltip, MoveSlice, Highlight, SLegend, dfx){
+
+      var dpStore = {
+      identifier: 'dpId',
+      items: []
+      };
+      var dpLogStore = new dojo.data.ItemFileWriteStore({data : dpStore});
+      			
+		dpLogStore.newItem({dpId: 'dp_Scripts.PasosFunc.fASRM_ModificarEstadoServicio_AbT0', dpUpdates: [	
+		{CPosition : '1', dpVariable: 'NumeroCaso' , dpValue: 'UltimaModif' }
+		,{CPosition : '1', dpVariable: 'Ambiente' , dpValue: 'SS' }
+		,{CPosition : '1', dpVariable: 'Tramite' , dpValue: '23/08/2017' }
+		,{CPosition : '1', dpVariable: 'UltModif' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'NumeroServicio' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'Morosidad1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'DB_Param1_4' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'ASRM_NroServ1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'Identificacion' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'Apartado' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'CodPostal' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'BRM_Prod1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'BRM_Operador1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'BRM_Estado1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'BRM_Cant1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'BRM_Operador2' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'BRM_Estado2' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'BRM_Cant2' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'ClaseCuenta' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'NroCuentaFac' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'BRM_Cuenta' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'TipoCuenta' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'Plan' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'PROD12' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'SIM1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'SIMCorrecta' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'SIMIncorrecta' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'NroSIM1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'NroSIM2' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'SIM2' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'LOV1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'LOV_VAL1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'LOV_LIC1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'LOV_Accion1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'Tempo_Prod1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'Tempo_Accion1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'CatCrediticia' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'IMEI_Correcto' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'PROD0' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'PROD2' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'PROD_Accion0' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'Marca' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'Modelo' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'Version' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'Serie' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'PROD1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'PROD_Accion1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'PROD_Accion2' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'PROD3' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'PROD_Accion3' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'PROD4' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'PROD_Padre14' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'PROD13' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'PROD_Padre6' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'BuscaDesdeIni4' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'BuscaDesdeIni7' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'BuscaDesdeIni10' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'BuscaDesdeIni11' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'PROD6' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'BRM_Prod2' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'PROD11' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'PROD_Padre8' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'PROD7' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'PROD14' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'PROD_Padre15' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'BuscaDesdeIni12' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'BuscaDesdeIni13' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'PROD8' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'PROD_Padre9' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'PROD15' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'PROD9' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'PROD10' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'PROD_Accion15' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'PROD_Accion6' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'PROD_Accion8' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'PROD_Accion9' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'PROD_Accion14' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'PaqOpcion1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'PaqOpcion2' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'PaqOpcion3' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'PaqOpcion4' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'Paquete1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'PaqAccion1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'PaqEstado1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'Paquete2' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'PaqAccion2' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'PaqEstado2' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'Paquete3' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'PaqAccion3' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'PaqEstado3' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'Paquete4' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'PaqAccion4' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'PaqEstado4' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'ASRM_usr' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'ASRM_pass' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'ASRM_EstadoSIM2' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'ASRM_EstadoSIM1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'IMSIActivo' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'IMSI' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'DB_Param2_4' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'BRM_IMSIDeseada' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'VEP_usr' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'VEP_pass' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'BRM_usr' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'BRM_pass' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'PROD_Padre12' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'PROD_Accion12' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'ASRM_EstadoNro1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'DB_Aplic3' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'USM_usr' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'AAM_usr' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'USM_pass' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'AAM_pass' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'DB_SQL3' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'DB_CantParam3' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'DB_Param2_3' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'DB_Param3_3' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'DB_Param4_3' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'DB_Validar3' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'DB_Aplic4' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'DB_SQL4' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'DB_CantParam4' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'DB_Validar4' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'UltimaModificacionDP' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'NroServicio1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'NumeroServicio1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'NumeroServicio2' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'NumeroServicio3' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'NroServicio2' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'Plan1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'IMEI4' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'IMEI5' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'IMEI6' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'IMEI1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'IMEI2' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'IMEI3' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'NombreTerminal' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'SBLusr1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'SBLpass1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'CatLug1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'SBLtipoUsr1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'ASRM_EstadoServicio1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'ASRM_EstadoServicio2' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'ASRM_EstadoServicio3' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'ASRM_EstadoServicio4' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'TipoPerfilCorrecto' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'Tipo' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'Canal' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'Servicio' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'IMEI_Lugar1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'IMEI_Lugar4' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'IMEI_Lugar2' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'IMEI_Lugar6' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'IMEI_Lugar3' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'IMEI_Lugar5' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'TipoPerfilCtaCliente' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'CategoriaCrediticia1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'REMO_usr' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'REMO_pass' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'CatAccion1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'CtaDestinoId' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'CtaDestinoTipo' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'Plan2' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'CatLug2' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'CatAccion2' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'PROD_Padre2' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'PROD_Padre5' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'PROD5' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'PROD_Padre10' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'BuscaDesdeIni1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'BuscaDesdeIni6' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'PROD_Padre3' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'PROD_Accion5' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'PROD_Accion10' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'TipoPed' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'SCRW_usr' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'SCRW_pass' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'Comentario' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'Cedula' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'TipoCedula' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'IMEIdelactivo' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'IMEI_Incorrecto' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'ObservacionesCM' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'PROD_Marcado3' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'PROD_Habilitado3' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'Subtramite1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'Motivo1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'Msj1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'LOV2' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'LOV_Accion2' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'LOV_VAL2' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'LOV_LIC2' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'LOV3' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'LOV_Accion3' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'LOV_VAL3' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'LOV_LIC3' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'PROD_Padre4' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'PROD_Accion4' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'DB_Aplic1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'DB_SQL1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'DB_Validar1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'DB_CantParam1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'DB_Param2_1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'DB_Param3_1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'DB_Param4_1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'DB_Aplic2' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'DB_SQL2' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'DB_CantParam2' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'DB_Validar2' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'ObservacionesPedido' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'DB_Param1_1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'DB_Param1_2' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'DB_Param2_2' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'VCT_Prod1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'VCT_Marca1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'VCT_Modelo1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'VCT_Serie1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'VCT_Version1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'Tempo_Prod2' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'Tempo_Accion2' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'CategoriaCrediticia2' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'IMEI' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'PROD_Padre1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'SIM_ASRM1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'SIM_ASRM2' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'VCS_Editable1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'VCS_Prod1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'ProxNum1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'PROD_Categoria5' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'SIPV_usr' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'SIPV_pass' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'ATV_usr' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'ATV_pass' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'ATV_TipoPedido1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'ATV_Tipo1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'ATV_EstadoMulta1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'ATV_EstadoPago1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'ASRM_EstadoServicio' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'NumEspPrimerNum2daopcion1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'NumEspIrAdmin1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'PROD_Padre0' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'PROD_Padre11' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'NumEspPrimerNum2daopcion2' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'NumEspIrAdmin2' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'CategoriaCrediticia' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'Terminales1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'SIMcorrecta' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'TerminalCteCheck1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'SIMincorrecta' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'PROD_Accion11' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'Tempo_Prod3' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'Tempo_Accion3' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'LEDesdePed1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'LEDesdePed2' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'LETipo2' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'ListaFAVNum2' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'LETipo1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'ProductoFAVNum2' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'ListaFAVNum1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'MensajeFAVNum1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'ProductoFAVNum' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'LETipo3' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'LETipo4' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'LETipo0' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'LEDesdePed0' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'LEVolverPed2' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'LEVolverPed3' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'LEVolverPed4' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'LEVolverPed1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'LEVolverPed0' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'LETel0' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'LETel1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'LETel2' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'LETel3' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'LETel4' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'LEDesdePed3' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'LEDesdePed4' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'LEMsj1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'LEMsj3' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'LEMsj4' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'LEMsj0' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'LEMsj2' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'IMEI_SIPV' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'CTL_PROD1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'CTL_Accion1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'CTL_Categoria1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'CTL_Categoria2' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'CTL_Categoria3' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'CTL_PROD2' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'CTL_Estado2' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'CTL_PROD3' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'CTL_Accion3' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'Price_Prod1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'Price1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'Price_ProdPadre1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'MontoRED' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'ATV_TipoPedido1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'ATV_TIPO_CP1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'ASRM_NroServ2' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'BRM_Prod3' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'BRM_Estado1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'BRM_Operador3' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'BRM_Estado3' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'BRM_Cant3' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'ASRM_EstadoNro2' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'VistaPedPI' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'TipoUsuario' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'VistaPed' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'TipoAccion' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'TipoPedido' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'PROD_Padre16' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'PROD_Accion16' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'PROD16' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'SIMActivo2' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'NroCuentaCte' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'Morosidad' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'TipoFavorito' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'ProductoFAVNum_SMS' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'IMEI_incorrecto_NV' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'BuscaDesdeIni8' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'BuscaDesdeIni9' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'UltimaModifiacionDP' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'Accion1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'MotivoActivo1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'EstadoActivo2' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'EstadoActivo1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'MotivoActivo2' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'PROD_Categoria1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'Motivo2' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'Subtramite2' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'TerminalCliente' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'Msj2' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'Terminales' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'BuscaDesdeIni5' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'PrecioInicio1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'PrecioNeto1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'PROD_Padre7' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'PROD_Accion7' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'PROD_Accion13' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'BuscaDesdeIni3' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'IMEIValidado2' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'SIMValidado2' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'ATV_Plan1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'TipoCat1_1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'Cat1_1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'TipoCat2_1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'Cat2_1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'TipoCat3_1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'Cat3_1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'TipoCat4_1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'ATV_Terminal1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'NumEspPrimerNum2daopcion' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'NumEspIrAdmin' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'Cliente' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'BuscaDesdeIni0' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'ATV_Estado1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'ATV_Plan2' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'ATV_Terminal2' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'ATV_TipoPedido2' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'ATV_Estado2' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'ATV_TipoPedido3' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'ATV_Accion3' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'ATV_Motivo' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'ATV_TIPO_CP2' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'ATV_Plan3' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'ATV_Terminal3' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'ATV_TipoPedido2' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'ATV_Tipo2' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'ATV_EstadoMulta2' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'ATV_EstadoPago2' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'ATV_TipoPedido4' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'ATV_Accion4' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'ATV_TIPO_CP3' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'ProxNumNvo1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'BRM_ServicioDeseado' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'LETel5' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'BRM_FavNum' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'BRM_FechaIni1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'BRM_Vigencia' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'TerminalClienteActivo' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'PROD1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'LEVolverPed5' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'LEMsj5' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'ProxNumValidar0' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'ProxNumValidar1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'Cantidad1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'Valor3_1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'Nombre3_1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'Valor2_1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'Nombre2_1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'Valor1_1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'Nombre1_1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'BRM_FavProd' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'BRM_Servicio' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'BuscaDesdeIni2' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'LEBuscar1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'LEBuscar2' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'LEBuscar3' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'LEBuscar4' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'LEBuscar5' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'PROD_Padre13' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'BuscaDesdeIni14' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'LEDesdePed5' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'LEDesdePed6' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'LETel6' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'LEVolverPed6' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'LEMsj6' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'TipoTerminal' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'TipoPago' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'PatronActual' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'PatronAnterior' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'Atrib_Padre1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'Atrib_Patron_Act1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'Atrib_Patron_Ant1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'Tempo_Prod4' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'Tempo_Accion4' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'Tempo_Accion5' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'Tempo_Prod5' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'Atrib_Patron_Act4' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'setNroPedido' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'Atrib_Patron_Ant4' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'Busca_DesdeIni1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'Busca_DesdeIni2' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'Busca_DesdeIni3' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'Movimiento1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'Accion2' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'Atrib_Padre5' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'Atrib_Padre6' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'Atrib_Patron_Act8' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'Atrib_Patron_Ant8' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'Terminales2' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'TerminalCteCheck3' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'Terminales4' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'TerminalCteCheck4' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'Terminales3' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'TerminalCteCheck2' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'IMEICP1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'Atrib_Padre4' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'Atrib_Padre2' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'Atrib_Padre3' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'Atrib_Patron_Act5' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'Atrib_Patron_Ant5' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'Atrib_Patron_Act2' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'Atrib_Patron_Ant2' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'Atrib_Patron_Act3' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'Atrib_Patron_Ant3' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'Atrib_Patron_Act6' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'Atrib_Patron_Ant6' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'Atrib_Padre7' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'Atrib_Padre8' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'Atrib_Patron_Act7' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'Atrib_Patron_Ant7' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'UltimaModif' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'TipoVenta' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'Servicio1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'ProductoFavNum' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'SubTramite1' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'Motivo' , dpValue: '' }
+		,{CPosition : '1', dpVariable: 'PROD_Categoria3' , dpValue: '' }
+		]});
+
+	
+      function deleteStaleDatapool()
+{
+	var dpVariable = dojo.byId("dpVariable");
+	var dpValue = dojo.byId("dpValue");	
+	var num = dpVariable.cells.length;
+	for(var i=0;i<num;i++)
+	{
+		dpVariable.deleteCell(0);
+		dpValue.deleteCell(0);
+	}
+}
+
+function updateDatapool(store,item)
+{
+	var parentIdValue = store.getValue(item,"ParentId");
+	var position = store.getValue(item,"Position");
+	var index = parentIdValue.lastIndexOf("_root");
+	if(index > 1)
+		parentIdValue = parentIdValue.substring(0,index);
+	var dpValue = parentIdValue.replace(/event_/,"dp_");
+	
+	dpLogStore.fetchItemByIdentity({identity: dpValue, onItem: function(item){
+
+				deleteStaleDatapool();
+				var dpData = dpLogStore.getValues(item,"dpUpdates")
+				
+				var dpVariableList = new Array();
+				
+				for(var i=0;i<dpData.length;i++)
+				{
+				var j = 0;
+				if(dpData[i].dpVariable && parseInt(dpData[i].CPosition) <= parseInt(position))
+				{
+					for(j=0;j<dpVariableList.length;j++)
+					{
+						if(dpVariableList[j].dpVariable == dpData[i].dpVariable)
+						{							
+							break;									
+						}
+					}
+					
+					dpVariableList[j] = dpData[i];				
+				}
+				}	
+
+				var variableRow = dojo.byId("dpVariable");
+				var valueRow = dojo.byId("dpValue");
+				for(var i=0;i<dpVariableList.length;i++)
+				{				
+					var cell=  variableRow.insertCell(i);
+					cell.innerHTML = dpVariableList[i].dpVariable;
+
+					var cell1=  valueRow.insertCell(i);
+					cell1.innerHTML = dpVariableList[i].dpValue;
+				}
+
+
+			}});	
+}
+	
+			declare("rftModel", [ForestStoreModel], {
+					 getChildren: function(parentItem, onComplete){ 
+						 if(parentItem == null)
+								 {
+									 this.store.fetch({query: this.query, onComplete: 
+
+onComplete});
+								 }
+								 else
+								 {
+
+									
+										 var childItems = [];
+										var temp1 = [];	
+										if((parentItem.store != null) && (parentItem.label == parentItem.store.rootLabel))
+										{
+											childItems =this.store._arrayOfTopLevelItems;
+										}
+										else{
+										
+										var item = this.store._getItemByIdentity
+
+(parentItem.eventId);
+										var temp = item.events ;
+										var j= 0;
+										var tempStore123 =this.store;
+										 dojo.forEach(temp,function(temp2){
+												 if(isItemNonFiltered
+
+(tempStore123,temp2))
+												 {
+												 temp1[j]=temp2;
+												 j= j +1;
+												 }
+												});
+									 childItems= childItems.concat(temp1);
+										}
+								 	onComplete(childItems);
+
+								 }
+
+					}
+				});
+
+		declare("rftTree", [Tree], {
+        // put methods, attributes, etc. here
+	onClick: function( item,  node)
+					{
+						if(item != null && !item.root)
+						{
+							
+							var idValue = this.model.store.getValue(item,"eventId");
+							if(isRoot(idValue))
+								idValue = idValue.substring(0, idValue.lastIndexOf("_root") );
+							updateDatapool(this.model.store,item);
+							var node = dom.byId(idValue);
+							var nodeDim = dojo.coords(node);
+							//var tg = { x: nodeDim.l, y: nodeDim.t };		
+							dojox.fx.smoothScroll({node:node,win:dom.byId("RightVerdictDetailPane"),duration:400}).play();
+							node.style.backgroundColor = "#FFFFFF";
+							dojox.fx.highlight({node:node, color:'#0066FF', duration:800}).play();
+							node.style.backgroundColor = "transparent";
+						}	
+						
+					},
+						 
+						 getIconClass: function(item){
+            
+            						if(item != null)
+						{
+							if(item.root)
+							return "verdictTreeIcon";
+
+							var eventType = this.model.store.getValue(item, "Type");
+							
+							var result = this.model.store.getValue(item,"Result");
+					         
+						 if(eventType == "Script Start")
+							{
+								return "scriptStartIcon";
+							}
+							else if(eventType == "Verification Point")
+							{
+							if( result == "PASS")
+								return "vpPassIcon";			
+							else if(result == "FAIL")
+								return "vpFailIcon";
+							else if(result == "WARNING")
+								return "warningIcon";
+							else
+								return "informationIcon";
+							}
+							else
+							{
+								if( result == "PASS")
+									return "passIcon";			
+								else if(result == "FAIL")
+									return "failureIcon";
+								else if(result == "WARNING")
+									return "warningIcon";
+								else
+									return "informationIcon";
+							}		
+
+						}
+						
+          					}
+
+    					
+    });
+		
+	ready(function(){
+	
+	
+			 continentStore = new ItemFileReadStore({ data:logStore});
+				var verdictSuccess = 0;
+	var verdictFailures = 0;
+	var verdictWarnings = 0;
+	var verdictMessages = 0;
+	
+	var verdictVPSuccess = 0;
+	var verdictVPFailures = 0;
+					var tempStore = {identifier: 'eventId', label: 'Headline', items: []};
+	var temp1Store = {identifier: 'eventId', label: 'Headline', items: []};
+	var temp2Store = {identifier: 'eventId', label: 'Headline', items: []};
+	
+	 failedVerdictStore = new ItemFileWriteStore({data : tempStore});
+	 warningVerdictStore = new ItemFileWriteStore({data : temp1Store});
+	 verificationPointStore = new ItemFileWriteStore({data : temp2Store});
+function getRFTEventType(item)
+	{
+		return continentStore.getValue(item,"eventType");
+	}
+	function getEventID(item)
+	{
+		return continentStore.getValue(item,"eventId");
+	}
+
+	function getEventTimeStamp(item)
+	{
+		return continentStore.getValue(item,"TimeStamp");
+	}
+
+	function getEventHeadline(item)
+	{
+		return continentStore.getValue(item,"Headline");
+	}
+	function getEventType(item)
+	{
+		return continentStore.getValue(item,"Type");
+	}
+	function getEventResult(item)
+	{
+		return continentStore.getValue(item,"Result");
+	}
+	function getEventParentId(item)
+	{
+		return continentStore.getValue(item,"ParentId");
+	}
+	function getEventPosition(item)
+	{
+			return continentStore.getValue(item,"Position");
+	}
+
+	function populateFailures(item)
+	{
+		failedVerdictStore.newItem({eventType: getRFTEventType(item), eventId: getEventID(item), TimeStamp: 
+
+getEventTimeStamp(item), Headline: getEventHeadline(item), Type: getEventType(item), Result: getEventResult(item), Position: 
+
+getEventPosition(item), ParentId: getEventParentId(item) });
+		verdictFailures = verdictFailures + 1;
+	}
+
+	function populateWarnings(item)
+	{
+		warningVerdictStore.newItem({eventType: getRFTEventType(item), eventId: getEventID(item), TimeStamp: 
+
+getEventTimeStamp(item), Headline: getEventHeadline(item), Type: getEventType(item), Result: getEventResult(item), Position: 
+
+getEventPosition(item), ParentId: getEventParentId(item) });
+		verdictWarnings = verdictWarnings  + 1;
+	}
+
+	function populateSuccess(item)
+	{
+		verdictSuccess = verdictSuccess + 1;	
+	}
+	
+	function populateInformation(item)
+	{
+		verdictMessages = verdictMessages + 1;
+	}
+	
+	function populateVerificationPoints(item)
+	{
+		var verdict =  getEventResult(item);
+		verificationPointStore.newItem({eventType: getRFTEventType(item), eventId: getEventID(item), TimeStamp: 
+
+getEventTimeStamp(item), Headline: getEventHeadline(item), Type: getEventType(item), Result: getEventResult(item), Position: 
+
+getEventPosition(item), ParentId: getEventParentId(item) });
+		if(verdict == "PASS")
+		{
+			verdictVPSuccess = verdictVPSuccess + 1;
+		}else if(verdict == "FAIL")
+		{
+			verdictVPFailures = verdictVPFailures + 1;
+		}
+	}
+
+	function routeItems(item)
+	{
+		if(item != null && !isRoot( getEventID(item) ) )
+		{
+			var verdict = getEventResult(item);
+				
+			if(verdict == "FAIL")
+			{
+				populateFailures(item);
+			}
+			else if(verdict == "WARNING")
+			{
+				populateWarnings(item);
+			}
+			else if(verdict == "PASS")
+			{
+				populateSuccess(item);
+			}
+			else if(verdict == "INFORMATION")
+			{
+				populateInformation(item);
+			}
+			var verificationPoint = getEventType(item);
+			if(verificationPoint == "Verification Point")
+			{
+				populateVerificationPoints(item);
+			}
+		}	
+	}
+function failed(error)
+{
+	alert(error);
+}
+
+
+
+				continentStore.fetch({query :{eventType: "*"}, queryOptions :{ignoreCase: "true", deep: "true"}, 
+
+onItem: routeItems, onError: failed });
+	
+	
+					var sucCount = dom.byId("SuccessList");
+			sucCount.innerHTML =  verdictSuccess;
+			sucCount = dom.byId("FailureList");
+			sucCount.innerHTML =  verdictFailures;
+			sucCount = dom.byId("WarningList");
+			sucCount.innerHTML =  verdictWarnings;
+			sucCount = dom.byId("MessageList");
+			sucCount.innerHTML =  verdictMessages;
+			sucCount = dom.byId("SuccessVPList");
+			sucCount.innerHTML =  verdictVPSuccess;
+			sucCount = dom.byId("FailureVPList");	
+			sucCount.innerHTML = verdictVPFailures; 
+     		 if(verdictSuccess==0 && verdictFailures==0)
+     		 succesPercent = 100;
+      		else
+      		succesPercent = (verdictSuccess/(verdictSuccess + verdictFailures))*100;
+     		succesPercent = parseFloat(succesPercent).toFixed(2);
+			sucCount = dom.byId("successPercent");
+			sucCount.innerHTML =  succesPercent + "%"
+
+			var totalVerdict = new Array();
+
+	totalVerdict.push(verdictFailures);
+	totalVerdict.push(verdictSuccess);
+	totalVerdict.push(verdictMessages);
+	totalVerdict.push(verdictWarnings);
+
+      var successTooltip =" Success:"+ verdictSuccess;
+      var failureTooltip =" Failures:"+ verdictFailures;
+      var warningTooltip =" Warnings:"+ verdictWarnings;
+      var infoTooltip =" Messages:"+ verdictMessages;
+
+      totalVerdict=[{y:verdictFailures, tooltip:failureTooltip},{y:verdictSuccess, tooltip:successTooltip},{y:verdictMessages, tooltip:infoTooltip},
+
+      {y:verdictWarnings, tooltip:warningTooltip}];
+      parser.parse();
+      var chart = new Chart("chart4");
+
+      // Set the theme
+      chart.setTheme(theme);
+
+      // Add the only/default plot
+      chart.addPlot("default", {
+      type: Pie,
+      markers: true,
+      radius:100,
+      htmlLabels:true,
+      labels:true
+      });
+
+      chart.addAxis("x");
+      chart.addAxis("y", { vertical: true, fixLower: "major", fixUpper: "major" });
+
+      // Add the series of data
+      chart.addSeries("Series A", totalVerdict);
+
+      // Create the tooltip
+      var tip = new Tooltip(chart,"default");
+
+      // Create the slice mover
+      var mag = new MoveSlice(chart,"default");
+      var magnify = new Highlight(chart, "default");
+      // Render the chart!
+      chart.render();
+      //var pieLegend = new SLegend({chart: chart,horizontal:false, outline: true},"pieLegend");
+
+
+
+
+
+      });
+      });
+
+
+
+      var logStore = {
+      identifier: 'eventId',
+      label: 'Headline',
+      items: [
+      { eventType: 'rftevent', eventId: 'event_Scripts.PasosFunc.fASRM_ModificarEstadoServicio_AbT0_root', TimeStamp: '08-Sep-2017 02:32:57.486 PM' ,Headline: 'Script start [Scripts.PasosFunc.fASRM_ModificarEstadoServicio]', Type: 'Script Start', Result: 'INFORMATION', Position: '1', ParentId: 'event_Scripts.PasosFunc.fASRM_ModificarEstadoServicio_AbT0_root', events: [
+	{ eventType: 'rftevent', eventId: 'event_Scripts.PasosFunc.fASRM_ModificarEstadoServicio_AbT0', TimeStamp: '08-Sep-2017 02:32:57.486 PM' ,Headline: 'Script start [Scripts.PasosFunc.fASRM_ModificarEstadoServicio]', Type: 'Script Start', Result: 'INFORMATION', Position: '1', ParentId: 'event_Scripts.PasosFunc.fASRM_ModificarEstadoServicio_AbT0_root'}	
+	,{ eventType: 'rftevent', eventId: 'event_Scripts.PasosFunc.fASRM_ModificarEstadoServicio_AbT1', TimeStamp: '08-Sep-2017 02:32:57.501 PM' ,Headline: 'Scripts.PasosFunc.fASRM_ModificarEstadoServicio.testMain had an unhandled exception.', Type: 'General', Result: 'FAIL', Position: '2', ParentId: 'event_Scripts.PasosFunc.fASRM_ModificarEstadoServicio_AbT0_root'}	
+	,{ eventType: 'rftevent', eventId: 'event_Scripts.PasosFunc.fASRM_ModificarEstadoServicio_AbT2', TimeStamp: '08-Sep-2017 02:32:57.531 PM' ,Headline: 'Script end [Scripts.PasosFunc.fASRM_ModificarEstadoServicio]', Type: 'Script End', Result: 'FAIL', Position: '3', ParentId: 'event_Scripts.PasosFunc.fASRM_ModificarEstadoServicio_AbT0_root'}	
+	]}
+
+
+      ]};
+      
+ 
+
+	
+	
+	
+function refreshTree()
+{
+	var verdictTree = dijit.byId("LeftVerdictOverviewTreePane");
+	if(verdictTree != null)
+	{
+		var newmodel = verdictTree.model;
+		var newStore = verdictTree.model.store;
+		var childAttr = verdictTree.model.childrenAttrs;
+		var label = verdictTree.model.rootLabel;
+		var query = verdictTree.model.query;
+		var id = "LeftVerdictOverviewTreePane";
+		var labelAttr = verdictTree.labelAttr; 
+		
+		verdictTree.destroy();
+
+      						  
+						
+		var newTree = new rftTree({ model : newmodel, id:id });
+
+		dijit.byId("LeftVerdictOverviewPane").addChild(newTree,1);
+		
+	}
+}
+	
+
+function isItemNonFiltered(store,item)
+{
+	var verdict = store.getValue(item,"Result");
+	if(verdict == "PASS")
+	{
+		return passFilterEnabled;
+	}else if(verdict == "FAIL")
+	{
+		return failFilterEnabled;
+	}else if(verdict == "WARNING")
+	{
+		return warningFilterEnabled;
+	}else if(verdict == "INFORMATION")
+	{
+		return messageFilterEnabled;
+	}
+	else
+	{
+		return false;
+	}	
+}
+	var passFilterEnabled = true;
+	var failFilterEnabled = true;
+	var warningFilterEnabled = true;
+	var messageFilterEnabled = true;
+
+	function passFilterChecked(checked)
+	{
+	passFilterEnabled = checked;
+		refreshTree();
+	}
+
+	function failureFilterChecked(checked)
+	{
+	failFilterEnabled = checked;
+	refreshTree();
+	}
+	function warningFilterChecked(checked)
+	{
+	warningFilterEnabled = checked;
+		refreshTree();
+	}
+	function messageFilterChecked(checked)
+	{
+	messageFilterEnabled = checked;
+		refreshTree();
+	}
+	
+	function toggleFilterCheckbox(id)
+	{
+	var filterCkb = dijit.byId(id);
+	if(filterCkb != null)
+		filterCkb.set('checked',!filterCkb.checked);
+	}
+
+function comparator(base,exp,act)
+{
+	try{
+		var url = decodeURI(document.URL);
+		var index = url.indexOf("?");
+		if(index > 1)
+			url = url.substr(0,index);
+		document.ComparatorApplet.startComparatorEx(base,exp,act,url);
+	}
+	catch(e){
+		alert("CRFCN0309E: Error creating verification point display:\nAn enabled JRE (1.3.1_02 or better) must be associated with the browser to view VP results");
+	}
+}
+
+
+
+
+</script><script type="text/javascript">
+		if(!location.search)
+		{
+			var topTag = document.getElementById("TopPane");
+			topTag.innerHTML = "";
+			
+			
+			var inputElement = document.createElement("input");
+			inputElement.type = "file";
+			inputElement.id = "dojolocation";
+			topTag.appendChild(inputElement);
+			var openLog  = document.createElement("input");
+			openLog.type = "button";
+			openLog.id = "openlog";
+			openLog.value = "Open Log";
+			openLog.onclick = function(){
+						var dojoLoc = document.getElementById("dojolocation").value;
+						var newLoc = location.href + "?" + dojoLoc;
+						location.assign(newLoc);
+			};
+			topTag.appendChild(openLog);
+
+
+		}
+	
+		</script><applet archive="http://localhost:9100/rational_ft_applets.jar" code="com/ibm/rational/test/ft/applets/HtmlLogComparatorApplet.class" NAME="ComparatorApplet" WIDTH="0" HEIGHT="0"></applet></BODY>
+</HTML>

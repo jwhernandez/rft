@@ -1,0 +1,52 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: GRAL_CD2 Desde paso: 3 Modo:Real
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+---------------------------
+GRAL_CD2_T1;LeerDatosEntrada;OK;
+GRAL_CD2_T1;LeerDatoSalidaUltPasoEjec;OK;
+GRAL_CD2_T1;LeerDatosSalida;OK;
+GRAL_CD2_T1;Paso1:fLogin;OK;
+GRAL_CD2_T1;Paso2:fIraActivoDesdeActivo;OK;
+GRAL_CD2_T1;Paso3:fNuevaPostvta;OK;
+GRAL_CD2_T1;Paso4:fBuscarPedidoVenta;OK;
+GRAL_CD2_T1;Paso5:fCancelarPedido;OK;
+GRAL_CD2_T2;Paso6:fNuevoTramite;OK;
+GRAL_CD2_T2;Paso7:fIraActivoDesdeActivo;OK;
+GRAL_CD2_T2;Paso8:fNuevaPostvta;OK;
+GRAL_CD2_T2;Paso9:fBuscarPedidoVenta;OK;
+GRAL_CD2_T2;Paso10:fCancelarPedido;OK;
+GRAL_CD2_T3;Paso11:fNuevoTramite;OK;
+GRAL_CD2_T3;Paso12:fIraActivoDesdeActivo;OK;
+GRAL_CD2_T3;Paso13:fNuevaPostvta;OK;
+GRAL_CD2_T3;Paso14:fBuscarPedidoVenta;OK;
+GRAL_CD2_T3;Paso15:fCancelarPedido;OK;
+GRAL_CD2_T3;Fin del caso;OK;
+
+
+Informe de DATOS de salida
+---------------------------
+GRAL_CD2;UltimoPasoOK;2;
+GRAL_CD2;UltimoTramite;1;
+GRAL_CD2_T1;NroServicio;10112131;
+GRAL_CD2_T1;NroPedido;1-1740060695;
+GRAL_CD2_T2;NroServicio;10112131;
+GRAL_CD2_T2;NroPedido;1-1740061159;
+GRAL_CD2_T3;NroServicio;10112131;
+GRAL_CD2_T3;NroPedido;1-1740062623;
+
+
+Informe de Bugs
+-----------------
+
+
+Informe de Errores imprevistos de sistema
+------------------------------------------------
+
+----------------------------------------------------------------------------------------------------------
+Tipo Parada:FIN - Mensaje de Parada: FIN del caso en paso 16
+- Fin del Informe del Caso Prueba_Conj Datos: GRAL_CD2
+----------------------------------------------------------------------------------------------------------

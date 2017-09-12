@@ -1,0 +1,95 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: CPXX_CD1 Desde paso: 46 Modo:Real
+Modulo desde Paso : 1 Hasta paso: 200
+Hora de Inicio de la Ejecucion : 2017/08/31 10:53:48
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatosEntrada'                                                  'OK'                          
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'                                         'OK'                          
+'Paso    0  -  LeerDatosSalida'                                                   'OK'                          
+'Paso    1  -  fLogin'                                                            'NE'                          
+'Paso    2  -  fLeerVariableCondicionanteDP'                                      'OK'                          
+'Paso    3  -  fLeerVariableCondicionanteDP'                                      'OK'                          
+'Paso    4  -  fVista360'                                                         'NE'                          
+'Paso    5  -  fBuscarActivo'                                                     'NE'                          
+'Paso    6  -  fNuevoCambioPlan'                                                  'NE'                          
+'Paso    7  -  fBuscarPedidoVenta'                                                'NE'                          
+'Paso    8  -  fValidarAgencia'                                                   'NE'                          
+'Paso    9  -  fIngresarAutenticacion'                                            'NE'                          
+'Paso   10  -  fBuscarProducto'                                                   'NE'                          
+'Paso   11  -  fValidarAccion'                                                    'NE'                          
+'Paso   12  -  fBuscarProducto'                                                   'NE'                          
+'Paso   13  -  fValidarAccion'                                                    'NE'                          
+'Paso   14  -  fValidarCapturarAccionProd'                                        'NE'                          
+'Paso   15  -  fAgregarContacto_RepLegal'                                         'NE'                          
+'Paso   16  -  fBuscarProducto'                                                   'NE'                          
+'Paso   17  -  fTerminalCliente'                                                  'NE'                          
+'Paso   18  -  fSeleccionarTerminal'                                              'NE'                          
+'Paso   19  -  fIngresarIMEI'                                                     'NE'                          
+'Paso   20  -  fIngresarIMEI'                                                     'NE'                          
+'Paso   21  -  fIngresarIMEI'                                                     'NE'                          
+'Paso   22  -  fValorarTodo'                                                      'NE'                          
+'Paso   23  -  fBuscarProducto'                                                   'NE'                          
+'Paso   24  -  fExpandiryBuscar'                                                  'NE'                          
+'Paso   25  -  fCheckPagoFact'                                                    'NE'                          
+'Paso   26  -  fCrearRED'                                                         'NE'                          
+'Paso   27  -  fEsperaEstadoRED'                                                  'NE'                          
+'Paso   28  -  fVEP_Login'                                                        'NE'                          
+'Paso   29  -  fVEP_PagarREDNew'                                                  'NE'                          
+'Paso   30  -  fVEP_Logout'                                                       'NE'                          
+'Paso   31  -  fEsperaEstado'                                                     'NE'                          
+'Paso   32  -  fEnviarPedido'                                                     'NE'                          
+'Paso   33  -  fEsperaEstado'                                                     'NE'                          
+'Paso   34  -  fATV_Login'                                                        'NE'                          
+'Paso   35  -  fATV_BuscarTerminal_Plan'                                          'NE'                          
+'Paso   36  -  fConsultaREDporIDREDATV'                                           'NE'                          
+'Paso   37  -  fATV_Logout'                                                       'NE'                          
+'Paso   38  -  fVEP_Login'                                                        'NE'                          
+'Paso   39  -  fVEP_PagarRED'                                                     'NE'                          
+'Paso   40  -  fVEP_Logout'                                                       'NE'                          
+'Paso   41  -  fNuevoTramite'                                                     'OK'                          
+'Paso   42  -  fVista360'                                                         'OK'                          
+'Paso   43  -  fBuscarActivo'                                                     'OK'                          
+'Paso   44  -  fBuscarCtaFact'                                                    'OK'                          
+'Paso   45  -  fNuevaPostvta'                                                     'OK'                          
+
+
+Informe de DATOS de salida
+-----------------------------------------------------------------------------------------
+'Paso    0  -  CasosPrueba'                        'Usuario Alternativo '         'JVALERIO1'                   
+'Paso    0  -  CasosPrueba'                        'Clave Alternativa '           'jvalerio1'                   
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoPasoOK'                 '45'                          
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoTramite'                '2'                           
+'Paso    0  -  LeerDatosSalida'                    'T2_NroPedido'                 '1-1775643317'                
+'Paso    0  -  LeerDatosSalida'                    'T2_NroPedidoAnt'              '1-1775216169'                
+'Paso    0  -  LeerDatosSalida'                    'T2_NroCtaFact'                '101775215123'                
+'Paso   43  -  fBuscarActivo'                      'NroServicio'                  '89846999'                    
+'Paso   44  -  GrabarDatosSalida'                  'T2_NroCtaFact'                '101775215123'                
+'Paso   44  -  fBuscarCtaFact'                     'NroCtaFact'                   '101775215123'                
+'Paso   45  -  fNuevaPostvta'                      'NroPedido'                    '1-1775650906'                
+'Paso   45  -  GrabarDatosSalida'                  'T2_NroPedido'                 '1-1775650906'                
+
+
+Informe de Bugs
+-----------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------
+Tipo Parada         = NA
+Mensaje de Parada   = NA
+Parada en paso	    = 46
+
+
+-----------------------------------------------------------------------------------------
+Fin del Informe del Caso Prueba_Conj Datos: CPXX_CD1
+-----------------------------------------------------------------------------------------
+
+
+Informe de Errores imprevistos de sistema
+-----------------------------------------------------------------------------------------
+
+Hora de Finalizacion de la Ejecucion: 2017/08/31 10:57:53
+-----------------------------------------------------------------------------------------

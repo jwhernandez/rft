@@ -1,0 +1,58 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: CP32_CD1 Desde paso: 2 Modo:Real
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatosEntrada'                                                  'OK'                          
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'                                         'OK'                          
+'Paso    0  -  LeerDatosSalida'                                                   'OK'                          
+'Paso    1  -  fLogin'                                                            'OK'                          
+'Paso    2  -  fASRM_Login'                                                       'OK'                          
+'Paso    3  -  fASRM_ModificarEstadoServicio'                                     'OK'                          
+'Paso    4  -  fASRM_Logout'                                                      'OK'                          
+'Paso    5  -  fVista360'                                                         'OK'                          
+'Paso    6  -  fNuevoPedidoPortIn'                                                'OK'                          
+'Paso    7  -  fValidarMensaje'                                                   'OK'                          
+
+
+Informe de DATOS de salida
+-----------------------------------------------------------------------------------------
+'Paso    0  -  CasosPrueba'                        'Usuario Alternativo '         'fragar'                      
+'Paso    0  -  CasosPrueba'                        'Clave Alternativa '           'fgarcia21'                   
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoPasoOK'                 '1'                           
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoTramite'                '1'                           
+'Paso    6  -  fNuevoPedidoPortIn'                 'NroServicio'                  '89520124'                    
+'Paso    6  -  GrabarDatosSalida'                  'T1_NroServicio'               '89520124'                    
+
+
+Informe de Bugs
+-----------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------
+Tipo Parada         = Excepción en Método
+Mensaje de Parada   = Script=ValidarEstadoPedPortIn Línea=31 Método=getProperty Error=
+GetProperty("ActiveItem"); Error:(-1016) - Failed to create object "Siebel Power Communications.Port Order Screen.ICE Order Entry - All Orders View (Port)" of class "". Clase=com.rational.test.ft.Domain.Siebel.SiebelMethodExecutionFailureException Objeto=siebel.SiebPicklistTestObject(Name: EstadoPedPI, Map: EstadoPedPI)
+Parada en paso	    = 8
+
+
+-----------------------------------------------------------------------------------------
+Fin del Informe del Caso Prueba_Conj Datos: CP32_CD1
+-----------------------------------------------------------------------------------------
+
+
+Informe de Errores imprevistos de sistema
+-----------------------------------------------------------------------------------------
+'Paso    8  -  Accion'                             'Excepción en Método'          'Script=ValidarEstadoPedPortIn Línea=31 Método=getProperty Error=
+GetProperty("ActiveItem"); Error:(-1016) - Failed to create object "Siebel Power Communications.Port Order Screen.ICE Order Entry - All Orders View (Port)" of class "". Clase=com.rational.test.ft.Domain.Siebel.SiebelMethodExecutionFailureException Objeto=siebel.SiebPicklistTestObject(Name: EstadoPedPI, Map: EstadoPedPI)'
+
+'Paso    8  -  Accion'                             'Excepción no esperada'        'Script=ValidarEstadoPedPortIn Línea=0 Error=
+GetProperty("ActiveItem"); Error:(-1016) - Failed to create object "Siebel Power Communications.Port Order Screen.ICE Order Entry - All Orders View (Port)" of class "".'
+
+'Paso    8  -  Accion'                             'Excepción no esperada'        'Script=fValidarEstadoPedPortIn Línea=0 Error=CRFCN0018E: The 31 line of the 31 script contains an exception.'
+
+
+Hora de Finalizacion de la Ejecucion: 2017/02/03 09:32:37
+-----------------------------------------------------------------------------------------

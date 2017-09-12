@@ -1,4 +1,6 @@
 package Scripts.Comun;
+import java.util.Iterator;
+
 import resources.Scripts.Comun.ValidarMensajeHelper;
 import com.rational.test.ft.*;
 import com.rational.test.ft.object.interfaces.*;
@@ -15,21 +17,27 @@ import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
  * Descripción: Valida Mensaje contra Data Pool
  * Parámetros: 0) IN Código de mensaje a validar, 
- * 1) OUT boolean true / false indicando si coincide o no  2)OUT mensaje  
- * 3) IN tipo de mensaje  a validar HTML, BrowserScript
- * Ejemplo DPM0001 res res HTML
+ * 1) OUT boolean true (Coincide) / false (No coincide) 
+ * "No Existe" indicando que el mensaje no existe, es decir, no está en pantalla
+ * o "Parcialmente" indicando que el mensaje está contenido en el otro.   2)OUT mensaje  
+ * 3) IN tipo de mensaje  a validar HTML, BrowserScript 
+ * 4) Ambiente (ya no se usa)
  * Si el Msj no es el correcto no lo acepta y queda el sistema en la pantalla del Msj para que el paso
  * Funcional decida que realizar
+ * Ej: DPM0047 coincide mensaje BrowserScript 
+ * DPM0044 res res HTML QA  
  * SS Nov 2015
  */
 public class ValidarMensaje extends ValidarMensajeHelper
 {
 	public void testMain(Object[] argu) throws RationalTestException
 	{ 
+		
+		ImpreEncabezadoScript(getScriptArgs(), getScriptName( ).toString());
 		String sMensaje;
 		String sCoincide = "false";
 		String sCodigo = "DPM0001";
-		
+
 		String[] MensError;
 		MensError = new String[2];
 
@@ -37,12 +45,11 @@ public class ValidarMensaje extends ValidarMensajeHelper
 			sCodigo = argu[0].toString(); }
 
 		String sTipo = "HTML";
-		if(argu.length == 4){
+		if(argu.length >= 4){
 			sTipo = argu[3].toString(); }
 
-
 		try {
-
+			System.out.println("Tipo: " + sTipo);
 			switch (sTipo) {
 			case "HTML":
 				System.out.println("Existe Mensaje HTML: " + MensajeJavaError().exists());
@@ -53,20 +60,48 @@ public class ValidarMensaje extends ValidarMensajeHelper
 					// Paso 16 - Validar que sea el mensaje deseado
 					System.out.println("Mensaje del código: *" + dpString(sCodigo)+ "*");
 					System.out.println("Mensaje de la pantalla: *" + sMensaje + "*");
-					
-					if (sMensaje.trim().equals(dpString(sCodigo).trim())) {
+
+					String sMensajeDP = dpString(sCodigo).trim();
+					sMensaje = sMensaje.trim();
+
+					if (sMensaje.trim().equals(sMensajeDP)) {
 						sCoincide = "true";
-						System.out.println("Coincide");
+						argu[1] = sCoincide; // el mensaje coincide
+						System.out.println("El mensaje Coincide");
+						System.out.println("Mensaje del código: *" + dpString(sCodigo)+ "*");
+						System.out.println("Mensaje de la pantalla: *" + sMensaje + "*");
 						AceptarMensaje().click();
 					} 
-					else 
+					else // el mensaje existe pero no coincide 
 					{ 
-						System.out.println("No Coincide");
-					}
+						String sMensajeDeseado = dpString(sCodigo).trim();
+						// El mensaje de pantalla contiene parcialmente el mensaje deseado. 
+						// Es decir, tiene cosas adicionales pero todo el mensaje deseado esta contenido
+						// en el mensaje de pantalla.
+						if (sMensaje.contains(sMensajeDeseado) || sMensajeDeseado.contains(sMensaje)){
+							sCoincide = "Parcialmente"; // Parcialmente que coincide parcialemte
+							argu[1] = sCoincide;
+							System.out.println("Coincide parcialmente: " + sCoincide );
+							System.out.println("Mensaje del código: *" + dpString(sCodigo)+ "*");
+							System.out.println("Mensaje de la pantalla: *" + sMensaje + "*");
+							AceptarMensaje().click();
+						}
+						else { // el mensaje no coincide
+							sCoincide = "false"; // el mensaje no coincide
+							argu[1] = sCoincide;
+							System.out.println("El mensaje No Coincide");
+							System.out.println("Mensaje del código: *" + dpString(sCodigo)+ "*");
+							System.out.println("Mensaje de la pantalla: *" + sMensaje + "*");
+
+						}
+					} 
 					argu[1] = sCoincide;
 					argu[2] = sMensaje;
-				} 
-				else {
+
+				}
+				else 
+				{ // el mensaje no existe
+					sCoincide = "No Existe"; // el mensaje no existe
 					argu[1] = sCoincide;
 					argu[2] = "No hay mensaje";
 				}
@@ -80,19 +115,38 @@ public class ValidarMensaje extends ValidarMensajeHelper
 
 					// Paso 16 - Validar que sea el mensaje deseado
 					if (sMensaje.trim().equals(dpString(sCodigo).trim())) {
-						sCoincide = "true";
-						System.out.println(sCoincide + "Coincide");
+						sCoincide = "true"; // true indica que coincide
+						argu[1] = sCoincide;						
+						System.out.println(sCoincide + "El mensaje coincide");
 						AceptarMensajeBrowser().click();
 					} 
 					else 
 					{ 
-						sCoincide = "false";
-						System.out.println(sCoincide + "No Coincide");
+						String sMensajeDeseado = dpString(sCodigo).trim();
+						// El mensaje de pantalla contiene parcialmente el mensaje deseado. 
+						// Es decir, tiene cosas adicionales pero todo el mensaje deseado esta contenido
+						// en el mensaje de pantalla.
+						if (sMensaje.contains(sMensajeDeseado) || sMensajeDeseado.contains(sMensaje)){
+							sCoincide = "Parcialmente"; // Parcialmente que coincide parcialemte
+							argu[1] = sCoincide;
+							System.out.println("Coincide parcialmente: " + sCoincide );
+							System.out.println("Mensaje del código: *" + dpString(sCodigo)+ "*");
+							System.out.println("Mensaje de la pantalla: *" + sMensaje + "*");
+							AceptarMensajeBrowser().click();
+
+						}else { // el mensaje no coincide
+							sCoincide = "false"; // false indica no coincide
+							argu[1] = sCoincide;
+							System.out.println("El mensaje No Coincide " + sCoincide);
+							System.out.println("Mensaje del código: *" + dpString(sCodigo)+ "*");
+							System.out.println("Mensaje de la pantalla: *" + sMensaje + "*");
+						}
 					}
 					argu[1] = sCoincide;
 					argu[2] = sMensaje;
 				} 
 				else {
+					sCoincide = "No Existe" ;
 					argu[1] = sCoincide;
 					argu[2] = "No hay mensaje";
 				}
@@ -103,9 +157,9 @@ public class ValidarMensaje extends ValidarMensajeHelper
 				callScript("Scripts.Comun.TerminarCasoError", MensError);
 				break;
 			} // end del switch
-
-
-		} catch (ObjectNotFoundException onfe) {
+			System.out.println("Resultado: " + argu[1]);
+		} 
+		catch (ObjectNotFoundException onfe) {
 			logInfo("ObjectNotFound Manejada: "+onfe.getMessage());
 			System.out.println("ObjectNotFound Manejada: "+onfe.getMessage());
 
@@ -113,6 +167,8 @@ public class ValidarMensaje extends ValidarMensajeHelper
 			logInfo("PropertyNotFound Manejado: "+pnfe.getMessage());
 			System.out.println("PropertyNotFound Manejado: "+pnfe.getMessage());
 		}
+
+		ImpreResultadoScript(getScriptName( ).toString(), argu[1].toString());
 	}
 }
 

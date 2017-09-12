@@ -1,0 +1,66 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: CPC2_CD1 Desde paso: 41 Modo:Real
+Modulo desde Paso : 1 Hasta paso: 200
+Hora de Inicio de la Ejecucion : 2017/09/08 15:35:14
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatosEntrada'                                                  'OK'                          
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'                                         'OK'                          
+'Paso    0  -  LeerDatosSalida'                                                   'OK'                          
+'Paso    1  -  fLeerVariableCondicionanteDP'                                      'OK'                          
+'Paso    2  -  fLeerVariableCondicionanteDP'                                      'OK'                          
+'Paso    3  -  fLogin'                                                            'OK'                          
+
+
+Informe de DATOS de salida
+-----------------------------------------------------------------------------------------
+'Paso    0  -  CasosPrueba'                        'Usuario Alternativo '         'JVALERIO1'                   
+'Paso    0  -  CasosPrueba'                        'Clave Alternativa '           'jvalerio1'                   
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoPasoOK'                 '40'                          
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoTramite'                '1'                           
+'Paso    0  -  LeerDatosSalida'                    'T1_NroPedido'                 '1-1776649336'                
+'Paso    0  -  LeerDatosSalida'                    'NroServicio'                  '89846776'                    
+'Paso    0  -  LeerDatosSalida'                    'T1_NroCtaFact'                '101775737110'                
+
+
+Informe de Bugs
+-----------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------
+Tipo Parada         = Excepción en Método
+Mensaje de Parada   = Script=AceptarVtnasIEBrowser Línea=38 Método=findChildrenWithProperties Error=null Clase=null Objeto=DomainTestObject(Ref:RemoteProxyReference{testContext:140d6605092474, objectId:Siebel, testObjectClass:com.rational.test.ft.object.interfaces.DomainTestObject})
+Parada en paso	    = 4
+
+
+-----------------------------------------------------------------------------------------
+Fin del Informe del Caso Prueba_Conj Datos: CPC2_CD1
+-----------------------------------------------------------------------------------------
+
+
+Informe de Errores imprevistos de sistema
+-----------------------------------------------------------------------------------------
+'Paso    3  -  Accion'                             'Excepción en Método'          'Script=AceptarVtnasIEBrowser Línea=38 Método=findChildrenWithProperties Error=null Clase=null Objeto=DomainTestObject(Ref:RemoteProxyReference{testContext:140d6605092474, objectId:Siebel, testObjectClass:com.rational.test.ft.object.interfaces.DomainTestObject})'
+
+'Paso    3  -  Accion'                             'Excepción en Método'          'Script=AceptarVtnasIEBrowser Línea=38 Método=findChildrenWithProperties Error=null Clase=null Objeto=DomainTestObject(Ref:RemoteProxyReference{testContext:140d6605092474, objectId:Siebel, testObjectClass:com.rational.test.ft.object.interfaces.DomainTestObject})'
+
+'Paso    3  -  Accion'                             'Excepción en Método'          'Script=CerrarIE Línea=69 Método=findChildrenWithProperties Error=null Clase=null Objeto=DomainTestObject(Ref:RemoteProxyReference{testContext:140d6605092474, objectId:Siebel, testObjectClass:com.rational.test.ft.object.interfaces.DomainTestObject})'
+
+'Paso    3  -  Accion'                             'Excepción en Método'          'Script=AceptarVtnasIEBrowser Línea=38 Método=findChildrenWithProperties Error=null Clase=null Objeto=DomainTestObject(Ref:RemoteProxyReference{testContext:140d6605092474, objectId:Siebel, testObjectClass:com.rational.test.ft.object.interfaces.DomainTestObject})'
+
+'Paso    4  -  Accion'                             'Reconocimiento Ambiguo'       'TestObjectMethodState {AMBIGUOUS_RECOGNITION,testObjectClassName=siebel.SiebPageTabsTestObject(Name: Pestañas, Map: Pestañas),method=GotoScreen,signature=(L.String;),args=[Ljava.lang.Object;@e728a24e}'
+
+'Paso    4  -  Accion'                             'Excepción en Método'          'Script=Vista360 Línea=37 Método=getProperty Error=
+GetProperty(".text"); Error:(-1014) - Invalid argument value for method name "GetProperty" for argument "Property Name". Input value: ".text". Clase=com.rational.test.ft.Domain.Siebel.SiebelMethodExecutionFailureException Objeto=siebel.SiebPageTabsTestObject(Ref:RemoteProxyReference{testContext:26d201050b1cba, objectId:2, testObjectClass:SiebPageTabsTestObject})'
+
+'Paso    4  -  Accion'                             'Excepción no esperada'        'Script=Vista360 Línea=0 Error=
+GetProperty(".text"); Error:(-1014) - Invalid argument value for method name "GetProperty" for argument "Property Name". Input value: ".text".'
+
+'Paso    4  -  Accion'                             'Excepción no esperada'        'Script=fVista360 Línea=0 Error=CRFCN0018E: The 37 line of the 37 script contains an exception.'
+
+
+Hora de Finalizacion de la Ejecucion: 2017/09/08 15:45:51
+-----------------------------------------------------------------------------------------

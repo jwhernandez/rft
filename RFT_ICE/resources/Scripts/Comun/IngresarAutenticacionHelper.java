@@ -20,40 +20,106 @@ import com.rational.test.ft.vp.IFtVerificationPoint;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
  * Script Name   : <b>IngresarAutenticacion</b><br>
- * Generated     : <b>2016/01/27 11:30:02</b><br>
+ * Generated     : <b>2017/01/30 10:52:51 AM</b><br>
  * Description   : Helper class for script<br>
  * Original Host : Windows 7 x86 6.1 <br>
  * 
- * @since  enero 27, 2016
- * @author Sandra
+ * @since  enero 30, 2017
+ * @author rft
  */
 public abstract class IngresarAutenticacionHelper extends libreria.Accion
 {
 	/**
-	 * Linea_del_menu Encabezado Pedido: with default state.
-	 *		.id : 
+	 * BtonConsultaPedido: with default state.
+	 *		.text : Consulta
+	 * 		.href : javascript:void(0)
+	 * 		.id : s_1_1_151_0_mb
 	 * 		.title : 
-	 * 		.class : Html.TABLE
-	 * 		.caption : 
-	 * 		.classIndex : 1
+	 * 		.class : Html.A
+	 * 		.name : 
+	 * 		.classIndex : 0
 	 */
-	protected StatelessGuiSubitemTestObject BotonesPedidoEncabezado() 
+	protected GuiTestObject BtonConsultaPedido() 
 	{
-		return new StatelessGuiSubitemTestObject(
-                        getMappedTestObject("BotonesPedidoEncabezado"));
+		return new GuiTestObject(
+                        getMappedTestObject("BtonConsultaPedido"));
 	}
 	/**
-	 * Linea_del_menu Encabezado Pedido: with specific test context and state.
-	 *		.id : 
+	 * BtonConsultaPedido: with specific test context and state.
+	 *		.text : Consulta
+	 * 		.href : javascript:void(0)
+	 * 		.id : s_1_1_151_0_mb
 	 * 		.title : 
-	 * 		.class : Html.TABLE
-	 * 		.caption : 
-	 * 		.classIndex : 1
+	 * 		.class : Html.A
+	 * 		.name : 
+	 * 		.classIndex : 0
 	 */
-	protected StatelessGuiSubitemTestObject BotonesPedidoEncabezado(TestObject anchor, long flags) 
+	protected GuiTestObject BtonConsultaPedido(TestObject anchor, long flags) 
 	{
-		return new StatelessGuiSubitemTestObject(
-                        getMappedTestObject("BotonesPedidoEncabezado"), anchor, flags);
+		return new GuiTestObject(
+                        getMappedTestObject("BtonConsultaPedido"), anchor, flags);
+	}
+	
+	/**
+	 * Consulta: with default state.
+	 *		.text : Consulta
+	 * 		.href : javascript:void(0)
+	 * 		.id : s_4_1_152_0_mb
+	 * 		.title : 
+	 * 		.class : Html.A
+	 * 		.name : 
+	 * 		.classIndex : 0
+	 */
+	protected GuiTestObject BtonConsultaPedidoPI() 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("BtonConsultaPedidoPI"));
+	}
+	/**
+	 * Consulta: with specific test context and state.
+	 *		.text : Consulta
+	 * 		.href : javascript:void(0)
+	 * 		.id : s_4_1_152_0_mb
+	 * 		.title : 
+	 * 		.class : Html.A
+	 * 		.name : 
+	 * 		.classIndex : 0
+	 */
+	protected GuiTestObject BtonConsultaPedidoPI(TestObject anchor, long flags) 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("BtonConsultaPedidoPI"), anchor, flags);
+	}
+	
+	/**
+	 * BtonConsultaPedidoPI: with default state.
+	 *		.text : Consulta
+	 * 		.href : javascript:void(0)
+	 * 		.id : s_4_1_152_0_mb
+	 * 		.title : 
+	 * 		.class : Html.A
+	 * 		.name : 
+	 * 		.classIndex : 0
+	 */
+	protected GuiTestObject BtonConsultaPedidoPIOLD() 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("BtonConsultaPedidoPIOLD"));
+	}
+	/**
+	 * BtonConsultaPedidoPI: with specific test context and state.
+	 *		.text : Consulta
+	 * 		.href : javascript:void(0)
+	 * 		.id : s_4_1_152_0_mb
+	 * 		.title : 
+	 * 		.class : Html.A
+	 * 		.name : 
+	 * 		.classIndex : 0
+	 */
+	protected GuiTestObject BtonConsultaPedidoPIOLD(TestObject anchor, long flags) 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("BtonConsultaPedidoPIOLD"), anchor, flags);
 	}
 	
 	/**
@@ -80,7 +146,105 @@ public abstract class IngresarAutenticacionHelper extends libreria.Accion
 	}
 	
 	/**
-	 * ICEAuthenticationType: with default state.
+	 * CanalPI: with default state.
+	 *		ClassName : SiebPicklist
+	 * 		.class : SiebPicklist
+	 * 		RepositoryName : ICE Channel Id
+	 */
+	protected SiebPicklistTestObject CanalPI() 
+	{
+		return new SiebPicklistTestObject(
+                        getMappedTestObject("CanalPI"));
+	}
+	/**
+	 * CanalPI: with specific test context and state.
+	 *		ClassName : SiebPicklist
+	 * 		.class : SiebPicklist
+	 * 		RepositoryName : ICE Channel Id
+	 */
+	protected SiebPicklistTestObject CanalPI(TestObject anchor, long flags) 
+	{
+		return new SiebPicklistTestObject(
+                        getMappedTestObject("CanalPI"), anchor, flags);
+	}
+	
+	/**
+	 * IESiebel: with default state.
+	 *		.class : Html.HtmlBrowser
+	 * 		.browserName : MS Internet Explorer
+	 * 		.documentName : RegularExpression(http.*\/ecommunications_esn/star.*)
+	 * 		.processName : iexplore.exe
+	 */
+	protected BrowserTestObject IESiebel() 
+	{
+		return new BrowserTestObject(
+                        getMappedTestObject("IESiebel"));
+	}
+	/**
+	 * IESiebel: with specific test context and state.
+	 *		.class : Html.HtmlBrowser
+	 * 		.browserName : MS Internet Explorer
+	 * 		.documentName : RegularExpression(http.*\/ecommunications_esn/star.*)
+	 * 		.processName : iexplore.exe
+	 */
+	protected BrowserTestObject IESiebel(TestObject anchor, long flags) 
+	{
+		return new BrowserTestObject(
+                        getMappedTestObject("IESiebel"), anchor, flags);
+	}
+	
+	/**
+	 * 1-NroPedidoLabel: with default state.
+	 *		.id : 
+	 * 		.title : 
+	 * 		.class : Html.TABLE
+	 * 		.caption : 
+	 * 		.classIndex : 0
+	 */
+	protected StatelessGuiSubitemTestObject NroPedidoTabla_Label() 
+	{
+		return new StatelessGuiSubitemTestObject(
+                        getMappedTestObject("NroPedidoTabla_Label"));
+	}
+	/**
+	 * 1-NroPedidoLabel: with specific test context and state.
+	 *		.id : 
+	 * 		.title : 
+	 * 		.class : Html.TABLE
+	 * 		.caption : 
+	 * 		.classIndex : 0
+	 */
+	protected StatelessGuiSubitemTestObject NroPedidoTabla_Label(TestObject anchor, long flags) 
+	{
+		return new StatelessGuiSubitemTestObject(
+                        getMappedTestObject("NroPedidoTabla_Label"), anchor, flags);
+	}
+	
+	/**
+	 * Siebel: with default state.
+	 *		.title : Siebel Communications
+	 * 		.class : Html.HtmlDocument
+	 * 		.url : RegularExpression(http.*\/ecommunications_esn/star.*)
+	 */
+	protected DocumentTestObject Siebel() 
+	{
+		return new DocumentTestObject(
+                        getMappedTestObject("Siebel"));
+	}
+	/**
+	 * Siebel: with specific test context and state.
+	 *		.title : Siebel Communications
+	 * 		.class : Html.HtmlDocument
+	 * 		.url : RegularExpression(http.*\/ecommunications_esn/star.*)
+	 */
+	protected DocumentTestObject Siebel(TestObject anchor, long flags) 
+	{
+		return new DocumentTestObject(
+                        getMappedTestObject("Siebel"), anchor, flags);
+	}
+	
+	/**
+	 * TipoAutenticacion: with default state.
 	 *		ClassName : SiebPicklist
 	 * 		.class : SiebPicklist
 	 * 		RepositoryName : ICE Authentication Type
@@ -91,7 +255,7 @@ public abstract class IngresarAutenticacionHelper extends libreria.Accion
                         getMappedTestObject("TipoAutenticacion"));
 	}
 	/**
-	 * ICEAuthenticationType: with specific test context and state.
+	 * TipoAutenticacion: with specific test context and state.
 	 *		ClassName : SiebPicklist
 	 * 		.class : SiebPicklist
 	 * 		RepositoryName : ICE Authentication Type
@@ -103,26 +267,26 @@ public abstract class IngresarAutenticacionHelper extends libreria.Accion
 	}
 	
 	/**
-	 * Detalles: with default state.
-	 *		.title : Detalles
-	 * 		.class : Html.HtmlDocument
-	 * 		.url : RegularExpression(http://.*\/ecommunications_esn/start\.swe\?SWECmd=GetViewLayout ...
+	 * TipoAutenticacionPI: with default state.
+	 *		ClassName : SiebPicklist
+	 * 		.class : SiebPicklist
+	 * 		RepositoryName : ICE Authentication Type
 	 */
-	protected DocumentTestObject document_detalles() 
+	protected SiebPicklistTestObject TipoAutenticacionPI() 
 	{
-		return new DocumentTestObject(
-                        getMappedTestObject("document_detalles"));
+		return new SiebPicklistTestObject(
+                        getMappedTestObject("TipoAutenticacionPI"));
 	}
 	/**
-	 * Detalles: with specific test context and state.
-	 *		.title : Detalles
-	 * 		.class : Html.HtmlDocument
-	 * 		.url : RegularExpression(http://.*\/ecommunications_esn/start\.swe\?SWECmd=GetViewLayout ...
+	 * TipoAutenticacionPI: with specific test context and state.
+	 *		ClassName : SiebPicklist
+	 * 		.class : SiebPicklist
+	 * 		RepositoryName : ICE Authentication Type
 	 */
-	protected DocumentTestObject document_detalles(TestObject anchor, long flags) 
+	protected SiebPicklistTestObject TipoAutenticacionPI(TestObject anchor, long flags) 
 	{
-		return new DocumentTestObject(
-                        getMappedTestObject("document_detalles"), anchor, flags);
+		return new SiebPicklistTestObject(
+                        getMappedTestObject("TipoAutenticacionPI"), anchor, flags);
 	}
 	
 	/**

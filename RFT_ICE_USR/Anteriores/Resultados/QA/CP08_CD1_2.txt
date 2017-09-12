@@ -1,0 +1,50 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: CP08_CD1 Desde paso: 2 Modo:Real
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+---------------------------
+CP08_CD1_T1;LeerDatosEntrada;OK;
+CP08_CD1_T1;LeerDatoSalidaUltPasoEjec;OK;
+CP08_CD1_T1;LeerDatosSalida;OK;
+CP08_CD1_T1;Paso1:fLogin;OK;
+CP08_CD1_T1;Paso2:fVista360;OK;
+CP08_CD1_T1;Paso3:fBuscarActivo;OK;
+CP08_CD1_T1;Paso4:fBuscarCtaFact;OK;
+
+
+Informe de DATOS de salida
+---------------------------
+CP08_CD1;UltimoPasoOK;1;
+CP08_CD1;UltimoTramite;1;
+CP08_CD1;UltPasoOK;2;
+CP08_CD1_T1;NroServicio;89654111;
+CP08_CD1_T1;NroServicio;89654111;
+CP08_CD1;UltPasoOK;3;
+CP08_CD1_T1;NroCtaFact;101740332264;
+CP08_CD1;UltPasoOK;4;
+
+
+Informe de Bugs
+-----------------
+
+
+Informe de Errores imprevistos de sistema
+------------------------------------------------
+CP08_CD1;Mensaje UE;Script=PasosFunc.fNuevaPostvta Línea=0 Error=Problema de compilación no resuelto: 
+	termi no se puede resolver en una variable
+;
+
+CP08_CD1;Mensaje UE;Script=CasosPrueba.CasosPrueba Línea=0 Error=Problema de compilación no resuelto: 
+	termi no se puede resolver en una variable
+;
+
+
+----------------------------------------------------------------------------------------------------------
+Tipo Parada:UnhandledException - Mensaje de Parada: Script=PasosFunc.fNuevaPostvta Línea=0 Error=Problema de compilación no resuelto: 
+	termi no se puede resolver en una variable
+
+- Fin del Informe del Caso Prueba_Conj Datos: CP08_CD1
+----------------------------------------------------------------------------------------------------------

@@ -1,0 +1,150 @@
+package GUI;
+
+import javax.swing.*;
+import java.awt.event.*;
+import java.awt.*;
+import java.io.IOException;
+
+
+public class EjecutaRFT extends JFrame  
+{
+	private static final int WIDTH = 400;
+	private static final int HEIGHT = 200;
+	private static JLabel UsuarioL, ClaveL, CasoL, LoginL, msjL;
+	private static JTextField UsuarioTF, ClaveTF, CasoTF, LoginTF, msjTF;
+	private JButton EjecutarB, exitB;
+	private static String lineaComandos;
+	
+	// Seteo del set y get de Variable lineaComandos
+	public static void setlineaComandos(String xx) {
+		lineaComandos = xx; 	}
+	public static String getlineaComandos() {
+		return lineaComandos; 	}
+
+	//Button handlers:
+	private EjecutarButtonHandler ejbHandler;
+	private ExitButtonHandler ebHandler;
+
+	public EjecutaRFT() // Constructor
+	{
+		//Instanciar los labels
+		UsuarioL = new JLabel("Usuario: ", SwingConstants.RIGHT);
+		ClaveL = new JLabel("Clave: ", SwingConstants.RIGHT);
+		CasoL = new JLabel("Caso de prueba: ", SwingConstants.RIGHT);
+		LoginL = new JLabel("Ejecutar el login?: ", SwingConstants.RIGHT);
+		msjL = new JLabel("Mensaje: ", SwingConstants.RIGHT);
+
+
+		//Intanciar los textos
+		UsuarioTF = new JTextField(10);
+		ClaveTF = new JTextField(10);
+		CasoTF = new JTextField(10);
+		LoginTF = new JTextField(10);
+		msjTF = new JTextField(10);
+
+
+		//Instanciar los botones
+		EjecutarB = new JButton("Ejecutar");
+		exitB = new JButton("Salir");
+
+		// Especificar el handler para cada botón
+		ejbHandler = new EjecutarButtonHandler();
+		ebHandler = new ExitButtonHandler();
+
+		//add(register) ActionListeners para cada botón
+		EjecutarB.addActionListener(ejbHandler);
+		exitB.addActionListener(ebHandler);
+
+		//Setear el titulo de la ventana
+		setTitle("Ejecución de RFT");
+
+		//Get the content pane (CP).
+		Container pane = getContentPane();
+
+		//Set el layout.
+		pane.setLayout(new GridLayout(7, 2));
+		//Agregar al panel para indicar donde se quiere que aparezca (left to right, top to bottom)
+		pane.add(UsuarioL);
+		pane.add(UsuarioTF);
+		pane.add(ClaveL);
+		pane.add(ClaveTF);
+		pane.add(CasoL);
+		pane.add(CasoTF);
+		pane.add(LoginL);
+		pane.add(LoginTF);
+		pane.add(EjecutarB);
+		pane.add(exitB);
+		pane.add(msjL);
+		pane.add(msjTF);
+
+		//Propiedades importantes del JFrame
+		setSize(WIDTH, HEIGHT);
+		setVisible(true);
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+	}
+
+	private class EjecutarButtonHandler implements ActionListener
+	{
+		public void actionPerformed(ActionEvent e)
+		{
+			msjTF.setText("Se va a ejecutar con "+UsuarioTF.getText()+ClaveTF.getText()
+					+CasoTF.getText()+LoginTF.getText());
+			setlineaComandos(UsuarioTF.getText()+" "+ClaveTF.getText() + " QA "
+					+" "+CasoTF.getText()+" "+LoginTF.getText());	
+			System.out.println("Tiene valor en" +getlineaComandos());
+			String comando = getlineaComandos();
+			try {
+				ComandoRFT(comando);
+				} catch (Exception e1) {
+				// TODO Bloque catch generado automáticamente
+				e1.printStackTrace();
+				}
+		}
+	}
+	
+	public class ExitButtonHandler implements ActionListener
+	{
+		public void actionPerformed(ActionEvent e)
+		{
+			System.exit(0);
+		}
+	}
+
+	public static void ComandoRFT(String comando) throws Exception 
+	{
+		System.out.println("Se ejecuta con" +lineaComandos);
+		System.out.println("Se ejecuta con" +comando);
+
+			// C:/Program Files (x86)/Java/jre1.8.0_66/bin/
+			String RFT_JAR_PATH = "\"C:/Program Files (x86)/IBM/SDP/FunctionalTester/bin/rational_ft.jar\"";
+			String commandLine="cmd /c start/wait "+ 
+			"java -classpath "
+			+ RFT_JAR_PATH + 
+			" com.rational.test.ft.rational_ft -datastore " +
+			"\"C:/Users/rftIBM/rationalsdp/workspace/RFT_ICE_DATOS/\" -iterationCount 1" +
+			" -playback \"Scripts.CasosPrueba.CasosPrueba\" " + "-args "
+			+ lineaComandos + " false 1";
+			
+			System.out.println(commandLine);
+			Process p = Runtime.getRuntime().exec(commandLine);
+			//Process p = Runtime.getRuntime().exec("cmd /c start/wait java -classpath C:/Program Files (x86)/IBM/SDP/FunctionalTester/bin/rational_ft.jar com.rational.test.ft.rational.ft -datastoreC:/Users/Sandra/IBM/rationalsdp/workspace/RFT_ICE/ -iterationCount 1 -playback ");
+			p.waitFor();
+//		}	
+	}
+
+	public static void main (String[] args)  {
+		EjecutaRFT EjectObj = new EjecutaRFT();
+		System.out.println("Se ejecuta con" +lineaComandos);
+
+//		for (int i=1;i<=args.length;i++)
+//		{
+//			String RFT_JAR_PATH = "";
+//			String commandLine="C:/ -classpath" + RFT_JAR_PATH + 
+//					" com.rational.test.ft.rational.ft -datastore + args" +
+//					" playback " + args[1] + args[2] + args[3] + args[4];
+//			Process p = Runtime.getRuntime().exec(commandLine);
+//			p.waitFor();
+//		}	
+		
+	}
+}

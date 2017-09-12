@@ -20,17 +20,17 @@ import com.rational.test.ft.vp.IFtVerificationPoint;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
  * Script Name   : <b>GenerarCtaFact</b><br>
- * Generated     : <b>2016/01/05 18:23:32</b><br>
+ * Generated     : <b>2016/04/01 10:38:22</b><br>
  * Description   : Helper class for script<br>
  * Original Host : Windows 7 x86 6.1 <br>
  * 
- * @since  enero 05, 2016
+ * @since  abril 01, 2016
  * @author Sandra
  */
 public abstract class GenerarCtaFactHelper extends libreria.Accion
 {
 	/**
-	 * ICEGenBillingAccount: with default state.
+	 * GenCtaFact: with default state.
 	 *		ClassName : SiebButton
 	 * 		.class : SiebButton
 	 * 		RepositoryName : ICEGenBillingAccount
@@ -41,7 +41,7 @@ public abstract class GenerarCtaFactHelper extends libreria.Accion
                         getMappedTestObject("GenCtaFact"));
 	}
 	/**
-	 * ICEGenBillingAccount: with specific test context and state.
+	 * GenCtaFact: with specific test context and state.
 	 *		ClassName : SiebButton
 	 * 		.class : SiebButton
 	 * 		RepositoryName : ICEGenBillingAccount
@@ -50,6 +50,29 @@ public abstract class GenerarCtaFactHelper extends libreria.Accion
 	{
 		return new SiebButtonTestObject(
                         getMappedTestObject("GenCtaFact"), anchor, flags);
+	}
+	
+	/**
+	 * GenCtaFactPI: with default state.
+	 *		ClassName : SiebButton
+	 * 		.class : SiebButton
+	 * 		RepositoryName : ICEGenBillingAccount
+	 */
+	protected SiebButtonTestObject GenCtaFactPI() 
+	{
+		return new SiebButtonTestObject(
+                        getMappedTestObject("GenCtaFactPI"));
+	}
+	/**
+	 * GenCtaFactPI: with specific test context and state.
+	 *		ClassName : SiebButton
+	 * 		.class : SiebButton
+	 * 		RepositoryName : ICEGenBillingAccount
+	 */
+	protected SiebButtonTestObject GenCtaFactPI(TestObject anchor, long flags) 
+	{
+		return new SiebButtonTestObject(
+                        getMappedTestObject("GenCtaFactPI"), anchor, flags);
 	}
 	
 	

@@ -1,0 +1,135 @@
+package GUI;
+
+import javax.swing.*;
+
+import java.awt.event.*;
+import java.awt.*;
+import java.io.IOException;
+
+
+public class CP20 extends JMenuBar{
+
+	private JLabel nroCuentaL,ContactoL, SimNueva, IMSIActivo,IMSINuevo,IdentificacionL, planL, nroServicioL, SimInL, MarcaL, ModeloL, SerieL, VersionL, Letel1L , Letel2L, Letel3L, Letel4L, Letel5L, SimCoL, IMEICoL, IMEIInL, TituloL;
+	private JTextField nroCuentaTF,IdentificacionTF,planTF,nroServicioTF,SimCoTF, MarcaTF,ModeloTF,SerieTF,VersionTF,Letel1TF,Letel2TF,Letel3TF,Letel4TF,Letel5TF,IMEICoTF,SimInTF;
+	
+	public CP20()
+	{
+		  JFrame frame = new JFrame();
+		  frame.setTitle("Automatizacion de Pruebas Regresivas");
+		  frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		  //frame.setJMenuBar(new CP03(  ));
+		  frame.pack(  );
+		  frame.setSize(600, 600);
+		  frame.setVisible(true);
+		  JPanel panelLabel  = new JPanel();
+		  JPanel panelTF  = new JPanel();
+		  JPanel panelIntegracion  = new JPanel();
+		//  JPanel panelTitulo = new JPanel();
+		  JPanel panelab  = new JPanel();
+		  JPanel panelex = new JPanel();
+		  JButton boton1 = new JButton();
+		  JButton boton2 = new JButton();
+		  
+		  frame.setLayout(new FlowLayout());      
+		  frame.setResizable(false);
+		    
+		  //INSTANCIAS DE LABELS
+		  nroServicioL   	= new JLabel("Nuemero de Servicio");
+		  IdentificacionL 	= new JLabel("Identificacion");
+		  ContactoL 		= new JLabel("Contacto");
+		  planL 			= new JLabel("Plan");
+		  SimNueva 			= new JLabel("Nueva SIM");
+		  IMSIActivo 		= new JLabel("IMSI Activo");
+		  IMSINuevo 		= new JLabel("Nuevo IMSI");
+		  nroCuentaL 		= new JLabel("Numero de cuenta");
+		  IMEICoL 			= new JLabel("IMEI Correcto");
+		  SimInL 			= new JLabel("SIM Incorrecta");
+		  MarcaL 			= new JLabel("Marca:");
+		  ModeloL 			= new JLabel("Modelo:");
+		  VersionL 			= new JLabel("Version:");
+		  SerieL 			= new JLabel("Serie:");
+
+		  
+		  nroCuentaTF = new JTextField();
+		  IdentificacionTF = new JTextField();
+		  planTF = new JTextField();
+		  nroServicioTF = new JTextField();
+		  SimCoTF = new JTextField();
+		  MarcaTF= new JTextField();
+		  ModeloTF = new JTextField();
+		  SerieTF = new JTextField();
+		  VersionTF = new JTextField();
+		  Letel1TF = new JTextField();
+		  Letel2TF = new JTextField();
+		  Letel3TF = new JTextField();
+		  Letel4TF = new JTextField();
+		  Letel5TF = new JTextField();
+		  IMEICoTF = new JTextField();
+		  SimInTF = new JTextField();
+		  
+		/*  panelTitulo.setLayout(new FlowLayout());
+		  panelTitulo.setPreferredSize(new Dimension(0,0));
+		  panelTitulo.add(TituloL);
+		  //panelab.add(boton2);*/
+		      
+		  panelLabel.setLayout(new GridLayout(15,0));
+		  panelLabel.add(nroCuentaL);
+		  panelLabel.add(planL);
+	      panelLabel.add(nroServicioL);
+	      panelLabel.add(SimCoL);
+	      panelLabel.add(MarcaL);
+	      panelLabel.add(ModeloL);
+	      panelLabel.add(SerieL);
+	      panelLabel.add(VersionL);  
+	      panelLabel.add(Letel1L);
+	      panelLabel.add(Letel2L);
+	      panelLabel.add(Letel3L);
+	      panelLabel.add(Letel4L);
+	      panelLabel.add(Letel5L);
+	      panelLabel.add(IMEICoL);
+	      panelLabel.add(SimInL);  
+	  
+	      panelTF.setLayout(new GridLayout(15,0));
+	      panelTF.add(nroCuentaTF);
+	      panelTF.add(planTF);
+	      panelTF.add(nroServicioTF);
+	      panelTF.add(SimCoTF);
+	      panelTF.add(MarcaTF);
+	      panelTF.add(ModeloTF);
+	      panelTF.add(SerieTF);
+	      panelTF.add(VersionTF);  
+	      panelTF.add(Letel1TF);
+	      panelTF.add(Letel2TF);
+	      panelTF.add(Letel3TF);
+	      panelTF.add(Letel4TF);
+	      panelTF.add(Letel5TF);
+	      panelTF.add(IMEICoTF);
+	      panelTF.add(SimInTF);  
+	      
+	      panelIntegracion.setLayout(new GridLayout(1,1));
+	      panelIntegracion.setPreferredSize(new Dimension(500,500));
+	      panelIntegracion.add(panelLabel);
+	      panelIntegracion.add(panelTF);
+	                
+	      panelab.setLayout(new FlowLayout());
+	      panelab.setPreferredSize(new Dimension(200,100));
+	      panelab.add(boton1);
+	      panelab.add(boton2);
+	        
+	      panelex.setLayout(new GridLayout(2,0));
+	      panelex.add(panelIntegracion);
+	      panelex.add(panelab);
+	     
+		  boton1.setText("Ejecutar");
+		  boton2.setText("Cancelar");
+		  //frame.add(panelTitulo);
+		  frame.add(panelex);
+		  
+	}
+	 
+	
+	public static void main(String[] args)  
+	{
+		new CP20();
+	}	
+}

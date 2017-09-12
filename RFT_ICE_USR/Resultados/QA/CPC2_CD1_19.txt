@@ -1,0 +1,116 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: CPC2_CD1 Desde paso: 19 Modo:Real
+Modulo desde Paso : 1 Hasta paso: 200
+Hora de Inicio de la Ejecucion : 2017/09/08 14:37:15
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatosEntrada'                                                  'OK'                          
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'                                         'OK'                          
+'Paso    0  -  LeerDatosSalida'                                                   'OK'                          
+'Paso    1  -  fLeerVariableCondicionanteDP'                                      'OK'                          
+'Paso    2  -  fLeerVariableCondicionanteDP'                                      'OK'                          
+'Paso    3  -  fLogin'                                                            'OK'                          
+'Paso    4  -  fVista360'                                                         'NE'                          
+'Paso    5  -  fBuscarActivo'                                                     'NE'                          
+'Paso    6  -  fBuscarCtaFact'                                                    'NE'                          
+'Paso    7  -  fNuevaPostvta'                                                     'NE'                          
+'Paso    8  -  fBuscarPedidoVenta'                                                'NE'                          
+'Paso    9  -  fValidarAgencia'                                                   'NE'                          
+'Paso   10  -  fIngresarAutenticacion'                                            'NE'                          
+'Paso   11  -  fValidarAccion'                                                    'NE'                          
+'Paso   12  -  fValidarMotivoPedido'                                              'NE'                          
+'Paso   13  -  fIngresarIMEI'                                                     'NE'                          
+'Paso   14  -  fTerminalCliente'                                                  'NE'                          
+'Paso   15  -  fIngresarSIM'                                                      'NE'                          
+'Paso   16  -  fBuscarProducto'                                                   'NE'                          
+'Paso   17  -  fTerminalCliente'                                                  'NE'                          
+'Paso   18  -  fASRM_Login'                                                       'NE'                          
+'Paso   19  -  fEvaluarExpresionCondicionante'                                    'OK'                          
+'Paso   19  -  fASRM_ModificarEstadoServicio'                                     'OK'                          
+'Paso   20  -  fEvaluarExpresionCondicionante'                                    'OK'                          
+'Paso   20  -  fASRM_Logout'                                                      'OK'                          
+'Paso   21  -  fEvaluarExpresionCondicionante'                                    'OK'                          
+'Paso   21  -  fNumeroEspecial'                                                   'OK'                          
+'Paso   22  -  fEvaluarExpresionCondicionante'                                    'OK'                          
+'Paso   22  -  fValidacPostServicio'                                              'OK'                          
+'Paso   23  -  fEvaluarExpresionCondicionante'                                    'OK'                          
+'Paso   23  -  fExpandiryBuscar'                                                  'OK'                          
+'Paso   24  -  fEvaluarExpresionCondicionante'                                    'OK'                          
+'Paso   24  -  fCheckPagoFact'                                                    'OK'                          
+'Paso   25  -  fEvaluarExpresionCondicionante'                                    'OK'                          
+'Paso   25  -  fPersonalizar_SRV_MOV_POS'                                         'NA'                          
+'Paso   26  -  fEvaluarExpresionCondicionante'                                    'OK'                          
+'Paso   26  -  fPersonalizarFavorito'                                             'NA'                          
+'Paso   27  -  fEvaluarExpresionCondicionante'                                    'OK'                          
+'Paso   27  -  fBuscarProducto'                                                   'NA'                          
+'Paso   28  -  fEvaluarExpresionCondicionante'                                    'OK'                          
+'Paso   28  -  fCrearLE'                                                          'NA'                          
+'Paso   29  -  fEvaluarExpresionCondicionante'                                    'OK'                          
+'Paso   29  -  fAgregarNum_a_LE'                                                  'NA'                          
+'Paso   30  -  fEvaluarExpresionCondicionante'                                    'OK'                          
+'Paso   30  -  fBuscarProducto'                                                   'NA'                          
+'Paso   31  -  fEvaluarExpresionCondicionante'                                    'OK'                          
+'Paso   31  -  fExpandiryBuscar'                                                  'NA'                          
+'Paso   32  -  fEvaluarExpresionCondicionante'                                    'OK'                          
+'Paso   32  -  fExpandiryBuscar'                                                  'NA'                          
+'Paso   33  -  fEvaluarExpresionCondicionante'                                    'OK'                          
+'Paso   33  -  fExpandiryBuscar'                                                  'NA'                          
+'Paso   34  -  fEvaluarExpresionCondicionante'                                    'OK'                          
+'Paso   34  -  fAsociarListaEspecial'                                             'NA'                          
+'Paso   35  -  fEnviarPedido'                                                     'OK'                          
+
+
+Informe de DATOS de salida
+-----------------------------------------------------------------------------------------
+'Paso    0  -  CasosPrueba'                        'Usuario Alternativo '         'JVALERIO1'                   
+'Paso    0  -  CasosPrueba'                        'Clave Alternativa '           'jvalerio1'                   
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoPasoOK'                 '18'                          
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoTramite'                '1'                           
+'Paso    0  -  LeerDatosSalida'                    'T1_NroPedido'                 '1-1776649336'                
+'Paso    0  -  LeerDatosSalida'                    'T1_NroCtaFact'                '101775737110'                
+'Paso   19  -  fASRM_ModificarEstadoServicio'      'Expresion'                    'true'                        
+'Paso   20  -  fASRM_Logout'                       'Expresion'                    'true'                        
+'Paso   21  -  fNumeroEspecial'                    'Expresion'                    'true'                        
+'Paso   21  -  GrabarDatosSalida'                  'T1_NroServicio'               '89846776'                    
+'Paso   21  -  fNumeroEspecial'                    'NroServicio'                  '89846776'                    
+'Paso   22  -  fValidacPostServicio'               'Expresion'                    'true'                        
+'Paso   23  -  fExpandiryBuscar'                   'Expresion'                    'true'                        
+'Paso   24  -  fCheckPagoFact'                     'Expresion'                    'true'                        
+'Paso   25  -  fPersonalizar_SRV_MOV_POS'          'Expresion'                    'false'                       
+'Paso   26  -  fPersonalizarFavorito'              'Expresion'                    'false'                       
+'Paso   27  -  fBuscarProducto'                    'Expresion'                    'false'                       
+'Paso   28  -  fCrearLE'                           'Expresion'                    'false'                       
+'Paso   29  -  fAgregarNum_a_LE'                   'Expresion'                    'false'                       
+'Paso   30  -  fBuscarProducto'                    'Expresion'                    'false'                       
+'Paso   31  -  fExpandiryBuscar'                   'Expresion'                    'false'                       
+'Paso   32  -  fExpandiryBuscar'                   'Expresion'                    'false'                       
+'Paso   33  -  fExpandiryBuscar'                   'Expresion'                    'false'                       
+'Paso   34  -  fAsociarListaEspecial'              'Expresion'                    'false'                       
+
+
+Informe de Bugs
+-----------------------------------------------------------------------------------------
+'Paso   24  -  fCheckPagoFact'                     'Chequeo de tilde a factura falló'
+
+-----------------------------------------------------------------------------------------
+Tipo Parada         = Bug
+Mensaje de Parada   = Chequeo de tilde a factura falló
+Parada en paso	    = 36
+
+
+-----------------------------------------------------------------------------------------
+Fin del Informe del Caso Prueba_Conj Datos: CPC2_CD1
+-----------------------------------------------------------------------------------------
+
+
+Informe de Errores imprevistos de sistema
+-----------------------------------------------------------------------------------------
+'Paso   36  -  Accion'                             'Excepción no esperada'        'Script=fValidarMensaje Línea=0 Error=null'
+
+
+Hora de Finalizacion de la Ejecucion: 2017/09/08 14:39:05
+-----------------------------------------------------------------------------------------

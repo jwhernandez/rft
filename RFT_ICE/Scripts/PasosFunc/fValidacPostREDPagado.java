@@ -18,23 +18,28 @@ import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
  * que botón Valorar Todo se encuentre des-habilitado
  * que Enviar se encuentre habilitado. 
  * @since  2015/12/27
- * @author Sandra
+ * @author SS
+ * ult modif 12/4/2017 ss se agrega opcion para port/in
  */
 public class fValidacPostREDPagado extends fValidacPostREDPagadoHelper
 {
-	public void testMain(Object[] args) 
+	public void testMain(Object[] args) throws RationalTestException
 	{
+		ImpreEncabezadoScript(getScriptArgs(), getScriptName( ).toString());
 		String[] Validac;
-		Validac = new String[1];
-		// Parámetros	   : 0)  OK/NOK 
+		Validac = new String[2];
+		// Parámetros	   : 0)  OK/NOK 1)Tramite
 
 		String[] MensError;
 		MensError = new String[4];
 	
-		/** 
-		 * Validaciones post red pagado
-		 */
+		dpReset();
+		while (!dpDone() &&  !(dpString("NumeroCaso").equals(args[0]) && 
+				dpString("Ambiente").equals(args[2]))) {
+			dpNext(); 
+		} 	
 
+		Validac[1]=dpString("Tramite");
 		callScript("Scripts.Comun.ValidacPostREDPagado",Validac);
 
 		if  (Validac[0].toString().equals("NOK")){

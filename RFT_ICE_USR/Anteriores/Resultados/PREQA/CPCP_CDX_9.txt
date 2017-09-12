@@ -1,0 +1,52 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: CPCP_CDX Desde paso: 9 Modo:Real
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatosEntrada'                                                  'OK'                          
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'                                         'OK'                          
+'Paso    0  -  LeerDatosSalida'                                                   'OK'                          
+'Paso    1  -  fLogin'                                                            'OK'                          
+'Paso    2  -  fVista360'                                                         'NE'                          
+'Paso    3  -  fBuscarActivo'                                                     'NE'                          
+'Paso    4  -  fNuevoCambioPlan'                                                  'NE'                          
+'Paso    5  -  fBuscarPedidoVenta'                                                'OK'                          
+'Paso    6  -  fObtenerMorosidad'                                                 'NE'                          
+'Paso    7  -  fIngresarAutenticacion'                                            'NE'                          
+'Paso    8  -  fAgregarContacto_RepLegal'                                         'NE'                          
+'Paso    9  -  fTerminalCliente'                                                  'OK'                          
+'Paso   10  -  fValorarTodo'                                                      'OK'                          
+
+
+Informe de DATOS de salida
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoPasoOK'                 '8'                           
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoTramite'                '1'                           
+'Paso    0  -  LeerDatosSalida'                    'T1_NroPedido'                 '1-1729157289'                
+
+
+Informe de Bugs
+-----------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------
+Tipo Parada         = Excepción no esperada
+Mensaje de Parada   = Script=fEnviarPedido Línea=0 Error="Se ha pulsado el botón Detener"
+Parada en paso	    = 11
+
+
+-----------------------------------------------------------------------------------------
+Fin del Informe del Caso Prueba_Conj Datos: CPCP_CDX
+-----------------------------------------------------------------------------------------
+
+
+Informe de Errores imprevistos de sistema
+-----------------------------------------------------------------------------------------
+'Paso   11  -  Accion'                             'Excepción no esperada'        'Script=fEnviarPedido Línea=0 Error="Se ha pulsado el botón Detener"'
+
+'Paso   11  -  Accion'                             'Excepción no esperada'        'Script=CasosPrueba Línea=0 Error="Se ha pulsado el botón Detener"'
+
+'Paso   11  -  Accion'                             'Excepción no esperada'        'Script=IterarCaso Línea=0 Error="Se ha pulsado el botón Detener"'
+

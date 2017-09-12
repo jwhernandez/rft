@@ -1,0 +1,50 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: CP14_CD1 Desde paso: 9 Modo:Real
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+---------------------------
+CP14_CD1_T1;LeerDatosEntrada;OK;
+CP14_CD1_T1;LeerDatoSalidaUltPasoEjec;OK;
+CP14_CD1_T1;LeerDatosSalida;OK;
+CP14_CD1_T1;Paso1:fLogin;OK;
+CP14_CD1_T1;Paso2:fAdministrarTemporadas;NE;
+CP14_CD1_T1;Paso3:fCambiarVistaUsuario;NE;
+CP14_CD1_T1;Paso4:fVista360;NE;
+CP14_CD1_T1;Paso5:fBuscarActivo;NE;
+CP14_CD1_T1;Paso6:fValidarAccionPosvta;NE;
+CP14_CD1_T1;Paso7:fBuscarCtaFact;NE;
+CP14_CD1_T1;Paso8:fNuevaPostvta;NE;
+
+
+Informe de DATOS de salida
+---------------------------
+CP14_CD1;UltimoPasoOK;21;
+CP14_CD1;UltimoTramite;1;
+
+
+Informe de Bugs
+-----------------
+
+
+Informe de Errores imprevistos de sistema
+------------------------------------------------
+CP14_CD1;Mensaje ME;Script=Comun.AceptarVtnasIEBrowser Línea=36 Método=findChildrenWithProperties Error=
+GetChildren(); Error:(-1018) - Could not find Siebel application object. Clase=com.rational.test.ft.Domain.Siebel.SiebelMethodExecutionFailureException Objeto=DomainTestObject(Ref:RemoteProxyReference{testContext:649630004b022, objectId:Siebel, testObjectClass:com.rational.test.ft.object.interfaces.DomainTestObject});
+
+CP14_CD1;Mensaje ME;Script=Comun.Personalizar_SRV_MOV_POS Línea=53 Método=PerformAction Error=
+Click(); Error:(-1016) - Failed to create object "Siebel Power Communications.Sales Order Screen" of class "SiebScreen". Clase=com.rational.test.ft.Domain.Siebel.SiebelMethodExecutionFailureException Objeto=siebel.SiebButtonTestObject(Name: Personalizar, Map: Personalizar);
+
+CP14_CD1;Mensaje UE;Script=Comun.Personalizar_SRV_MOV_POS Línea=0 Error=
+Click(); Error:(-1016) - Failed to create object "Siebel Power Communications.Sales Order Screen" of class "SiebScreen".;
+
+CP14_CD1;Mensaje UE;Script=PasosFunc.fPersonalizar_SRV_MOV_POS Línea=0 Error=CRFCN0018E: The 53 line of the 53 script contains an exception.;
+
+
+----------------------------------------------------------------------------------------------------------
+Tipo Parada:ObjectMethodException - Mensaje de Parada: Script=Comun.AceptarVtnasIEBrowser Línea=36 Método=findChildrenWithProperties Error=
+GetChildren(); Error:(-1018) - Could not find Siebel application object. Clase=com.rational.test.ft.Domain.Siebel.SiebelMethodExecutionFailureException Objeto=DomainTestObject(Ref:RemoteProxyReference{testContext:649630004b022, objectId:Siebel, testObjectClass:com.rational.test.ft.object.interfaces.DomainTestObject})
+- Fin del Informe del Caso Prueba_Conj Datos: CP14_CD1
+----------------------------------------------------------------------------------------------------------

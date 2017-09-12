@@ -20,23 +20,54 @@ import com.rational.test.ft.vp.IFtVerificationPoint;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
  * Script Name   : <b>PersonalizarGrupoSVA</b><br>
- * Generated     : <b>2015/12/23 22:48:51</b><br>
+ * Generated     : <b>2016/12/21 12:35:05</b><br>
  * Description   : Helper class for script<br>
  * Original Host : Windows 7 x86 6.1 <br>
  * 
- * @since  diciembre 23, 2015
+ * @since  diciembre 21, 2016
  * @author Sandra
  */
 public abstract class PersonalizarGrupoSVAHelper extends libreria.Accion
 {
 	/**
-	 * GRPITEM1RZ8NPBPORT1SNJ29ODOMAINon: with default state.
+	 * BtonNuevo: with default state.
+	 *		.text : Enviar
+	 * 		.href : javascript:void(0)
+	 * 		.id : s_1_1_146_0_mb
+	 * 		.title : 
+	 * 		.class : Html.A
+	 * 		.name : 
+	 * 		.classIndex : 0
+	 */
+	protected GuiTestObject BtonNuevo() 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("BtonNuevo"));
+	}
+	/**
+	 * BtonNuevo: with specific test context and state.
+	 *		.text : Enviar
+	 * 		.href : javascript:void(0)
+	 * 		.id : s_1_1_146_0_mb
+	 * 		.title : 
+	 * 		.class : Html.A
+	 * 		.name : 
+	 * 		.classIndex : 0
+	 */
+	protected GuiTestObject BtonNuevo(TestObject anchor, long flags) 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("BtonNuevo"), anchor, flags);
+	}
+	
+	/**
+	 * FavSMSOFF: with default state.
 	 *		.id : 
 	 * 		.type : radio
 	 * 		.value : on
 	 * 		.title : 
 	 * 		.class : Html.INPUT.radio
-	 * 		.name : GRPITEM[~^`1-RZ8NPB`^~[PORT[~^`1-SNJ29O`^~[DOMAIN
+	 * 		.name : RegularExpression(GRPITEM.*PORT.*1-SNJ29O.*DOMAIN)
 	 * 		.classIndex : 0
 	 */
 	protected ToggleGUITestObject FavSMSOFF() 
@@ -45,13 +76,13 @@ public abstract class PersonalizarGrupoSVAHelper extends libreria.Accion
                         getMappedTestObject("FavSMSOFF"));
 	}
 	/**
-	 * GRPITEM1RZ8NPBPORT1SNJ29ODOMAINon: with specific test context and state.
+	 * FavSMSOFF: with specific test context and state.
 	 *		.id : 
 	 * 		.type : radio
 	 * 		.value : on
 	 * 		.title : 
 	 * 		.class : Html.INPUT.radio
-	 * 		.name : GRPITEM[~^`1-RZ8NPB`^~[PORT[~^`1-SNJ29O`^~[DOMAIN
+	 * 		.name : RegularExpression(GRPITEM.*PORT.*1-SNJ29O.*DOMAIN)
 	 * 		.classIndex : 0
 	 */
 	protected ToggleGUITestObject FavSMSOFF(TestObject anchor, long flags) 
@@ -61,13 +92,13 @@ public abstract class PersonalizarGrupoSVAHelper extends libreria.Accion
 	}
 	
 	/**
-	 * GRPITEM1RZ8NPBPORT1SNJ29ODOMAINon: with default state.
+	 * FavSMSON: with default state.
 	 *		.id : 
 	 * 		.type : radio
 	 * 		.value : on
 	 * 		.title : 
 	 * 		.class : Html.INPUT.radio
-	 * 		.name : GRPITEM[~^`1-RZ8NPB`^~[PORT[~^`1-SNJ29O`^~[DOMAIN
+	 * 		.name : RegularExpression(GRPITEM.*PORT.*1-SNJ29O.*DOMAIN)
 	 * 		.classIndex : 1
 	 */
 	protected ToggleGUITestObject FavSMSON() 
@@ -76,13 +107,13 @@ public abstract class PersonalizarGrupoSVAHelper extends libreria.Accion
                         getMappedTestObject("FavSMSON"));
 	}
 	/**
-	 * GRPITEM1RZ8NPBPORT1SNJ29ODOMAINon: with specific test context and state.
+	 * FavSMSON: with specific test context and state.
 	 *		.id : 
 	 * 		.type : radio
 	 * 		.value : on
 	 * 		.title : 
 	 * 		.class : Html.INPUT.radio
-	 * 		.name : GRPITEM[~^`1-RZ8NPB`^~[PORT[~^`1-SNJ29O`^~[DOMAIN
+	 * 		.name : RegularExpression(GRPITEM.*PORT.*1-SNJ29O.*DOMAIN)
 	 * 		.classIndex : 1
 	 */
 	protected ToggleGUITestObject FavSMSON(TestObject anchor, long flags) 
@@ -92,13 +123,13 @@ public abstract class PersonalizarGrupoSVAHelper extends libreria.Accion
 	}
 	
 	/**
-	 * GRPITEM1RZ8NPBPORT1DYG0NEDOMAINon: with default state.
+	 * FavVozOFF: with default state.
 	 *		.id : 
-	 * 		.type : radio
+	 * 		.type : radio 
 	 * 		.value : on
 	 * 		.title : 
 	 * 		.class : Html.INPUT.radio
-	 * 		.name : GRPITEM[~^`1-RZ8NPB`^~[PORT[~^`1-DYG0NE`^~[DOMAIN
+	 * 		.name : RegularExpression(GRPITEM.*PORT.*1-DYG0NE.*DOMAIN)
 	 * 		.classIndex : 0
 	 */
 	protected ToggleGUITestObject FavVozOFF() 
@@ -107,13 +138,13 @@ public abstract class PersonalizarGrupoSVAHelper extends libreria.Accion
                         getMappedTestObject("FavVozOFF"));
 	}
 	/**
-	 * GRPITEM1RZ8NPBPORT1DYG0NEDOMAINon: with specific test context and state.
+	 * FavVozOFF: with specific test context and state.
 	 *		.id : 
-	 * 		.type : radio
+	 * 		.type : radio 
 	 * 		.value : on
 	 * 		.title : 
 	 * 		.class : Html.INPUT.radio
-	 * 		.name : GRPITEM[~^`1-RZ8NPB`^~[PORT[~^`1-DYG0NE`^~[DOMAIN
+	 * 		.name : RegularExpression(GRPITEM.*PORT.*1-DYG0NE.*DOMAIN)
 	 * 		.classIndex : 0
 	 */
 	protected ToggleGUITestObject FavVozOFF(TestObject anchor, long flags) 
@@ -123,13 +154,13 @@ public abstract class PersonalizarGrupoSVAHelper extends libreria.Accion
 	}
 	
 	/**
-	 * GRPITEM1RZ8NPBPORT1DYG0NEDOMAINon: with default state.
+	 * FavVozON: with default state.
 	 *		.id : 
 	 * 		.type : radio
 	 * 		.value : on
 	 * 		.title : 
 	 * 		.class : Html.INPUT.radio
-	 * 		.name : RegularExpression(GRPITEM\[~\^`.*`\^~\[PORT\[~\^`1-DYG0NE`\^~\[DOMAIN)
+	 * 		.name : RegularExpression(GRPITEM.*PORT.*1-DYG0NE.*DOMAIN)
 	 * 		.classIndex : 1
 	 */
 	protected ToggleGUITestObject FavVozON() 
@@ -138,13 +169,13 @@ public abstract class PersonalizarGrupoSVAHelper extends libreria.Accion
                         getMappedTestObject("FavVozON"));
 	}
 	/**
-	 * GRPITEM1RZ8NPBPORT1DYG0NEDOMAINon: with specific test context and state.
+	 * FavVozON: with specific test context and state.
 	 *		.id : 
 	 * 		.type : radio
 	 * 		.value : on
 	 * 		.title : 
 	 * 		.class : Html.INPUT.radio
-	 * 		.name : RegularExpression(GRPITEM\[~\^`.*`\^~\[PORT\[~\^`1-DYG0NE`\^~\[DOMAIN)
+	 * 		.name : RegularExpression(GRPITEM.*PORT.*1-DYG0NE.*DOMAIN)
 	 * 		.classIndex : 1
 	 */
 	protected ToggleGUITestObject FavVozON(TestObject anchor, long flags) 
@@ -154,10 +185,10 @@ public abstract class PersonalizarGrupoSVAHelper extends libreria.Accion
 	}
 	
 	/**
-	 * _1RZFZT7PORT17WW69PORTDOMAIN16VIE6CXLINK: with default state.
+	 * Grupo SVA: with default state.
 	 *		.text : Grupo SVA
-	 * 		.id : RegularExpression(\.\*`\^~\[PORT\[~\^`1-7WW69`\^~\[PORTDOMAIN\[~\^`1-6VIE6`\^~\[ ...
-	 * 		.href : RegularExpression(javascript:processInput\("GRPITEM\[~\^`\.\*`\^~\[PORT\[~\^`1-7 ...
+	 * 		.id : RegularExpression(.*PORT.*1-7WW69.*PORTDOMAIN.*1-6VIE6.*CXLINK)
+	 * 		.href : RegularExpression(javascript:processInput\("GRPITEM.*PORT.*1-7WW69.*PROD.*1-6VIE ...
 	 * 		.title : 
 	 * 		.class : Html.A
 	 * 		.name : 
@@ -169,10 +200,10 @@ public abstract class PersonalizarGrupoSVAHelper extends libreria.Accion
                         getMappedTestObject("GrupoSVA"));
 	}
 	/**
-	 * _1RZFZT7PORT17WW69PORTDOMAIN16VIE6CXLINK: with specific test context and state.
+	 * Grupo SVA: with specific test context and state.
 	 *		.text : Grupo SVA
-	 * 		.id : RegularExpression(\.\*`\^~\[PORT\[~\^`1-7WW69`\^~\[PORTDOMAIN\[~\^`1-6VIE6`\^~\[ ...
-	 * 		.href : RegularExpression(javascript:processInput\("GRPITEM\[~\^`\.\*`\^~\[PORT\[~\^`1-7 ...
+	 * 		.id : RegularExpression(.*PORT.*1-7WW69.*PORTDOMAIN.*1-6VIE6.*CXLINK)
+	 * 		.href : RegularExpression(javascript:processInput\("GRPITEM.*PORT.*1-7WW69.*PROD.*1-6VIE ...
 	 * 		.title : 
 	 * 		.class : Html.A
 	 * 		.name : 
@@ -185,7 +216,7 @@ public abstract class PersonalizarGrupoSVAHelper extends libreria.Accion
 	}
 	
 	/**
-	 * Arbol_lista: with default state.
+	 * LineasPedido: with default state.
 	 *		ActiveRow : 9
 	 * 		ClassName : SiebList
 	 * 		.class : SiebList
@@ -198,7 +229,7 @@ public abstract class PersonalizarGrupoSVAHelper extends libreria.Accion
                         getMappedTestObject("LineasPedido"));
 	}
 	/**
-	 * Arbol_lista: with specific test context and state.
+	 * LineasPedido: with specific test context and state.
 	 *		ActiveRow : 9
 	 * 		ClassName : SiebList
 	 * 		.class : SiebList
@@ -212,7 +243,7 @@ public abstract class PersonalizarGrupoSVAHelper extends libreria.Accion
 	}
 	
 	/**
-	 * Breconfig: with default state.
+	 * Personalizar: with default state.
 	 *		ClassName : SiebButton
 	 * 		.class : SiebButton
 	 * 		RepositoryName : Breconfig
@@ -223,7 +254,7 @@ public abstract class PersonalizarGrupoSVAHelper extends libreria.Accion
                         getMappedTestObject("Personalizar"));
 	}
 	/**
-	 * Breconfig: with specific test context and state.
+	 * Personalizar: with specific test context and state.
 	 *		ClassName : SiebButton
 	 * 		.class : SiebButton
 	 * 		RepositoryName : Breconfig
@@ -235,7 +266,7 @@ public abstract class PersonalizarGrupoSVAHelper extends libreria.Accion
 	}
 	
 	/**
-	 * GRPITEMGrpItemId13LINK: with default state.
+	 * Servicios Adicionales: with default state.
 	 *		.text : Servicios Adicionales
 	 * 		.href : javascript:processInput("GRPITEM[~^`grpItemId13", "ChangeCurrentObj","linkMethod ...
 	 * 		.id : GRPITEM[~^`grpItemId13`^~[LINK
@@ -250,7 +281,7 @@ public abstract class PersonalizarGrupoSVAHelper extends libreria.Accion
                         getMappedTestObject("ServiciosAdicionales"));
 	}
 	/**
-	 * GRPITEMGrpItemId13LINK: with specific test context and state.
+	 * Servicios Adicionales: with specific test context and state.
 	 *		.text : Servicios Adicionales
 	 * 		.href : javascript:processInput("GRPITEM[~^`grpItemId13", "ChangeCurrentObj","linkMethod ...
 	 * 		.id : GRPITEM[~^`grpItemId13`^~[LINK
@@ -266,10 +297,10 @@ public abstract class PersonalizarGrupoSVAHelper extends libreria.Accion
 	}
 	
 	/**
-	 * GRPITEMGrpItemId4LINK: with default state.
+	 * Terminado: with default state.
 	 *		.text : Terminado
-	 * 		.href : javascript:processInput("GRPITEM[~^`grpItemId4", "DoneConfig","linkMethod")
-	 * 		.id : GRPITEM[~^`grpItemId4`^~[LINK
+	 * 		.id : RegularExpression(GRPITEM.*LINK)
+	 * 		.href : RegularExpression(javascript:processInput\("GRPITEM.*"DoneConfig","linkMethod"\) ...
 	 * 		.title : 
 	 * 		.class : Html.A
 	 * 		.name : 
@@ -281,10 +312,10 @@ public abstract class PersonalizarGrupoSVAHelper extends libreria.Accion
                         getMappedTestObject("Terminado"));
 	}
 	/**
-	 * GRPITEMGrpItemId4LINK: with specific test context and state.
+	 * Terminado: with specific test context and state.
 	 *		.text : Terminado
-	 * 		.href : javascript:processInput("GRPITEM[~^`grpItemId4", "DoneConfig","linkMethod")
-	 * 		.id : GRPITEM[~^`grpItemId4`^~[LINK
+	 * 		.id : RegularExpression(GRPITEM.*LINK)
+	 * 		.href : RegularExpression(javascript:processInput\("GRPITEM.*"DoneConfig","linkMethod"\) ...
 	 * 		.title : 
 	 * 		.class : Html.A
 	 * 		.name : 
@@ -294,6 +325,37 @@ public abstract class PersonalizarGrupoSVAHelper extends libreria.Accion
 	{
 		return new GuiTestObject(
                         getMappedTestObject("Terminado"), anchor, flags);
+	}
+	
+	/**
+	 * TerminadoOLD: with default state.
+	 *		.text : Terminado
+	 * 		.id : GRPITEM[~^`grpItemId3`^~[LINK
+	 * 		.href : javascript:processInput("GRPITEM[~^`grpItemId3", "DoneConfig","linkMethod")
+	 * 		.title : 
+	 * 		.class : Html.A
+	 * 		.name : 
+	 * 		.classIndex : 0
+	 */
+	protected GuiTestObject TerminadoOLD() 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("TerminadoOLD"));
+	}
+	/**
+	 * TerminadoOLD: with specific test context and state.
+	 *		.text : Terminado
+	 * 		.id : GRPITEM[~^`grpItemId3`^~[LINK
+	 * 		.href : javascript:processInput("GRPITEM[~^`grpItemId3", "DoneConfig","linkMethod")
+	 * 		.title : 
+	 * 		.class : Html.A
+	 * 		.name : 
+	 * 		.classIndex : 0
+	 */
+	protected GuiTestObject TerminadoOLD(TestObject anchor, long flags) 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("TerminadoOLD"), anchor, flags);
 	}
 	
 	

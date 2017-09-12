@@ -1,0 +1,3 @@
+eclipse.preferences.version=1
+org.eclipse.jdt.launching.PREF_DEFAULT_ENVIRONMENTS_XML=<?xml version\="1.0" encoding\="UTF-8"?><defaultEnvironments>\r\n<defaultEnvironment environmentId\="J2SE-1.4" vmId\="57,org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType13,1455312884154"/>\r\n</defaultEnvironments>
+org.eclipse.jdt.launching.PREF_VM_XML=<?xml version\="1.0" encoding\="UTF-8"?><vmSettings defaultVM\="57,org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType13,1455312884154" defaultVMConnector\="">\r\n<vmType id\="org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType">\r\n<vm id\="1455312884154" name\="jdk" path\="C\:\\Program Files (x86)\\IBM\\SDP\\jdk"/>\r\n</vmType>\r\n</vmSettings>

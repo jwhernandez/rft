@@ -20,18 +20,18 @@ import com.rational.test.ft.vp.IFtVerificationPoint;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
  * Script Name   : <b>ValorarTodo</b><br>
- * Generated     : <b>2016/01/11 19:22:35</b><br>
+ * Generated     : <b>2017/01/31 10:27:39 AM</b><br>
  * Description   : Helper class for script<br>
  * Original Host : Windows 7 x86 6.1 <br>
  * 
- * @since  enero 11, 2016
- * @author Sandra
+ * @since  enero 31, 2017
+ * @author rft
  */
 public abstract class ValorarTodoHelper extends libreria.Accion
 {
 	/**
 	 * AceptarMensajeBrowser: with default state.
-	 *		.text : Aceptar
+	 *		.text : RegularExpression((Aceptar|OK))
 	 * 		.class : Html.DialogButton
 	 * 		.classIndex : 0
 	 */
@@ -42,7 +42,7 @@ public abstract class ValorarTodoHelper extends libreria.Accion
 	}
 	/**
 	 * AceptarMensajeBrowser: with specific test context and state.
-	 *		.text : Aceptar
+	 *		.text : RegularExpression((Aceptar|OK))
 	 * 		.class : Html.DialogButton
 	 * 		.classIndex : 0
 	 */
@@ -50,6 +50,52 @@ public abstract class ValorarTodoHelper extends libreria.Accion
 	{
 		return new GuiTestObject(
                         getMappedTestObject("AceptarMensajeBrowser"), anchor, flags);
+	}
+	
+	/**
+	 * Description: with default state.
+	 *		ClassName : SiebTextArea
+	 * 		.class : SiebTextArea
+	 * 		RepositoryName : Description
+	 */
+	protected SiebTextAreaTestObject Descripcion() 
+	{
+		return new SiebTextAreaTestObject(
+                        getMappedTestObject("Descripcion"));
+	}
+	/**
+	 * Description: with specific test context and state.
+	 *		ClassName : SiebTextArea
+	 * 		.class : SiebTextArea
+	 * 		RepositoryName : Description
+	 */
+	protected SiebTextAreaTestObject Descripcion(TestObject anchor, long flags) 
+	{
+		return new SiebTextAreaTestObject(
+                        getMappedTestObject("Descripcion"), anchor, flags);
+	}
+	
+	/**
+	 * Description: with default state.
+	 *		ClassName : SiebTextArea
+	 * 		.class : SiebTextArea
+	 * 		RepositoryName : Description
+	 */
+	protected SiebTextAreaTestObject DescripcionPI() 
+	{
+		return new SiebTextAreaTestObject(
+                        getMappedTestObject("DescripcionPI"));
+	}
+	/**
+	 * Description: with specific test context and state.
+	 *		ClassName : SiebTextArea
+	 * 		.class : SiebTextArea
+	 * 		RepositoryName : Description
+	 */
+	protected SiebTextAreaTestObject DescripcionPI(TestObject anchor, long flags) 
+	{
+		return new SiebTextAreaTestObject(
+                        getMappedTestObject("DescripcionPI"), anchor, flags);
 	}
 	
 	/**
@@ -76,7 +122,7 @@ public abstract class ValorarTodoHelper extends libreria.Accion
 	}
 	
 	/**
-	 * BupdatePriceAll: with default state.
+	 * Valorar_Todo: with default state.
 	 *		ClassName : SiebButton
 	 * 		.class : SiebButton
 	 * 		RepositoryName : BupdatePriceAll
@@ -87,7 +133,7 @@ public abstract class ValorarTodoHelper extends libreria.Accion
                         getMappedTestObject("Valorar_Todo"));
 	}
 	/**
-	 * BupdatePriceAll: with specific test context and state.
+	 * Valorar_Todo: with specific test context and state.
 	 *		ClassName : SiebButton
 	 * 		.class : SiebButton
 	 * 		RepositoryName : BupdatePriceAll
@@ -96,6 +142,29 @@ public abstract class ValorarTodoHelper extends libreria.Accion
 	{
 		return new SiebButtonTestObject(
                         getMappedTestObject("Valorar_Todo"), anchor, flags);
+	}
+	
+	/**
+	 * Valorar_Todo_PI: with default state.
+	 *		ClassName : SiebButton
+	 * 		.class : SiebButton
+	 * 		RepositoryName : BupdatePriceAll
+	 */
+	protected SiebButtonTestObject Valorar_Todo_PI() 
+	{
+		return new SiebButtonTestObject(
+                        getMappedTestObject("Valorar_Todo_PI"));
+	}
+	/**
+	 * Valorar_Todo_PI: with specific test context and state.
+	 *		ClassName : SiebButton
+	 * 		.class : SiebButton
+	 * 		RepositoryName : BupdatePriceAll
+	 */
+	protected SiebButtonTestObject Valorar_Todo_PI(TestObject anchor, long flags) 
+	{
+		return new SiebButtonTestObject(
+                        getMappedTestObject("Valorar_Todo_PI"), anchor, flags);
 	}
 	
 	

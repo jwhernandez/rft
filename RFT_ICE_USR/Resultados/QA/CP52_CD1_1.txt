@@ -1,0 +1,77 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: CP52_CD1 Desde paso: 1 Modo:Real
+Modulo desde Paso : 1 Hasta paso: 200
+Hora de Inicio de la Ejecucion : 2017/09/06 15:49:43
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatosEntrada'                                                  'OK'                          
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'                                         'OK'                          
+'Paso    0  -  GrabarDatosSalida'                                                 'OK'                          
+'Paso    0  -  ResetVariablesCondicionantes'                                      'OK'                          
+'Paso    1  -  fLogin'                                                            'OK'                          
+'Paso    2  -  fVista360'                                                         'OK'                          
+'Paso    3  -  fBuscarActivo'                                                     'OK'                          
+'Paso    4  -  fBuscarCtaFact'                                                    'OK'                          
+'Paso    5  -  fNuevaPostvta'                                                     'OK'                          
+'Paso    6  -  fBuscarPedidoVenta'                                                'OK'                          
+'Paso    7  -  fIngresarAutenticacion'                                            'OK'                          
+'Paso    8  -  fValidarAccion'                                                    'OK'                          
+'Paso    9  -  fValidarNroServicio_SIM_IMEI'                                      'OK'                          
+'Paso   10  -  fValidarMotivoPedido'                                              'OK'                          
+'Paso   11  -  fIngresarIMEI'                                                     'OK'                          
+'Paso   12  -  fExpandiryBuscar'                                                  'OK'                          
+'Paso   13  -  fValidarAccion'                                                    'OK'                          
+'Paso   14  -  fValorarTodo'                                                      'OK'                          
+'Paso   15  -  fEnviarPedido'                                                     'OK'                          
+
+
+Informe de DATOS de salida
+-----------------------------------------------------------------------------------------
+'Paso    0  -  CasosPrueba'                        'Usuario Alternativo '         'JVALERIO1'                   
+'Paso    0  -  CasosPrueba'                        'Clave Alternativa '           'jvalerio1'                   
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoPasoOK'                 '0'                           
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoTramite'                '1'                           
+'Paso    3  -  fBuscarActivo'                      'NroServicio'                  '89846777'                    
+'Paso    4  -  GrabarDatosSalida'                  'T1_NroCtaFact'                '101775737110'                
+'Paso    4  -  fBuscarCtaFact'                     'NroCtaFact'                   '101775737110'                
+'Paso    5  -  fNuevaPostvta'                      'NroPedido'                    '1-1776524396'                
+'Paso    5  -  GrabarDatosSalida'                  'T1_NroPedido'                 '1-1776524396'                
+'Paso    8  -  ValidarNuevaAccion'                 'Accion'                       'Modificación'                
+'Scripts.Comun.ValidarPrecioenPedido'              'PrecioInicio'                 ''                            
+'Scripts.Comun.ValidarPrecioenPedido'              'PrecioNeto'                   ''                            
+'Paso   10  -  ValidarNuevaAccion'                 'Accion'                       'Modificación'                
+'Paso   13  -  ValidarNuevaAccion'                 'Accion'                       'Nuevo'                       
+
+
+Informe de Bugs
+-----------------------------------------------------------------------------------------
+'Paso   16  -  fValidarMensaje'                    'Mensaje diferente al deseado'
+
+-----------------------------------------------------------------------------------------
+Tipo Parada         = Bug
+Mensaje de Parada   = Mensaje diferente al deseado
+Parada en paso	    = 16
+
+
+-----------------------------------------------------------------------------------------
+Fin del Informe del Caso Prueba_Conj Datos: CP52_CD1
+-----------------------------------------------------------------------------------------
+
+
+Informe de Errores imprevistos de sistema
+-----------------------------------------------------------------------------------------
+'Paso    7  -  Accion'                             'Reconocimiento Ambiguo'       'TestObjectMethodState {AMBIGUOUS_RECOGNITION,testObjectClassName=GuiTestObject(Name: BtonConsultaPedido, Map: BtonConsultaPedido),method=ensureObjectIsVisible,signature=null,args=null}'
+
+'Paso    7  -  Accion'                             'Reconocimiento Ambiguo'       'Consulta'                    
+
+'Paso    7  -  Accion'                             'Reconocimiento Ambiguo'       'TestObjectMethodState {AMBIGUOUS_RECOGNITION,testObjectClassName=GuiTestObject(Name: BtonConsultaPedido, Map: BtonConsultaPedido),method=ensureObjectIsVisible,signature=null,args=null}'
+
+'Paso    7  -  Accion'                             'Reconocimiento Ambiguo'       'Consulta'                    
+
+
+Hora de Finalizacion de la Ejecucion: 2017/09/06 15:56:12
+-----------------------------------------------------------------------------------------

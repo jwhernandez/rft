@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Redenominar el recurso &apos;RFT_ICE/ConfiguracionPasosEscenarios/Copia de DP_Pasos_CP05.rftdp&apos; como &apos;DP_Pasos_CP05.rftdp&apos;" description="Redenominar recurso &apos;Copia de DP_Pasos_CP05.rftdp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="ConfiguracionPasosEscenarios/Copia de DP_Pasos_CP05.rftdp" name="DP_Pasos_CP05.rftdp" stamp="1472139042248" updateReferences="true"/>
+</session>

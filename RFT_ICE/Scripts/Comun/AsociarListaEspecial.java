@@ -20,26 +20,37 @@ import com.rational.test.ft.sys.SpyMemoryStatistics;
  * Script Name   : <b>AsociarListaEspecial</b>
  * Descripcion   : Asocia una lista especial a un numero especial SMS o Voz
  * @author SS
- * @param Parámetros: 0) NOK / OK 1) Producto al cual asociar 2) Nombre de la lista
+ * @param Parámetros: 0) NOK / OK 1) Producto al cual asociar 2) Nombre de la lista 3)Tramite
  * Precondiciones: Estar en el pedido
  * @since Nov 2015
+ * ult modif 12/4/2017 se agrega opcion portin
+ * res "Numero Kolbi SMS Favorito" 1-1765891437 Venta
  */
 public class AsociarListaEspecial extends AsociarListaEspecialHelper
 {
 	public void testMain(Object[] argu) throws RationalTestException
 	{
-        SpyMemoryStatistics stats =  SpyMemory.getStats();                 
-        System.out.println("Number for Active heaps "+ stats.numberOfActiveHeaps );                 
-
+		ImpreEncabezadoScript(getScriptArgs(), getScriptName( ).toString());
+		
 		String[] ProductoObjetivo;
-		ProductoObjetivo = new String[4];
+		ProductoObjetivo = new String[6];
+		//Parámetros: 0) Nombre del producto 1) Encontrado/No Encontrado 2)posicion y 
+		// 3)action code 4) desde la linea o no (Si No) 5)Tramite 
 
 		argu[0] = "OK";
-		
+		String sTramite = argu[3].toString();
+	
+		//Menu().ensureObjectIsVisible();
 		ProductoObjetivo[0]=argu[1].toString();
+		ProductoObjetivo[4]="Si";
+		ProductoObjetivo[5]=sTramite;
 		callScript("Scripts.Comun.BuscarProducto", ProductoObjetivo);
 		if ((ProductoObjetivo[1].toString().equals("Encontrado"))) {
-			ListaEspecial().setText(argu[2].toString());
+			if (!sTramite.equals("PortIn")) 
+				ListaEspecial().setText(argu[2].toString());
+			if (sTramite.equals("PortIn")) 
+				ListaEspecial_PI().setText(argu[2].toString());
+			
 		
 //			ListaEspecial().openPopup();
 //			NewQuery().performAction();
@@ -53,10 +64,7 @@ public class AsociarListaEspecial extends AsociarListaEspecialHelper
 		} else {
 			argu[0] = "NOK";
 		}
-		
-        stats = SpyMemory.getStats(); 
-        System.out.println("After script "+ stats.numberOfActiveHeaps); 
-        com.rational.test.ft.script.RationalTestScript.unregisterAll(); 
+		ImpreResultadoScript(getScriptName( ).toString(), argu[0].toString());
 	}
 }
 

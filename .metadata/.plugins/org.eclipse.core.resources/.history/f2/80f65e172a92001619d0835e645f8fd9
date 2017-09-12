@@ -1,0 +1,54 @@
+package Scripts.Comun.SistemasExternos;
+import resources.Scripts.Comun.SistemasExternos.ASRM_ConsultaEstadoServicioHelper;
+
+import com.rational.test.ft.*;
+import com.rational.test.ft.object.interfaces.*;
+import com.rational.test.ft.object.interfaces.SAP.*;
+import com.rational.test.ft.object.interfaces.WPF.*;
+import com.rational.test.ft.object.interfaces.dojo.*;
+import com.rational.test.ft.object.interfaces.siebel.*;
+import com.rational.test.ft.object.interfaces.flex.*;
+import com.rational.test.ft.object.interfaces.generichtmlsubdomain.*;
+import com.rational.test.ft.script.*;
+import com.rational.test.ft.value.*;
+import com.rational.test.ft.vp.*;
+import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
+/**
+ * Description   : Consulta el estado de la SIM en ASRM
+ * Script Name   : <b>ASRM_ConsultaEstadoServicio</b>
+ * @since  2016/10/14
+ * Parametros: 0) Resultado = OK/NOK 1) SIM   
+ * ej  res 89506010911111296188
+ * @author SS
+ */
+public class ASRM_ConsultaEstadoServicio extends ASRM_ConsultaEstadoServicioHelper
+{
+	public void testMain(Object[] argu) throws RationalTestException
+	{
+		ImpreEncabezadoScript(getScriptArgs(), getScriptName( ).toString());
+		argu[0] = "NOK";
+
+		
+		// Window: Project_Actualizar_ASRM.exe: Actualizar Información
+		actualizarInformaciónwindow().move(atPoint(724,274));
+		texttext().click(atPoint(38,7));
+		actualizarInformaciónwindow().move(atPoint(521,278));
+		actualizarInformaciónwindow().inputChars("89");
+		consultarNumerowindow().click(atPoint(227,50));
+		
+		// Window: Project_Actualizar_ASRM.exe: Information
+		okbutton().click(atPoint(37,15));
+Estado().		
+		// Window: Project_Actualizar_ASRM.exe: Actualizar Información
+		pagetablistpageTabList().click(atName("Recurso Tarjetas"), 
+                                 atPoint(43,9));
+		texttext2().click(atPoint(33,13));
+		actualizarInformaciónwindow().inputChars("89");
+		actualizarInformaciónwindow().inputChars("506010911111296188");
+		
+		
+		argu[0] = "OK";
+		ImpreResultadoScript(getScriptName( ).toString(), "Resultado " + argu[0]);
+	}		
+}
+

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Redenominar la variable local &apos;ExpandiryBuscar&apos; en &apos;Scripts.PasosFunc.fExpandiryBuscarParc.testMain(...)&apos; como &apos;ExpandiryBuscarParc&apos;&#x0D;&#x0A;- Proyecto original: &apos;RFT_ICE&apos;&#x0D;&#x0A;- Elemento original: &apos;Scripts.PasosFunc.fExpandiryBuscarParc.testMain(Object[]).ExpandiryBuscar&apos;&#x0D;&#x0A;- Elemento redenominado: &apos;ExpandiryBuscar&apos;&#x0D;&#x0A;- Actualizar referencias a elemento refactorizado" description="Redenominar variable local &apos;ExpandiryBuscar&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/&lt;Scripts.PasosFunc{fExpandiryBuscarParc.java[fExpandiryBuscarParc~testMain~\[QObject;@ExpandiryBuscar!1291!1315!1300!1314!\[QString;!0!false" name="ExpandiryBuscarParc" references="true" stamp="1493759657324" version="1.0"/>
+</session>

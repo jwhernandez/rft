@@ -1,0 +1,42 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: CPUNI_CD1 Desde paso: 11 Modo:Real
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+---------------------------
+CPUNI_CD1_T1;LeerDatosEntrada;OK;
+CPUNI_CD1_T1;LeerDatoSalidaUltPasoEjec;OK;
+CPUNI_CD1_T1;LeerDatosSalida;OK;
+CPUNI_CD1_T1;Paso1:fLogin;NE;
+
+
+Informe de DATOS de salida
+---------------------------
+CPUNI_CD1;UltimoPasoOK;10;
+CPUNI_CD1;UltimoTramite;1;
+
+
+Informe de Bugs
+-----------------
+
+
+Informe de Errores imprevistos de sistema
+------------------------------------------------
+CPUNI_CD1;Mensaje ME;Script=Comun.BuscarProducto Línea=43 Método=getProperty Error=
+GetProperty("RecordCounter"); Error:(-1018) - Could not find Siebel application object. Clase=com.rational.test.ft.Domain.Siebel.SiebelMethodExecutionFailureException Objeto=siebel.SiebAppletTestObject(Name: AppletLineasPedido, Map: AppletLineasPedido);
+
+CPUNI_CD1;Mensaje UE;Script=Comun.BuscarProducto Línea=0 Error=
+GetProperty("RecordCounter"); Error:(-1018) - Could not find Siebel application object.;
+
+CPUNI_CD1;Mensaje UE;Script=Comun.TerminalCliente Línea=0 Error=CRFCN0018E: The 43 line of the 43 script contains an exception.;
+
+CPUNI_CD1;Mensaje UE;Script=PasosFunc.fTerminalCliente Línea=0 Error=CRFCN0018E: The 53 line of the 53 script contains an exception.;
+
+
+----------------------------------------------------------------------------------------------------------
+Tipo Parada:ObjectMethodException - Mensaje de Parada: Script=Comun.BuscarProducto Línea=43 Método=getProperty Error=
+GetProperty("RecordCounter"); Error:(-1018) - Could not find Siebel application object. Clase=com.rational.test.ft.Domain.Siebel.SiebelMethodExecutionFailureException Objeto=siebel.SiebAppletTestObject(Name: AppletLineasPedido, Map: AppletLineasPedido)
+- Fin del Informe del Caso Prueba_Conj Datos: CPUNI_CD1
+----------------------------------------------------------------------------------------------------------

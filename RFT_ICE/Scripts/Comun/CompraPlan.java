@@ -21,19 +21,16 @@ import com.rational.test.ft.sys.SpyMemoryStatistics;
  * Parámetros: 0) IN  el plan 
  * SS Nov 2015
  */
-public class CompraPlan extends CompraPlanHelper {
-	public void testMain(Object[] argu) throws RationalTestException {
-		
-        SpyMemoryStatistics stats =  SpyMemory.getStats();                 
-        System.out.println("Number for Active heaps "+ stats.numberOfActiveHeaps );
-        System.out.println("Number of RegisteredObjects "+ getRegisteredTestObjects() ); 
+public class CompraPlan extends CompraPlanHelper 
+{
+	public void testMain(Object[] argu) throws RationalTestException 
+	{
+		ImpreEncabezadoScript(getScriptArgs(), getScriptName( ).toString()); 
 		
 		NuevoProducto().performAction();
 		String sPlan = argu[0].toString();
 		Plan().setText(sPlan);
-		
-        stats = SpyMemory.getStats(); 
-        System.out.println("After script "+ stats.numberOfActiveHeaps); 
-        com.rational.test.ft.script.RationalTestScript.unregisterAll(); 
+		ImpreResultadoScript(getScriptName( ).toString(), "Sin parametro de resultado");
+
 	}
 }

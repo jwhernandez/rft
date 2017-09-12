@@ -1,0 +1,70 @@
+package Scripts.Comun;
+
+import resources.Scripts.Comun.Vista360Helper;
+import com.rational.test.ft.*;
+import com.rational.test.ft.object.interfaces.*;
+import com.rational.test.ft.object.interfaces.SAP.*;
+import com.rational.test.ft.object.interfaces.WPF.*;
+import com.rational.test.ft.object.interfaces.dojo.*;
+import com.rational.test.ft.object.interfaces.siebel.*;
+import com.rational.test.ft.object.interfaces.flex.*;
+import com.rational.test.ft.object.interfaces.generichtmlsubdomain.*;
+import com.rational.test.ft.script.*;
+import com.rational.test.ft.value.*;
+import com.rational.test.ft.vp.*;
+import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
+import com.rational.test.ft.sys.SpyMemory; 
+import com.rational.test.ft.sys.SpyMemoryStatistics; 
+
+/**
+ * Descripción: Ir a la vista 360 Parámetros: Recibe el número de cuenta cliente
+ * Script Name   : <b>Vista360</b>
+ * Parametros 0) Nro de cuenta 1)OK/NOK
+ * ej: 101704276384 res
+ * Precondiciones: Estar en siebel en cualquier pantalla 
+ * @since  2016/01/12
+ * @author SS
+ */
+public class Vista360 extends Vista360Helper {
+	public void testMain(Object[] argu) throws RationalTestException{
+		
+		ImpreEncabezadoScript(getScriptArgs(), getScriptName( ).toString());
+ 
+		argu[1] = "NOK";
+		LogoOracle().waitForExistence();
+		
+		
+		// Window: NOTEPAD.EXE: Ejecucion 2016-07-07 05-47-13 PM - Notepad
+		ejecucion20160707054713PMNotep(ANY,MAY_EXIT).click(CLOSE_BUTTON);
+		
+		// Window: NOTEPAD.EXE: Ejecucion 2016-07-07 05-45-26 PM - Notepad
+		ejecucion20160707054526PMNotep(ANY,MAY_EXIT).click(CLOSE_BUTTON);
+		
+		// 
+		Pestañas().gotoScreen("Sales Order Screen");
+		Pestañas().gotoScreen("Sales Order Screen");
+
+		Pestañas().gotoScreen("Accounts Screen");
+ 
+		NroCuenta().waitForExistence();
+		// Ingresar número de cuenta recibido como parámetro
+		String NroCuenta = argu[0].toString();
+		NroCuenta().setText(NroCuenta);
+		Ir().click();
+ 
+		Nuevo().waitForExistence(); // dado que la anterior sentencia no funciona se agrega esta
+		Nuevo().ensureObjectIsVisible(); // se agrega esta sentencia para que no pierda el menu de la visibilidad y de error
+		
+		sleep(1);
+		
+		SiebScreenViews().goTo("All Account List View", "L2");
+		sleep(2);
+		ListaCuentas().drillDownColumn("Name", 0); // es la vista de todas las cuentas
+		
+		sleep(1);
+		NroPedido().waitForExistence();
+		argu[1] = "OK";
+		
+		ImpreResultadoScript(getScriptName( ).toString(), argu[1].toString());
+	}
+}

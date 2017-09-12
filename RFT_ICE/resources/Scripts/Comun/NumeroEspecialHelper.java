@@ -20,15 +20,86 @@ import com.rational.test.ft.vp.IFtVerificationPoint;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
  * Script Name   : <b>NumeroEspecial</b><br>
- * Generated     : <b>2015/12/16 15:04:33</b><br>
+ * Generated     : <b>2016/11/23 08:33:34</b><br>
  * Description   : Helper class for script<br>
  * Original Host : Windows 7 x86 6.1 <br>
  * 
- * @since  diciembre 16, 2015
+ * @since  noviembre 23, 2016
  * @author Sandra
  */
 public abstract class NumeroEspecialHelper extends libreria.Accion
 {
+	/**
+	 * CloseApplet: with default state.
+	 *		ClassName : SiebButton
+	 * 		.class : SiebButton
+	 * 		RepositoryName : CloseApplet
+	 */
+	protected SiebButtonTestObject Cerrar() 
+	{
+		return new SiebButtonTestObject(
+                        getMappedTestObject("Cerrar"));
+	}
+	/**
+	 * CloseApplet: with specific test context and state.
+	 *		ClassName : SiebButton
+	 * 		.class : SiebButton
+	 * 		RepositoryName : CloseApplet
+	 */
+	protected SiebButtonTestObject Cerrar(TestObject anchor, long flags) 
+	{
+		return new SiebButtonTestObject(
+                        getMappedTestObject("Cerrar"), anchor, flags);
+	}
+	
+	/**
+	 * IESiebel: with default state.
+	 *		.class : Html.HtmlBrowser
+	 * 		.browserName : MS Internet Explorer
+	 * 		.documentName : RegularExpression(http.*\/ecommunications_esn/star.*)
+	 * 		.processName : iexplore.exe
+	 */
+	protected BrowserTestObject IESiebel() 
+	{
+		return new BrowserTestObject(
+                        getMappedTestObject("IESiebel"));
+	}
+	/**
+	 * IESiebel: with specific test context and state.
+	 *		.class : Html.HtmlBrowser
+	 * 		.browserName : MS Internet Explorer
+	 * 		.documentName : RegularExpression(http.*\/ecommunications_esn/star.*)
+	 * 		.processName : iexplore.exe
+	 */
+	protected BrowserTestObject IESiebel(TestObject anchor, long flags) 
+	{
+		return new BrowserTestObject(
+                        getMappedTestObject("IESiebel"), anchor, flags);
+	}
+	
+	/**
+	 * ListaDeNúmerosDisponibles: with default state.
+	 *		.title : Lista de Números Disponibles
+	 * 		.class : Html.HtmlDocument
+	 * 		.url : RegularExpression(http.*\/ecommunications_esn/star.*)
+	 */
+	protected DocumentTestObject ListaDeNúmerosDisponibles() 
+	{
+		return new DocumentTestObject(
+                        getMappedTestObject("ListaDeNúmerosDisponibles"));
+	}
+	/**
+	 * ListaDeNúmerosDisponibles: with specific test context and state.
+	 *		.title : Lista de Números Disponibles
+	 * 		.class : Html.HtmlDocument
+	 * 		.url : RegularExpression(http.*\/ecommunications_esn/star.*)
+	 */
+	protected DocumentTestObject ListaDeNúmerosDisponibles(TestObject anchor, long flags) 
+	{
+		return new DocumentTestObject(
+                        getMappedTestObject("ListaDeNúmerosDisponibles"), anchor, flags);
+	}
+	
 	/**
 	 * ServiceId: with default state.
 	 *		ClassName : SiebText

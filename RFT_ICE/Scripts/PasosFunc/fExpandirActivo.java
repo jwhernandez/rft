@@ -14,14 +14,15 @@ import com.rational.test.ft.vp.*;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
  *  Script Name   : <b>fExpandirActivo</b>
- * Description   : Functional Test Script
+ * Description   : Expande las lineas del activo
  * @since  2015/12/28
- * @author Sandra
+ * @author SS
  */
 public class fExpandirActivo extends fExpandirActivoHelper
 {
-	public void testMain(Object[] args) 
+	public void testMain(Object[] args) throws RationalTestException
 	{
+		ImpreEncabezadoScript(getScriptArgs(), getScriptName( ).toString());
 		String[] Expandir;
 		Expandir = new String[1];
 
@@ -31,7 +32,7 @@ public class fExpandirActivo extends fExpandirActivoHelper
 		callScript("Scripts.Comun.ExpandirActivo",Expandir);
 
 		//			if (EnviarPedido[0].toString().equals("No creado")) {	
-		//				/S/MensError[0] = "Problema al enviar el pedido";
+		//				/S/MensError[0] = "Problema al expandir el activo";
 		//		MensError[0] = "xDefecto";
 		//		MensError[1] = args[3].toString();
 		//		MensError[2] = args[0].toString();

@@ -24,6 +24,7 @@ public class fLeerNroServicio extends fLeerNroServicioHelper
 {
 	public void testMain(Object[] args) 
 	{
+		ImpreEncabezadoScript(getScriptArgs(), getScriptName( ).toString());
 		String[] MensError;
 		MensError = new String[4];
 

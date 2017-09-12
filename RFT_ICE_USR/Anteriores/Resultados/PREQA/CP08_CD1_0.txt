@@ -1,0 +1,46 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: CP08_CD1 Desde paso: 0 Modo:Real
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatosEntrada'                                                  'OK'                          
+'Paso    0  -  GrabarDatosSalida'                                                 'OK'                          
+'Paso    1  -  fLogin'                                                            'OK'                          
+'Paso    2  -  fVista360'                                                         'OK'                          
+'Paso    3  -  fBuscarActivo'                                                     'OK'                          
+'Paso    4  -  fBuscarCtaFact'                                                    'OK'                          
+
+
+Informe de DATOS de salida
+-----------------------------------------------------------------------------------------
+'Paso    3  -  fBuscarActivo'                      'NroServicio'                  '10555570'                    
+'Paso    3  -  fBuscarActivo'                      'NroServicio'                  '10555570'                    
+'Paso    4  -  fBuscarCtaFact'                     'NroCtaFact'                   '101717643425'                
+
+
+Informe de Bugs
+-----------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------
+Tipo Parada         = Objeto no encontrado
+Mensaje de Parada   = TestObjectMethodState {OBJECT_NOT_FOUND,testObjectClassName=GuiTestObject(Name: BtonConsultaPedido, Map: BtonConsultaPedido),method=ping,signature=()V,args=null}
+Parada en paso	    = 5
+
+
+-----------------------------------------------------------------------------------------
+Fin del Informe del Caso Prueba_Conj Datos: CP08_CD1
+-----------------------------------------------------------------------------------------
+
+
+Informe de Errores imprevistos de sistema
+-----------------------------------------------------------------------------------------
+'Paso    5  -  Accion'                             'Objeto no encontrado'         'TestObjectMethodState {OBJECT_NOT_FOUND,testObjectClassName=GuiTestObject(Name: BtonConsultaPedido, Map: BtonConsultaPedido),method=ping,signature=()V,args=null}'
+
+'Paso    5  -  Accion'                             'Excepción no esperada'        'Script=NuevaPostvta Línea=0 Error=CRFCN0661W: The recognition score of the found object does not qualify the object as a match.
+ Looking for [GuiTestObject(Name: BtonConsultaPedido, Map: BtonConsultaPedido)], best failing candidate score was [10000] with best failing description [{.text=Consulta, .href=javascript:void(0), .id=s_6_1_90_0_mb, .title=, .name=, .classIndex=0}]'
+
+'Paso    5  -  Accion'                             'Excepción no esperada'        'Script=fNuevaPostvta Línea=0 Error=CRFCN0018E: The 89 line of the 89 script contains an exception.'
+

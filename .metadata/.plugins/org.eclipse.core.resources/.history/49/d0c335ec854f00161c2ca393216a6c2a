@@ -1,0 +1,123 @@
+package GUI;
+
+import javax.swing.*;
+
+import java.awt.event.*;
+import java.awt.*;
+import java.io.IOException;
+
+
+public class CP03 extends JMenuBar{
+
+	private JLabel nroCuentaL, planL, nroServicioL, SimInL, SimCoL, TerminalL, IMEICoL, IMEIInL, TituloL;
+	private JTextField nroCuentaTF, planTF, nroServicioTF, SimInTF, SimCoTF, TerminalTF, IMEICoTF, IMEIInTF;
+	
+	public CP03()
+	{
+	      JFrame frame = new JFrame();
+	      frame.setTitle("Automatizacion de Pruebas Regresivas");
+	      frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	      //frame.setJMenuBar(new CP03(  ));
+	      frame.pack(  );
+	      frame.setSize(600, 600);
+	      frame.setVisible(true);
+		  JPanel panelLabel  = new JPanel();
+	      JPanel panelTF  = new JPanel();
+	      JPanel panelIntegracion  = new JPanel();
+	      JPanel panelTitulo = new JPanel();
+	      JPanel panelab  = new JPanel();
+	      JPanel panelex = new JPanel();
+	      JButton boton1 = new JButton();
+	      JButton boton2 = new JButton();
+	      
+          frame.setLayout(new FlowLayout());      
+	      frame.setResizable(false);
+	        
+	    //Instanciar los labels
+	      nroCuentaL = new JLabel();
+	      nroCuentaL.setText("Numero de cuenta");
+	      
+	      planL = new JLabel();
+	      planL.setText("Plan");
+	      
+	      nroServicioL = new JLabel();
+	      nroServicioL.setText("Nuemero de Servicio");
+	      
+	      SimInL = new JLabel();
+	      SimInL.setText("SIM Incorrecta");
+	      
+	      SimCoL = new JLabel();
+	      SimCoL.setText("SIM Correcta");
+	      
+	      TerminalL = new JLabel();
+	      TerminalL.setText("Terminal");
+	      
+	      IMEICoL = new JLabel();
+	      IMEICoL.setText("IMEI Correcto");
+	      
+	      IMEIInL = new JLabel();
+	      IMEIInL.setText("IMEI Incorrecto");
+	      
+	      TituloL = new JLabel();
+	      TituloL.setText("Escenario 03");
+	      
+	      nroCuentaTF = new JTextField();
+	      planTF = new JTextField();
+	      nroServicioTF = new JTextField();
+	      SimInTF = new JTextField();
+	      SimCoTF = new JTextField();
+	      TerminalTF = new JTextField();
+	      IMEICoTF = new JTextField();
+	      IMEIInTF = new JTextField();
+	      
+	      
+	      panelTitulo.setLayout(new FlowLayout());
+	      panelTitulo.setPreferredSize(new Dimension(200,100));
+	      panelTitulo.add(TituloL);
+	      //panelab.add(boton2);
+	      
+	      panelLabel.setLayout(new GridLayout(8,0));
+	      panelLabel.add(nroCuentaL);
+	      panelLabel.add(planL);
+	      panelLabel.add(nroServicioL);
+	      panelLabel.add(SimInL);
+	      panelLabel.add(SimCoL);
+	      panelLabel.add(TerminalL);
+	      panelLabel.add(IMEICoL);
+	      panelLabel.add(IMEIInL);
+	        
+	      panelTF.setLayout(new GridLayout(8,0));
+	      panelTF.add(nroCuentaTF);
+	      panelTF.add(planTF);
+	      panelTF.add(nroServicioTF);
+	      panelTF.add(SimInTF);
+	      panelTF.add(SimCoTF);
+	      panelTF.add(TerminalTF);
+	      panelTF.add(IMEICoTF);
+	      panelTF.add(IMEIInTF);
+	      
+	      panelIntegracion.setLayout(new GridLayout(1,1));
+	      panelIntegracion.setPreferredSize(new Dimension(400,300));
+	      panelIntegracion.add(panelLabel);
+	      panelIntegracion.add(panelTF);
+	                
+	      panelab.setLayout(new FlowLayout());
+	      panelab.setPreferredSize(new Dimension(200,100));
+	      panelab.add(boton1);
+	      panelab.add(boton2);
+	        
+	      panelex.setLayout(new GridLayout(2,0));
+	      panelex.add(panelIntegracion);
+	      panelex.add(panelab);
+	     
+	      boton1.setText("Aceptar");
+	      boton2.setText("Cancelar");
+	      frame.add(panelex);
+	}
+	 
+	
+	public static void main(String[] args)  
+	{
+		CP03 casita = new CP03();
+	}	
+}

@@ -1,0 +1,55 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: CPC1_CD1 Desde paso: 13 Modo:Real
+Modulo desde Paso : 1 Hasta paso: 100
+Hora de Inicio de la Ejecucion : 2017/08/28 12:44:01
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatosEntrada'                                                  'OK'                          
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'                                         'OK'                          
+'Paso    0  -  LeerDatosSalida'                                                   'OK'                          
+'Paso    1  -  fLeerVariableCondicionanteDP'                                      'OK'                          
+'Paso    2  -  fLeerVariableCondicionanteDP'                                      'OK'                          
+'Paso    3  -  fLeerVariableCondicionanteDP'                                      'OK'                          
+'Paso    4  -  fLeerVariableCondicionanteDP'                                      'OK'                          
+'Paso    5  -  fLogin'                                                            'OK'                          
+'Paso    6  -  fVista360'                                                         'NE'                          
+'Paso    7  -  fNuevaVenta'                                                       'NE'                          
+
+
+Informe de DATOS de salida
+-----------------------------------------------------------------------------------------
+'Paso    0  -  CasosPrueba'                        'Usuario Alternativo '         'JVALERIO1'                   
+'Paso    0  -  CasosPrueba'                        'Clave Alternativa '           'jvalerio1'                   
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoPasoOK'                 '12'                          
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoTramite'                '1'                           
+
+
+Informe de Bugs
+-----------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------
+Tipo Parada         = Excepción en Método
+Mensaje de Parada   = Script=BuscarPedidoVenta Línea=38 Método=DrillDownColumn Error=SiebelList.DrillDownColumn(..,0), Row index 0 is not valid or visible; Valid range is [0..-1]; Clase=com.rational.test.ft.Domain.Siebel.SiebelItemNotFoundException Objeto=siebel.SiebListTestObject(Name: ListaPedidos, Map: SiebList)
+Parada en paso	    = 8
+
+
+-----------------------------------------------------------------------------------------
+Fin del Informe del Caso Prueba_Conj Datos: CPC1_CD1
+-----------------------------------------------------------------------------------------
+
+
+Informe de Errores imprevistos de sistema
+-----------------------------------------------------------------------------------------
+'Paso    8  -  Accion'                             'Excepción en Método'          'Script=BuscarPedidoVenta Línea=38 Método=DrillDownColumn Error=SiebelList.DrillDownColumn(..,0), Row index 0 is not valid or visible; Valid range is [0..-1]; Clase=com.rational.test.ft.Domain.Siebel.SiebelItemNotFoundException Objeto=siebel.SiebListTestObject(Name: ListaPedidos, Map: SiebList)'
+
+'Paso    8  -  Accion'                             'Excepción no esperada'        'Script=BuscarPedidoVenta Línea=0 Error=SiebelList.DrillDownColumn(..,0), Row index 0 is not valid or visible; Valid range is [0..-1];'
+
+'Paso    8  -  Accion'                             'Excepción no esperada'        'Script=fBuscarPedidoVenta Línea=0 Error=CRFCN0018E: The 38 line of the 38 script contains an exception.'
+
+
+Hora de Finalizacion de la Ejecucion: 2017/08/28 12:45:48
+-----------------------------------------------------------------------------------------

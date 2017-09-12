@@ -23,6 +23,7 @@ public class fEsperarCompletar extends fEsperarCompletarHelper
 {
 	public void testMain(Object[] args) 
 	{
+		ImpreEncabezadoScript(getScriptArgs(), getScriptName( ).toString());
 //		String[] MensError;
 //		MensError = new String[4];
 		
@@ -32,7 +33,7 @@ public class fEsperarCompletar extends fEsperarCompletarHelper
 		Esperar[0] = args[1].toString();
 		callScript("Scripts.Comun.EsperarCompletar", Esperar);
 		
-//		MensError[0] = "xDefecto";
+//		MensError[0] = "xDefecto"; Esperar Completar falló
 //		MensError[1] = args[3].toString();
 //		MensError[2] = args[0].toString();
 //		MensError[3] = getScriptName( );

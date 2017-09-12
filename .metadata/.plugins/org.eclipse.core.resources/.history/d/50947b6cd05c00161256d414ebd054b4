@@ -1,0 +1,141 @@
+package GUI;
+
+import javax.swing.*;
+
+import org.jvnet.substance.SubstanceLookAndFeel;
+
+import java.awt.*;
+
+
+public class CP56{
+
+	private JLabel nroCuentaL, planL, nroServicioL, Letel1L , Letel2L, Letel3L, Letel4L, Letel5L, SimCoL, IMEICoL;
+	private JTextField nroCuentaTF,planTF,nroServicioTF,SimCoTF, Letel1TF,Letel2TF,Letel3TF,Letel4TF,Letel5TF,IMEICoTF;
+
+	public CP56()
+	{
+		//CREACION DEL FRAME
+		JFrame frame = new JFrame();
+		frame.setTitle("Automatizacion de Pruebas Regresivas");
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.pack(  );
+		frame.setSize(600, 600);
+		frame.setVisible(true);
+		frame.setLayout(new FlowLayout());      
+		frame.setResizable(false);
+
+		//DEFINICION DEL TITULO
+		JLabel TituloL = new JLabel("Escenario 56", SwingConstants.CENTER);
+		TituloL.setFont( new Font( "Helvetica", Font.BOLD, 18));
+		
+		//DEFINICION DE PANELS
+		JPanel  panelLabel  	 = new JPanel();
+		JPanel  panelTF  		 = new JPanel();
+		JPanel  panelIntegracion = new JPanel();
+		JPanel  panelab  		 = new JPanel();
+	
+		//DEFINICION DE BOTONES
+		JButton boton1 		= new JButton();
+		JButton boton2		= new JButton();
+
+		//INSTANCIAS DE LABEL
+		nroCuentaL = new JLabel();
+		nroCuentaL.setText("Numero de cuenta");   
+		
+		planL = new JLabel();
+		planL.setText("Plan");
+		
+		nroServicioL = new JLabel();
+		nroServicioL.setText("Nuemero de Servicio");     
+		
+		SimCoL = new JLabel();
+		SimCoL.setText("SIM Correcta");
+		
+		Letel1L = new JLabel();
+		Letel1L.setText("Letel1");
+		
+		Letel2L = new JLabel();
+		Letel2L.setText("Letel2");
+		
+		Letel3L = new JLabel();
+		Letel3L.setText("Letel3");
+		
+		Letel4L = new JLabel();
+		Letel4L.setText("Letel4");
+		
+		Letel5L = new JLabel();
+		Letel5L.setText("Letel5");
+		
+		IMEICoL = new JLabel();
+		IMEICoL.setText("IMEI Cliente:");
+		
+		//INSTANCIAS DE TEXTFIELD
+		nroCuentaTF 		= new JTextField();
+		planTF 				= new JTextField();
+		nroServicioTF 		= new JTextField();
+		SimCoTF 			= new JTextField();
+		Letel1TF 			= new JTextField();
+		Letel2TF 			= new JTextField();
+		Letel3TF 			= new JTextField();
+		Letel4TF 			= new JTextField();
+		Letel5TF 			= new JTextField();
+		IMEICoTF 			= new JTextField();
+		
+		panelLabel.setLayout(new GridLayout(10,0));
+		panelLabel.add(nroCuentaL);
+		panelLabel.add(nroServicioL);
+		panelLabel.add(planL);
+		panelLabel.add(SimCoL);
+		panelLabel.add(IMEICoL);
+		panelLabel.add(Letel1L);
+		panelLabel.add(Letel2L);
+		panelLabel.add(Letel3L);
+		panelLabel.add(Letel4L);
+		panelLabel.add(Letel5L);
+
+		panelTF.setLayout(new GridLayout(10,0));
+		panelTF.add(nroCuentaTF);
+		panelTF.add(nroServicioTF);
+		panelTF.add(planTF);
+		panelTF.add(SimCoTF);
+		panelTF.add(IMEICoTF);
+		panelTF.add(Letel1TF);
+		panelTF.add(Letel2TF);
+		panelTF.add(Letel3TF);
+		panelTF.add(Letel4TF);
+		panelTF.add(Letel5TF);
+		
+		//AGREGAR AMBOS PANELES PARA DISTRIBUIRLO EN COLUMNAS
+		panelIntegracion.setLayout(new GridLayout(1,1));
+		panelIntegracion.setPreferredSize(new Dimension(500,400));
+		panelIntegracion.add(panelLabel);
+		panelIntegracion.add(panelTF);
+
+		//AGREGAR AMBOS PANELES PARA DISTRIBUIRLO EN COLUMNAS
+		panelIntegracion.setLayout(new GridLayout(1,1));
+		panelIntegracion.setPreferredSize(new Dimension(500,300));
+		panelIntegracion.add(panelLabel);
+		panelIntegracion.add(panelTF);
+
+		//AGREGAR EL PANEL DE BOTONES
+		boton1.setText("Ejecutar");
+		boton2.setText("Cancelar");
+		panelab.setLayout(new FlowLayout());
+		panelab.setPreferredSize(new Dimension(200,100));
+		panelab.add(boton1);
+		panelab.add(boton2);
+
+		//AGREGAR EL PANEL AL FRAME
+		frame.add(TituloL, BorderLayout.NORTH);
+		frame.add(panelIntegracion);
+		frame.add(panelab);
+	}
+
+
+	public static void main(String[] args)  
+	{
+		new CP56();
+		SubstanceLookAndFeel.setSkin("org.jvnet.substance.skin.NebulaBrickWallSkin");
+		SubstanceLookAndFeel.setCurrentWatermark("org.jvnet.substance.watermark.SubstanceMetalWallWatermark");
+	}	
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Redenominar el recurso &apos;RFT_ICE/ConfiguracionDatosEscenario/CP12_CD1.rftdp&apos; como &apos;CP12_CD1_Completo_FInal.rftdp&apos;" description="Redenominar recurso &apos;CP12_CD1.rftdp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="ConfiguracionDatosEscenario/CP12_CD1.rftdp" name="CP12_CD1_Completo_FInal.rftdp" stamp="1499976340463" updateReferences="true"/>
+</session>

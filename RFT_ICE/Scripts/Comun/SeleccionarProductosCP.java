@@ -24,6 +24,7 @@ public class SeleccionarProductosCP extends SeleccionarProductosCPHelper
 {
 	public void testMain(Object[] args) throws RationalTestException
 	{
+		ImpreEncabezadoScript(getScriptArgs(), getScriptName( ).toString());
 		String[] RecordCount;
 		RecordCount = new String[4];
 
@@ -62,16 +63,16 @@ public class SeleccionarProductosCP extends SeleccionarProductosCPHelper
 			while (i <= irows - 1 ) {
 				LineasPedido().activateRow(i);
 				String sProducto = (String) LineasPedido().getCellText("Product", i);
-				String sCodAccion = (String) LineasPedido().getCellText("Action Code Calc", i);
+				//String sCodAccion = (String) LineasPedido().getCellText("Action Code Calc", i);
 
 				dpReset();
 				while (!dpDone() &&  !(dpString("Producto").equals(sProducto))){
 					dpNext(); 
 				}
 				if (dpString("Producto").equals(sProducto)) {
-					data[iCantRows][0] = sProducto;
-					data[iCantRows][1] = dpString("Categoria");
-					data[iCantRows][2] = sCodAccion;
+					//data[iCantRows][0] = sProducto;
+					//data[iCantRows][1] = dpString("Categoria");
+					//data[iCantRows][2] = sCodAccion;
 					iCantRows++;
 				}
 
@@ -93,6 +94,7 @@ public class SeleccionarProductosCP extends SeleccionarProductosCPHelper
 		
 		args[0] = iCantRows;
 		args[1] = table;
+		ImpreResultadoScript(getScriptName( ).toString(), "Sin resultado");
 
 	}
 }

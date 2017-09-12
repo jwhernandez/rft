@@ -20,11 +20,11 @@ import com.rational.test.ft.vp.IFtVerificationPoint;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
  * Script Name   : <b>BuscarActivo</b><br>
- * Generated     : <b>2015/12/28 13:50:56</b><br>
+ * Generated     : <b>2016/06/22 11:34:14</b><br>
  * Description   : Helper class for script<br>
  * Original Host : Windows 7 x86 6.1 <br>
  * 
- * @since  diciembre 28, 2015
+ * @since  junio 22, 2016
  * @author Sandra
  */
 public abstract class BuscarActivoHelper extends libreria.Accion

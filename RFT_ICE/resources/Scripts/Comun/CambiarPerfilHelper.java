@@ -20,43 +20,22 @@ import com.rational.test.ft.vp.IFtVerificationPoint;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
  * Script Name   : <b>CambiarPerfil</b><br>
- * Generated     : <b>2015/12/01 11:56:55 AM</b><br>
+ * Generated     : <b>2016/04/04 11:36:26</b><br>
  * Description   : Helper class for script<br>
  * Original Host : Windows 7 x86 6.1 <br>
  * 
- * @since  December 01, 2015
- * @author rft
+ * @since  abril 04, 2016
+ * @author Sandra
  */
 public abstract class CambiarPerfilHelper extends libreria.Accion
 {
 	/**
-	 * htmlBrowser: with default state.
-	 *		.class : Html.HtmlBrowser
-	 * 		.browserName : MS Internet Explorer
-	 * 		.processName : iexplore.exe
-	 */
-	protected BrowserTestObject Browser() 
-	{
-		return new BrowserTestObject(
-                        getMappedTestObject("Browser"));
-	}
-	/**
-	 * htmlBrowser: with specific test context and state.
-	 *		.class : Html.HtmlBrowser
-	 * 		.browserName : MS Internet Explorer
-	 * 		.processName : iexplore.exe
-	 */
-	protected BrowserTestObject Browser(TestObject anchor, long flags) 
-	{
-		return new BrowserTestObject(
-                        getMappedTestObject("Browser"), anchor, flags);
-	}
-	
-	/**
-	 * SiebList: with default state.
-	 *		ClassName : SiebList
+	 * LineasPedido: with default state.
+	 *		ActiveRow : 9
+	 * 		ClassName : SiebList
 	 * 		.class : SiebList
 	 * 		RepositoryName : SiebList
+	 * 		SelectedRows : 9
 	 */
 	protected SiebListTestObject LineasPedido() 
 	{
@@ -64,10 +43,12 @@ public abstract class CambiarPerfilHelper extends libreria.Accion
                         getMappedTestObject("LineasPedido"));
 	}
 	/**
-	 * SiebList: with specific test context and state.
-	 *		ClassName : SiebList
+	 * LineasPedido: with specific test context and state.
+	 *		ActiveRow : 9
+	 * 		ClassName : SiebList
 	 * 		.class : SiebList
 	 * 		RepositoryName : SiebList
+	 * 		SelectedRows : 9
 	 */
 	protected SiebListTestObject LineasPedido(TestObject anchor, long flags) 
 	{
@@ -76,74 +57,30 @@ public abstract class CambiarPerfilHelper extends libreria.Accion
 	}
 	
 	/**
-	 * OrderNumber: with default state.
-	 *		ClassName : SiebText
-	 * 		.class : SiebText
-	 * 		RepositoryName : OrderNumber
+	 * LineasPedidoPI: with default state.
+	 *		ClassName : SiebList
+	 * 		.class : SiebList
+	 * 		RepositoryName : SiebList
 	 */
-	protected SiebTextTestObject NroPedido() 
+	protected SiebListTestObject LineasPedidoPI() 
 	{
-		return new SiebTextTestObject(
-                        getMappedTestObject("NroPedido"));
+		return new SiebListTestObject(
+                        getMappedTestObject("LineasPedidoPI"));
 	}
 	/**
-	 * OrderNumber: with specific test context and state.
-	 *		ClassName : SiebText
-	 * 		.class : SiebText
-	 * 		RepositoryName : OrderNumber
+	 * LineasPedidoPI: with specific test context and state.
+	 *		ClassName : SiebList
+	 * 		.class : SiebList
+	 * 		RepositoryName : SiebList
 	 */
-	protected SiebTextTestObject NroPedido(TestObject anchor, long flags) 
+	protected SiebListTestObject LineasPedidoPI(TestObject anchor, long flags) 
 	{
-		return new SiebTextTestObject(
-                        getMappedTestObject("NroPedido"), anchor, flags);
-	}
-	
-	/**
-	 * Back: with default state.
-	 *		.class : Html.HtmlBrowser.ToolbarButton
-	 * 		.name : Back
-	 */
-	protected GuiTestObject Retroceder() 
-	{
-		return new GuiTestObject(
-                        getMappedTestObject("Retroceder"));
-	}
-	/**
-	 * Back: with specific test context and state.
-	 *		.class : Html.HtmlBrowser.ToolbarButton
-	 * 		.name : Back
-	 */
-	protected GuiTestObject Retroceder(TestObject anchor, long flags) 
-	{
-		return new GuiTestObject(
-                        getMappedTestObject("Retroceder"), anchor, flags);
+		return new SiebListTestObject(
+                        getMappedTestObject("LineasPedidoPI"), anchor, flags);
 	}
 	
 	/**
-	 * SiebelCommunications: with default state.
-	 *		.title : Siebel Communications
-	 * 		.class : Html.HtmlDocument
-	 * 		.url : http://10.129.23.113/ecommunications_esn/start.swe
-	 */
-	protected DocumentTestObject Siebel() 
-	{
-		return new DocumentTestObject(
-                        getMappedTestObject("Siebel"));
-	}
-	/**
-	 * SiebelCommunications: with specific test context and state.
-	 *		.title : Siebel Communications
-	 * 		.class : Html.HtmlDocument
-	 * 		.url : http://10.129.23.113/ecommunications_esn/start.swe
-	 */
-	protected DocumentTestObject Siebel(TestObject anchor, long flags) 
-	{
-		return new DocumentTestObject(
-                        getMappedTestObject("Siebel"), anchor, flags);
-	}
-	
-	/**
-	 * PaymentType: with default state.
+	 * TipoPago: with default state.
 	 *		ClassName : SiebPicklist
 	 * 		.class : SiebPicklist
 	 * 		RepositoryName : Payment Type
@@ -154,7 +91,7 @@ public abstract class CambiarPerfilHelper extends libreria.Accion
                         getMappedTestObject("TipoPago"));
 	}
 	/**
-	 * PaymentType: with specific test context and state.
+	 * TipoPago: with specific test context and state.
 	 *		ClassName : SiebPicklist
 	 * 		.class : SiebPicklist
 	 * 		RepositoryName : Payment Type
@@ -163,6 +100,52 @@ public abstract class CambiarPerfilHelper extends libreria.Accion
 	{
 		return new SiebPicklistTestObject(
                         getMappedTestObject("TipoPago"), anchor, flags);
+	}
+	
+	/**
+	 * TIpoPagoCtaCte: with default state.
+	 *		ClassName : SiebPicklist
+	 * 		.class : SiebPicklist
+	 * 		RepositoryName : Payment Type
+	 */
+	protected SiebPicklistTestObject TipoPagoCtaCte() 
+	{
+		return new SiebPicklistTestObject(
+                        getMappedTestObject("TipoPagoCtaCte"));
+	}
+	/**
+	 * TIpoPagoCtaCte: with specific test context and state.
+	 *		ClassName : SiebPicklist
+	 * 		.class : SiebPicklist
+	 * 		RepositoryName : Payment Type
+	 */
+	protected SiebPicklistTestObject TipoPagoCtaCte(TestObject anchor, long flags) 
+	{
+		return new SiebPicklistTestObject(
+                        getMappedTestObject("TipoPagoCtaCte"), anchor, flags);
+	}
+	
+	/**
+	 * TipoPagoHibrido: with default state.
+	 *		ClassName : SiebPicklist
+	 * 		.class : SiebPicklist
+	 * 		RepositoryName : Payment Type
+	 */
+	protected SiebPicklistTestObject TipoPagoHibrido() 
+	{
+		return new SiebPicklistTestObject(
+                        getMappedTestObject("TipoPagoHibrido"));
+	}
+	/**
+	 * TipoPagoHibrido: with specific test context and state.
+	 *		ClassName : SiebPicklist
+	 * 		.class : SiebPicklist
+	 * 		RepositoryName : Payment Type
+	 */
+	protected SiebPicklistTestObject TipoPagoHibrido(TestObject anchor, long flags) 
+	{
+		return new SiebPicklistTestObject(
+                        getMappedTestObject("TipoPagoHibrido"), anchor, flags);
 	}
 	
 	

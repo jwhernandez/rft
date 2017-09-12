@@ -23,6 +23,7 @@ public class BuscaPedidoenCtaFact extends BuscaPedidoenCtaFactHelper
 {
 	public void testMain(Object[] argu) 
 	{
+		ImpreEncabezadoScript(getScriptArgs(), getScriptName( ).toString());
 		argu[1] = "No Existe";
 		NewQuery().performAction();
 		String sPedido ="'" + argu[0].toString() + "'"; 
@@ -34,6 +35,7 @@ public class BuscaPedidoenCtaFact extends BuscaPedidoenCtaFactHelper
 			argu[1] = "Existe";	
 		}
 		System.out.println("Resutado=" + argu[1]);
+		ImpreResultadoScript(getScriptName( ).toString(), argu[1].toString());
 	}
 }
 

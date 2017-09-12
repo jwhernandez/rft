@@ -13,7 +13,7 @@ import com.rational.test.ft.value.*;
 import com.rational.test.ft.vp.*;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
- * Description   : Functional Test Script
+ * Description   : Agregar Contacto 
  * Script Name   : b>AgregarContacto</b>
  * @param  0)Identificación 1)OK/NOK
  * ej:405123336 res
@@ -23,8 +23,9 @@ import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 public class AgregarContacto extends AgregarContactoHelper
 {
 
-	public void testMain(Object[] argu) 
+	public void testMain(Object[] argu)  throws RationalTestException
 	{
+		ImpreEncabezadoScript(getScriptArgs(), getScriptName( ).toString());
 		argu[1]="NOK";
 		Contacto().openPopup();
 		sleep(1);
@@ -35,6 +36,7 @@ public class AgregarContacto extends AgregarContactoHelper
 		sleep(1);
 		PickRecord().performAction();
 		argu[1]="OK";
+		ImpreResultadoScript(getScriptName( ).toString(), argu[1].toString());
 	}
 }
 

@@ -1,0 +1,52 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: CP52_CD1 Desde paso: 3 Modo:Real
+Modulo desde Paso : 1 Hasta paso: 200
+Hora de Inicio de la Ejecucion : 2017/09/06 14:28:04
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatosEntrada'                                                  'OK'                          
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'                                         'OK'                          
+'Paso    0  -  LeerDatosSalida'                                                   'OK'                          
+'Paso    1  -  fLogin'                                                            'OK'                          
+'Paso    2  -  fVista360'                                                         'OK'                          
+
+
+Informe de DATOS de salida
+-----------------------------------------------------------------------------------------
+'Paso    0  -  CasosPrueba'                        'Usuario Alternativo '         'JVALERIO1'                   
+'Paso    0  -  CasosPrueba'                        'Clave Alternativa '           'jvalerio1'                   
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoPasoOK'                 '2'                           
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoTramite'                '1'                           
+'Paso    3  -  fBuscarActivo'                      'NroServicio'                  '89846777'                    
+
+
+Informe de Bugs
+-----------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------
+Tipo Parada         = Objeto no encontrado
+Mensaje de Parada   = TestObjectMethodState {OBJECT_NOT_FOUND,testObjectClassName=siebel.SiebButtonTestObject(Name: NewQuery, Map: NewQuery),method=PerformAction,signature=null,args=null}
+Parada en paso	    = 3
+
+
+-----------------------------------------------------------------------------------------
+Fin del Informe del Caso Prueba_Conj Datos: CP52_CD1
+-----------------------------------------------------------------------------------------
+
+
+Informe de Errores imprevistos de sistema
+-----------------------------------------------------------------------------------------
+'Paso    3  -  Accion'                             'Objeto no encontrado'         'TestObjectMethodState {OBJECT_NOT_FOUND,testObjectClassName=siebel.SiebButtonTestObject(Name: NewQuery, Map: NewQuery),method=PerformAction,signature=null,args=null}'
+
+'Paso    3  -  Accion'                             'Excepción no esperada'        'Script=BuscarActivo Línea=0 Error=CRFCN0565E: Script playback cannot be completed as the test object is not in the correct state.
+  Looking for [siebel.SiebButtonTestObject(Name: NewQuery, Map: NewQuery)] with state [ENABLED|VISIBLE|READY], possibile failing candidate[{ClassName=SiebButton, RepositoryName=NewRecord}] with incorrect state [DISABLED]'
+
+'Paso    3  -  Accion'                             'Excepción no esperada'        'Script=fBuscarActivo Línea=0 Error=CRFCN0018E: The 35 line of the 35 script contains an exception.'
+
+
+Hora de Finalizacion de la Ejecucion: 2017/09/06 14:30:13
+-----------------------------------------------------------------------------------------

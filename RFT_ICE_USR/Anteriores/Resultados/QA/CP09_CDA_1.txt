@@ -1,0 +1,27 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: CP09_CDA Desde paso: 1 Modo:Real
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+---------------------------
+
+
+Informe de DATOS de salida
+---------------------------
+
+
+Informe de Bugs
+-----------------
+
+
+Informe de Errores imprevistos de sistema
+------------------------------------------------
+CP09_CDA;Mensaje UE;Script=Comun.LeerDatosEntrada Línea=0 Error=Could not read datapool file: [C:\Users\rft\IBM\rationalsdp\workspace\RFT_ICE_USR\Regresion\QA\CP09_CDA.rftdp]. It might be missing or be in a wrong format.;
+
+
+----------------------------------------------------------------------------------------------------------
+Tipo Parada:UnhandledException - Mensaje de Parada: Script=Comun.LeerDatosEntrada Línea=0 Error=Could not read datapool file: [C:\Users\rft\IBM\rationalsdp\workspace\RFT_ICE_USR\Regresion\QA\CP09_CDA.rftdp]. It might be missing or be in a wrong format.
+- Fin del Informe del Caso Prueba_Conj Datos: CP09_CDA
+----------------------------------------------------------------------------------------------------------

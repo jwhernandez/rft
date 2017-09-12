@@ -1,0 +1,205 @@
+package GUI;
+
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.KeyEvent;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
+import java.awt.*;
+
+import javax.swing.*;
+
+import GUI.PanelMensaje;
+import GUI.Coordinador;
+import GUI.QA.Escenario03;
+import GUI.SwingMenuDemo.MenuItemListener;
+
+
+public class VentanaPrincipal extends JDialog implements ActionListener {
+
+	private static final long	serialVersionUID	= 1L;
+	JLabel labelTitulo;/*declaramos el objeto Label*/
+	   private JFrame mainFrame;
+	   private JLabel headerLabel;
+	   private JLabel statusLabel;
+	   private JPanel controlPanel; 
+	public JButton salir;
+	public JButton botonPanelInicial,botonPanelDos;
+	public JButton botonInicio;
+	public javax.swing.JScrollPane scrollPaneles;
+	String[ ] fileItems = new String[ ] { "Escenario 03", "Escenario 05", "Escenario 12", "Escenario 13", "Escenario 29" };
+	public JFrame frame;
+	public JPanel paneliz,panelde,panelab,panelar,panelex;
+	public JLabel nombre,apellidos,telefono,dni;
+	public JTextField text1,text2,text4;
+
+	Coordinador miCoorDinador;
+	
+    /**
+     * Constructor de Clase
+     * @param parent
+     * @param modal
+     */
+    public VentanaPrincipal() {
+
+    	{
+    	initComponents();
+        setSize(600,600);
+        setTitle("Automatizacion de Pruebas Regresivas");
+        setLocationRelativeTo(null);
+        setResizable(false);
+        getContentPane().setLayout(new GridLayout(3, 1));
+         
+        headerLabel = new JLabel("",JLabel.CENTER );
+        statusLabel = new JLabel("",JLabel.CENTER);        
+
+        statusLabel.setSize(350,100);
+        mainFrame.addWindowListener(new WindowAdapter() {
+           public void windowClosing(WindowEvent windowEvent){
+              System.exit(0);
+           }        
+        });    
+        
+        controlPanel = new JPanel();
+        controlPanel.setLayout(new FlowLayout());
+        add(headerLabel);
+        add(controlPanel);
+        add(statusLabel);
+
+     }
+    }
+    /*
+     * Inicialización de Componentes
+     */
+    private void initComponents() {
+
+    	scrollPaneles = new javax.swing.JScrollPane();
+
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        
+     
+        salir=new JButton();
+		salir.setBounds(610,455,60,30);
+		salir.addActionListener(this);
+		getContentPane().add(salir);
+		
+		botonPanelInicial=new JButton();
+        botonPanelInicial.setText("Ambiente Pre-QA");
+        botonPanelInicial.setBounds(20, 80, 180, 50);
+        botonPanelInicial.addActionListener(this);
+        getContentPane().add(botonPanelInicial);
+        
+        botonPanelDos=new JButton();
+        botonPanelDos.setText("Ambiente QA");
+        botonPanelDos.setBounds(220, 80, 180, 50);
+        botonPanelDos.addActionListener(this);
+        getContentPane().add(botonPanelDos);
+        
+        botonInicio=new JButton();
+        botonInicio.setText("Inicio");
+        botonInicio.setBounds(780, 80, 180, 50);
+        botonInicio.addActionListener(this);
+        getContentPane().add(botonInicio);
+        
+        /*Propiedades del Label, lo instanciamos, posicionamos y
+		 * activamos los eventos*/
+		labelTitulo= new JLabel();
+		labelTitulo.setFont(new java.awt.Font("Tahoma", 0, 28));
+		labelTitulo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+		labelTitulo.setText("Automatizacion Pruebas Regresivas");
+		labelTitulo.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.LOWERED));
+	    labelTitulo.setBounds(90, 10, 500, 40);
+	    getContentPane().add(labelTitulo);
+        
+        scrollPaneles.setAutoscrolls(true);
+        scrollPaneles.setPreferredSize(new java.awt.Dimension(990, 1915));
+        scrollPaneles.setWheelScrollingEnabled(false);
+        getContentPane().add(scrollPaneles);
+        scrollPaneles.setBounds(20, 150, 650, 300);
+        pack();
+    }
+    
+    /**
+	 * Define el panel introduccion para mostrar en la ventana
+	 * @param introduccion
+	 */
+	public void definirPanel(Escenario03 introduccion) {
+		scrollPaneles.setViewportView(introduccion);
+	}
+	
+	public void definirPanel(PanelMensaje miPanelMensaje) {
+		scrollPaneles.setViewportView(miPanelMensaje);
+	}    
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		if (e.getSource()==botonPanelInicial)
+		{
+			miCoorDinador.cargarPaneles(1);
+		}
+		
+		if (e.getSource()==botonPanelDos)
+		{
+			miCoorDinador.cargarPaneles(2);
+		}
+		
+		if (e.getSource()==salir)
+		{
+			int respuesta = JOptionPane.showConfirmDialog(this,
+					"Esta seguro que desea salir?", "Confirmación",
+					JOptionPane.YES_NO_OPTION);
+			if (respuesta == JOptionPane.YES_NO_OPTION)
+			{
+				System.exit(0);
+			}
+		}
+	}
+
+	public void setCoordinador(Coordinador coordinador) {
+		miCoorDinador=coordinador;
+	}
+	
+	 private void showMenuDemo(){
+	      //create a menu bar
+	      final JMenuBar menuBar = new JMenuBar();
+
+	      //create menus
+	      JMenu fileMenu = new JMenu("Ambiente QA");
+	      JMenu editMenu = new JMenu("Ayuda"); 
+
+	      //create menu items
+	      JMenuItem newMenuItem = new JMenuItem("Escenario 03");
+	      newMenuItem.setMnemonic(KeyEvent.VK_N);
+	      newMenuItem.setActionCommand("Escenario 03");
+
+	      JMenuItem openMenuItem = new JMenuItem("Escenario 05");
+	      openMenuItem.setActionCommand("Escenario 05");
+
+	      MenuItemListener menuItemListener = new MenuItemListener();
+
+	      newMenuItem.addActionListener(menuItemListener);
+	      openMenuItem.addActionListener(menuItemListener);
+
+	       //add menu items to menus
+	      fileMenu.add(newMenuItem);
+	      fileMenu.addSeparator();
+	      fileMenu.add(openMenuItem);
+	 
+	      //add menu to menubar
+	      menuBar.add(fileMenu);
+	      menuBar.add(editMenu);
+	 
+	      //add menubar to the frame
+	      mainFrame.setJMenuBar(menuBar);
+	      mainFrame.setVisible(true);     
+	   }
+
+	   class MenuItemListener implements ActionListener {
+	      public void actionPerformed(ActionEvent e) {            
+	         statusLabel.setText(e.getActionCommand() + " JMenuItem clicked.");
+	      }    
+	   }
+	}
+	
+}

@@ -7,7 +7,7 @@
 // file will be lost when automatically updated.
 
 package resources.Scripts.Comun;
-
+import libreria.Accion;
 import com.rational.test.ft.object.interfaces.*;
 import com.rational.test.ft.object.interfaces.SAP.*;
 import com.rational.test.ft.object.interfaces.WPF.*;
@@ -20,17 +20,17 @@ import com.rational.test.ft.vp.IFtVerificationPoint;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
  * Script Name   : <b>ValidacPostEnvio2</b><br>
- * Generated     : <b>2016/01/12 09:11:12</b><br>
+ * Generated     : <b>2016/03/30 08:39:07</b><br>
  * Description   : Helper class for script<br>
  * Original Host : Windows 7 x86 6.1 <br>
  * 
- * @since  enero 12, 2016
+ * @since  marzo 30, 2016
  * @author Sandra
  */
-public abstract class ValidacPostEnvio2Helper extends RationalTestScript
+public abstract class ValidacPostEnvio2Helper extends libreria.Accion
 {
 	/**
-	 * Status: with default state.
+	 * EstadoPedido: with default state.
 	 *		ClassName : SiebPicklist
 	 * 		.class : SiebPicklist
 	 * 		RepositoryName : Status
@@ -41,7 +41,7 @@ public abstract class ValidacPostEnvio2Helper extends RationalTestScript
                         getMappedTestObject("EstadoPedidoVta"));
 	}
 	/**
-	 * Status: with specific test context and state.
+	 * EstadoPedido: with specific test context and state.
 	 *		ClassName : SiebPicklist
 	 * 		.class : SiebPicklist
 	 * 		RepositoryName : Status
@@ -53,7 +53,7 @@ public abstract class ValidacPostEnvio2Helper extends RationalTestScript
 	}
 	
 	/**
-	 * ICEIMSI: with default state.
+	 * IMSI: with default state.
 	 *		ClassName : SiebText
 	 * 		.class : SiebText
 	 * 		RepositoryName : ICE IMSI
@@ -64,7 +64,7 @@ public abstract class ValidacPostEnvio2Helper extends RationalTestScript
                         getMappedTestObject("IMSI"));
 	}
 	/**
-	 * ICEIMSI: with specific test context and state.
+	 * IMSI: with specific test context and state.
 	 *		ClassName : SiebText
 	 * 		.class : SiebText
 	 * 		RepositoryName : ICE IMSI
@@ -76,26 +76,53 @@ public abstract class ValidacPostEnvio2Helper extends RationalTestScript
 	}
 	
 	/**
-	 * ICE SIM Tech: with default state.
-	 *		ClassName : SiebText
-	 * 		.class : SiebText
-	 * 		RepositoryName : ICE SIM Tech
+	 * LineasPedido: with default state.
+	 *		ActiveRow : 9
+	 * 		ClassName : SiebList
+	 * 		.class : SiebList
+	 * 		RepositoryName : SiebList
+	 * 		SelectedRows : 9
 	 */
-	protected SiebTextTestObject SIMTech() 
+	protected SiebListTestObject LineasPedido() 
 	{
-		return new SiebTextTestObject(
-                        getMappedTestObject("SIMTech"));
+		return new SiebListTestObject(
+                        getMappedTestObject("LineasPedido"));
 	}
 	/**
-	 * ICE SIM Tech: with specific test context and state.
+	 * LineasPedido: with specific test context and state.
+	 *		ActiveRow : 9
+	 * 		ClassName : SiebList
+	 * 		.class : SiebList
+	 * 		RepositoryName : SiebList
+	 * 		SelectedRows : 9
+	 */
+	protected SiebListTestObject LineasPedido(TestObject anchor, long flags) 
+	{
+		return new SiebListTestObject(
+                        getMappedTestObject("LineasPedido"), anchor, flags);
+	}
+	
+	/**
+	 * Tecnologia: with default state.
 	 *		ClassName : SiebText
 	 * 		.class : SiebText
 	 * 		RepositoryName : ICE SIM Tech
 	 */
-	protected SiebTextTestObject SIMTech(TestObject anchor, long flags) 
+	protected SiebTextTestObject Tecnologia() 
 	{
 		return new SiebTextTestObject(
-                        getMappedTestObject("SIMTech"), anchor, flags);
+                        getMappedTestObject("Tecnologia"));
+	}
+	/**
+	 * Tecnologia: with specific test context and state.
+	 *		ClassName : SiebText
+	 * 		.class : SiebText
+	 * 		RepositoryName : ICE SIM Tech
+	 */
+	protected SiebTextTestObject Tecnologia(TestObject anchor, long flags) 
+	{
+		return new SiebTextTestObject(
+                        getMappedTestObject("Tecnologia"), anchor, flags);
 	}
 	
 	/**

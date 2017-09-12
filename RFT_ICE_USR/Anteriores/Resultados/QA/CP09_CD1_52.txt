@@ -1,0 +1,77 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: CP09_CD1 Desde paso: 52 Modo:Real
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+---------------------------
+CP09_CD1_T1;LeerDatosEntrada;OK;
+CP09_CD1_T1;LeerDatoSalidaUltPasoEjec;OK;
+CP09_CD1_T1;LeerDatosSalida;OK;
+CP09_CD1_T1;Paso1:fLogin;OK;
+CP09_CD1_T1;Paso2:fValidarActivoEstadoenActivo;NE;
+CP09_CD1_T1;Paso3:fIraActivoDesdeActivo;NE;
+CP09_CD1_T1;Paso4:fNuevaPostvta;NE;
+CP09_CD1_T1;Paso5:fNuevaPostvta;NE;
+CP09_CD1_T1;Paso6:fBuscarPedidoVenta;OK;
+CP09_CD1_T1;Paso7:fValidarAgencia;NE;
+CP09_CD1_T1;Paso8:fIngresarAutenticacion;NE;
+CP09_CD1_T1;Paso9:fIngresarIMEI;NE;
+CP09_CD1_T1;Paso10:fTerminalCliente;NE;
+CP09_CD1_T1;Paso11:fIngresarSIM;NE;
+CP09_CD1_T1;Paso12:fExpandiryBuscar;NE;
+CP09_CD1_T1;Paso13:fCheckPagoFact;NE;
+CP09_CD1_T1;Paso14:fValidarAccion;NE;
+CP09_CD1_T1;Paso15:fExpandiryBuscar;NE;
+CP09_CD1_T1;Paso16:fCheckPagoFact;NE;
+CP09_CD1_T1;Paso17:fValidarAccion;NE;
+CP09_CD1_T1;Paso18:fExpandiryBuscar;NE;
+CP09_CD1_T1;Paso19:fCheckPagoFact;NE;
+CP09_CD1_T1;Paso20:fValidarAccion;NE;
+CP09_CD1_T1;Paso21:fEnviarPedido;NE;
+CP09_CD1_T1;Paso22:fValidarMensaje;NE;
+CP09_CD1_T1;Paso23:fValorarTodo;NE;
+CP09_CD1_T1;Paso24:fExpandiryBuscar;NE;
+CP09_CD1_T1;Paso25:fCheckPagoFact;NE;
+CP09_CD1_T1;Paso26:fExpandiryBuscar;NE;
+CP09_CD1_T1;Paso27:fCheckPagoFact;NE;
+CP09_CD1_T1;Paso28:fExpandiryBuscar;NE;
+CP09_CD1_T1;Paso29:fCheckPagoFact;NE;
+CP09_CD1_T1;Paso30:fEnviarPedido;NE;
+CP09_CD1_T1;Paso31:fEsperaEstado;NE;
+CP09_CD1_T1;Paso32:fValidacPostEnvio1;NE;
+CP09_CD1_T1;Paso33:fValidacPostEnvio2;NE;
+CP09_CD1_T1;Paso34:fVista360;OK;
+CP09_CD1_T1;Paso35:fBuscarActivo;OK;
+CP09_CD1_T1;Paso36:fValidarUnPerfil;NE;
+
+
+Informe de DATOS de salida
+---------------------------
+CP09_CD1;UltimoPasoOK;51;
+CP09_CD1;UltimoTramite;1;
+CP09_CD1;T1_NroPedido;1-1740662298;
+CP09_CD1_T1;NroServicio;85975353;
+CP09_CD1_T1;NroServicio;85975353;
+
+
+Informe de Bugs
+-----------------
+
+
+Informe de Errores imprevistos de sistema
+------------------------------------------------
+CP09_CD1;Mensaje ME;Script=Comun.AceptarVtnasIEBrowser Línea=36 Método=findChildrenWithProperties Error=
+GetChildren(); Error:(-1018) - Could not find Siebel application object. Clase=com.rational.test.ft.Domain.Siebel.SiebelMethodExecutionFailureException Objeto=DomainTestObject(Ref:RemoteProxyReference{testContext:1337ea104005652, objectId:Siebel, testObjectClass:com.rational.test.ft.object.interfaces.DomainTestObject});
+
+CP09_CD1;Mensaje UE;Script=PasosFunc.fBuscarCtaFact Línea=0 Error="Stop button was hit";
+
+CP09_CD1;Mensaje UE;Script=CasosPrueba.CasosPrueba Línea=0 Error="Stop button was hit";
+
+
+----------------------------------------------------------------------------------------------------------
+Tipo Parada:ObjectMethodException - Mensaje de Parada: Script=Comun.AceptarVtnasIEBrowser Línea=36 Método=findChildrenWithProperties Error=
+GetChildren(); Error:(-1018) - Could not find Siebel application object. Clase=com.rational.test.ft.Domain.Siebel.SiebelMethodExecutionFailureException Objeto=DomainTestObject(Ref:RemoteProxyReference{testContext:1337ea104005652, objectId:Siebel, testObjectClass:com.rational.test.ft.object.interfaces.DomainTestObject})
+- Fin del Informe del Caso Prueba_Conj Datos: CP09_CD1
+----------------------------------------------------------------------------------------------------------

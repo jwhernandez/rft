@@ -16,8 +16,8 @@ import com.ibm.xtq.xslt.xylem.xpath20.parser.ParserBase;
 /**
  * Script Name   : <b>ValidarGenCtaFact</b>
  * Descripcion   : Recibe si debe estar habilitado o no y realiza la validación
- * @Param 0) OK/FALSE 1) true /false para saber que se debe validar
- * Ej: true res
+ * @Param 0) OK/NOK 1) true /false para saber que se debe validar 2) Tramite
+ * Ej: res FALSE PortIn
  * @since  2016/02/15
  * @author SS
  */
@@ -25,16 +25,26 @@ public class ValidarGenCtaFact extends ValidarGenCtaFactHelper
 {
 	public void testMain(Object[] argu) 
 	{
-		{
-			argu[1] = "OK";
-			boolean Habilitado = Boolean.parseBoolean(argu[0].toString());
+		ImpreEncabezadoScript(getScriptArgs(), getScriptName( ).toString());
+		
+		String sTramite = "Venta";
+		if (argu.length >= 3 ) { 
+			sTramite = argu[2].toString(); // tramite
+		}
+		
+		argu[0] = "OK";
+		boolean Habilitado = Boolean.parseBoolean(argu[1].toString().toLowerCase());
 
+		if (!sTramite.equals("PortIn")){
 			IFtVerificationPoint GenCtaFactVP = vpManual("GenerarCtaFact", Habilitado, GenCtaFact().isEnabled());
-			if (!GenCtaFactVP.performTest()) {
-				argu[1] = "NOK";
-			}
-			System.out.println("Resultado=" + argu[1]);
-		}	
+			if (!GenCtaFactVP.performTest()) argu[0] = "NOK"; 
+		}
+		if (sTramite.equals("PortIn")){
+			IFtVerificationPoint GenCtaFactPIVP = vpManual("GenerarCtaFactPI", Habilitado, GenCtaFactPI().isEnabled());
+			if (!GenCtaFactPIVP.performTest()) argu[0] = "NOK";
+		}
+
+		ImpreResultadoScript(getScriptName( ).toString(), argu[0].toString());
 	}
 }
 

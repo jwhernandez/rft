@@ -1,0 +1,718 @@
+Inicio de consola en archivo
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.ConsolaaFile
+Resultado:OK
+-----------------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.IngresarDataPoolPasos
+Cantidad de argumentos:2
+Argumento 0:=null
+Argumento 1:=CPUNI
+-----------------------------------------------------------
+NumeroCaso = CPUNI
+Path DP Entrada = C:\Users\Sandra\IBM\rationalsdp\workspace\RFT_ICE\\ConfiguracionPasosEscenarios File de Entrada = DP_Pasos_CPUNI.rftdp
+false
+false
+--------------------------------------------------------------------
+CPUNIPasos=fLogin
+CPUNIParam=NA
+CPUNIEjecuta=FALSE
+CPUNICond=NA
+CPUNIErrorStop=TRUE
+CPUNIReEjec=Siempre
+--------------------------------------------------------------------
+CPUNIPasos=fBRM_Login
+CPUNIParam=NA
+CPUNIEjecuta=FALSE
+CPUNICond=NA
+CPUNIErrorStop=TRUE
+CPUNIReEjec=Siempre
+--------------------------------------------------------------------
+CPUNIPasos=fBRM_BuscarCliente
+CPUNIParam=NA
+CPUNIEjecuta=FALSE
+CPUNICond=NA
+CPUNIErrorStop=TRUE
+CPUNIReEjec=Siempre
+--------------------------------------------------------------------
+CPUNIPasos=fBRM_FavoritoValidarCambioNum
+CPUNIParam=NA
+CPUNIEjecuta=FALSE
+CPUNICond=NA
+CPUNIErrorStop=TRUE
+CPUNIReEjec=Nunca
+--------------------------------------------------------------------
+CPUNIPasos=fBRM_Logout
+CPUNIParam=NA
+CPUNIEjecuta=FALSE
+CPUNICond=NA
+CPUNIErrorStop=TRUE
+CPUNIReEjec=Nunca
+--------------------------------------------------------------------
+CPUNIPasos=fBRM_ValidarProductos
+CPUNIParam=1
+CPUNIEjecuta=FALSE
+CPUNICond=NA
+CPUNIErrorStop=FALSE
+CPUNIReEjec=Nunca
+--------------------------------------------------------------------
+CPUNIPasos=fBRM_ValidarProductos
+CPUNIParam=2
+CPUNIEjecuta=FALSE
+CPUNICond=NA
+CPUNIErrorStop=FALSE
+CPUNIReEjec=Nunca
+--------------------------------------------------------------------
+CPUNIPasos=fValidarAtributosPedido
+CPUNIParam=1
+CPUNIEjecuta=FALSE
+CPUNICond=NA
+CPUNIErrorStop=TRUE
+CPUNIReEjec=Siempre
+--------------------------------------------------------------------
+CPUNIPasos=fCompraPlanCategoriaCatalogo
+CPUNIParam=1
+CPUNIEjecuta=FALSE
+CPUNICond=NA
+CPUNIErrorStop=TRUE
+CPUNIReEjec=1-2
+--------------------------------------------------------------------
+CPUNIPasos=fBRM_Logout
+CPUNIParam=NA
+CPUNIEjecuta=FALSE
+CPUNICond=NA
+CPUNIErrorStop=TRUE
+CPUNIReEjec=Siempre
+--------------------------------------------------------------------
+CPUNIPasos=fCrearLE_Ped
+CPUNIParam=1
+CPUNIEjecuta=TRUE
+CPUNICond=NA
+CPUNIErrorStop=TRUE
+CPUNIReEjec=Nunca
+--------------------------------------------------------------------
+CPUNIPasos=fCrearLE_Ped
+CPUNIParam=2
+CPUNIEjecuta=TRUE
+CPUNICond=NA
+CPUNIErrorStop=TRUE
+CPUNIReEjec=Nunca
+--------------------------------------------------------------------
+CPUNIPasos=AgregarNum_a_LE_Ped
+CPUNIParam=3
+CPUNIEjecuta=TRUE
+CPUNICond=NA
+CPUNIErrorStop=TRUE
+CPUNIReEjec=Nunca
+--------------------------------------------------------------------
+CPUNIPasos=AgregarNum_a_LE_Ped
+CPUNIParam=4
+CPUNIEjecuta=TRUE
+CPUNICond=NA
+CPUNIErrorStop=TRUE
+CPUNIReEjec=Nunca
+--------------------------------------------------------------------
+CPUNIPasos=FIN
+CPUNIParam=null
+CPUNIEjecuta=null
+CPUNICond=null
+CPUNIErrorStop=false
+CPUNIReEjec=null
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.IngresarDataPoolPasos
+Resultado:OK
+-----------------------------------------------------------
+----------------------------------
+Se actualizan los datos de entrada
+----------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.LeerDatosEntrada
+Cantidad de argumentos:4
+Argumento 0:=null
+Argumento 1:=CPUNI_CD1
+Argumento 2:=QA
+Argumento 3:=Todo
+-----------------------------------------------------------
+Path DP Entrada = C:\Users\Sandra\IBM\rationalsdp\workspace\RFT_ICE_USR\\Regresion\\QA\\ File de Entrada = CPUNI_CD1.rftdp
+***********************************************************
+Tramite=1
+NumeroCaso_ConjuntoDatos_Tramite = CPUNI_CD1_T1
+Ambiente = QA
+***********************************************************
+--------------------------------------------------------------------
+Dato = LE Num Set 4
+Cantidad Variables = 1
+Valor = DPM0019
+Variable1= LEMsj4
+Dato DPM0019 leido del dp = DPM0019
+--------------------------------------------------------------------
+Dato = LE Num Set 4
+Cantidad Variables = 1
+Valor = 10101010
+Variable1= LETel4
+Dato 10101010 leido del dp = 10101010
+--------------------------------------------------------------------
+Dato = LE Num Set 4
+Cantidad Variables = 1
+Valor = true
+Variable1= LEVolverPed4
+Dato true leido del dp = true
+--------------------------------------------------------------------
+Dato = LE Num Set 4
+Cantidad Variables = 1
+Valor = true
+Variable1= LEDesdePed4
+Dato true leido del dp = true
+--------------------------------------------------------------------
+Dato = LE Num Set 3
+Cantidad Variables = 1
+Valor = NA
+Variable1= LEMsj3
+Dato NA leido del dp = NA
+--------------------------------------------------------------------
+Dato = LE Num Set 3
+Cantidad Variables = 1
+Valor = 24314578
+Variable1= LETel3
+Dato 24314578 leido del dp = 24314578
+--------------------------------------------------------------------
+Dato = LE Num Set 3
+Cantidad Variables = 1
+Valor = true
+Variable1= LEVolverPed3
+Dato true leido del dp = true
+--------------------------------------------------------------------
+Dato = LE Num Set 3
+Cantidad Variables = 1
+Valor = false
+Variable1= LEDesdePed3
+Dato false leido del dp = false
+--------------------------------------------------------------------
+Dato = LE Set 2
+Cantidad Variables = 1
+Valor = false
+Variable1= LEVolverPed2
+Dato false leido del dp = false
+--------------------------------------------------------------------
+Dato = LE Set 2
+Cantidad Variables = 1
+Valor = true
+Variable1= LEDesdePed2
+Dato true leido del dp = true
+--------------------------------------------------------------------
+Dato = LE Set 2
+Cantidad Variables = 1
+Valor = Número de teléfono
+Variable1= LETipo2
+Dato Número de teléfono leido del dp = Número de teléfono
+--------------------------------------------------------------------
+Dato = LE Set 1
+Cantidad Variables = 1
+Valor = true
+Variable1= LEVolverPed1
+Dato true leido del dp = true
+--------------------------------------------------------------------
+Dato = LE Set 1
+Cantidad Variables = 1
+Valor = true
+Variable1= LEDesdePed1
+Dato true leido del dp = true
+--------------------------------------------------------------------
+Dato = LE Set 1
+Cantidad Variables = 1
+Valor = Número de SMS
+Variable1= LETipo1
+Dato Número de SMS leido del dp = Número de SMS
+--------------------------------------------------------------------
+Dato = BRM Prod Set 2
+Cantidad Variables = 1
+Valor = Activo
+Variable1= BRM_Estado2
+Dato Activo leido del dp = Activo
+--------------------------------------------------------------------
+Dato = BRM Prod Set 2
+Cantidad Variables = 1
+Valor = ALL
+Variable1= BRM_Prod2
+Dato ALL leido del dp = ALL
+--------------------------------------------------------------------
+Dato = BRM Prod Set 2
+Cantidad Variables = 1
+Valor = <>
+Variable1= BRM_Operador2
+Dato <> leido del dp = <>
+--------------------------------------------------------------------
+Dato = BRM Prod Set 1
+Cantidad Variables = 1
+Valor = Activo
+Variable1= BRM_Estado1
+Dato Activo leido del dp = Activo
+--------------------------------------------------------------------
+Dato = BRM Prod Set 1
+Cantidad Variables = 1
+Valor = Descuento Basico  GPRS
+Variable1= BRM_Prod1
+Dato Descuento Basico  GPRS leido del dp = Descuento Basico  GPRS
+--------------------------------------------------------------------
+Dato = BRM Prod Set 1
+Cantidad Variables = 1
+Valor = =
+Variable1= BRM_Operador1
+Dato = leido del dp = =
+--------------------------------------------------------------------
+Dato = BRM Login
+Cantidad Variables = 1
+Valor = facute03
+Variable1= BRM_pass
+Dato facute03 leido del dp = facute03
+--------------------------------------------------------------------
+Dato = BRM Login
+Cantidad Variables = 1
+Valor = root.0.0.0.1
+Variable1= BRM_usr
+Dato root.0.0.0.1 leido del dp = root.0.0.0.1
+--------------------------------------------------------------------
+Dato = BRM Cuenta
+Cantidad Variables = 1
+Valor = 101735341333
+Variable1= BRM_Cuenta
+Dato 101735341333 leido del dp = 101735341333
+--------------------------------------------------------------------
+Dato = Favorito BRM
+Cantidad Variables = 1
+Valor = TELCO/GSM/SMS
+Variable1= BRM_Servicio
+Dato TELCO/GSM/SMS leido del dp = TELCO/GSM/SMS
+--------------------------------------------------------------------
+Dato = Favorito BRM
+Cantidad Variables = 1
+Valor = 88888888
+Variable1= BRM_FavNum
+Dato 88888888 leido del dp = 88888888
+--------------------------------------------------------------------
+Dato = Favorito BRM
+Cantidad Variables = 1
+Valor = Numero Kolbi SMS Favorito
+Variable1= BRM_FavProd
+Dato Numero Kolbi SMS Favorito leido del dp = Numero Kolbi SMS Favorito
+--------------------------------------------------------------------
+Dato =  Atributos set 1
+Cantidad Variables = 1
+Valor = 3
+Variable1= Cantidad1
+Dato 3 leido del dp = 3
+--------------------------------------------------------------------
+Dato =  Atributos set 1
+Cantidad Variables = 1
+Valor = days
+Variable1= Valor3_1
+Dato days leido del dp = days
+--------------------------------------------------------------------
+Dato =  Atributos set 1
+Cantidad Variables = 1
+Valor = Unidad
+Variable1= Nombre3_1
+Dato Unidad leido del dp = Unidad
+--------------------------------------------------------------------
+Dato =  Atributos set 1
+Cantidad Variables = 1
+Valor = 0
+Variable1= Valor2_1
+Dato 0 leido del dp = 0
+--------------------------------------------------------------------
+Dato =  Atributos set 1
+Cantidad Variables = 1
+Valor = Duracion inicio
+Variable1= Nombre2_1
+Dato Duracion inicio leido del dp = Duracion inicio
+--------------------------------------------------------------------
+Dato =  Atributos set 1
+Cantidad Variables = 1
+Valor = 90
+Variable1= Valor1_1
+Dato 90 leido del dp = 90
+--------------------------------------------------------------------
+Dato =  Atributos set 1
+Cantidad Variables = 1
+Valor = Duracion fin
+Variable1= Nombre1_1
+Dato Duracion fin leido del dp = Duracion fin
+--------------------------------------------------------------------
+Dato = TipoCat4_1
+Cantidad Variables = 1
+Valor = NA
+Variable1= TipoCat4_1
+Dato NA leido del dp = NA
+--------------------------------------------------------------------
+Dato = Cat3_1
+Cantidad Variables = 1
+Valor = 24 Meses SIN 4GLTE
+Variable1= Cat3_1
+Dato 24 Meses SIN 4GLTE leido del dp = 24 Meses SIN 4GLTE
+--------------------------------------------------------------------
+Dato = TipoCat3_1
+Cantidad Variables = 1
+Valor = T2
+Variable1= TipoCat3_1
+Dato T2 leido del dp = T2
+--------------------------------------------------------------------
+Dato = Cat2_1
+Cantidad Variables = 1
+Valor = Profesional
+Variable1= Cat2_1
+Dato Profesional leido del dp = Profesional
+--------------------------------------------------------------------
+Dato = TipoCat2_1
+Cantidad Variables = 1
+Valor = T2
+Variable1= TipoCat2_1
+Dato T2 leido del dp = T2
+--------------------------------------------------------------------
+Dato = Cat1_1
+Cantidad Variables = 1
+Valor = Nueva Generación Kölbi
+Variable1= Cat1_1
+Dato Nueva Generación Kölbi leido del dp = Nueva Generación Kölbi
+--------------------------------------------------------------------
+Dato = TipoCat1_1
+Cantidad Variables = 1
+Valor = T1
+Variable1= TipoCat1_1
+Dato T1 leido del dp = T1
+--------------------------------------------------------------------
+Dato = Plan1
+Cantidad Variables = 1
+Valor = PLAN PROFESIONAL 1 24 M
+Variable1= Plan1
+Dato PLAN PROFESIONAL 1 24 M leido del dp = PLAN PROFESIONAL 1 24 M
+--------------------------------------------------------------------
+Dato = Tramite
+Cantidad Variables = 1
+Valor = Venta
+Variable1= Tramite
+Dato Venta leido del dp = Venta
+--------------------------------------------------------------------
+Dato = Buscar set 1
+Cantidad Variables = 1
+Valor = Servicio Datos
+Variable1= PROD1
+Dato Servicio Datos leido del dp = Servicio Datos
+--------------------------------------------------------------------
+Dato = Buscar set 1
+Cantidad Variables = 1
+Valor = Si
+Variable1= PROD_DesdeIni1
+Dato Si leido del dp = Si
+--------------------------------------------------------------------
+Dato = NroServicio
+Cantidad Variables = 1
+Valor = 89844664
+Variable1= NumeroServicio
+Dato 89844664 leido del dp = 89844664
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.LeerDatosEntrada
+Resultado:OK
+-----------------------------------------------------------
+----------------------------------
+Se lee el último trámite y paso
+----------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.LeerDatoSalidaUltPasoEjec
+Cantidad de argumentos:3
+Argumento 0:=null
+Argumento 1:=CPUNI_CD1
+Argumento 2:=QA
+-----------------------------------------------------------
+DP Salida en USR=C:\Users\Sandra\IBM\rationalsdp\workspace\RFT_ICE_USR\\Regresion\\QA\\-_SeguimientoEjecucion.rftdp
+NumeroCaso = CPUNI_CD1
+Ambiente = QA
+UltimoPasoOK1
+UltimoTramite1
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.LeerDatoSalidaUltPasoEjec
+Resultado:OK
+-----------------------------------------------------------
+Reinicio automatico en paso :2
+---------------------------------------
+Se leen los datos de salida del tramite
+---------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.LeerDatosSalida
+Cantidad de argumentos:4
+Argumento 0:=null
+Argumento 1:=CPUNI_CD1
+Argumento 2:=QA
+Argumento 3:=T1
+-----------------------------------------------------------
+NumeroCaso = CPUNI_CD1
+Ambiente = QA
+T1_NomListaEspecial=1-1722248362
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.LeerDatosSalida
+Resultado:OK
+-----------------------------------------------------------
+Script a validar:fLogin
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.ValidaPasoSiEjecuta
+Cantidad de argumentos:9
+Argumento 0:=null
+Argumento 1:=QA
+Argumento 2:=2
+Argumento 3:=1
+Argumento 4:=false
+Argumento 5:=siempre
+Argumento 6:=na
+Argumento 7:=CPUNI_CD1_T1
+Argumento 8:=NA
+-----------------------------------------------------------
+Desde:0 Hasta:1000
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.ValidaPasoSiEjecuta
+Resultado:false
+-----------------------------------------------------------
+Script a validar:fBRM_Login
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.ValidaPasoSiEjecuta
+Cantidad de argumentos:9
+Argumento 0:=false
+Argumento 1:=QA
+Argumento 2:=2
+Argumento 3:=2
+Argumento 4:=false
+Argumento 5:=siempre
+Argumento 6:=na
+Argumento 7:=CPUNI_CD1_T1
+Argumento 8:=NA
+-----------------------------------------------------------
+Desde:0 Hasta:1000
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.ValidaPasoSiEjecuta
+Resultado:false
+-----------------------------------------------------------
+Script a validar:fBRM_BuscarCliente
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.ValidaPasoSiEjecuta
+Cantidad de argumentos:9
+Argumento 0:=false
+Argumento 1:=QA
+Argumento 2:=2
+Argumento 3:=3
+Argumento 4:=false
+Argumento 5:=siempre
+Argumento 6:=na
+Argumento 7:=CPUNI_CD1_T1
+Argumento 8:=NA
+-----------------------------------------------------------
+Desde:0 Hasta:1000
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.ValidaPasoSiEjecuta
+Resultado:false
+-----------------------------------------------------------
+Script a validar:fBRM_FavoritoValidarCambioNum
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.ValidaPasoSiEjecuta
+Cantidad de argumentos:9
+Argumento 0:=false
+Argumento 1:=QA
+Argumento 2:=2
+Argumento 3:=4
+Argumento 4:=false
+Argumento 5:=nunca
+Argumento 6:=na
+Argumento 7:=CPUNI_CD1_T1
+Argumento 8:=NA
+-----------------------------------------------------------
+Desde:0 Hasta:1000
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.ValidaPasoSiEjecuta
+Resultado:false
+-----------------------------------------------------------
+Script a validar:fBRM_Logout
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.ValidaPasoSiEjecuta
+Cantidad de argumentos:9
+Argumento 0:=false
+Argumento 1:=QA
+Argumento 2:=2
+Argumento 3:=5
+Argumento 4:=false
+Argumento 5:=nunca
+Argumento 6:=na
+Argumento 7:=CPUNI_CD1_T1
+Argumento 8:=NA
+-----------------------------------------------------------
+Desde:0 Hasta:1000
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.ValidaPasoSiEjecuta
+Resultado:false
+-----------------------------------------------------------
+Script a validar:fBRM_ValidarProductos
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.ValidaPasoSiEjecuta
+Cantidad de argumentos:9
+Argumento 0:=false
+Argumento 1:=QA
+Argumento 2:=2
+Argumento 3:=6
+Argumento 4:=false
+Argumento 5:=nunca
+Argumento 6:=na
+Argumento 7:=CPUNI_CD1_T1
+Argumento 8:=1
+-----------------------------------------------------------
+Desde:0 Hasta:1000
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.ValidaPasoSiEjecuta
+Resultado:false
+-----------------------------------------------------------
+Script a validar:fBRM_ValidarProductos
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.ValidaPasoSiEjecuta
+Cantidad de argumentos:9
+Argumento 0:=false
+Argumento 1:=QA
+Argumento 2:=2
+Argumento 3:=7
+Argumento 4:=false
+Argumento 5:=nunca
+Argumento 6:=na
+Argumento 7:=CPUNI_CD1_T1
+Argumento 8:=2
+-----------------------------------------------------------
+Desde:0 Hasta:1000
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.ValidaPasoSiEjecuta
+Resultado:false
+-----------------------------------------------------------
+Script a validar:fValidarAtributosPedido
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.ValidaPasoSiEjecuta
+Cantidad de argumentos:9
+Argumento 0:=false
+Argumento 1:=QA
+Argumento 2:=2
+Argumento 3:=8
+Argumento 4:=false
+Argumento 5:=siempre
+Argumento 6:=na
+Argumento 7:=CPUNI_CD1_T1
+Argumento 8:=1
+-----------------------------------------------------------
+Desde:0 Hasta:1000
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.ValidaPasoSiEjecuta
+Resultado:false
+-----------------------------------------------------------
+Script a validar:fCompraPlanCategoriaCatalogo
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.ValidaPasoSiEjecuta
+Cantidad de argumentos:9
+Argumento 0:=false
+Argumento 1:=QA
+Argumento 2:=2
+Argumento 3:=9
+Argumento 4:=false
+Argumento 5:=1-2
+Argumento 6:=na
+Argumento 7:=CPUNI_CD1_T1
+Argumento 8:=1
+-----------------------------------------------------------
+Desde:1 Hasta:2
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.ValidaPasoSiEjecuta
+Resultado:false
+-----------------------------------------------------------
+Script a validar:fBRM_Logout
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.ValidaPasoSiEjecuta
+Cantidad de argumentos:9
+Argumento 0:=false
+Argumento 1:=QA
+Argumento 2:=2
+Argumento 3:=10
+Argumento 4:=false
+Argumento 5:=siempre
+Argumento 6:=na
+Argumento 7:=CPUNI_CD1_T1
+Argumento 8:=NA
+-----------------------------------------------------------
+Desde:0 Hasta:1000
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.ValidaPasoSiEjecuta
+Resultado:false
+-----------------------------------------------------------
+Script a validar:fCrearLE_Ped
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.ValidaPasoSiEjecuta
+Cantidad de argumentos:9
+Argumento 0:=false
+Argumento 1:=QA
+Argumento 2:=2
+Argumento 3:=11
+Argumento 4:=true
+Argumento 5:=nunca
+Argumento 6:=na
+Argumento 7:=CPUNI_CD1_T1
+Argumento 8:=1
+-----------------------------------------------------------
+Desde:0 Hasta:1000
+Se analiza si el paso es condicionante o condicionado
+Se analiza si el paso ejecuta en una re-ejecución
+GetLogin:NOK
+Paso:11 Paso desde:2
+Paso:true
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.ValidaPasoSiEjecuta
+Resultado:true
+-----------------------------------------------------------
+ 
+-------------------------------------------------
+Inicio de Paso: 11
+-------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.PasosFunc.fCrearLE_Ped
+Cantidad de argumentos:5
+Argumento 0:=CPUNI_CD1_T1
+Argumento 1:=1
+Argumento 2:=QA
+Argumento 3:=true
+Argumento 4:=Paso11
+-----------------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.CrearLE_Ped
+Cantidad de argumentos:6
+Argumento 0:=null
+Argumento 1:=Número de SMS
+Argumento 2:=true
+Argumento 3:=true
+Argumento 4:=null
+Argumento 5:=Venta
+-----------------------------------------------------------
+##################################################################
+getThrowableclassname Script=Comun.CrearLE_Ped Línea=66 Método=Select Error=
+SetActiveControl("Special Rating List Type"); Error:(-1022) - System error. Debug info: Failed to execute method id 27 with args ((Special Rating List Type,1)). Reason: Blocked. Clase=com.rational.test.ft.Domain.Siebel.SiebelMethodExecutionFailureException Objeto=siebel.SiebPicklistTestObject(Nombre: ListaEsp, Correlación: SpecialRatingListType)
+##################################################################
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+onUnhandledException=Script=Comun.CrearLE_Ped Línea=0 Error=
+SetActiveControl("Special Rating List Type"); Error:(-1022) - System error. Debug info: Failed to execute method id 27 with args ((Special Rating List Type,1)). Reason: Blocked.
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+onUnhandledException=Script=PasosFunc.fCrearLE_Ped Línea=0 Error=CRFCN0018E: La línea 66 del script 66 contiene una excepción.
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+CPUNI_CD1_T1;LeerDatosEntrada;OK;
+CPUNI_CD1_T1;LeerDatoSalidaUltPasoEjec;OK;
+CPUNI_CD1_T1;LeerDatosSalida;OK;
+CPUNI_CD1_T1;Paso1:fLogin;NE;
+CPUNI_CD1_T1;Paso2:fBRM_Login;NE;
+CPUNI_CD1_T1;Paso3:fBRM_BuscarCliente;NE;
+CPUNI_CD1_T1;Paso4:fBRM_FavoritoValidarCambioNum;NE;
+CPUNI_CD1_T1;Paso5:fBRM_Logout;NE;
+CPUNI_CD1_T1;Paso6:fBRM_ValidarProductos;NE;
+CPUNI_CD1_T1;Paso7:fBRM_ValidarProductos;NE;
+CPUNI_CD1_T1;Paso8:fValidarAtributosPedido;NE;
+CPUNI_CD1_T1;Paso9:fCompraPlanCategoriaCatalogo;NE;
+CPUNI_CD1_T1;Paso10:fBRM_Logout;NE;
+DATOS
+CPUNI_CD1;UltimoPasoOK;1;
+CPUNI_CD1;UltimoTramite;1;
+CPUNI_CD1;T1_NomListaEspecial;1-1722248362;

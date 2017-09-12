@@ -1,0 +1,50 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: CP76_CD1 Desde paso: 9 Modo:Real
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatosEntrada'                                                  'OK'                          
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'                                         'OK'                          
+'Paso    0  -  LeerDatosSalida'                                                   'OK'                          
+'Paso    1  -  fLogin'                                                            'OK'                          
+'Paso    2  -  fVista360'                                                         'NE'                          
+'Paso    3  -  fNuevaVenta'                                                       'NE'                          
+'Paso    4  -  fBuscarPedidoVenta'                                                'OK'                          
+'Paso    5  -  fObtenerMorosidad'                                                 'NE'                          
+'Paso    6  -  fIngresarAutenticacion'                                            'NE'                          
+'Paso    7  -  fCompraPlanCategoriaCatalogo'                                      'NE'                          
+'Paso    8  -  fIngresarSIM'                                                      'NE'                          
+
+
+Informe de DATOS de salida
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoPasoOK'                 '8'                           
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoTramite'                '1'                           
+'Paso    0  -  LeerDatosSalida'                    'T1_NroPedido'                 '1-1742458762'                
+
+
+Informe de Bugs
+-----------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------
+Tipo Parada         = Excepción no esperada
+Mensaje de Parada   = Script=ValidarMensaje Línea=0 Error=null
+Parada en paso	    = 9
+
+
+-----------------------------------------------------------------------------------------
+Fin del Informe del Caso Prueba_Conj Datos: CP76_CD1
+-----------------------------------------------------------------------------------------
+
+
+Informe de Errores imprevistos de sistema
+-----------------------------------------------------------------------------------------
+'Paso    9  -  Accion'                             'Excepción no esperada'        'Script=ValidarMensaje Línea=0 Error=null'
+
+'Paso    9  -  Accion'                             'Excepción no esperada'        'Script=GenerarCtaFact Línea=0 Error=CRFCN0018E: The 60 line of the 60 script contains an exception.'
+
+'Paso    9  -  Accion'                             'Excepción no esperada'        'Script=fGenerarCtaFact Línea=0 Error=CRFCN0018E: The 62 line of the 62 script contains an exception.'
+

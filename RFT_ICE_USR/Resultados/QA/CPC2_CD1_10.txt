@@ -1,0 +1,76 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: CPC2_CD1 Desde paso: 10 Modo:Real
+Modulo desde Paso : 1 Hasta paso: 200
+Hora de Inicio de la Ejecucion : 2017/09/08 13:46:25
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatosEntrada'                                                  'OK'                          
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'                                         'OK'                          
+'Paso    0  -  LeerDatosSalida'                                                   'OK'                          
+'Paso    1  -  fLogin'                                                            'OK'                          
+'Paso    2  -  fVista360'                                                         'NE'                          
+'Paso    3  -  fBuscarActivo'                                                     'NE'                          
+'Paso    4  -  fBuscarCtaFact'                                                    'NE'                          
+'Paso    5  -  fNuevaPostvta'                                                     'NE'                          
+'Paso    6  -  fBuscarPedidoVenta'                                                'NE'                          
+'Paso    7  -  fValidarAgencia'                                                   'NE'                          
+'Paso    8  -  fIngresarAutenticacion'                                            'NE'                          
+'Paso    9  -  fValidarAccion'                                                    'NE'                          
+'Paso   10  -  fValidarMotivoPedido'                                              'NE'                          
+'Paso   11  -  fEvaluarExpresionCondicionante'                                    'OK'                          
+'Paso   11  -  fIngresarIMEI'                                                     'NA'                          
+'Paso   12  -  fEvaluarExpresionCondicionante'                                    'OK'                          
+'Paso   12  -  fTerminalCliente'                                                  'NA'                          
+'Paso   13  -  fEvaluarExpresionCondicionante'                                    'OK'                          
+'Paso   13  -  fIngresarSIM'                                                      'NA'                          
+'Paso   14  -  fEvaluarExpresionCondicionante'                                    'OK'                          
+'Paso   14  -  fBuscarProducto'                                                   'NA'                          
+'Paso   15  -  fEvaluarExpresionCondicionante'                                    'OK'                          
+'Paso   15  -  fTerminalCliente'                                                  'NA'                          
+'Paso   16  -  fEvaluarExpresionCondicionante'                                    'OK'                          
+'Paso   16  -  fASRM_Login'                                                       'OK'                          
+'Paso   17  -  fEvaluarExpresionCondicionante'                                    'OK'                          
+
+
+Informe de DATOS de salida
+-----------------------------------------------------------------------------------------
+'Paso    0  -  CasosPrueba'                        'Usuario Alternativo '         'JVALERIO1'                   
+'Paso    0  -  CasosPrueba'                        'Clave Alternativa '           'jvalerio1'                   
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoPasoOK'                 '9'                           
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoTramite'                '1'                           
+'Paso    0  -  LeerDatosSalida'                    'T1_NroPedido'                 '1-1776648086'                
+'Paso    0  -  LeerDatosSalida'                    'T1_NroCtaFact'                '101775737110'                
+'Paso   11  -  fIngresarIMEI'                      'Expresion'                    'false'                       
+'Paso   12  -  fTerminalCliente'                   'Expresion'                    'false'                       
+'Paso   13  -  fIngresarSIM'                       'Expresion'                    'false'                       
+'Paso   14  -  fBuscarProducto'                    'Expresion'                    'false'                       
+'Paso   15  -  fTerminalCliente'                   'Expresion'                    'false'                       
+'Paso   16  -  fASRM_Login'                        'Expresion'                    'true'                        
+'Paso   17  -  fASRM_Modificarestadoservicio'      'Expresion'                    'true'                        
+
+
+Informe de Bugs
+-----------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------
+Tipo Parada         = Excepción no esperada
+Mensaje de Parada   = Script=CasosPrueba Línea=0 Error=CallScript error - Caught Error [java.lang.NoClassDefFoundError: Scripts/PasosFunc/fASRM_Modificarestadoservicio (wrong name: Scripts/PasosFunc/fASRM_ModificarEstadoServicio)] when  constructing script [Scripts.PasosFunc.fASRM_Modificarestadoservicio].
+Parada en paso	    = 17
+
+
+-----------------------------------------------------------------------------------------
+Fin del Informe del Caso Prueba_Conj Datos: CPC2_CD1
+-----------------------------------------------------------------------------------------
+
+
+Informe de Errores imprevistos de sistema
+-----------------------------------------------------------------------------------------
+'Paso   17  -  Accion'                             'Excepción no esperada'        'Script=CasosPrueba Línea=0 Error=CallScript error - Caught Error [java.lang.NoClassDefFoundError: Scripts/PasosFunc/fASRM_Modificarestadoservicio (wrong name: Scripts/PasosFunc/fASRM_ModificarEstadoServicio)] when  constructing script [Scripts.PasosFunc.fASRM_Modificarestadoservicio].'
+
+
+Hora de Finalizacion de la Ejecucion: 2017/09/08 13:46:59
+-----------------------------------------------------------------------------------------

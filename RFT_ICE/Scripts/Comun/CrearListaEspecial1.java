@@ -12,7 +12,7 @@ import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 import com.rational.test.ft.sys.SpyMemoryStatistics;
 import com.rational.test.ft.sys.SpyMemory;
 /**
- * Descripción: Crea una lista especial con el nombre pasado como parametro
+ * Descripción: Crea una lista especial con el telefono pasado como parametro
  * @param Parámetros: 0) NOK / OK 1) Tipo de lista Número de teléfono / Número de SMS
  * 2)Desde pedido true/false 3) volver a pedido true false 4) NumTel o NA 5) Nombre lista 
  * 6) Msj a validar o NA 7) Msj real 8) false o true si coincide o no

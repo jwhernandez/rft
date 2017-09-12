@@ -1,0 +1,84 @@
+ <ProductId></ProductId>
+ <Component></Component>
+ <ProductInstance>ProductInstance</ProductInstance>
+<Trace Level="ERROR">
+ <Time Millis="1497276844087"> 2017-06-12 09:14:04.087-06:00</Time>
+ <Server Format="IP">RFT.localdomain</Server>
+ <LogText><![CDATA[Exit, return value = java.lang.OutOfMemoryError: Java heap space]]></LogText>
+ <Source FileName="com.ibm.it.rome.agent.communication.tcpip.TcpipChannel" Method="internalRequestLicense"/>
+ <Thread>Thread-23</Thread>
+ <Principal></Principal>
+</Trace>
+
+ <ProductId></ProductId>
+ <Component></Component>
+ <ProductInstance>ProductInstance</ProductInstance>
+<Trace Level="ERROR">
+ <Time Millis="1497882331171"> 2017-06-19 09:25:31.171-06:00</Time>
+ <Server Format="IP">RFT.localdomain</Server>
+ <LogText><![CDATA[Exit, return value = java.lang.OutOfMemoryError: Java heap space]]></LogText>
+ <Source FileName="com.ibm.it.rome.agent.communication.tcpip.TcpipChannel" Method="internalRequestLicense"/>
+ <Thread>Thread-23</Thread>
+ <Principal></Principal>
+</Trace>
+
+ <ProductId></ProductId>
+ <Component></Component>
+ <ProductInstance>ProductInstance</ProductInstance>
+<Trace Level="ERROR">
+ <Time Millis="1501624109301"> 2017-08-01 16:48:29.301-06:00</Time>
+ <Server Format="IP">RFT.localdomain</Server>
+ <LogText><![CDATA[Exit, return value = java.lang.OutOfMemoryError: Java heap space]]></LogText>
+ <Source FileName="com.ibm.it.rome.agent.communication.tcpip.TcpipChannel" Method="internalRequestLicense"/>
+ <Thread>Thread-23</Thread>
+ <Principal></Principal>
+</Trace>
+
+ <ProductId></ProductId>
+ <Component></Component>
+ <ProductInstance>ProductInstance</ProductInstance>
+<Trace Level="ERROR">
+ <Time Millis="1504199972548"> 2017-08-31 12:19:32.548-06:00</Time>
+ <Server Format="IP">RFT.localdomain</Server>
+ <LogText><![CDATA[Exit, return value = java.lang.OutOfMemoryError: Java heap space]]></LogText>
+ <Source FileName="com.ibm.it.rome.agent.communication.tcpip.TcpipChannel" Method="internalRequestLicense"/>
+ <Thread>Thread-22</Thread>
+ <Principal></Principal>
+</Trace>
+
+ <ProductId></ProductId>
+ <Component></Component>
+ <ProductInstance>ProductInstance</ProductInstance>
+<Trace Level="ERROR">
+ <Time Millis="1504556396070"> 2017-09-04 15:19:56.070-06:00</Time>
+ <Server Format="IP">192.168.129.129</Server>
+ <LogText><![CDATA[Exit, return value = java.lang.OutOfMemoryError: Java heap space]]></LogText>
+ <Source FileName="com.ibm.it.rome.agent.communication.tcpip.TcpipChannel" Method="internalRequestLicense"/>
+ <Thread>Thread-24</Thread>
+ <Principal></Principal>
+</Trace>
+
+ <ProductId></ProductId>
+ <Component></Component>
+ <ProductInstance>ProductInstance</ProductInstance>
+<Trace Level="ERROR">
+ <Time Millis="1504727298698"> 2017-09-06 14:48:18.698-06:00</Time>
+ <Server Format="IP">192.168.129.129</Server>
+ <LogText><![CDATA[Exit, return value = java.lang.OutOfMemoryError: Java heap space]]></LogText>
+ <Source FileName="com.ibm.it.rome.agent.communication.tcpip.TcpipChannel" Method="internalRequestLicense"/>
+ <Thread>Thread-24</Thread>
+ <Principal></Principal>
+</Trace>
+
+ <ProductId></ProductId>
+ <Component></Component>
+ <ProductInstance>ProductInstance</ProductInstance>
+<Trace Level="ERROR">
+ <Time Millis="1504814440355"> 2017-09-07 15:00:40.355-06:00</Time>
+ <Server Format="IP">192.168.129.129</Server>
+ <LogText><![CDATA[Exit, return value = java.lang.OutOfMemoryError: Java heap space]]></LogText>
+ <Source FileName="com.ibm.it.rome.agent.communication.tcpip.TcpipChannel" Method="internalRequestLicense"/>
+ <Thread>Thread-24</Thread>
+ <Principal></Principal>
+</Trace>
+

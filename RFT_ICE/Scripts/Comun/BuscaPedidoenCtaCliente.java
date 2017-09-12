@@ -21,8 +21,9 @@ import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
  */
 public class BuscaPedidoenCtaCliente extends BuscaPedidoenCtaClienteHelper
 {
-	public void testMain(Object[] argu) 
+	public void testMain(Object[] argu) throws RationalTestException 
 	{
+		ImpreEncabezadoScript(getScriptArgs(), getScriptName( ).toString());
 		argu[1] = "No Existe";
 		NewQuery().performAction();
 		String sPedido ="'" + argu[0].toString() + "'"; 
@@ -34,6 +35,7 @@ public class BuscaPedidoenCtaCliente extends BuscaPedidoenCtaClienteHelper
 			argu[1] = "Existe";	
 		}
 		System.out.println("Resutado=" + argu[1]);
+		ImpreResultadoScript(getScriptName( ).toString(), argu[1].toString());
 	}
 }
 

@@ -20,11 +20,11 @@ import com.rational.test.ft.vp.IFtVerificationPoint;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
  * Script Name   : <b>fValidarAgencia</b><br>
- * Generated     : <b>2015/12/27 20:11:21</b><br>
+ * Generated     : <b>2017/03/23 12:12:50</b><br>
  * Description   : Helper class for script<br>
  * Original Host : Windows 7 x86 6.1 <br>
  * 
- * @since  diciembre 27, 2015
+ * @since  marzo 23, 2017
  * @author Sandra
  */
 public abstract class fValidarAgenciaHelper extends libreria.Accion

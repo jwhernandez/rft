@@ -1,0 +1,69 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: CP32_CD1 Desde paso: 28 Modo:Real
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatosEntrada'                                                  'OK'                          
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'                                         'OK'                          
+'Paso    0  -  LeerDatosSalida'                                                   'OK'                          
+'Paso    1  -  fLogin'                                                            'OK'                          
+'Paso    2  -  fASRM_Login'                                                       'NE'                          
+'Paso    3  -  fASRM_ModificarEstadoServicio'                                     'NE'                          
+'Paso    4  -  fASRM_Logout'                                                      'NE'                          
+'Paso    5  -  fVista360'                                                         'NE'                          
+'Paso    6  -  fNuevoPedidoPortIn'                                                'NE'                          
+'Paso    7  -  fValidarMensaje'                                                   'NE'                          
+'Paso    8  -  fValidarEstadoPedPortIn'                                           'NE'                          
+'Paso    9  -  fASRM_Login'                                                       'NE'                          
+'Paso   10  -  fASRM_ModificarEstadoServicio'                                     'NE'                          
+'Paso   11  -  fASRM_Logout'                                                      'NE'                          
+'Paso   12  -  fVista360'                                                         'NE'                          
+'Paso   13  -  fNuevoPedidoPortIn'                                                'NE'                          
+'Paso   14  -  fValidarMensaje'                                                   'NE'                          
+'Paso   15  -  fValidarEstadoPedPortIn'                                           'NE'                          
+'Paso   16  -  fASRM_Login'                                                       'NE'                          
+'Paso   17  -  fASRM_ModificarEstadoServicio'                                     'NE'                          
+'Paso   18  -  fASRM_Logout'                                                      'NE'                          
+'Paso   19  -  fVista360'                                                         'NE'                          
+'Paso   20  -  fNuevoPedidoPortIn'                                                'NE'                          
+'Paso   21  -  fValidarMensaje'                                                   'NE'                          
+'Paso   22  -  fValidarEstadoPedPortIn'                                           'NE'                          
+'Paso   23  -  fVista360'                                                         'NE'                          
+'Paso   24  -  fNuevoPedidoPortIn'                                                'NE'                          
+'Paso   25  -  fValidarMensaje'                                                   'NE'                          
+'Paso   26  -  fCapturarPedidoPortIn'                                             'NE'                          
+'Paso   27  -  fValidarServicio'                                                  'NE'                          
+'Paso   28  -  fBuscarPedidoVentaPI'                                              'OK'                          
+'Paso   29  -  fObtenerMorosidad'                                                 'OK'                          
+
+
+Informe de DATOS de salida
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoPasoOK'                 '27'                          
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoTramite'                '1'                           
+'Paso    0  -  LeerDatosSalida'                    'T1_NroPedido'                 '1-1745657223'                
+'Paso    0  -  LeerDatosSalida'                    'NroServicio'                  '89657337'                    
+
+
+Informe de Bugs
+-----------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------
+Tipo Parada         = NA
+Mensaje de Parada   = NA
+Parada en paso	    = 30
+
+
+-----------------------------------------------------------------------------------------
+Fin del Informe del Caso Prueba_Conj Datos: CP32_CD1
+-----------------------------------------------------------------------------------------
+
+
+Informe de Errores imprevistos de sistema
+-----------------------------------------------------------------------------------------
+
+Hora de Finalizacion de la Ejecucion: 2017/01/27 12:02:43
+-----------------------------------------------------------------------------------------

@@ -1,0 +1,64 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: CP08_CD1 Desde paso: 11 Modo:Real
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+---------------------------
+CP08_CD1_T1;LeerDatosEntrada;OK;
+CP08_CD1_T1;LeerDatoSalidaUltPasoEjec;OK;
+CP08_CD1_T1;LeerDatosSalida;OK;
+CP08_CD1_T1;Paso1:fLogin;OK;
+CP08_CD1_T1;Paso2:fVista360;NE;
+CP08_CD1_T1;Paso3:fBuscarActivo;NE;
+CP08_CD1_T1;Paso4:fBuscarCtaFact;NE;
+CP08_CD1_T1;Paso5:fNuevaPostvta;NE;
+CP08_CD1_T1;Paso6:fBuscarPedidoVenta;OK;
+CP08_CD1_T1;Paso7:fValidarAgencia;NE;
+CP08_CD1_T1;Paso8:fIngresarAutenticacion;NE;
+CP08_CD1_T1;Paso9:fValidarNuevaAccion;NE;
+CP08_CD1_T1;Paso10:fValidarMotivoPedido;NE;
+CP08_CD1_T1;Paso11:fExpandiryBuscar;OK;
+CP08_CD1_T1;Paso12:fCheckPagoFact;OK;
+CP08_CD1_T1;Paso13:fEnviarPedido;OK;
+CP08_CD1_T1;Paso14:fValidarMensaje;OK;
+CP08_CD1_T1;Paso15:fValorarTodo;OK;
+CP08_CD1_T1;Paso16:fCheckPagoFact;OK;
+CP08_CD1_T1;Paso17:fEnviarPedido;OK;
+
+
+Informe de DATOS de salida
+---------------------------
+CP08_CD1;UltimoPasoOK;10;
+CP08_CD1;UltimoTramite;1;
+CP08_CD1;T1_NroPedido;1-1741223815;
+CP08_CD1;UltPasoOK;11;
+CP08_CD1;UltPasoOK;12;
+CP08_CD1;UltPasoOK;13;
+CP08_CD1;UltPasoOK;14;
+CP08_CD1;UltPasoOK;15;
+CP08_CD1;UltPasoOK;16;
+CP08_CD1;UltPasoOK;17;
+
+
+Informe de Bugs
+-----------------
+
+
+Informe de Errores imprevistos de sistema
+------------------------------------------------
+CP08_CD1;Mensaje ME;Script=Comun.EsperaEstado Línea=62 Método=SetText Error=
+SetText("Enrute directo"); Error:(-1022) - System error. Debug info: Failed to execute method id 7 with args (()). Reason: Blocked. Clase=com.rational.test.ft.Domain.Siebel.SiebelMethodExecutionFailureException Objeto=siebel.SiebPicklistTestObject(Nombre: TipoAutenticacion, Correlación: TipoAutenticacion);
+
+CP08_CD1;Mensaje UE;Script=Comun.EsperaEstado Línea=0 Error=
+SetText("Enrute directo"); Error:(-1022) - System error. Debug info: Failed to execute method id 7 with args (()). Reason: Blocked.;
+
+CP08_CD1;Mensaje UE;Script=PasosFunc.fEsperaEstado Línea=0 Error=CRFCN0018E: La línea 62 del script 62 contiene una excepción.;
+
+
+----------------------------------------------------------------------------------------------------------
+Tipo Parada:ObjectMethodException - Mensaje de Parada: Script=Comun.EsperaEstado Línea=62 Método=SetText Error=
+SetText("Enrute directo"); Error:(-1022) - System error. Debug info: Failed to execute method id 7 with args (()). Reason: Blocked. Clase=com.rational.test.ft.Domain.Siebel.SiebelMethodExecutionFailureException Objeto=siebel.SiebPicklistTestObject(Nombre: TipoAutenticacion, Correlación: TipoAutenticacion)
+- Fin del Informe del Caso Prueba_Conj Datos: CP08_CD1
+----------------------------------------------------------------------------------------------------------

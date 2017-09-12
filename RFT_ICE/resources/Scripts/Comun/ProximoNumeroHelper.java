@@ -20,17 +20,17 @@ import com.rational.test.ft.vp.IFtVerificationPoint;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
  * Script Name   : <b>ProximoNumero</b><br>
- * Generated     : <b>2016/01/07 20:53:11</b><br>
+ * Generated     : <b>2016/05/03 09:44:40</b><br>
  * Description   : Helper class for script<br>
  * Original Host : Windows 7 x86 6.1 <br>
  * 
- * @since  enero 07, 2016
+ * @since  mayo 03, 2016
  * @author Sandra
  */
 public abstract class ProximoNumeroHelper extends libreria.Accion
 {
 	/**
-	 * Arbol_lista: with default state.
+	 * LineasPedido: with default state.
 	 *		ActiveRow : 9
 	 * 		ClassName : SiebList
 	 * 		.class : SiebList
@@ -43,7 +43,7 @@ public abstract class ProximoNumeroHelper extends libreria.Accion
                         getMappedTestObject("LineasPedido"));
 	}
 	/**
-	 * Arbol_lista: with specific test context and state.
+	 * LineasPedido: with specific test context and state.
 	 *		ActiveRow : 9
 	 * 		ClassName : SiebList
 	 * 		.class : SiebList
@@ -83,7 +83,7 @@ public abstract class ProximoNumeroHelper extends libreria.Accion
 	 * ICEFirstNumber: with default state.
 	 *		ClassName : SiebButton
 	 * 		.class : SiebButton
-	 * 		RepositoryName : ICEFirstNumber
+	 * 		RepositoryName : RegularExpression((ICEFirstNumber|ObtenerNumeroDisponible))
 	 */
 	protected SiebButtonTestObject PrimerNumero() 
 	{
@@ -94,37 +94,12 @@ public abstract class ProximoNumeroHelper extends libreria.Accion
 	 * ICEFirstNumber: with specific test context and state.
 	 *		ClassName : SiebButton
 	 * 		.class : SiebButton
-	 * 		RepositoryName : ICEFirstNumber
+	 * 		RepositoryName : RegularExpression((ICEFirstNumber|ObtenerNumeroDisponible))
 	 */
 	protected SiebButtonTestObject PrimerNumero(TestObject anchor, long flags) 
 	{
 		return new SiebButtonTestObject(
                         getMappedTestObject("PrimerNumero"), anchor, flags);
-	}
-	
-	/**
-	 * AceptarMensajeHTMLSiebel: with default state.
-	 *		.text : RegularExpression((Aceptar|OK))
-	 * 		.class : Html.DialogButton
-	 * 		.disabled : false
-	 * 		.classIndex : 0
-	 */
-	protected GuiTestObject button_aceptar() 
-	{
-		return new GuiTestObject(
-                        getMappedTestObject("button_aceptar"));
-	}
-	/**
-	 * AceptarMensajeHTMLSiebel: with specific test context and state.
-	 *		.text : RegularExpression((Aceptar|OK))
-	 * 		.class : Html.DialogButton
-	 * 		.disabled : false
-	 * 		.classIndex : 0
-	 */
-	protected GuiTestObject button_aceptar(TestObject anchor, long flags) 
-	{
-		return new GuiTestObject(
-                        getMappedTestObject("button_aceptar"), anchor, flags);
 	}
 	
 	

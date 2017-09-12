@@ -1,0 +1,89 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: CP10_CD1 Desde paso: 84 Modo:Real
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatosEntrada'                                                  'OK'                          
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'                                         'OK'                          
+'Paso    0  -  LeerDatosSalida'                                                   'OK'                          
+'Paso    1  -  fBRM_Login'                                                        'OK'                          
+'Paso    2  -  fBRM_BuscarCliente'                                                'OK'                          
+'Paso    3  -  fBRM_FavoritoValidarCambioNum'                                     'OK'                          
+'Paso    4  -  fBRM_Logout'                                                       'OK'                          
+'Paso    5  -  fLogin'                                                            'OK'                          
+'Paso    6  -  fCambiarVIstaUsuario'                                              'NE'                          
+'Paso    7  -  fVista360'                                                         'NE'                          
+'Paso    8  -  fValidarUnPerfil'                                                  'NE'                          
+'Paso    9  -  fBuscarActivo'                                                     'NE'                          
+'Paso   10  -  fBuscarCtaFact'                                                    'NE'                          
+'Paso   11  -  fValidarUnPerfil'                                                  'NE'                          
+'Paso   12  -  fVista360'                                                         'NE'                          
+'Paso   13  -  fBuscarActivo'                                                     'NE'                          
+'Paso   14  -  fBuscarCtaFact'                                                    'NE'                          
+'Paso   15  -  fNuevaPostvta'                                                     'NE'                          
+'Paso   16  -  fBuscarPedidoVenta'                                                'NE'                          
+'Paso   17  -  fValidarAgencia'                                                   'NE'                          
+'Paso   18  -  fIngresarAutenticacion'                                            'NE'                          
+'Paso   19  -  fASRM_Login'                                                       'NE'                          
+'Paso   20  -  fASRM_ModificarEstadoServicio'                                     'NE'                          
+'Paso   21  -  fASRM_Logout'                                                      'NE'                          
+'Paso   22  -  fProximoNumero'                                                    'NE'                          
+'Paso   23  -  fValidacPostServicio'                                              'NE'                          
+'Paso   24  -  fExpandiryBuscar'                                                  'NE'                          
+'Paso   25  -  fCheckPagoFact'                                                    'NE'                          
+'Paso   26  -  fEnviarPedido'                                                     'NE'                          
+'Paso   27  -  fValidarMensaje'                                                   'NE'                          
+'Paso   28  -  fValorarTodo'                                                      'NE'                          
+'Paso   29  -  fEnviarPedido'                                                     'NE'                          
+'Paso   30  -  fEsperaEstado'                                                     'NE'                          
+'Paso   31  -  fValidacPostEnvio1'                                                'NE'                          
+'Paso   32  -  fVista360'                                                         'NE'                          
+'Paso   33  -  fBuscarActivo'                                                     'NE'                          
+'Paso   34  -  fBRM_Login'                                                        'NE'                          
+'Paso   35  -  fBRM.FavoritoValidarCambioNum'                                     'NE'                          
+'Paso   36  -  fBRM_Logout'                                                       'NE'                          
+'Paso   37  -  fCambiarVIstaUsuario'                                              'NE'                          
+'Paso   38  -  fAdministrarTemporadas'                                            'NE'                          
+'Paso   39  -  fCambiarVIstaUsuario'                                              'NE'                          
+'Paso   40  -  fVista360'                                                         'OK'                          
+'Paso   41  -  fBuscarActivo'                                                     'OK'                          
+'Paso   42  -  fBuscarCtaFact'                                                    'OK'                          
+'Paso   43  -  fNuevaPostvta'                                                     'NE'                          
+'Paso   44  -  fBuscarPedidoVenta'                                                'NE'                          
+'Paso   45  -  fPersonalizarFavorito'                                             'NE'                          
+'Paso   46  -  fIngresarAutenticacion'                                            'NE'                          
+'Paso   47  -  fExpandiryBuscar'                                                  'NE'                          
+'Paso   48  -  fExpandiryBuscar'                                                  'NE'                          
+'Paso   49  -  fExpandiryBuscar'                                                  'NE'                          
+'Paso   50  -  fBuscarProducto'                                                   'NE'                          
+'Paso   51  -  fBuscarProducto'                                                   'NE'                          
+'Paso   52  -  fBuscarProducto'                                                   'NE'                          
+'Paso   53  -  fCrearLE'                                                          'NE'                          
+
+
+Informe de DATOS de salida
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoPasoOK'                 '83'                          
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoTramite'                '1'                           
+'Paso    3  -  BRM_FavoritoValidarCambioNum'       'Billing Type'                 'TELCO/GSM/SMS: <unknown429-20161122-112943-1-13775-1-facute01>'
+'Paso    3  -  BRM_FavoritoValidarCambioNum'       'Producto Fav '                'Numero Kolbi SMS Favorito'   
+'Paso    3  -  BRM_FavoritoValidarCambioNum'       'Num Fav'                      '85542594'                    
+'Paso   41  -  fBuscarActivo'                      'NroServicio'                  '85976767'                    
+'Paso   41  -  fBuscarActivo'                      'NroServicio'                  '85976767'                    
+'Paso   42  -  fBuscarCtaFact'                     'NroCtaFact'                   '101741474592'                
+
+
+Informe de Bugs
+-----------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------
+Tipo Parada         = ObjectMethodException
+Mensaje de Parada   = Script=Comun.BuscarPedidoVenta Línea=38 Método=DrillDownColumn Error=SiebelList.DrillDownColumn(..,0), Row index 0 is not valid or visible; Valid range is [0..-1]; Clase=com.rational.test.ft.Domain.Siebel.SiebelItemNotFoundException Objeto=siebel.SiebListTestObject(Name: ListaPedidos, Map: SiebList)
+
+
+-----------------------------------------------------------------------------------------
+Fin del Informe del Caso Prueba_Conj Datos: CP10_CD1
+-----------------------------------------------------------------------------------------

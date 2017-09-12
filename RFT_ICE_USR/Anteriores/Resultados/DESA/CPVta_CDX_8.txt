@@ -1,0 +1,46 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: CPVta_CDX Desde paso: 8 Modo:Real
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatosEntrada'                                                  'OK'                          
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'                                         'OK'                          
+'Paso    0  -  LeerDatosSalida'                                                   'OK'                          
+'Paso    1  -  fLogin'                                                            'OK'                          
+'Paso    2  -  fVista360'                                                         'NE'                          
+'Paso    3  -  fNuevaVenta'                                                       'NE'                          
+'Paso    4  -  fBuscarPedidoVenta'                                                'NE'                          
+'Paso    5  -  fObtenerMorosidad'                                                 'NE'                          
+'Paso    6  -  fIngresarAutenticacion'                                            'NE'                          
+'Paso    7  -  fCompraPlanCategoriaCatalogoNew'                                   'NE'                          
+'Paso    8  -  fTerminalCliente'                                                  'OK'                          
+
+
+Informe de DATOS de salida
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoPasoOK'                 '7'                           
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoTramite'                '1'                           
+'Paso    0  -  LeerDatosSalida'                    'T1_NroPedido'                 '1-1723716781'                
+
+
+Informe de Bugs
+-----------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------
+Tipo Parada         = Excepción no esperada
+Mensaje de Parada   = Script=fIngresar_SIM_IMEI_Servicio_Admin Línea=0 Error=CRFCN0478E: Nombre de variable [IMSI1] no encontrado en agrupación de datos
+Parada en paso	    = 9
+
+
+-----------------------------------------------------------------------------------------
+Fin del Informe del Caso Prueba_Conj Datos: CPVta_CDX
+-----------------------------------------------------------------------------------------
+
+
+Informe de Errores imprevistos de sistema
+-----------------------------------------------------------------------------------------
+'Paso    9  -  Accion'                             'Excepción no esperada'        'Script=fIngresar_SIM_IMEI_Servicio_Admin Línea=0 Error=CRFCN0478E: Nombre de variable [IMSI1] no encontrado en agrupación de datos'
+

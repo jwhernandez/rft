@@ -15,17 +15,19 @@ import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
  * Description   : Llama a la validacion de estado del pedido y botón valorar todo
  * Script Name   : <b>fValidacPostEnvio1</b>
- * @Param 
+ * @Param 0)Nro caso 1) true (para validar el estado) 2) ambiente 3)true / false 4)nropaso
  * @since  2016/01/12
- * @author Sandra
+ * @author SS
  */
 public class fValidacPostEnvio1 extends fValidacPostEnvio1Helper
 {
 	public void testMain(Object[] args) 
 	{
+		ImpreEncabezadoScript(getScriptArgs(), getScriptName( ).toString());
 		String[] Validac;
 		Validac = new String[2];
-		// Parámetros	   : 0)  OK/NOK 
+		// Parámetros	   : 0)out  OK/NOK si el pedido está en completar 
+		// 1) out OK/NOK si el botón está en inhabilitar
 
 		String[] MensError;
 		MensError = new String[4];

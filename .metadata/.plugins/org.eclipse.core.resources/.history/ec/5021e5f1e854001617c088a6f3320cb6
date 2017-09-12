@@ -1,0 +1,203 @@
+package GUI;
+
+import javax.swing.*;
+import java.awt.event.*;
+import java.awt.*;
+import org.jvnet.substance.SubstanceLookAndFeel;
+import org.jvnet.substance.*;
+
+/**
+ * @author FF
+ */
+
+public class EjecutaRFT extends JFrame 
+{
+	private JLabel UsuarioL, ClaveL, CasoL, LoginL, msjL, AmbienteL;
+	private JTextField UsuarioTF, LoginTF, msjTF;
+	private JButton EjecutarB, exitB;
+	private JRadioButton LoginTrue, LoginFalse;
+	private String Casos[] = { "CP03", "CP05", "CP12", "CP20", "CP29", "CP32", "CP46", "CP50", "CP56"};
+	private String Ambiente[] = {"PreQA", "QA"};
+	private static String lineaComandos;
+
+	JPasswordField ClaveTF = new JPasswordField();
+
+	// Seteo del set y get de Variable lineaComandos
+	public static void setlineaComandos(String xx) {
+		lineaComandos = xx; 	}
+	public static String getlineaComandos() {
+		return lineaComandos; 	}
+
+	//Se inicializa los comboBox
+	private JComboBox CasoCB = new JComboBox(Casos);
+	private JComboBox AmbienteCB = new JComboBox(Ambiente);
+
+	//Button handlers:
+	private EjecutarButtonHandler ejbHandler;
+	private ExitButtonHandler ebHandler;
+
+	public EjecutaRFT() // Constructor
+	{	
+		//Instanciar los labels
+		UsuarioL = new JLabel();
+		UsuarioL.setText("Usuario:");
+
+		ClaveL = new JLabel();
+		ClaveL.setText("Clave:");
+
+		CasoL = new JLabel();
+		CasoL.setText("Caso de prueba:");
+
+		AmbienteL = new JLabel();
+		AmbienteL.setText("Ambiente:");
+
+		LoginL = new JLabel();
+		LoginL.setText("Ejecutar el login?:");
+
+		msjL = new JLabel();
+		msjL.setText("Mensaje:");
+
+		//Intanciar los textos
+		UsuarioTF = new JTextField();
+		// CasoTF = new JTextField();
+		LoginTF = new JTextField();
+		msjTF = new JTextField();
+		LoginTrue = new JRadioButton("true", true);
+		LoginFalse = new JRadioButton("False", false);
+
+		//Instanciar los botones
+		EjecutarB = new JButton("Ejecutar");
+		exitB = new JButton("Salir");
+
+		// Especificar el handler para cada botón
+		ejbHandler = new EjecutarButtonHandler();
+		ebHandler = new ExitButtonHandler();
+
+		//add(register) ActionListeners para cada botón
+		EjecutarB.addActionListener(ejbHandler);
+		exitB.addActionListener(ebHandler);
+
+		//Setear el titulo de la ventana
+		setTitle("Automatizacion de Pruebas Regresivas");
+
+		//Get the content pane (CP).
+		JPanel paneLabel  = new JPanel();
+		JPanel pane1  = new JPanel();
+		JPanel pane2  = new JPanel();
+		JPanel pane3  = new JPanel();
+		JPanel login  = new JPanel();
+		Container paneFinal = getContentPane();
+
+		login.setLayout(new GridLayout(1, 2));
+		login.add(LoginL);
+		login.add(LoginTrue);
+		login.add(LoginFalse);
+
+		//Set el layout.
+		paneLabel.setLayout(new GridLayout(7, 0));
+		//Agregar al panel para indicar donde se quiere que aparezca (left to right, top to bottom)
+		paneLabel.add(UsuarioL);
+		paneLabel.add(ClaveL);
+		paneLabel.add(CasoL);
+		paneLabel.add(AmbienteL);
+		paneLabel.add(LoginL);
+		// paneLabel.add(msjL);
+
+		pane1.setLayout(new GridLayout(7, 0));
+		//Agregar al panel para indicar donde se quiere que aparezca (left to right, top to bottom)
+		pane1.add(UsuarioTF);
+		pane1.add(ClaveTF);
+		pane1.add(CasoCB);
+		pane1.add(AmbienteCB);
+		//pane1.add(LoginTF);
+		pane1.add(LoginTrue);
+		pane1.add(LoginFalse);
+		//pane1.add(msjTF);
+
+		pane2.setLayout(new GridLayout(1,1));
+		pane2.setPreferredSize(new Dimension(400,200));
+		pane2.add(paneLabel);
+		pane2.add(pane1);
+		pane2.setBounds(100, 50, 600, 500); 
+
+		pane3.setLayout(new FlowLayout());
+		pane3.setPreferredSize(new Dimension(200,50));
+		pane3.add(EjecutarB);
+		pane3.add(exitB);
+
+		paneFinal.setLayout(new GridLayout(2,0));
+		paneFinal.add(login);
+		paneFinal.add(pane2);
+		paneFinal.add(pane3);
+		paneFinal.setBounds(0, 100, 600, 500); 
+
+		//Propiedades importantes del JFrame
+		setSize(600, 400);
+		setVisible(true);
+		setLayout(new FlowLayout()); 
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		setDefaultLookAndFeelDecorated(true);
+
+	}
+
+	private class EjecutarButtonHandler implements ActionListener
+	{
+		public void actionPerformed(ActionEvent e)
+		{
+			msjTF.setText("Se va a ejecutar con "+ UsuarioTF.getText() + ClaveTF.getText() 
+					+ CasoCB.getSelectedItem() + LoginTF.getText());
+			setlineaComandos(UsuarioTF.getText()+" "+ClaveTF.getText() + AmbienteCB.getSelectedItem()
+					+" "+ CasoCB.getSelectedItem() + " "+LoginTF.getText());	
+			System.out.println("Tiene valor en" +getlineaComandos());
+			String comando = getlineaComandos();
+			try 
+			{
+				ComandoRFT(comando);
+
+			}
+			catch (Exception e1) 
+			{
+				e1.printStackTrace();
+			}
+		}
+	}
+
+
+	public class ExitButtonHandler implements ActionListener
+	{
+		public void actionPerformed(ActionEvent e)
+		{
+			System.exit(0);
+		}
+	}
+
+
+	public static void ComandoRFT(String comando) throws Exception 
+	{
+		System.out.println("Se ejecuta con" +lineaComandos);
+		System.out.println("Se ejecuta con" +comando);
+
+		String RFT_JAR_PATH = "\"C:/Program Files (x86)/IBM/SDP/FunctionalTester/bin/rational_ft.jar\"";
+		String commandLine="cmd /c start/wait "+ 
+				"java -classpath "
+				+ RFT_JAR_PATH + 
+				" com.rational.test.ft.rational_ft -datastore " +
+				"\"C:/Users/Sandra/IBM/rationalsdp/workspace/RFT_ICE/\" -iterationCount 1 " +
+				" -playback \"Scripts.CasosPrueba.CasosPrueba\" " + "-args "
+				+ lineaComandos + " false 1";
+
+		System.out.println(commandLine);
+		Process p = Runtime.getRuntime().exec(commandLine);
+		p.waitFor();
+	}
+
+
+	public static void main (String[] args)  
+	{
+		SubstanceLookAndFeel.setSkin("org.jvnet.substance.skin.NebulaBrickWallSkin");
+		//SubstanceLookAndFeel.setCurrentTheme("org.jvnet.substance.theme.SubstanceSteelBlueTheme");
+		SubstanceLookAndFeel.setCurrentWatermark("org.jvnet.substance.watermark.SubstanceMetalWallWatermark");
+		new EjecutaRFT();
+		System.out.println("Se ejecuta con" +lineaComandos);
+	}
+}

@@ -20,17 +20,17 @@ import com.rational.test.ft.vp.IFtVerificationPoint;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
  * Script Name   : <b>BuscarProductoAdmin</b><br>
- * Generated     : <b>2015/12/16 13:42:37</b><br>
+ * Generated     : <b>2016/04/07 10:09:47</b><br>
  * Description   : Helper class for script<br>
  * Original Host : Windows 7 x86 6.1 <br>
  * 
- * @since  diciembre 16, 2015
+ * @since  abril 07, 2016
  * @author Sandra
  */
 public abstract class BuscarProductoAdminHelper extends libreria.Accion
 {
 	/**
-	 * SiebList: with default state.
+	 * LineasPedidoAdmin: with default state.
 	 *		ClassName : SiebList
 	 * 		.class : SiebList
 	 * 		RepositoryName : SiebList
@@ -41,7 +41,7 @@ public abstract class BuscarProductoAdminHelper extends libreria.Accion
                         getMappedTestObject("LineasPedidoAdmin"));
 	}
 	/**
-	 * SiebList: with specific test context and state.
+	 * LineasPedidoAdmin: with specific test context and state.
 	 *		ClassName : SiebList
 	 * 		.class : SiebList
 	 * 		RepositoryName : SiebList
@@ -50,6 +50,29 @@ public abstract class BuscarProductoAdminHelper extends libreria.Accion
 	{
 		return new SiebListTestObject(
                         getMappedTestObject("LineasPedidoAdmin"), anchor, flags);
+	}
+	
+	/**
+	 * LineasPedidoPIAdmin: with default state.
+	 *		ClassName : SiebList
+	 * 		.class : SiebList
+	 * 		RepositoryName : SiebList
+	 */
+	protected SiebListTestObject LineasPedidoPIAdmin() 
+	{
+		return new SiebListTestObject(
+                        getMappedTestObject("LineasPedidoPIAdmin"));
+	}
+	/**
+	 * LineasPedidoPIAdmin: with specific test context and state.
+	 *		ClassName : SiebList
+	 * 		.class : SiebList
+	 * 		RepositoryName : SiebList
+	 */
+	protected SiebListTestObject LineasPedidoPIAdmin(TestObject anchor, long flags) 
+	{
+		return new SiebListTestObject(
+                        getMappedTestObject("LineasPedidoPIAdmin"), anchor, flags);
 	}
 	
 	

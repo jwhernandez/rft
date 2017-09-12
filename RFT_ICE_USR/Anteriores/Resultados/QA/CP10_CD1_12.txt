@@ -1,0 +1,108 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: CP10_CD1 Desde paso: 12 Modo:Real
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+---------------------------
+CP10_CD1_T1;LeerDatosEntrada;OK;
+CP10_CD1_T1;LeerDatoSalidaUltPasoEjec;OK;
+CP10_CD1_T1;LeerDatosSalida;OK;
+CP10_CD1_T1;Paso1:fLogin;OK;
+CP10_CD1_T1;Paso2:fCambiarVIstaUsuario;NE;
+CP10_CD1_T1;Paso3:fVista360;OK;
+CP10_CD1_T1;Paso4:fValidarUnPerfil;NE;
+CP10_CD1_T1;Paso5:fBuscarActivo;OK;
+CP10_CD1_T1;Paso6:fBuscarCtaFact;OK;
+CP10_CD1_T1;Paso7:fValidarUnPerfil;NE;
+CP10_CD1_T1;Paso8:fVista360;OK;
+CP10_CD1_T1;Paso9:fBuscarActivo;OK;
+CP10_CD1_T1;Paso10:fBuscarCtaFact;OK;
+CP10_CD1_T1;Paso11:fNuevaPostvta;NE;
+CP10_CD1_T1;Paso12:fBuscarPedidoVenta;OK;
+CP10_CD1_T1;Paso13:fValidarAgencia;OK;
+CP10_CD1_T1;Paso14:fIngresarAutenticacion;OK;
+CP10_CD1_T1;Paso15:fASRM_Login;OK;
+CP10_CD1_T1;Paso16:fASRM_ModificarEstadoServicio;OK;
+CP10_CD1_T1;Paso17:fASRM_Logout;OK;
+CP10_CD1_T1;Paso18:fProximoNumero;NE;
+CP10_CD1_T1;Paso19:fValidacPostServicio;NE;
+CP10_CD1_T1;Paso20:fValidarPagoFactura;NE;
+CP10_CD1_T1;Paso21:fEnviarPedido;NE;
+CP10_CD1_T1;Paso22:fValidarMensaje;NE;
+CP10_CD1_T1;Paso23:fValorarTodo;NE;
+CP10_CD1_T1;Paso24:fEnviarPedido;NE;
+CP10_CD1_T1;Paso25:fEsperaEstado;NE;
+CP10_CD1_T1;Paso26:fValidacPostEnvio1;NE;
+CP10_CD1_T1;Paso27:fVista360;NE;
+CP10_CD1_T1;Paso28:fValidarNumServActivo;NE;
+CP10_CD1_T1;Paso29:fBRM.FavoritoValidarCambioNum;NE;
+CP10_CD1_T1;Paso30:fCambiarVIstaUsuario;NE;
+CP10_CD1_T1;Paso31:fAdministrarTemporadas;NE;
+CP10_CD1_T1;Paso32:fCambiarVIstaUsuario;NE;
+CP10_CD1_T1;Paso33:fVista360;NE;
+CP10_CD1_T1;Paso34:fBuscarActivo;NE;
+CP10_CD1_T1;Paso35:fBuscarCtaFact;NE;
+CP10_CD1_T1;Paso36:fNuevaPostvta;NE;
+CP10_CD1_T1;Paso37:fIngresarAutenticacion;NE;
+CP10_CD1_T1;Paso38:fExpandiryBuscar;NE;
+CP10_CD1_T1;Paso39:fExpandiryBuscar;NE;
+CP10_CD1_T1;Paso40:fBuscarProducto;NE;
+CP10_CD1_T1;Paso41:fBuscarProducto;NE;
+CP10_CD1_T1;Paso42:fBuscarProducto;NE;
+CP10_CD1_T1;Paso43:fBuscarProducto;NE;
+CP10_CD1_T1;Paso44:fCrearListaEsp;NE;
+CP10_CD1_T1;Paso45:fAsociarListaEsp;NE;
+CP10_CD1_T1;Paso46:fValidarMensaje;NE;
+CP10_CD1_T1;Paso47:fAgregarNum_a_LE;NE;
+CP10_CD1_T1;Paso48:fValidarMensaje;NE;
+CP10_CD1_T1;Paso49:fAgregarNum_a_LE;NE;
+CP10_CD1_T1;Paso50:fValidarMensaje;NE;
+CP10_CD1_T1;Paso51:fAgregarNum_a_LE;NE;
+CP10_CD1_T1;Paso52:fValidarMensaje;NE;
+CP10_CD1_T1;Paso53:fAgregarNum_a_LE;NE;
+CP10_CD1_T1;Paso54:fValidarMensaje;NE;
+CP10_CD1_T1;Paso55:fAgregarNum_a_LE;NE;
+CP10_CD1_T1;Paso56:fExpandiryBuscar;NE;
+CP10_CD1_T1;Paso57:fExpandiryBuscar;NE;
+CP10_CD1_T1;Paso58:fExpandiryBuscar;NE;
+CP10_CD1_T1;Paso59:fValidarPrecioActivacion;NE;
+CP10_CD1_T1;Paso60:fAgregaCobroFav;NE;
+CP10_CD1_T1;Paso60:fAgregaCobroFav;Se paro voluntariamente el caso en el paso hasta 60;
+
+
+Informe de DATOS de salida
+---------------------------
+CP10_CD1;UltimoPasoOK;11;
+CP10_CD1;UltimoTramite;1;
+CP10_CD1;T1_NroPedido;1-1740818131;
+CP10_CD1_T1;NroServicio;89009009;
+CP10_CD1_T1;NroServicio;89009009;
+CP10_CD1_T1;NroCtaFact;101740766940;
+CP10_CD1_T1;NroServicio;89009009;
+CP10_CD1_T1;NroServicio;89009009;
+CP10_CD1_T1;NroCtaFact;101740766940;
+CP10_CD1;UltPasoOK;12;
+CP10_CD1;UltPasoOK;13;
+CP10_CD1;UltPasoOK;14;
+CP10_CD1;UltPasoOK;15;
+CP10_CD1;UltPasoOK;16;
+CP10_CD1;UltPasoOK;17;
+
+
+Informe de Bugs
+-----------------
+
+
+Informe de Errores imprevistos de sistema
+------------------------------------------------
+CP10_CD1;Mensaje ME;Script=Comun.AceptarVtnasIEBrowser Línea=36 Método=findChildrenWithProperties Error=
+GetChildren(); Error:(-1018) - Could not find Siebel application object. Clase=com.rational.test.ft.Domain.Siebel.SiebelMethodExecutionFailureException Objeto=DomainTestObject(Ref:RemoteProxyReference{testContext:1657100049744, objectId:Siebel, testObjectClass:com.rational.test.ft.object.interfaces.DomainTestObject});
+
+
+----------------------------------------------------------------------------------------------------------
+Tipo Parada:ObjectMethodException - Mensaje de Parada: Script=Comun.AceptarVtnasIEBrowser Línea=36 Método=findChildrenWithProperties Error=
+GetChildren(); Error:(-1018) - Could not find Siebel application object. Clase=com.rational.test.ft.Domain.Siebel.SiebelMethodExecutionFailureException Objeto=DomainTestObject(Ref:RemoteProxyReference{testContext:1657100049744, objectId:Siebel, testObjectClass:com.rational.test.ft.object.interfaces.DomainTestObject})
+- Fin del Informe del Caso Prueba_Conj Datos: CP10_CD1
+----------------------------------------------------------------------------------------------------------

@@ -1,0 +1,28 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: CP09_CD1 Desde paso: A Modo:Real
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+---------------------------
+CP09_CD1_T1;LeerDatosEntrada;OK;
+
+
+Informe de DATOS de salida
+---------------------------
+
+
+Informe de Bugs
+-----------------
+
+
+Informe de Errores imprevistos de sistema
+------------------------------------------------
+CP09_CD1;Mensaje UE;Script=Comun.LeerDatoSalidaUltPasoEjec Línea=0 Error=null;
+
+
+----------------------------------------------------------------------------------------------------------
+Tipo Parada:UnhandledException - Mensaje de Parada: Script=Comun.LeerDatoSalidaUltPasoEjec Línea=0 Error=null
+- Fin del Informe del Caso Prueba_Conj Datos: CP09_CD1
+----------------------------------------------------------------------------------------------------------

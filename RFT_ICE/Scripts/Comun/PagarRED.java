@@ -14,30 +14,34 @@ import com.rational.test.ft.vp.*;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
 * Descripción: Genera un pago de red manual desde Siebel
-* Parámetros:  
-* SS Nov 2015
+* Script Name   : <b>PagarRED</b>
+* Parámetros:  0) OK / NOK
+* @since  2016/02/16
+* @author SSASTRE
 */
 public class PagarRED extends PagarREDHelper
 {
-	public void testMain(Object[] args) 
+	public void testMain(Object[] argu) 
 	{
-		
-		// 
-		String sPedido = text_orderNumber().getProperty("Text").toString();
-		String sMonto = siebCurrency_total().getProperty("Text").toString();
+		ImpreEncabezadoScript(getScriptArgs(), getScriptName( ).toString());
+		argu[1]="NOK";
+		String sPedido = NroPedido().getProperty("Text").toString();
+		String sMonto = Total().getProperty("Text").toString();
 
-		PestanasPedido().gotoView("ICE Order Entry - Line Items Detail View Admin");
-		EstadoPedidoAdmin().waitForExistence();
+		PestañasPedido().gotoView("ICE Order Entry - Line Items Detail View Admin");
+		sleep(3);
 		
 		NewQuery().performAction();
 		NroPedidoAdmin(ANY,DISABLED).setText(sPedido);
 		ExecuteQuery().performAction();
-		sleep(2);
+
+		EstadoRED().select("Pagado");
+		TotalAdmin().setText(sMonto);
+		NroRED().setText("123");
+		EstadoPedido().select("RED Pagado");
 		
-		NroREDAdmin().setText("123");
-		MontoREDAdmin().setText(sMonto);
-		EstadoREDAdmin().select("RED Pagado");
-		EstadoPedidoAdmin().select("Pagado");
+		argu[1]="OK";
+		ImpreResultadoScript(getScriptName( ).toString(), argu[0].toString());
 	}
 }
 

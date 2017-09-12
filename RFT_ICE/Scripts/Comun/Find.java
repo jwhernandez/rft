@@ -14,22 +14,16 @@ import com.rational.test.ft.object.interfaces.siebel.ISiebTestObject;
 
 
 /**
- * Description   : Functional Test Script
- * @author Sandra
+ * Description   : Prueba de uso del metodo find para objetos Siebel
+ * Script Name   : <b>Find</b>
+ * @since  2016/01/14
+ * @author SS
  */
 public class Find extends FindHelper
 {
-/**
-	 * Script Name   : <b>Find</b>
-	 * Generated     : <b>14/01/2016 08:29:15</b>
-	 * Description   : Functional Test Script
-	 * Original Host : WinNT Version 6.1  Build 7601 (S)
-	 * 
-	 * @since  2016/01/14
-	 * @author Sandra
-	 */
 	public void testMain(Object[] args) 
 	{
+		ImpreEncabezadoScript(getScriptArgs(), getScriptName( ).toString());
 		// PENDIENTE Insertar código aquí
 		System.out.println(siebView_swiSpecialRatingProfi().getChildren()[0]);
 		System.out.println(siebView_swiSpecialRatingProfi().getChildren()[0].getProperties());

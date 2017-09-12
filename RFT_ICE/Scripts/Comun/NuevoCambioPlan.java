@@ -20,11 +20,13 @@ import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 * Ej: "PLAN CONECTADO 2 24 M 4GLTE" res res
 * @author Sandra
 * Precondicion estar en la vista 360 en la linea del activo
+* Ultima modificacion: 20/3/2017
  */
 public class NuevoCambioPlan extends NuevoCambioPlanHelper
 {
 	public void testMain(Object[] argu) throws RationalTestException
 	{
+		ImpreEncabezadoScript(getScriptArgs(), getScriptName( ).toString());
 		String[] RecordCount;
 		RecordCount = new String[4];
 		SiebMenu().select(atPath("CmdMgr1"));
@@ -33,6 +35,7 @@ public class NuevoCambioPlan extends NuevoCambioPlanHelper
 		
 		argu[1] = "No Encontrado";
 		argu[2] = "1";
+		
 		PlanesDestino().activateRow(0);
 
 		String sPlanDestinoBuscado = argu[0].toString().trim();
@@ -73,8 +76,12 @@ public class NuevoCambioPlan extends NuevoCambioPlanHelper
 			System.out.println("-------------------------------------------------------------------");
 		}
 
+		//Se añade la opción de buscar el plan para solucionar el problema de que no aparezca el cursor 20170320
+		PlanABuscar().setText(sPlanDestinoBuscado);
+		BuscarPlan().performAction();
+
 		
-		System. out.println(sPlanDestinoBuscado.equals("PLAN CONECTADO 2 24 M 4GLTE")); 
+		//System. out.println(sPlanDestinoBuscado.equals("PLAN CONECTADO 2 24 M 4GLTE")); 
 		Boolean Iterar =  true;  
 		int iPosicion = 0;
 		String sPlanDestino = (String) PlanesDestino().getCellText("Target Promotion Name", 0).toString().trim();
@@ -107,7 +114,7 @@ public class NuevoCambioPlan extends NuevoCambioPlanHelper
 					
 					iDesde = Integer.parseInt(RecordCount[1]);
 					iSubtotal = Integer.parseInt(RecordCount[2]);
-					 iStart1 = (int) RecordCount[3].toString().indexOf("+");
+					iStart1 = (int) RecordCount[3].toString().indexOf("+");
 					iTotal = 0;
 					if (iStart1 >=1) {
 						iTotal = 1000; // si encuentra un "+", no importa el total hay mas registros
@@ -127,8 +134,8 @@ public class NuevoCambioPlan extends NuevoCambioPlanHelper
 		} // end del while general
 		
 		boolean SeleccionoPlan = false; 
-		boolean SeleccionoNroPedido = false; 
-		String sPedido = "1-";
+		//boolean SeleccionoNroPedido = false; 
+		//String sPedido = "1-";
 		for (int intentos=1; intentos <=10 ; intentos++) {
 			try
 			{
@@ -141,20 +148,20 @@ public class NuevoCambioPlan extends NuevoCambioPlanHelper
 						SeleccionoPlan = true; 
 					}
 					// capturar el numero de pedido
-//					System.out.println("Selecciono NroPedido: " +SeleccionoNroPedido );
-//					if (!(SeleccionoNroPedido)){
-//						System.out.println("Entro a Selecciono NroPedido: " );
-//						EncabezadoPedidoHTML().ensureObjectIsVisible();
-//						sPedido = NroPedido().getProperty("Text").toString();
-//						argu[3] = sPedido;
-//						argu[1] = "Encontrado";
-//						System.out.println("Plan destino Seleccionado: "
-//								+ PlanesDestino().getCellText("Target Promotion Name", iPosicion)
-//								+ " en posición: " + iPosicion);
-//						argu[2] = Integer.toString(iPosicion);
-//						SeleccionoNroPedido = true; 
-//						System.out.println("Entro a Selecciono NroPedido: "  +SeleccionoNroPedido );
-//					}
+//					//System.out.println("Selecciono NroPedido: " +SeleccionoNroPedido );
+//					//if (!(SeleccionoNroPedido)){
+//						//System.out.println("Entro a Selecciono NroPedido: " );
+//						//EncabezadoPedidoHTML().ensureObjectIsVisible();
+//						//sPedido = NroPedido().getProperty("Text").toString();
+//						//argu[3] = sPedido;
+//						//argu[1] = "Encontrado";
+//						//System.out.println("Plan destino Seleccionado: "
+//							//	+ PlanesDestino().getCellText("Target Promotion Name", iPosicion)
+//							//	+ " en posición: " + iPosicion);
+//						//argu[2] = Integer.toString(iPosicion);
+//						//SeleccionoNroPedido = true; 
+//						//System.out.println("Entro a Selecciono NroPedido: "  +SeleccionoNroPedido );
+//					//}
 				} // por el else devuelve no encontrado
 			}// end del try
 			catch (Exception e){
@@ -174,6 +181,7 @@ public class NuevoCambioPlan extends NuevoCambioPlanHelper
 			}
 		}// end del for
 		System.out.println("Resultado: " + argu[1]);
+		ImpreResultadoScript(getScriptName( ).toString(), argu[1].toString() );
 	}
 }
 

@@ -21,8 +21,9 @@ import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 */
 public class PersonalizarGrupoSVA extends PersonalizarGrupoSVAHelper
 {
-	public void testMain(Object[] argu) 
+	public void testMain(Object[] argu) throws RationalTestException 
 	{
+		ImpreEncabezadoScript(getScriptArgs(), getScriptName( ).toString());
 		String[] Producto;
 		Producto = new String[4];
 
@@ -62,7 +63,10 @@ public class PersonalizarGrupoSVA extends PersonalizarGrupoSVAHelper
 				break;
 			} // end del switch
 			Terminado().click();
+			
+			BtonNuevo().waitForExistence();
 		}
+		ImpreResultadoScript(getScriptName( ).toString(), argu[2].toString());
 	}
 }
 

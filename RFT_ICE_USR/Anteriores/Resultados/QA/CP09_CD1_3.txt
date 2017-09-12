@@ -1,0 +1,44 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: CP09_CD1 Desde paso: 3 Modo:Real
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatosEntrada'                                                  'OK'                          
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'                                         'OK'                          
+'Paso    0  -  LeerDatosSalida'                                                   'OK'                          
+'Paso    1  -  fLogin'                                                            'OK'                          
+'Paso    2  -  fValidarActivoEstadoenActivo'                                      'NE'                          
+
+
+Informe de DATOS de salida
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoPasoOK'                 '2'                           
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoTramite'                '1'                           
+'Paso    3  -  fIraActivoDesdeActivo'              'NroServicio'                  '85975959'                    
+
+
+Informe de Bugs
+-----------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------
+Tipo Parada         = Excepción en Método
+Mensaje de Parada   = Script=IraActivoDesdeActivo Línea=32 Método=Goto Error=SiebScreenView.Goto("Asset Mgmt - Assets View", "L2"), L2 view repository name "Asset Mgmt - Assets View" is not valid; Clase=com.rational.test.ft.Domain.Siebel.SiebelItemNotFoundException Objeto=siebel.SiebScreenViewsTestObject(Name: SiebScreenViews, Map: SiebScreenViews)
+Parada en paso	    = 3
+
+
+-----------------------------------------------------------------------------------------
+Fin del Informe del Caso Prueba_Conj Datos: CP09_CD1
+-----------------------------------------------------------------------------------------
+
+
+Informe de Errores imprevistos de sistema
+-----------------------------------------------------------------------------------------
+'Paso    3  -  Accion'                             'Excepción en Método'          'Script=IraActivoDesdeActivo Línea=32 Método=Goto Error=SiebScreenView.Goto("Asset Mgmt - Assets View", "L2"), L2 view repository name "Asset Mgmt - Assets View" is not valid; Clase=com.rational.test.ft.Domain.Siebel.SiebelItemNotFoundException Objeto=siebel.SiebScreenViewsTestObject(Name: SiebScreenViews, Map: SiebScreenViews)'
+
+'Paso    3  -  Accion'                             'Excepción no esperada'        'Script=IraActivoDesdeActivo Línea=0 Error=SiebScreenView.Goto("Asset Mgmt - Assets View", "L2"), L2 view repository name "Asset Mgmt - Assets View" is not valid;'
+
+'Paso    3  -  Accion'                             'Excepción no esperada'        'Script=fIraActivoDesdeActivo Línea=0 Error=CRFCN0018E: The 32 line of the 32 script contains an exception.'
+

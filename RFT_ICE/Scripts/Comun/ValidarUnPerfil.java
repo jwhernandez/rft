@@ -17,12 +17,14 @@ import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
  * Descripción: Valida un perfil de facturacion por cuenta del cliente o fact
  * Parametros: 0) OK / NOK ; OK=Se recibe mensaje correcto. 1) Cliente / Fact
  * NOK el mensaje queda sin aceptar.
+ * ej res Fact
  * Pre-Condición: Se debe estar en la cuenta de facturación o en la cta de servicio
  */
 public class ValidarUnPerfil extends ValidarUnPerfilHelper
 {
 	public void testMain(Object[] argu) 
 	{
+		ImpreEncabezadoScript(getScriptArgs(), getScriptName( ).toString());
 		argu[0] = "OK";
 
 		switch (argu[1].toString()) {
@@ -45,6 +47,7 @@ public class ValidarUnPerfil extends ValidarUnPerfilHelper
 		if (Validaciones[1].toString() == "false") {
 			argu[0] = "NOK";
 		}
+		ImpreResultadoScript(getScriptName( ).toString(), argu[0].toString());
 	}
 }
 

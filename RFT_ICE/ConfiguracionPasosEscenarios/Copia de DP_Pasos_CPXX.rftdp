@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Datapool L="Datapool">
+	<Name T="null"/>
+	<Id>15SfvdAlkyuC:mFs69:QOKskt0:8WW</Id>
+	<Description T="null"/>
+	<Variables L="DpVariables">
+		<Variable L="DatapoolVariable">
+			<Name>CPXXPasos</Name>
+			<Id>V0.15SfvdAlkyuC:mFs69:QOKskt0:8WW</Id>
+			<Description T="null"/>
+			<SuggestedType L="DatapoolSuggestedType">
+				<TypeCode>4</TypeCode>
+				<SuggestedClassName>Serie</SuggestedClassName>
+			</SuggestedType>
+			<Role>-1</Role>
+		</Variable>
+		<Variable L="DatapoolVariable">
+			<Name>CPXXCond</Name>
+			<Id>V1.15SfvdAlkyuC:mFs69:QOKskt0:8WW</Id>
+			<Description T="null"/>
+			<SuggestedType L="DatapoolSuggestedType">
+				<TypeCode>4</TypeCode>
+				<SuggestedClassName>Serie</SuggestedClassName>
+			</SuggestedType>
+			<Role>-1</Role>
+		</Variable>
+		<Variable L="DatapoolVariable">
+			<Name>CPXXEjecuta</Name>
+			<Id>V2.15SfvdAlkyuC:mFs69:QOKskt0:8WW</Id>
+			<Description T="null"/>
+			<SuggestedType L="DatapoolSuggestedType">
+				<TypeCode>4</TypeCode>
+				<SuggestedClassName>Serie</SuggestedClassName>
+			</SuggestedType>
+			<Role>-1</Role>
+		</Variable>
+		<Variable L="DatapoolVariable">
+			<Name>CPXXReEjec</Name>
+			<Id>V3.15SfvdAlkyuC:mFs69:QOKskt0:8WW</Id>
+			<Description T="null"/>
+			<SuggestedType L="DatapoolSuggestedType">
+				<TypeCode>4</TypeCode>
+				<SuggestedClassName>Serie</SuggestedClassName>
+			</SuggestedType>
+			<Role>-1</Role>
+		</Variable>
+		<Variable L="DatapoolVariable">
+			<Name>CPXXParam</Name>
+			<Id>V4.15SfvdAlkyuC:mFs69:QOKskt0:8WW</Id>
+			<Description T="null"/>
+			<SuggestedType L="DatapoolSuggestedType">
+				<TypeCode>4</TypeCode>
+				<SuggestedClassName>Serie</SuggestedClassName>
+			</SuggestedType>
+			<Role>-1</Role>
+		</Variable>
+		<Variable L="DatapoolVariable">
+			<Name>CPXXErrorStop</Name>
+			<Id>V5.15SfvdAlkyuC:mFs69:QOKskt0:8WW</Id>
+			<Description T="null"/>
+			<SuggestedType L="DatapoolSuggestedType">
+				<TypeCode>2</TypeCode>
+				<SuggestedClassName>Z</SuggestedClassName>
+			</SuggestedType>
+			<Role>-1</Role>
+		</Variable>
+	</Variables>
+	<EquivalenceClasses L="DpEquivalenceClasses">
+		<EquivalenceClass L="DatapoolEquivalenceClass">
+			<Name>EC1</Name>
+			<Id>EC1.15SfvdAlkyuC:mFs69:QOKskt0:8WW</Id>
+			<Description T="null"/>
+			<Records L="DpRecords"/>
+		</EquivalenceClass>
+	</EquivalenceClasses>
+	<DefaultEquivalenceClass>0</DefaultEquivalenceClass>
+	<EquivalenceClassNextId>2</EquivalenceClassNextId>
+	<VariableNextId>6</VariableNextId>
+</Datapool>

@@ -20,17 +20,17 @@ import com.rational.test.ft.vp.IFtVerificationPoint;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
  * Script Name   : <b>ValidacPostServicio</b><br>
- * Generated     : <b>2015/12/27 20:43:12</b><br>
+ * Generated     : <b>2017/01/17 11:43:36 AM</b><br>
  * Description   : Helper class for script<br>
  * Original Host : Windows 7 x86 6.1 <br>
  * 
- * @since  diciembre 27, 2015
- * @author Sandra
+ * @since  enero 17, 2017
+ * @author rft
  */
 public abstract class ValidacPostServicioHelper extends libreria.Accion
 {
 	/**
-	 * ICEReleaseNumber: with default state.
+	 * BtonLiberarNumero: with default state.
 	 *		ClassName : SiebButton
 	 * 		.class : SiebButton
 	 * 		RepositoryName : ICEReleaseNumber
@@ -41,7 +41,7 @@ public abstract class ValidacPostServicioHelper extends libreria.Accion
                         getMappedTestObject("LiberarNumero"));
 	}
 	/**
-	 * ICEReleaseNumber: with specific test context and state.
+	 * BtonLiberarNumero: with specific test context and state.
 	 *		ClassName : SiebButton
 	 * 		.class : SiebButton
 	 * 		RepositoryName : ICEReleaseNumber
@@ -58,10 +58,10 @@ public abstract class ValidacPostServicioHelper extends libreria.Accion
 	 * 		.class : SiebText
 	 * 		RepositoryName : Service Id
 	 */
-	protected SiebTextTestObject ServiceId() 
+	protected SiebTextTestObject text_serviceId() 
 	{
 		return new SiebTextTestObject(
-                        getMappedTestObject("ServiceId"));
+                        getMappedTestObject("text_serviceId"));
 	}
 	/**
 	 * ServiceId: with specific test context and state.
@@ -69,10 +69,10 @@ public abstract class ValidacPostServicioHelper extends libreria.Accion
 	 * 		.class : SiebText
 	 * 		RepositoryName : Service Id
 	 */
-	protected SiebTextTestObject ServiceId(TestObject anchor, long flags) 
+	protected SiebTextTestObject text_serviceId(TestObject anchor, long flags) 
 	{
 		return new SiebTextTestObject(
-                        getMappedTestObject("ServiceId"), anchor, flags);
+                        getMappedTestObject("text_serviceId"), anchor, flags);
 	}
 	
 	

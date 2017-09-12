@@ -20,11 +20,11 @@ import com.rational.test.ft.vp.IFtVerificationPoint;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
  * Script Name   : <b>AsociarListaEspecial</b><br>
- * Generated     : <b>2015/12/27 14:30:11</b><br>
+ * Generated     : <b>2017/06/21 15:03:18</b><br>
  * Description   : Helper class for script<br>
  * Original Host : Windows 7 x86 6.1 <br>
  * 
- * @since  diciembre 27, 2015
+ * @since  junio 21, 2017
  * @author Sandra
  */
 public abstract class AsociarListaEspecialHelper extends libreria.Accion
@@ -145,6 +145,60 @@ public abstract class AsociarListaEspecialHelper extends libreria.Accion
 	}
 	
 	/**
+	 * SpecialRatingListName: with default state.
+	 *		ClassName : SiebText
+	 * 		.class : SiebText
+	 * 		RepositoryName : Special Rating List Name
+	 */
+	protected SiebTextTestObject ListaEspecial_PI() 
+	{
+		return new SiebTextTestObject(
+                        getMappedTestObject("ListaEspecial_PI"));
+	}
+	/**
+	 * SpecialRatingListName: with specific test context and state.
+	 *		ClassName : SiebText
+	 * 		.class : SiebText
+	 * 		RepositoryName : Special Rating List Name
+	 */
+	protected SiebTextTestObject ListaEspecial_PI(TestObject anchor, long flags) 
+	{
+		return new SiebTextTestObject(
+                        getMappedTestObject("ListaEspecial_PI"), anchor, flags);
+	}
+	
+	/**
+	 * s_at_m_2: with default state.
+	 *		.text : Menú
+	 * 		.href : javascript:void(0)
+	 * 		.id : s_at_m_2
+	 * 		.title : 
+	 * 		.class : Html.A
+	 * 		.name : 
+	 * 		.classIndex : 0
+	 */
+	protected GuiTestObject Menu() 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("Menu"));
+	}
+	/**
+	 * s_at_m_2: with specific test context and state.
+	 *		.text : Menú
+	 * 		.href : javascript:void(0)
+	 * 		.id : s_at_m_2
+	 * 		.title : 
+	 * 		.class : Html.A
+	 * 		.name : 
+	 * 		.classIndex : 0
+	 */
+	protected GuiTestObject Menu(TestObject anchor, long flags) 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("Menu"), anchor, flags);
+	}
+	
+	/**
 	 * NewQuery: with default state.
 	 *		ClassName : SiebButton
 	 * 		.class : SiebButton
@@ -165,31 +219,6 @@ public abstract class AsociarListaEspecialHelper extends libreria.Accion
 	{
 		return new SiebButtonTestObject(
                         getMappedTestObject("NewQuery"), anchor, flags);
-	}
-	
-	/**
-	 * AceptarMensajeHTMLSiebel: with default state.
-	 *		.text : RegularExpression((Aceptar|OK))
-	 * 		.class : Html.DialogButton
-	 * 		.disabled : false
-	 * 		.classIndex : 0
-	 */
-	protected GuiTestObject button_aceptarMensajeHTMLSiebe() 
-	{
-		return new GuiTestObject(
-                        getMappedTestObject("button_aceptarMensajeHTMLSiebe"));
-	}
-	/**
-	 * AceptarMensajeHTMLSiebel: with specific test context and state.
-	 *		.text : RegularExpression((Aceptar|OK))
-	 * 		.class : Html.DialogButton
-	 * 		.disabled : false
-	 * 		.classIndex : 0
-	 */
-	protected GuiTestObject button_aceptarMensajeHTMLSiebe(TestObject anchor, long flags) 
-	{
-		return new GuiTestObject(
-                        getMappedTestObject("button_aceptarMensajeHTMLSiebe"), anchor, flags);
 	}
 	
 	

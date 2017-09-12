@@ -15,7 +15,7 @@ import com.rational.test.ft.vp.*;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
  * Script Name   : <b>fNuevoCambioModalidad</b>
- * Description   : Functional Test Script
+ * Description   : Inicia un pedido de CM
  * @Param
  * @author Sandra
  * @since  2016/01/19
@@ -24,8 +24,10 @@ public class fNuevoCambioModalidad extends fNuevoCambioModalidadHelper
 {
 	public void testMain(Object[] args) 
 	{
+		ImpreEncabezadoScript(getScriptArgs(), getScriptName( ).toString());
 		String[] PedidoCM;
 		PedidoCM = new String[2];
+		//0) OK/NOK 1) NroServicio
 		
 		String[] MensError;
 		MensError = new String[4];
@@ -39,12 +41,12 @@ public class fNuevoCambioModalidad extends fNuevoCambioModalidadHelper
 			dpNext(); 
 		} 	
 
-		PedidoCM [0] = dpString("NumeroServicio");
+		PedidoCM [1] = dpString("NumeroServicio");
 		callScript("Scripts.Comun.NuevoCambioModalidad", PedidoCM);
 		
-		if  (!(PedidoCM[1].toString().equals("NOK"))){
-			MensError[0] = "CM Paso Cuenta no funcionó";
-			//MensError[0] = "xDefecto";
+		if  (!(PedidoCM[0].toString().equals("NOK"))){
+			//MensError[0] = "CM Paso Cuenta no funcionó";
+			MensError[0] = "xDefecto";
 			MensError[1] = args[3].toString();
 			MensError[2] = args[0].toString();
 			MensError[3] = getScriptName( );

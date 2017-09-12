@@ -1,0 +1,37 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: Generico Desde paso: 1 Modo:null
+Modulo desde Paso : 0 Hasta paso: 0
+Hora de Inicio de la Ejecucion : 2017/09/08 14:32:57
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+-----------------------------------------------------------------------------------------
+
+
+Informe de DATOS de salida
+-----------------------------------------------------------------------------------------
+
+
+Informe de Bugs
+-----------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------
+Tipo Parada         = Excepción no esperada
+Mensaje de Parada   = Script=fASRM_ModificarEstadoServicio Línea=0 Error=Array index out of range: 1
+Parada en paso	    = 0
+
+
+-----------------------------------------------------------------------------------------
+Fin del Informe del Caso Prueba_Conj Datos: Generico
+-----------------------------------------------------------------------------------------
+
+
+Informe de Errores imprevistos de sistema
+-----------------------------------------------------------------------------------------
+'Paso    0  -  Accion'                             'Excepción no esperada'        'Script=fASRM_ModificarEstadoServicio Línea=0 Error=Array index out of range: 1'
+
+
+Hora de Finalizacion de la Ejecucion: 2017/09/08 14:32:57
+-----------------------------------------------------------------------------------------

@@ -20,15 +20,38 @@ import com.rational.test.ft.vp.IFtVerificationPoint;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
  * Script Name   : <b>NuevoCambioModalidad</b><br>
- * Generated     : <b>2016/01/19 11:58:23</b><br>
+ * Generated     : <b>2017/06/27 1:01:44 PM</b><br>
  * Description   : Helper class for script<br>
  * Original Host : Windows 7 x86 6.1 <br>
  * 
- * @since  enero 19, 2016
- * @author Sandra
+ * @since  junio 27, 2017
+ * @author rft
  */
 public abstract class NuevoCambioModalidadHelper extends libreria.Accion
 {
+	/**
+	 * ButtonNext: with default state.
+	 *		ClassName : SiebButton
+	 * 		.class : SiebButton
+	 * 		RepositoryName : ButtonNext
+	 */
+	protected SiebButtonTestObject ButtonNext() 
+	{
+		return new SiebButtonTestObject(
+                        getMappedTestObject("ButtonNext"));
+	}
+	/**
+	 * ButtonNext: with specific test context and state.
+	 *		ClassName : SiebButton
+	 * 		.class : SiebButton
+	 * 		RepositoryName : ButtonNext
+	 */
+	protected SiebButtonTestObject ButtonNext(TestObject anchor, long flags) 
+	{
+		return new SiebButtonTestObject(
+                        getMappedTestObject("ButtonNext"), anchor, flags);
+	}
+	
 	/**
 	 * ICEIndependenciaNumericaTaskUIICEIndependenciaNumericaTaskGroup: with default state.
 	 *		ClassName : SiebTaskLink
@@ -76,6 +99,29 @@ public abstract class NuevoCambioModalidadHelper extends libreria.Accion
 	}
 	
 	/**
+	 * ServicioCM: with default state.
+	 *		ClassName : SiebText
+	 * 		.class : SiebText
+	 * 		RepositoryName : ServiceId
+	 */
+	protected SiebTextTestObject ServicioCM() 
+	{
+		return new SiebTextTestObject(
+                        getMappedTestObject("ServicioCM"));
+	}
+	/**
+	 * ServicioCM: with specific test context and state.
+	 *		ClassName : SiebText
+	 * 		.class : SiebText
+	 * 		RepositoryName : ServiceId
+	 */
+	protected SiebTextTestObject ServicioCM(TestObject anchor, long flags) 
+	{
+		return new SiebTextTestObject(
+                        getMappedTestObject("ServicioCM"), anchor, flags);
+	}
+	
+	/**
 	 * Tareas: with default state.
 	 *		.alt : Tareas
 	 * 		.id : s_4_in0
@@ -112,10 +158,10 @@ public abstract class NuevoCambioModalidadHelper extends libreria.Accion
 	 * 		.class : SiebTaskUIPane
 	 * 		RepositoryName : TaskUIPane
 	 */
-	protected SiebTaskUIPaneTestObject scrollPane_taskUIPane() 
+	protected SiebTaskUIPaneTestObject TaskUIPane() 
 	{
 		return new SiebTaskUIPaneTestObject(
-                        getMappedTestObject("scrollPane_taskUIPane"));
+                        getMappedTestObject("TaskUIPane"));
 	}
 	/**
 	 * TaskUIPane: with specific test context and state.
@@ -123,10 +169,10 @@ public abstract class NuevoCambioModalidadHelper extends libreria.Accion
 	 * 		.class : SiebTaskUIPane
 	 * 		RepositoryName : TaskUIPane
 	 */
-	protected SiebTaskUIPaneTestObject scrollPane_taskUIPane(TestObject anchor, long flags) 
+	protected SiebTaskUIPaneTestObject TaskUIPane(TestObject anchor, long flags) 
 	{
 		return new SiebTaskUIPaneTestObject(
-                        getMappedTestObject("scrollPane_taskUIPane"), anchor, flags);
+                        getMappedTestObject("TaskUIPane"), anchor, flags);
 	}
 	
 	

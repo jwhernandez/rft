@@ -1,0 +1,55 @@
+package Scripts.Comun.SistemasExternos;
+import resources.Scripts.Comun.SistemasExternos.ASRM_ConsultaEstadoServicioHelper;
+
+import com.rational.test.ft.*;
+import com.rational.test.ft.object.interfaces.*;
+import com.rational.test.ft.object.interfaces.SAP.*;
+import com.rational.test.ft.object.interfaces.WPF.*;
+import com.rational.test.ft.object.interfaces.dojo.*;
+import com.rational.test.ft.object.interfaces.siebel.*;
+import com.rational.test.ft.object.interfaces.flex.*;
+import com.rational.test.ft.object.interfaces.generichtmlsubdomain.*;
+import com.rational.test.ft.script.*;
+import com.rational.test.ft.value.*;
+import com.rational.test.ft.vp.*;
+import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
+/**
+ * Description   : Consulta el estado de la SIM en ASRM
+ * Script Name   : <b>ASRM_ConsultaEstadoServicio</b>
+ * @since  2016/10/14
+ * Parametros: 0) Resultado = OK/NOK 1) SIM 2) EstadoDeseado   
+ * ej  res 89506010911111296188
+ * @author SS
+ */
+public class ASRM_ConsultaEstadoServicio extends ASRM_ConsultaEstadoServicioHelper
+{
+	public void testMain(Object[] argu) throws RationalTestException
+	{
+		ImpreEncabezadoScript(getScriptArgs(), getScriptName( ).toString());
+		argu[0] = "NOK";
+		String sEstadoLeido=null;
+		String sSIMLeida=null;
+		
+		//okbutton().click(atPoint(37,15));
+
+		Tab().click(atName("Recurso Tarjetas"));
+		
+		SIM().ensureObjectIsVisible();
+		SIM().setProperty(".value", argu[1].toString());
+
+		
+		// Window: Project_Actualizar_ASRM.exe: Information
+		//okbutton().click(atPoint(38,14));
+
+		sSIMLeida = SIMConsultada().getProperty(".value").toString();
+		sEstadoLeido = Estado().getProperty(".value").toString();		
+
+		if (sSIMLeida.equals(argu[1]) && sEstadoLeido.equals(argu[2]) ) argu[0] = "OK";
+		
+		IFtVerificationPoint EstadoSIMVP = vpManual("EstadoSIM", argu[2].toString(), Estado().getProperty(".value"));
+		EstadoSIMVP.performTest(); 
+		
+		ImpreResultadoScript(getScriptName( ).toString(), "Resultado " + argu[0]);
+	}		
+}
+

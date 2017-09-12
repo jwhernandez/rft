@@ -1,0 +1,69 @@
+package Scripts.Comun.SistemasExternos;
+import resources.Scripts.Comun.SistemasExternos.ATV_CapturarDatosMultasHelper;
+
+import com.rational.test.ft.*;
+import com.rational.test.ft.object.interfaces.*;
+import com.rational.test.ft.object.interfaces.SAP.*;
+import com.rational.test.ft.object.interfaces.WPF.*;
+import com.rational.test.ft.object.interfaces.dojo.*;
+import com.rational.test.ft.object.interfaces.siebel.*;
+import com.rational.test.ft.object.interfaces.flex.*;
+import com.rational.test.ft.object.interfaces.generichtmlsubdomain.*;
+import com.rational.test.ft.script.*;
+import com.rational.test.ft.value.*;
+import com.rational.test.ft.vp.*;
+import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
+/**
+ * Description   : Captura los datos para validar las posibles multas de un servicio
+ * Script Name   :  <b>ATV_CapturarDatosMultas</b>
+ * @since  2016/10/18
+ * Parametros: 0) Resultado = OK/NOK 1) nro pedido 2) tipo_CP upgrade downgrade NA  3)plan capturado 4) terminal capturado 5) RPT 6) CPT-I 7) CPT-S 8) RPB 9)CPB
+ * 
+ * res 1-1735047671 downgrade res res res res res res res 
+ */
+public class ATV_CapturarDatosMultas extends ATV_CapturarDatosMultasHelper
+{
+
+	public void testMain(Object[] argu) throws RationalTestException
+	{
+		ImpreEncabezadoScript(getScriptArgs(), getScriptName( ).toString());
+		argu[0] = "NOK";
+		
+		HistoricoVentaTerminal_Plan().click();
+
+		Tipo().select("NUM.ORDEN");
+		ValorTipo().setText(argu[1].toString());
+		Consutar().click();
+
+		ListaTerminalesPlanes().waitForExistence();
+
+		if (ListaTerminalesPlanes().exists())
+		{
+			//Leer los registros del servicio y buscar el nro de pedido
+			ITestDataTable iDataTable = (ITestDataTable) ListaTerminalesPlanes().getTestData("contents");
+			int rows = iDataTable.getRowCount();
+			int cols = iDataTable.getColumnCount();
+			System.out.println("Filas=" + rows + " Columnas"+ cols);
+			area =ListaTerminalesPlanes().getClippedScreenRectangle();
+			ListaTerminalesPlanes().ensureObjectIsVisible();
+			// Generar una variable filename
+			filename = path + "Planes.jpg";
+			CapturarPantalla(filename, area);
+			// Solo se espera que haya un red con el numero pasado como parametro
+			int currentrow=1;
+			boolean bEncontrado = false;
+			while (currentrow<rows && !bEncontrado)
+			{
+				sPlanId = iDataTable.getCell(currentrow, 0).toString();
+				sNroPed = iDataTable.getCell(currentrow, 1).toString();
+				sPlan = iDataTable.getCell(currentrow, 12).toString();
+				sTerminal = iDataTable.getCell(currentrow, 14).toString();
+				System.out.println(currentrow + sPlanId + sNroPed );
+				if (sNroPed.equals(argu[1].toString())) bEncontrado = true;
+				currentrow=currentrow+1;
+			} 
+		
+		ImpreResultadoScript(getScriptName( ).toString(), "Resultado " + argu[0]);
+	}
+}
+

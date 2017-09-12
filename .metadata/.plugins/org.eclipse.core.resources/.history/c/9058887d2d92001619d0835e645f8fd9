@@ -1,0 +1,65 @@
+package Scripts.Comun.SistemasExternos;
+import resources.Scripts.Comun.SistemasExternos.ASRM_ConsultaEstadoServicioHelper;
+
+import com.rational.test.ft.*;
+import com.rational.test.ft.object.interfaces.*;
+import com.rational.test.ft.object.interfaces.SAP.*;
+import com.rational.test.ft.object.interfaces.WPF.*;
+import com.rational.test.ft.object.interfaces.dojo.*;
+import com.rational.test.ft.object.interfaces.siebel.*;
+import com.rational.test.ft.object.interfaces.flex.*;
+import com.rational.test.ft.object.interfaces.generichtmlsubdomain.*;
+import com.rational.test.ft.script.*;
+import com.rational.test.ft.value.*;
+import com.rational.test.ft.vp.*;
+import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
+/**
+ * Description   : Consulta el estado de la SIM en ASRM
+ * Script Name   : <b>ASRM_ConsultaEstadoServicio</b>
+ * @since  2016/10/14
+ * Parametros: 0) Resultado = OK/NOK 1) SIM   
+ * ej  res 89506010911111296188
+ * @author SS
+ */
+public class ASRM_ConsultaEstadoServicio extends ASRM_ConsultaEstadoServicioHelper
+{
+	public void testMain(Object[] argu) throws RationalTestException
+	{
+		ImpreEncabezadoScript(getScriptArgs(), getScriptName( ).toString());
+		argu[0] = "NOK";
+
+		
+		//okbutton().click(atPoint(37,15));
+
+		Tab().click(atName("Recurso Tarjetas"));
+		
+		
+		// Window: Project_Actualizar_ASRM.exe: Actualizar Información
+		modificarEstadoDeTarjetawindow().click(atPoint(456,30));
+		
+		// Window: NOTEPAD.EXE: Generico_1 - Notepad
+		generico_1Notepadwindow().click(CAPTION);
+		_InicioDelInformeDelCasoPrueba().click(atPoint(92,457));
+		
+		// Window: Project_Actualizar_ASRM.exe: Actualizar Información
+		tPanelwindow().click(atPoint(16,23));
+		
+		// Window: NOTEPAD.EXE: Generico_1 - Notepad
+		generico_1Notepadwindow().click(CAPTION);
+		
+		// Window: Project_Actualizar_ASRM.exe: Actualizar Información
+		consultarTarjetawindow().click(atPoint(88,124));
+		texttext().click(atPoint(48,15));
+		actualizarInformaciónwindow().inputKeys("^v{TAB}");
+		cerrarbutton(ANY,MAY_EXIT).click(atPoint(38,23));
+		
+		SIM().setProperty(".value", argu[1].toString());
+
+		System.out.println("SIM" + 		SIM().getProperty(".value"));
+
+		
+		argu[0] = "OK";
+		ImpreResultadoScript(getScriptName( ).toString(), "Resultado " + argu[0]);
+	}		
+}
+

@@ -1,0 +1,45 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: GRAL_CD2 Desde paso: 7 Modo:simulacion
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+---------------------------
+Paso 0;              LeerDatosEntrada;    NE;                 
+Paso 0;              LeerDatoSalidaUltPasoEjec; OK;                 
+Paso 0;              LeerDatosSalida;     OK;                 
+Paso 1;              Scripts.CasosPrueba.CasosPrueba; OK;                 
+Paso 1;              Scripts.CasosPrueba.CasosPrueba; NE;                 
+Paso 1;              Scripts.CasosPrueba.CasosPrueba; NE;                 
+Paso 1;              Scripts.CasosPrueba.CasosPrueba; NE;                 
+Paso 1;              Scripts.CasosPrueba.CasosPrueba; NE;                 
+Paso 6;              Scripts.CasosPrueba.CasosPrueba; OK;                 
+Paso 7;              Scripts.CasosPrueba.CasosPrueba; OK;                 
+Paso 8;              Scripts.CasosPrueba.CasosPrueba; OK;                 
+Paso 9;              Scripts.CasosPrueba.CasosPrueba; OK;                 
+Paso 10;             Scripts.CasosPrueba.CasosPrueba; OK;                 
+Paso 11;             Scripts.CasosPrueba.CasosPrueba; OK;                 
+Paso 12;             Scripts.CasosPrueba.CasosPrueba; OK;                 
+Paso 13;             Scripts.CasosPrueba.CasosPrueba; OK;                 
+Paso 14;             Scripts.CasosPrueba.CasosPrueba; OK;                 
+Paso 15;             Scripts.CasosPrueba.CasosPrueba; OK;                 
+Paso 15;             Fin del caso;        OK;                 
+
+
+Informe de DATOS de salida
+---------------------------
+Paso 0-LeerDatoSalidaUltPasoEjec; UltimoPasoOK;        6;                  
+Paso 0-LeerDatoSalidaUltPasoEjec; UltimoTramite;       2;                  
+Paso 11-GrabarDatosSalida; UltTramite;          3;                  
+
+
+Informe de Bugs
+-----------------
+
+----------------------------------------------------------------------------------------------------------
+Tipo Parada: FIN
+Mensaje de Parada: FIN del caso en paso 16
+
+Fin del Informe del Caso Prueba_Conj Datos: GRAL_CD2
+----------------------------------------------------------------------------------------------------------

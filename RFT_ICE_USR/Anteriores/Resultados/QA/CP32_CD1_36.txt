@@ -1,0 +1,87 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: CP32_CD1 Desde paso: 36 Modo:Real
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatosEntrada'                                                  'OK'                          
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'                                         'OK'                          
+'Paso    0  -  LeerDatosSalida'                                                   'OK'                          
+'Paso    1  -  fLogin'                                                            'OK'                          
+'Paso    2  -  fASRM_Login'                                                       'NE'                          
+'Paso    3  -  fASRM_ModificarEstadoServicio'                                     'NE'                          
+'Paso    4  -  fASRM_Logout'                                                      'NE'                          
+'Paso    5  -  fVista360'                                                         'NE'                          
+'Paso    6  -  fNuevoPedidoPortIn'                                                'NE'                          
+'Paso    7  -  fValidarMensaje'                                                   'NE'                          
+'Paso    8  -  fValidarEstadoPedPortIn'                                           'NE'                          
+'Paso    9  -  fASRM_Login'                                                       'NE'                          
+'Paso   10  -  fASRM_ModificarEstadoServicio'                                     'NE'                          
+'Paso   11  -  fASRM_Logout'                                                      'NE'                          
+'Paso   12  -  fVista360'                                                         'NE'                          
+'Paso   13  -  fNuevoPedidoPortIn'                                                'NE'                          
+'Paso   14  -  fValidarMensaje'                                                   'NE'                          
+'Paso   15  -  fValidarEstadoPedPortIn'                                           'NE'                          
+'Paso   16  -  fASRM_Login'                                                       'NE'                          
+'Paso   17  -  fASRM_ModificarEstadoServicio'                                     'NE'                          
+'Paso   18  -  fASRM_Logout'                                                      'NE'                          
+'Paso   19  -  fVista360'                                                         'NE'                          
+'Paso   20  -  fNuevoPedidoPortIn'                                                'NE'                          
+'Paso   21  -  fValidarMensaje'                                                   'NE'                          
+'Paso   22  -  fValidarEstadoPedPortIn'                                           'NE'                          
+'Paso   23  -  fVista360'                                                         'NE'                          
+'Paso   24  -  fNuevoPedidoPortIn'                                                'NE'                          
+'Paso   25  -  fValidarMensaje'                                                   'NE'                          
+'Paso   26  -  fCapturarPedidoPortIn'                                             'NE'                          
+'Paso   27  -  fValidarServicio'                                                  'NE'                          
+'Paso   28  -  fBuscarPedidoVentaPI'                                              'OK'                          
+'Paso   29  -  fObtenerMorosidad'                                                 'NE'                          
+'Paso   30  -  fCompraPlanCategoriaCatalogoNew'                                   'NE'                          
+'Paso   31  -  fIngresarAutenticacion'                                            'NE'                          
+'Paso   32  -  fIngresarSIM'                                                      'NE'                          
+'Paso   33  -  fCrearRED'                                                         'NE'                          
+'Paso   34  -  fValidarMensaje'                                                   'NE'                          
+'Paso   35  -  fVista360'                                                         'OK'                          
+'Paso   36  -  fCambiarPerfil'                                                    'OK'                          
+'Paso   37  -  fCrearRED'                                                         'OK'                          
+'Paso   38  -  fValidarMensaje'                                                   'OK'                          
+
+
+Informe de DATOS de salida
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoPasoOK'                 '35'                          
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoTramite'                '1'                           
+'Paso    0  -  LeerDatosSalida'                    'T1_NroPedido'                 '1-1745657223'                
+'Paso    0  -  LeerDatosSalida'                    'NroServicio'                  '89657337'                    
+
+
+Informe de Bugs
+-----------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------
+Tipo Parada         = Excepción en Método
+Mensaje de Parada   = Script=ValorarTodo Línea=42 Método=SetText Error=
+SetText(" "); Error:(-1016) - Failed to create object "Siebel Power Communications.Sales Order Screen" of class "SiebScreen". Clase=com.rational.test.ft.Domain.Siebel.SiebelMethodExecutionFailureException Objeto=siebel.SiebTextAreaTestObject(Name: Descripcion, Map: Description)
+Parada en paso	    = 39
+
+
+-----------------------------------------------------------------------------------------
+Fin del Informe del Caso Prueba_Conj Datos: CP32_CD1
+-----------------------------------------------------------------------------------------
+
+
+Informe de Errores imprevistos de sistema
+-----------------------------------------------------------------------------------------
+'Paso   39  -  Accion'                             'Excepción en Método'          'Script=ValorarTodo Línea=42 Método=SetText Error=
+SetText(" "); Error:(-1016) - Failed to create object "Siebel Power Communications.Sales Order Screen" of class "SiebScreen". Clase=com.rational.test.ft.Domain.Siebel.SiebelMethodExecutionFailureException Objeto=siebel.SiebTextAreaTestObject(Name: Descripcion, Map: Description)'
+
+'Paso   39  -  Accion'                             'Excepción no esperada'        'Script=ValorarTodo Línea=0 Error=
+SetText(" "); Error:(-1016) - Failed to create object "Siebel Power Communications.Sales Order Screen" of class "SiebScreen".'
+
+'Paso   39  -  Accion'                             'Excepción no esperada'        'Script=fValorarTodo Línea=0 Error=CRFCN0018E: The 42 line of the 42 script contains an exception.'
+
+
+Hora de Finalizacion de la Ejecucion: 2017/01/30 12:31:50
+-----------------------------------------------------------------------------------------

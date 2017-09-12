@@ -7,7 +7,7 @@
 // file will be lost when automatically updated.
 
 package resources.Scripts.Comun;
-
+import libreria.Accion;
 import com.rational.test.ft.object.interfaces.*;
 import com.rational.test.ft.object.interfaces.SAP.*;
 import com.rational.test.ft.object.interfaces.WPF.*;
@@ -20,14 +20,14 @@ import com.rational.test.ft.vp.IFtVerificationPoint;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
  * Script Name   : <b>IngresarServicioAdmin</b><br>
- * Generated     : <b>2015/12/23 21:48:25</b><br>
+ * Generated     : <b>2016/09/14 10:05:08</b><br>
  * Description   : Helper class for script<br>
  * Original Host : Windows 7 x86 6.1 <br>
  * 
- * @since  diciembre 23, 2015
+ * @since  septiembre 14, 2016
  * @author Sandra
  */
-public abstract class IngresarServicioAdminHelper extends RationalTestScript
+public abstract class IngresarServicioAdminHelper extends libreria.Accion
 {
 	/**
 	 * AceptarMensajeHTMLSiebel: with default state.
@@ -55,7 +55,7 @@ public abstract class IngresarServicioAdminHelper extends RationalTestScript
 	}
 	
 	/**
-	 * Status: with default state.
+	 * EstadoPedidoAdmin: with default state.
 	 *		ClassName : SiebPicklist
 	 * 		.class : SiebPicklist
 	 * 		RepositoryName : Status
@@ -66,7 +66,7 @@ public abstract class IngresarServicioAdminHelper extends RationalTestScript
                         getMappedTestObject("EstadoPedidoAdmin"));
 	}
 	/**
-	 * Status: with specific test context and state.
+	 * EstadoPedidoAdmin: with specific test context and state.
 	 *		ClassName : SiebPicklist
 	 * 		.class : SiebPicklist
 	 * 		RepositoryName : Status
@@ -101,7 +101,7 @@ public abstract class IngresarServicioAdminHelper extends RationalTestScript
 	}
 	
 	/**
-	 * ICEReleaseNumber: with default state.
+	 * BtonLiberarNumero: with default state.
 	 *		ClassName : SiebButton
 	 * 		.class : SiebButton
 	 * 		RepositoryName : ICEReleaseNumber
@@ -112,7 +112,7 @@ public abstract class IngresarServicioAdminHelper extends RationalTestScript
                         getMappedTestObject("LiberarNumero"));
 	}
 	/**
-	 * ICEReleaseNumber: with specific test context and state.
+	 * BtonLiberarNumero: with specific test context and state.
 	 *		ClassName : SiebButton
 	 * 		.class : SiebButton
 	 * 		RepositoryName : ICEReleaseNumber
@@ -170,7 +170,7 @@ public abstract class IngresarServicioAdminHelper extends RationalTestScript
 	}
 	
 	/**
-	 * OrderNumber: with default state.
+	 * NroPedidoAdmin: with default state.
 	 *		ClassName : SiebText
 	 * 		.class : SiebText
 	 * 		RepositoryName : OrderNumber
@@ -181,7 +181,7 @@ public abstract class IngresarServicioAdminHelper extends RationalTestScript
                         getMappedTestObject("NroPedidoAdmin"));
 	}
 	/**
-	 * OrderNumber: with specific test context and state.
+	 * NroPedidoAdmin: with specific test context and state.
 	 *		ClassName : SiebText
 	 * 		.class : SiebText
 	 * 		RepositoryName : OrderNumber

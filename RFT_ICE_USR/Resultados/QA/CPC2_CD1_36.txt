@@ -1,0 +1,87 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: CPC2_CD1 Desde paso: 36 Modo:Real
+Modulo desde Paso : 1 Hasta paso: 200
+Hora de Inicio de la Ejecucion : 2017/09/08 14:39:55
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatosEntrada'                                                  'OK'                          
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'                                         'OK'                          
+'Paso    0  -  LeerDatosSalida'                                                   'OK'                          
+'Paso    1  -  fLeerVariableCondicionanteDP'                                      'OK'                          
+'Paso    2  -  fLeerVariableCondicionanteDP'                                      'OK'                          
+'Paso    3  -  fLogin'                                                            'OK'                          
+'Paso    4  -  fVista360'                                                         'NE'                          
+'Paso    5  -  fBuscarActivo'                                                     'NE'                          
+'Paso    6  -  fBuscarCtaFact'                                                    'NE'                          
+'Paso    7  -  fNuevaPostvta'                                                     'NE'                          
+'Paso    8  -  fBuscarPedidoVenta'                                                'NE'                          
+'Paso    9  -  fValidarAgencia'                                                   'NE'                          
+'Paso   10  -  fIngresarAutenticacion'                                            'NE'                          
+'Paso   11  -  fValidarAccion'                                                    'NE'                          
+'Paso   12  -  fValidarMotivoPedido'                                              'NE'                          
+'Paso   13  -  fIngresarIMEI'                                                     'NE'                          
+'Paso   14  -  fTerminalCliente'                                                  'NE'                          
+'Paso   15  -  fIngresarSIM'                                                      'NE'                          
+'Paso   16  -  fBuscarProducto'                                                   'NE'                          
+'Paso   17  -  fTerminalCliente'                                                  'NE'                          
+'Paso   18  -  fASRM_Login'                                                       'NE'                          
+'Paso   19  -  fASRM_ModificarEstadoServicio'                                     'NE'                          
+'Paso   20  -  fASRM_Logout'                                                      'NE'                          
+'Paso   21  -  fNumeroEspecial'                                                   'NE'                          
+'Paso   22  -  fValidacPostServicio'                                              'NE'                          
+'Paso   23  -  fExpandiryBuscar'                                                  'NE'                          
+'Paso   24  -  fCheckPagoFact'                                                    'NE'                          
+'Paso   25  -  fPersonalizar_SRV_MOV_POS'                                         'NE'                          
+'Paso   26  -  fPersonalizarFavorito'                                             'NE'                          
+'Paso   27  -  fBuscarProducto'                                                   'NE'                          
+'Paso   28  -  fCrearLE'                                                          'NE'                          
+'Paso   29  -  fAgregarNum_a_LE'                                                  'NE'                          
+'Paso   30  -  fBuscarProducto'                                                   'NE'                          
+'Paso   31  -  fExpandiryBuscar'                                                  'NE'                          
+'Paso   32  -  fExpandiryBuscar'                                                  'NE'                          
+'Paso   33  -  fExpandiryBuscar'                                                  'NE'                          
+'Paso   34  -  fAsociarListaEspecial'                                             'NE'                          
+'Paso   35  -  fEnviarPedido'                                                     'NE'                          
+'Paso   36  -  fValidarMensaje'                                                   'OK'                          
+'Paso   37  -  fValorarTodo'                                                      'OK'                          
+'Paso   38  -  fEnviarPedido'                                                     'OK'                          
+'Paso   39  -  fEsperaEstado'                                                     'OK'                          
+'Paso   40  -  fValidacPostEnvio1'                                                'OK'                          
+'Paso   41  -  Fin del caso'                                                      'OK'                          
+
+
+Informe de DATOS de salida
+-----------------------------------------------------------------------------------------
+'Paso    0  -  CasosPrueba'                        'Usuario Alternativo '         'JVALERIO1'                   
+'Paso    0  -  CasosPrueba'                        'Clave Alternativa '           'jvalerio1'                   
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoPasoOK'                 '35'                          
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoTramite'                '1'                           
+'Paso    0  -  LeerDatosSalida'                    'T1_NroPedido'                 '1-1776649336'                
+'Paso    0  -  LeerDatosSalida'                    'NroServicio'                  '89846776'                    
+'Paso    0  -  LeerDatosSalida'                    'T1_NroCtaFact'                '101775737110'                
+
+
+Informe de Bugs
+-----------------------------------------------------------------------------------------
+'Paso   39  -  fEsperaEstado'                      'Problema al esperar estado'  
+
+-----------------------------------------------------------------------------------------
+Tipo Parada         = Bug
+Mensaje de Parada   = Problema al esperar estado
+Parada en paso	    = 41
+
+
+-----------------------------------------------------------------------------------------
+Fin del Informe del Caso Prueba_Conj Datos: CPC2_CD1
+-----------------------------------------------------------------------------------------
+
+
+Informe de Errores imprevistos de sistema
+-----------------------------------------------------------------------------------------
+
+Hora de Finalizacion de la Ejecucion: 2017/09/08 14:53:15
+-----------------------------------------------------------------------------------------

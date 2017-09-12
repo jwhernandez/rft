@@ -20,11 +20,11 @@ import com.rational.test.ft.vp.IFtVerificationPoint;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
  * Script Name   : <b>AgregarContacto</b><br>
- * Generated     : <b>2016/01/28 12:45:24</b><br>
+ * Generated     : <b>2016/04/06 16:14:55</b><br>
  * Description   : Helper class for script<br>
  * Original Host : Windows 7 x86 6.1 <br>
  * 
- * @since  enero 28, 2016
+ * @since  abril 06, 2016
  * @author Sandra
  */
 public abstract class AgregarContactoHelper extends libreria.Accion
@@ -119,29 +119,6 @@ public abstract class AgregarContactoHelper extends libreria.Accion
 	{
 		return new SiebButtonTestObject(
                         getMappedTestObject("PickRecord"), anchor, flags);
-	}
-	
-	/**
-	 * CloseApplet: with default state.
-	 *		ClassName : SiebButton
-	 * 		.class : SiebButton
-	 * 		RepositoryName : CloseApplet
-	 */
-	protected SiebButtonTestObject button_closeApplet() 
-	{
-		return new SiebButtonTestObject(
-                        getMappedTestObject("button_closeApplet"));
-	}
-	/**
-	 * CloseApplet: with specific test context and state.
-	 *		ClassName : SiebButton
-	 * 		.class : SiebButton
-	 * 		RepositoryName : CloseApplet
-	 */
-	protected SiebButtonTestObject button_closeApplet(TestObject anchor, long flags) 
-	{
-		return new SiebButtonTestObject(
-                        getMappedTestObject("button_closeApplet"), anchor, flags);
 	}
 	
 	

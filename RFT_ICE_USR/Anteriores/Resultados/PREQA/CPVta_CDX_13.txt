@@ -1,0 +1,55 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: CPVta_CDX Desde paso: 13 Modo:Real
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatosEntrada'                                                  'OK'                          
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'                                         'OK'                          
+'Paso    0  -  LeerDatosSalida'                                                   'OK'                          
+'Paso    1  -  fLogin'                                                            'OK'                          
+'Paso    2  -  fVista360'                                                         'NE'                          
+'Paso    3  -  fNuevaVenta'                                                       'NE'                          
+'Paso    4  -  fBuscarPedidoVenta'                                                'OK'                          
+'Paso    5  -  fObtenerMorosidad'                                                 'NE'                          
+'Paso    6  -  fIngresarAutenticacion'                                            'NE'                          
+'Paso    7  -  fCompraPlanCategoriaCatalogoNew'                                   'NE'                          
+'Paso    8  -  fTerminalCliente'                                                  'NE'                          
+'Paso    9  -  fIngresar_SIM_IMEI_Servicio_Admin'                                 'NE'                          
+'Paso   10  -  fGenerarCtaFact'                                                   'NE'                          
+'Paso   11  -  fValorarTodo'                                                      'NE'                          
+'Paso   12  -  fEnviarPedido'                                                     'NE'                          
+
+
+Informe de DATOS de salida
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoPasoOK'                 '12'                          
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoTramite'                '1'                           
+'Paso    0  -  LeerDatosSalida'                    'T1_NroPedido'                 '1-1728879337'                
+'Paso    0  -  LeerDatosSalida'                    'NroServicio'                  '10000550'                    
+
+
+Informe de Bugs
+-----------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------
+Tipo Parada         = Excepción no esperada
+Mensaje de Parada   = Script=fEsperaEstado Línea=0 Error="Se ha pulsado el botón Detener"
+Parada en paso	    = 13
+
+
+-----------------------------------------------------------------------------------------
+Fin del Informe del Caso Prueba_Conj Datos: CPVta_CDX
+-----------------------------------------------------------------------------------------
+
+
+Informe de Errores imprevistos de sistema
+-----------------------------------------------------------------------------------------
+'Paso   13  -  Accion'                             'Excepción no esperada'        'Script=fEsperaEstado Línea=0 Error="Se ha pulsado el botón Detener"'
+
+'Paso   13  -  Accion'                             'Excepción no esperada'        'Script=CasosPrueba Línea=0 Error="Se ha pulsado el botón Detener"'
+
+'Paso   13  -  Accion'                             'Excepción no esperada'        'Script=IterarCaso Línea=0 Error="Se ha pulsado el botón Detener"'
+

@@ -1,0 +1,39 @@
+package libreria;
+
+import com.rational.test.ft.object.interfaces.BrowserTestObject;
+import com.rational.test.ft.object.interfaces.RootTestObject;
+import com.rational.test.ft.object.interfaces.TestObject;
+import com.rational.test.ft.script.Property;
+import com.rational.test.ft.script.RationalTestScript;
+
+public class CerrarVentanasIE extends RationalTestScript {
+	// get all test objects that have the title "Place an Order"
+	RootTestObject root = RationalTestScript.getRootTestObject();
+	Property[] props = new Property[1]
+	props[0] = new Property(".class", "Html.HtmlBrowser");
+	//props[1] = new Property(".processName", "iexplorer.exe");
+	//props[2] = new Property(".processName", "iexplorer.exe");
+
+
+	TestObject[] to = root.find(atDescendant(props));
+	System.out.println(to.length);
+
+	TestObject[] to1 = root.find(atDescendant(".class", "Html.HtmlBrowser"));
+	System.out.println(to1.length);
+
+	// print test object properties to console
+	BrowserTestObject ObjetoaCerrar;
+	for (int i = 0; i < to.length; i++)
+	{
+		System.out.println(to[i].getProperties());
+		if (to[i].getProperty(".documentName").toString().contains("ecommunications_esn"))
+		{
+			System.out.println("Este objeto será cerrado");
+			ObjetoaCerrar = new BrowserTestObject(to[i]);
+			ObjetoaCerrar.close();
+
+		} 
+
+		unregisterAll();
+	}
+}

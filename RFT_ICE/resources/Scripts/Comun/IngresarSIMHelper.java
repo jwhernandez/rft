@@ -20,17 +20,17 @@ import com.rational.test.ft.vp.IFtVerificationPoint;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
  * Script Name   : <b>IngresarSIM</b><br>
- * Generated     : <b>2016/01/11 09:10:39</b><br>
+ * Generated     : <b>2016/03/30 19:59:33</b><br>
  * Description   : Helper class for script<br>
  * Original Host : Windows 7 x86 6.1 <br>
  * 
- * @since  enero 11, 2016
+ * @since  marzo 30, 2016
  * @author Sandra
  */
 public abstract class IngresarSIMHelper extends libreria.Accion
 {
 	/**
-	 * Arbol_lista: with default state.
+	 * LineasPedido: with default state.
 	 *		ActiveRow : 9
 	 * 		ClassName : SiebList
 	 * 		.class : SiebList
@@ -43,7 +43,7 @@ public abstract class IngresarSIMHelper extends libreria.Accion
                         getMappedTestObject("LineasPedido"));
 	}
 	/**
-	 * Arbol_lista: with specific test context and state.
+	 * LineasPedido: with specific test context and state.
 	 *		ActiveRow : 9
 	 * 		ClassName : SiebList
 	 * 		.class : SiebList
@@ -54,6 +54,29 @@ public abstract class IngresarSIMHelper extends libreria.Accion
 	{
 		return new SiebListTestObject(
                         getMappedTestObject("LineasPedido"), anchor, flags);
+	}
+	
+	/**
+	 * LineasPedidoPI: with default state.
+	 *		ClassName : SiebList
+	 * 		.class : SiebList
+	 * 		RepositoryName : SiebList
+	 */
+	protected SiebListTestObject LineasPedidoPI() 
+	{
+		return new SiebListTestObject(
+                        getMappedTestObject("LineasPedidoPI"));
+	}
+	/**
+	 * LineasPedidoPI: with specific test context and state.
+	 *		ClassName : SiebList
+	 * 		.class : SiebList
+	 * 		RepositoryName : SiebList
+	 */
+	protected SiebListTestObject LineasPedidoPI(TestObject anchor, long flags) 
+	{
+		return new SiebListTestObject(
+                        getMappedTestObject("LineasPedidoPI"), anchor, flags);
 	}
 	
 	/**
@@ -77,6 +100,29 @@ public abstract class IngresarSIMHelper extends libreria.Accion
 	{
 		return new SiebTextTestObject(
                         getMappedTestObject("SIM"), anchor, flags);
+	}
+	
+	/**
+	 * SIM_PI: with default state.
+	 *		ClassName : SiebText
+	 * 		.class : SiebText
+	 * 		RepositoryName : ICE SIM
+	 */
+	protected SiebTextTestObject SIM_PI() 
+	{
+		return new SiebTextTestObject(
+                        getMappedTestObject("SIM_PI"));
+	}
+	/**
+	 * SIM_PI: with specific test context and state.
+	 *		ClassName : SiebText
+	 * 		.class : SiebText
+	 * 		RepositoryName : ICE SIM
+	 */
+	protected SiebTextTestObject SIM_PI(TestObject anchor, long flags) 
+	{
+		return new SiebTextTestObject(
+                        getMappedTestObject("SIM_PI"), anchor, flags);
 	}
 	
 	

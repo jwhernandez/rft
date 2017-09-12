@@ -1,0 +1,44 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: CPUNI_CD1 Desde paso: 12 Modo:Real
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatosEntrada'                                                  'OK'                          
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'                                         'OK'                          
+'Paso    0  -  LeerDatosSalida'                                                   'OK'                          
+'Paso    1  -  fLogin'                                                            'NE'                          
+'Paso    2  -  fBRM_Login'                                                        'NE'                          
+'Paso    3  -  fBRM_BuscarCliente'                                                'NE'                          
+'Paso    4  -  fBRM_FavoritoValidarCambioNum'                                     'NE'                          
+'Paso    5  -  fBRM_Logout'                                                       'NE'                          
+'Paso    6  -  fBRM_ValidarProductos'                                             'NE'                          
+'Paso    7  -  fBRM_ValidarProductos'                                             'NE'                          
+'Paso    8  -  fValidarAtributosPedido'                                           'NE'                          
+'Paso    9  -  fCompraPlanCategoriaCatalogo'                                      'NE'                          
+'Paso   10  -  fBRM_Logout'                                                       'NE'                          
+'Paso   11  -  fCrearLE_Ped'                                                      'NE'                          
+
+
+Informe de DATOS de salida
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoPasoOK'                 '11'                          
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoTramite'                '1'                           
+'Paso    0  -  LeerDatosSalida'                    'T1_NomListaEspecial'          '1-1723237324'                
+
+
+Informe de Bugs
+-----------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------
+Tipo Parada         = ObjectMethodException
+Mensaje de Parada   = Script=Comun.AgregarNum_a_LE_Ped Línea=84 Método=SetText Error=
+SetActiveControl("Phone Number"); Error:(-1022) - System error. Debug info: Failed to execute method id 27 with args ((Phone Number,-1)). Reason: HandleAutoRequest. Clase=com.rational.test.ft.Domain.Siebel.SiebelMethodExecutionFailureException Objeto=siebel.SiebTextTestObject(Nombre: NumTel, Correlación: PhoneNumber)
+Parada en paso	    = 12
+
+
+-----------------------------------------------------------------------------------------
+Fin del Informe del Caso Prueba_Conj Datos: CPUNI_CD1
+-----------------------------------------------------------------------------------------

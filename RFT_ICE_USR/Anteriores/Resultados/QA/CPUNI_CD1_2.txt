@@ -1,0 +1,55 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: CPUNI_CD1 Desde paso: 2 Modo:Real
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatosEntrada'                                                  'OK'                          
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'                                         'OK'                          
+'Paso    0  -  LeerDatosSalida'                                                   'OK'                          
+'Paso    1  -  fLogin'                                                            'NE'                          
+'Paso    2  -  fBRM_Login'                                                        'NE'                          
+'Paso    3  -  fBRM_BuscarCliente'                                                'NE'                          
+'Paso    4  -  fBRM_FavoritoValidarCambioNum'                                     'NE'                          
+'Paso    5  -  fBRM_Logout'                                                       'NE'                          
+'Paso    6  -  fBRM_ValidarProductos'                                             'NE'                          
+'Paso    7  -  fBRM_ValidarProductos'                                             'NE'                          
+'Paso    8  -  fValidarAtributosPedido'                                           'NE'                          
+'Paso    9  -  fCompraPlanCategoriaCatalogo'                                      'NE'                          
+'Paso   10  -  fBRM_Logout'                                                       'NE'                          
+'Paso   11  -  fCrearLE_Ped'                                                      'NE'                          
+'Paso   12  -  fAgregarNum_a_LE_Ped'                                              'NE'                          
+'Paso   13  -  fCrearLE_Ped'                                                      'NE'                          
+'Paso   14  -  fAgregarNum_a_LE_Ped'                                              'NE'                          
+'Paso   15  -  fDB_Validar'                                                       'OK'                          
+'Paso   16  -  fDB_Validar'                                                       'NE'                          
+'Paso   17  -  fDB_Validar'                                                       'NE'                          
+'Paso   18  -  Fin del caso'                                                      'OK'                          
+
+
+Informe de DATOS de salida
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoPasoOK'                 '1'                           
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoTramite'                '1'                           
+'Paso    0  -  LeerDatosSalida'                    'T1_NomListaEspecial'          '1-1723237324'                
+'Paso   15  -  DB_Validar'                         'Fila:1'                       'Fila:1 89520100-712012004712389-'
+
+
+Informe de Bugs
+-----------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------
+Tipo Parada         = FIN
+Mensaje de Parada   = FIN del caso en paso 18
+Parada en paso	    = 18
+
+
+-----------------------------------------------------------------------------------------
+Fin del Informe del Caso Prueba_Conj Datos: CPUNI_CD1
+-----------------------------------------------------------------------------------------
+
+
+Informe de Errores imprevistos de sistema
+-----------------------------------------------------------------------------------------

@@ -24,6 +24,7 @@ public class fLiberarNumero extends fLiberarNumeroHelper
 {
 	public void testMain(Object[] args) 
 	{
+		ImpreEncabezadoScript(getScriptArgs(), getScriptName( ).toString());
 		String[] LibNum;
 		LibNum = new String[2];
 		// Parám: 0) Prepago o Postpago 1) Devuelve NOK o OK 		

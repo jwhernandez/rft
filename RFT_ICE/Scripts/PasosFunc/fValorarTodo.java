@@ -22,16 +22,22 @@ public class fValorarTodo  extends fValorarTodoHelper
 {
 	public void testMain(Object[] args) throws RationalTestException 
 	{
+		ImpreEncabezadoScript(getScriptArgs(), getScriptName( ).toString());
 		String[] ValorarTodo;
-		ValorarTodo = new String[1];
+		ValorarTodo = new String[2];
 
 		String[] MensError;
 		MensError = new String[4];
 	
-		/** 
-		 * Volver a valorar todo
+		/**
+		 * Itera el data pools de datos del caso para buscar la row correcta
 		 */
-
+		dpReset();
+		while (!dpDone() &&  !(dpString("NumeroCaso").equals(args[0]) && 
+				dpString("Ambiente").equals(args[2]))) {
+			dpNext(); 
+		} 
+		ValorarTodo[1] = dpString("Tramite"); 
 		callScript("Scripts.Comun.ValorarTodo",ValorarTodo);
 
 		if  (ValorarTodo[0].toString().equals("NOK")){

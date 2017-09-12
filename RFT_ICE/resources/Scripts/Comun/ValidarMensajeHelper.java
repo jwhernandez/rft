@@ -20,11 +20,11 @@ import com.rational.test.ft.vp.IFtVerificationPoint;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
  * Script Name   : <b>ValidarMensaje</b><br>
- * Generated     : <b>2015/12/18 11:56:04</b><br>
+ * Generated     : <b>2017/03/22 11:23:29</b><br>
  * Description   : Helper class for script<br>
  * Original Host : Windows 7 x86 6.1 <br>
  * 
- * @since  diciembre 18, 2015
+ * @since  marzo 22, 2017
  * @author Sandra
  */
 public abstract class ValidarMensajeHelper extends libreria.Accion
@@ -55,8 +55,8 @@ public abstract class ValidarMensajeHelper extends libreria.Accion
 	}
 	
 	/**
-	 * HtmlDialogButtonAceptar: with default state.
-	 *		.text : Aceptar
+	 * AceptarMensajeBrowser: with default state.
+	 *		.text : RegularExpression((Aceptar|OK))
 	 * 		.class : Html.DialogButton
 	 * 		.classIndex : 0
 	 */
@@ -66,8 +66,8 @@ public abstract class ValidarMensajeHelper extends libreria.Accion
                         getMappedTestObject("AceptarMensajeBrowser"));
 	}
 	/**
-	 * HtmlDialogButtonAceptar: with specific test context and state.
-	 *		.text : Aceptar
+	 * AceptarMensajeBrowser: with specific test context and state.
+	 *		.text : RegularExpression((Aceptar|OK))
 	 * 		.class : Html.DialogButton
 	 * 		.classIndex : 0
 	 */
@@ -78,7 +78,7 @@ public abstract class ValidarMensajeHelper extends libreria.Accion
 	}
 	
 	/**
-	 * HtmlDialogStaticAsegureseDeOfrecerFavoritoVOZYaQueSeEnc: with default state.
+	 * MensajeBrowserScript: with default state.
 	 *		.text : RegularExpression(.*)
 	 * 		.class : Html.DialogStatic
 	 * 		.classIndex : 1
@@ -89,7 +89,7 @@ public abstract class ValidarMensajeHelper extends libreria.Accion
                         getMappedTestObject("MensajeBrowserScript"));
 	}
 	/**
-	 * HtmlDialogStaticAsegureseDeOfrecerFavoritoVOZYaQueSeEnc: with specific test context and state.
+	 * MensajeBrowserScript: with specific test context and state.
 	 *		.text : RegularExpression(.*)
 	 * 		.class : Html.DialogStatic
 	 * 		.classIndex : 1

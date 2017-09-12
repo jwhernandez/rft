@@ -1,0 +1,63 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: CP32_CD1 Desde paso: 8 Modo:Real
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatosEntrada'                                                  'OK'                          
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'                                         'OK'                          
+'Paso    0  -  LeerDatosSalida'                                                   'OK'                          
+'Paso    1  -  fLogin'                                                            'OK'                          
+'Paso    2  -  fASRM_Login'                                                       'NE'                          
+'Paso    3  -  fASRM_ModificarEstadoServicio'                                     'NE'                          
+'Paso    4  -  fASRM_Logout'                                                      'NE'                          
+'Paso    5  -  fVista360'                                                         'NE'                          
+'Paso    6  -  fNuevoPedidoPortIn'                                                'NE'                          
+'Paso    7  -  fValidarMensaje'                                                   'NE'                          
+'Paso    8  -  fValidarEstadoPedPIenLista'                                        'OK'                          
+'Paso    9  -  fASRM_Login'                                                       'OK'                          
+'Paso   10  -  fASRM_ModificarEstadoServicio'                                     'OK'                          
+'Paso   11  -  fASRM_Logout'                                                      'OK'                          
+'Paso   12  -  fVista360'                                                         'OK'                          
+'Paso   13  -  fNuevoPedidoPortIn'                                                'OK'                          
+'Paso   14  -  fValidarMensaje'                                                   'OK'                          
+'Paso   15  -  fValidarEstadoPedPIenLista'                                        'OK'                          
+'Paso   16  -  fASRM_Login'                                                       'OK'                          
+
+
+Informe de DATOS de salida
+-----------------------------------------------------------------------------------------
+'Paso    0  -  CasosPrueba'                        'Usuario Alternativo '         'fragar'                      
+'Paso    0  -  CasosPrueba'                        'Clave Alternativa '           'fgarcia21'                   
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoPasoOK'                 '7'                           
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoTramite'                '1'                           
+'Paso    0  -  LeerDatosSalida'                    'NroServicio'                  '89520124'                    
+'Paso    8  -  ValidarEstadoPedPIenLista'          'EstadoPedPI'                  'Cancelado'                   
+'Paso   13  -  fNuevoPedidoPortIn'                 'NroServicio'                  '89520124'                    
+'Paso   13  -  GrabarDatosSalida'                  'T1_NroServicio'               '89520124'                    
+'Paso   15  -  ValidarEstadoPedPIenLista'          'EstadoPedPI'                  'Cancelado'                   
+
+
+Informe de Bugs
+-----------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------
+Tipo Parada         = Excepción no esperada
+Mensaje de Parada   = Script=fASRM_ModificarEstadoServicio Línea=0 Error=CRFCN0478E: Variable name [NumeroServicio3] not found in datapool
+Parada en paso	    = 17
+
+
+-----------------------------------------------------------------------------------------
+Fin del Informe del Caso Prueba_Conj Datos: CP32_CD1
+-----------------------------------------------------------------------------------------
+
+
+Informe de Errores imprevistos de sistema
+-----------------------------------------------------------------------------------------
+'Paso   17  -  Accion'                             'Excepción no esperada'        'Script=fASRM_ModificarEstadoServicio Línea=0 Error=CRFCN0478E: Variable name [NumeroServicio3] not found in datapool'
+
+
+Hora de Finalizacion de la Ejecucion: 2017/02/03 10:30:29
+-----------------------------------------------------------------------------------------

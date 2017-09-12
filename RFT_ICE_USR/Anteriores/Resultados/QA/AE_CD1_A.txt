@@ -1,0 +1,27 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: AE_CD1 Desde paso: A Modo:Real
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+---------------------------
+
+
+Informe de DATOS de salida
+---------------------------
+
+
+Informe de Bugs
+-----------------
+
+
+Informe de Errores imprevistos de sistema
+------------------------------------------------
+AE_CD1;Mensaje UE;Script=Comun.LeerDatosEntrada Línea=0 Error=null;
+
+
+----------------------------------------------------------------------------------------------------------
+Tipo Parada:UnhandledException - Mensaje de Parada: Script=Comun.LeerDatosEntrada Línea=0 Error=null
+- Fin del Informe del Caso Prueba_Conj Datos: AE_CD1
+----------------------------------------------------------------------------------------------------------

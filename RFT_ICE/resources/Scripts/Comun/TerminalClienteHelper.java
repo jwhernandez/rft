@@ -20,11 +20,11 @@ import com.rational.test.ft.vp.IFtVerificationPoint;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
  * Script Name   : <b>TerminalCliente</b><br>
- * Generated     : <b>2015/12/15 19:48:13</b><br>
+ * Generated     : <b>2016/12/21 12:37:15</b><br>
  * Description   : Helper class for script<br>
  * Original Host : Windows 7 x86 6.1 <br>
  * 
- * @since  diciembre 15, 2015
+ * @since  diciembre 21, 2016
  * @author Sandra
  */
 public abstract class TerminalClienteHelper extends libreria.Accion
@@ -52,6 +52,68 @@ public abstract class TerminalClienteHelper extends libreria.Accion
 	{
 		return new GuiTestObject(
                         getMappedTestObject("Aceptar"), anchor, flags);
+	}
+	
+	/**
+	 * BtonConsultaPedido: with default state.
+	 *		.text : Consulta
+	 * 		.href : javascript:void(0)
+	 * 		.id : s_1_1_151_0_mb
+	 * 		.title : 
+	 * 		.class : Html.A
+	 * 		.name : 
+	 * 		.classIndex : 0
+	 */
+	protected GuiTestObject BtonConsultaPedido() 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("BtonConsultaPedido"));
+	}
+	/**
+	 * BtonConsultaPedido: with specific test context and state.
+	 *		.text : Consulta
+	 * 		.href : javascript:void(0)
+	 * 		.id : s_1_1_151_0_mb
+	 * 		.title : 
+	 * 		.class : Html.A
+	 * 		.name : 
+	 * 		.classIndex : 0
+	 */
+	protected GuiTestObject BtonConsultaPedido(TestObject anchor, long flags) 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("BtonConsultaPedido"), anchor, flags);
+	}
+	
+	/**
+	 * BtonConsultaPedidoPI: with default state.
+	 *		.text : Consulta
+	 * 		.href : javascript:void(0)
+	 * 		.id : s_4_1_152_0_mb
+	 * 		.title : 
+	 * 		.class : Html.A
+	 * 		.name : 
+	 * 		.classIndex : 0
+	 */
+	protected GuiTestObject BtonConsultaPedidoPI() 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("BtonConsultaPedidoPI"));
+	}
+	/**
+	 * BtonConsultaPedidoPI: with specific test context and state.
+	 *		.text : Consulta
+	 * 		.href : javascript:void(0)
+	 * 		.id : s_4_1_152_0_mb
+	 * 		.title : 
+	 * 		.class : Html.A
+	 * 		.name : 
+	 * 		.classIndex : 0
+	 */
+	protected GuiTestObject BtonConsultaPedidoPI(TestObject anchor, long flags) 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("BtonConsultaPedidoPI"), anchor, flags);
 	}
 	
 	/**
@@ -128,10 +190,12 @@ public abstract class TerminalClienteHelper extends libreria.Accion
 	}
 	
 	/**
-	 * Arbol_lista: with default state.
-	 *		ClassName : SiebList
+	 * LineasPedido: with default state.
+	 *		ActiveRow : 9
+	 * 		ClassName : SiebList
 	 * 		.class : SiebList
 	 * 		RepositoryName : SiebList
+	 * 		SelectedRows : 9
 	 */
 	protected SiebListTestObject LineasPedido() 
 	{
@@ -139,10 +203,12 @@ public abstract class TerminalClienteHelper extends libreria.Accion
                         getMappedTestObject("LineasPedido"));
 	}
 	/**
-	 * Arbol_lista: with specific test context and state.
-	 *		ClassName : SiebList
+	 * LineasPedido: with specific test context and state.
+	 *		ActiveRow : 9
+	 * 		ClassName : SiebList
 	 * 		.class : SiebList
 	 * 		RepositoryName : SiebList
+	 * 		SelectedRows : 9
 	 */
 	protected SiebListTestObject LineasPedido(TestObject anchor, long flags) 
 	{

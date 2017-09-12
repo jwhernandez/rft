@@ -20,17 +20,17 @@ import com.rational.test.ft.vp.IFtVerificationPoint;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
  * Script Name   : <b>BuscarProducto</b><br>
- * Generated     : <b>2016/01/21 10:46:08</b><br>
+ * Generated     : <b>2017/07/03 15:55:30</b><br>
  * Description   : Helper class for script<br>
  * Original Host : Windows 7 x86 6.1 <br>
  * 
- * @since  enero 21, 2016
+ * @since  julio 03, 2017
  * @author Sandra
  */
 public abstract class BuscarProductoHelper extends libreria.Accion
 {
 	/**
-	 * OrderEntryLineItemListAppletSales: with default state.
+	 * AppletLineasPedido: with default state.
 	 *		RecordCounter : 1 - 10 of 21
 	 * 		ClassName : SiebApplet
 	 * 		.class : SiebApplet
@@ -42,7 +42,7 @@ public abstract class BuscarProductoHelper extends libreria.Accion
                         getMappedTestObject("AppletLineasPedido"));
 	}
 	/**
-	 * OrderEntryLineItemListAppletSales: with specific test context and state.
+	 * AppletLineasPedido: with specific test context and state.
 	 *		RecordCounter : 1 - 10 of 21
 	 * 		ClassName : SiebApplet
 	 * 		.class : SiebApplet
@@ -55,7 +55,30 @@ public abstract class BuscarProductoHelper extends libreria.Accion
 	}
 	
 	/**
-	 * Arbol_lista: with default state.
+	 * AppletLineasPedidoPI: with default state.
+	 *		ClassName : SiebApplet
+	 * 		.class : SiebApplet
+	 * 		RepositoryName : ICE Port Entry - Line Item List Applet (Sales)
+	 */
+	protected SiebAppletTestObject AppletLineasPedidoPI() 
+	{
+		return new SiebAppletTestObject(
+                        getMappedTestObject("AppletLineasPedidoPI"));
+	}
+	/**
+	 * AppletLineasPedidoPI: with specific test context and state.
+	 *		ClassName : SiebApplet
+	 * 		.class : SiebApplet
+	 * 		RepositoryName : ICE Port Entry - Line Item List Applet (Sales)
+	 */
+	protected SiebAppletTestObject AppletLineasPedidoPI(TestObject anchor, long flags) 
+	{
+		return new SiebAppletTestObject(
+                        getMappedTestObject("AppletLineasPedidoPI"), anchor, flags);
+	}
+	
+	/**
+	 * LineasPedido: with default state.
 	 *		ActiveRow : 9
 	 * 		ClassName : SiebList
 	 * 		.class : SiebList
@@ -68,7 +91,7 @@ public abstract class BuscarProductoHelper extends libreria.Accion
                         getMappedTestObject("LineasPedido"));
 	}
 	/**
-	 * Arbol_lista: with specific test context and state.
+	 * LineasPedido: with specific test context and state.
 	 *		ActiveRow : 9
 	 * 		ClassName : SiebList
 	 * 		.class : SiebList
@@ -82,26 +105,188 @@ public abstract class BuscarProductoHelper extends libreria.Accion
 	}
 	
 	/**
-	 * SiebScreenViews: with default state.
-	 *		ClassName : SiebScreenViews
-	 * 		.class : SiebScreenViews
-	 * 		RepositoryName : SiebScreenViews
+	 * LineasPedidoPI: with default state.
+	 *		ClassName : SiebList
+	 * 		.class : SiebList
+	 * 		RepositoryName : SiebList
 	 */
-	protected SiebScreenViewsTestObject pageTabList_siebScreenViews() 
+	protected SiebListTestObject LineasPedidoPI() 
 	{
-		return new SiebScreenViewsTestObject(
-                        getMappedTestObject("pageTabList_siebScreenViews"));
+		return new SiebListTestObject(
+                        getMappedTestObject("LineasPedidoPI"));
 	}
 	/**
-	 * SiebScreenViews: with specific test context and state.
+	 * LineasPedidoPI: with specific test context and state.
+	 *		ClassName : SiebList
+	 * 		.class : SiebList
+	 * 		RepositoryName : SiebList
+	 */
+	protected SiebListTestObject LineasPedidoPI(TestObject anchor, long flags) 
+	{
+		return new SiebListTestObject(
+                        getMappedTestObject("LineasPedidoPI"), anchor, flags);
+	}
+	
+	/**
+	 * Menu: with default state.
+	 *		.text : Menú
+	 * 		.id : s_at_m_3
+	 * 		.href : javascript:void(0)
+	 * 		.title : 
+	 * 		.class : Html.A
+	 * 		.name : 
+	 * 		.classIndex : 0
+	 */
+	protected GuiTestObject Menu() 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("Menu"));
+	}
+	/**
+	 * Menu: with specific test context and state.
+	 *		.text : Menú
+	 * 		.id : s_at_m_3
+	 * 		.href : javascript:void(0)
+	 * 		.title : 
+	 * 		.class : Html.A
+	 * 		.name : 
+	 * 		.classIndex : 0
+	 */
+	protected GuiTestObject Menu(TestObject anchor, long flags) 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("Menu"), anchor, flags);
+	}
+	
+	/**
+	 * MenuOLD: with default state.
+	 *		.text : Menú
+	 * 		.id : s_at_m_3
+	 * 		.href : javascript:void(0)
+	 * 		.title : 
+	 * 		.class : Html.A
+	 * 		.name : 
+	 * 		.classIndex : 0
+	 */
+	protected GuiTestObject MenuOld() 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("MenuOld"));
+	}
+	/**
+	 * MenuOLD: with specific test context and state.
+	 *		.text : Menú
+	 * 		.id : s_at_m_3
+	 * 		.href : javascript:void(0)
+	 * 		.title : 
+	 * 		.class : Html.A
+	 * 		.name : 
+	 * 		.classIndex : 0
+	 */
+	protected GuiTestObject MenuOld(TestObject anchor, long flags) 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("MenuOld"), anchor, flags);
+	}
+	
+	/**
+	 * MenuPI: with default state.
+	 *		.text : Menú
+	 * 		.href : javascript:void(0)
+	 * 		.id : s_at_m_5
+	 * 		.title : 
+	 * 		.class : Html.A
+	 * 		.name : 
+	 * 		.classIndex : 0
+	 */
+	protected GuiTestObject MenuPI() 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("MenuPI"));
+	}
+	/**
+	 * MenuPI: with specific test context and state.
+	 *		.text : Menú
+	 * 		.href : javascript:void(0)
+	 * 		.id : s_at_m_5
+	 * 		.title : 
+	 * 		.class : Html.A
+	 * 		.name : 
+	 * 		.classIndex : 0
+	 */
+	protected GuiTestObject MenuPI(TestObject anchor, long flags) 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("MenuPI"), anchor, flags);
+	}
+	
+	/**
+	 * NroLinea: with default state.
+	 *		ClassName : SiebText
+	 * 		.class : SiebText
+	 * 		RepositoryName : Outline Number
+	 */
+	protected SiebTextTestObject NroLinea() 
+	{
+		return new SiebTextTestObject(
+                        getMappedTestObject("NroLinea"));
+	}
+	/**
+	 * NroLinea: with specific test context and state.
+	 *		ClassName : SiebText
+	 * 		.class : SiebText
+	 * 		RepositoryName : Outline Number
+	 */
+	protected SiebTextTestObject NroLinea(TestObject anchor, long flags) 
+	{
+		return new SiebTextTestObject(
+                        getMappedTestObject("NroLinea"), anchor, flags);
+	}
+	
+	/**
+	 * TabsPedidoPortabilidad: with default state.
 	 *		ClassName : SiebScreenViews
 	 * 		.class : SiebScreenViews
 	 * 		RepositoryName : SiebScreenViews
 	 */
-	protected SiebScreenViewsTestObject pageTabList_siebScreenViews(TestObject anchor, long flags) 
+	protected SiebScreenViewsTestObject TabsPedidoPortabilidad() 
 	{
 		return new SiebScreenViewsTestObject(
-                        getMappedTestObject("pageTabList_siebScreenViews"), anchor, flags);
+                        getMappedTestObject("TabsPedidoPortabilidad"));
+	}
+	/**
+	 * TabsPedidoPortabilidad: with specific test context and state.
+	 *		ClassName : SiebScreenViews
+	 * 		.class : SiebScreenViews
+	 * 		RepositoryName : SiebScreenViews
+	 */
+	protected SiebScreenViewsTestObject TabsPedidoPortabilidad(TestObject anchor, long flags) 
+	{
+		return new SiebScreenViewsTestObject(
+                        getMappedTestObject("TabsPedidoPortabilidad"), anchor, flags);
+	}
+	
+	/**
+	 * TabsPedidoVta: with default state.
+	 *		ClassName : SiebScreenViews
+	 * 		.class : SiebScreenViews
+	 * 		RepositoryName : SiebScreenViews
+	 */
+	protected SiebScreenViewsTestObject TabsPedidoVta() 
+	{
+		return new SiebScreenViewsTestObject(
+                        getMappedTestObject("TabsPedidoVta"));
+	}
+	/**
+	 * TabsPedidoVta: with specific test context and state.
+	 *		ClassName : SiebScreenViews
+	 * 		.class : SiebScreenViews
+	 * 		RepositoryName : SiebScreenViews
+	 */
+	protected SiebScreenViewsTestObject TabsPedidoVta(TestObject anchor, long flags) 
+	{
+		return new SiebScreenViewsTestObject(
+                        getMappedTestObject("TabsPedidoVta"), anchor, flags);
 	}
 	
 	

@@ -1,0 +1,141 @@
+package GUI;
+
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+
+public class Final extends JMenuBar implements ActionListener  
+{
+	String[ ] fileItems = new String[ ] { "Escenario 03", "Escenario 05", "Escenario 12", "Escenario 13", "Escenario 29" };
+	JFrame frame;
+	JPanel paneliz,panelde,panelab,panelar,panelex;
+	JLabel nombre,apellidos,telefono,dni;
+	JTextField text1,text2,text4;
+	
+	public Final(  )
+	{
+	    JMenu fileMenu = new JMenu("Ambiente PreQA");
+        JMenu otherMenu = new JMenu("Ambiente QA");
+        JMenu editMenu = new JMenu("Ayuda");
+        
+        ActionListener printListener = new ActionListener(  ) 
+        {
+        	public void actionPerformed(ActionEvent event) 
+        	{
+        		System.out.println("Menu item [" + event.getActionCommand(  ) + "] was pressed.");
+        	}
+        };
+    
+     
+    for (int i=0; i < fileItems.length; i++) 
+    {
+    	JMenuItem item = new JMenuItem(fileItems[i]);
+        item.addActionListener(printListener);
+        fileMenu.add(item);
+    }
+      
+    editMenu.insertSeparator(1);
+    JMenuItem item;
+
+    otherMenu.add(item = new JCheckBoxMenuItem("Escenario 03"));
+    item.addActionListener(printListener);
+    otherMenu.add(item = new JCheckBoxMenuItem("Escenario 05"));
+    item.addActionListener(printListener);
+    otherMenu.add(item = new JCheckBoxMenuItem("Escenario 12"));
+    item.addActionListener(printListener);
+    otherMenu.add(item = new JCheckBoxMenuItem("Escenario 13"));
+    item.addActionListener(printListener);
+    otherMenu.add(item = new JCheckBoxMenuItem("Escenario 20"));
+    item.addActionListener(printListener);
+    otherMenu.add(item = new JCheckBoxMenuItem("Escenario 29"));
+    item.addActionListener(printListener);
+    otherMenu.add(item = new JCheckBoxMenuItem("Escenario 50"));
+    item.addActionListener(printListener);
+    otherMenu.add(item = new JCheckBoxMenuItem("Escenario 54"));
+    item.addActionListener(printListener);
+     
+    add(fileMenu);
+    add(otherMenu);
+    add(editMenu);
+   
+    }
+	
+	
+   
+   public static void main(String s[ ]) {
+	      JFrame frame = new JFrame();
+	      frame.setTitle("Automatizacion de Pruebas Regresivas");
+	      frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	      frame.setJMenuBar(new Final(  ));
+	      frame.pack(  );
+	      frame.setSize(600, 600);
+	      frame.setVisible(true);
+		  JPanel paneliz  = new JPanel();
+	      JPanel panelde  = new JPanel();
+	      JPanel panelab  = new JPanel();
+	      JPanel panelar  = new JPanel();
+	      JPanel panelex = new JPanel();
+	      JLabel nombre = new JLabel();
+	      JLabel apellidos = new JLabel();
+	      JLabel telefono = new JLabel();
+	      JLabel dni = new JLabel();
+	      JTextField text1 = new JTextField();
+	      JTextField text2 = new JTextField();
+	      JTextField text3 = new JTextField();
+	      JTextField text4 = new JTextField();
+	      JButton boton1 = new JButton();
+	      JButton boton2 = new JButton();
+
+
+	      String[] bookTitles = new String[] {"Paso 1", "Paso 8",
+                  "Paso 12", "Paso 15"};
+
+	      JComboBox<String> bookList = new JComboBox<>(bookTitles);
+	      
+	      // Imprime en consola los datos seleccionados por el combo box
+	      String selectedBook = (String) bookList.getSelectedItem();
+	      System.out.println("You seleted the book: " + selectedBook);
+
+	      frame.setLayout(new FlowLayout());      
+	      frame.setResizable(false);
+	        
+	      nombre.setText("Usuario");
+	      apellidos.setText("Contrasena");
+	      telefono.setText("Paso");
+	      dni.setText("Escenario");
+	      
+	      paneliz.setLayout(new GridLayout(4,0));
+	      paneliz.add(nombre);
+	      paneliz.add(apellidos);
+	      paneliz.add(telefono);
+	      paneliz.add(dni);
+	        
+	      panelde.setLayout(new GridLayout(4,0));
+	      panelde.add(text1);
+	      panelde.add(text2);
+	      panelde.add(bookList);
+	      panelde.add(text4);
+	        
+	      panelar.setLayout(new GridLayout(1,1));
+	      panelar.setPreferredSize(new Dimension(400,100));
+	      panelar.add(paneliz);
+	      panelar.add(panelde);
+	                
+	      panelab.setLayout(new FlowLayout());
+	      panelab.setPreferredSize(new Dimension(200,50));
+	      panelab.add(boton1);
+	      panelab.add(boton2);
+	        
+	      panelex.setLayout(new GridLayout(2,0));
+	      panelex.add(panelar);
+	      panelex.add(panelab);
+	      panelex.setBackground(Color.cyan);
+	      panelex.setBounds(0, 100, 600, 500); 
+	      
+	      boton1.setText("Aceptar");
+	      boton2.setText("Cancelar");
+	      //boton1.addActionListener(this);
+	      
+	      frame.add(panelex);
+}
+}

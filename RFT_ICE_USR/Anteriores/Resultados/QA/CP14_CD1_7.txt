@@ -1,0 +1,41 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: CP14_CD1 Desde paso: 7 Modo:Real
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+---------------------------
+CP14_CD1_T1;LeerDatosEntrada;OK;
+CP14_CD1_T1;LeerDatoSalidaUltPasoEjec;OK;
+CP14_CD1_T1;LeerDatosSalida;OK;
+CP14_CD1_T1;Paso1:fLogin;OK;
+CP14_CD1_T1;Paso2:fAdministrarTemporadas;NE;
+CP14_CD1_T1;Paso3:fCambiarVistaUsuario;NE;
+CP14_CD1_T1;Paso4:fVista360;NE;
+CP14_CD1_T1;Paso5:fBuscarActivo;NE;
+CP14_CD1_T1;Paso6:fValidarAccionPosvta;NE;
+CP14_CD1_T1;Paso7:fBuscarCtaFact;OK;
+CP14_CD1_T1;Paso7:fBuscarCtaFact;Se paro voluntariamente el caso en el paso hasta 7;
+
+
+Informe de DATOS de salida
+---------------------------
+CP14_CD1;UltimoPasoOK;7;
+CP14_CD1;UltimoTramite;1;
+CP14_CD1_T1;NroCtaFact;101735051461;
+
+
+Informe de Bugs
+-----------------
+
+
+Informe de Errores imprevistos de sistema
+------------------------------------------------
+CP14_CD1;onObjectNotFound;TestObjectMethodState {OBJECT_NOT_FOUND,testObjectClassName=siebel.SiebListTestObject(Nombre: LineasActivoPlanes, Correlación: LineasPlanesVista360),method=DrillDownColumn,signature=(L.String;I;),args=[Ljava.lang.Object;@4bafba24};
+
+
+----------------------------------------------------------------------------------------------------------
+Tipo Parada:onObjectNotFound - Mensaje de Parada: TestObjectMethodState {OBJECT_NOT_FOUND,testObjectClassName=siebel.SiebListTestObject(Nombre: LineasActivoPlanes, Correlación: LineasPlanesVista360),method=DrillDownColumn,signature=(L.String;I;),args=[Ljava.lang.Object;@4bafba24}
+- Fin del Informe del Caso Prueba_Conj Datos: CP14_CD1
+----------------------------------------------------------------------------------------------------------

@@ -22,15 +22,29 @@ public class fLeerEstadoPedido extends fLeerEstadoPedidoHelper
 {
 	public void testMain(Object[] args) 
 	{
+		ImpreEncabezadoScript(getScriptArgs(), getScriptName( ).toString());
 		String[] MensError;
 		MensError = new String[4];
 
 		String[] Estado;
-		Estado = new String[1];			
+		Estado = new String[2];			
 
+		dpReset();
+		while (!dpDone() &&  !(dpString("NumeroCaso").equals(args[0]) && 
+				dpString("Ambiente").equals(args[2]))) {
+			dpNext(); 
+		} 
+		
 		// Paso - Chequear estado
+		Estado[1] = dpString("Tramite"); 	
 		callScript("Scripts.Comun.LeerEstadoPedido",Estado);
-		if (!(Estado[0].equals("Pendiente de pago RED"))) {
+		
+		String EstadoDeseado;
+		if (args[1].toString().equals("NA")){
+			EstadoDeseado = "Pendiente de pago RED";
+		} else EstadoDeseado = args[1].toString();
+		
+		if (!(Estado[0].equals(EstadoDeseado))) {
 			MensError[0] = "Red no pendiente de pago";
 			//MensError[0] = "xDefecto";
 			MensError[1] = args[3].toString();

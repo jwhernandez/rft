@@ -20,11 +20,11 @@ import com.rational.test.ft.vp.IFtVerificationPoint;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
  * Script Name   : <b>CrearListaEspecial1</b><br>
- * Generated     : <b>2016/01/15 11:41:55</b><br>
+ * Generated     : <b>2016/10/20 16:50:33</b><br>
  * Description   : Helper class for script<br>
  * Original Host : Windows 7 x86 6.1 <br>
  * 
- * @since  enero 15, 2016
+ * @since  octubre 20, 2016
  * @author Sandra
  */
 public abstract class CrearListaEspecial1Helper extends libreria.Accion
@@ -57,9 +57,10 @@ public abstract class CrearListaEspecial1Helper extends libreria.Accion
 	}
 	
 	/**
-	 * BrowserIE: with default state.
+	 * IESiebel: with default state.
 	 *		.class : Html.HtmlBrowser
 	 * 		.browserName : MS Internet Explorer
+	 * 		.documentName : RegularExpression(http.*\/ecommunications_esn/star.*)
 	 * 		.processName : iexplore.exe
 	 */
 	protected BrowserTestObject BrowserIE() 
@@ -68,9 +69,10 @@ public abstract class CrearListaEspecial1Helper extends libreria.Accion
                         getMappedTestObject("BrowserIE"));
 	}
 	/**
-	 * BrowserIE: with specific test context and state.
+	 * IESiebel: with specific test context and state.
 	 *		.class : Html.HtmlBrowser
 	 * 		.browserName : MS Internet Explorer
+	 * 		.documentName : RegularExpression(http.*\/ecommunications_esn/star.*)
 	 * 		.processName : iexplore.exe
 	 */
 	protected BrowserTestObject BrowserIE(TestObject anchor, long flags) 
@@ -80,7 +82,7 @@ public abstract class CrearListaEspecial1Helper extends libreria.Accion
 	}
 	
 	/**
-	 * Arbol_lista: with default state.
+	 * LineasPedido: with default state.
 	 *		ActiveRow : 9
 	 * 		ClassName : SiebList
 	 * 		.class : SiebList
@@ -93,7 +95,7 @@ public abstract class CrearListaEspecial1Helper extends libreria.Accion
                         getMappedTestObject("LineasPedido"));
 	}
 	/**
-	 * Arbol_lista: with specific test context and state.
+	 * LineasPedido: with specific test context and state.
 	 *		ActiveRow : 9
 	 * 		ClassName : SiebList
 	 * 		.class : SiebList
@@ -245,7 +247,7 @@ public abstract class CrearListaEspecial1Helper extends libreria.Accion
 	}
 	
 	/**
-	 * SiebScreenViews: with default state.
+	 * TabsCliente: with default state.
 	 *		ClassName : SiebScreenViews
 	 * 		.class : SiebScreenViews
 	 * 		RepositoryName : SiebScreenViews
@@ -256,7 +258,7 @@ public abstract class CrearListaEspecial1Helper extends libreria.Accion
                         getMappedTestObject("Pestañas"));
 	}
 	/**
-	 * SiebScreenViews: with specific test context and state.
+	 * TabsCliente: with specific test context and state.
 	 *		ClassName : SiebScreenViews
 	 * 		.class : SiebScreenViews
 	 * 		RepositoryName : SiebScreenViews
@@ -314,10 +316,10 @@ public abstract class CrearListaEspecial1Helper extends libreria.Accion
 	}
 	
 	/**
-	 * SiebelCommunications: with default state.
+	 * SiebelCommunications_Login: with default state.
 	 *		.title : Siebel Communications
 	 * 		.class : Html.HtmlDocument
-	 * 		.url : RegularExpression(http://.*\/ecommunications_esn/start\.swe\?.*)
+	 * 		.url : RegularExpression(http://.*ecommunications_esn/start.*)
 	 */
 	protected DocumentTestObject SiebelDoc() 
 	{
@@ -325,10 +327,10 @@ public abstract class CrearListaEspecial1Helper extends libreria.Accion
                         getMappedTestObject("SiebelDoc"));
 	}
 	/**
-	 * SiebelCommunications: with specific test context and state.
+	 * SiebelCommunications_Login: with specific test context and state.
 	 *		.title : Siebel Communications
 	 * 		.class : Html.HtmlDocument
-	 * 		.url : RegularExpression(http://.*\/ecommunications_esn/start\.swe\?.*)
+	 * 		.url : RegularExpression(http://.*ecommunications_esn/start.*)
 	 */
 	protected DocumentTestObject SiebelDoc(TestObject anchor, long flags) 
 	{
@@ -504,8 +506,8 @@ public abstract class CrearListaEspecial1Helper extends libreria.Accion
 	/**
 	 * s_2_1_2_0_mb: with default state.
 	 *		.text : Eliminar
-	 * 		.href : javascript:void(0)
 	 * 		.id : s_2_1_2_0_mb
+	 * 		.href : javascript:void(0)
 	 * 		.title : 
 	 * 		.class : Html.A
 	 * 		.name : 
@@ -519,8 +521,8 @@ public abstract class CrearListaEspecial1Helper extends libreria.Accion
 	/**
 	 * s_2_1_2_0_mb: with specific test context and state.
 	 *		.text : Eliminar
-	 * 		.href : javascript:void(0)
 	 * 		.id : s_2_1_2_0_mb
+	 * 		.href : javascript:void(0)
 	 * 		.title : 
 	 * 		.class : Html.A
 	 * 		.name : 
@@ -533,10 +535,10 @@ public abstract class CrearListaEspecial1Helper extends libreria.Accion
 	}
 	
 	/**
-	 * s_2_1_8_0_mb: with default state.
+	 * BtonNuevo: with default state.
 	 *		.text : Nuevo
-	 * 		.href : javascript:void(0)
 	 * 		.id : s_2_1_8_0_mb
+	 * 		.href : javascript:void(0)
 	 * 		.title : 
 	 * 		.class : Html.A
 	 * 		.name : 
@@ -548,10 +550,10 @@ public abstract class CrearListaEspecial1Helper extends libreria.Accion
                         getMappedTestObject("link_s_2_1_8_0_mb"));
 	}
 	/**
-	 * s_2_1_8_0_mb: with specific test context and state.
+	 * BtonNuevo: with specific test context and state.
 	 *		.text : Nuevo
-	 * 		.href : javascript:void(0)
 	 * 		.id : s_2_1_8_0_mb
+	 * 		.href : javascript:void(0)
 	 * 		.title : 
 	 * 		.class : Html.A
 	 * 		.name : 

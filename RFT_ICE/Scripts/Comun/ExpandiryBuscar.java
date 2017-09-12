@@ -13,35 +13,56 @@ import com.rational.test.ft.value.*;
 import com.rational.test.ft.vp.*;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
- * Description   : Expande el nodo padre y buscar el producto hijo
+ * Description   : Expande el nodo padre y buscar el producto hijo (Lineas del pedido)
  * Script Name   : <b>ExpandiryBuscar</b>
- * Parametros : 0) Producto padre 1) Producto Hijo 2)Encontro / No Encontro
+ * Parametros : 0) Producto padre 1) Producto Hijo 2)Encontro / No Encontro 3) tramite opcional
  * Ej: "Servicio de Telefonia Movil" "Grupo SVA" res
  * Ej: "Servicio de Telefonia Movil" "Deposito de Garantia" res
  * Precondiciones Estar en las lineas del pedido de venta
  * @author Sandra
  * @since  2016/01/19
+ * 	Ej	"Servicio de Telefonia Movil" "No identificador de llamada" res 
+ * 
+ * ultima modif
+ * 	23-3-2017 se agrega tramite para la opcion de port-in
  */
 public class ExpandiryBuscar extends ExpandiryBuscarHelper
 {
 	public void testMain(Object[] argu) 
 	{
+		ImpreEncabezadoScript(getScriptArgs(), getScriptName( ).toString());
 		String[] ExpandirLinea;
-		ExpandirLinea = new String[2];
+		ExpandirLinea = new String[4];
+		//0) Nombre del producto a expandir 1) OK/NOK 
+		// 2)argumento opcional para indicar desde posicion actual 3) Tramite 
 		
 		String[] BuscProd;
-		BuscProd = new String[4];
+		BuscProd = new String[6]; // ss se agrega tramite
 		
 		argu[2] = "No Encontro";
+		String sTramite = "Otro";
+		try {
+			sTramite = argu[3].toString();
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
 		
 		ExpandirLinea[0]=argu[0].toString();
+		ExpandirLinea[2]="No";	
+		ExpandirLinea[3]=sTramite; // ss se agrega tramite
 		callScript("Scripts.Comun.ExpandirLinea",ExpandirLinea);
 		
 		BuscProd[0]=argu[1].toString();	
+		BuscProd[4]="No";	
+		BuscProd[5]=sTramite;	// ss se agrega tramite
 		callScript("Scripts.Comun.BuscarProducto",BuscProd);
 		argu[2]=BuscProd[1].toString();
 		
+		logWarning("This is a warning", getRootTestObject().getScreenSnapshot()); 
+		// Ver como asegurarse estar en la pantalla correcta
+		logInfo("This is an info message", getRootTestObject().getScreenSnapshot());
 		System.out.println("Resultado: "+argu[2]);
+		ImpreResultadoScript(getScriptName( ).toString(), argu[2].toString());
 	}
 }
 

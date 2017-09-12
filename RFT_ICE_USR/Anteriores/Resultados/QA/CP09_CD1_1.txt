@@ -1,0 +1,45 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: CP09_CD1 Desde paso: 1 Modo:Real
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatosEntrada'                                                  'OK'                          
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'                                         'OK'                          
+'Paso    0  -  GrabarDatosSalida'                                                 'OK'                          
+'Paso    1  -  fLogin'                                                            'OK'                          
+
+
+Informe de DATOS de salida
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoPasoOK'                 '0'                           
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoTramite'                '1'                           
+
+
+Informe de Bugs
+-----------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------
+Tipo Parada         = Excepción en Método
+Mensaje de Parada   = Script=ValidarActivoEstadoenActivo Línea=35 Método=GotoScreen Error=
+IsExists("Asset Management Screen", "Screen"); Error:(-1018) - Could not find Siebel application object. Clase=com.rational.test.ft.Domain.Siebel.SiebelMethodExecutionFailureException Objeto=siebel.SiebPageTabsTestObject(Name: Pestañas, Map: Pestañas)
+Parada en paso	    = 2
+
+
+-----------------------------------------------------------------------------------------
+Fin del Informe del Caso Prueba_Conj Datos: CP09_CD1
+-----------------------------------------------------------------------------------------
+
+
+Informe de Errores imprevistos de sistema
+-----------------------------------------------------------------------------------------
+'Paso    2  -  Accion'                             'Excepción en Método'          'Script=ValidarActivoEstadoenActivo Línea=35 Método=GotoScreen Error=
+IsExists("Asset Management Screen", "Screen"); Error:(-1018) - Could not find Siebel application object. Clase=com.rational.test.ft.Domain.Siebel.SiebelMethodExecutionFailureException Objeto=siebel.SiebPageTabsTestObject(Name: Pestañas, Map: Pestañas)'
+
+'Paso    2  -  Accion'                             'Excepción no esperada'        'Script=ValidarActivoEstadoenActivo Línea=0 Error=
+IsExists("Asset Management Screen", "Screen"); Error:(-1018) - Could not find Siebel application object.'
+
+'Paso    2  -  Accion'                             'Excepción no esperada'        'Script=fValidarActivoEstadoenActivo Línea=0 Error=CRFCN0018E: The 35 line of the 35 script contains an exception.'
+

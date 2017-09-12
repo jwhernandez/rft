@@ -1,0 +1,4 @@
+Nuevo ejecutable
+Via acceso = C:\Program Files (x86)\Portal Software\CustomerCenter\lib
+Archivo ejecutable = runCC.bat
+Directorio de trabajo = C:\Program Files (x86)\Portal Software\CustomerCenter\lib

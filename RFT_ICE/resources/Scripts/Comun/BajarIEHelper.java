@@ -7,7 +7,7 @@
 // file will be lost when automatically updated.
 
 package resources.Scripts.Comun;
-
+import libreria.Accion;
 import com.rational.test.ft.object.interfaces.*;
 import com.rational.test.ft.object.interfaces.SAP.*;
 import com.rational.test.ft.object.interfaces.WPF.*;
@@ -20,14 +20,14 @@ import com.rational.test.ft.vp.IFtVerificationPoint;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
  * Script Name   : <b>BajarIE</b><br>
- * Generated     : <b>2015/12/31 10:57:22</b><br>
+ * Generated     : <b>2016/03/30 08:27:46</b><br>
  * Description   : Helper class for script<br>
  * Original Host : Windows 7 x86 6.1 <br>
  * 
- * @since  diciembre 31, 2015
+ * @since  marzo 30, 2016
  * @author Sandra
  */
-public abstract class BajarIEHelper extends RationalTestScript
+public abstract class BajarIEHelper extends libreria.Accion
 {
 	
 

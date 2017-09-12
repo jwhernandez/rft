@@ -1,0 +1,64 @@
+package libreria.GUI;
+
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+
+public class VentanaInicio extends JMenuBar  {
+
+       String[ ] fileItems = new String[ ] { "Escenario 03", "Escenario 05", "Escenario 12", "Escenario 13", "Escenario 29" };
+
+	   public VentanaInicio(  ) {
+
+	      JMenu PreQAMenu = new JMenu("Ambiente PreQA");
+	      JMenu QAMenu = new JMenu("Ambiente QA");
+	      JMenu AyudaMenu = new JMenu("Ayuda");
+
+	      // Es una funcion que imprime en consola la seleccion del usuario
+	      ActionListener printListener = new ActionListener(  ) {
+	         public void actionPerformed(ActionEvent event) {
+	            System.out.println("El escenario seleccionado es:" + event.getActionCommand(  ) + "que se ha presionado");
+	         }};
+	      
+	      // Modifica el menu mediante un ciclo cicliclamente. 
+	      for (int i=0; i < fileItems.length; i++) {
+	         JMenuItem item = new JMenuItem(fileItems[i]);
+	         item.addActionListener(printListener);
+	         PreQAMenu.add(item);
+	      }
+
+	      JMenuItem item;
+	      // Se crea cada checkbox para cada escenario
+	      QAMenu.add(item = new JCheckBoxMenuItem("Escenario 03"));
+	      item.addActionListener(printListener);
+	      QAMenu.add(item = new JCheckBoxMenuItem("Escenario 05"));
+	      item.addActionListener(printListener);
+	      QAMenu.add(item = new JCheckBoxMenuItem("Escenario 12"));
+	      item.addActionListener(printListener);
+	      QAMenu.add(item = new JCheckBoxMenuItem("Escenario 13"));
+	      item.addActionListener(printListener);
+	      QAMenu.add(item = new JCheckBoxMenuItem("Escenario 20"));
+	      item.addActionListener(printListener);
+	      QAMenu.add(item = new JCheckBoxMenuItem("Escenario 29"));
+	      item.addActionListener(printListener);
+	      QAMenu.add(item = new JCheckBoxMenuItem("Escenario 50"));
+	      item.addActionListener(printListener);
+	      QAMenu.add(item = new JCheckBoxMenuItem("Escenario 54"));
+	      item.addActionListener(printListener);
+
+	      // Aca de adiciona el menu, pero es ordenado estrictamente
+	      add(PreQAMenu);
+	      add(QAMenu);
+	      add(AyudaMenu);
+	}
+	   
+	   public static void main(String s[ ]) {
+		      JFrame frame = new JFrame();
+		      frame.setTitle("Automatizacion de Pruebas Regresivas");
+		      frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		      frame.setJMenuBar(new VentanaInicio(  ));
+		      frame.pack(  );
+		      frame.setSize(600, 600);
+		      frame.setVisible(true);
+	   }
+	}

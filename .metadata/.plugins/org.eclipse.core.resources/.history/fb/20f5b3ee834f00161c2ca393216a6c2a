@@ -1,0 +1,221 @@
+package GUI;
+
+import javax.swing.*;
+import java.awt.event.*;
+import java.awt.*;
+import java.io.IOException;
+
+
+public class CP03 extends JMenuBar{
+
+	private JLabel nroCuentaL, planL, nroServicioL, SimInL, SimCoL, TerminalL, IMEICoL, IMEIInL;
+	private JTextField nroCuentaTF, planTF, nroServicioTF, SimInTF, SimCoTF, TerminalTF, IMEICoTF, IMEIInTF;
+	private JLabel UsuarioL, ClaveL, CasoL, LoginL, msjL, AmbienteL;
+	private JTextField UsuarioTF, LoginTF, msjTF;
+	private JButton EjecutarB, exitB;
+//	private JRadioButton LoginTrue, LoginFalse;
+	private String Casos[] = { "CP03", "CP05", "CP12", "CP20", "CP29", "CP32", "CP46", "CP50", "CP56"};
+	private String Ambiente[] = {"PreQA", "QA"};
+	private static String lineaComandos;
+	
+	public CP03()
+	{
+	    /*  JFrame frame = new JFrame();
+	      frame.setTitle("Automatizacion de Pruebas Regresivas");
+	      frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	      //frame.setJMenuBar(new CP03(  ));
+	      frame.pack(  );
+	      frame.setSize(600, 600);
+	      frame.setVisible(true);
+		  JPanel panelLabel  = new JPanel();
+	      JPanel panelTF  = new JPanel();
+	      JPanel panelIntegracion  = new JPanel();
+	      JPanel panelab  = new JPanel();
+	      JPanel panelex = new JPanel();
+	    
+	      JTextField text1 = new JTextField();
+	      JTextField text2 = new JTextField();
+	      JTextField text3 = new JTextField();
+	      JTextField text4 = new JTextField();
+	      JButton boton1 = new JButton();
+	      JButton boton2 = new JButton();
+
+
+	      String[] bookTitles = new String[] {"Paso 1", "Paso 8",
+                "Paso 12", "Paso 15"};
+
+	      JComboBox<String> bookList = new JComboBox<>(bookTitles);
+	      
+	      // Imprime en consola los datos seleccionados por el combo box
+	      String selectedBook = (String) bookList.getSelectedItem();
+	      System.out.println("You seleted the book: " + selectedBook);
+
+	      frame.setLayout(new FlowLayout());      
+	      frame.setResizable(false);
+	        
+	    //Instanciar los labels
+	      nroCuentaL = new JLabel();
+	      nroCuentaL.setText("Numero de cuenta");
+	      
+	      planL = new JLabel();
+	      planL.setText("Plan");
+	      
+	      nroServicioL = new JLabel();
+	      nroServicioL.setText("Nuemero de Servicio");
+	      
+	      SimInL = new JLabel();
+	      SimInL.setText("SIM Incorrecta");
+	      
+	      SimCoL = new JLabel();
+	      SimCoL.setText("SIM Correcta");
+	      
+	      TerminalL = new JLabel();
+	      TerminalL.setText("Terminal");
+	      
+	      IMEICoL = new JLabel();
+	      IMEICoL.setText("IMEI Correcto");
+	      
+	      IMEIInL = new JLabel();
+	      IMEIInL.setText("IMEI Incorrecto");
+	      
+	      panelLabel.setLayout(new GridLayout(8,0));
+	      panelLabel.add(nroCuentaL);
+	      panelLabel.add(planL);
+	      panelLabel.add(nroServicioL);
+	      panelLabel.add(SimInL);
+	      panelLabel.add(SimCoL);
+	      panelLabel.add(TerminalL);
+	      panelLabel.add(IMEICoL);
+	      panelLabel.add(IMEIInL);
+	        
+	      panelTF.setLayout(new GridLayout(8,0));
+	      panelTF.add(nroCuentaTF);
+	      panelTF.add(planTF);
+	      panelTF.add(nroServicioTF);
+	      panelTF.add(SimInTF);
+	      panelTF.add(SimCoTF);
+	      panelTF.add(TerminalTF);
+	      panelTF.add(IMEICoTF);
+	      panelTF.add(IMEIInTF);
+	      
+	      panelIntegracion.setLayout(new GridLayout(1,1));
+	      panelIntegracion.setPreferredSize(new Dimension(400,100));
+	      panelIntegracion.add(panelLabel);
+	      panelIntegracion.add(panelTF);
+	                
+	      panelab.setLayout(new FlowLayout());
+	      panelab.setPreferredSize(new Dimension(200,50));
+	      panelab.add(boton1);
+	      panelab.add(boton2);
+	        
+	      panelex.setLayout(new GridLayout(2,0));
+	      panelex.add(panelIntegracion);
+	      panelex.add(panelab);
+	      panelex.setBackground(Color.cyan);
+	      panelex.setBounds(0, 100, 600, 500); 
+	      
+	      boton1.setText("Aceptar");
+	      boton2.setText("Cancelar");
+	      frame.add(panelex);*/
+		
+		//Instanciar los labels
+		UsuarioL = new JLabel();
+		UsuarioL.setText("Usuario:");
+		
+		ClaveL = new JLabel();
+		ClaveL.setText("Clave:");
+		
+		CasoL = new JLabel();
+		CasoL.setText("Caso de prueba:");
+		
+		AmbienteL = new JLabel();
+		AmbienteL.setText("Ambiente:");
+		
+		LoginL = new JLabel();
+		LoginL.setText("Ejecutar el login?:");
+		
+		msjL = new JLabel();
+		msjL.setText("Mensaje:");
+
+		//Intanciar los textos
+		UsuarioTF = new JTextField();
+	   // CasoTF = new JTextField();
+		LoginTF = new JTextField();
+		msjTF = new JTextField();
+		//LoginTrue = new JRadioButton("true", true);
+		//LoginFalse = new JRadioButton("False", false);
+
+		//Instanciar los botones
+		EjecutarB = new JButton("Ejecutar");
+		exitB = new JButton("Salir");
+
+		// Especificar el handler para cada botón
+		//ejbHandler = new EjecutarButtonHandler();
+		//ebHandler = new ExitButtonHandler();
+
+		//add(register) ActionListeners para cada botón
+		EjecutarB.addActionListener(ejbHandler);
+		exitB.addActionListener(ebHandler);
+
+		//Setear el titulo de la ventana
+		setTitle("Automatizacion de Pruebas Regresivas");
+
+		//Get the content pane (CP).
+	    JPanel paneLabel  = new JPanel();
+	    JPanel pane1  = new JPanel();
+	    JPanel pane2  = new JPanel();
+        JPanel pane3  = new JPanel();
+	    Container paneFinal = getContentPane();
+		
+	    //Set el layout.
+	    paneLabel.setLayout(new GridLayout(7, 0));
+		//Agregar al panel para indicar donde se quiere que aparezca (left to right, top to bottom)
+	    paneLabel.add(UsuarioL);
+	    paneLabel.add(ClaveL);
+	    paneLabel.add(CasoL);
+	    paneLabel.add(AmbienteL);
+	    paneLabel.add(LoginL);
+	    paneLabel.add(msjL);
+
+		pane1.setLayout(new GridLayout(7, 0));
+		//Agregar al panel para indicar donde se quiere que aparezca (left to right, top to bottom)
+		pane1.add(UsuarioTF);
+		pane1.add(ClaveTF);
+		pane1.add(CasoCB);
+		pane1.add(AmbienteCB);
+		pane1.add(LoginTF);
+		//pane1.add(LoginTrue);
+		//pane1.add(LoginFalse);
+		pane1.add(msjTF);
+		
+		pane2.setLayout(new GridLayout(1,1));
+	    pane2.setPreferredSize(new Dimension(400,200));
+	    pane2.add(paneLabel);
+	    pane2.add(pane1);
+	    pane2.setBounds(100, 50, 600, 500); 
+	    
+	    pane3.setLayout(new FlowLayout());
+	    pane3.setPreferredSize(new Dimension(200,50));
+	    pane3.add(EjecutarB);
+	    pane3.add(exitB);
+	        
+	    paneFinal.setLayout(new GridLayout(2,0));
+	    paneFinal.add(pane2);
+	    paneFinal.add(pane3);
+	    paneFinal.setBounds(0, 100, 600, 500); 
+		
+		//Propiedades importantes del JFrame
+		setSize(600, 300);
+		setVisible(true);
+		setLayout(new FlowLayout()); 
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+	}
+
+	}
+	 
+	
+	public static void main(String[] args)  
+	{
+		new CP03();
+	}	
+}

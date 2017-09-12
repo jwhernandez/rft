@@ -16,21 +16,29 @@ import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
  * Script Name   : <b>fEnviarPedido</b>
  * Descripcion   : Envia el pedido
  * @author SS
- * @Param 0) numero de caso 
+ * @Param @Param 0)IN nombre del caso 1) Estado a esperar 2) IN Ambiente 3) IN ErrorStop (Si / No)
+ * CP05 Completar PREQA true
  * @since  2015/12/27
  * Precondiciones Estar en la pantalla del pedido, estado del pedido en pendiente
  */
 public class fEnviarPedido extends fEnviarPedidoHelper
 {
-	public void testMain(Object[] args) 
+	public void testMain(Object[] args) throws RationalTestException 
 	{
+		ImpreEncabezadoScript(getScriptArgs(), getScriptName( ).toString());
 		String[] MensError;
 		MensError = new String[4];
 
 		String[] EnviarPedido;
-		EnviarPedido = new String[1];
-
-		// Paso - Enviar pedido
+		EnviarPedido = new String[2];
+		//  0) Creado / No creado 1) Tramite
+		
+		dpReset();
+		while (!dpDone() &&  !(dpString("NumeroCaso").equals(args[0]) && 
+				dpString("Ambiente").equals(args[2]))) {
+			dpNext(); 
+		} 
+		EnviarPedido[1] = dpString("Tramite"); 	
 		callScript("Scripts.Comun.EnviarPedido", EnviarPedido);
 		
 		if (EnviarPedido[0].toString().equals("No creado")) {	

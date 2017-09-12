@@ -1,0 +1,66 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: CP10_CD1 Desde paso: 28 Modo:Real
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatosEntrada'                                                  'OK'                          
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'                                         'OK'                          
+'Paso    0  -  LeerDatosSalida'                                                   'OK'                          
+'Paso    1  -  fLogin'                                                            'OK'                          
+'Paso    2  -  fCambiarVIstaUsuario'                                              'NE'                          
+'Paso    3  -  fVista360'                                                         'NE'                          
+'Paso    4  -  fValidarUnPerfil'                                                  'NE'                          
+'Paso    5  -  fBuscarActivo'                                                     'NE'                          
+'Paso    6  -  fBuscarCtaFact'                                                    'NE'                          
+'Paso    7  -  fValidarUnPerfil'                                                  'NE'                          
+'Paso    8  -  fVista360'                                                         'NE'                          
+'Paso    9  -  fBuscarActivo'                                                     'NE'                          
+'Paso   10  -  fBuscarCtaFact'                                                    'NE'                          
+'Paso   11  -  fNuevaPostvta'                                                     'NE'                          
+'Paso   12  -  fBuscarPedidoVenta'                                                'NE'                          
+'Paso   13  -  fValidarAgencia'                                                   'NE'                          
+'Paso   14  -  fIngresarAutenticacion'                                            'NE'                          
+'Paso   15  -  fASRM_Login'                                                       'NE'                          
+'Paso   16  -  fASRM_ModificarEstadoServicio'                                     'NE'                          
+'Paso   17  -  fASRM_Logout'                                                      'NE'                          
+'Paso   18  -  fProximoNumero'                                                    'NE'                          
+'Paso   19  -  fValidacPostServicio'                                              'NE'                          
+'Paso   20  -  fExpandiryBuscar'                                                  'NE'                          
+'Paso   21  -  fCheckPagoFact'                                                    'NE'                          
+'Paso   22  -  fEnviarPedido'                                                     'NE'                          
+'Paso   23  -  fValidarMensaje'                                                   'NE'                          
+'Paso   24  -  fValorarTodo'                                                      'NE'                          
+'Paso   25  -  fEnviarPedido'                                                     'NE'                          
+'Paso   26  -  fEsperaEstado'                                                     'NE'                          
+'Paso   27  -  fValidacPostEnvio1'                                                'NE'                          
+'Paso   28  -  fVista360'                                                         'OK'                          
+'Paso   29  -  fBuscarActivo'                                                     'OK'                          
+'Paso   30  -  fBRM_Login'                                                        'OK'                          
+'Paso   31  -  fBRM.FavoritoValidarCambioNum'                                     'NE'                          
+'Paso   32  -  fBRM_Logout'                                                       'OK'                          
+'Paso   33  -  fCambiarVIstaUsuario'                                              'NE'                          
+
+
+Informe de DATOS de salida
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoPasoOK'                 '27'                          
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoTramite'                '1'                           
+'Paso   29  -  fBuscarActivo'                      'NroServicio'                  '85976767'                    
+'Paso   29  -  fBuscarActivo'                      'NroServicio'                  '85976767'                    
+
+
+Informe de Bugs
+-----------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------
+Tipo Parada         = ObjectMethodException
+Mensaje de Parada   = Script=Comun.AdministrarTemporadas Línea=43 Método=PerformAction Error=
+Click(); Error:(-1016) - Failed to create object "Siebel Power Communications.ISS Unified Administration Screen.ICE ISS Product Administration View" of class "". Clase=com.rational.test.ft.Domain.Siebel.SiebelMethodExecutionFailureException Objeto=siebel.SiebButtonTestObject(Name: NewQuery, Map: NewQuery)
+
+
+-----------------------------------------------------------------------------------------
+Fin del Informe del Caso Prueba_Conj Datos: CP10_CD1
+-----------------------------------------------------------------------------------------

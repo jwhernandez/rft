@@ -1,0 +1,111 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: CP10_CD1 Desde paso: 65 Modo:Real
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+---------------------------
+CP10_CD1_T1;LeerDatosEntrada;OK;
+CP10_CD1_T1;LeerDatoSalidaUltPasoEjec;OK;
+CP10_CD1_T1;LeerDatosSalida;OK;
+CP10_CD1_T1;Paso1:fLogin;OK;
+CP10_CD1_T1;Paso2:fCambiarVIstaUsuario;NE;
+CP10_CD1_T1;Paso3:fVista360;NE;
+CP10_CD1_T1;Paso4:fValidarUnPerfil;NE;
+CP10_CD1_T1;Paso5:fBuscarActivo;NE;
+CP10_CD1_T1;Paso6:fBuscarCtaFact;NE;
+CP10_CD1_T1;Paso7:fValidarUnPerfil;NE;
+CP10_CD1_T1;Paso8:fVista360;NE;
+CP10_CD1_T1;Paso9:fBuscarActivo;NE;
+CP10_CD1_T1;Paso10:fBuscarCtaFact;NE;
+CP10_CD1_T1;Paso11:fNuevaPostvta;NE;
+CP10_CD1_T1;Paso12:fBuscarPedidoVenta;NE;
+CP10_CD1_T1;Paso13:fValidarAgencia;NE;
+CP10_CD1_T1;Paso14:fIngresarAutenticacion;NE;
+CP10_CD1_T1;Paso15:fASRM_Login;NE;
+CP10_CD1_T1;Paso16:fASRM_ModificarEstadoServicio;NE;
+CP10_CD1_T1;Paso17:fASRM_Logout;NE;
+CP10_CD1_T1;Paso18:fProximoNumero;NE;
+CP10_CD1_T1;Paso19:fValidacPostServicio;NE;
+CP10_CD1_T1;Paso20:fExpandiryBuscar;NE;
+CP10_CD1_T1;Paso21:fCheckPagoFact;NE;
+CP10_CD1_T1;Paso22:fEnviarPedido;NE;
+CP10_CD1_T1;Paso23:fValidarMensaje;NE;
+CP10_CD1_T1;Paso24:fValorarTodo;NE;
+CP10_CD1_T1;Paso25:fEnviarPedido;NE;
+CP10_CD1_T1;Paso26:fEsperaEstado;NE;
+CP10_CD1_T1;Paso27:fValidacPostEnvio1;NE;
+CP10_CD1_T1;Paso28:fVista360;NE;
+CP10_CD1_T1;Paso29:fBuscarActivo;NE;
+CP10_CD1_T1;Paso30:fBRM_Login;NE;
+CP10_CD1_T1;Paso31:fBRM.FavoritoValidarCambioNum;NE;
+CP10_CD1_T1;Paso32:fBRM_Logout;NE;
+CP10_CD1_T1;Paso33:fCambiarVIstaUsuario;NE;
+CP10_CD1_T1;Paso34:fAdministrarTemporadas;NE;
+CP10_CD1_T1;Paso35:fCambiarVIstaUsuario;NE;
+CP10_CD1_T1;Paso36:fVista360;OK;
+CP10_CD1_T1;Paso37:fBuscarActivo;OK;
+CP10_CD1_T1;Paso38:fBuscarCtaFact;OK;
+CP10_CD1_T1;Paso39:fNuevaPostvta;NE;
+CP10_CD1_T1;Paso40:fBuscarPedidoVenta;NE;
+CP10_CD1_T1;Paso41:fPersonalizarFavorito;NE;
+CP10_CD1_T1;Paso42:fIngresarAutenticacion;NE;
+CP10_CD1_T1;Paso43:fExpandiryBuscar;NE;
+CP10_CD1_T1;Paso44:fExpandiryBuscar;NE;
+CP10_CD1_T1;Paso45:fExpandiryBuscar;NE;
+CP10_CD1_T1;Paso46:fBuscarProducto;NE;
+CP10_CD1_T1;Paso47:fBuscarProducto;NE;
+CP10_CD1_T1;Paso48:fBuscarProducto;NE;
+CP10_CD1_T1;Paso49:fCrearLE;NE;
+CP10_CD1_T1;Paso50:fBuscarPedidoVenta;OK;
+CP10_CD1_T1;Paso51:fExpandiryBuscar;NE;
+CP10_CD1_T1;Paso52:fExpandiryBuscar;NE;
+CP10_CD1_T1;Paso53:fExpandiryBuscar;NE;
+CP10_CD1_T1;Paso54:fAsociarListaEspecial;NE;
+CP10_CD1_T1;Paso55:fValidarMensaje;NE;
+CP10_CD1_T1;Paso56:fAgregarNum_a_LE;NE;
+CP10_CD1_T1;Paso57:fAgregarNum_a_LE;NE;
+CP10_CD1_T1;Paso58:fAgregarNum_a_LE;NE;
+CP10_CD1_T1;Paso59:fAgregarNum_a_LE;NE;
+CP10_CD1_T1;Paso60:fAgregarNum_a_LE;NE;
+CP10_CD1_T1;Paso61:fExpandiryBuscar;NE;
+CP10_CD1_T1;Paso62:fExpandiryBuscar;NE;
+CP10_CD1_T1;Paso63:fExpandiryBuscar;NE;
+CP10_CD1_T1;Paso64:fValidarPrecioenPedido;NE;
+CP10_CD1_T1;Paso65:fExpandiryBuscar;OK;
+CP10_CD1_T1;Paso66:fExpandiryBuscar;OK;
+CP10_CD1_T1;Paso67:fCheckPagoFact;OK;
+
+
+Informe de DATOS de salida
+---------------------------
+CP10_CD1;UltimoPasoOK;64;
+CP10_CD1;UltimoTramite;1;
+CP10_CD1;T1_NroPedido;1-1741476617;
+CP10_CD1;NroServicio;85976767;
+CP10_CD1;T1_NomListaEspecial;1-1741478512;
+CP10_CD1_T1;NroServicio;85976767;
+CP10_CD1_T1;NroServicio;85976767;
+CP10_CD1_T1;NroCtaFact;101741474592;
+CP10_CD1;UltPasoOK;65;
+CP10_CD1;UltPasoOK;66;
+CP10_CD1;UltPasoOK;67;
+
+
+Informe de Bugs
+-----------------
+CP10_CD1_T1;fCheckPagoFact;Chequeo de tilde a factura falló;
+
+
+Informe de Errores imprevistos de sistema
+------------------------------------------------
+CP10_CD1;Mensaje UE;Script=PasosFunc.fCheckPagoFact Línea=0 Error=CRFCN0515E: stop() method called;
+
+CP10_CD1;Mensaje UE;Script=CasosPrueba.CasosPrueba Línea=0 Error=CRFCN0515E: stop() method called;
+
+
+----------------------------------------------------------------------------------------------------------
+Tipo Parada:UnhandledException - Mensaje de Parada: Script=PasosFunc.fCheckPagoFact Línea=0 Error=CRFCN0515E: stop() method called
+- Fin del Informe del Caso Prueba_Conj Datos: CP10_CD1
+----------------------------------------------------------------------------------------------------------

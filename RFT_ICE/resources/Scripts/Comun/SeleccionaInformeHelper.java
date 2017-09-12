@@ -20,11 +20,11 @@ import com.rational.test.ft.vp.IFtVerificationPoint;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
  * Script Name   : <b>SeleccionaInforme</b><br>
- * Generated     : <b>2016/01/29 16:41:37</b><br>
+ * Generated     : <b>2016/12/21 12:36:15</b><br>
  * Description   : Helper class for script<br>
  * Original Host : Windows 7 x86 6.1 <br>
  * 
- * @since  enero 29, 2016
+ * @since  diciembre 21, 2016
  * @author Sandra
  */
 public abstract class SeleccionaInformeHelper extends libreria.Accion

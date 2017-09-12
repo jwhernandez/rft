@@ -17,15 +17,20 @@ import com.rational.test.ft.sys.SpyMemoryStatistics;
 
 /**
  * Descripción: Busca el activo en la vista 360
+ * NOTA: Si el perfil de facturación es híbrido no funcionará porque solo 
+ * está preparado para postpago
  * Parametros: 0) IN Nro de servicio , 1) OUT  OK / NOK 
  * OK si lineas del pefil de cuenta cliente = 1
  * Pre-Condiciones de inicio: Estar en la vista360
+ * ej 10169374 res 
  */
 public class BuscarActivo extends BuscarActivoHelper
 {
 	public void testMain(Object[] argu) throws RationalTestException
 	{
-		argu[1] = "NOK";
+		ImpreEncabezadoScript(getScriptArgs(), getScriptName( ).toString());
+		argu[1] = "NOK"	;
+		
 
 		NewQuery().performAction();
 		NroServicio().setText(argu[0].toString());
@@ -35,6 +40,7 @@ public class BuscarActivo extends BuscarActivoHelper
 		if ( iTotal == 1 ) {
 			argu[1]="OK";
 		} 
+		ImpreResultadoScript(getScriptName( ).toString(), argu[1].toString());
 	}
 }
 

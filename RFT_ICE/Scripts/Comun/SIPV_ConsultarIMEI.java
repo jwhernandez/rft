@@ -20,8 +20,9 @@ import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
  */
 public class SIPV_ConsultarIMEI extends SIPV_ConsultarIMEIHelper
 {
-	public void testMain(Object[] argu) 
+	public void testMain(Object[] argu) throws RationalTestException 
 	{
+		ImpreEncabezadoScript(getScriptArgs(), getScriptName( ).toString());
 		startApp("SIPV");
 		
 		Usuario().click();

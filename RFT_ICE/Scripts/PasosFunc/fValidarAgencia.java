@@ -16,23 +16,29 @@ import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
  * Script Name   : <b>fValidarAgencia</b>
  * Descripcion   : Functional Test Script
  * @since  2015/12/27
- * @author Sandra
+ * @author SS
+ * ultima modif
+ * 	ss 23-3-2017 - se agrega port-in
  */
 public class fValidarAgencia extends fValidarAgenciaHelper
 {
-	public void testMain(Object[] args) 
+	public void testMain(Object[] args) throws RationalTestException 
 	{
+		ImpreEncabezadoScript(getScriptArgs(), getScriptName( ).toString());
 		String[] Agencia;
-		Agencia = new String[1];
-		// Parámetros	   : 0) OK/NOK 
+		Agencia = new String[2];
+		// Parámetros	   : 0) OK/NOK  1) tramite para diferenciar port-in
 
 		String[] MensError;
 		MensError = new String[4];
 
-		/** 
-		 * Ir a validar agencia
-		 */
+		dpReset();
+		while (!dpDone() &&  !(dpString("NumeroCaso").equals(args[0]) && 
+				dpString("Ambiente").equals(args[2]))) {
+			dpNext(); 
+		} 
 
+		Agencia[1] = dpString("Tramite"); 
 		callScript("Scripts.Comun.ValidarAgencia",Agencia);
 
 		if  (Agencia[0].toString().equals("NOK")){

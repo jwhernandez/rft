@@ -20,6 +20,7 @@ public class Navegacion extends NavegacionHelper
 {
 	public void testMain(Object[] args) 
 	{
+		ImpreEncabezadoScript(getScriptArgs(), getScriptName( ).toString());
 //		System.out.println("1" + SiebelApp().getLastErrorMessage());
 //		System.out.println("2" + SiebelApp().getSessionId());
 //		System.out.println("3" + SiebelApp().getTabPage()); 

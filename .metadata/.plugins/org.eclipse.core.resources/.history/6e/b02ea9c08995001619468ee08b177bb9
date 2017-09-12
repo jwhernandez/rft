@@ -1,0 +1,125 @@
+package Scripts.Comun.SistemasExternos;
+import libreria.utileria.Tipo;
+import resources.Scripts.Comun.SistemasExternos.ATV_CapturarDatosMultasHelper;
+
+import com.rational.test.ft.*;
+import com.rational.test.ft.object.interfaces.*;
+import com.rational.test.ft.object.interfaces.SAP.*;
+import com.rational.test.ft.object.interfaces.WPF.*;
+import com.rational.test.ft.object.interfaces.dojo.*;
+import com.rational.test.ft.object.interfaces.siebel.*;
+import com.rational.test.ft.object.interfaces.flex.*;
+import com.rational.test.ft.object.interfaces.generichtmlsubdomain.*;
+import com.rational.test.ft.script.*;
+import com.rational.test.ft.value.*;
+import com.rational.test.ft.vp.*;
+import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
+/**
+ * Description   : Captura los datos para validar las posibles multas de un servicio
+ * Script Name   :  <b>ATV_CapturarDatosMultas</b>
+ * @since  2016/10/18
+ * Parametros: 0) Resultado = OK/NOK 1) nro pedido 2) tipo_CP upgrade downgrade NA  3)plan capturado 4) terminal capturado 5) RPT 6) CPT-I 7) CPT-S 8) RPB 9)CPB
+ * 
+ * res 1-1735047671 downgrade res res res res res res res 
+ */
+public class ATV_CapturarDatosMultas extends ATV_CapturarDatosMultasHelper
+{
+
+	public void testMain(Object[] argu) throws RationalTestException
+	{
+		ImpreEncabezadoScript(getScriptArgs(), getScriptName( ).toString());
+		argu[0] = "NOK";
+		String sNroPed = null;
+		String sPlan = null;
+		String sTerminal = null;
+		int iTenencia = 0; 
+		int iPermanencia = 0;  
+		int iDiasRestan = 0;
+		double iPrecioPlan = 0; 
+		double iPrecioVenta = 0;  
+		double iGastos = 0;
+		double iDescDiario = 0; 
+		double iRPT = 0;  
+		double iCPT_i = 0;
+		double iCPT_s = 0;
+		double iRPB = 0;  
+		double iCPB = 0;
+		String sNroCaso = getNroCaso();
+		System.out.println("NroCaso"+ sNroCaso );
+		
+		HistoricoVentaTerminal_Plan().click();
+
+		Tipo().select("NUM.ORDEN");
+		ValorTipo().setText(argu[1].toString());
+		Consutar().click();
+
+		ListaTerminalesPlanes().waitForExistence();
+
+		if (ListaTerminalesPlanes().exists())
+		{
+			//Leer los registros del servicio y buscar el nro de pedido
+			ITestDataTable iDataTable = (ITestDataTable) ListaTerminalesPlanes().getTestData("contents");
+			int rows = iDataTable.getRowCount();
+			int cols = iDataTable.getColumnCount();
+			System.out.println("Filas=" + rows + " Columnas"+ cols);
+
+			ListaTerminalesPlanes().ensureObjectIsVisible();
+			// Generar una variable filename
+
+			// Solo se espera que haya un red con el numero pasado como parametro
+			int currentrow=0;
+			boolean bEncontrado = false;
+			while (currentrow<rows && !bEncontrado)
+			{
+				currentrow=currentrow+1;
+				sNroPed = iDataTable.getCell(currentrow, 1).toString();
+				sPlan = iDataTable.getCell(currentrow, 12).toString();
+				sTerminal = iDataTable.getCell(currentrow, 14).toString();
+				System.out.println(currentrow +sNroPed );
+				if (sNroPed.equals(argu[1].toString())) bEncontrado = true;
+			} 
+			// Salgo con currentrow igual a la del plan encontrado
+			if (bEncontrado)
+			{	
+				iTenencia = Integer.parseInt(iDataTable.getCell(currentrow, 26).toString());
+				infoPaso(sNroCaso, Tipo.DATO,"Tenencia ",iDataTable.getCell(currentrow, 26).toString());
+				System.out.println("Tenencia"+ iTenencia );
+				iPermanencia = Integer.parseInt(iDataTable.getCell(currentrow, 25).toString());
+				infoPaso(sNroCaso, Tipo.DATO,"Permanencia ",iDataTable.getCell(currentrow, 25).toString());
+				System.out.println("Permanencia"+ iPermanencia );
+				iDiasRestan = Integer.parseInt(iDataTable.getCell(currentrow, 27).toString());
+				infoPaso(sNroCaso, Tipo.DATO,"DiasRestan ",iDataTable.getCell(currentrow, 27).toString());
+				System.out.println("DiasRestan"+ iDiasRestan );
+				iDescDiario = Double.parseDouble(iDataTable.getCell(currentrow, 22).toString()); 
+				infoPaso(sNroCaso, Tipo.DATO,"DescDiario ",iDataTable.getCell(currentrow, 22).toString());
+				System.out.println("DescDiario"+ iDescDiario );
+				iGastos = Double.parseDouble(iDataTable.getCell(currentrow, 21).toString().replace(".", "%").replace(",", ".").replace("%", ","));
+				infoPaso(sNroCaso, Tipo.DATO,"Gastos ",iDataTable.getCell(currentrow, 21).toString());
+				System.out.println("Gastos"+ iGastos );
+				iPrecioVenta = Double.parseDouble(iDataTable.getCell(currentrow, 19).toString().replace(".", "%").replace(",", ".").replace("%", ","));
+				infoPaso(sNroCaso, Tipo.DATO,"PrecioVenta ",iDataTable.getCell(currentrow, 19).toString());
+				System.out.println("PrecioVenta"+ iPrecioVenta );
+				iPrecioPlan = Double.parseDouble(iDataTable.getCell(currentrow, 18).toString().replace(".", "%").replace(",", ".").replace("%", ","));
+				infoPaso(sNroCaso, Tipo.DATO,"PrecioPlan ",iDataTable.getCell(currentrow, 18).toString());
+				System.out.println("PrecioPlan"+ iPrecioPlan );
+				iRPT = Double.parseDouble(iDataTable.getCell(currentrow, 29).toString().replace(".", "%").replace(",", ".").replace("%", ","));
+				infoPaso(sNroCaso, Tipo.DATO,"RPT ",iDataTable.getCell(currentrow, 29).toString());
+				System.out.println("RPT"+ iRPT );
+				iCPT_i = Double.parseDouble(iDataTable.getCell(currentrow, 30).toString().replace(".", "%").replace(",", ".").replace("%", ","));
+				infoPaso(sNroCaso, Tipo.DATO,"CPT_i",iDataTable.getCell(currentrow, 30).toString());
+				System.out.println("CPT_i"+ iCPT_i );
+				iCPT_s = Double.parseDouble(iDataTable.getCell(currentrow, 30).toString().replace(".", "%").replace(",", ".").replace("%", ","));
+				infoPaso(sNroCaso, Tipo.DATO,"CPT_s",iDataTable.getCell(currentrow, 30).toString());
+				System.out.println("CPT_s"+ iCPT_s );
+				iRPB = Double.parseDouble(iDataTable.getCell(currentrow, 31).toString().replace(".", "%").replace(",", ".").replace("%", ","));
+				infoPaso(sNroCaso, Tipo.DATO,"RPB ",iDataTable.getCell(currentrow, 31).toString());
+				System.out.println("RPB"+ iRPB );
+				iCPB = Double.parseDouble(iDataTable.getCell(currentrow, 32).toString().replace(".", "%").replace(",", ".").replace("%", ","));
+				infoPaso(sNroCaso, Tipo.DATO,"CPB",iDataTable.getCell(currentrow, 32).toString());
+				System.out.println("CPB"+ iCPB );
+			}
+		}
+		ImpreResultadoScript(getScriptName( ).toString(), "Resultado " + argu[0]);
+	}
+}
+

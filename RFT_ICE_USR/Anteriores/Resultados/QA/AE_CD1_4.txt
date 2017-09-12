@@ -1,0 +1,41 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: AE_CD1 Desde paso: 4 Modo:Real
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+---------------------------
+AE_CD1_T1;LeerDatosEntrada;OK;
+AE_CD1_T1;LeerDatoSalidaUltPasoEjec;OK;
+AE_CD1_T1;LeerDatosSalida;OK;
+AE_CD1_T1;Paso1:fASRM_Login;NE;
+AE_CD1_T1;Paso2:fASRM_ConsultaEstadoSIM;NE;
+AE_CD1_T1;Paso3:fASRM_ModificarEstadoServicio;NE;
+AE_CD1_T1;Paso4:fASRM_Logout;NE;
+AE_CD1_T1;Paso4:fASRM_Logout;Se paro voluntariamente el caso en el paso hasta 4;
+
+
+Informe de DATOS de salida
+---------------------------
+AE_CD1;UltimoPasoOK;2;
+AE_CD1;UltimoTramite;1;
+AE_CD1;NroServicio;89781331;
+AE_CD1;T1_NroCtaFact;;
+AE_CD1;T1_NroRED;;
+AE_CD1;T1_NomListaEspecial;;
+AE_CD1;T1_Fecha CM=;;
+AE_CD1;T1_Id Task;;
+
+
+Informe de Bugs
+-----------------
+
+
+Informe de Errores imprevistos de sistema
+------------------------------------------------
+
+----------------------------------------------------------------------------------------------------------
+Tipo Error:Bug Mensaje de Error:Parada en paso 5
+Fin del Informe del Caso Prueba y Conj Datos: AE_CD1
+----------------------------------------------------------------------------------------------------------

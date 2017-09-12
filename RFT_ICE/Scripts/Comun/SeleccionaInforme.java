@@ -23,8 +23,9 @@ import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
  */
 public class SeleccionaInforme extends SeleccionaInformeHelper
 {
-	public void testMain(Object[] argu) 
+	public void testMain(Object[] argu) throws RationalTestException 
 	{
+		ImpreEncabezadoScript(getScriptArgs(), getScriptName( ).toString());
 		argu[0]="NOK";
 		Botón_Informes().click();
 		sleep(2);

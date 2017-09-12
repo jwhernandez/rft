@@ -26,6 +26,7 @@ public class AdministrarTemporadasQA extends AdministrarTemporadasQAHelper
 {
 	public void testMain(Object[] argu) throws RationalTestException
 	{
+		ImpreEncabezadoScript(getScriptArgs(), getScriptName( ).toString());
 		argu[2] = "NOK";
 		argu[3] = "NA";
 		
@@ -52,6 +53,7 @@ public class AdministrarTemporadasQA extends AdministrarTemporadasQAHelper
 			break;
 		} // end del switch
 		System.out.println("Resultado: " +argu[2] + " " + argu[3]);
+		ImpreResultadoScript(getScriptName( ).toString(), argu[2].toString());
 	}
 }
 

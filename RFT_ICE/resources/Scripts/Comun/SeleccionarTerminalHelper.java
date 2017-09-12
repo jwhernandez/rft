@@ -20,17 +20,17 @@ import com.rational.test.ft.vp.IFtVerificationPoint;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
  * Script Name   : <b>SeleccionarTerminal</b><br>
- * Generated     : <b>2015/12/28 21:03:17</b><br>
+ * Generated     : <b>2016/12/21 12:36:53</b><br>
  * Description   : Helper class for script<br>
  * Original Host : Windows 7 x86 6.1 <br>
  * 
- * @since  diciembre 28, 2015
+ * @since  diciembre 21, 2016
  * @author Sandra
  */
 public abstract class SeleccionarTerminalHelper extends libreria.Accion
 {
 	/**
-	 * Breconfig: with default state.
+	 * Personalizar: with default state.
 	 *		ClassName : SiebButton
 	 * 		.class : SiebButton
 	 * 		RepositoryName : Breconfig
@@ -41,7 +41,7 @@ public abstract class SeleccionarTerminalHelper extends libreria.Accion
                         getMappedTestObject("Personalizar"));
 	}
 	/**
-	 * Breconfig: with specific test context and state.
+	 * Personalizar: with specific test context and state.
 	 *		ClassName : SiebButton
 	 * 		.class : SiebButton
 	 * 		RepositoryName : Breconfig
@@ -53,10 +53,33 @@ public abstract class SeleccionarTerminalHelper extends libreria.Accion
 	}
 	
 	/**
+	 * PersonalizarPI: with default state.
+	 *		ClassName : SiebButton
+	 * 		.class : SiebButton
+	 * 		RepositoryName : Breconfig
+	 */
+	protected SiebButtonTestObject PersonalizarPI() 
+	{
+		return new SiebButtonTestObject(
+                        getMappedTestObject("PersonalizarPI"));
+	}
+	/**
+	 * PersonalizarPI: with specific test context and state.
+	 *		ClassName : SiebButton
+	 * 		.class : SiebButton
+	 * 		RepositoryName : Breconfig
+	 */
+	protected SiebButtonTestObject PersonalizarPI(TestObject anchor, long flags) 
+	{
+		return new SiebButtonTestObject(
+                        getMappedTestObject("PersonalizarPI"), anchor, flags);
+	}
+	
+	/**
 	 * Terminado: with default state.
 	 *		.text : Terminado
-	 * 		.id : GRPITEM[~^`grpItemId3`^~[LINK
-	 * 		.href : javascript:processInput("GRPITEM[~^`grpItemId3", "DoneConfig","linkMethod")
+	 * 		.id : RegularExpression(GRPITEM.*LINK)
+	 * 		.href : RegularExpression(javascript:processInput\("GRPITEM.*"DoneConfig","linkMethod"\) ...
 	 * 		.title : 
 	 * 		.class : Html.A
 	 * 		.name : 
@@ -70,8 +93,8 @@ public abstract class SeleccionarTerminalHelper extends libreria.Accion
 	/**
 	 * Terminado: with specific test context and state.
 	 *		.text : Terminado
-	 * 		.id : GRPITEM[~^`grpItemId3`^~[LINK
-	 * 		.href : javascript:processInput("GRPITEM[~^`grpItemId3", "DoneConfig","linkMethod")
+	 * 		.id : RegularExpression(GRPITEM.*LINK)
+	 * 		.href : RegularExpression(javascript:processInput\("GRPITEM.*"DoneConfig","linkMethod"\) ...
 	 * 		.title : 
 	 * 		.class : Html.A
 	 * 		.name : 
@@ -111,10 +134,10 @@ public abstract class SeleccionarTerminalHelper extends libreria.Accion
 	}
 	
 	/**
-	 * GRPITEMGrpItemId13LINK: with default state.
+	 * Terminales Moviles: with default state.
 	 *		.text : Terminales Moviles
-	 * 		.id : GRPITEM[~^`grpItemId13`^~[LINK
-	 * 		.href : javascript:processInput("GRPITEM[~^`grpItemId13", "ChangeCurrentObj","linkMethod ...
+	 * 		.id : GRPITEM[~^`grpItemId12`^~[LINK
+	 * 		.href : javascript:processInput("GRPITEM[~^`grpItemId12", "ChangeCurrentObj","linkMethod ...
 	 * 		.title : 
 	 * 		.class : Html.A
 	 * 		.name : 
@@ -126,10 +149,10 @@ public abstract class SeleccionarTerminalHelper extends libreria.Accion
                         getMappedTestObject("TerminalesMoviles"));
 	}
 	/**
-	 * GRPITEMGrpItemId13LINK: with specific test context and state.
+	 * Terminales Moviles: with specific test context and state.
 	 *		.text : Terminales Moviles
-	 * 		.id : GRPITEM[~^`grpItemId13`^~[LINK
-	 * 		.href : javascript:processInput("GRPITEM[~^`grpItemId13", "ChangeCurrentObj","linkMethod ...
+	 * 		.id : GRPITEM[~^`grpItemId12`^~[LINK
+	 * 		.href : javascript:processInput("GRPITEM[~^`grpItemId12", "ChangeCurrentObj","linkMethod ...
 	 * 		.title : 
 	 * 		.class : Html.A
 	 * 		.name : 
@@ -139,6 +162,37 @@ public abstract class SeleccionarTerminalHelper extends libreria.Accion
 	{
 		return new GuiTestObject(
                         getMappedTestObject("TerminalesMoviles"), anchor, flags);
+	}
+	
+	/**
+	 * VolveraValorar: with default state.
+	 *		.text : Volver a valorar
+	 * 		.id : RegularExpression(GRPITEM.*)
+	 * 		.href : RegularExpression(javascript:processInput\("GRPITEM.*CalculatePriceCX","linkMeth ...
+	 * 		.title : 
+	 * 		.class : Html.A
+	 * 		.name : 
+	 * 		.classIndex : 0
+	 */
+	protected GuiTestObject VolveraValorar() 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("VolveraValorar"));
+	}
+	/**
+	 * VolveraValorar: with specific test context and state.
+	 *		.text : Volver a valorar
+	 * 		.id : RegularExpression(GRPITEM.*)
+	 * 		.href : RegularExpression(javascript:processInput\("GRPITEM.*CalculatePriceCX","linkMeth ...
+	 * 		.title : 
+	 * 		.class : Html.A
+	 * 		.name : 
+	 * 		.classIndex : 0
+	 */
+	protected GuiTestObject VolveraValorar(TestObject anchor, long flags) 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("VolveraValorar"), anchor, flags);
 	}
 	
 	

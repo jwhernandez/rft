@@ -21,11 +21,12 @@ import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
  */
 public class fValidarLiberarNumero extends fValidarLiberarNumeroHelper
 {
-	public void testMain(Object[] args) 
+	public void testMain(Object[] args) throws RationalTestException
 	{
+		ImpreEncabezadoScript(getScriptArgs(), getScriptName( ).toString());
 		String[] Validac;
 		Validac = new String[1];
-		// Parámetro 0) OUT Habilitado o Deshabilitado
+		// Parámetro 0) OUT true o false
 
 		String[] MensError;
 		MensError = new String[4];

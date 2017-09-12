@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Redenominar el recurso &apos;RFT_ICE_USR/Regresion/CP03_CD1.rftdp&apos; como &apos;copiaCP03_CD1.rftdp&apos;" description="Redenominar recurso &apos;CP03_CD1.rftdp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Regresion/CP03_CD1.rftdp" name="copiaCP03_CD1.rftdp" stamp="1490905517791" updateReferences="true"/>
+</session>

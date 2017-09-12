@@ -22,6 +22,7 @@ public class fCompraPlan extends fCompraPlanHelper
 {
 	public void testMain(Object[] args) throws RationalTestException 
 	{
+		ImpreEncabezadoScript(getScriptArgs(), getScriptName( ).toString());
 		String[] Plan;
 		Plan = new String[2];
 		

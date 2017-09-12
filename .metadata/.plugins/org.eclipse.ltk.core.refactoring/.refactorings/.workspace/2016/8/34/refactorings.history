@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Suprimir el recurso &apos;RFT_ICE_DATOS/Regresion/PREQA/CP03.rftdp&apos;" deleteContents="false" description="Suprimir el recurso &apos;RFT_ICE_DATOS/Regresion/PREQA/CP03.rftdp&apos;" element1="/RFT_ICE_DATOS/Regresion/PREQA/CP03.rftdp" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1471377926375"/>
+</session>

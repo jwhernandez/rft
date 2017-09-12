@@ -1,0 +1,34 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: TRUE_NA Desde paso: 1 Modo:null
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+-----------------------------------------------------------------------------------------
+
+
+Informe de DATOS de salida
+-----------------------------------------------------------------------------------------
+
+
+Informe de Bugs
+-----------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------
+Tipo Parada         = Excepción no esperada
+Mensaje de Parada   = Script=CasosPrueba Línea=0 Error=Array index out of range: 5
+Parada en paso	    = 0
+
+
+-----------------------------------------------------------------------------------------
+Fin del Informe del Caso Prueba_Conj Datos: TRUE_NA
+-----------------------------------------------------------------------------------------
+
+
+Informe de Errores imprevistos de sistema
+-----------------------------------------------------------------------------------------
+'Paso    0  -  Accion'                             'Excepción no esperada'        'Script=CasosPrueba Línea=0 Error=Array index out of range: 5'
+
+'Paso    0  -  Accion'                             'Excepción no esperada'        'Script=IterarCaso Línea=0 Error=CRFCN0018E: La línea 122 del script 122 contiene una excepción.'
+

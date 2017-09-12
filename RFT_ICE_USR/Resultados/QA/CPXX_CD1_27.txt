@@ -1,0 +1,75 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: CPXX_CD1 Desde paso: 27 Modo:Real
+Modulo desde Paso : 1 Hasta paso: 200
+Hora de Inicio de la Ejecucion : 2017/09/05 10:33:41
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatosEntrada'                                                  'OK'                          
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'                                         'OK'                          
+'Paso    0  -  LeerDatosSalida'                                                   'OK'                          
+'Paso    1  -  fLogin'                                                            'OK'                          
+'Paso    2  -  fLeerVariableCondicionanteDP'                                      'NE'                          
+'Paso    3  -  fLeerVariableCondicionanteDP'                                      'NE'                          
+'Paso    4  -  fVista360'                                                         'NE'                          
+'Paso    5  -  fBuscarActivo'                                                     'NE'                          
+'Paso    6  -  fNuevoCambioPlan'                                                  'NE'                          
+'Paso    7  -  fBuscarPedidoVenta'                                                'NE'                          
+'Paso    8  -  fValidarAgencia'                                                   'NE'                          
+'Paso    9  -  fIngresarAutenticacion'                                            'NE'                          
+'Paso   10  -  fBuscarProducto'                                                   'NE'                          
+'Paso   11  -  fValidarAccion'                                                    'NE'                          
+'Paso   12  -  fBuscarProducto'                                                   'NE'                          
+'Paso   13  -  fValidarAccion'                                                    'NE'                          
+'Paso   14  -  fValidarCapturarAccionProd'                                        'NE'                          
+'Paso   15  -  fAgregarContacto_RepLegal'                                         'NE'                          
+'Paso   16  -  fBuscarProducto'                                                   'NE'                          
+'Paso   17  -  fTerminalCliente'                                                  'NE'                          
+'Paso   18  -  fSeleccionarTerminal'                                              'NE'                          
+'Paso   19  -  fIngresarIMEI'                                                     'NE'                          
+'Paso   20  -  fIngresarIMEI'                                                     'NE'                          
+'Paso   21  -  fIngresarIMEI'                                                     'NE'                          
+'Paso   22  -  fValorarTodo'                                                      'NE'                          
+'Paso   23  -  fBuscarProducto'                                                   'NE'                          
+'Paso   24  -  fExpandiryBuscar'                                                  'NE'                          
+'Paso   25  -  fCheckPagoFact'                                                    'NE'                          
+'Paso   26  -  fCrearRED'                                                         'NE'                          
+'Paso   27  -  fEvaluarExpresionCondicionante'                                    'OK'                          
+
+
+Informe de DATOS de salida
+-----------------------------------------------------------------------------------------
+'Paso    0  -  CasosPrueba'                        'Usuario Alternativo '         'JVALERIO1'                   
+'Paso    0  -  CasosPrueba'                        'Clave Alternativa '           'jvalerio1'                   
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoPasoOK'                 '26'                          
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoTramite'                '1'                           
+'Paso    0  -  LeerDatosSalida'                    'T1_NroPedido'                 '1-1776374764'                
+'Paso   27  -  fEsperaEstadoRED'                   'Expresion'                    'true'                        
+
+
+Informe de Bugs
+-----------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------
+Tipo Parada         = Excepción no esperada
+Mensaje de Parada   = Script=fEsperaEstadoRED Línea=0 Error="Stop button was hit"
+Parada en paso	    = 27
+
+
+-----------------------------------------------------------------------------------------
+Fin del Informe del Caso Prueba_Conj Datos: CPXX_CD1
+-----------------------------------------------------------------------------------------
+
+
+Informe de Errores imprevistos de sistema
+-----------------------------------------------------------------------------------------
+'Paso   27  -  Accion'                             'Excepción no esperada'        'Script=fEsperaEstadoRED Línea=0 Error="Stop button was hit"'
+
+'Paso   27  -  Accion'                             'Excepción no esperada'        'Script=CasosPrueba Línea=0 Error="Stop button was hit"'
+
+
+Hora de Finalizacion de la Ejecucion: 2017/09/05 10:36:09
+-----------------------------------------------------------------------------------------

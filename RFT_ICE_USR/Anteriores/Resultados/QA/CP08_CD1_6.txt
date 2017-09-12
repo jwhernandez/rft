@@ -1,0 +1,41 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: CP08_CD1 Desde paso: 6 Modo:Real
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+---------------------------
+CP08_CD1_T1;LeerDatosEntrada;OK;
+CP08_CD1_T1;LeerDatoSalidaUltPasoEjec;OK;
+CP08_CD1_T1;LeerDatosSalida;OK;
+CP08_CD1_T1;Paso1:fLogin;OK;
+CP08_CD1_T1;Paso2:fVista360;NE;
+CP08_CD1_T1;Paso3:fBuscarActivo;NE;
+CP08_CD1_T1;Paso4:fBuscarCtaFact;NE;
+CP08_CD1_T1;Paso5:fNuevaPostvta;NE;
+
+
+Informe de DATOS de salida
+---------------------------
+CP08_CD1;UltimoPasoOK;0;
+CP08_CD1;UltimoTramite;1;
+
+
+Informe de Bugs
+-----------------
+
+
+Informe de Errores imprevistos de sistema
+------------------------------------------------
+CP08_CD1;Mensaje ME;Script=Comun.BuscarPedidoVenta Línea=38 Método=DrillDownColumn Error=SiebelList.DrillDownColumn(..,0), Row index 0 is not valid or visible; Valid range is [0..-1]; Clase=com.rational.test.ft.Domain.Siebel.SiebelItemNotFoundException Objeto=siebel.SiebListTestObject(Nombre: ListaPedidos, Correlación: SiebList);
+
+CP08_CD1;Mensaje UE;Script=Comun.BuscarPedidoVenta Línea=0 Error=SiebelList.DrillDownColumn(..,0), Row index 0 is not valid or visible; Valid range is [0..-1];;
+
+CP08_CD1;Mensaje UE;Script=PasosFunc.fBuscarPedidoVenta Línea=0 Error=CRFCN0018E: La línea 38 del script 38 contiene una excepción.;
+
+
+----------------------------------------------------------------------------------------------------------
+Tipo Parada:ObjectMethodException - Mensaje de Parada: Script=Comun.BuscarPedidoVenta Línea=38 Método=DrillDownColumn Error=SiebelList.DrillDownColumn(..,0), Row index 0 is not valid or visible; Valid range is [0..-1]; Clase=com.rational.test.ft.Domain.Siebel.SiebelItemNotFoundException Objeto=siebel.SiebListTestObject(Nombre: ListaPedidos, Correlación: SiebList)
+- Fin del Informe del Caso Prueba_Conj Datos: CP08_CD1
+----------------------------------------------------------------------------------------------------------

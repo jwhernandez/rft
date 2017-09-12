@@ -22,6 +22,7 @@ public class ValidaContrato extends ValidaContratoHelper
 {
 	public void testMain(Object[] argu) 
 	{
+		ImpreEncabezadoScript(getScriptArgs(), getScriptName( ).toString());
 		argu[1] = "OK";
 		switch (argu[0].toString()) {
 		case "Inactivo":

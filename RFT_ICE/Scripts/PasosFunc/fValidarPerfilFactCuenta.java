@@ -22,6 +22,7 @@ public class fValidarPerfilFactCuenta extends fValidarPerfilFactCuentaHelper
 {
 	public void testMain(Object[] args) throws RationalTestException 
 	{
+		ImpreEncabezadoScript(getScriptArgs(), getScriptName( ).toString());
 		String[] PerfilCtaCliente;
 		PerfilCtaCliente = new String[2];
 

@@ -20,17 +20,17 @@ import com.rational.test.ft.vp.IFtVerificationPoint;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
  * Script Name   : <b>LeerEstadoPedido</b><br>
- * Generated     : <b>2015/12/03 11:23:06 AM</b><br>
+ * Generated     : <b>2016/04/08 10:44:35</b><br>
  * Description   : Helper class for script<br>
  * Original Host : Windows 7 x86 6.1 <br>
  * 
- * @since  diciembre 03, 2015
- * @author rft
+ * @since  abril 08, 2016
+ * @author Sandra
  */
 public abstract class LeerEstadoPedidoHelper extends libreria.Accion
 {
 	/**
-	 * Status: with default state.
+	 * EstadoPedido: with default state.
 	 *		ClassName : SiebPicklist
 	 * 		.class : SiebPicklist
 	 * 		RepositoryName : Status
@@ -41,7 +41,7 @@ public abstract class LeerEstadoPedidoHelper extends libreria.Accion
                         getMappedTestObject("EstadoPedido"));
 	}
 	/**
-	 * Status: with specific test context and state.
+	 * EstadoPedido: with specific test context and state.
 	 *		ClassName : SiebPicklist
 	 * 		.class : SiebPicklist
 	 * 		RepositoryName : Status
@@ -50,6 +50,29 @@ public abstract class LeerEstadoPedidoHelper extends libreria.Accion
 	{
 		return new SiebPicklistTestObject(
                         getMappedTestObject("EstadoPedido"), anchor, flags);
+	}
+	
+	/**
+	 * EstadoPedidoPI: with default state.
+	 *		ClassName : SiebPicklist
+	 * 		.class : SiebPicklist
+	 * 		RepositoryName : Status
+	 */
+	protected SiebPicklistTestObject EstadoPedidoPI() 
+	{
+		return new SiebPicklistTestObject(
+                        getMappedTestObject("EstadoPedidoPI"));
+	}
+	/**
+	 * EstadoPedidoPI: with specific test context and state.
+	 *		ClassName : SiebPicklist
+	 * 		.class : SiebPicklist
+	 * 		RepositoryName : Status
+	 */
+	protected SiebPicklistTestObject EstadoPedidoPI(TestObject anchor, long flags) 
+	{
+		return new SiebPicklistTestObject(
+                        getMappedTestObject("EstadoPedidoPI"), anchor, flags);
 	}
 	
 	

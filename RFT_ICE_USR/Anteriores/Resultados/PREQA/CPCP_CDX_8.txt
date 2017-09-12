@@ -1,0 +1,45 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: CPCP_CDX Desde paso: 8 Modo:Real
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatosEntrada'                                                  'OK'                          
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'                                         'OK'                          
+'Paso    0  -  LeerDatosSalida'                                                   'OK'                          
+'Paso    1  -  fLogin'                                                            'OK'                          
+'Paso    2  -  fVista360'                                                         'NE'                          
+'Paso    3  -  fBuscarActivo'                                                     'NE'                          
+'Paso    4  -  fNuevoCambioPlan'                                                  'NE'                          
+'Paso    5  -  fBuscarPedidoVenta'                                                'OK'                          
+'Paso    6  -  fObtenerMorosidad'                                                 'NE'                          
+'Paso    7  -  fIngresarAutenticacion'                                            'NE'                          
+'Paso    8  -  fAgregarContacto_RepLegal'                                         'OK'                          
+
+
+Informe de DATOS de salida
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoPasoOK'                 '7'                           
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoTramite'                '1'                           
+'Paso    0  -  LeerDatosSalida'                    'T1_NroPedido'                 '1-1729157289'                
+
+
+Informe de Bugs
+-----------------------------------------------------------------------------------------
+'Paso    9  -  fTerminalCliente'                   'Terminal cliente falló'      
+
+-----------------------------------------------------------------------------------------
+Tipo Parada         = Bug
+Mensaje de Parada   = Terminal cliente falló
+Parada en paso	    = 9
+
+
+-----------------------------------------------------------------------------------------
+Fin del Informe del Caso Prueba_Conj Datos: CPCP_CDX
+-----------------------------------------------------------------------------------------
+
+
+Informe de Errores imprevistos de sistema
+-----------------------------------------------------------------------------------------

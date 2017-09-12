@@ -1,0 +1,59 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: CPXX_CD1 Desde paso: 16 Modo:Real
+Modulo desde Paso : 1 Hasta paso: 200
+Hora de Inicio de la Ejecucion : 2017/09/05 11:50:46
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatosEntrada'                                                  'OK'                          
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'                                         'OK'                          
+'Paso    0  -  LeerDatosSalida'                                                   'OK'                          
+'Paso    1  -  fLogin'                                                            'OK'                          
+'Paso    2  -  fLeerVariableCondicionanteDP'                                      'NE'                          
+'Paso    3  -  fLeerVariableCondicionanteDP'                                      'NE'                          
+'Paso    4  -  fVista360'                                                         'NE'                          
+'Paso    5  -  fBuscarActivo'                                                     'NE'                          
+'Paso    6  -  fNuevoCambioPlan'                                                  'NE'                          
+'Paso    7  -  fBuscarPedidoVenta'                                                'NE'                          
+'Paso    8  -  fValidarAgencia'                                                   'NE'                          
+'Paso    9  -  fIngresarAutenticacion'                                            'NE'                          
+'Paso   10  -  fBuscarProducto'                                                   'NE'                          
+'Paso   11  -  fValidarAccion'                                                    'NE'                          
+'Paso   12  -  fBuscarProducto'                                                   'NE'                          
+'Paso   13  -  fValidarAccion'                                                    'NE'                          
+'Paso   14  -  fValidarCapturarAccionProd'                                        'NE'                          
+'Paso   15  -  fAgregarContacto_RepLegal'                                         'NE'                          
+
+
+Informe de DATOS de salida
+-----------------------------------------------------------------------------------------
+'Paso    0  -  CasosPrueba'                        'Usuario Alternativo '         'JVALERIO1'                   
+'Paso    0  -  CasosPrueba'                        'Clave Alternativa '           'jvalerio1'                   
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoPasoOK'                 '15'                          
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoTramite'                '1'                           
+'Paso    0  -  LeerDatosSalida'                    'T1_NroPedido'                 '1-1776374764'                
+
+
+Informe de Bugs
+-----------------------------------------------------------------------------------------
+'Paso   16  -  fBuscarProducto'                    'Producto no se encontró'     
+
+-----------------------------------------------------------------------------------------
+Tipo Parada         = Bug
+Mensaje de Parada   = Producto no se encontró
+Parada en paso	    = 16
+
+
+-----------------------------------------------------------------------------------------
+Fin del Informe del Caso Prueba_Conj Datos: CPXX_CD1
+-----------------------------------------------------------------------------------------
+
+
+Informe de Errores imprevistos de sistema
+-----------------------------------------------------------------------------------------
+
+Hora de Finalizacion de la Ejecucion: 2017/09/05 11:52:04
+-----------------------------------------------------------------------------------------

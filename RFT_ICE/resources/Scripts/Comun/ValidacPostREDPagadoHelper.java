@@ -20,17 +20,17 @@ import com.rational.test.ft.vp.IFtVerificationPoint;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
  * Script Name   : <b>ValidacPostREDPagado</b><br>
- * Generated     : <b>2015/12/28 21:42:47</b><br>
+ * Generated     : <b>2017/04/11 10:10:44 PM</b><br>
  * Description   : Helper class for script<br>
  * Original Host : Windows 7 x86 6.1 <br>
  * 
- * @since  diciembre 28, 2015
- * @author Sandra
+ * @since  abril 11, 2017
+ * @author rft
  */
 public abstract class ValidacPostREDPagadoHelper extends libreria.Accion
 {
 	/**
-	 * Status: with default state.
+	 * EstadoPedido: with default state.
 	 *		ClassName : SiebPicklist
 	 * 		.class : SiebPicklist
 	 * 		RepositoryName : Status
@@ -41,7 +41,7 @@ public abstract class ValidacPostREDPagadoHelper extends libreria.Accion
                         getMappedTestObject("Estado"));
 	}
 	/**
-	 * Status: with specific test context and state.
+	 * EstadoPedido: with specific test context and state.
 	 *		ClassName : SiebPicklist
 	 * 		.class : SiebPicklist
 	 * 		RepositoryName : Status
@@ -53,7 +53,30 @@ public abstract class ValidacPostREDPagadoHelper extends libreria.Accion
 	}
 	
 	/**
-	 * BupdatePriceAll: with default state.
+	 * EstadoPedidoPI: with default state.
+	 *		ClassName : SiebPicklist
+	 * 		.class : SiebPicklist
+	 * 		RepositoryName : Status
+	 */
+	protected SiebPicklistTestObject Estado_PI() 
+	{
+		return new SiebPicklistTestObject(
+                        getMappedTestObject("Estado_PI"));
+	}
+	/**
+	 * EstadoPedidoPI: with specific test context and state.
+	 *		ClassName : SiebPicklist
+	 * 		.class : SiebPicklist
+	 * 		RepositoryName : Status
+	 */
+	protected SiebPicklistTestObject Estado_PI(TestObject anchor, long flags) 
+	{
+		return new SiebPicklistTestObject(
+                        getMappedTestObject("Estado_PI"), anchor, flags);
+	}
+	
+	/**
+	 * Valorar_Todo: with default state.
 	 *		ClassName : SiebButton
 	 * 		.class : SiebButton
 	 * 		RepositoryName : BupdatePriceAll
@@ -64,7 +87,7 @@ public abstract class ValidacPostREDPagadoHelper extends libreria.Accion
                         getMappedTestObject("Valorar_Todo"));
 	}
 	/**
-	 * BupdatePriceAll: with specific test context and state.
+	 * Valorar_Todo: with specific test context and state.
 	 *		ClassName : SiebButton
 	 * 		.class : SiebButton
 	 * 		RepositoryName : BupdatePriceAll
@@ -73,6 +96,29 @@ public abstract class ValidacPostREDPagadoHelper extends libreria.Accion
 	{
 		return new SiebButtonTestObject(
                         getMappedTestObject("Valorar_Todo"), anchor, flags);
+	}
+	
+	/**
+	 * Valorar_Todo_PI: with default state.
+	 *		ClassName : SiebButton
+	 * 		.class : SiebButton
+	 * 		RepositoryName : BupdatePriceAll
+	 */
+	protected SiebButtonTestObject Valorar_Todo_PI() 
+	{
+		return new SiebButtonTestObject(
+                        getMappedTestObject("Valorar_Todo_PI"));
+	}
+	/**
+	 * Valorar_Todo_PI: with specific test context and state.
+	 *		ClassName : SiebButton
+	 * 		.class : SiebButton
+	 * 		RepositoryName : BupdatePriceAll
+	 */
+	protected SiebButtonTestObject Valorar_Todo_PI(TestObject anchor, long flags) 
+	{
+		return new SiebButtonTestObject(
+                        getMappedTestObject("Valorar_Todo_PI"), anchor, flags);
 	}
 	
 	/**
@@ -98,6 +144,29 @@ public abstract class ValidacPostREDPagadoHelper extends libreria.Accion
 	{
 		return new SiebButtonTestObject(
                         getMappedTestObject("enviarPedido"), anchor, flags);
+	}
+	
+	/**
+	 * Submit: with default state.
+	 *		ClassName : SiebButton
+	 * 		.class : SiebButton
+	 * 		RepositoryName : Submit
+	 */
+	protected SiebButtonTestObject enviarPedido_PI() 
+	{
+		return new SiebButtonTestObject(
+                        getMappedTestObject("enviarPedido_PI"));
+	}
+	/**
+	 * Submit: with specific test context and state.
+	 *		ClassName : SiebButton
+	 * 		.class : SiebButton
+	 * 		RepositoryName : Submit
+	 */
+	protected SiebButtonTestObject enviarPedido_PI(TestObject anchor, long flags) 
+	{
+		return new SiebButtonTestObject(
+                        getMappedTestObject("enviarPedido_PI"), anchor, flags);
 	}
 	
 	

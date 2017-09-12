@@ -24,6 +24,7 @@ public class fBuscaPedidoenCtaFact extends fBuscaPedidoenCtaFactHelper
 {
 	public void testMain(Object[] args) 
 	{
+		ImpreEncabezadoScript(getScriptArgs(), getScriptName( ).toString());
 		String[] MensError;
 		MensError = new String[4];
 

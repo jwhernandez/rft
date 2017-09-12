@@ -25,23 +25,34 @@ public class fObtenerMorosidad extends fObtenerMorosidadHelper
 {
 	public void testMain(Object[] args) throws RationalTestException 
 	{
-			String[] ObteneraMorosidad;
-			ObteneraMorosidad = new String[1];
-			// 0) OK/NO
-			
-			String[] MensError;
-			MensError = new String[4];
+		ImpreEncabezadoScript(getScriptArgs(), getScriptName( ).toString());	
+		String[] ObteneraMorosidad;
+		ObteneraMorosidad = new String[2];
+		// 0) OK/NO 1) tramite
 
-			callScript("Scripts.Comun.ObtenerMorosidad", ObteneraMorosidad);
+		String[] MensError;
+		MensError = new String[4];
+		
+		/**
+		 * Itera el data pools de datos del caso para buscar la row correcta
+		 */
+		dpReset();
+		while (!dpDone() &&  !(dpString("NumeroCaso").equals(args[0]) && 
+				dpString("Ambiente").equals(args[2]))) {
+			dpNext(); 
+		} 
 
-				if  (ObteneraMorosidad[0].toString().equals("NOK")){
-					MensError[0] = "Obtener Morosidad Falló";
-					//MensError[0] = "xDefecto";
-					MensError[1] = args[3].toString();
-					MensError[2] = args[0].toString();
-					MensError[3] = getScriptName( );
-					callScript("Scripts.Comun.TerminarCasoError", MensError);
-			}
+		ObteneraMorosidad[1]=dpString("Tramite");
+		callScript("Scripts.Comun.ObtenerMorosidad", ObteneraMorosidad);
+
+		if  (ObteneraMorosidad[0].toString().equals("NOK")){
+			MensError[0] = "Obtener Morosidad Falló";
+			//MensError[0] = "xDefecto";
+			MensError[1] = args[3].toString();
+			MensError[2] = args[0].toString();
+			MensError[3] = getScriptName( );
+			callScript("Scripts.Comun.TerminarCasoError", MensError);
+		}
 	}
 }
 

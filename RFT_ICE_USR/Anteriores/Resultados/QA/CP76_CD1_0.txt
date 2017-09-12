@@ -1,0 +1,177 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: CP76_CD1 Desde paso: 0 Modo:Real
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatosEntrada'                                                  'OK'                          
+'Paso    0  -  GrabarDatosSalida'                                                 'OK'                          
+'Paso    1  -  fLogin'                                                            'OK'                          
+'Paso    2  -  fVista360'                                                         'OK'                          
+'Paso    3  -  fNuevaVenta'                                                       'OK'                          
+'Paso    4  -  fBuscarPedidoVenta'                                                'NE'                          
+'Paso    5  -  fObtenerMorosidad'                                                 'OK'                          
+'Paso    6  -  fIngresarAutenticacion'                                            'OK'                          
+'Paso    7  -  fCompraPlanCategoriaCatalogo'                                      'OK'                          
+'Paso    8  -  fIngresarSIM'                                                      'OK'                          
+'Paso    9  -  fGenerarCtaFact'                                                   'OK'                          
+'Paso   10  -  fSeleccionarTerminal'                                              'OK'                          
+'Paso   11  -  fValorarTodo'                                                      'OK'                          
+'Paso   12  -  fIngresarIMEI'                                                     'OK'                          
+'Paso   13  -  fIngresarIMEI'                                                     'OK'                          
+'Paso   14  -  fIngresarIMEI'                                                     'OK'                          
+'Paso   15  -  fCheckPagoFact'                                                    'OK'                          
+'Paso   16  -  fValidarDescEnProducto'                                            'OK'                          
+'Paso   17  -  fASRM_Login'                                                       'OK'                          
+'Paso   18  -  fASRM_ModificarEstadoServicio'                                     'OK'                          
+'Paso   19  -  fASRM_Logout'                                                      'OK'                          
+'Paso   20  -  fBuscarProducto'                                                   'OK'                          
+'Paso   21  -  fNumeroEspecial'                                                   'OK'                          
+'Paso   22  -  fIngresarNroServicioAdmin'                                         'NE'                          
+'Paso   23  -  fEnviarPedido'                                                     'OK'                          
+'Paso   24  -  fEsperaEstado'                                                     'OK'                          
+'Paso   25  -  fATV_Login'                                                        'OK'                          
+'Paso   26  -  fATV_BuscarTerminal_Plan'                                          'OK'                          
+'Paso   27  -  fATV_ValidarEstadoTerminal_Plan'                                   'OK'                          
+'Paso   28  -  fATV_Logout'                                                       'OK'                          
+'Paso   29  -  fNuevoTramite'                                                     'OK'                          
+'Paso   30  -  fVista360'                                                         'OK'                          
+'Paso   31  -  fBuscarActivo'                                                     'OK'                          
+'Paso   32  -  fNuevoCambioPlan'                                                  'OK'                          
+'Paso   33  -  fBuscarPedidoVenta'                                                'NE'                          
+'Paso   34  -  fObtenerMorosidad'                                                 'OK'                          
+'Paso   35  -  fIngresarAutenticacion'                                            'OK'                          
+'Paso   36  -  fAgregarContacto_RepLegal'                                         'OK'                          
+'Paso   37  -  fSeleccionarTerminal'                                              'OK'                          
+'Paso   38  -  fValorarTodo'                                                      'OK'                          
+'Paso   39  -  fIngresarIMEI'                                                     'OK'                          
+'Paso   40  -  fIngresarIMEI'                                                     'OK'                          
+'Paso   41  -  fIngresarIMEI'                                                     'OK'                          
+'Paso   42  -  fCheckPagoFact'                                                    'OK'                          
+'Paso   43  -  fValidarDescEnProducto'                                            'OK'                          
+'Paso   44  -  fATV_Login'                                                        'OK'                          
+'Paso   45  -  fATV_ModificarRegRetencion'                                        'OK'                          
+'Paso   46  -  fATV_Logout'                                                       'OK'                          
+'Paso   47  -  fEnviarPedido'                                                     'OK'                          
+'Paso   48  -  fEsperaEstado'                                                     'OK'                          
+'Paso   49  -  fATV_Login'                                                        'OK'                          
+'Paso   50  -  fATV_BuscarTerminal_Plan'                                          'OK'                          
+'Paso   51  -  fATV_ValidarEstadoTerminal_Plan'                                   'OK'                          
+'Paso   52  -  fATV_BuscarTerminal_Plan'                                          'OK'                          
+'Paso   53  -  fATV_ValidarEstadoTerminal_Plan'                                   'OK'                          
+'Paso   54  -  fATV_ValidarPosibMultas'                                           'OK'                          
+'Paso   55  -  fATV_ValidarPosibMultas'                                           'OK'                          
+'Paso   56  -  fATV_Logout'                                                       'OK'                          
+'Paso   57  -  fNuevoTramite'                                                     'OK'                          
+
+
+Informe de DATOS de salida
+-----------------------------------------------------------------------------------------
+'Paso    3  -  GrabarDatosSalida'                  'T1_NroPedido'                 '1-1744449722'                
+'Paso    3  -  fNuevaVenta'                        'NroPedido'                    '1-1744449722'                
+'Paso   16  -  ValidarDescEnProducto'              'Descuento'                    '72000.0'                     
+'Paso   21  -  GrabarDatosSalida'                  'T1_NroServicio'               '89773222'                    
+'Paso   21  -  fNumeroEspecial'                    'NroServicio'                  '89773222'                    
+'Paso   29  -  GrabarDatosSalida'                  'UltTramite'                   '2'                           
+'Paso   29  -  GrabarDatosSalida'                  'T2_NroPedidoAnt'              '1-1744449722'                
+'Paso   29  -  GrabarDatosSalida'                  'T2_NroServicio'               '89773222'                    
+'Paso   31  -  fBuscarActivo'                      'NroServicio'                  '89773222'                    
+'Paso   32  -  fNuevoCambioPlan'                   'NroPedido'                    '1-1744455030'                
+'Paso   32  -  GrabarDatosSalida'                  'T2_NroPedido'                 '1-1744455030'                
+'Paso   43  -  ValidarDescEnProducto'              'Descuento'                    '59000.0'                     
+'Paso   54  -  ATV_CapturarDatosMultas'            'Tenencia '                    '0'                           
+'Paso   54  -  ATV_CapturarDatosMultas'            'Permanencia '                 '730'                         
+'Paso   54  -  ATV_CapturarDatosMultas'            'DiasRestan '                  '730'                         
+'Paso   54  -  ATV_CapturarDatosMultas'            'DescDiario '                  '759.3333'                    
+'Paso   54  -  ATV_CapturarDatosMultas'            'Gastos '                      '21,420.2200'                 
+'Paso   54  -  ATV_CapturarDatosMultas'            'PrecioVenta '                 '63,716.81'                   
+'Paso   54  -  ATV_CapturarDatosMultas'            'Costo '                       '63,716.81'                   
+'Paso   54  -  ATV_CapturarDatosMultas'            'PrecioPlan '                  '0.00'                        
+'Paso   54  -  ATV_CapturarDatosMultas'            'RPT '                         '63,716.81'                   
+'Paso   54  -  ATV_CapturarDatosMultas'            'CPT_i'                        '0.00'                        
+'Paso   54  -  ATV_CapturarDatosMultas'            'RPB '                         '63,716.81'                   
+'Paso   54  -  ATV_CapturarDatosMultas'            'CPB '                         '575,733.53'                  
+'Paso   54  -  ATV_CapturarDatosMultas'            'Plan '                        'PLAN PROFESIONAL 1 24 M'     
+'Paso   54  -  ATV_CapturarDatosMultas'            'Terminal '                    'ALCATEL C3 NEGRO'            
+'Paso   54  -  ATV_CapturarDatosMultas'            'RPT_Calc '                    '63716.81'                    
+'Paso   54  -  ATV_CapturarDatosMultas'            'RPB_Calc '                    '0.0'                         
+'Paso   54  -  ATV_CapturarDatosMultas'            'CPB_Calc '                    '575733.529'                  
+'Paso   54  -  ATV_CapturarDatosMultas'            'CPT_s_Calc '                  '63716.81'                    
+'Paso   54  -  ATV_CapturarDatosMultas'            'CPT_i_Calc '                  '85137.03'                    
+'Paso   54  -  ATV_ValidarDatosMultas'             'Multa RPT'                    '63716.81'                    
+'Paso   54  -  ATV_ValidarDatosMultas'             'Multa CPT-i'                  '85137.03'                    
+'Paso   54  -  ATV_ValidarDatosMultas'             'Multa CPT-s'                  '63716.81'                    
+'Paso   54  -  ATV_ValidarDatosMultas'             'Multa CPT-h'                  '63716.81'                    
+'Paso   55  -  ATV_CapturarDatosMultas'            'Tenencia '                    '0'                           
+'Paso   55  -  ATV_CapturarDatosMultas'            'Permanencia '                 '730'                         
+'Paso   55  -  ATV_CapturarDatosMultas'            'DiasRestan '                  '730'                         
+'Paso   55  -  ATV_CapturarDatosMultas'            'DescDiario '                  '1,708.2000'                  
+'Paso   55  -  ATV_CapturarDatosMultas'            'Gastos '                      '21,420.2200'                 
+'Paso   55  -  ATV_CapturarDatosMultas'            'PrecioVenta '                 '176,991.15'                  
+'Paso   55  -  ATV_CapturarDatosMultas'            'Costo '                       '223,893.81'                  
+'Paso   55  -  ATV_CapturarDatosMultas'            'PrecioPlan '                  '124,778.76'                  
+'Paso   55  -  ATV_CapturarDatosMultas'            'RPT '                         '52,212.39'                   
+'Paso   55  -  ATV_CapturarDatosMultas'            'CPT_i'                        '0.00'                        
+'Paso   55  -  ATV_CapturarDatosMultas'            'RPB '                         '99,115.05'                   
+'Paso   55  -  ATV_CapturarDatosMultas'            'CPB '                         '1,268,406.22'                
+'Paso   55  -  ATV_CapturarDatosMultas'            'Plan '                        'PLAN CONECTADO 2 24 M'       
+'Paso   55  -  ATV_CapturarDatosMultas'            'Terminal '                    'SAMSUNG A5'                  
+'Paso   55  -  ATV_CapturarDatosMultas'            'RPT_Calc '                    '52212.39'                    
+'Paso   55  -  ATV_CapturarDatosMultas'            'RPB_Calc '                    '0.0'                         
+'Paso   55  -  ATV_CapturarDatosMultas'            'CPB_Calc '                    '1268406.22'                  
+'Paso   55  -  ATV_CapturarDatosMultas'            'CPT_s_Calc '                  '99115.05000000002'           
+'Paso   55  -  ATV_CapturarDatosMultas'            'CPT_i_Calc '                  '120535.27000000002'          
+'Paso   55  -  ATV_ValidarDatosMultas'             'Multa RPT'                    '52212.39'                    
+'Paso   55  -  ATV_ValidarDatosMultas'             'Multa CPT-i'                  '120535.27'                   
+'Paso   55  -  ATV_ValidarDatosMultas'             'Multa CPT-s'                  '99115.05'                    
+'Paso   55  -  ATV_ValidarDatosMultas'             'Multa CPT-h'                  '99115.05'                    
+'Paso   55  -  ATV_ValidarDatosMultas'             'Multa RPB'                    '0.0'                         
+'Paso   57  -  GrabarDatosSalida'                  'UltTramite'                   '3'                           
+'Paso   57  -  GrabarDatosSalida'                  'T3_NroPedidoAntAnt'           '1-1744449722'                
+'Paso   57  -  GrabarDatosSalida'                  'T3_NroPedidoAnt'              '1-1744455030'                
+'Paso   57  -  GrabarDatosSalida'                  'T3_NroServicio'               '89773222'                    
+
+
+Informe de Bugs
+-----------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------
+Tipo Parada         = Excepción en Método
+Mensaje de Parada   = Script=AdministrarLOV Línea=35 Método=GotoScreen Error=SiebPageTab.GotoScreen("Data Administration Screen"), Screen "Data Administration Screen" is not valid Clase=com.rational.test.ft.Domain.Siebel.SiebelItemNotFoundException Objeto=siebel.SiebPageTabsTestObject(Name: Pestañas, Map: Pestañas)
+Parada en paso	    = 58
+
+
+-----------------------------------------------------------------------------------------
+Fin del Informe del Caso Prueba_Conj Datos: CP76_CD1
+-----------------------------------------------------------------------------------------
+
+
+Informe de Errores imprevistos de sistema
+-----------------------------------------------------------------------------------------
+'Paso   11  -  Accion'                             'Excepción en Método'          'Script=ValorarTodo Línea=42 Método=SetText Error=null Clase=null Objeto=siebel.SiebTextAreaTestObject(Name: Descripcion, Map: Description)'
+
+'Paso   32  -  Accion'                             'Excepción en Método'          'Script=NuevoCambioPlan Línea=140 Método=PerformAction Error=null Clase=null Objeto=siebel.SiebButtonTestObject(Name: Aceptar, Map: Execute)'
+
+'Paso   35  -  Accion'                             'Reconocimiento Ambiguo'       'TestObjectMethodState {AMBIGUOUS_RECOGNITION,testObjectClassName=GuiTestObject(Name: BtonConsultaPedido, Map: BtonConsultaPedido),method=ensureObjectIsVisible,signature=null,args=null}'
+
+'Paso   35  -  Accion'                             'Reconocimiento Ambiguo'       'Consulta'                    
+
+'Paso   35  -  Accion'                             'Reconocimiento Ambiguo'       'TestObjectMethodState {AMBIGUOUS_RECOGNITION,testObjectClassName=GuiTestObject(Name: BtonConsultaPedido, Map: BtonConsultaPedido),method=ensureObjectIsVisible,signature=null,args=null}'
+
+'Paso   35  -  Accion'                             'Reconocimiento Ambiguo'       'Consulta'                    
+
+'Paso   35  -  Accion'                             'Reconocimiento Ambiguo'       'TestObjectMethodState {AMBIGUOUS_RECOGNITION,testObjectClassName=GuiTestObject(Name: BtonConsultaPedido, Map: BtonConsultaPedido),method=ensureObjectIsVisible,signature=null,args=null}'
+
+'Paso   35  -  Accion'                             'Excepción en Método'          'Script=IngresarAutenticacion Línea=43 Método=getProperty Error=CRFCP0048E: Property .text was not found. 
+Script playback cannot be completed. Clase=com.rational.test.ft.PropertyNotFoundException Objeto=BrowserTestObject(Ref:RemoteProxyReference{testContext:554f20508633a, objectId:71726, testObjectClass:BrowserTestObject})'
+
+'Paso   38  -  Accion'                             'Excepción en Método'          'Script=ValorarTodo Línea=42 Método=SetText Error=null Clase=null Objeto=siebel.SiebTextAreaTestObject(Name: Descripcion, Map: Description)'
+
+'Paso   58  -  Accion'                             'Excepción en Método'          'Script=AdministrarLOV Línea=35 Método=GotoScreen Error=SiebPageTab.GotoScreen("Data Administration Screen"), Screen "Data Administration Screen" is not valid Clase=com.rational.test.ft.Domain.Siebel.SiebelItemNotFoundException Objeto=siebel.SiebPageTabsTestObject(Name: Pestañas, Map: Pestañas)'
+
+'Paso   58  -  Accion'                             'Excepción no esperada'        'Script=AdministrarLOV Línea=0 Error=SiebPageTab.GotoScreen("Data Administration Screen"), Screen "Data Administration Screen" is not valid'
+
+'Paso   58  -  Accion'                             'Excepción no esperada'        'Script=fAdministrarLOV Línea=0 Error=CRFCN0018E: The 35 line of the 35 script contains an exception.'
+

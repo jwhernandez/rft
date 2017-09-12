@@ -1,0 +1,34 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: CPCP_CDX Desde paso: A Modo:Real
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+-----------------------------------------------------------------------------------------
+
+
+Informe de DATOS de salida
+-----------------------------------------------------------------------------------------
+
+
+Informe de Bugs
+-----------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------
+Tipo Parada         = Excepción no esperada
+Mensaje de Parada   = Script=IngresarDataPoolPasos Línea=0 Error=CRFCN0478E: Nombre de variable [CPCPPasos] no encontrado en agrupación de datos
+Parada en paso	    = 0
+
+
+-----------------------------------------------------------------------------------------
+Fin del Informe del Caso Prueba_Conj Datos: CPCP_CDX
+-----------------------------------------------------------------------------------------
+
+
+Informe de Errores imprevistos de sistema
+-----------------------------------------------------------------------------------------
+'Paso    0  -  Accion'                             'Excepción no esperada'        'Script=IngresarDataPoolPasos Línea=0 Error=CRFCN0478E: Nombre de variable [CPCPPasos] no encontrado en agrupación de datos'
+
+'Paso    0  -  Accion'                             'Excepción no esperada'        'Script=IterarCaso Línea=0 Error=null'
+

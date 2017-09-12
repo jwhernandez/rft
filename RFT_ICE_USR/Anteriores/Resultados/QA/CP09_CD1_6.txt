@@ -1,0 +1,79 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: CP09_CD1 Desde paso: 6 Modo:simulacion
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatosEntrada'                                                  'NE'                          
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'                                         'OK'                          
+'Paso    0  -  LeerDatosSalida'                                                   'OK'                          
+'Paso    1  -  fLogin'                                                            'OK'                          
+'Paso    2  -  fValidarActivoEstadoenActivo'                                      'NE'                          
+'Paso    3  -  fIraActivoDesdeActivo'                                             'NE'                          
+'Paso    4  -  fNuevaPostvta'                                                     'NE'                          
+'Paso    5  -  fNuevaPostvta'                                                     'NE'                          
+'Paso    6  -  fBuscarPedidoVenta'                                                'OK'                          
+'Paso    7  -  fValidarAgencia'                                                   'OK'                          
+'Paso    8  -  fIngresarAutenticacion'                                            'OK'                          
+'Paso    9  -  fIngresarIMEI'                                                     'OK'                          
+'Paso   10  -  fTerminalCliente'                                                  'OK'                          
+'Paso   11  -  fIngresarSIM'                                                      'OK'                          
+'Paso   12  -  fExpandiryBuscar'                                                  'OK'                          
+'Paso   13  -  fCheckPagoFact'                                                    'OK'                          
+'Paso   14  -  fValidarAccion'                                                    'OK'                          
+'Paso   15  -  fExpandiryBuscar'                                                  'OK'                          
+'Paso   16  -  fCheckPagoFact'                                                    'OK'                          
+'Paso   17  -  fValidarAccion'                                                    'OK'                          
+'Paso   18  -  fExpandiryBuscar'                                                  'OK'                          
+'Paso   19  -  fCheckPagoFact'                                                    'OK'                          
+'Paso   20  -  fValidarAccion'                                                    'OK'                          
+'Paso   21  -  fEnviarPedido'                                                     'OK'                          
+'Paso   22  -  fValidarMensaje'                                                   'OK'                          
+'Paso   23  -  fValorarTodo'                                                      'OK'                          
+'Paso   24  -  fExpandiryBuscar'                                                  'OK'                          
+'Paso   25  -  fCheckPagoFact'                                                    'OK'                          
+'Paso   26  -  fExpandiryBuscar'                                                  'OK'                          
+'Paso   27  -  fCheckPagoFact'                                                    'OK'                          
+'Paso   28  -  fExpandiryBuscar'                                                  'OK'                          
+'Paso   29  -  fCheckPagoFact'                                                    'OK'                          
+'Paso   30  -  fEnviarPedido'                                                     'OK'                          
+'Paso   31  -  fEsperaEstado'                                                     'OK'                          
+'Paso   32  -  fValidacPostEnvio1'                                                'OK'                          
+'Paso   33  -  fValidacPostEnvio2'                                                'OK'                          
+'Paso   34  -  fVista360'                                                         'OK'                          
+'Paso   35  -  fBuscarActivo'                                                     'OK'                          
+'Paso   36  -  fValidarUnPerfil'                                                  'OK'                          
+'Paso   37  -  fBuscarCtaFact'                                                    'OK'                          
+'Paso   38  -  fValidarUnPerfil'                                                  'OK'                          
+'Paso   39  -  fBuscarProductoActivo'                                             'OK'                          
+'Paso   40  -  fValidarActivoEstadoyMotivoenCtaFact'                                'OK'                          
+'Paso   41  -  fBuscarProductoActivo'                                             'OK'                          
+'Paso   42  -  fValidarActivoEstadoyMotivoenCtaFact'                                'OK'                          
+'Paso   43  -  fValidarActivoSIMenCtaFact'                                        'OK'                          
+'Paso   44  -  fASRM_Login'                                                       'OK'                          
+'Paso   45  -  fASRM_ConsultaEstadoSIM'                                           'OK'                          
+'Paso   46  -  fASRM_ConsultaEstadoSIM'                                           'OK'                          
+'Paso   47  -  fASRM_Logout'                                                      'OK'                          
+'Paso   48  -  fLogout'                                                           'OK'                          
+'Paso   49  -  Fin del caso'                                                      'OK'                          
+
+
+Informe de DATOS de salida
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoPasoOK'                 '5'                           
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoTramite'                '1'                           
+
+
+Informe de Bugs
+-----------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------
+Tipo Parada         = FIN
+Mensaje de Parada   = FIN del caso en paso 49
+
+
+-----------------------------------------------------------------------------------------
+Fin del Informe del Caso Prueba_Conj Datos: CP09_CD1
+-----------------------------------------------------------------------------------------

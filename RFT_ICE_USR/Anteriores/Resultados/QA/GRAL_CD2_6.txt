@@ -1,0 +1,38 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: GRAL_CD2 Desde paso: 6 Modo:Real
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+---------------------------
+GRAL_CD2_T1;LeerDatosEntrada;OK;
+GRAL_CD2_T1;LeerDatoSalidaUltPasoEjec;OK;
+GRAL_CD2_T1;LeerDatosSalida;OK;
+GRAL_CD2_T1;Paso1:fLogin;OK;
+GRAL_CD2_T1;Paso2:fIraActivoDesdeActivo;NE;
+GRAL_CD2_T1;Paso3:fNuevaPostvta;NE;
+GRAL_CD2_T1;Paso4:fBuscarPedidoVenta;NE;
+GRAL_CD2_T1;Paso5:fCancelarPedido;NE;
+GRAL_CD2_T2;Paso6:fNuevoTramite;OK;
+GRAL_CD2_T2;Paso6:fNuevoTramite;Se paro voluntariamente el caso en el paso hasta 6;
+
+
+Informe de DATOS de salida
+---------------------------
+GRAL_CD2;UltimoPasoOK;5;
+GRAL_CD2;UltimoTramite;1;
+GRAL_CD2;T1_NroPedido;1-1740170959;
+
+
+Informe de Bugs
+-----------------
+
+
+Informe de Errores imprevistos de sistema
+------------------------------------------------
+
+----------------------------------------------------------------------------------------------------------
+Tipo Parada:Parada x Paso Hasta - Mensaje de Parada: Parada en paso 7
+- Fin del Informe del Caso Prueba_Conj Datos: GRAL_CD2
+----------------------------------------------------------------------------------------------------------

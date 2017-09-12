@@ -25,6 +25,7 @@ public class LeerNroServicio extends LeerNroServicioHelper
 {
 	public void testMain(Object[] argu) 
 	{
+		ImpreEncabezadoScript(getScriptArgs(), getScriptName( ).toString());
 		String[] Producto;
 		Producto = new String[4];
 		
@@ -65,6 +66,7 @@ public class LeerNroServicio extends LeerNroServicioHelper
 		}
 		argu[0]="OK";
 		System.out.println("Resultado =" + argu[0] + " Valor" + argu[1]);
+		ImpreResultadoScript(getScriptName( ).toString(), argu[0].toString() + " Valor" + argu[1].toString());
 	}
 }
 

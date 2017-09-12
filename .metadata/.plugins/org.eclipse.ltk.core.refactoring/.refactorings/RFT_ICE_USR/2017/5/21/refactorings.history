@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Redenominar el recurso &apos;RFT_ICE_USR/Regresion/QA/CP56_CD3.rftdp&apos; como &apos;CP56_CD2.rftdp&apos;" description="Redenominar recurso &apos;CP56_CD3.rftdp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Regresion/QA/CP56_CD3.rftdp" name="CP56_CD2.rftdp" stamp="1495811658853" updateReferences="true"/>
+</session>

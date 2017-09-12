@@ -23,11 +23,13 @@ public class ValidarLiberarNumero extends ValidarLiberarNumeroHelper
 {
 	public void testMain(Object[] argu) 
 	{
+		ImpreEncabezadoScript(getScriptArgs(), getScriptName( ).toString());
 		if (LiberarTodo().getProperty("IsEnabled").toString().equals("false")) {
 			argu[0] ="Deshabilitado";
 		} else {argu[0] ="Habilitado";}
 		
 		System.out.println("Resultado enviado por ValidarLiberarNumero: "+ argu[0] );
+		ImpreResultadoScript(getScriptName( ).toString(), argu[0].toString());
 	}
 }
 

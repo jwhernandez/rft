@@ -1,0 +1,62 @@
+	
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: AE_CD1 Desde paso: 6 Modo:Real
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+---------------------------
+AE_CD1_T1;LeerDatosEntrada;OK;
+AE_CD1_T1;LeerDatoSalidaUltPasoEjec;OK;
+AE_CD1_T1;LeerDatosSalida;OK;
+AE_CD1_T1;Paso1:fASRM_Login;NE;
+AE_CD1_T1;Paso2:fASRM_ConsultaEstadoSIM;NE;
+AE_CD1_T1;Paso3:fASRM_ModificarEstadoServicio;NE;
+AE_CD1_T1;Paso4:fASRM_Logout;NE;
+AE_CD1_T1;Paso5:fATV_Login;NE;
+AE_CD1_T1;Paso6:fATV_ValidarPosibMultas;OK;
+AE_CD1_T1;Paso6:fATV_ValidarPosibMultas;Se paro voluntariamente el caso en el paso hasta 6;
+
+
+Informe de DATOS de salida
+---------------------------
+AE_CD1;UltimoPasoOK;6;
+AE_CD1;UltimoTramite;1;
+AE_CD1;T1_NroPedido;1-1735047671;
+AE_CD1;NroServicio;10101010;
+AE_CD1;T1_NroCtaFact;;
+AE_CD1;T1_NroRED;;
+AE_CD1;T1_NomListaEspecial;;
+AE_CD1;T1_Fecha CM=;;
+AE_CD1;T1_Id Task;;
+AE_CD1;Tenencia ;42;
+AE_CD1;Permanencia ;730;
+AE_CD1;DiasRestan ;688;
+AE_CD1;DescDiario ;759.3333;
+AE_CD1;Gastos ;21,420.2200;
+AE_CD1;PrecioVenta ;129,646.02;
+AE_CD1;PrecioPlan ;0.00;
+AE_CD1;RPT ;129,646.02;
+AE_CD1;CPT_i;31,892.00;
+AE_CD1;RPB ;122,186.93;
+AE_CD1;CPB ;543,841.53;
+AE_CD1;Plan ;PLAN PROFESIONAL 1 24 M;
+AE_CD1;Terminal ;NOKIA LUMIA 625 LTE NEGRO;
+AE_CD1;RPT_Calc ;129646.02;
+AE_CD1;RPB_Calc ;31891.9986;
+AE_CD1;CPB_Calc ;543841.5304;
+AE_CD1;CPT_s_Calc ;122186.93391780823;
+AE_CD1;CPT_i_Calc ;143607.15391780823;
+
+
+Informe de Bugs
+-----------------
+
+
+Informe de Errores imprevistos de sistema
+------------------------------------------------
+
+----------------------------------------------------------------------------------------------------------
+Tipo Error:Bug Mensaje de Error:Parada en paso 7
+Fin del Informe del Caso Prueba y Conj Datos: AE_CD1
+----------------------------------------------------------------------------------------------------------

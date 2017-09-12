@@ -20,17 +20,17 @@ import com.rational.test.ft.vp.IFtVerificationPoint;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
  * Script Name   : <b>LeerArbolHTML</b><br>
- * Generated     : <b>2016/01/09 09:55:08</b><br>
+ * Generated     : <b>2016/12/21 12:32:24</b><br>
  * Description   : Helper class for script<br>
  * Original Host : Windows 7 x86 6.1 <br>
  * 
- * @since  enero 09, 2016
+ * @since  diciembre 21, 2016
  * @author Sandra
  */
 public abstract class LeerArbolHTMLHelper extends RationalTestScript
 {
 	/**
-	 * Arbol_lista: with default state.
+	 * LineasPedido: with default state.
 	 *		ActiveRow : 9
 	 * 		ClassName : SiebList
 	 * 		.class : SiebList
@@ -43,7 +43,7 @@ public abstract class LeerArbolHTMLHelper extends RationalTestScript
                         getMappedTestObject("LineasPedido"));
 	}
 	/**
-	 * Arbol_lista: with specific test context and state.
+	 * LineasPedido: with specific test context and state.
 	 *		ActiveRow : 9
 	 * 		ClassName : SiebList
 	 * 		.class : SiebList
@@ -54,29 +54,6 @@ public abstract class LeerArbolHTMLHelper extends RationalTestScript
 	{
 		return new SiebListTestObject(
                         getMappedTestObject("LineasPedido"), anchor, flags);
-	}
-	
-	/**
-	 * tree2: with default state.
-	 *		.class : javax.swing.JTree
-	 * 		name : tree2
-	 * 		.classIndex : 0
-	 */
-	protected GuiSubitemTestObject tree2() 
-	{
-		return new GuiSubitemTestObject(
-                        getMappedTestObject("tree2"));
-	}
-	/**
-	 * tree2: with specific test context and state.
-	 *		.class : javax.swing.JTree
-	 * 		name : tree2
-	 * 		.classIndex : 0
-	 */
-	protected GuiSubitemTestObject tree2(TestObject anchor, long flags) 
-	{
-		return new GuiSubitemTestObject(
-                        getMappedTestObject("tree2"), anchor, flags);
 	}
 	
 	

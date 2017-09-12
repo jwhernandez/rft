@@ -20,59 +20,63 @@ import com.rational.test.ft.vp.IFtVerificationPoint;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
  * Script Name   : <b>SeleccionarPedidoCP</b><br>
- * Generated     : <b>2016/01/28 02:28:15</b><br>
+ * Generated     : <b>2016/12/21 12:36:36</b><br>
  * Description   : Helper class for script<br>
  * Original Host : Windows 7 x86 6.1 <br>
  * 
- * @since  enero 28, 2016
+ * @since  diciembre 21, 2016
  * @author Sandra
  */
 public abstract class SeleccionarPedidoCPHelper extends libreria.Accion
 {
 	/**
-	 * Detalles: with default state.
-	 *		.title : Detalles
-	 * 		.class : Html.HtmlDocument
-	 * 		.url : RegularExpression(http://.*\/ecommunications_esn/start\.swe\?SWECmdr.*)
+	 * Consulta: with default state.
+	 *		.id : 
+	 * 		.title : 
+	 * 		.class : Html.TABLE
+	 * 		.caption : 
+	 * 		.classIndex : 1
 	 */
-	protected DocumentTestObject EncabezadoPedidoHTML() 
+	protected StatelessGuiSubitemTestObject EncabezadoPedidoHTML() 
 	{
-		return new DocumentTestObject(
+		return new StatelessGuiSubitemTestObject(
                         getMappedTestObject("EncabezadoPedidoHTML"));
 	}
 	/**
-	 * Detalles: with specific test context and state.
-	 *		.title : Detalles
-	 * 		.class : Html.HtmlDocument
-	 * 		.url : RegularExpression(http://.*\/ecommunications_esn/start\.swe\?SWECmdr.*)
+	 * Consulta: with specific test context and state.
+	 *		.id : 
+	 * 		.title : 
+	 * 		.class : Html.TABLE
+	 * 		.caption : 
+	 * 		.classIndex : 1
 	 */
-	protected DocumentTestObject EncabezadoPedidoHTML(TestObject anchor, long flags) 
+	protected StatelessGuiSubitemTestObject EncabezadoPedidoHTML(TestObject anchor, long flags) 
 	{
-		return new DocumentTestObject(
+		return new StatelessGuiSubitemTestObject(
                         getMappedTestObject("EncabezadoPedidoHTML"), anchor, flags);
 	}
 	
 	/**
-	 * OrderNumber: with default state.
+	 * NroPedidoCP: with default state.
 	 *		ClassName : SiebText
 	 * 		.class : SiebText
 	 * 		RepositoryName : OrderNumber
 	 */
-	protected SiebTextTestObject NroPedido() 
+	protected SiebTextTestObject NroPedidoCP() 
 	{
 		return new SiebTextTestObject(
-                        getMappedTestObject("NroPedido"));
+                        getMappedTestObject("NroPedidoCP"));
 	}
 	/**
-	 * OrderNumber: with specific test context and state.
+	 * NroPedidoCP: with specific test context and state.
 	 *		ClassName : SiebText
 	 * 		.class : SiebText
 	 * 		RepositoryName : OrderNumber
 	 */
-	protected SiebTextTestObject NroPedido(TestObject anchor, long flags) 
+	protected SiebTextTestObject NroPedidoCP(TestObject anchor, long flags) 
 	{
 		return new SiebTextTestObject(
-                        getMappedTestObject("NroPedido"), anchor, flags);
+                        getMappedTestObject("NroPedidoCP"), anchor, flags);
 	}
 	
 	

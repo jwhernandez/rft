@@ -1,0 +1,164 @@
+package libreria.GUI;
+
+import java.awt.*;
+import java.awt.event.*;
+
+import javax.swing.*;
+
+import java.awt.Color;
+import java.awt.GridBagConstraints;
+import java.awt.GridBagLayout;
+import java.awt.Insets;
+import java.awt.event.ItemEvent;
+import java.awt.event.ItemListener;
+import java.awt.event.KeyEvent;
+
+import javax.swing.BorderFactory;
+import javax.swing.JButton;
+import javax.swing.JCheckBoxMenuItem;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JMenu;
+import javax.swing.JMenuBar;
+import javax.swing.JPanel;
+import javax.swing.JPasswordField;
+import javax.swing.JTextField;
+import javax.swing.SwingUtilities;
+import javax.swing.UIManager;
+
+import libreria.CheckBoxMenuItemEx;
+ 
+
+public class VentanaInicio extends JMenuBar  {
+
+	   private JPanel jp1, jp2, jp3;
+       String[ ] fileItems = new String[ ] { "Escenario 03", "Escenario 05", "Escenario 12", "Escenario 13", "Escenario 29" };
+       private JLabel labelUsername = new JLabel("Enter username: ");
+       private JLabel labelPassword = new JLabel("Enter password: ");
+       private JTextField textUsername = new JTextField(20);
+       private JPasswordField fieldPassword = new JPasswordField(20);
+       private JButton buttonLogin = new JButton("Login");
+       //private JLabel statusbar;
+	   private JLabel Usuario, Contrasena, Paso, Caso;
+	   JTextField jtfTextUsuario, jtfContrasena, jtfPaso, jftCaso;
+	  // private JPanel controlPanel;
+	   
+	   
+       public void PanelPrincipal() {
+    	
+    	        JPanel jp1 = new JPanel();//filas, columnas, espacio entre filas, espacio entre columnas
+    	        //jb1= new JButton("B1"); 
+    	        //jb2= new JButton("B2"); 
+    	        //JLabel jb3= new JLabel("Hello");//creamos los objetos para el panel
+    	 
+    	        //jp1.add(jb1);
+    	        //jp1.add(jb2); 
+    	        //jp1.add(jb3);//añadimos los objetos al jpanel
+    	 
+    	        //jb1.addActionListener(this); jb2.addActionListener(this);
+    	 
+    	        jp1.setVisible(true);
+    		    Usuario =new JLabel("Usuario:");
+    		    Usuario.setLocation(200, 100);
+    			//Usuario.setBounds(200,200,200,40);
+    			jp1.add(Usuario);
+    			Contrasena  =new JLabel("Contrasena:");
+    			Contrasena.setLocation(200, 200);
+    			jp1.add(Contrasena);
+    			Caso =new JLabel("Caso:");
+    			//Caso.setBounds(100,200,200,40);
+    			jp1.add(Caso);
+    			Paso =new JLabel("Paso:");
+    		    //Paso.setBounds(100,250,200,40);
+    		    jp1.add(Paso);
+    			jtfTextUsuario = new JTextField(10);
+    			//jtfTextUsuario.setBounds(100,100,200,40);
+    			jp1.add(jtfTextUsuario);
+    			jtfContrasena = new JTextField(10);
+    			//jtfContrasena.setBounds(100,150,200,40);
+    			jp1.add(jtfContrasena);
+    	    }
+
+       
+     
+       public void Menu(){
+    	  JMenu PreQAMenu = new JMenu("Ambiente PreQA");
+  	      JMenu QAMenu = new JMenu("Ambiente QA");
+  	      JMenu AyudaMenu = new JMenu("Ayuda");
+
+  	      // Es una funcion que imprime en consola la seleccion del usuario
+  	      ActionListener printListener = new ActionListener(  ) {
+  	         public void actionPerformed(ActionEvent event) {
+  	            System.out.println("El escenario seleccionado es:" + event.getActionCommand(  ) + "que se ha presionado");
+  	         }};
+  	      
+  	      // Modifica el menu mediante un ciclo cicliclamente. 
+  	      for (int i=0; i < fileItems.length; i++) {
+  	         JMenuItem item = new JMenuItem(fileItems[i]);
+  	         item.addActionListener(printListener);
+  	         PreQAMenu.add(item);
+  	      }
+
+  	      JMenuItem item;
+  	      // Se crea cada checkbox para cada escenario
+  	      QAMenu.add(item = new JCheckBoxMenuItem("Escenario 03"));
+  	      item.addActionListener(printListener);
+  	      QAMenu.add(item = new JCheckBoxMenuItem("Escenario 05"));
+  	      item.addActionListener(printListener);
+  	      QAMenu.add(item = new JCheckBoxMenuItem("Escenario 12"));
+  	      item.addActionListener(printListener);
+  	      QAMenu.add(item = new JCheckBoxMenuItem("Escenario 13"));
+  	      item.addActionListener(printListener);
+  	      QAMenu.add(item = new JCheckBoxMenuItem("Escenario 20"));
+  	      item.addActionListener(printListener);
+  	      QAMenu.add(item = new JCheckBoxMenuItem("Escenario 29"));
+  	      item.addActionListener(printListener);
+  	      QAMenu.add(item = new JCheckBoxMenuItem("Escenario 50"));
+  	      item.addActionListener(printListener);
+  	      QAMenu.add(item = new JCheckBoxMenuItem("Escenario 54"));
+  	      item.addActionListener(printListener);
+
+  	      // Aca de adiciona el menu, pero es ordenado estrictamente
+  	      add(PreQAMenu);
+  	      add(QAMenu);
+  	      add(AyudaMenu);
+        
+       }
+       
+       public VentanaInicio(  ) {
+    	  
+    	 
+ 	   PanelPrincipal();
+ 	   jp1.setBackground(Color.cyan);
+       jp1.setBounds(0, 100, 600, 500); 
+       JFrame frame = new JFrame();
+	      //JPanel p = new JPanel();
+	      frame.setLayout(null);
+	    //  JFrame f = new JFrame();
+	      //frame.getContentPane().add(p);
+	      frame.setTitle("Automatizacion de Pruebas Regresivas");
+	      frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	     // frame.setJMenuBar(new VentanaInicio(  ));
+	      frame.pack(  );
+	      frame.setSize(600, 600);
+	      frame.setVisible(true);
+	      frame.add(jp1);
+       /*
+       jp2.setBounds(240, 10, 400, 250); jp3.setBounds(10, 270, 400, 150);
+
+       jbP1.setBounds(10, 430, 90, 20); jbP2.setBounds(110, 430, 90, 20); jbP3.setBounds(210, 430, 90, 20);
+*/
+       ; 
+       }
+       
+       
+	   
+	   public static void main(String s[ ]) {
+		    
+		   VentanaInicio vi = new VentanaInicio();
+		     // new PanelPrincipal();
+		     // p.add(new VentanaInicio());
+		     // p.setVisible(true);
+		     // frame.add(PanelPrincipal);
+	   }
+	}

@@ -20,11 +20,11 @@ import com.rational.test.ft.vp.IFtVerificationPoint;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
  * Script Name   : <b>fPersonalizarFavorito</b><br>
- * Generated     : <b>2015/12/18 14:08:33</b><br>
+ * Generated     : <b>2016/11/16 10:38:24</b><br>
  * Description   : Helper class for script<br>
  * Original Host : Windows 7 x86 6.1 <br>
  * 
- * @since  diciembre 18, 2015
+ * @since  noviembre 16, 2016
  * @author Sandra
  */
 public abstract class fPersonalizarFavoritoHelper extends libreria.Accion

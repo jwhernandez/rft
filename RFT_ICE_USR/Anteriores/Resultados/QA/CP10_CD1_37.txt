@@ -1,0 +1,215 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: CP10_CD1 Desde paso: 37 Modo:Real
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+---------------------------
+CP10_CD1_T1;LeerDatosEntrada;OK;
+CP10_CD1_T1;LeerDatoSalidaUltPasoEjec;OK;
+CP10_CD1_T1;LeerDatosSalida;OK;
+CP10_CD1_T1;Paso1:fLogin;OK;
+CP10_CD1_T1;Paso2:fCambiarVIstaUsuario;NE;
+CP10_CD1_T1;Paso3:fVista360;NE;
+CP10_CD1_T1;Paso4:fValidarUnPerfil;NE;
+CP10_CD1_T1;Paso5:fBuscarActivo;NE;
+CP10_CD1_T1;Paso6:fBuscarCtaFact;NE;
+CP10_CD1_T1;Paso7:fValidarUnPerfil;NE;
+CP10_CD1_T1;Paso8:fVista360;NE;
+CP10_CD1_T1;Paso9:fBuscarActivo;NE;
+CP10_CD1_T1;Paso10:fBuscarCtaFact;NE;
+CP10_CD1_T1;Paso11:fNuevaPostvta;NE;
+CP10_CD1_T1;Paso12:fBuscarPedidoVenta;NE;
+CP10_CD1_T1;Paso13:fValidarAgencia;NE;
+CP10_CD1_T1;Paso14:fIngresarAutenticacion;NE;
+CP10_CD1_T1;Paso15:fASRM_Login;NE;
+CP10_CD1_T1;Paso16:fASRM_ModificarEstadoServicio;NE;
+CP10_CD1_T1;Paso17:fASRM_Logout;NE;
+CP10_CD1_T1;Paso18:fProximoNumero;NE;
+CP10_CD1_T1;Paso19:fValidacPostServicio;NE;
+CP10_CD1_T1;Paso20:fExpandiryBuscar;NE;
+CP10_CD1_T1;Paso21:fCheckPagoFact;NE;
+CP10_CD1_T1;Paso22:fEnviarPedido;NE;
+CP10_CD1_T1;Paso23:fValidarMensaje;NE;
+CP10_CD1_T1;Paso24:fValorarTodo;NE;
+CP10_CD1_T1;Paso25:fEnviarPedido;NE;
+CP10_CD1_T1;Paso26:fEsperaEstado;NE;
+CP10_CD1_T1;Paso27:fValidacPostEnvio1;NE;
+CP10_CD1_T1;Paso28:fVista360;NE;
+CP10_CD1_T1;Paso29:fBuscarActivo;NE;
+CP10_CD1_T1;Paso30:fBRM.FavoritoValidarCambioNum;NE;
+CP10_CD1_T1;Paso31:fCambiarVIstaUsuario;NE;
+CP10_CD1_T1;Paso32:fAdministrarTemporadas;NE;
+CP10_CD1_T1;Paso33:fCambiarVIstaUsuario;NE;
+CP10_CD1_T1;Paso34:fVista360;OK;
+CP10_CD1_T1;Paso35:fBuscarActivo;OK;
+CP10_CD1_T1;Paso36:fBuscarCtaFact;OK;
+CP10_CD1_T1;Paso37:fNuevaPostvta;OK;
+CP10_CD1_T1;Paso38:fBuscarPedidoVenta;OK;
+CP10_CD1_T1;Paso39:fPersonalizarFavorito;OK;
+CP10_CD1_T1;Paso40:fIngresarAutenticacion;OK;
+CP10_CD1_T1;Paso41:fExpandiryBuscar;OK;
+CP10_CD1_T1;Paso42:fExpandiryBuscar;OK;
+CP10_CD1_T1;Paso43:fExpandiryBuscar;OK;
+CP10_CD1_T1;Paso44:fBuscarProducto;OK;
+CP10_CD1_T1;Paso45:fBuscarProducto;OK;
+CP10_CD1_T1;Paso46:fBuscarProducto;OK;
+CP10_CD1_T1;Paso47:fCrearLE;OK;
+CP10_CD1_T1;Paso48:fBuscarPedidoVenta;OK;
+CP10_CD1_T1;Paso49:fExpandiryBuscar;OK;
+CP10_CD1_T1;Paso50:fExpandiryBuscar;OK;
+CP10_CD1_T1;Paso51:fExpandiryBuscar;OK;
+CP10_CD1_T1;Paso52:fAsociarListaEspecial;OK;
+CP10_CD1_T1;Paso53:fValidarMensaje;OK;
+CP10_CD1_T1;Paso54:fAgregarNum_a_LE;OK;
+CP10_CD1_T1;Paso55:fAgregarNum_a_LE;OK;
+CP10_CD1_T1;Paso56:fAgregarNum_a_LE;OK;
+CP10_CD1_T1;Paso57:fAgregarNum_a_LE;OK;
+CP10_CD1_T1;Paso58:fAgregarNum_a_LE;OK;
+CP10_CD1_T1;Paso59:fExpandiryBuscar;OK;
+CP10_CD1_T1;Paso60:fExpandiryBuscar;OK;
+CP10_CD1_T1;Paso61:fExpandiryBuscar;OK;
+CP10_CD1_T1;Paso62:fValidarPrecioenPedido;OK;
+CP10_CD1_T1;Paso63:fAgregaCobroFav;NE;
+CP10_CD1_T1;Paso64:fEnviarPedido;OK;
+CP10_CD1_T1;Paso65:fValidarMensaje;OK;
+CP10_CD1_T1;Paso66:fAsociarListaEspecial;OK;
+CP10_CD1_T1;Paso67:fValorarTodo;OK;
+CP10_CD1_T1;Paso68:fEnviarPedido;OK;
+CP10_CD1_T1;Paso69:fEsperaEstado;OK;
+CP10_CD1_T1;Paso70:fExpandiryBuscar;OK;
+CP10_CD1_T1;Paso71:fExpandiryBuscar;OK;
+CP10_CD1_T1;Paso72:fExpandiryBuscar;OK;
+CP10_CD1_T1;Paso73:fValidarAtributosPedido;OK;
+CP10_CD1_T1;Paso74:fBRM.ValidarFavorito;NE;
+CP10_CD1_T1;Paso75:fValidarVigenciaSiebel;NE;
+CP10_CD1_T1;Fin del caso;OK;
+
+
+Informe de DATOS de salida
+---------------------------
+CP10_CD1;UltimoPasoOK;36;
+CP10_CD1;UltimoTramite;1;
+CP10_CD1;T1_NroPedido;1-1741136997;
+CP10_CD1;NroServicio;85976767;
+CP10_CD1;T1_NomListaEspecial;1-1741300134;
+CP10_CD1_T1;NroServicio;85980202;
+CP10_CD1_T1;NroServicio;85980202;
+CP10_CD1_T1;NroCtaFact;101741013213;
+CP10_CD1_T1;NroPedido;1-1741354707;
+CP10_CD1;T1_NroPedido;1-1741354707;
+CP10_CD1;UltPasoOK;37;
+CP10_CD1;UltPasoOK;38;
+CP10_CD1;UltPasoOK;39;
+CP10_CD1;UltPasoOK;40;
+CP10_CD1;UltPasoOK;41;
+CP10_CD1;UltPasoOK;42;
+CP10_CD1;UltPasoOK;43;
+CP10_CD1;UltPasoOK;44;
+CP10_CD1;UltPasoOK;45;
+CP10_CD1;UltPasoOK;46;
+CP10_CD1;T1_NomListaEspecial;1-1741355401;
+CP10_CD1_T1;NomListaEspecial;1-1741355401;
+CP10_CD1;UltPasoOK;47;
+CP10_CD1;UltPasoOK;48;
+CP10_CD1;UltPasoOK;49;
+CP10_CD1;UltPasoOK;50;
+CP10_CD1;UltPasoOK;51;
+CP10_CD1;UltPasoOK;52;
+CP10_CD1;UltPasoOK;53;
+CP10_CD1;UltPasoOK;54;
+CP10_CD1;UltPasoOK;55;
+CP10_CD1;UltPasoOK;56;
+CP10_CD1;UltPasoOK;57;
+CP10_CD1;UltPasoOK;58;
+CP10_CD1;UltPasoOK;59;
+CP10_CD1;UltPasoOK;60;
+CP10_CD1;UltPasoOK;61;
+CP10_CD1;PrecioInicio;;
+CP10_CD1;PrecioNeto;;
+CP10_CD1;UltPasoOK;62;
+CP10_CD1;UltPasoOK;64;
+CP10_CD1;UltPasoOK;65;
+CP10_CD1;UltPasoOK;66;
+CP10_CD1;UltPasoOK;67;
+CP10_CD1;UltPasoOK;68;
+CP10_CD1;UltPasoOK;69;
+CP10_CD1;UltPasoOK;70;
+CP10_CD1;UltPasoOK;71;
+CP10_CD1;UltPasoOK;72;
+CP10_CD1;Atributo 0: Nombre y Valor;Duracion fin-90;
+CP10_CD1;Atributo 1: Nombre y Valor;Duracion inicio-0;
+CP10_CD1;Atributo 2: Nombre y Valor;Unidad-days;
+CP10_CD1;UltPasoOK;73;
+
+
+Informe de Bugs
+-----------------
+
+
+Informe de Errores imprevistos de sistema
+------------------------------------------------
+CP10_CD1;testObjectMethodState;TestObjectMethodState {AMBIGUOUS_RECOGNITION,testObjectClassName=GuiTestObject(Name: BtonNuevo, Map: BtonNuevo),method=ping,signature=()V,args=null};
+
+CP10_CD1;Reconocimiento Ambiguo;Enviar;
+
+CP10_CD1;testObjectMethodState;TestObjectMethodState {AMBIGUOUS_RECOGNITION,testObjectClassName=GuiTestObject(Name: BtonNuevo, Map: BtonNuevo),method=ping,signature=()V,args=null};
+
+CP10_CD1;Reconocimiento Ambiguo;Enviar;
+
+CP10_CD1;testObjectMethodState;TestObjectMethodState {AMBIGUOUS_RECOGNITION,testObjectClassName=GuiTestObject(Name: BtonConsultaPedido, Map: BtonConsultaPedido),method=ensureObjectIsVisible,signature=null,args=null};
+
+CP10_CD1;Reconocimiento Ambiguo;Consulta;
+
+CP10_CD1;testObjectMethodState;TestObjectMethodState {AMBIGUOUS_RECOGNITION,testObjectClassName=GuiTestObject(Name: BtonConsultaPedido, Map: BtonConsultaPedido),method=ensureObjectIsVisible,signature=null,args=null};
+
+CP10_CD1;Reconocimiento Ambiguo;Consulta;
+
+CP10_CD1;Mensaje ME;Script=Comun.AgregarNum_a_LE Línea=113 Método=Goto Error=SiebThreadbar.Goto("Order Entry - Line Items Detail View (Sales)1"), Link name "Order Entry - Line Items Detail View (Sales)1" is not valid; Clase=com.rational.test.ft.Domain.Siebel.SiebelItemNotFoundException Objeto=siebel.SiebThreadbarTestObject(Name: Threadbar, Map: SiebThreadbar);
+
+CP10_CD1;testObjectMethodState;TestObjectMethodState {AMBIGUOUS_RECOGNITION,testObjectClassName=GuiTestObject(Name: BotonConsultaPedido, Map: BtonConsultaPedido),method=ensureObjectIsVisible,signature=null,args=null};
+
+CP10_CD1;Reconocimiento Ambiguo;Consulta;
+
+CP10_CD1;testObjectMethodState;TestObjectMethodState {AMBIGUOUS_RECOGNITION,testObjectClassName=GuiTestObject(Name: BotonConsultaPedido, Map: BtonConsultaPedido),method=ensureObjectIsVisible,signature=null,args=null};
+
+CP10_CD1;Reconocimiento Ambiguo;Consulta;
+
+CP10_CD1;testObjectMethodState;TestObjectMethodState {AMBIGUOUS_RECOGNITION,testObjectClassName=GuiTestObject(Name: BtonNuevo, Map: BtonNuevo),method=ping,signature=()V,args=null};
+
+CP10_CD1;Reconocimiento Ambiguo;Enviar;
+
+CP10_CD1;testObjectMethodState;TestObjectMethodState {AMBIGUOUS_RECOGNITION,testObjectClassName=GuiTestObject(Name: BtonNuevo, Map: BtonNuevo),method=ping,signature=()V,args=null};
+
+CP10_CD1;Reconocimiento Ambiguo;Enviar;
+
+CP10_CD1;testObjectMethodState;TestObjectMethodState {AMBIGUOUS_RECOGNITION,testObjectClassName=GuiTestObject(Name: BotonConsultaPedido, Map: BtonConsultaPedido),method=ensureObjectIsVisible,signature=null,args=null};
+
+CP10_CD1;Reconocimiento Ambiguo;Consulta;
+
+CP10_CD1;testObjectMethodState;TestObjectMethodState {AMBIGUOUS_RECOGNITION,testObjectClassName=GuiTestObject(Name: BotonConsultaPedido, Map: BtonConsultaPedido),method=ensureObjectIsVisible,signature=null,args=null};
+
+CP10_CD1;Reconocimiento Ambiguo;Consulta;
+
+CP10_CD1;testObjectMethodState;TestObjectMethodState {AMBIGUOUS_RECOGNITION,testObjectClassName=GuiTestObject(Name: BtonNuevo, Map: BtonNuevo),method=ping,signature=()V,args=null};
+
+CP10_CD1;Reconocimiento Ambiguo;Enviar;
+
+CP10_CD1;testObjectMethodState;TestObjectMethodState {AMBIGUOUS_RECOGNITION,testObjectClassName=GuiTestObject(Name: BtonNuevo, Map: BtonNuevo),method=ping,signature=()V,args=null};
+
+CP10_CD1;Reconocimiento Ambiguo;Enviar;
+
+CP10_CD1;testObjectMethodState;TestObjectMethodState {AMBIGUOUS_RECOGNITION,testObjectClassName=GuiTestObject(Name: BtonConsultaPedido, Map: BtonConsultaPedido),method=ensureObjectIsVisible,signature=null,args=null};
+
+CP10_CD1;Reconocimiento Ambiguo;Consulta;
+
+CP10_CD1;testObjectMethodState;TestObjectMethodState {AMBIGUOUS_RECOGNITION,testObjectClassName=GuiTestObject(Name: BtonConsultaPedido, Map: BtonConsultaPedido),method=ensureObjectIsVisible,signature=null,args=null};
+
+CP10_CD1;Reconocimiento Ambiguo;Consulta;
+
+
+----------------------------------------------------------------------------------------------------------
+Tipo Parada:AmbiguousRecognition - Mensaje de Parada: Enviar
+- Fin del Informe del Caso Prueba_Conj Datos: CP10_CD1
+----------------------------------------------------------------------------------------------------------

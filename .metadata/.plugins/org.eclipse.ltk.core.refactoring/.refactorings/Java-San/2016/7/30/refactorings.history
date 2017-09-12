@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Mover elemento &apos;EjecutaRFT.java&apos; a &apos;GUI&apos;&#x0D;&#x0A;- Proyecto original: &apos;Java-San&apos;&#x0D;&#x0A;- Elemento de destino: &apos;GUI&apos;&#x0D;&#x0A;- Elemento original: &apos;GUI.EjecutaRFT.java&apos;&#x0D;&#x0A;- Actualizar referencias a elemento refactorizado" description="Mover unidad de compilación" destination="=GUI" element1="/&lt;GUI{EjecutaRFT.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1469118197198" units="1" version="1.0"/>
+</session>

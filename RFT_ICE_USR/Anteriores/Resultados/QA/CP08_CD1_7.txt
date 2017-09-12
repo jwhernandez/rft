@@ -1,0 +1,51 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: CP08_CD1 Desde paso: 7 Modo:Real
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+---------------------------
+CP08_CD1_T1;LeerDatosEntrada;OK;
+CP08_CD1_T1;LeerDatoSalidaUltPasoEjec;OK;
+CP08_CD1_T1;LeerDatosSalida;OK;
+CP08_CD1_T1;Paso1:fLogin;OK;
+CP08_CD1_T1;Paso2:fVista360;NE;
+CP08_CD1_T1;Paso3:fBuscarActivo;NE;
+CP08_CD1_T1;Paso4:fBuscarCtaFact;NE;
+CP08_CD1_T1;Paso5:fNuevaPostvta;NE;
+CP08_CD1_T1;Paso6:fBuscarPedidoVenta;OK;
+CP08_CD1_T1;Paso7:fValidarAgencia;OK;
+CP08_CD1_T1;Paso8:fIngresarAutenticacion;OK;
+CP08_CD1_T1;Paso9:fValidarNuevaAccion;OK;
+CP08_CD1_T1;Paso10:fValidarMotivoPedido;OK;
+
+
+Informe de DATOS de salida
+---------------------------
+CP08_CD1;UltimoPasoOK;6;
+CP08_CD1;UltimoTramite;1;
+CP08_CD1;T1_NroPedido;1-1741223815;
+CP08_CD1;UltPasoOK;7;
+CP08_CD1;UltPasoOK;8;
+CP08_CD1;Accion;Suspensión;
+CP08_CD1;UltPasoOK;9;
+CP08_CD1;Accion;Suspensión;
+CP08_CD1;UltPasoOK;10;
+
+
+Informe de Bugs
+-----------------
+
+
+Informe de Errores imprevistos de sistema
+------------------------------------------------
+CP08_CD1;Mensaje UE;Script=Comun.ExpandiryBuscar Línea=0 Error=null;
+
+CP08_CD1;Mensaje UE;Script=PasosFunc.fExpandiryBuscar Línea=0 Error=CRFCN0018E: La línea 40 del script 40 contiene una excepción.;
+
+
+----------------------------------------------------------------------------------------------------------
+Tipo Parada:UnhandledException - Mensaje de Parada: Script=Comun.ExpandiryBuscar Línea=0 Error=null
+- Fin del Informe del Caso Prueba_Conj Datos: CP08_CD1
+----------------------------------------------------------------------------------------------------------

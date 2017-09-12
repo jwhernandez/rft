@@ -1,0 +1,58 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: CP10_CD1 Desde paso: 22 Modo:Real
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatosEntrada'                                                  'OK'                          
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'                                         'OK'                          
+'Paso    0  -  LeerDatosSalida'                                                   'OK'                          
+'Paso    1  -  fLogin'                                                            'OK'                          
+'Paso    2  -  fVista360'                                                         'NE'                          
+'Paso    3  -  fValidarUnPerfil'                                                  'NE'                          
+'Paso    4  -  fBuscarActivo'                                                     'NE'                          
+'Paso    5  -  fBuscarCtaFact'                                                    'NE'                          
+'Paso    6  -  fValidarUnPerfil'                                                  'NE'                          
+'Paso    7  -  fVista360'                                                         'OK'                          
+'Paso    8  -  fBuscarActivo'                                                     'OK'                          
+'Paso    9  -  fBuscarCtaFact'                                                    'OK'                          
+'Paso   10  -  fNuevaPostvta'                                                     'NE'                          
+'Paso   11  -  fBuscarPedidoVenta'                                                'OK'                          
+'Paso   12  -  fValidarAgencia'                                                   'NE'                          
+'Paso   13  -  fIngresarAutenticacion'                                            'NE'                          
+'Paso   14  -  fASRM_Login'                                                       'NE'                          
+'Paso   15  -  fASRM_ModificarEstadoServicio'                                     'NE'                          
+'Paso   16  -  fASRM_Logout'                                                      'NE'                          
+'Paso   17  -  fNumeroEspecial'                                                   'NE'                          
+'Paso   18  -  fProximoNumero'                                                    'NE'                          
+'Paso   19  -  fValidacPostServicio'                                              'NE'                          
+'Paso   20  -  fExpandiryBuscar'                                                  'NE'                          
+'Paso   21  -  fCheckPagoFact'                                                    'NE'                          
+
+
+Informe de DATOS de salida
+-----------------------------------------------------------------------------------------
+'Paso    0  -  CasosPrueba'                        'Usuario Alternativo '         'JVALERIO1'                   
+'Paso    0  -  CasosPrueba'                        'Clave Alternativa '           'jvalerio1'                   
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoPasoOK'                 '21'                          
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoTramite'                '1'                           
+'Paso    0  -  LeerDatosSalida'                    'T1_NroPedido'                 '1-1742079661'                
+'Paso    8  -  fBuscarActivo'                      'NroServicio'                  '89787999'                    
+'Paso    8  -  fBuscarActivo'                      'NroServicio'                  '89787999'                    
+'Paso    9  -  fBuscarCtaFact'                     'NroCtaFact'                   '101741977992'                
+
+
+Informe de Bugs
+-----------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------
+Tipo Parada         = UnhandledException
+Mensaje de Parada   = Script=PasosFunc.fEnviarPedido Línea=0 Error="Se ha pulsado el botón Detener"
+Parada en paso	    = 22
+
+
+-----------------------------------------------------------------------------------------
+Fin del Informe del Caso Prueba_Conj Datos: CP10_CD1
+-----------------------------------------------------------------------------------------

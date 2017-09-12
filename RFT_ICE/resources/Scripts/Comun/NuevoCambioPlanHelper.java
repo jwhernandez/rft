@@ -20,12 +20,12 @@ import com.rational.test.ft.vp.IFtVerificationPoint;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
  * Script Name   : <b>NuevoCambioPlan</b><br>
- * Generated     : <b>2016/01/27 12:28:40</b><br>
+ * Generated     : <b>2017/03/21 11:41:44 AM</b><br>
  * Description   : Helper class for script<br>
  * Original Host : Windows 7 x86 6.1 <br>
  * 
- * @since  enero 27, 2016
- * @author Sandra
+ * @since  marzo 21, 2017
+ * @author rft
  */
 public abstract class NuevoCambioPlanHelper extends libreria.Accion
 {
@@ -50,6 +50,29 @@ public abstract class NuevoCambioPlanHelper extends libreria.Accion
 	{
 		return new SiebButtonTestObject(
                         getMappedTestObject("Aceptar"), anchor, flags);
+	}
+	
+	/**
+	 * PopupQueryExecute: with default state.
+	 *		ClassName : SiebButton
+	 * 		.class : SiebButton
+	 * 		RepositoryName : PopupQueryExecute
+	 */
+	protected SiebButtonTestObject BuscarPlan() 
+	{
+		return new SiebButtonTestObject(
+                        getMappedTestObject("BuscarPlan"));
+	}
+	/**
+	 * PopupQueryExecute: with specific test context and state.
+	 *		ClassName : SiebButton
+	 * 		.class : SiebButton
+	 * 		RepositoryName : PopupQueryExecute
+	 */
+	protected SiebButtonTestObject BuscarPlan(TestObject anchor, long flags) 
+	{
+		return new SiebButtonTestObject(
+                        getMappedTestObject("BuscarPlan"), anchor, flags);
 	}
 	
 	/**
@@ -80,10 +103,10 @@ public abstract class NuevoCambioPlanHelper extends libreria.Accion
 	}
 	
 	/**
-	 * Detalles: with default state.
+	 * PedidoGenérico: with default state.
 	 *		.title : Detalles
 	 * 		.class : Html.HtmlDocument
-	 * 		.url : RegularExpression(http://.*\/ecommunications_esn/start\.swe\?SWECmd=GetViewLayout ...
+	 * 		.url : RegularExpression(http://.*ecommunications_esn/start.*SWECmd.*)
 	 */
 	protected DocumentTestObject EncabezadoPedidoHTML() 
 	{
@@ -91,10 +114,10 @@ public abstract class NuevoCambioPlanHelper extends libreria.Accion
                         getMappedTestObject("EncabezadoPedidoHTML"));
 	}
 	/**
-	 * Detalles: with specific test context and state.
+	 * PedidoGenérico: with specific test context and state.
 	 *		.title : Detalles
 	 * 		.class : Html.HtmlDocument
-	 * 		.url : RegularExpression(http://.*\/ecommunications_esn/start\.swe\?SWECmd=GetViewLayout ...
+	 * 		.url : RegularExpression(http://.*ecommunications_esn/start.*SWECmd.*)
 	 */
 	protected DocumentTestObject EncabezadoPedidoHTML(TestObject anchor, long flags) 
 	{
@@ -103,26 +126,26 @@ public abstract class NuevoCambioPlanHelper extends libreria.Accion
 	}
 	
 	/**
-	 * OrderNumber: with default state.
+	 * PopupQuerySrchspec: with default state.
 	 *		ClassName : SiebText
 	 * 		.class : SiebText
-	 * 		RepositoryName : OrderNumber
+	 * 		RepositoryName : PopupQuerySrchspec
 	 */
-	protected SiebTextTestObject NroPedido() 
+	protected SiebTextTestObject PlanABuscar() 
 	{
 		return new SiebTextTestObject(
-                        getMappedTestObject("NroPedido"));
+                        getMappedTestObject("PlanABuscar"));
 	}
 	/**
-	 * OrderNumber: with specific test context and state.
+	 * PopupQuerySrchspec: with specific test context and state.
 	 *		ClassName : SiebText
 	 * 		.class : SiebText
-	 * 		RepositoryName : OrderNumber
+	 * 		RepositoryName : PopupQuerySrchspec
 	 */
-	protected SiebTextTestObject NroPedido(TestObject anchor, long flags) 
+	protected SiebTextTestObject PlanABuscar(TestObject anchor, long flags) 
 	{
 		return new SiebTextTestObject(
-                        getMappedTestObject("NroPedido"), anchor, flags);
+                        getMappedTestObject("PlanABuscar"), anchor, flags);
 	}
 	
 	/**

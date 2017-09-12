@@ -1,0 +1,143 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: CP14_CD1 Desde paso: 0 Modo:Real
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatosEntrada'                                                  'OK'                          
+'Paso    0  -  GrabarDatosSalida'                                                 'OK'                          
+'Paso    1  -  fLogin'                                                            'NE'                          
+'Paso    2  -  fAdministrarTemporadas'                                            'NE'                          
+'Paso    3  -  fLogout'                                                           'NE'                          
+'Paso    4  -  fLogin'                                                            'OK'                          
+'Paso    5  -  fVista360'                                                         'OK'                          
+'Paso    6  -  fBuscarActivo'                                                     'OK'                          
+'Paso    7  -  fValidarAccionPosvta'                                              'OK'                          
+'Paso    8  -  fBuscarCtaFact'                                                    'OK'                          
+'Paso    9  -  fNuevaPostvta'                                                     'OK'                          
+'Paso   10  -  fBuscarPedidoVenta'                                                'OK'                          
+'Paso   11  -  fPersonalizar_SRV_MOV_POS'                                         'OK'                          
+'Paso   12  -  fExpandiryBuscar'                                                  'OK'                          
+'Paso   13  -  fValidarAgencia'                                                   'OK'                          
+'Paso   14  -  fExpandiryBuscar'                                                  'OK'                          
+'Paso   15  -  fValidarPrecioenPedido'                                            'OK'                          
+'Paso   16  -  fValidarAccion'                                                    'OK'                          
+'Paso   17  -  fBuscarProducto'                                                   'OK'                          
+'Paso   18  -  fExpandiryBuscar'                                                  'OK'                          
+'Paso   19  -  fExpandiryBuscar'                                                  'OK'                          
+'Paso   20  -  fPersonalizarFavorito'                                             'OK'                          
+'Paso   21  -  fExpandiryBuscar'                                                  'OK'                          
+'Paso   22  -  fExpandiryBuscar'                                                  'OK'                          
+
+
+Informe de DATOS de salida
+-----------------------------------------------------------------------------------------
+'Paso    6  -  fBuscarActivo'                      'NroServicio'                  '89988997'                    
+'Paso    6  -  fBuscarActivo'                      'NroServicio'                  '89988997'                    
+'Paso    8  -  fBuscarCtaFact'                     'NroCtaFact'                   '101730407757'                
+'Paso    9  -  fNuevaPostvta'                      'NroPedido'                    '1-1730408542'                
+'Paso    9  -  GrabarDatosSalida'                  'T1_NroPedido'                 '1-1730408542'                
+'Paso   15  -  ValidarPrecioenPedido'              'PrecioInicio'                 '282con51 CRC'                
+'Paso   15  -  ValidarPrecioenPedido'              'PrecioNeto'                   '282con51 CRC'                
+'Paso   16  -  ValidarNuevaAccion'                 'Accion'                       'Nuevo'                       
+
+
+Informe de Bugs
+-----------------------------------------------------------------------------------------
+'Paso   23  -  fExpandiryBuscar'                   'Producto: Favorito/Kolbi FavoritoNo Encontrado'
+
+-----------------------------------------------------------------------------------------
+Tipo Parada         = Bug
+Mensaje de Parada   = Producto: Favorito/Kolbi FavoritoNo Encontrado
+Parada en paso	    = 23
+
+
+-----------------------------------------------------------------------------------------
+Fin del Informe del Caso Prueba_Conj Datos: CP14_CD1
+-----------------------------------------------------------------------------------------
+
+
+Informe de Errores imprevistos de sistema
+-----------------------------------------------------------------------------------------
+'Paso   12  -  Accion'                             'Reconocimiento Ambiguo'       'TestObjectMethodState {AMBIGUOUS_RECOGNITION,testObjectClassName=GuiTestObject(Name: Menu, Map: Menu),method=ensureObjectIsVisible,signature=null,args=null}'
+
+'Paso   12  -  Accion'                             'Reconocimiento Ambiguo'       'Menú'                        
+
+'Paso   12  -  Accion'                             'Reconocimiento Ambiguo'       'TestObjectMethodState {AMBIGUOUS_RECOGNITION,testObjectClassName=GuiTestObject(Name: Menu, Map: Menu),method=ensureObjectIsVisible,signature=null,args=null}'
+
+'Paso   12  -  Accion'                             'Reconocimiento Ambiguo'       'Menú'                        
+
+'Paso   14  -  Accion'                             'Reconocimiento Ambiguo'       'TestObjectMethodState {AMBIGUOUS_RECOGNITION,testObjectClassName=GuiTestObject(Name: Menu, Map: Menu),method=ensureObjectIsVisible,signature=null,args=null}'
+
+'Paso   14  -  Accion'                             'Reconocimiento Ambiguo'       'Menú'                        
+
+'Paso   14  -  Accion'                             'Reconocimiento Ambiguo'       'TestObjectMethodState {AMBIGUOUS_RECOGNITION,testObjectClassName=GuiTestObject(Name: Menu, Map: Menu),method=ensureObjectIsVisible,signature=null,args=null}'
+
+'Paso   14  -  Accion'                             'Reconocimiento Ambiguo'       'Menú'                        
+
+'Paso   17  -  Accion'                             'Reconocimiento Ambiguo'       'TestObjectMethodState {AMBIGUOUS_RECOGNITION,testObjectClassName=GuiTestObject(Name: Menu, Map: Menu),method=ensureObjectIsVisible,signature=null,args=null}'
+
+'Paso   17  -  Accion'                             'Reconocimiento Ambiguo'       'Menú'                        
+
+'Paso   17  -  Accion'                             'Reconocimiento Ambiguo'       'TestObjectMethodState {AMBIGUOUS_RECOGNITION,testObjectClassName=GuiTestObject(Name: Menu, Map: Menu),method=ensureObjectIsVisible,signature=null,args=null}'
+
+'Paso   17  -  Accion'                             'Reconocimiento Ambiguo'       'Menú'                        
+
+'Paso   18  -  Accion'                             'Reconocimiento Ambiguo'       'TestObjectMethodState {AMBIGUOUS_RECOGNITION,testObjectClassName=GuiTestObject(Name: Menu, Map: Menu),method=ensureObjectIsVisible,signature=null,args=null}'
+
+'Paso   18  -  Accion'                             'Reconocimiento Ambiguo'       'Menú'                        
+
+'Paso   18  -  Accion'                             'Reconocimiento Ambiguo'       'TestObjectMethodState {AMBIGUOUS_RECOGNITION,testObjectClassName=GuiTestObject(Name: Menu, Map: Menu),method=ensureObjectIsVisible,signature=null,args=null}'
+
+'Paso   18  -  Accion'                             'Reconocimiento Ambiguo'       'Menú'                        
+
+'Paso   19  -  Accion'                             'Reconocimiento Ambiguo'       'TestObjectMethodState {AMBIGUOUS_RECOGNITION,testObjectClassName=GuiTestObject(Name: Menu, Map: Menu),method=ensureObjectIsVisible,signature=null,args=null}'
+
+'Paso   19  -  Accion'                             'Reconocimiento Ambiguo'       'Menú'                        
+
+'Paso   19  -  Accion'                             'Reconocimiento Ambiguo'       'TestObjectMethodState {AMBIGUOUS_RECOGNITION,testObjectClassName=GuiTestObject(Name: Menu, Map: Menu),method=ensureObjectIsVisible,signature=null,args=null}'
+
+'Paso   19  -  Accion'                             'Reconocimiento Ambiguo'       'Menú'                        
+
+'Paso   20  -  Accion'                             'Reconocimiento Ambiguo'       'TestObjectMethodState {AMBIGUOUS_RECOGNITION,testObjectClassName=GuiTestObject(Name: Menu, Map: Menu),method=ensureObjectIsVisible,signature=null,args=null}'
+
+'Paso   20  -  Accion'                             'Reconocimiento Ambiguo'       'Menú'                        
+
+'Paso   20  -  Accion'                             'Reconocimiento Ambiguo'       'TestObjectMethodState {AMBIGUOUS_RECOGNITION,testObjectClassName=GuiTestObject(Name: Menu, Map: Menu),method=ensureObjectIsVisible,signature=null,args=null}'
+
+'Paso   20  -  Accion'                             'Reconocimiento Ambiguo'       'Menú'                        
+
+'Paso   20  -  Accion'                             'Reconocimiento Ambiguo'       'TestObjectMethodState {AMBIGUOUS_RECOGNITION,testObjectClassName=GuiTestObject(Name: BtonNuevo, Map: BtonNuevo),method=ping,signature=()V,args=null}'
+
+'Paso   20  -  Accion'                             'Reconocimiento Ambiguo'       'Enviar'                      
+
+'Paso   20  -  Accion'                             'Reconocimiento Ambiguo'       'TestObjectMethodState {AMBIGUOUS_RECOGNITION,testObjectClassName=GuiTestObject(Name: BtonNuevo, Map: BtonNuevo),method=ping,signature=()V,args=null}'
+
+'Paso   20  -  Accion'                             'Reconocimiento Ambiguo'       'Enviar'                      
+
+'Paso   21  -  Accion'                             'Reconocimiento Ambiguo'       'TestObjectMethodState {AMBIGUOUS_RECOGNITION,testObjectClassName=GuiTestObject(Name: Menu, Map: Menu),method=ensureObjectIsVisible,signature=null,args=null}'
+
+'Paso   21  -  Accion'                             'Reconocimiento Ambiguo'       'Menú'                        
+
+'Paso   21  -  Accion'                             'Reconocimiento Ambiguo'       'TestObjectMethodState {AMBIGUOUS_RECOGNITION,testObjectClassName=GuiTestObject(Name: Menu, Map: Menu),method=ensureObjectIsVisible,signature=null,args=null}'
+
+'Paso   21  -  Accion'                             'Reconocimiento Ambiguo'       'Menú'                        
+
+'Paso   22  -  Accion'                             'Reconocimiento Ambiguo'       'TestObjectMethodState {AMBIGUOUS_RECOGNITION,testObjectClassName=GuiTestObject(Name: Menu, Map: Menu),method=ensureObjectIsVisible,signature=null,args=null}'
+
+'Paso   22  -  Accion'                             'Reconocimiento Ambiguo'       'Menú'                        
+
+'Paso   22  -  Accion'                             'Reconocimiento Ambiguo'       'TestObjectMethodState {AMBIGUOUS_RECOGNITION,testObjectClassName=GuiTestObject(Name: Menu, Map: Menu),method=ensureObjectIsVisible,signature=null,args=null}'
+
+'Paso   22  -  Accion'                             'Reconocimiento Ambiguo'       'Menú'                        
+
+'Paso   23  -  Accion'                             'Reconocimiento Ambiguo'       'TestObjectMethodState {AMBIGUOUS_RECOGNITION,testObjectClassName=GuiTestObject(Name: Menu, Map: Menu),method=ensureObjectIsVisible,signature=null,args=null}'
+
+'Paso   23  -  Accion'                             'Reconocimiento Ambiguo'       'Menú'                        
+
+'Paso   23  -  Accion'                             'Reconocimiento Ambiguo'       'TestObjectMethodState {AMBIGUOUS_RECOGNITION,testObjectClassName=GuiTestObject(Name: Menu, Map: Menu),method=ensureObjectIsVisible,signature=null,args=null}'
+
+'Paso   23  -  Accion'                             'Reconocimiento Ambiguo'       'Menú'                        
+

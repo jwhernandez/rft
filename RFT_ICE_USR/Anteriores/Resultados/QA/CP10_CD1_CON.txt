@@ -1,0 +1,878 @@
+Inicio de consola en archivo
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.ConsolaaFile
+Resultado:OK
+-----------------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.IngresarDataPoolPasos
+Cantidad de argumentos:2
+Argumento 0:=null
+Argumento 1:=CP10
+-----------------------------------------------------------
+NumeroCaso = CP10
+Path DP Entrada = C:\Users\rft\IBM\rationalsdp\workspace\RFT_ICE\\ConfiguracionPasosEscenarios File de Entrada = DP_Pasos_CP10.rftdp
+false
+false
+--------------------------------------------------------------------
+CP10Pasos=fLogin
+CP10Param=NA
+CP10Ejecuta=TRUE
+CP10Cond=NA
+CP10ErrorStop=TRUE
+CP10ReEjec=1-30
+--------------------------------------------------------------------
+CP10Pasos=fVista360
+CP10Param=NA
+CP10Ejecuta=TRUE
+CP10Cond=NA
+CP10ErrorStop=TRUE
+CP10ReEjec=1-5
+--------------------------------------------------------------------
+CP10Pasos=fValidarUnPerfil
+CP10Param=Cliente
+CP10Ejecuta=TRUE
+CP10Cond=NA
+CP10ErrorStop=TRUE
+CP10ReEjec=Nunca
+--------------------------------------------------------------------
+CP10Pasos=fBuscarActivo
+CP10Param=DP
+CP10Ejecuta=TRUE
+CP10Cond=NA
+CP10ErrorStop=TRUE
+CP10ReEjec=1-5
+--------------------------------------------------------------------
+CP10Pasos=fBuscarCtaFact
+CP10Param=NA
+CP10Ejecuta=TRUE
+CP10Cond=NA
+CP10ErrorStop=TRUE
+CP10ReEjec=1-5
+--------------------------------------------------------------------
+CP10Pasos=fValidarUnPerfil
+CP10Param=Fact
+CP10Ejecuta=TRUE
+CP10Cond=NA
+CP10ErrorStop=TRUE
+CP10ReEjec=Nunca
+--------------------------------------------------------------------
+CP10Pasos=fVista360
+CP10Param=NA
+CP10Ejecuta=TRUE
+CP10Cond=NA
+CP10ErrorStop=TRUE
+CP10ReEjec=1-26
+--------------------------------------------------------------------
+CP10Pasos=fBuscarActivo
+CP10Param=NA
+CP10Ejecuta=TRUE
+CP10Cond=NA
+CP10ErrorStop=TRUE
+CP10ReEjec=1-26
+--------------------------------------------------------------------
+CP10Pasos=fBuscarCtaFact
+CP10Param=NA
+CP10Ejecuta=TRUE
+CP10Cond=NA
+CP10ErrorStop=TRUE
+CP10ReEjec=1-26
+--------------------------------------------------------------------
+CP10Pasos=fNuevaPostvta
+CP10Param=1
+CP10Ejecuta=TRUE
+CP10Cond=NA
+CP10ErrorStop=TRUE
+CP10ReEjec=Nunca
+--------------------------------------------------------------------
+CP10Pasos=fBuscarPedidoVenta
+CP10Param=NA
+CP10Ejecuta=TRUE
+CP10Cond=NA
+CP10ErrorStop=TRUE
+CP10ReEjec=1-26
+--------------------------------------------------------------------
+CP10Pasos=fValidarAgencia
+CP10Param=NA
+CP10Ejecuta=TRUE
+CP10Cond=NA
+CP10ErrorStop=TRUE
+CP10ReEjec=Nunca
+--------------------------------------------------------------------
+CP10Pasos=fIngresarAutenticacion
+CP10Param=NA
+CP10Ejecuta=TRUE
+CP10Cond=NA
+CP10ErrorStop=TRUE
+CP10ReEjec=Nunca
+--------------------------------------------------------------------
+CP10Pasos=fASRM_Login
+CP10Param=DP
+CP10Ejecuta=TRUE
+CP10Cond=NA
+CP10ErrorStop=TRUE
+CP10ReEjec=1-15
+--------------------------------------------------------------------
+CP10Pasos=fASRM_ModificarEstadoServicio
+CP10Param=1
+CP10Ejecuta=TRUE
+CP10Cond=NA
+CP10ErrorStop=TRUE
+CP10ReEjec=Nunca
+--------------------------------------------------------------------
+CP10Pasos=fASRM_Logout
+CP10Param=NA
+CP10Ejecuta=TRUE
+CP10Cond=NA
+CP10ErrorStop=TRUE
+CP10ReEjec=Nunca
+--------------------------------------------------------------------
+CP10Pasos=fNumeroEspecial
+CP10Param=1
+CP10Ejecuta=TRUE
+CP10Cond=NA
+CP10ErrorStop=TRUE
+CP10ReEjec=Nunca
+--------------------------------------------------------------------
+CP10Pasos=fProximoNumero
+CP10Param=1
+CP10Ejecuta=FALSE
+CP10Cond=NA
+CP10ErrorStop=TRUE
+CP10ReEjec=Nunca
+--------------------------------------------------------------------
+CP10Pasos=fValidacPostServicio
+CP10Param=NA
+CP10Ejecuta=TRUE
+CP10Cond=NA
+CP10ErrorStop=TRUE
+CP10ReEjec=Nunca
+--------------------------------------------------------------------
+CP10Pasos=fExpandiryBuscar
+CP10Param=1
+CP10Ejecuta=TRUE
+CP10Cond=NA
+CP10ErrorStop=TRUE
+CP10ReEjec=1-20
+--------------------------------------------------------------------
+CP10Pasos=fCheckPagoFact
+CP10Param=validatrue
+CP10Ejecuta=TRUE
+CP10Cond=NA
+CP10ErrorStop=TRUE
+CP10ReEjec=Nunca
+--------------------------------------------------------------------
+CP10Pasos=fEnviarPedido
+CP10Param=NA
+CP10Ejecuta=TRUE
+CP10Cond=NA
+CP10ErrorStop=TRUE
+CP10ReEjec=Nunca
+--------------------------------------------------------------------
+CP10Pasos=fValidarMensaje
+CP10Param=DPM0012
+CP10Ejecuta=TRUE
+CP10Cond=NA
+CP10ErrorStop=TRUE
+CP10ReEjec=Nunca
+--------------------------------------------------------------------
+CP10Pasos=fValorarTodo
+CP10Param=NA
+CP10Ejecuta=TRUE
+CP10Cond=NA
+CP10ErrorStop=TRUE
+CP10ReEjec=Nunca
+--------------------------------------------------------------------
+CP10Pasos=fEnviarPedido
+CP10Param=NA
+CP10Ejecuta=TRUE
+CP10Cond=NA
+CP10ErrorStop=TRUE
+CP10ReEjec=Nunca
+--------------------------------------------------------------------
+CP10Pasos=fEsperaEstado
+CP10Param=Completar
+CP10Ejecuta=TRUE
+CP10Cond=NA
+CP10ErrorStop=TRUE
+CP10ReEjec=Nunca
+--------------------------------------------------------------------
+CP10Pasos=fValidacPostEnvio1
+CP10Param=true
+CP10Ejecuta=TRUE
+CP10Cond=NA
+CP10ErrorStop=TRUE
+CP10ReEjec=Nunca
+--------------------------------------------------------------------
+CP10Pasos=fVista360
+CP10Param=NA
+CP10Ejecuta=TRUE
+CP10Cond=NA
+CP10ErrorStop=TRUE
+CP10ReEjec=1-30
+--------------------------------------------------------------------
+CP10Pasos=fBuscarActivo
+CP10Param=1
+CP10Ejecuta=TRUE
+CP10Cond=NA
+CP10ErrorStop=TRUE
+CP10ReEjec=Nunca
+--------------------------------------------------------------------
+CP10Pasos=fLogout
+CP10Param=NA
+CP10Ejecuta=TRUE
+CP10Cond=NA
+CP10ErrorStop=TRUE
+CP10ReEjec=Nunca
+--------------------------------------------------------------------
+CP10Pasos=fBRM_Login
+CP10Param=NA
+CP10Ejecuta=TRUE
+CP10Cond=NA
+CP10ErrorStop=TRUE
+CP10ReEjec=1-33
+--------------------------------------------------------------------
+CP10Pasos=fBRM_BuscarCliente
+CP10Param=NA
+CP10Ejecuta=TRUE
+CP10Cond=NA
+CP10ErrorStop=TRUE
+CP10ReEjec=Nunca
+--------------------------------------------------------------------
+CP10Pasos=fBRM_ValidarIMSI_Servicio
+CP10Param=NA
+CP10Ejecuta=TRUE
+CP10Cond=NA
+CP10ErrorStop=TRUE
+CP10ReEjec=Nunca
+--------------------------------------------------------------------
+CP10Pasos=fBRM_Logout
+CP10Param=NA
+CP10Ejecuta=TRUE
+CP10Cond=NA
+CP10ErrorStop=TRUE
+CP10ReEjec=Nunca
+--------------------------------------------------------------------
+CP10Pasos=fLogin
+CP10Param=ALT
+CP10Ejecuta=TRUE
+CP10Cond=NA
+CP10ErrorStop=TRUE
+CP10ReEjec=Siempre
+--------------------------------------------------------------------
+CP10Pasos=fAdministrarTemporadas
+CP10Param=1
+CP10Ejecuta=TRUE
+CP10Cond=NA
+CP10ErrorStop=TRUE
+CP10ReEjec=Nunca
+--------------------------------------------------------------------
+CP10Pasos=fLogout
+CP10Param=NA
+CP10Ejecuta=TRUE
+CP10Cond=NA
+CP10ErrorStop=TRUE
+CP10ReEjec=Nunca
+--------------------------------------------------------------------
+CP10Pasos=fLogin
+CP10Param=NA
+CP10Ejecuta=TRUE
+CP10Cond=NA
+CP10ErrorStop=TRUE
+CP10ReEjec=Siempre
+--------------------------------------------------------------------
+CP10Pasos=fVista360
+CP10Param=NA
+CP10Ejecuta=TRUE
+CP10Cond=NA
+CP10ErrorStop=TRUE
+CP10ReEjec=1-86
+--------------------------------------------------------------------
+CP10Pasos=fBuscarActivo
+CP10Param=1
+CP10Ejecuta=TRUE
+CP10Cond=NA
+CP10ErrorStop=TRUE
+CP10ReEjec=1-86
+--------------------------------------------------------------------
+CP10Pasos=fBuscarCtaFact
+CP10Param=NA
+CP10Ejecuta=TRUE
+CP10Cond=NA
+CP10ErrorStop=TRUE
+CP10ReEjec=1-86
+--------------------------------------------------------------------
+CP10Pasos=fNuevaPostvta
+CP10Param=2
+CP10Ejecuta=TRUE
+CP10Cond=NA
+CP10ErrorStop=TRUE
+CP10ReEjec=Nunca
+--------------------------------------------------------------------
+CP10Pasos=fBuscarPedidoVenta
+CP10Param=NA
+CP10Ejecuta=TRUE
+CP10Cond=NA
+CP10ErrorStop=TRUE
+CP10ReEjec=1-51
+--------------------------------------------------------------------
+CP10Pasos=fPersonalizarFavoritoNew
+CP10Param=SMSFav
+CP10Ejecuta=TRUE
+CP10Cond=NA
+CP10ErrorStop=TRUE
+CP10ReEjec=Nunca
+--------------------------------------------------------------------
+CP10Pasos=fIngresarAutenticacion
+CP10Param=NA
+CP10Ejecuta=TRUE
+CP10Cond=NA
+CP10ErrorStop=TRUE
+CP10ReEjec=Nunca
+--------------------------------------------------------------------
+CP10Pasos=fExpandiryBuscar
+CP10Param=2
+CP10Ejecuta=TRUE
+CP10Cond=NA
+CP10ErrorStop=TRUE
+CP10ReEjec=1-51
+--------------------------------------------------------------------
+CP10Pasos=fExpandiryBuscar
+CP10Param=3
+CP10Ejecuta=TRUE
+CP10Cond=NA
+CP10ErrorStop=TRUE
+CP10ReEjec=1-51
+--------------------------------------------------------------------
+CP10Pasos=fExpandiryBuscar
+CP10Param=4
+CP10Ejecuta=TRUE
+CP10Cond=NA
+CP10ErrorStop=TRUE
+CP10ReEjec=1-51
+--------------------------------------------------------------------
+CP10Pasos=fBuscarProducto
+CP10Param=5
+CP10Ejecuta=TRUE
+CP10Cond=NA
+CP10ErrorStop=TRUE
+CP10ReEjec=1-51
+--------------------------------------------------------------------
+CP10Pasos=fBuscarProducto
+CP10Param=6
+CP10Ejecuta=TRUE
+CP10Cond=NA
+CP10ErrorStop=TRUE
+CP10ReEjec=1-51
+--------------------------------------------------------------------
+CP10Pasos=fBuscarProducto
+CP10Param=5
+CP10Ejecuta=TRUE
+CP10Cond=NA
+CP10ErrorStop=TRUE
+CP10ReEjec=1-51
+--------------------------------------------------------------------
+CP10Pasos=fCrearLE
+CP10Param=1
+CP10Ejecuta=TRUE
+CP10Cond=NA
+CP10ErrorStop=TRUE
+CP10ReEjec=Nunca
+--------------------------------------------------------------------
+CP10Pasos=fBuscarPedidoVenta
+CP10Param=NA
+CP10Ejecuta=TRUE
+CP10Cond=NA
+CP10ErrorStop=TRUE
+CP10ReEjec=1-86
+--------------------------------------------------------------------
+CP10Pasos=fExpandiryBuscar
+CP10Param=2
+CP10Ejecuta=TRUE
+CP10Cond=NA
+CP10ErrorStop=TRUE
+CP10ReEjec=1-62
+--------------------------------------------------------------------
+CP10Pasos=fExpandiryBuscar
+CP10Param=3
+CP10Ejecuta=TRUE
+CP10Cond=NA
+CP10ErrorStop=TRUE
+CP10ReEjec=1-62
+--------------------------------------------------------------------
+CP10Pasos=fExpandiryBuscar
+CP10Param=5
+CP10Ejecuta=TRUE
+CP10Cond=NA
+CP10ErrorStop=TRUE
+CP10ReEjec=1-62
+--------------------------------------------------------------------
+CP10Pasos=fAsociarListaEspecial
+CP10Param=1
+CP10Ejecuta=TRUE
+CP10Cond=NA
+CP10ErrorStop=TRUE
+CP10ReEjec=Nunca
+--------------------------------------------------------------------
+CP10Pasos=fValidarMensaje
+CP10Param=DPM0016
+CP10Ejecuta=TRUE
+CP10Cond=NA
+CP10ErrorStop=TRUE
+CP10ReEjec=Nunca
+--------------------------------------------------------------------
+CP10Pasos=fAgregarNum_a_LE
+CP10Param=1
+CP10Ejecuta=TRUE
+CP10Cond=NA
+CP10ErrorStop=TRUE
+CP10ReEjec=Nunca
+--------------------------------------------------------------------
+CP10Pasos=fAgregarNum_a_LE
+CP10Param=2
+CP10Ejecuta=TRUE
+CP10Cond=NA
+CP10ErrorStop=TRUE
+CP10ReEjec=Nunca
+--------------------------------------------------------------------
+CP10Pasos=fAgregarNum_a_LE
+CP10Param=3
+CP10Ejecuta=TRUE
+CP10Cond=NA
+CP10ErrorStop=TRUE
+CP10ReEjec=Nunca
+--------------------------------------------------------------------
+CP10Pasos=fAgregarNum_a_LE
+CP10Param=4
+CP10Ejecuta=TRUE
+CP10Cond=NA
+CP10ErrorStop=TRUE
+CP10ReEjec=Nunca
+--------------------------------------------------------------------
+CP10Pasos=fAgregarNum_a_LE
+CP10Param=5
+CP10Ejecuta=TRUE
+CP10Cond=NA
+CP10ErrorStop=TRUE
+CP10ReEjec=Nunca
+--------------------------------------------------------------------
+CP10Pasos=fExpandiryBuscar
+CP10Param=2
+CP10Ejecuta=TRUE
+CP10Cond=NA
+CP10ErrorStop=TRUE
+CP10ReEjec=1-71
+--------------------------------------------------------------------
+CP10Pasos=fExpandiryBuscar
+CP10Param=3
+CP10Ejecuta=TRUE
+CP10Cond=NA
+CP10ErrorStop=TRUE
+CP10ReEjec=1-71
+--------------------------------------------------------------------
+CP10Pasos=fExpandiryBuscar
+CP10Param=5
+CP10Ejecuta=TRUE
+CP10Cond=NA
+CP10ErrorStop=TRUE
+CP10ReEjec=1-71
+--------------------------------------------------------------------
+CP10Pasos=fValidarPrecioenPedido
+CP10Param=1
+CP10Ejecuta=TRUE
+CP10Cond=NA
+CP10ErrorStop=TRUE
+CP10ReEjec=Nunca
+--------------------------------------------------------------------
+CP10Pasos=fBuscarProducto
+CP10Param=7
+CP10Ejecuta=TRUE
+CP10Cond=NA
+CP10ErrorStop=TRUE
+CP10ReEjec=1-71
+--------------------------------------------------------------------
+CP10Pasos=fExpandiryBuscar
+CP10Param=2
+CP10Ejecuta=TRUE
+CP10Cond=NA
+CP10ErrorStop=TRUE
+CP10ReEjec=1-71
+--------------------------------------------------------------------
+CP10Pasos=fExpandiryBuscar
+CP10Param=3
+CP10Ejecuta=TRUE
+CP10Cond=NA
+CP10ErrorStop=TRUE
+CP10ReEjec=1-71
+--------------------------------------------------------------------
+CP10Pasos=fCheckPagoFact
+CP10Param=true
+CP10Ejecuta=TRUE
+CP10Cond=NA
+CP10ErrorStop=TRUE
+CP10ReEjec=Nunca
+--------------------------------------------------------------------
+CP10Pasos=fCheckPagoFact
+CP10Param=ValidaFalse
+CP10Ejecuta=TRUE
+CP10Cond=NA
+CP10ErrorStop=TRUE
+CP10ReEjec=Nunca
+--------------------------------------------------------------------
+CP10Pasos=fEnviarPedido
+CP10Param=NA
+CP10Ejecuta=TRUE
+CP10Cond=NA
+CP10ErrorStop=TRUE
+CP10ReEjec=Nunca
+--------------------------------------------------------------------
+CP10Pasos=fValidarMensaje
+CP10Param=DPM0012
+CP10Ejecuta=TRUE
+CP10Cond=NA
+CP10ErrorStop=TRUE
+CP10ReEjec=Nunca
+--------------------------------------------------------------------
+CP10Pasos=fBuscarProducto
+CP10Param=7
+CP10Ejecuta=TRUE
+CP10Cond=NA
+CP10ErrorStop=TRUE
+CP10ReEjec=1-78
+--------------------------------------------------------------------
+CP10Pasos=fExpandiryBuscar
+CP10Param=2
+CP10Ejecuta=TRUE
+CP10Cond=NA
+CP10ErrorStop=TRUE
+CP10ReEjec=1-78
+--------------------------------------------------------------------
+CP10Pasos=fExpandiryBuscar
+CP10Param=3
+CP10Ejecuta=TRUE
+CP10Cond=NA
+CP10ErrorStop=TRUE
+CP10ReEjec=1-78
+--------------------------------------------------------------------
+CP10Pasos=fExpandiryBuscar
+CP10Param=5
+CP10Ejecuta=TRUE
+CP10Cond=NA
+CP10ErrorStop=TRUE
+CP10ReEjec=1-78
+--------------------------------------------------------------------
+CP10Pasos=fAsociarListaEspecial
+CP10Param=NA
+CP10Ejecuta=TRUE
+CP10Cond=NA
+CP10ErrorStop=TRUE
+CP10ReEjec=Nunca
+--------------------------------------------------------------------
+CP10Pasos=fValorarTodo
+CP10Param=NA
+CP10Ejecuta=TRUE
+CP10Cond=NA
+CP10ErrorStop=TRUE
+CP10ReEjec=Nunca
+--------------------------------------------------------------------
+CP10Pasos=fEnviarPedido
+CP10Param=NA
+CP10Ejecuta=TRUE
+CP10Cond=NA
+CP10ErrorStop=TRUE
+CP10ReEjec=Nunca
+--------------------------------------------------------------------
+CP10Pasos=fEsperaEstado
+CP10Param=Completar
+CP10Ejecuta=TRUE
+CP10Cond=NA
+CP10ErrorStop=TRUE
+CP10ReEjec=Nunca
+--------------------------------------------------------------------
+CP10Pasos=fBuscarProducto
+CP10Param=7
+CP10Ejecuta=TRUE
+CP10Cond=NA
+CP10ErrorStop=TRUE
+CP10ReEjec=1-86
+--------------------------------------------------------------------
+CP10Pasos=fExpandiryBuscar
+CP10Param=2
+CP10Ejecuta=TRUE
+CP10Cond=NA
+CP10ErrorStop=TRUE
+CP10ReEjec=1-86
+--------------------------------------------------------------------
+CP10Pasos=fExpandiryBuscar
+CP10Param=3
+CP10Ejecuta=TRUE
+CP10Cond=NA
+CP10ErrorStop=TRUE
+CP10ReEjec=1-86
+--------------------------------------------------------------------
+CP10Pasos=fExpandiryBuscar
+CP10Param=6
+CP10Ejecuta=TRUE
+CP10Cond=NA
+CP10ErrorStop=TRUE
+CP10ReEjec=1-86
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.IngresarDataPoolPasos
+Resultado:OK
+-----------------------------------------------------------
+----------------------------------
+Se actualizan los datos de entrada
+----------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.LeerDatosEntrada
+Cantidad de argumentos:4
+Argumento 0:=null
+Argumento 1:=CP10_CD1
+Argumento 2:=QA
+Argumento 3:=Todo
+-----------------------------------------------------------
+Path DP Entrada = C:\Users\rft\IBM\rationalsdp\workspace\RFT_ICE_USR\\Regresion\\QA\\ File de Entrada = CP10_CD1.rftdp
+***********************************************************
+Tramite=1
+NumeroCaso_ConjuntoDatos_Tramite = CP10_CD1_T1
+Ambiente = QA
+***********************************************************
+--------------------------------------------------------------------
+Dato = IDENTIFICACION DE LA CUENTA CLIENTE
+Cantidad Variables = 1
+Valor = 409857745
+Variable1= Identificacion
+Dato 409857745 leido del dp = 409857745
+--------------------------------------------------------------------
+Dato = NUMERO DEL ACTIVO PARA EL CAMBIO DE NUMERO
+Cantidad Variables = 1
+Valor = 87154222
+Variable1= NumeroServicio
+Dato 87154222 leido del dp = 87154222
+--------------------------------------------------------------------
+Dato = NUMERO DE CUENTA CLIENTE
+Cantidad Variables = 1
+Valor = 101744333592
+Variable1= NroCuentaCte
+Dato 101744333592 leido del dp = 101744333592
+--------------------------------------------------------------------
+Dato = NUEVO NUMERO DE ACTIVO
+Cantidad Variables = 4
+Valor = 87154343
+Variable1= ProxNumNvo1
+Dato 87154343 leido del dp = 87154343
+Variable2= NumeroServicio1
+Dato 87154343 leido del dp = 87154343
+Variable3= BRM_ServicioDeseado
+Dato 87154343 leido del dp = 87154343
+Variable4= NumEspPrimerNum2daopcion1
+Dato 87154343 leido del dp = 87154343
+--------------------------------------------------------------------
+Dato = NUEMRO DE OTRO OPERADOR
+Cantidad Variables = 1
+Valor = 70162170
+Variable1= LETel1
+Dato 70162170 leido del dp = 70162170
+--------------------------------------------------------------------
+Dato = NUMERO INTERNACIONAL
+Cantidad Variables = 1
+Valor = 00541197269194
+Variable1= LETel2
+Dato 00541197269194 leido del dp = 00541197269194
+--------------------------------------------------------------------
+Dato = NUMERO FIJO
+Cantidad Variables = 1
+Valor = 22345678
+Variable1= LETel3
+Dato 22345678 leido del dp = 22345678
+--------------------------------------------------------------------
+Dato = NUMERO CORTO
+Cantidad Variables = 1
+Valor = 2431467
+Variable1= LETel4
+Dato 2431467 leido del dp = 2431467
+--------------------------------------------------------------------
+Dato = NUMERO FAVORITO
+Cantidad Variables = 2
+Valor = 85542594
+Variable1= LETel5
+Dato 85542594 leido del dp = 85542594
+Variable2= BRM_FavNum
+Dato 85542594 leido del dp = 85542594
+--------------------------------------------------------------------
+Dato = TIPO DE AUNTENTICACION
+Cantidad Variables = 1
+Valor = Enrute directo
+Variable1= Tipo
+Dato Enrute directo leido del dp = Enrute directo
+--------------------------------------------------------------------
+Dato = CANAL UTILIZADO
+Cantidad Variables = 1
+Valor = Agencia ICE
+Variable1= Canal
+Dato Agencia ICE leido del dp = Agencia ICE
+--------------------------------------------------------------------
+Dato = CUENTA DE FACTURACION DEL ACTIVO
+Cantidad Variables = 1
+Valor = 101744757571
+Variable1= BRM_Cuenta
+Dato 101744757571 leido del dp = 101744757571
+--------------------------------------------------------------------
+Dato = FECHA DE INICIO DE LA VIGENCIA DEL ACTVO
+Cantidad Variables = 1
+Valor = 17/01/2016
+Variable1= BRM_FechaIni1
+Dato 17/01/2016 leido del dp = 17/01/2016
+--------------------------------------------------------------------
+Dato = CANTIDAD DE MESES DE LA VIGENCIA DEL ACTIVO
+Cantidad Variables = 1
+Valor = 3
+Variable1= BRM_Vigencia
+Dato 3 leido del dp = 3
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.LeerDatosEntrada
+Resultado:OK
+-----------------------------------------------------------
+----------------------------------
+Se inician los datos de salida
+----------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.GrabarDatosSalida
+Cantidad de argumentos:5
+Argumento 0:=null
+Argumento 1:=CP10_CD1
+Argumento 2:=QA
+Argumento 3:=inicializar
+Argumento 4:=null
+-----------------------------------------------------------
+NumeroCaso = CP10_CD1
+Ambiente = QA
+Se inicializan los datos
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.GrabarDatosSalida
+Resultado:OK
+-----------------------------------------------------------
+Script a validar:fLogin
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.ValidaPasoSiEjecuta
+Cantidad de argumentos:9
+Argumento 0:=null
+Argumento 1:=QA
+Argumento 2:=1
+Argumento 3:=1
+Argumento 4:=true
+Argumento 5:=1-30
+Argumento 6:=na
+Argumento 7:=CP10_CD1_T1
+Argumento 8:=NA
+-----------------------------------------------------------
+Desde:1 Hasta:30
+Se analiza si el paso es condicionante o condicionado
+Se analiza si el paso ejecuta en una re-ejecución
+GetLogin:NOK
+Paso:1 Paso desde:1
+Paso:true
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.ValidaPasoSiEjecuta
+Resultado:true
+-----------------------------------------------------------
+ 
+Hora de Inicio de la Ejecucion:2017/01/19 14:04:03
+-------------------------------------------------
+Inicio de Paso: 1
+-------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.PasosFunc.fLogin
+Cantidad de argumentos:5
+Argumento 0:=CP10_CD1_T1
+Argumento 1:=NA
+Argumento 2:=QA
+Argumento 3:=true
+Argumento 4:=Paso1
+-----------------------------------------------------------
+soin_sferx22
+ff123456
+Primera expresion true
+Segunda expresion false
+Segunda sub expresion1 false
+Segunda sub expresion2 false
+iNroPaso e iNroPasoDsede1-1
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.CerrarIE
+Cantidad de argumentos:1
+Argumento 0:=null
+-----------------------------------------------------------
+Mensaje DialogoExplorer existe?:false
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.AceptarVtnasSBL
+Cantidad de argumentos:1
+Argumento 0:=null
+-----------------------------------------------------------
+Mensaje SW_TimeOut existe?:false
+Mensaje MensajeErrorHTMLSiebel existe?:false
+Mensaje MensajeErrorBrowserScript existe?:false
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.AceptarVtnasSBL
+Resultado:OK
+-----------------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.AceptarVtnasIEBrowser
+Cantidad de argumentos:1
+Argumento 0:=null
+-----------------------------------------------------------
+Cantidad de Browsers:0
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.AceptarVtnasIEBrowser
+Resultado:Resultado OK
+-----------------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.AceptarVtnasIEBrowser
+Cantidad de argumentos:1
+Argumento 0:=OK
+-----------------------------------------------------------
+Cantidad de Browsers:0
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.AceptarVtnasIEBrowser
+Resultado:Resultado OK
+-----------------------------------------------------------
+Cantidad de objetos a cerrar:0
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.AceptarVtnasIEBrowser
+Cantidad de argumentos:1
+Argumento 0:=OK
+-----------------------------------------------------------
+Cantidad de Browsers:0
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.AceptarVtnasIEBrowser
+Resultado:Resultado OK
+-----------------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.CerrarIE
+Resultado:Resultado OK
+-----------------------------------------------------------
+Mensaje DialogoExplorer existe?:false
+Mensaje de sesión ya abierta existe?:false
+Mensaje DialogoExplorer existe?:false
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.ValidarMensaje
+Cantidad de argumentos:4
+Argumento 0:=DPM0029
+Argumento 1:=null
+Argumento 2:=null
+Argumento 3:=BrowserScript
+-----------------------------------------------------------
+Tipo: BrowserScript
+Existe Mensaje BrowserScript: false
+Resultado: No Existe
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.ValidarMensaje
+Resultado:No Existe
+-----------------------------------------------------------
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+Excepción no esperada=Script=Login Línea=0 Error=CRFCN0783E: Application under test (AUT) is not responding while trying to find the object : StatelessGuiSubitemTestObject(Name: LogoICE, Map: LogoICE).Try playing back again after restarting AUT. If the problem persists, avoid playing back on the above object.
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+Excepción no esperada=Script=fLogin Línea=0 Error=CRFCN0018E: The 128 line of the 128 script contains an exception.
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+Paso    0  -  LeerDatosEntrada; ;OK;
+Paso    0  -  GrabarDatosSalida; ;OK;
+DATOS

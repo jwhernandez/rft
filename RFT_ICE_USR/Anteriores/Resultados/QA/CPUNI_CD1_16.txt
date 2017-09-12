@@ -1,0 +1,58 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: CPUNI_CD1 Desde paso: 16 Modo:Real
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatosEntrada'                                                  'OK'                          
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'                                         'OK'                          
+'Paso    0  -  LeerDatosSalida'                                                   'OK'                          
+'Paso    1  -  fLogin'                                                            'NE'                          
+'Paso    2  -  fBRM_Login'                                                        'NE'                          
+'Paso    3  -  fBRM_BuscarCliente'                                                'NE'                          
+'Paso    4  -  fBRM_FavoritoValidarCambioNum'                                     'NE'                          
+'Paso    5  -  fBRM_Logout'                                                       'NE'                          
+'Paso    6  -  fBRM_ValidarProductos'                                             'NE'                          
+'Paso    7  -  fBRM_ValidarProductos'                                             'NE'                          
+'Paso    8  -  fValidarAtributosPedido'                                           'NE'                          
+'Paso    9  -  fCompraPlanCategoriaCatalogo'                                      'NE'                          
+'Paso   10  -  fBRM_Logout'                                                       'NE'                          
+'Paso   11  -  fCrearLE_Ped'                                                      'NE'                          
+'Paso   12  -  fAgregarNum_a_LE_Ped'                                              'NE'                          
+'Paso   13  -  fCrearLE_Ped'                                                      'NE'                          
+'Paso   14  -  fAgregarNum_a_LE_Ped'                                              'NE'                          
+'Paso   15  -  fDB_Validar'                                                       'NE'                          
+'Paso   16  -  fDB_Validar'                                                       'OK'                          
+
+
+Informe de DATOS de salida
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoPasoOK'                 '15'                          
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoTramite'                '1'                           
+'Paso    0  -  LeerDatosSalida'                    'T1_NomListaEspecial'          '1-1723237324'                
+
+
+Informe de Bugs
+-----------------------------------------------------------------------------------------
+'Paso   16  -  fDB_Validar'                        'Problema al validar en DB'   
+
+-----------------------------------------------------------------------------------------
+Tipo Parada         = Excepción no esperada
+Mensaje de Parada   = Script=fDB_Validar Línea=0 Error=CRFCN0478E: Nombre de variable [USM_usr] no encontrado en agrupación de datos
+Parada en paso	    = 17
+
+
+-----------------------------------------------------------------------------------------
+Fin del Informe del Caso Prueba_Conj Datos: CPUNI_CD1
+-----------------------------------------------------------------------------------------
+
+
+Informe de Errores imprevistos de sistema
+-----------------------------------------------------------------------------------------
+'Paso   16  -  Accion'                             'Conexión Oracle'              'java.sql.SQLException: ORA-01017: invalid username/password; logon denied
+'
+
+'Paso   17  -  Accion'                             'Excepción no esperada'        'Script=fDB_Validar Línea=0 Error=CRFCN0478E: Nombre de variable [USM_usr] no encontrado en agrupación de datos'
+

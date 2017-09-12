@@ -20,17 +20,17 @@ import com.rational.test.ft.vp.IFtVerificationPoint;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
  * Script Name   : <b>ValidacPostREDPendPago</b><br>
- * Generated     : <b>2015/12/27 23:01:07</b><br>
+ * Generated     : <b>2017/04/04 11:21:33</b><br>
  * Description   : Helper class for script<br>
  * Original Host : Windows 7 x86 6.1 <br>
  * 
- * @since  diciembre 27, 2015
+ * @since  abril 04, 2017
  * @author Sandra
  */
 public abstract class ValidacPostREDPendPagoHelper extends libreria.Accion
 {
 	/**
-	 * ICEGenBillingAccount: with default state.
+	 * GenCtaFact: with default state.
 	 *		ClassName : SiebButton
 	 * 		.class : SiebButton
 	 * 		RepositoryName : ICEGenBillingAccount
@@ -41,7 +41,7 @@ public abstract class ValidacPostREDPendPagoHelper extends libreria.Accion
                         getMappedTestObject("GenCtaFact"));
 	}
 	/**
-	 * ICEGenBillingAccount: with specific test context and state.
+	 * GenCtaFact: with specific test context and state.
 	 *		ClassName : SiebButton
 	 * 		.class : SiebButton
 	 * 		RepositoryName : ICEGenBillingAccount
@@ -53,7 +53,30 @@ public abstract class ValidacPostREDPendPagoHelper extends libreria.Accion
 	}
 	
 	/**
-	 * ICEReleaseNumber: with default state.
+	 * GenCtaFactPI: with default state.
+	 *		ClassName : SiebButton
+	 * 		.class : SiebButton
+	 * 		RepositoryName : ICEGenBillingAccount
+	 */
+	protected SiebButtonTestObject GenCtaFact_PI() 
+	{
+		return new SiebButtonTestObject(
+                        getMappedTestObject("GenCtaFact_PI"));
+	}
+	/**
+	 * GenCtaFactPI: with specific test context and state.
+	 *		ClassName : SiebButton
+	 * 		.class : SiebButton
+	 * 		RepositoryName : ICEGenBillingAccount
+	 */
+	protected SiebButtonTestObject GenCtaFact_PI(TestObject anchor, long flags) 
+	{
+		return new SiebButtonTestObject(
+                        getMappedTestObject("GenCtaFact_PI"), anchor, flags);
+	}
+	
+	/**
+	 * BtonLiberarNumero: with default state.
 	 *		ClassName : SiebButton
 	 * 		.class : SiebButton
 	 * 		RepositoryName : ICEReleaseNumber
@@ -64,7 +87,7 @@ public abstract class ValidacPostREDPendPagoHelper extends libreria.Accion
                         getMappedTestObject("LiberarNumero"));
 	}
 	/**
-	 * ICEReleaseNumber: with specific test context and state.
+	 * BtonLiberarNumero: with specific test context and state.
 	 *		ClassName : SiebButton
 	 * 		.class : SiebButton
 	 * 		RepositoryName : ICEReleaseNumber
@@ -76,10 +99,10 @@ public abstract class ValidacPostREDPendPagoHelper extends libreria.Accion
 	}
 	
 	/**
-	 * ICEFirstNumber: with default state.
+	 * ObtenerNumeroDisponible: with default state.
 	 *		ClassName : SiebButton
 	 * 		.class : SiebButton
-	 * 		RepositoryName : ICEFirstNumber
+	 * 		RepositoryName : RegularExpression((ICEFirstNumber|ObtenerNumeroDisponible))
 	 */
 	protected SiebButtonTestObject PrimerNum() 
 	{
@@ -87,10 +110,10 @@ public abstract class ValidacPostREDPendPagoHelper extends libreria.Accion
                         getMappedTestObject("PrimerNum"));
 	}
 	/**
-	 * ICEFirstNumber: with specific test context and state.
+	 * ObtenerNumeroDisponible: with specific test context and state.
 	 *		ClassName : SiebButton
 	 * 		.class : SiebButton
-	 * 		RepositoryName : ICEFirstNumber
+	 * 		RepositoryName : RegularExpression((ICEFirstNumber|ObtenerNumeroDisponible))
 	 */
 	protected SiebButtonTestObject PrimerNum(TestObject anchor, long flags) 
 	{
@@ -99,7 +122,7 @@ public abstract class ValidacPostREDPendPagoHelper extends libreria.Accion
 	}
 	
 	/**
-	 * BupdatePriceAll: with default state.
+	 * Valorar_Todo: with default state.
 	 *		ClassName : SiebButton
 	 * 		.class : SiebButton
 	 * 		RepositoryName : BupdatePriceAll
@@ -110,7 +133,7 @@ public abstract class ValidacPostREDPendPagoHelper extends libreria.Accion
                         getMappedTestObject("ValorarTodo"));
 	}
 	/**
-	 * BupdatePriceAll: with specific test context and state.
+	 * Valorar_Todo: with specific test context and state.
 	 *		ClassName : SiebButton
 	 * 		.class : SiebButton
 	 * 		RepositoryName : BupdatePriceAll

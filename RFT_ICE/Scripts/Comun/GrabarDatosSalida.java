@@ -1,0 +1,114 @@
+package Scripts.Comun;
+import libreria.utileria.Tipo;
+
+import org.eclipse.hyades.edit.datapool.IDatapoolCell;
+import org.eclipse.hyades.execution.runtime.datapool.IDatapool;
+import org.eclipse.hyades.execution.runtime.datapool.IDatapoolIterator;
+
+import resources.Scripts.Comun.GrabarDatosSalidaHelper;
+import com.rational.test.ft.*;
+import com.rational.test.ft.object.interfaces.*;
+import com.rational.test.ft.object.interfaces.SAP.*;
+import com.rational.test.ft.object.interfaces.WPF.*;
+import com.rational.test.ft.object.interfaces.dojo.*;
+import com.rational.test.ft.object.interfaces.siebel.*;
+import com.rational.test.ft.object.interfaces.flex.*;
+import com.rational.test.ft.object.interfaces.generichtmlsubdomain.*;
+import com.rational.test.ft.script.*;
+import com.rational.test.ft.value.*;
+import com.rational.test.ft.vp.*;
+import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
+/**
+ * Description   : Graba en el data pool de datos de salida del caso y ambiente indicados en los
+ * argumentos.
+ * Script Name   : <b>GrabarDatoSalida</b>
+ * @since  2016/05/18
+ * @author SS
+ * @Param 0) OK/NOK 1) Nro CP 2) Ambiente 3) Nombre variable o inicializar 4)valor variable
+ * Si en 3 se coloca inicializar graba todo con inicializar
+ * Solo procesa los datos del tipo salida. No procesa los datos del tipo entrada.
+ * ej res CP76_CD1 QA T1_NroPedido 1-1726586103
+ * ej res CP76_CD1 QA Inicializar  NA
+ * ult modif ss 18-5-2017 se agrega 2nda lista especial
+ */
+public class GrabarDatosSalida extends GrabarDatosSalidaHelper
+{
+	public void testMain(Object[] argu)  throws RationalTestException
+	{
+		ImpreEncabezadoScript(getScriptArgs(), getScriptName( ).toString());
+		
+		argu[0]="NOK";
+		String sScriptName=getScriptName().toString(); // 22/11/2016
+		
+		String sDatoaGrabar = argu[3].toString();
+		
+		/**
+		 * Itera el data pools de datos del caso para buscar la row correcta
+		 */
+
+		dpReset();
+		while (!dpDone() &&  !(dpString("NumeroCaso").equals(argu[1]) && 
+				dpString("Ambiente").equals(argu[2]))) {
+			dpNext(); } 
+		if (dpDone()) argu[0]="NOK";
+		else { 
+
+			System.out.println("NumeroCaso = " + dpString("NumeroCaso"));
+			System.out.println("Ambiente = " + dpString("Ambiente"));
+
+			if (!sDatoaGrabar.toLowerCase().equals("inicializar")){
+				String sValor = argu[4].toString();
+				System.out.println("Se graba el dato " + sDatoaGrabar +" con " + sValor);
+				setDatapool(sDatoaGrabar, sValor ); 
+				storeDatapool();	
+				if (!sDatoaGrabar.equals("UltPasoOK")) // se agregó 22-11-2016
+				{
+					System.out.println("Grabar Dato Salida - Variable y Valor: " + sDatoaGrabar+"="+sValor);
+					infoPaso(sScriptName, Tipo.DATO,sDatoaGrabar,sValor); // Se agrega 7/11/2016
+				}
+				if (dpString(sDatoaGrabar).equals(sValor)) 	argu[0]="OK"; else argu[0]="NOK";
+			} else {
+				// Si es inicializar
+				System.out.println("Se inicializan los datos");
+				setDatapool("UltTramite", "1" ); 
+				setDatapool("UltPasoOK", "NA" );  
+
+				setDatapool("T1_NroPedido", "NA" );  
+				setDatapool("T1_NroServicio", "NA" );  
+				setDatapool("T1_NroCtaFact", "NA" );  
+				setDatapool("T1_NroRED", "NA" );  
+				setDatapool("T1_NomListaEspecial", "NA" );  
+				setDatapool("T1_NomListaEspecial_SMS", "NA" );  
+				setDatapool("T1_FechaCM", "NA" );  
+				setDatapool("T1_TaskIdCM", "NA" );  
+				
+				setDatapool("T2_NroPedido", "NA" );  
+				setDatapool("T2_NroPedidoAnt", "NA" );  
+				setDatapool("T2_NroServicio", "NA" );  
+				setDatapool("T2_NroCtaFact", "NA" );  
+				setDatapool("T2_NroRED", "NA" );  
+				setDatapool("T2_NomListaEspecial", "NA" );  
+				setDatapool("T2_NomListaEspecial_SMS", "NA" );  
+				setDatapool("T2_FechaCM", "NA" );  
+				setDatapool("T2_TaskIdCM", "NA" );  
+				
+				setDatapool("T3_NroPedido", "NA" );  
+				setDatapool("T3_NroPedidoAnt", "NA" );  
+				setDatapool("T3_NroPedidoAntAnt", "NA" );  
+				setDatapool("T3_NroServicio", "NA" );  
+				setDatapool("T3_NroCtaFact", "NA" );  
+				setDatapool("T3_NroRED", "NA" );  
+				setDatapool("T3_NomListaEspecial", "NA" );  
+				setDatapool("T3_NomListaEspecial_SMS", "NA" );  
+				setDatapool("T3_FechaCM", "NA" );  
+				setDatapool("T3_TaskIdCM", "NA" );  
+				
+				storeDatapool();
+				argu[0]="OK";
+			}
+		}
+
+		ImpreResultadoScript(getScriptName( ).toString(), argu[0].toString());
+	}
+}
+

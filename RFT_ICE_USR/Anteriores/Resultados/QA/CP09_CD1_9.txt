@@ -1,0 +1,48 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: CP09_CD1 Desde paso: 9 Modo:Real
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+---------------------------
+CP09_CD1_T1;LeerDatosEntrada;OK;
+CP09_CD1_T1;LeerDatoSalidaUltPasoEjec;OK;
+CP09_CD1_T1;LeerDatosSalida;OK;
+CP09_CD1_T1;Paso1:fLogin;NE;
+CP09_CD1_T1;Paso2:fValidarActivoSuspendido;NE;
+CP09_CD1_T1;Paso3:fVista360;NE;
+CP09_CD1_T1;Paso4:fBuscarActivo;NE;
+CP09_CD1_T1;Paso5:fBuscarCtaFact;NE;
+CP09_CD1_T1;Paso6:fNuevaPostvta;NE;
+CP09_CD1_T1;Paso7:fValidarMensaje;NE;
+CP09_CD1_T1;Paso8:fNuevaPostvta;NE;
+CP09_CD1_T1;Paso9:fBuscarPedidoVenta;OK;
+CP09_CD1_T1;Paso10:fValidarAgencia;OK;
+CP09_CD1_T1;Paso11:fIngresarAutenticacion;OK;
+
+
+Informe de DATOS de salida
+---------------------------
+CP09_CD1;UltimoPasoOK;8;
+CP09_CD1;UltimoTramite;1;
+CP09_CD1;T1_NroPedido;1-1739819386;
+
+
+Informe de Bugs
+-----------------
+
+
+Informe de Errores imprevistos de sistema
+------------------------------------------------
+CP09_CD1;Mensaje UE;Script=Comun.BuscarProducto Línea=0 Error=null;
+
+CP09_CD1;Mensaje UE;Script=Comun.IngresarIMEI Línea=0 Error=CRFCN0018E: The 94 line of the 94 script contains an exception.;
+
+CP09_CD1;Mensaje UE;Script=PasosFunc.fIngresarIMEI Línea=0 Error=CRFCN0018E: The 89 line of the 89 script contains an exception.;
+
+
+----------------------------------------------------------------------------------------------------------
+Tipo Parada:UnhandledException - Mensaje de Parada: Script=Comun.BuscarProducto Línea=0 Error=null
+- Fin del Informe del Caso Prueba_Conj Datos: CP09_CD1
+----------------------------------------------------------------------------------------------------------

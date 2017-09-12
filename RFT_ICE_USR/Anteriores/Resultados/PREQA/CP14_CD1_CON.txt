@@ -1,0 +1,1607 @@
+Inicio de consola en archivo
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.ConsolaaFile
+Resultado:OK
+-----------------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.IngresarDataPoolPasos
+Cantidad de argumentos:2
+Argumento 0:=null
+Argumento 1:=CP14
+-----------------------------------------------------------
+NumeroCaso = CP14
+Path DP Entrada = C:\Users\rft\IBM\rationalsdp\workspace\RFT_ICE\\ConfiguracionPasosEscenarios File de Entrada = DP_Pasos_CP14.rftdp
+false
+false
+--------------------------------------------------------------------
+CP14Pasos=fLogin
+CP14Param=ALT
+CP14Ejecuta=FALSE
+CP14Cond=NA
+CP14ErrorStop=TRUE
+CP14ReEjec=1-2
+--------------------------------------------------------------------
+CP14Pasos=fAdministrarTemporadas
+CP14Param=1
+CP14Ejecuta=FALSE
+CP14Cond=NA
+CP14ErrorStop=TRUE
+CP14ReEjec=Nunca
+--------------------------------------------------------------------
+CP14Pasos=fLogout
+CP14Param=NA
+CP14Ejecuta=FALSE
+CP14Cond=NA
+CP14ErrorStop=TRUE
+CP14ReEjec=Nunca
+--------------------------------------------------------------------
+CP14Pasos=fLogin
+CP14Param=NA
+CP14Ejecuta=TRUE
+CP14Cond=NA
+CP14ErrorStop=TRUE
+CP14ReEjec=Siempre
+--------------------------------------------------------------------
+CP14Pasos=fVista360
+CP14Param=NA
+CP14Ejecuta=TRUE
+CP14Cond=NA
+CP14ErrorStop=TRUE
+CP14ReEjec=1-9
+--------------------------------------------------------------------
+CP14Pasos=fBuscarActivo
+CP14Param=DP
+CP14Ejecuta=TRUE
+CP14Cond=NA
+CP14ErrorStop=TRUE
+CP14ReEjec=1-9
+--------------------------------------------------------------------
+CP14Pasos=fValidarAccionPosvta
+CP14Param=NA
+CP14Ejecuta=TRUE
+CP14Cond=NA
+CP14ErrorStop=TRUE
+CP14ReEjec=Nunca
+--------------------------------------------------------------------
+CP14Pasos=fBuscarCtaFact
+CP14Param=NA
+CP14Ejecuta=TRUE
+CP14Cond=NA
+CP14ErrorStop=TRUE
+CP14ReEjec=1-8
+--------------------------------------------------------------------
+CP14Pasos=fNuevaPostvta
+CP14Param=1
+CP14Ejecuta=TRUE
+CP14Cond=NA
+CP14ErrorStop=TRUE
+CP14ReEjec=Nunca
+--------------------------------------------------------------------
+CP14Pasos=fBuscarPedidoVenta
+CP14Param=NA
+CP14Ejecuta=TRUE
+CP14Cond=NA
+CP14ErrorStop=TRUE
+CP14ReEjec=1-40
+--------------------------------------------------------------------
+CP14Pasos=fPersonalizar_SRV_MOV_POS
+CP14Param=1
+CP14Ejecuta=TRUE
+CP14Cond=NA
+CP14ErrorStop=TRUE
+CP14ReEjec=Nunca
+--------------------------------------------------------------------
+CP14Pasos=fExpandiryBuscar
+CP14Param=2
+CP14Ejecuta=TRUE
+CP14Cond=NA
+CP14ErrorStop=TRUE
+CP14ReEjec=Nunca
+--------------------------------------------------------------------
+CP14Pasos=fValidarAgencia
+CP14Param=NA
+CP14Ejecuta=TRUE
+CP14Cond=NA
+CP14ErrorStop=TRUE
+CP14ReEjec=Nunca
+--------------------------------------------------------------------
+CP14Pasos=fExpandiryBuscar
+CP14Param=2
+CP14Ejecuta=TRUE
+CP14Cond=NA
+CP14ErrorStop=TRUE
+CP14ReEjec=Nunca
+--------------------------------------------------------------------
+CP14Pasos=fValidarPrecioenPedido
+CP14Param=1
+CP14Ejecuta=TRUE
+CP14Cond=NA
+CP14ErrorStop=TRUE
+CP14ReEjec=Nunca
+--------------------------------------------------------------------
+CP14Pasos=fValidarAccion
+CP14Param=Nuevo
+CP14Ejecuta=TRUE
+CP14Cond=NA
+CP14ErrorStop=TRUE
+CP14ReEjec=Nunca
+--------------------------------------------------------------------
+CP14Pasos=fBuscarProducto
+CP14Param=4
+CP14Ejecuta=TRUE
+CP14Cond=NA
+CP14ErrorStop=TRUE
+CP14ReEjec=Nunca
+--------------------------------------------------------------------
+CP14Pasos=fExpandiryBuscar
+CP14Param=3
+CP14Ejecuta=TRUE
+CP14Cond=NA
+CP14ErrorStop=TRUE
+CP14ReEjec=Nunca
+--------------------------------------------------------------------
+CP14Pasos=fExpandiryBuscar
+CP14Param=5
+CP14Ejecuta=TRUE
+CP14Cond=NA
+CP14ErrorStop=TRUE
+CP14ReEjec=Nunca
+--------------------------------------------------------------------
+CP14Pasos=fPersonalizarFavorito
+CP14Param=FavVoz
+CP14Ejecuta=TRUE
+CP14Cond=NA
+CP14ErrorStop=TRUE
+CP14ReEjec=Nunca
+--------------------------------------------------------------------
+CP14Pasos=fExpandiryBuscar
+CP14Param=6
+CP14Ejecuta=TRUE
+CP14Cond=NA
+CP14ErrorStop=TRUE
+CP14ReEjec=Nunca
+--------------------------------------------------------------------
+CP14Pasos=fExpandiryBuscar
+CP14Param=7
+CP14Ejecuta=TRUE
+CP14Cond=NA
+CP14ErrorStop=TRUE
+CP14ReEjec=Nunca
+--------------------------------------------------------------------
+CP14Pasos=fExpandiryBuscar
+CP14Param=8
+CP14Ejecuta=TRUE
+CP14Cond=NA
+CP14ErrorStop=TRUE
+CP14ReEjec=Nunca
+--------------------------------------------------------------------
+CP14Pasos=fExpandiryBuscar
+CP14Param=9
+CP14Ejecuta=TRUE
+CP14Cond=NA
+CP14ErrorStop=TRUE
+CP14ReEjec=Nunca
+--------------------------------------------------------------------
+CP14Pasos=fCrearLENew
+CP14Param=1
+CP14Ejecuta=TRUE
+CP14Cond=NA
+CP14ErrorStop=TRUE
+CP14ReEjec=Nunca
+--------------------------------------------------------------------
+CP14Pasos=fAgregarNum_a_LE
+CP14Param=2
+CP14Ejecuta=TRUE
+CP14Cond=NA
+CP14ErrorStop=TRUE
+CP14ReEjec=Nunca
+--------------------------------------------------------------------
+CP14Pasos=fExpandiryBuscar
+CP14Param=3
+CP14Ejecuta=TRUE
+CP14Cond=NA
+CP14ErrorStop=TRUE
+CP14ReEjec=Nunca
+--------------------------------------------------------------------
+CP14Pasos=fExpandiryBuscar
+CP14Param=7
+CP14Ejecuta=TRUE
+CP14Cond=NA
+CP14ErrorStop=TRUE
+CP14ReEjec=Nunca
+--------------------------------------------------------------------
+CP14Pasos=fExpandiryBuscar
+CP14Param=9
+CP14Ejecuta=TRUE
+CP14Cond=NA
+CP14ErrorStop=TRUE
+CP14ReEjec=Nunca
+--------------------------------------------------------------------
+CP14Pasos=fAsociarListaEspecial
+CP14Param=NA
+CP14Ejecuta=TRUE
+CP14Cond=NA
+CP14ErrorStop=TRUE
+CP14ReEjec=Nunca
+--------------------------------------------------------------------
+CP14Pasos=fEnviarPedido
+CP14Param=NA
+CP14Ejecuta=TRUE
+CP14Cond=NA
+CP14ErrorStop=TRUE
+CP14ReEjec=Nunca
+--------------------------------------------------------------------
+CP14Pasos=fValidarMensaje
+CP14Param=DPM0041
+CP14Ejecuta=TRUE
+CP14Cond=NA
+CP14ErrorStop=TRUE
+CP14ReEjec=Nunca
+--------------------------------------------------------------------
+CP14Pasos=fIngresarAutenticacion
+CP14Param=NA
+CP14Ejecuta=TRUE
+CP14Cond=NA
+CP14ErrorStop=TRUE
+CP14ReEjec=Nunca
+--------------------------------------------------------------------
+CP14Pasos=fLogout
+CP14Param=NA
+CP14Ejecuta=TRUE
+CP14Cond=NA
+CP14ErrorStop=TRUE
+CP14ReEjec=Nunca
+--------------------------------------------------------------------
+CP14Pasos=fLogin
+CP14Param=NA
+CP14Ejecuta=TRUE
+CP14Cond=NA
+CP14ErrorStop=TRUE
+CP14ReEjec=Nunca
+--------------------------------------------------------------------
+CP14Pasos=fBuscarPedidoVenta
+CP14Param=NA
+CP14Ejecuta=TRUE
+CP14Cond=NA
+CP14ErrorStop=TRUE
+CP14ReEjec=Nunca
+--------------------------------------------------------------------
+CP14Pasos=fEnviarPedido
+CP14Param=NA
+CP14Ejecuta=TRUE
+CP14Cond=NA
+CP14ErrorStop=TRUE
+CP14ReEjec=Nunca
+--------------------------------------------------------------------
+CP14Pasos=fValidarMensaje
+CP14Param=DPM0012
+CP14Ejecuta=TRUE
+CP14Cond=NA
+CP14ErrorStop=TRUE
+CP14ReEjec=Nunca
+--------------------------------------------------------------------
+CP14Pasos=fValorarTodo
+CP14Param=NA
+CP14Ejecuta=TRUE
+CP14Cond=NA
+CP14ErrorStop=TRUE
+CP14ReEjec=Nunca
+--------------------------------------------------------------------
+CP14Pasos=fEnviarPedido
+CP14Param=NA
+CP14Ejecuta=TRUE
+CP14Cond=NA
+CP14ErrorStop=TRUE
+CP14ReEjec=Nunca
+--------------------------------------------------------------------
+CP14Pasos=fEsperaEstado
+CP14Param=Abierto
+CP14Ejecuta=TRUE
+CP14Cond=NA
+CP14ErrorStop=TRUE
+CP14ReEjec=Nunca
+--------------------------------------------------------------------
+CP14Pasos=fValidarBtonValorarTodo
+CP14Param=false
+CP14Ejecuta=TRUE
+CP14Cond=NA
+CP14ErrorStop=TRUE
+CP14ReEjec=Nunca
+--------------------------------------------------------------------
+CP14Pasos=fEsperaEstado
+CP14Param=Completar
+CP14Ejecuta=TRUE
+CP14Cond=NA
+CP14ErrorStop=TRUE
+CP14ReEjec=Nunca
+--------------------------------------------------------------------
+CP14Pasos=fVista360
+CP14Param=NA
+CP14Ejecuta=TRUE
+CP14Cond=NA
+CP14ErrorStop=TRUE
+CP14ReEjec=Siempre
+--------------------------------------------------------------------
+CP14Pasos=fBuscarActivo
+CP14Param=DP
+CP14Ejecuta=TRUE
+CP14Cond=NA
+CP14ErrorStop=TRUE
+CP14ReEjec=Siempre
+--------------------------------------------------------------------
+CP14Pasos=fBuscarPedidoenCtaCte
+CP14Param=NA
+CP14Ejecuta=TRUE
+CP14Cond=NA
+CP14ErrorStop=TRUE
+CP14ReEjec=Nunca
+--------------------------------------------------------------------
+CP14Pasos=fBuscarCtaFact
+CP14Param=NA
+CP14Ejecuta=TRUE
+CP14Cond=NA
+CP14ErrorStop=TRUE
+CP14ReEjec=Siempre
+--------------------------------------------------------------------
+CP14Pasos=fBuscarProductoActivo
+CP14Param=10
+CP14Ejecuta=TRUE
+CP14Cond=NA
+CP14ErrorStop=TRUE
+CP14ReEjec=1-44
+--------------------------------------------------------------------
+CP14Pasos=fExpandiryBuscarActivo
+CP14Param=11
+CP14Ejecuta=TRUE
+CP14Cond=NA
+CP14ErrorStop=TRUE
+CP14ReEjec=Nunca
+--------------------------------------------------------------------
+CP14Pasos=fBuscarPedidoenCtaFac
+CP14Param=NA
+CP14Ejecuta=TRUE
+CP14Cond=NA
+CP14ErrorStop=TRUE
+CP14ReEjec=Nunca
+--------------------------------------------------------------------
+CP14Pasos=fLogout
+CP14Param=NA
+CP14Ejecuta=TRUE
+CP14Cond=NA
+CP14ErrorStop=TRUE
+CP14ReEjec=Nunca
+--------------------------------------------------------------------
+CP14Pasos=FIN
+CP14Param=null
+CP14Ejecuta=null
+CP14Cond=null
+CP14ErrorStop=TRUE
+CP14ReEjec=null
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.IngresarDataPoolPasos
+Resultado:OK
+-----------------------------------------------------------
+----------------------------------
+Se actualizan los datos de entrada
+----------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.LeerDatosEntrada
+Cantidad de argumentos:4
+Argumento 0:=null
+Argumento 1:=CP14_CD1
+Argumento 2:=PREQA
+Argumento 3:=Todo
+-----------------------------------------------------------
+Path DP Entrada = C:\Users\rft\IBM\rationalsdp\workspace\RFT_ICE_USR\\Regresion\\PREQA\\ File de Entrada = CP14_CD1.rftdp
+***********************************************************
+Tramite=1
+NumeroCaso_ConjuntoDatos_Tramite = CP14_CD1_T1
+Ambiente = PREQA
+***********************************************************
+--------------------------------------------------------------------
+Dato = IDENTIFICACION DE LA CUENTA
+Cantidad Variables = 1
+Valor = 607150234
+Variable1= Identificacion
+Dato 607150234 leido del dp = 607150234
+--------------------------------------------------------------------
+Dato = NUMERO CUENTA CLIENTE
+Cantidad Variables = 1
+Valor = 101730045572
+Variable1= NroCuentaCte
+Dato 101730045572 leido del dp = 101730045572
+--------------------------------------------------------------------
+Dato = NUMERO DE SERVICIO DEL ACTIVO
+Cantidad Variables = 1
+Valor = 86150813
+Variable1= NumeroServicio
+Dato 86150813 leido del dp = 86150813
+--------------------------------------------------------------------
+Dato = NUMERO FAVORITO PARA LA LISTA ESPECIAL
+Cantidad Variables = 1
+Valor = 87082492
+Variable1= LETel2
+Dato 87082492 leido del dp = 87082492
+--------------------------------------------------------------------
+Dato = CANAL UTILIZADO
+Cantidad Variables = 1
+Valor = Agencia ICE
+Variable1= Canal
+Dato Agencia ICE leido del dp = Agencia ICE
+--------------------------------------------------------------------
+Dato = TIPO DE AUTENTICACION
+Cantidad Variables = 1
+Valor = Enrute directo
+Variable1= Tipo
+Dato Enrute directo leido del dp = Enrute directo
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.LeerDatosEntrada
+Resultado:OK
+-----------------------------------------------------------
+----------------------------------
+Se inician los datos de salida
+----------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.GrabarDatosSalida
+Cantidad de argumentos:5
+Argumento 0:=null
+Argumento 1:=CP14_CD1
+Argumento 2:=PREQA
+Argumento 3:=inicializar
+Argumento 4:=null
+-----------------------------------------------------------
+NumeroCaso = CP14_CD1
+Ambiente = PREQA
+Se inicializan los datos
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.GrabarDatosSalida
+Resultado:OK
+-----------------------------------------------------------
+Script a validar:fLogin
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.ValidaPasoSiEjecuta
+Cantidad de argumentos:9
+Argumento 0:=null
+Argumento 1:=PREQA
+Argumento 2:=1
+Argumento 3:=1
+Argumento 4:=false
+Argumento 5:=1-2
+Argumento 6:=na
+Argumento 7:=CP14_CD1_T1
+Argumento 8:=ALT
+-----------------------------------------------------------
+Desde:1 Hasta:2
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.ValidaPasoSiEjecuta
+Resultado:false
+-----------------------------------------------------------
+Script a validar:fAdministrarTemporadas
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.ValidaPasoSiEjecuta
+Cantidad de argumentos:9
+Argumento 0:=false
+Argumento 1:=PREQA
+Argumento 2:=1
+Argumento 3:=2
+Argumento 4:=false
+Argumento 5:=nunca
+Argumento 6:=na
+Argumento 7:=CP14_CD1_T1
+Argumento 8:=1
+-----------------------------------------------------------
+Desde:0 Hasta:1000
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.ValidaPasoSiEjecuta
+Resultado:false
+-----------------------------------------------------------
+Script a validar:fLogout
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.ValidaPasoSiEjecuta
+Cantidad de argumentos:9
+Argumento 0:=false
+Argumento 1:=PREQA
+Argumento 2:=1
+Argumento 3:=3
+Argumento 4:=false
+Argumento 5:=nunca
+Argumento 6:=na
+Argumento 7:=CP14_CD1_T1
+Argumento 8:=NA
+-----------------------------------------------------------
+Desde:0 Hasta:1000
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.ValidaPasoSiEjecuta
+Resultado:false
+-----------------------------------------------------------
+Script a validar:fLogin
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.ValidaPasoSiEjecuta
+Cantidad de argumentos:9
+Argumento 0:=false
+Argumento 1:=PREQA
+Argumento 2:=1
+Argumento 3:=4
+Argumento 4:=true
+Argumento 5:=siempre
+Argumento 6:=na
+Argumento 7:=CP14_CD1_T1
+Argumento 8:=NA
+-----------------------------------------------------------
+Desde:0 Hasta:1000
+Se analiza si el paso es condicionante o condicionado
+Se analiza si el paso ejecuta en una re-ejecución
+GetLogin:NOK
+Paso:4 Paso desde:1
+Paso:true
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.ValidaPasoSiEjecuta
+Resultado:true
+-----------------------------------------------------------
+ 
+-------------------------------------------------
+Inicio de Paso: 4
+-------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.PasosFunc.fLogin
+Cantidad de argumentos:5
+Argumento 0:=CP14_CD1_T1
+Argumento 1:=NA
+Argumento 2:=PREQA
+Argumento 3:=true
+Argumento 4:=Paso4
+-----------------------------------------------------------
+SOIN_MFERNANDEZ
+ff123456
+Primera expresion false
+Segunda expresion false
+Segunda sub expresion1 false
+Segunda sub expresion2 false
+iNroPaso e iNroPasoDsede4-0
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.LoginIf
+Cantidad de argumentos:5
+Argumento 0:=null
+Argumento 1:=SOIN_MFERNANDEZ
+Argumento 2:=ff123456
+Argumento 3:=PREQA
+Argumento 4:=cerrar
+-----------------------------------------------------------
+Existe mensaje de Reintentar?:false
+Existe mensaje de error?:false
+Existe el IE de siebel?:false
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.LoginIf
+Resultado:Resultado NOK
+-----------------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.CerrarIE
+Cantidad de argumentos:1
+Argumento 0:=null
+-----------------------------------------------------------
+Mensaje DialogoExplorer existe?:false
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.AceptarVtnasSBL
+Cantidad de argumentos:1
+Argumento 0:=null
+-----------------------------------------------------------
+Mensaje SW_TimeOut existe?:false
+Mensaje MensajeErrorHTMLSiebel existe?:false
+Mensaje MensajeErrorBrowserScript existe?:false
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.AceptarVtnasSBL
+Resultado:OK
+-----------------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.AceptarVtnasIEBrowser
+Cantidad de argumentos:1
+Argumento 0:=null
+-----------------------------------------------------------
+Cantidad de Browsers:0
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.AceptarVtnasIEBrowser
+Resultado:Resultado OK
+-----------------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.AceptarVtnasIEBrowser
+Cantidad de argumentos:1
+Argumento 0:=OK
+-----------------------------------------------------------
+Cantidad de Browsers:0
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.AceptarVtnasIEBrowser
+Resultado:Resultado OK
+-----------------------------------------------------------
+Cantidad de objetos a cerrar:0
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.AceptarVtnasIEBrowser
+Cantidad de argumentos:1
+Argumento 0:=OK
+-----------------------------------------------------------
+Cantidad de Browsers:0
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.AceptarVtnasIEBrowser
+Resultado:Resultado OK
+-----------------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.CerrarIE
+Resultado:Resultado OK
+-----------------------------------------------------------
+Mensaje DialogoExplorer existe?:false
+Mensaje de sesión ya abierta existe?:false
+Mensaje DialogoExplorer existe?:false
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.ValidarMensaje
+Cantidad de argumentos:4
+Argumento 0:=DPM0029
+Argumento 1:=null
+Argumento 2:=null
+Argumento 3:=BrowserScript
+-----------------------------------------------------------
+Tipo: BrowserScript
+Existe Mensaje BrowserScript: false
+Resultado: No Existe
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.ValidarMensaje
+Resultado:No Existe
+-----------------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.GrabarDatosSalida
+Cantidad de argumentos:5
+Argumento 0:=OK
+Argumento 1:=CP14_CD1
+Argumento 2:=PREQA
+Argumento 3:=UltPasoOK
+Argumento 4:=4
+-----------------------------------------------------------
+NumeroCaso = CP14_CD1
+Ambiente = PREQA
+Se graba el dato UltPasoOK con 4
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.GrabarDatosSalida
+Resultado:OK
+-----------------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.GrabarDatoSalidaUltPasoEjec
+Cantidad de argumentos:5
+Argumento 0:=OK
+Argumento 1:=CP14_CD1
+Argumento 2:=PREQA
+Argumento 3:=NA
+Argumento 4:=4
+-----------------------------------------------------------
+DP Salida en USR=C:\Users\rft\IBM\rationalsdp\workspace\RFT_ICE_USR\\Regresion\\PREQA\\-_SeguimientoEjecucion.rftdp
+NumeroCaso = CP14_CD1
+Ambiente = PREQA
+Se lee: Ult Tramite=1-Ult Paso=8
+Se actualizara con: Ult Tramite=NA-Ult Paso=4
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.GrabarDatoSalidaUltPasoEjec
+Resultado:OK
+-----------------------------------------------------------
+Script a validar:fVista360
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.ValidaPasoSiEjecuta
+Cantidad de argumentos:9
+Argumento 0:=true
+Argumento 1:=PREQA
+Argumento 2:=1
+Argumento 3:=5
+Argumento 4:=true
+Argumento 5:=1-9
+Argumento 6:=na
+Argumento 7:=CP14_CD1_T1
+Argumento 8:=NA
+-----------------------------------------------------------
+Desde:1 Hasta:9
+Se analiza si el paso es condicionante o condicionado
+Se analiza si el paso ejecuta en una re-ejecución
+GetLogin:NOK
+Paso:5 Paso desde:1
+Paso:true
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.ValidaPasoSiEjecuta
+Resultado:true
+-----------------------------------------------------------
+ 
+-------------------------------------------------
+Inicio de Paso: 5
+-------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.PasosFunc.fVista360
+Cantidad de argumentos:5
+Argumento 0:=CP14_CD1_T1
+Argumento 1:=NA
+Argumento 2:=PREQA
+Argumento 3:=true
+Argumento 4:=Paso5
+-----------------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.Vista360
+Cantidad de argumentos:3
+Argumento 0:=null
+Argumento 1:=607150234
+Argumento 2:=Cliente
+-----------------------------------------------------------
+Clase de cuenta ingresada :Cliente
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.Vista360
+Resultado:607150234
+-----------------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.GrabarDatosSalida
+Cantidad de argumentos:5
+Argumento 0:=OK
+Argumento 1:=CP14_CD1
+Argumento 2:=PREQA
+Argumento 3:=UltPasoOK
+Argumento 4:=5
+-----------------------------------------------------------
+NumeroCaso = CP14_CD1
+Ambiente = PREQA
+Se graba el dato UltPasoOK con 5
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.GrabarDatosSalida
+Resultado:OK
+-----------------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.GrabarDatoSalidaUltPasoEjec
+Cantidad de argumentos:5
+Argumento 0:=OK
+Argumento 1:=CP14_CD1
+Argumento 2:=PREQA
+Argumento 3:=NA
+Argumento 4:=5
+-----------------------------------------------------------
+DP Salida en USR=C:\Users\rft\IBM\rationalsdp\workspace\RFT_ICE_USR\\Regresion\\PREQA\\-_SeguimientoEjecucion.rftdp
+NumeroCaso = CP14_CD1
+Ambiente = PREQA
+Se lee: Ult Tramite=1-Ult Paso=4
+Se actualizara con: Ult Tramite=NA-Ult Paso=5
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.GrabarDatoSalidaUltPasoEjec
+Resultado:OK
+-----------------------------------------------------------
+Script a validar:fBuscarActivo
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.ValidaPasoSiEjecuta
+Cantidad de argumentos:9
+Argumento 0:=true
+Argumento 1:=PREQA
+Argumento 2:=1
+Argumento 3:=6
+Argumento 4:=true
+Argumento 5:=1-9
+Argumento 6:=na
+Argumento 7:=CP14_CD1_T1
+Argumento 8:=DP
+-----------------------------------------------------------
+Desde:1 Hasta:9
+Se analiza si el paso es condicionante o condicionado
+Se analiza si el paso ejecuta en una re-ejecución
+GetLogin:NOK
+Paso:6 Paso desde:1
+Paso:true
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.ValidaPasoSiEjecuta
+Resultado:true
+-----------------------------------------------------------
+ 
+-------------------------------------------------
+Inicio de Paso: 6
+-------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.PasosFunc.fBuscarActivo
+Cantidad de argumentos:5
+Argumento 0:=CP14_CD1_T1
+Argumento 1:=DP
+Argumento 2:=PREQA
+Argumento 3:=true
+Argumento 4:=Paso6
+-----------------------------------------------------------
+NroServicio: 86150813
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.BuscarActivo
+Cantidad de argumentos:2
+Argumento 0:=86150813
+Argumento 1:=null
+-----------------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.BuscarActivo
+Resultado:OK
+-----------------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.GrabarDatosSalida
+Cantidad de argumentos:5
+Argumento 0:=OK
+Argumento 1:=CP14_CD1
+Argumento 2:=PREQA
+Argumento 3:=UltPasoOK
+Argumento 4:=6
+-----------------------------------------------------------
+NumeroCaso = CP14_CD1
+Ambiente = PREQA
+Se graba el dato UltPasoOK con 6
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.GrabarDatosSalida
+Resultado:OK
+-----------------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.GrabarDatoSalidaUltPasoEjec
+Cantidad de argumentos:5
+Argumento 0:=OK
+Argumento 1:=CP14_CD1
+Argumento 2:=PREQA
+Argumento 3:=NA
+Argumento 4:=6
+-----------------------------------------------------------
+DP Salida en USR=C:\Users\rft\IBM\rationalsdp\workspace\RFT_ICE_USR\\Regresion\\PREQA\\-_SeguimientoEjecucion.rftdp
+NumeroCaso = CP14_CD1
+Ambiente = PREQA
+Se lee: Ult Tramite=1-Ult Paso=5
+Se actualizara con: Ult Tramite=NA-Ult Paso=6
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.GrabarDatoSalidaUltPasoEjec
+Resultado:OK
+-----------------------------------------------------------
+Script a validar:fValidarAccionPosvta
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.ValidaPasoSiEjecuta
+Cantidad de argumentos:9
+Argumento 0:=true
+Argumento 1:=PREQA
+Argumento 2:=1
+Argumento 3:=7
+Argumento 4:=true
+Argumento 5:=nunca
+Argumento 6:=na
+Argumento 7:=CP14_CD1_T1
+Argumento 8:=NA
+-----------------------------------------------------------
+Desde:0 Hasta:1000
+Se analiza si el paso es condicionante o condicionado
+Se analiza si el paso ejecuta en una re-ejecución
+GetLogin:NOK
+Paso:7 Paso desde:1
+Paso:true
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.ValidaPasoSiEjecuta
+Resultado:true
+-----------------------------------------------------------
+ 
+-------------------------------------------------
+Inicio de Paso: 7
+-------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.PasosFunc.fValidarAccionPosvta
+Cantidad de argumentos:5
+Argumento 0:=CP14_CD1_T1
+Argumento 1:=NA
+Argumento 2:=PREQA
+Argumento 3:=true
+Argumento 4:=Paso7
+-----------------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.ValidarAccionPosvta
+Cantidad de argumentos:1
+Argumento 0:=null
+-----------------------------------------------------------
+Existe botón Consulta?true
+Existe botón Multas?true
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.ValidarAccionPosvta
+Resultado:OK
+-----------------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.GrabarDatosSalida
+Cantidad de argumentos:5
+Argumento 0:=OK
+Argumento 1:=CP14_CD1
+Argumento 2:=PREQA
+Argumento 3:=UltPasoOK
+Argumento 4:=7
+-----------------------------------------------------------
+NumeroCaso = CP14_CD1
+Ambiente = PREQA
+Se graba el dato UltPasoOK con 7
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.GrabarDatosSalida
+Resultado:OK
+-----------------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.GrabarDatoSalidaUltPasoEjec
+Cantidad de argumentos:5
+Argumento 0:=OK
+Argumento 1:=CP14_CD1
+Argumento 2:=PREQA
+Argumento 3:=NA
+Argumento 4:=7
+-----------------------------------------------------------
+DP Salida en USR=C:\Users\rft\IBM\rationalsdp\workspace\RFT_ICE_USR\\Regresion\\PREQA\\-_SeguimientoEjecucion.rftdp
+NumeroCaso = CP14_CD1
+Ambiente = PREQA
+Se lee: Ult Tramite=1-Ult Paso=6
+Se actualizara con: Ult Tramite=NA-Ult Paso=7
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.GrabarDatoSalidaUltPasoEjec
+Resultado:OK
+-----------------------------------------------------------
+Script a validar:fBuscarCtaFact
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.ValidaPasoSiEjecuta
+Cantidad de argumentos:9
+Argumento 0:=true
+Argumento 1:=PREQA
+Argumento 2:=1
+Argumento 3:=8
+Argumento 4:=true
+Argumento 5:=1-8
+Argumento 6:=na
+Argumento 7:=CP14_CD1_T1
+Argumento 8:=NA
+-----------------------------------------------------------
+Desde:1 Hasta:8
+Se analiza si el paso es condicionante o condicionado
+Se analiza si el paso ejecuta en una re-ejecución
+GetLogin:NOK
+Paso:8 Paso desde:1
+Paso:true
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.ValidaPasoSiEjecuta
+Resultado:true
+-----------------------------------------------------------
+ 
+-------------------------------------------------
+Inicio de Paso: 8
+-------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.PasosFunc.fBuscarCtaFact
+Cantidad de argumentos:5
+Argumento 0:=CP14_CD1_T1
+Argumento 1:=NA
+Argumento 2:=PREQA
+Argumento 3:=true
+Argumento 4:=Paso8
+-----------------------------------------------------------
+NroServicio: 86150813
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.BuscarCtaFact
+Cantidad de argumentos:3
+Argumento 0:=86150813
+Argumento 1:=null
+Argumento 2:=null
+-----------------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.BuscarCtaFact
+Resultado:OK
+-----------------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.GrabarDatosSalida
+Cantidad de argumentos:5
+Argumento 0:=null
+Argumento 1:=CP14_CD1_T1
+Argumento 2:=PREQA
+Argumento 3:=NroCtaFact
+Argumento 4:=101730049011
+-----------------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.GrabarDatosSalida
+Resultado:NOK
+-----------------------------------------------------------
+NroCtaFact: 101730049011
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.GrabarDatosSalida
+Cantidad de argumentos:5
+Argumento 0:=OK
+Argumento 1:=CP14_CD1
+Argumento 2:=PREQA
+Argumento 3:=UltPasoOK
+Argumento 4:=8
+-----------------------------------------------------------
+NumeroCaso = CP14_CD1
+Ambiente = PREQA
+Se graba el dato UltPasoOK con 8
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.GrabarDatosSalida
+Resultado:OK
+-----------------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.GrabarDatoSalidaUltPasoEjec
+Cantidad de argumentos:5
+Argumento 0:=OK
+Argumento 1:=CP14_CD1
+Argumento 2:=PREQA
+Argumento 3:=NA
+Argumento 4:=8
+-----------------------------------------------------------
+DP Salida en USR=C:\Users\rft\IBM\rationalsdp\workspace\RFT_ICE_USR\\Regresion\\PREQA\\-_SeguimientoEjecucion.rftdp
+NumeroCaso = CP14_CD1
+Ambiente = PREQA
+Se lee: Ult Tramite=1-Ult Paso=7
+Se actualizara con: Ult Tramite=NA-Ult Paso=8
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.GrabarDatoSalidaUltPasoEjec
+Resultado:OK
+-----------------------------------------------------------
+Script a validar:fNuevaPostvta
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.ValidaPasoSiEjecuta
+Cantidad de argumentos:9
+Argumento 0:=true
+Argumento 1:=PREQA
+Argumento 2:=1
+Argumento 3:=9
+Argumento 4:=true
+Argumento 5:=nunca
+Argumento 6:=na
+Argumento 7:=CP14_CD1_T1
+Argumento 8:=1
+-----------------------------------------------------------
+Desde:0 Hasta:1000
+Se analiza si el paso es condicionante o condicionado
+Se analiza si el paso ejecuta en una re-ejecución
+GetLogin:NOK
+Paso:9 Paso desde:1
+Paso:true
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.ValidaPasoSiEjecuta
+Resultado:true
+-----------------------------------------------------------
+ 
+-------------------------------------------------
+Inicio de Paso: 9
+-------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.PasosFunc.fNuevaPostvta
+Cantidad de argumentos:5
+Argumento 0:=CP14_CD1_T1
+Argumento 1:=1
+Argumento 2:=PREQA
+Argumento 3:=true
+Argumento 4:=Paso9
+-----------------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.NuevaPostvta
+Cantidad de argumentos:6
+Argumento 0:=null
+Argumento 1:=Modificación
+Argumento 2:=Modificar Facilidades
+Argumento 3:=Servicio de Telefonia Movil
+Argumento 4:=null
+Argumento 5:=NA
+-----------------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.BuscarProductoActivo
+Cantidad de argumentos:6
+Argumento 0:=Servicio de Telefonia Movil
+Argumento 1:=null
+Argumento 2:=null
+Argumento 3:=null
+Argumento 4:=Si
+Argumento 5:=null
+-----------------------------------------------------------
+true
+{RecordCounter=1 - 2 of 2, ClassName=SiebApplet, IsPopupApplet=false, UIName=Activos instalados, RepositoryName=SIS OM Products & Services Root List Applet (Service) - Tiny}
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.RecordCount
+Cantidad de argumentos:5
+Argumento 0:=1 - 2 of 2
+Argumento 1:=null
+Argumento 2:=null
+Argumento 3:=null
+Argumento 4:=null
+-----------------------------------------------------------
+RecordCount pasado como argumento: 1 - 2 of 2
+Posicion del - en el record count: 2
+Posicion del of en el reord count:  6
+Posicion del + en el reord count:  -1
+SubTotal: *2*
+Total: *2*
+Desde: *1*
+Desde: 1 Subtotal: 2 Total: 2
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.RecordCount
+Resultado:1-2-2
+-----------------------------------------------------------
+-------------------------------------------------------------------
+Inicio de logica de buscar producto (1)
+Desde= 1 Subtotal= 2 Total= 2
+Producto a buscar= Servicio de Telefonia Movil
+-------------------------------------------------------------------
+Producto: PLAN ALO 1 24 M KOLBI
+Producto: Servicio de Telefonia Movil
+-------------------------------------------------------------------
+Producto encontrado
+-------------------------------------------------------------------
+Producto Seleccionado: Servicio de Telefonia Movil en posición: 1
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.BuscarProductoActivo
+Resultado:Encontrado
+-----------------------------------------------------------
+Mensaje a validar: NA
+##################################################################
+getThrowableclassname Script=NuevaPostvta Línea=79 Método=click Error=CRFCP0050E: No screen point found for the object Clase=com.rational.test.ft.UnsupportedActionException Objeto=GuiTestObject(Name: AceptarResolucionConflicto, Map: AceptarResolucionConflicto)
+##################################################################
+Mensaje de excepción: CRFCP0050E: No screen point found for the object
+NroPedido:1-1730055279
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.NuevaPostvta
+Resultado:Resultado OK
+-----------------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.GrabarDatosSalida
+Cantidad de argumentos:5
+Argumento 0:=null
+Argumento 1:=CP14_CD1
+Argumento 2:=PREQA
+Argumento 3:=T1_NroPedido
+Argumento 4:=1-1730055279
+-----------------------------------------------------------
+NumeroCaso = CP14_CD1
+Ambiente = PREQA
+Se graba el dato T1_NroPedido con 1-1730055279
+Grabar Dato Salida - Variable y Valor: T1_NroPedido=1-1730055279
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.GrabarDatosSalida
+Resultado:OK
+-----------------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.GrabarDatosSalida
+Cantidad de argumentos:5
+Argumento 0:=OK
+Argumento 1:=CP14_CD1
+Argumento 2:=PREQA
+Argumento 3:=UltPasoOK
+Argumento 4:=9
+-----------------------------------------------------------
+NumeroCaso = CP14_CD1
+Ambiente = PREQA
+Se graba el dato UltPasoOK con 9
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.GrabarDatosSalida
+Resultado:OK
+-----------------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.GrabarDatoSalidaUltPasoEjec
+Cantidad de argumentos:5
+Argumento 0:=OK
+Argumento 1:=CP14_CD1
+Argumento 2:=PREQA
+Argumento 3:=NA
+Argumento 4:=9
+-----------------------------------------------------------
+DP Salida en USR=C:\Users\rft\IBM\rationalsdp\workspace\RFT_ICE_USR\\Regresion\\PREQA\\-_SeguimientoEjecucion.rftdp
+NumeroCaso = CP14_CD1
+Ambiente = PREQA
+Se lee: Ult Tramite=1-Ult Paso=8
+Se actualizara con: Ult Tramite=NA-Ult Paso=9
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.GrabarDatoSalidaUltPasoEjec
+Resultado:OK
+-----------------------------------------------------------
+Script a validar:fBuscarPedidoVenta
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.ValidaPasoSiEjecuta
+Cantidad de argumentos:9
+Argumento 0:=true
+Argumento 1:=PREQA
+Argumento 2:=1
+Argumento 3:=10
+Argumento 4:=true
+Argumento 5:=1-40
+Argumento 6:=na
+Argumento 7:=CP14_CD1_T1
+Argumento 8:=NA
+-----------------------------------------------------------
+Desde:1 Hasta:40
+Se analiza si el paso es condicionante o condicionado
+Se analiza si el paso ejecuta en una re-ejecución
+GetLogin:NOK
+Paso:10 Paso desde:1
+Paso:true
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.ValidaPasoSiEjecuta
+Resultado:true
+-----------------------------------------------------------
+ 
+-------------------------------------------------
+Inicio de Paso: 10
+-------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.PasosFunc.fBuscarPedidoVenta
+Cantidad de argumentos:5
+Argumento 0:=CP14_CD1_T1
+Argumento 1:=NA
+Argumento 2:=PREQA
+Argumento 3:=true
+Argumento 4:=Paso10
+-----------------------------------------------------------
+NroPedido: 1-1730055279
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.BuscarPedidoVenta
+Cantidad de argumentos:2
+Argumento 0:=1-1730055279
+Argumento 1:=null
+-----------------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.BuscarPedidoVenta
+Resultado:OK
+-----------------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.GrabarDatosSalida
+Cantidad de argumentos:5
+Argumento 0:=OK
+Argumento 1:=CP14_CD1
+Argumento 2:=PREQA
+Argumento 3:=UltPasoOK
+Argumento 4:=10
+-----------------------------------------------------------
+NumeroCaso = CP14_CD1
+Ambiente = PREQA
+Se graba el dato UltPasoOK con 10
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.GrabarDatosSalida
+Resultado:OK
+-----------------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.GrabarDatoSalidaUltPasoEjec
+Cantidad de argumentos:5
+Argumento 0:=OK
+Argumento 1:=CP14_CD1
+Argumento 2:=PREQA
+Argumento 3:=NA
+Argumento 4:=10
+-----------------------------------------------------------
+DP Salida en USR=C:\Users\rft\IBM\rationalsdp\workspace\RFT_ICE_USR\\Regresion\\PREQA\\-_SeguimientoEjecucion.rftdp
+NumeroCaso = CP14_CD1
+Ambiente = PREQA
+Se lee: Ult Tramite=1-Ult Paso=9
+Se actualizara con: Ult Tramite=NA-Ult Paso=10
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.GrabarDatoSalidaUltPasoEjec
+Resultado:OK
+-----------------------------------------------------------
+Script a validar:fPersonalizar_SRV_MOV_POS
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.ValidaPasoSiEjecuta
+Cantidad de argumentos:9
+Argumento 0:=true
+Argumento 1:=PREQA
+Argumento 2:=1
+Argumento 3:=11
+Argumento 4:=true
+Argumento 5:=nunca
+Argumento 6:=na
+Argumento 7:=CP14_CD1_T1
+Argumento 8:=1
+-----------------------------------------------------------
+Desde:0 Hasta:1000
+Se analiza si el paso es condicionante o condicionado
+Se analiza si el paso ejecuta en una re-ejecución
+GetLogin:NOK
+Paso:11 Paso desde:1
+Paso:true
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.ValidaPasoSiEjecuta
+Resultado:true
+-----------------------------------------------------------
+ 
+-------------------------------------------------
+Inicio de Paso: 11
+-------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.PasosFunc.fPersonalizar_SRV_MOV_POS
+Cantidad de argumentos:5
+Argumento 0:=CP14_CD1_T1
+Argumento 1:=1
+Argumento 2:=PREQA
+Argumento 3:=true
+Argumento 4:=Paso11
+-----------------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.Personalizar_SRV_MOV_POS
+Cantidad de argumentos:7
+Argumento 0:=Alta
+Argumento 1:=Facilidad Telefonia
+Argumento 2:=No identificador de llamada
+Argumento 3:=No importa
+Argumento 4:=null
+Argumento 5:=PREQA
+Argumento 6:=Postventa
+-----------------------------------------------------------
+Se presiono Facilidad
+Ítem
+Servicio 900
+No identificador de llamada
+Encontrado
+celda seleccionada
+No identificador de llamada
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.ValidarMensaje
+Cantidad de argumentos:5
+Argumento 0:=DPM0027
+Argumento 1:=null
+Argumento 2:=null
+Argumento 3:=BrowserScript
+Argumento 4:=PREQA
+-----------------------------------------------------------
+Tipo: BrowserScript
+Existe Mensaje BrowserScript: false
+Resultado: No Existe
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.ValidarMensaje
+Resultado:No Existe
+-----------------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.Personalizar_SRV_MOV_POS
+Resultado:Encontrado
+-----------------------------------------------------------
+Encontrado
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.GrabarDatosSalida
+Cantidad de argumentos:5
+Argumento 0:=OK
+Argumento 1:=CP14_CD1
+Argumento 2:=PREQA
+Argumento 3:=UltPasoOK
+Argumento 4:=11
+-----------------------------------------------------------
+NumeroCaso = CP14_CD1
+Ambiente = PREQA
+Se graba el dato UltPasoOK con 11
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.GrabarDatosSalida
+Resultado:OK
+-----------------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.GrabarDatoSalidaUltPasoEjec
+Cantidad de argumentos:5
+Argumento 0:=OK
+Argumento 1:=CP14_CD1
+Argumento 2:=PREQA
+Argumento 3:=NA
+Argumento 4:=11
+-----------------------------------------------------------
+DP Salida en USR=C:\Users\rft\IBM\rationalsdp\workspace\RFT_ICE_USR\\Regresion\\PREQA\\-_SeguimientoEjecucion.rftdp
+NumeroCaso = CP14_CD1
+Ambiente = PREQA
+Se lee: Ult Tramite=1-Ult Paso=10
+Se actualizara con: Ult Tramite=NA-Ult Paso=11
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.GrabarDatoSalidaUltPasoEjec
+Resultado:OK
+-----------------------------------------------------------
+Script a validar:fExpandiryBuscar
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.ValidaPasoSiEjecuta
+Cantidad de argumentos:9
+Argumento 0:=true
+Argumento 1:=PREQA
+Argumento 2:=1
+Argumento 3:=12
+Argumento 4:=true
+Argumento 5:=nunca
+Argumento 6:=na
+Argumento 7:=CP14_CD1_T1
+Argumento 8:=2
+-----------------------------------------------------------
+Desde:0 Hasta:1000
+Se analiza si el paso es condicionante o condicionado
+Se analiza si el paso ejecuta en una re-ejecución
+GetLogin:NOK
+Paso:12 Paso desde:1
+Paso:true
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.ValidaPasoSiEjecuta
+Resultado:true
+-----------------------------------------------------------
+ 
+-------------------------------------------------
+Inicio de Paso: 12
+-------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.PasosFunc.fExpandiryBuscar
+Cantidad de argumentos:5
+Argumento 0:=CP14_CD1_T1
+Argumento 1:=2
+Argumento 2:=PREQA
+Argumento 3:=true
+Argumento 4:=Paso12
+-----------------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.ExpandiryBuscar
+Cantidad de argumentos:3
+Argumento 0:=Servicio de Telefonia Movil
+Argumento 1:=No identificador de llamada
+Argumento 2:=null
+-----------------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.ExpandirLinea
+Cantidad de argumentos:3
+Argumento 0:=Servicio de Telefonia Movil
+Argumento 1:=null
+Argumento 2:=No
+-----------------------------------------------------------
+Se expande la posicion actual
+Resultado:OK
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.ExpandirLinea
+Resultado:OK
+-----------------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.BuscarProducto
+Cantidad de argumentos:5
+Argumento 0:=No identificador de llamada
+Argumento 1:=null
+Argumento 2:=null
+Argumento 3:=null
+Argumento 4:=No
+-----------------------------------------------------------
+[[Reconocimiento Ambiguo]]0{onmousedown=MinibtnDown(this.parentNode), .offsetTop=1, onbeforeeditfocus=null Object, .name=, ondragover=null Object, onlayoutcomplete=null Object, aria-pressed=, hreflang=, aria-required=, onkeypress=null Object, hideFocus=false, .tag=A, coords=, aria-describedby=, onblur=null Object, aria-valuenow=, onhelp=null Object, dataSrc=, aria-invalid=, ondatasetcomplete=null Object, aria-valuemax=, onfocusout=null Object, oncontrolselect=null Object, aria-owns=, aria-controls=, .hasScript=true, accessKey=, .screenTop=603, onpage=null Object, onmousemove=null Object, title=, onbeforepaste=null Object, ondataavailable=null Object, .href=javascript:void(0), onmoveend=null Object, shape=, .offsetLeft=6, ondeactivate=null Object, onmouseleave=null Object, onrowsinserted=null Object, .id=s_at_m_3, aria-valuemin=, .hasFocus=false, .className=, implementation=null Object, aria-readonly=, onmouseenter=null Object, ondragleave=null Object, disabled=false, aria-expanded=, .class=Html.A, charset=, onerrorupdate=null Object, onresizeend=null Object, ondragenter=null Object, ondragstart=null Object, oncut=null Object, onbeforecut=null Object, onmovestart=null Object, ondrag=null Object, .offsetHeight=13, onclick=window.event.cancelBubble=true; _JMenu_Initialize(this, 'Order Entry - Line Item List Applet (Sales\)', 'Applet', s_at_m_3Ax, 0, false); return false;, aria-checked=, onafterupdate=null Object, contentEditable=inherit, onmousewheel=null Object, lang=, onselectstart=null Object, aria-activedescendant=, name=, aria-live=, onbeforeupdate=null Object, aria-disabled=, onrowenter=null Object, dataFormatAs=, aria-haspopup=, onfocus=null Object, .text=Menú, onmove=null Object, ondatasetchanged=null Object, oncellchange=null Object, aria-hidden=, ondblclick=null Object, aria-flowto=, .screenLeft=24, type=, onkeydown=null Object, tabIndex=0, .bounds=java.awt.Rectangle[x=24,y=603,width=32,height=12], aria-busy=, onscroll=null Object, onmouseover=MinibtnHover(this.parentNode), aria-labelledby=, onmouseout=MinibtnOut(this.parentNode), aria-multiselectable=, oncopy=null Object, aria-relevant=, onkeyup=null Object, onresize=null Object, .disabled=false, href=javascript:void(0), onmouseup=MinibtnUp(this.parentNode), .contentText=Menú , rev=, oncontextmenu=null Object, aria-selected=, .title=, onfilterchange=null Object, rel=, aria-level=0, onrowsdelete=null Object, onpaste=null Object, onlosecapture=null Object, methods=, onfocusin=null Object, class=, ondragend=null Object, style=, onresizestart=null Object, id=s_at_m_3, ondrop=null Object, onbeforecopy=null Object, onrowexit=null Object, role=, dataFld=, dir=, onbeforedeactivate=null Object, language=, aria-setsize=0, onreadystatechange=null Object, target=, urn=, .offsetWidth=36, aria-secret=, onpropertychange=null Object, onactivate=null Object, onbeforeactivate=null Object, aria-posinset=0}
+[[Reconocimiento Ambiguo]]1{onmousedown=MinibtnDown(this.parentNode), .offsetTop=1, onbeforeeditfocus=null Object, .name=, ondragover=null Object, onlayoutcomplete=null Object, aria-pressed=, hreflang=, aria-required=, onkeypress=null Object, hideFocus=false, .tag=A, coords=, aria-describedby=, onblur=null Object, aria-valuenow=, onhelp=null Object, dataSrc=, aria-invalid=, ondatasetcomplete=null Object, aria-valuemax=, onfocusout=null Object, oncontrolselect=null Object, aria-owns=, aria-controls=, .hasScript=true, accessKey=, .screenTop=275, onpage=null Object, onmousemove=null Object, title=, onbeforepaste=null Object, ondataavailable=null Object, .href=javascript:void(0), onmoveend=null Object, shape=, .offsetLeft=6, ondeactivate=null Object, onmouseleave=null Object, onrowsinserted=null Object, .id=s_at_m_3, aria-valuemin=, .hasFocus=false, .className=, implementation=null Object, aria-readonly=, onmouseenter=null Object, ondragleave=null Object, disabled=false, aria-expanded=, .class=Html.A, charset=, onerrorupdate=null Object, onresizeend=null Object, ondragenter=null Object, ondragstart=null Object, oncut=null Object, onbeforecut=null Object, onmovestart=null Object, ondrag=null Object, .offsetHeight=13, onclick=window.event.cancelBubble=true; _JMenu_Initialize(this, 'Order Entry - Line Item List Applet (Sales\)', 'Applet', s_at_m_3Ax, 0, false); return false;, aria-checked=, onafterupdate=null Object, contentEditable=inherit, onmousewheel=null Object, lang=, onselectstart=null Object, aria-activedescendant=, name=, aria-live=, onbeforeupdate=null Object, aria-disabled=, onrowenter=null Object, dataFormatAs=, aria-haspopup=, onfocus=null Object, .text=Menú, onmove=null Object, ondatasetchanged=null Object, oncellchange=null Object, aria-hidden=, ondblclick=null Object, aria-flowto=, .screenLeft=24, type=, onkeydown=null Object, tabIndex=0, .bounds=java.awt.Rectangle[x=24,y=275,width=32,height=11], aria-busy=, onscroll=null Object, onmouseover=MinibtnHover(this.parentNode), aria-labelledby=, onmouseout=MinibtnOut(this.parentNode), aria-multiselectable=, oncopy=null Object, aria-relevant=, onkeyup=null Object, onresize=null Object, .disabled=false, href=javascript:void(0), onmouseup=MinibtnUp(this.parentNode), .contentText=Menú , rev=, oncontextmenu=null Object, aria-selected=, .title=, onfilterchange=null Object, rel=, aria-level=0, onrowsdelete=null Object, onpaste=null Object, onlosecapture=null Object, methods=, onfocusin=null Object, class=, ondragend=null Object, style=, onresizestart=null Object, id=s_at_m_3, ondrop=null Object, onbeforecopy=null Object, onrowexit=null Object, role=, dataFld=, dir=, onbeforedeactivate=null Object, language=, aria-setsize=0, onreadystatechange=null Object, target=, urn=, .offsetWidth=36, aria-secret=, onpropertychange=null Object, onactivate=null Object, onbeforeactivate=null Object, aria-posinset=0}
+true
+{RecordCounter=1 - 6 of 6, ClassName=SiebApplet, IsPopupApplet=false, UIName=Detalles, RepositoryName=Order Entry - Line Item List Applet (Sales)}
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.RecordCount
+Cantidad de argumentos:5
+Argumento 0:=1 - 6 of 6
+Argumento 1:=null
+Argumento 2:=null
+Argumento 3:=null
+Argumento 4:=null
+-----------------------------------------------------------
+RecordCount pasado como argumento: 1 - 6 of 6
+Posicion del - en el record count: 2
+Posicion del of en el reord count:  6
+Posicion del + en el reord count:  -1
+SubTotal: *6*
+Total: *6*
+Desde: *1*
+Desde: 1 Subtotal: 6 Total: 6
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.RecordCount
+Resultado:1-6-6
+-----------------------------------------------------------
+-------------------------------------------------------------------
+Inicio de logica de buscar producto (1)
+Desde= 1 Subtotal= 6 Total= 6
+Producto a buscar= No identificador de llamada
+-------------------------------------------------------------------
+Se busca desde la posición actual
+Producto: Servicio de Telefonia Movil
+Producto: Plan Kolbi Alo 1 24 M Kolbi
+Producto: Grupo SVA
+Producto: Promociones y Descuentos
+Producto: Promociones de Afiliacion
+Producto: No identificador de llamada
+-------------------------------------------------------------------
+Producto encontrado
+-------------------------------------------------------------------
+Producto Seleccionado: No identificador de llamada en posición: 5
+Producto Seleccionado: Nuevo
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.BuscarProducto
+Resultado:Encontrado
+-----------------------------------------------------------
+Resultado: Encontrado
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.ExpandiryBuscar
+Resultado:Encontrado
+-----------------------------------------------------------
+Condicion1:false
+Condicion2:false
+ErrorParaEjecucion:true
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.GrabarDatosSalida
+Cantidad de argumentos:5
+Argumento 0:=OK
+Argumento 1:=CP14_CD1
+Argumento 2:=PREQA
+Argumento 3:=UltPasoOK
+Argumento 4:=12
+-----------------------------------------------------------
+NumeroCaso = CP14_CD1
+Ambiente = PREQA
+Se graba el dato UltPasoOK con 12
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.GrabarDatosSalida
+Resultado:OK
+-----------------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.GrabarDatoSalidaUltPasoEjec
+Cantidad de argumentos:5
+Argumento 0:=OK
+Argumento 1:=CP14_CD1
+Argumento 2:=PREQA
+Argumento 3:=NA
+Argumento 4:=12
+-----------------------------------------------------------
+DP Salida en USR=C:\Users\rft\IBM\rationalsdp\workspace\RFT_ICE_USR\\Regresion\\PREQA\\-_SeguimientoEjecucion.rftdp
+NumeroCaso = CP14_CD1
+Ambiente = PREQA
+Se lee: Ult Tramite=1-Ult Paso=11
+Se actualizara con: Ult Tramite=NA-Ult Paso=12
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.GrabarDatoSalidaUltPasoEjec
+Resultado:OK
+-----------------------------------------------------------
+Script a validar:fValidarAgencia
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.ValidaPasoSiEjecuta
+Cantidad de argumentos:9
+Argumento 0:=true
+Argumento 1:=PREQA
+Argumento 2:=1
+Argumento 3:=13
+Argumento 4:=true
+Argumento 5:=nunca
+Argumento 6:=na
+Argumento 7:=CP14_CD1_T1
+Argumento 8:=NA
+-----------------------------------------------------------
+Desde:0 Hasta:1000
+Se analiza si el paso es condicionante o condicionado
+Se analiza si el paso ejecuta en una re-ejecución
+GetLogin:NOK
+Paso:13 Paso desde:1
+Paso:true
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.ValidaPasoSiEjecuta
+Resultado:true
+-----------------------------------------------------------
+ 
+-------------------------------------------------
+Inicio de Paso: 13
+-------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.PasosFunc.fValidarAgencia
+Cantidad de argumentos:5
+Argumento 0:=CP14_CD1_T1
+Argumento 1:=NA
+Argumento 2:=PREQA
+Argumento 3:=true
+Argumento 4:=Paso13
+-----------------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.ValidarAgencia
+Cantidad de argumentos:1
+Argumento 0:=null
+-----------------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.ValidarAgencia
+Resultado:NOK
+-----------------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.TerminarCasoError
+Cantidad de argumentos:4
+Argumento 0:=Agencia no fue completado automaticamente
+Argumento 1:=true
+Argumento 2:=CP14_CD1_T1
+Argumento 3:=Scripts.PasosFunc.fValidarAgencia
+-----------------------------------------------------------
+----------------------------------------------------------
+Mensaje de Error: Agencia no fue completado automaticamente
+Debe parar la ejecución del CP: Si
+----------------------------------------------------------
+Paso    0  -  LeerDatosEntrada; ;OK;
+Paso    0  -  GrabarDatosSalida; ;OK;
+Paso    1  -  fLogin; ;NE;
+Paso    2  -  fAdministrarTemporadas; ;NE;
+Paso    3  -  fLogout; ;NE;
+Paso    4  -  fLogin; ;OK;
+Paso    5  -  fVista360; ;OK;
+Paso    6  -  fBuscarActivo; ;OK;
+Paso    7  -  fValidarAccionPosvta; ;OK;
+Paso    8  -  fBuscarCtaFact; ;OK;
+Paso    9  -  fNuevaPostvta; ;OK;
+Paso   10  -  fBuscarPedidoVenta; ;OK;
+Paso   11  -  fPersonalizar_SRV_MOV_POS; ;OK;
+Paso   12  -  fExpandiryBuscar; ;OK;
+DATOS
+Paso    0  -  CasosPrueba;Usuario Alternativo ;JVALERIO1;
+Paso    0  -  CasosPrueba;Clave Alternativa ;jvalerio1;
+Paso    6  -  fBuscarActivo;NroServicio;86150813;
+Paso    6  -  fBuscarActivo;NroServicio;86150813;
+Paso    8  -  fBuscarCtaFact;NroCtaFact;101730049011;
+Paso    9  -  fNuevaPostvta;NroPedido;1-1730055279;
+Paso    9  -  GrabarDatosSalida;T1_NroPedido;1-1730055279;

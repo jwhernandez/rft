@@ -1,0 +1,55 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: CPVta_CDX Desde paso: 2 Modo:Real
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatosEntrada'                                                  'OK'                          
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'                                         'OK'                          
+'Paso    0  -  LeerDatosSalida'                                                   'OK'                          
+'Paso    1  -  fLogin'                                                            'OK'                          
+'Paso    2  -  fVista360'                                                         'OK'                          
+'Paso    3  -  fNuevaVenta'                                                       'OK'                          
+'Paso    4  -  fBuscarPedidoVenta'                                                'NE'                          
+'Paso    5  -  fObtenerMorosidad'                                                 'OK'                          
+'Paso    6  -  fIngresarAutenticacion'                                            'OK'                          
+'Paso    7  -  fCompraPlanCategoriaCatalogoNew'                                   'OK'                          
+'Paso    8  -  fTerminalCliente'                                                  'OK'                          
+
+
+Informe de DATOS de salida
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoPasoOK'                 '1'                           
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoTramite'                '1'                           
+'Paso    0  -  LeerDatosSalida'                    'T1_NroPedido'                 '1-1723716781'                
+'Paso    3  -  GrabarDatosSalida'                  'T1_NroPedido'                 '1-1723726007'                
+'Paso    3  -  fNuevaVenta'                        'NroPedido'                    '1-1723726007'                
+
+
+Informe de Bugs
+-----------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------
+Tipo Parada         = Excepción en Método
+Mensaje de Parada   = Script=IngresarNroServicioAdmin Línea=60 Método=SetText Error=
+SetText("1-1723726007"); Error:(-1016) - Failed to create object "Siebel Power Communications.Sales Order Screen.ICE Order Entry - Line Items Detail View Admin.ICE Order Entry - Order Form Applet Dashboard (Sales) Admin" of class "SiebApplet". Clase=com.rational.test.ft.Domain.Siebel.SiebelMethodExecutionFailureException Objeto=siebel.SiebTextTestObject(Nombre: NroPedidoAdmin, Correlación: OrderNumber)
+Parada en paso	    = 9
+
+
+-----------------------------------------------------------------------------------------
+Fin del Informe del Caso Prueba_Conj Datos: CPVta_CDX
+-----------------------------------------------------------------------------------------
+
+
+Informe de Errores imprevistos de sistema
+-----------------------------------------------------------------------------------------
+'Paso    9  -  Accion'                             'Excepción en Método'          'Script=IngresarNroServicioAdmin Línea=60 Método=SetText Error=
+SetText("1-1723726007"); Error:(-1016) - Failed to create object "Siebel Power Communications.Sales Order Screen.ICE Order Entry - Line Items Detail View Admin.ICE Order Entry - Order Form Applet Dashboard (Sales) Admin" of class "SiebApplet". Clase=com.rational.test.ft.Domain.Siebel.SiebelMethodExecutionFailureException Objeto=siebel.SiebTextTestObject(Nombre: NroPedidoAdmin, Correlación: OrderNumber)'
+
+'Paso    9  -  Accion'                             'Excepción no esperada'        'Script=IngresarNroServicioAdmin Línea=0 Error=
+SetText("1-1723726007"); Error:(-1016) - Failed to create object "Siebel Power Communications.Sales Order Screen.ICE Order Entry - Line Items Detail View Admin.ICE Order Entry - Order Form Applet Dashboard (Sales) Admin" of class "SiebApplet".'
+
+'Paso    9  -  Accion'                             'Excepción no esperada'        'Script=fIngresar_SIM_IMEI_Servicio_Admin Línea=0 Error=CRFCN0018E: La línea 60 del script 60 contiene una excepción.'
+

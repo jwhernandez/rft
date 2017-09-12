@@ -20,6 +20,8 @@ import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
  * 6) Msj a validar o NA 7) Msj real 8) false o true si coincide o no
  * Precondiciones: Estar en el pedido
  * Ejemplo: res "Número de SMS" true false 24314578 res NA res res 
+ * Ejemplo: res "Número de SMS" false false 85542085 res DPM019 res res 
+ * 
  * @author SS 
  * @since Nov 2015
  */
@@ -27,21 +29,21 @@ public class CrearListaEspecial extends CrearListaEspecialHelper
 {
 	public void testMain(Object[] argu) throws RationalTestException
 	{
-
+		ImpreEncabezadoScript(getScriptArgs(), getScriptName( ).toString());
 		String[] Validaciones;
 		Validaciones = new String[4];
 		/**
 		 * Invoca a Validaciones con los siguientes parámetros:
 		 * Parámetros: 0) Recibe código de mensaje a validar, 
-		 * 1) devuelve mensaje y 2) un boolean true / false 
+		 * 1) devuelve mensaje y 2) un boolean true / false (indicando true si el mensaje coincide)
 		 * 3) recibe un tipo de mensaje si no es HTML el mensaje a validar (opcional) HTML, BrowserScript
 		 */
 
-		argu[0] = "NOK";
+		argu[0] = "OK";
 		argu[8] = "true";
 
 		// Si esta en el pedido va a la pantalla de lista especial
-		if (argu[2].toString().equals("true")) {
+		if (argu[2].toString().toLowerCase().equals("true")) {
 			LineasPedido().activateRow(0);
 			LineasPedido().drillDownColumn("Billing Account", 1);
 			sleep(4);	
@@ -50,15 +52,19 @@ public class CrearListaEspecial extends CrearListaEspecialHelper
 			Pestañas().goTo("SWI Special Rating Profile View", "L4");
 		}
 
-		// En la primera fila genera una nueva lista especial y se la hace lista x defecto}		
+		// En la primera fila genera una nueva lista especial y se la hace lista x defecto		
 		// Crear la lista especial
+		BtonNuevo().ensureObjectIsVisible();
+		Listas().ensureObjectIsVisible();
+		NumerosMenu().ensureObjectIsVisible();
+		sleep(2);
 		NuevaLista().performAction();
 		ListaEspecial().activateRow(0);
 		ListaEsp().select(argu[1].toString());
 		Primaria().setOn();
 
 		// Capturar y retornar el nombre de la lista especial
-		System.out.println(NombreLE().getProperty("Text"));
+		System.out.println("Nombre de la lista especial" + NombreLE().getProperty("Text"));
 		argu[5] = NombreLE().getProperty("Text");
 
 		// Si se le paso un num de tel se lo ingresa en la lista
@@ -66,7 +72,10 @@ public class CrearListaEspecial extends CrearListaEspecialHelper
 		if (!(argu[4].toString().equals("NA"))) { 
 			ListaEspecial().activateRow(0);	// siempre genera la lista arriba de todo, se para arriba de todo y agrega el numero en el applet de abajo
 			NuevoNumero().performAction();
-			// TablaHTMLDIVdeNumListaEsp().ensureObjectIsVisible();
+			// workaround para evitar que no permita ingresar el numero especial por no estar visible
+			SiebelBar().ensureObjectIsVisible();
+			NumerosMenu().ensureObjectIsVisible();
+			sleep(2);
 			NumTel().setText(argu[4].toString());
 
 			//Si se incuyó Msja se llama a script de validar Msj
@@ -77,8 +86,13 @@ public class CrearListaEspecial extends CrearListaEspecialHelper
 				callScript("Scripts.Comun.ValidarMensaje", Validaciones);
 				argu[7] = Validaciones[1];
 				argu[8] = Validaciones[2];
-				Siebel().processKeyboardAccelerator("Ctrl+U");
-				if (Validaciones[2].toString().equals("true")) {
+
+				Siebel().processKeyboardAccelerator("Esc");
+				//Siebel().processKeyboardAccelerator("Ctrl+U");
+		
+				//Menu().select(atPath("UndoRecord")); 
+				
+				if (Validaciones[2].toLowerCase().toString().equals("true")) {
 					argu[0] = "OK"; 
 				} 
 				if ((!(argu[6].toString().equals("NA")) && Validaciones[2].toString().equals("false")) 
@@ -95,19 +109,33 @@ public class CrearListaEspecial extends CrearListaEspecialHelper
 					argu[0] = "OK"; 
 					Siebel().processKeyboardAccelerator("Ctrl+S");
 				}
+			} else
+			{
+				argu[0] = "OK";		
 			}
 			//					}
 			//				}
 		} // fin de si no hay numero
 
-		// Retorna a pedido si el argumento lo indica y si no dio problemas validar el mensaje
-		if ((argu[3].toString().equals("true")) 
+		// Retornasimage_conTecnologíaSiebel().el argumento lo indica y si no dio problemas validar el mensaje
+		if ((argu[3].toString().toLowerCase().equals("true")) 
 				&& ((argu[6].toString().equals("NA"))||(Validaciones[2].toString().equals("true")))) {
-			Threadbar().goTo("Order Entry - Line Items Detail View (Sales)0");
-			sleep(1);
+			LogoICE().ensureObjectIsVisible();
+			sleep(2);
+			try
+			{
+				Threadbar().goTo("Order Entry - Line Items Detail View (Sales)1");
+				sleep(1);
+			}
+			catch (Exception e){
+				Threadbar().goTo("Order Entry - Line Items Detail View (Sales)0");
+				System.out.println("Mensaje de excepción: "+e.getMessage());
+			}
+			
 		} else {
 			ListaEspecial().activateRow(0);	
 		}
+		ImpreResultadoScript(getScriptName( ).toString(), argu[0].toString());
 	}
 }
 

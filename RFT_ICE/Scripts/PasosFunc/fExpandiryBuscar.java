@@ -13,20 +13,27 @@ import com.rational.test.ft.value.*;
 import com.rational.test.ft.vp.*;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
- * Description   : Expandir la linea padre y buscar el producto hijo
+ * Description   : Expandir la linea padre y buscar el producto hijo en el pedido 
+ * Asume que se está en la línea padre.
+ * Hay que buscar producto si no se está.
  * Script Name   : <b>fExpandiryBuscar</b>
  * @author Sandra
- * Parametros 0) Nombre Caso 1) Indicador de conjunto en el dp 2) AMbiente 3)Si No si el error para el paso
+ * Parametros 0) Nombre Caso 1) Indicador de conjunto en el dp 2) AMbiente 
+ * 3)Si No si el error para el paso
  * Ej: CP12 1 PREQA false
  * @since  2016/01/19
+ * ultima modif
+ * 	ss 23-3-2017 se agrega tramite para incluir el port-in
  */
 public class fExpandiryBuscar extends fExpandiryBuscarHelper
 {
-	public void testMain(Object[] args) 
+	public void testMain(Object[] args) throws RationalTestException
 	{
+		ImpreEncabezadoScript(getScriptArgs(), getScriptName( ).toString());
 		String[] ExpandiryBuscar;
-		ExpandiryBuscar = new String[3];
-
+		ExpandiryBuscar = new String[4]; // se agrega tramite
+		// 0) Producto padre 1) Producto Hijo 2)Encontro / No Encontro 3)Tramite
+		
 		String[] MensError;
 		MensError = new String[4];
 
@@ -42,6 +49,8 @@ public class fExpandiryBuscar extends fExpandiryBuscarHelper
 		int i = Integer.parseInt(args[1].toString());
 		ExpandiryBuscar[0]=dpString("PROD_Padre"+i);
 		ExpandiryBuscar[1]=dpString("PROD"+i);
+		
+		ExpandiryBuscar[3] = dpString("Tramite"); 	// ss se agrega tramite
 		callScript("Scripts.Comun.ExpandiryBuscar",ExpandiryBuscar);
 
 		System.out.println("Condicion1:" + (ExpandiryBuscar[2].toString().equals("No Encontrado")

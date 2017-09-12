@@ -22,20 +22,21 @@ public class BajarIE extends BajarIEHelper
 {
 	public void testMain(Object[] args) 
 	{
+		ImpreEncabezadoScript(getScriptArgs(), getScriptName( ).toString());
 		
-		administradorDeTareasDeWindows(ANY,MAY_EXIT).activate(); // es necesario ver como abrir
-
-		Pestañas().click(atName("Procesos"), atPoint(42,14));
-		procesostable().click(atHeader(atText("Nombre de imagen")));
-		//administradorDeTareasDeWindows().inputChars("iiiiii");
-		procesostable().click(atCell(atRow(atText("iexplore.exe *32")), 
-                               atColumn(atText("Nombre de imagen"))));
-		//finalizarProcesobutton().click(atPoint(53,9));
-		
-		// Window: taskmgr.exe: Administrador de tareas de Windows
-		finalizarProcesobutton2().click(atPoint(49,4));
-
-		administradorDeTareasDeWindows(ANY,MAY_EXIT).click(CLOSE_BUTTON);
+//		administradorDeTareasDeWindows(ANY,MAY_EXIT).activate(); // es necesario ver como abrir
+//
+//		Pestañas().click(atName("Procesos"), atPoint(42,14));
+//		procesostable().click(atHeader(atText("Nombre de imagen")));
+//		//administradorDeTareasDeWindows().inputChars("iiiiii");
+//		procesostable().click(atCell(atRow(atText("iexplore.exe *32")), 
+//                               atColumn(atText("Nombre de imagen"))));
+//		//finalizarProcesobutton().click(atPoint(53,9));
+//		
+//		// Window: taskmgr.exe: Administrador de tareas de Windows
+//		finalizarProcesobutton2().click(atPoint(49,4));
+//
+//		administradorDeTareasDeWindows(ANY,MAY_EXIT).click(CLOSE_BUTTON);
 
 	}
 }

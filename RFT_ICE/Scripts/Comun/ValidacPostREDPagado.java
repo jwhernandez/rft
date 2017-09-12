@@ -13,42 +13,62 @@ import com.rational.test.ft.value.*;
 import com.rational.test.ft.vp.*;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
- * Script Name   : <b>ValidacPostEnvio</b>
+ * Script Name   : <b>ValidacPostREDPagado</b>
  * Description   : Valida que el RED se encuentre en estado "RED Pagado"
  * que botón Valorar Todo se encuentre des-habilitado
  * que Enviar se encuentre habilitado. 
- * @Param 0) OK / NOK
+ * @Param 0) OK / NOK 1)tramite
  * @since  2015/12/27
- * @author Sandra
+ * @author SS
+ * Ult modif 12/4/2017 ss se agrega opcion para port/in
  */
 public class ValidacPostREDPagado extends ValidacPostREDPagadoHelper
 {
-	public void testMain(Object[] argu) 
+	public void testMain(Object[] argu) 	
 	{
+		ImpreEncabezadoScript(getScriptArgs(), getScriptName( ).toString());
 		argu[0]="OK";
-
+		String sTramite = argu[1].toString();
+		String sEstado= null;
+		boolean bValorar=false;
+		boolean bEnviar=false;		
+		
+		// Capturar info
+		
+		if (!sTramite.equals("PortIn"))
+		{
+			sEstado= Estado().getProperty("ActiveItem").toString();
+			bValorar=Valorar_Todo().isEnabled();
+			bEnviar=enviarPedido().isEnabled();	
+		}
+		if (sTramite.equals("PortIn"))
+		{
+			sEstado= Estado_PI().getProperty("ActiveItem").toString();
+			bValorar=Valorar_Todo_PI().isEnabled();
+			bEnviar=enviarPedido_PI().isEnabled();		
+		}
+		
 		//Verificar boton enviar inhabilitado
 		IFtVerificationPoint  EstadoVP;
-		EstadoVP = vpManual("Estado","RED Pagado",Estado().getProperty("ActiveItem"));
+		EstadoVP = vpManual("Estado","RED Pagado",sEstado);
 		if  (!EstadoVP.performTest()){
 			argu[0]="NOK";
 		} else {
-			Estado().getProperty("ActiveItem");
-			IFtVerificationPoint  enviarVP;
-			enviarVP = vpManual("BotonEnvío",true,enviarPedido().isEnabled() );
+ 			IFtVerificationPoint  enviarVP;
+			enviarVP = vpManual("BotonEnvío",true,bEnviar );
 			if  (!enviarVP.performTest()){
 				argu[0]="NOK";
 			} else {
 				//Verificar boton valorar todo inhabilitado
 				IFtVerificationPoint  valorarVP;
-				valorarVP = vpManual("BotonValorarTodo",false,Valorar_Todo().isEnabled() );
+				valorarVP = vpManual("BotonValorarTodo",false,bValorar );
 				if  (!valorarVP.performTest()){
 					argu[0]="NOK";
 				}
 			}
 		}
-		System.out.println("Resultado de ValidacPostREDPagado: " + argu[0]);
-		logInfo("Resultado de ValidacPostREDPagado: " + argu[0]);
+
+		ImpreResultadoScript(getScriptName( ).toString(), argu[0].toString());
 	}
 }
 

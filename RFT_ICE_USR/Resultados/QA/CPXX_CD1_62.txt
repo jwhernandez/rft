@@ -1,0 +1,161 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: CPXX_CD1 Desde paso: 62 Modo:Real
+Modulo desde Paso : 1 Hasta paso: 200
+Hora de Inicio de la Ejecucion : 2017/08/31 16:10:16
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatosEntrada'                                                  'OK'                          
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'                                         'OK'                          
+'Paso    0  -  LeerDatosSalida'                                                   'OK'                          
+'Paso    1  -  fLogin'                                                            'OK'                          
+'Paso    2  -  fLeerVariableCondicionanteDP'                                      'NE'                          
+'Paso    3  -  fLeerVariableCondicionanteDP'                                      'NE'                          
+'Paso    4  -  fVista360'                                                         'NE'                          
+'Paso    5  -  fBuscarActivo'                                                     'NE'                          
+'Paso    6  -  fNuevoCambioPlan'                                                  'NE'                          
+'Paso    7  -  fBuscarPedidoVenta'                                                'NE'                          
+'Paso    8  -  fValidarAgencia'                                                   'NE'                          
+'Paso    9  -  fIngresarAutenticacion'                                            'NE'                          
+'Paso   10  -  fBuscarProducto'                                                   'NE'                          
+'Paso   11  -  fValidarAccion'                                                    'NE'                          
+'Paso   12  -  fBuscarProducto'                                                   'NE'                          
+'Paso   13  -  fValidarAccion'                                                    'NE'                          
+'Paso   14  -  fValidarCapturarAccionProd'                                        'NE'                          
+'Paso   15  -  fAgregarContacto_RepLegal'                                         'NE'                          
+'Paso   16  -  fBuscarProducto'                                                   'NE'                          
+'Paso   17  -  fTerminalCliente'                                                  'NE'                          
+'Paso   18  -  fSeleccionarTerminal'                                              'NE'                          
+'Paso   19  -  fIngresarIMEI'                                                     'NE'                          
+'Paso   20  -  fIngresarIMEI'                                                     'NE'                          
+'Paso   21  -  fIngresarIMEI'                                                     'NE'                          
+'Paso   22  -  fValorarTodo'                                                      'NE'                          
+'Paso   23  -  fBuscarProducto'                                                   'NE'                          
+'Paso   24  -  fExpandiryBuscar'                                                  'NE'                          
+'Paso   25  -  fCheckPagoFact'                                                    'NE'                          
+'Paso   26  -  fCrearRED'                                                         'NE'                          
+'Paso   27  -  fEsperaEstadoRED'                                                  'NE'                          
+'Paso   28  -  fVEP_Login'                                                        'NE'                          
+'Paso   29  -  fVEP_PagarREDNew'                                                  'NE'                          
+'Paso   30  -  fVEP_Logout'                                                       'NE'                          
+'Paso   31  -  fEsperaEstado'                                                     'NE'                          
+'Paso   32  -  fEnviarPedido'                                                     'NE'                          
+'Paso   33  -  fEsperaEstado'                                                     'NE'                          
+'Paso   34  -  fATV_Login'                                                        'NE'                          
+'Paso   35  -  fATV_BuscarTerminal_Plan'                                          'NE'                          
+'Paso   36  -  fConsultaREDporIDREDATV'                                           'NE'                          
+'Paso   37  -  fATV_Logout'                                                       'NE'                          
+'Paso   38  -  fVEP_Login'                                                        'NE'                          
+'Paso   39  -  fVEP_PagarRED'                                                     'NE'                          
+'Paso   40  -  fVEP_Logout'                                                       'NE'                          
+'Paso   41  -  fNuevoTramite'                                                     'NE'                          
+'Paso   42  -  fVista360'                                                         'NE'                          
+'Paso   43  -  fBuscarActivo'                                                     'NE'                          
+'Paso   44  -  fBuscarCtaFact'                                                    'NE'                          
+'Paso   45  -  fNuevaPostvta'                                                     'NE'                          
+'Paso   46  -  fBuscarPedidoVenta'                                                'NE'                          
+'Paso   47  -  fPersonalizarFavoritoNew'                                          'NE'                          
+'Paso   48  -  fCrearLE'                                                          'NE'                          
+'Paso   49  -  fAgregarNum_a_LE'                                                  'NE'                          
+'Paso   50  -  fBuscarProducto'                                                   'NE'                          
+'Paso   51  -  fExpandiryBuscar'                                                  'NE'                          
+'Paso   52  -  fExpandiryBuscar'                                                  'NE'                          
+'Paso   53  -  fExpandiryBuscar'                                                  'NE'                          
+'Paso   54  -  fAsociarListaEspecial'                                             'NE'                          
+'Paso   55  -  fIngresarAutenticacion'                                            'NE'                          
+'Paso   56  -  fValorarTodo'                                                      'NE'                          
+'Paso   57  -  fEnviarPedido'                                                     'NE'                          
+'Paso   58  -  fEsperaEstado'                                                     'NE'                          
+'Paso   59  -  fNuevoTramite'                                                     'NE'                          
+'Paso   60  -  fLeerVariableCondicionanteDP'                                      'NE'                          
+'Paso   61  -  fLeerVariableCondicionanteDP'                                      'NE'                          
+'Paso   62  -  fVista360'                                                         'OK'                          
+'Paso   63  -  fBuscarActivo'                                                     'OK'                          
+'Paso   64  -  fNuevoCambioPlan'                                                  'OK'                          
+'Paso   65  -  fBuscarPedidoVenta'                                                'OK'                          
+'Paso   66  -  fValidarAgencia'                                                   'OK'                          
+'Paso   67  -  fIngresarAutenticacion'                                            'OK'                          
+'Paso   68  -  fBuscarProducto'                                                   'OK'                          
+'Paso   69  -  fValidarAccion'                                                    'OK'                          
+'Paso   70  -  fBuscarProducto'                                                   'OK'                          
+'Paso   71  -  fValidarAccion'                                                    'OK'                          
+'Paso   72  -  fValidarCapturarAccionProd'                                        'OK'                          
+'Paso   73  -  fAgregarContacto_RepLegal'                                         'OK'                          
+'Paso   74  -  fBuscarProducto'                                                   'OK'                          
+'Paso   75  -  fEvaluarExpresionCondicionante'                                    'OK'                          
+'Paso   75  -  fTerminalCliente'                                                  'OK'                          
+'Paso   76  -  fEvaluarExpresionCondicionante'                                    'OK'                          
+'Paso   76  -  fSeleccionarTerminal'                                              'NA'                          
+'Paso   77  -  fEvaluarExpresionCondicionante'                                    'OK'                          
+'Paso   77  -  fIngresarIMEI'                                                     'NA'                          
+'Paso   78  -  fEvaluarExpresionCondicionante'                                    'OK'                          
+'Paso   78  -  fIngresarIMEI'                                                     'NA'                          
+'Paso   79  -  fEvaluarExpresionCondicionante'                                    'OK'                          
+'Paso   79  -  fIngresarIMEI'                                                     'NA'                          
+'Paso   80  -  fValorarTodo'                                                      'OK'                          
+'Paso   81  -  fEvaluarExpresionCondicionante'                                    'OK'                          
+
+
+Informe de DATOS de salida
+-----------------------------------------------------------------------------------------
+'Paso    0  -  CasosPrueba'                        'Usuario Alternativo '         'JVALERIO1'                   
+'Paso    0  -  CasosPrueba'                        'Clave Alternativa '           'jvalerio1'                   
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoPasoOK'                 '61'                          
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoTramite'                '3'                           
+'Paso    0  -  LeerDatosSalida'                    'T3_NroPedidoAnt'              '1-1775802406'                
+'Paso    0  -  LeerDatosSalida'                    'T3_NroPedidoAntAnt'           '1-1775790692'                
+'Paso    0  -  LeerDatosSalida'                    'NroServicio'                  '89846999'                    
+'Paso   63  -  fBuscarActivo'                      'NroServicio'                  '89846999'                    
+'Paso   64  -  fNuevoCambioPlan'                   'NroPedido'                    '1-1775818531'                
+'Paso   64  -  GrabarDatosSalida'                  'T3_NroPedido'                 '1-1775818531'                
+'Paso   69  -  ValidarNuevaAccion'                 'Accion'                       'Desconexión'                 
+'Paso   71  -  ValidarNuevaAccion'                 'Accion'                       'Nuevo'                       
+'Paso   72  -  ValidarCapturarAccionCantProd'      'Patrón buscado= PLAN PROFESIONAL  4 24 M' ' Producto encontrado=PLAN PROFESIONAL  4 24 M accion=Nuevo cant=null'
+'Paso   72  -  ValidarCapturarAccionCantProd'      'Patrón buscado= PLAN CONECTADO 2 24 M' ' Producto encontrado=PLAN CONECTADO 2 24 M accion=Desconexión cant=null'
+'Paso   72  -  ValidarCapturarAccionCantProd'      'Cambio de Plan '              '-Se encontraron dos productos distintos. Uno con desconexión y otro con Nuevo?OK'
+'Paso   75  -  fTerminalCliente'                   'Expresion'                    'true'                        
+'Paso   76  -  fSeleccionarTerminal'               'Expresion'                    'false'                       
+'Paso   77  -  fIngresarIMEI'                      'Expresion'                    'false'                       
+'Paso   78  -  fIngresarIMEI'                      'Expresion'                    'false'                       
+'Paso   79  -  fIngresarIMEI'                      'Expresion'                    'false'                       
+'Paso   81  -  fBuscarProducto'                    'Expresion'                    'true'                        
+
+
+Informe de Bugs
+-----------------------------------------------------------------------------------------
+'Paso   81  -  fBuscarProducto'                    'Producto no se encontró'     
+
+-----------------------------------------------------------------------------------------
+Tipo Parada         = Bug
+Mensaje de Parada   = Producto no se encontró
+Parada en paso	    = 81
+
+
+-----------------------------------------------------------------------------------------
+Fin del Informe del Caso Prueba_Conj Datos: CPXX_CD1
+-----------------------------------------------------------------------------------------
+
+
+Informe de Errores imprevistos de sistema
+-----------------------------------------------------------------------------------------
+'Paso   64  -  Accion'                             'Excepción en Método'          'Script=NuevoCambioPlan Línea=146 Método=PerformAction Error=null Clase=null Objeto=siebel.SiebButtonTestObject(Name: Aceptar, Map: Execute)'
+
+'Paso   67  -  Accion'                             'Reconocimiento Ambiguo'       'TestObjectMethodState {AMBIGUOUS_RECOGNITION,testObjectClassName=GuiTestObject(Name: BtonConsultaPedido, Map: BtonConsultaPedido),method=ensureObjectIsVisible,signature=null,args=null}'
+
+'Paso   67  -  Accion'                             'Reconocimiento Ambiguo'       'Consulta'                    
+
+'Paso   67  -  Accion'                             'Reconocimiento Ambiguo'       'TestObjectMethodState {AMBIGUOUS_RECOGNITION,testObjectClassName=GuiTestObject(Name: BtonConsultaPedido, Map: BtonConsultaPedido),method=ensureObjectIsVisible,signature=null,args=null}'
+
+'Paso   67  -  Accion'                             'Reconocimiento Ambiguo'       'Consulta'                    
+
+'Paso   67  -  Accion'                             'Reconocimiento Ambiguo'       'TestObjectMethodState {AMBIGUOUS_RECOGNITION,testObjectClassName=GuiTestObject(Name: BtonConsultaPedido, Map: BtonConsultaPedido),method=ensureObjectIsVisible,signature=null,args=null}'
+
+'Paso   67  -  Accion'                             'Excepción en Método'          'Script=IngresarAutenticacion Línea=43 Método=getProperty Error=CRFCP0048E: Property .text was not found. 
+Script playback cannot be completed. Clase=com.rational.test.ft.PropertyNotFoundException Objeto=BrowserTestObject(Ref:RemoteProxyReference{testContext:15be790508f650, objectId:56126, testObjectClass:BrowserTestObject})'
+
+
+Hora de Finalizacion de la Ejecucion: 2017/08/31 16:18:02
+-----------------------------------------------------------------------------------------

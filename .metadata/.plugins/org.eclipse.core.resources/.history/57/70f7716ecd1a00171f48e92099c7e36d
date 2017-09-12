@@ -1,0 +1,116 @@
+package Scripts.PasosFunc;
+import libreria.utileria.Tipo;
+import resources.Scripts.PasosFunc.fEsperaEstadoREDHelper;
+import com.rational.test.ft.*;
+import com.rational.test.ft.object.interfaces.*;
+import com.rational.test.ft.object.interfaces.SAP.*;
+import com.rational.test.ft.object.interfaces.WPF.*;
+import com.rational.test.ft.object.interfaces.dojo.*;
+import com.rational.test.ft.object.interfaces.siebel.*;
+import com.rational.test.ft.object.interfaces.flex.*;
+import com.rational.test.ft.object.interfaces.generichtmlsubdomain.*;
+import com.rational.test.ft.script.*;
+import com.rational.test.ft.value.*;
+import com.rational.test.ft.vp.*;
+import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
+/**
+ * Script Name   : <b>fEsperaEstadoRED</b>
+ * Descripcion   : EPermite esperar un tiempo parametrico a que se produzca un cambio 
+ * de estado del RED
+ * @author SS
+ * @Param 0)IN nombre del caso 1) Estado a esperar 2) IN Ambiente 3) IN ErrorStop (Si / No)
+ * @since  2016/05/23
+ * Ej CP03 "Por pagar+REDValido" QA true
+ * Precondiciones Estar en la pantalla del pedido 
+ */
+public class fEsperaEstadoRED extends fEsperaEstadoREDHelper
+{
+	public void testMain(Object[] args) throws RationalTestException
+	{
+		ImpreEncabezadoScript(getScriptArgs(), getScriptName( ).toString());
+		String[] MensError;
+		MensError = new String[4];
+		
+		String sScriptName=getScriptName().toString(); // 22/11/2016
+
+		String[] EsperaEstadoRED;
+		EsperaEstadoRED = new String[4];
+		//0)OK / NOK 1) Estado esperado 2)Tramite 3) NroRED o NA
+		
+		String[] DatoSalida;
+		DatoSalida = new String[5];
+		// 0) OK/NOK 1) Nro CP 2) Ambiente 3) Nombre variable 4)valor variable
+		
+		String sEstado = null;
+		String sTipoRED = "RED";
+		int iEstado = args[1].toString().indexOf("+");
+		if (iEstado !=-1) 
+		{
+			sEstado = args[1].toString().substring(0, iEstado).trim();
+			System.out.println("Estado a esperar=*" + sEstado +"*");
+			sTipoRED = args[1].toString().substring(iEstado+1).trim();
+			System.out.println("Tipo RED:*" + sTipoRED +"*");
+		} else 
+		{
+			sEstado = args[1].toString().trim();
+			System.out.println("Estado a esperar=*" + sEstado +"*");
+			System.out.println("Tipo RED:*" + sTipoRED +"*");
+		}
+
+		dpReset();
+		while (!dpDone() &&  !(dpString("NumeroCaso").equals(args[0]) && 
+				dpString("Ambiente").equals(args[2]))) {
+			dpNext(); 
+		} 
+
+		EsperaEstadoRED[1] = sEstado;
+		EsperaEstadoRED[2] = dpString("Tramite"); 
+		callScript("Scripts.Comun.EsperaEstadoRED", EsperaEstadoRED);
+		
+		if (EsperaEstadoRED[0].toString().equals("NOK")) {	
+			//MensError[0] = "Problema en el cambio de estado del RED";
+			MensError[0] = "xDefecto";
+			MensError[1] = args[3].toString();
+			MensError[2] = args[0].toString();
+			MensError[3] = getScriptName( );
+			callScript("Scripts.Comun.TerminarCasoError", MensError);
+		} 
+		if (EsperaEstadoRED[1].toString().toLowerCase().equals("pagado")) //Por pagar por pagar 11111111111111111111111111111111111111
+		{
+			if (sTipoRED.toLowerCase().equals("redvalido")) 
+			{
+				// grabar el nro de red recibido
+				setNroRED(EsperaEstadoRED[3].toString());
+				
+				String caso[] = args[0].toString().split("_"); // VC 20170405 GrabarDatosSalida espera CP03_CD1 y está recibiendo CP03_CD1_T1
+				//DatoSalida[1]=args[0].toString(); // nro caso
+				DatoSalida[1]=caso[0] + "_" + caso[1]; // nro caso VC 20170405
+				DatoSalida[2]=args[2].toString(); // nro ambiente
+				//DatoSalida[3]="NroRED"; // Nombre variable
+				DatoSalida[3]=caso[2] + "_NroRED"; // VC 20170405 Espera T1_NroRED y recibe NroRED
+				DatoSalida[4]=EsperaEstadoRED[3].toString(); // Valor de la variable
+				System.out.println("El escenario tiene su red por pagar");
+				callScript("Scripts.Comun.GrabarDatosSalida",DatoSalida);
+			}
+			infoPaso(sScriptName, Tipo.DATO,"NroRED",EsperaEstadoRED[3].toString());
+		}
+		if (EsperaEstadoRED[1].toString().equals("Pagado111111111111111111111111111111111111111111111111111")) 
+		{
+			if (sTipoRED.toLowerCase().equals("redvalido")) 
+			{
+				// grabar el nro de red recibido
+				setNroRED(EsperaEstadoRED[3].toString());
+
+				DatoSalida[1]=args[0].toString(); // nro caso
+				DatoSalida[2]=args[2].toString(); // nro ambiente
+				DatoSalida[3]="NroRED"; // Nombre variable
+				DatoSalida[4]=EsperaEstadoRED[3].toString(); // Valor de la- variable
+				System.out.println("El escenario tiene su red pagada");
+				callScript("Scripts.Comun.GrabarDatosSalida",DatoSalida);
+				System.out.println("Se ha llamado al script");
+			}
+			infoPaso(sScriptName, Tipo.DATO,"NroRED",EsperaEstadoRED[3].toString());
+		}
+	}
+}
+

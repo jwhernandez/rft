@@ -1,0 +1,69 @@
+/**
+ * 
+ */
+package libreria;
+/**
+ * @author Fernanda
+ *
+ */
+import javax.swing.JLabel;
+import javax.swing.JFrame;
+import javax.swing.*;
+import java.awt.Component;
+import java.awt.Dimension; 
+import java.awt.Toolkit;
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+
+import libreria.GUI.Script1;
+
+public class Interfaz extends JFrame implements ActionListener{
+	
+	private JLabel texto1, texto2;
+	private JMenuBar mb;
+	private JMenu Ambiente1,Ambiente2,menu2,menu3;
+	private JMenuItem mi1,mi2,mi3,mi4;
+	
+	public Interfaz() {
+		 	setLayout(null);
+	        mb=new JMenuBar();
+	        setJMenuBar(mb);
+	        Ambiente1 =new JMenu("Ambiente PreQA");
+	        mb.add(Ambiente1);
+	        Ambiente1.addActionListener(this);
+	        
+			this.setSize(600,600);
+			this.setVisible(true);
+			setLayout(null);
+			//texto1=new JLabel("¡Hola Mundo!");
+			//texto1.setBounds(100,100,200,40);
+			//add(texto1);
+	}
+
+
+    public void actionPerformed(ActionEvent e) {
+        if (e.getSource()==Ambiente1) {
+            getContentPane().setBackground(new Color(255,0,0));
+           // add("¡Esto es verde!");
+        }
+        if (e.getSource()==Ambiente1) {
+        	texto1=new JLabel("¡Esto es verde!");
+        	texto1.setBounds(100,100,200,40);
+        	add(texto1);
+            getContentPane().setBackground(new Color(0,255,0));
+        }
+    }
+	
+	
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Apéndice de método generado automáticamente
+			new Interfaz();
+		}
+}
+
+
+

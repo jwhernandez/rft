@@ -1,0 +1,48 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: CP10_CD1 Desde paso: 18 Modo:Real
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+---------------------------
+CP10_CD1_T1;LeerDatosEntrada;OK;
+CP10_CD1_T1;LeerDatoSalidaUltPasoEjec;OK;
+CP10_CD1_T1;LeerDatosSalida;OK;
+CP10_CD1_T1;Paso1:fLogin;OK;
+CP10_CD1_T1;Paso2:fCambiarVIstaUsuario;NE;
+CP10_CD1_T1;Paso3:fVista360;OK;
+CP10_CD1_T1;Paso4:fValidarUnPerfil;NE;
+CP10_CD1_T1;Paso5:fBuscarActivo;OK;
+
+
+Informe de DATOS de salida
+---------------------------
+CP10_CD1;UltimoPasoOK;17;
+CP10_CD1;UltimoTramite;1;
+CP10_CD1;T1_NroPedido;1-1740838671;
+CP10_CD1_T1;NroServicio;NA;
+CP10_CD1_T1;NroServicio;NA;
+
+
+Informe de Bugs
+-----------------
+
+
+Informe de Errores imprevistos de sistema
+------------------------------------------------
+CP10_CD1;Mensaje ME;Script=Comun.AceptarVtnasIEBrowser Línea=36 Método=findChildrenWithProperties Error=
+GetChildren(); Error:(-1018) - Could not find Siebel application object. Clase=com.rational.test.ft.Domain.Siebel.SiebelMethodExecutionFailureException Objeto=DomainTestObject(Ref:RemoteProxyReference{testContext:9841d0508a2de, objectId:Siebel, testObjectClass:com.rational.test.ft.object.interfaces.DomainTestObject});
+
+CP10_CD1;Mensaje ME;Script=Comun.BuscarCtaFact Línea=41 Método=DrillDownColumn Error=SiebelList.DrillDownColumn(..,0), Row index 0 is not valid or visible; Valid range is [0..-1]; Clase=com.rational.test.ft.Domain.Siebel.SiebelItemNotFoundException Objeto=siebel.SiebListTestObject(Name: LineasActivoPlanes, Map: LineasPlanesVista360);
+
+CP10_CD1;Mensaje UE;Script=Comun.BuscarCtaFact Línea=0 Error=SiebelList.DrillDownColumn(..,0), Row index 0 is not valid or visible; Valid range is [0..-1];;
+
+CP10_CD1;Mensaje UE;Script=PasosFunc.fBuscarCtaFact Línea=0 Error=CRFCN0018E: The 41 line of the 41 script contains an exception.;
+
+
+----------------------------------------------------------------------------------------------------------
+Tipo Parada:ObjectMethodException - Mensaje de Parada: Script=Comun.AceptarVtnasIEBrowser Línea=36 Método=findChildrenWithProperties Error=
+GetChildren(); Error:(-1018) - Could not find Siebel application object. Clase=com.rational.test.ft.Domain.Siebel.SiebelMethodExecutionFailureException Objeto=DomainTestObject(Ref:RemoteProxyReference{testContext:9841d0508a2de, objectId:Siebel, testObjectClass:com.rational.test.ft.object.interfaces.DomainTestObject})
+- Fin del Informe del Caso Prueba_Conj Datos: CP10_CD1
+----------------------------------------------------------------------------------------------------------

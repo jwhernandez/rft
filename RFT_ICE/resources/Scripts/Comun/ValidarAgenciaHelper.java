@@ -20,11 +20,11 @@ import com.rational.test.ft.vp.IFtVerificationPoint;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
  * Script Name   : <b>ValidarAgencia</b><br>
- * Generated     : <b>2015/12/27 20:07:52</b><br>
+ * Generated     : <b>2017/03/23 08:32:10</b><br>
  * Description   : Helper class for script<br>
  * Original Host : Windows 7 x86 6.1 <br>
  * 
- * @since  diciembre 27, 2015
+ * @since  marzo 23, 2017
  * @author Sandra
  */
 public abstract class ValidarAgenciaHelper extends libreria.Accion
@@ -50,6 +50,29 @@ public abstract class ValidarAgenciaHelper extends libreria.Accion
 	{
 		return new SiebPicklistTestObject(
                         getMappedTestObject("Agencia"), anchor, flags);
+	}
+	
+	/**
+	 * ICENombreAgencia: with default state.
+	 *		ClassName : SiebPicklist
+	 * 		.class : SiebPicklist
+	 * 		RepositoryName : ICE Nombre Agencia
+	 */
+	protected SiebPicklistTestObject Agencia_PI() 
+	{
+		return new SiebPicklistTestObject(
+                        getMappedTestObject("Agencia_PI"));
+	}
+	/**
+	 * ICENombreAgencia: with specific test context and state.
+	 *		ClassName : SiebPicklist
+	 * 		.class : SiebPicklist
+	 * 		RepositoryName : ICE Nombre Agencia
+	 */
+	protected SiebPicklistTestObject Agencia_PI(TestObject anchor, long flags) 
+	{
+		return new SiebPicklistTestObject(
+                        getMappedTestObject("Agencia_PI"), anchor, flags);
 	}
 	
 	

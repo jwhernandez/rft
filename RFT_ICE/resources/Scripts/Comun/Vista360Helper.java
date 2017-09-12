@@ -20,15 +20,50 @@ import com.rational.test.ft.vp.IFtVerificationPoint;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
  * Script Name   : <b>Vista360</b><br>
- * Generated     : <b>2016/01/25 16:44:52</b><br>
+ * Generated     : <b>2016/11/17 15:44:32</b><br>
  * Description   : Helper class for script<br>
  * Original Host : Windows 7 x86 6.1 <br>
  * 
- * @since  enero 25, 2016
+ * @since  noviembre 17, 2016
  * @author Sandra
  */
 public abstract class Vista360Helper extends libreria.Accion
 {
+	/**
+	 * ClaseDeCuenta: with default state.
+	 *		.text : Agrupadora de facturación Agrupadora de servicio Cliente Facturación Servicio
+	 * 		.id : s_1_1_2_0
+	 * 		OT : SiebWebComboBox
+	 * 		.title : 
+	 * 		.class : Html.SELECT
+	 * 		RN : Account Home Search Virtual Form Applet.Account Type Code
+	 * 		UN : Clase de cuenta
+	 * 		.name : s_1_1_2_0
+	 * 		.classIndex : 0
+	 */
+	protected SelectGuiSubitemTestObject ClaseCuenta() 
+	{
+		return new SelectGuiSubitemTestObject(
+                        getMappedTestObject("ClaseCuenta"));
+	}
+	/**
+	 * ClaseDeCuenta: with specific test context and state.
+	 *		.text : Agrupadora de facturación Agrupadora de servicio Cliente Facturación Servicio
+	 * 		.id : s_1_1_2_0
+	 * 		OT : SiebWebComboBox
+	 * 		.title : 
+	 * 		.class : Html.SELECT
+	 * 		RN : Account Home Search Virtual Form Applet.Account Type Code
+	 * 		UN : Clase de cuenta
+	 * 		.name : s_1_1_2_0
+	 * 		.classIndex : 0
+	 */
+	protected SelectGuiSubitemTestObject ClaseCuenta(TestObject anchor, long flags) 
+	{
+		return new SelectGuiSubitemTestObject(
+                        getMappedTestObject("ClaseCuenta"), anchor, flags);
+	}
+	
 	/**
 	 * ExecuteQuery: with default state.
 	 *		ClassName : SiebButton
@@ -53,16 +88,51 @@ public abstract class Vista360Helper extends libreria.Accion
 	}
 	
 	/**
+	 * Identificación: with default state.
+	 *		.id : s_1_1_1_0
+	 * 		.type : text
+	 * 		OT : SiebWebText
+	 * 		.title : 
+	 * 		.class : Html.INPUT.text
+	 * 		RN : Account Home Search Virtual Form Applet.ICE Identification
+	 * 		UN : Identificación
+	 * 		.name : s_1_1_1_0
+	 * 		.classIndex : 0
+	 */
+	protected TextGuiTestObject Identificación() 
+	{
+		return new TextGuiTestObject(
+                        getMappedTestObject("Identificación"));
+	}
+	/**
+	 * Identificación: with specific test context and state.
+	 *		.id : s_1_1_1_0
+	 * 		.type : text
+	 * 		OT : SiebWebText
+	 * 		.title : 
+	 * 		.class : Html.INPUT.text
+	 * 		RN : Account Home Search Virtual Form Applet.ICE Identification
+	 * 		UN : Identificación
+	 * 		.name : s_1_1_1_0
+	 * 		.classIndex : 0
+	 */
+	protected TextGuiTestObject Identificación(TestObject anchor, long flags) 
+	{
+		return new TextGuiTestObject(
+                        getMappedTestObject("Identificación"), anchor, flags);
+	}
+	
+	/**
 	 * Ir: with default state.
 	 *		.text : Ir
-	 * 		.id : s_1_1_13_0
 	 * 		.href : javascript:void(0)
+	 * 		.id : s_1_1_13_0
 	 * 		OT : SiebWebButton
 	 * 		.title : 
 	 * 		.class : Html.A
 	 * 		RN : Account Home Search Virtual Form Applet.MirrorSearchGotoView
-	 * 		UN : Ir
 	 * 		.name : 
+	 * 		UN : Ir
 	 * 		.classIndex : 0
 	 */
 	protected GuiTestObject Ir() 
@@ -73,14 +143,14 @@ public abstract class Vista360Helper extends libreria.Accion
 	/**
 	 * Ir: with specific test context and state.
 	 *		.text : Ir
-	 * 		.id : s_1_1_13_0
 	 * 		.href : javascript:void(0)
+	 * 		.id : s_1_1_13_0
 	 * 		OT : SiebWebButton
 	 * 		.title : 
 	 * 		.class : Html.A
 	 * 		RN : Account Home Search Virtual Form Applet.MirrorSearchGotoView
-	 * 		UN : Ir
 	 * 		.name : 
+	 * 		UN : Ir
 	 * 		.classIndex : 0
 	 */
 	protected GuiTestObject Ir(TestObject anchor, long flags) 
@@ -113,7 +183,7 @@ public abstract class Vista360Helper extends libreria.Accion
 	}
 	
 	/**
-	 * LogoOracle: with default state.
+	 * LogoICE: with default state.
 	 *		.alt : Con tecnología Siebel
 	 * 		.id : 
 	 * 		.src : RegularExpression(http://.*\/ecommunications_esn/images/ebus\.gif)
@@ -128,7 +198,7 @@ public abstract class Vista360Helper extends libreria.Accion
                         getMappedTestObject("LogoOracle"));
 	}
 	/**
-	 * LogoOracle: with specific test context and state.
+	 * LogoICE: with specific test context and state.
 	 *		.alt : Con tecnología Siebel
 	 * 		.id : 
 	 * 		.src : RegularExpression(http://.*\/ecommunications_esn/images/ebus\.gif)
@@ -179,7 +249,7 @@ public abstract class Vista360Helper extends libreria.Accion
 	}
 	
 	/**
-	 * OrderNumber: with default state.
+	 * NroPedido: with default state.
 	 *		ClassName : SiebText
 	 * 		.class : SiebText
 	 * 		RepositoryName : OrderNumber
@@ -190,7 +260,7 @@ public abstract class Vista360Helper extends libreria.Accion
                         getMappedTestObject("NroPedido"));
 	}
 	/**
-	 * OrderNumber: with specific test context and state.
+	 * NroPedido: with specific test context and state.
 	 *		ClassName : SiebText
 	 * 		.class : SiebText
 	 * 		RepositoryName : OrderNumber
@@ -225,6 +295,37 @@ public abstract class Vista360Helper extends libreria.Accion
 	}
 	
 	/**
+	 * s_1_1_7_0_mb: with default state.
+	 *		.text : Nuevo
+	 * 		.href : javascript:void(0)
+	 * 		.id : s_1_1_7_0_mb
+	 * 		.title : 
+	 * 		.class : Html.A
+	 * 		.name : 
+	 * 		.classIndex : 0
+	 */
+	protected GuiTestObject Nuevo() 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("Nuevo"));
+	}
+	/**
+	 * s_1_1_7_0_mb: with specific test context and state.
+	 *		.text : Nuevo
+	 * 		.href : javascript:void(0)
+	 * 		.id : s_1_1_7_0_mb
+	 * 		.title : 
+	 * 		.class : Html.A
+	 * 		.name : 
+	 * 		.classIndex : 0
+	 */
+	protected GuiTestObject Nuevo(TestObject anchor, long flags) 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("Nuevo"), anchor, flags);
+	}
+	
+	/**
 	 * Pestañas: with default state.
 	 *		ClassName : SiebPageTabs
 	 * 		.class : SiebPageTabs
@@ -248,7 +349,7 @@ public abstract class Vista360Helper extends libreria.Accion
 	}
 	
 	/**
-	 * SiebScreenViews: with default state.
+	 * TabsCliente: with default state.
 	 *		ClassName : SiebScreenViews
 	 * 		.class : SiebScreenViews
 	 * 		RepositoryName : SiebScreenViews
@@ -259,7 +360,7 @@ public abstract class Vista360Helper extends libreria.Accion
                         getMappedTestObject("SiebScreenViews"));
 	}
 	/**
-	 * SiebScreenViews: with specific test context and state.
+	 * TabsCliente: with specific test context and state.
 	 *		ClassName : SiebScreenViews
 	 * 		.class : SiebScreenViews
 	 * 		RepositoryName : SiebScreenViews

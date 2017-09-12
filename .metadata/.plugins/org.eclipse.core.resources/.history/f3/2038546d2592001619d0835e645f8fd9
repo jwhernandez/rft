@@ -1,0 +1,351 @@
+package Scripts.CasosPrueba;
+import libreria.utileria.Tipo;
+import resources.Scripts.CasosPrueba.CasosPruebaHelper;
+import resources.Scripts.CasosPrueba.CasosPruebav2Helper;
+import com.rational.test.ft.*;
+import com.rational.test.ft.object.interfaces.*;
+import com.rational.test.ft.object.interfaces.SAP.*;
+import com.rational.test.ft.object.interfaces.WPF.*;
+import com.rational.test.ft.object.interfaces.dojo.*;
+import com.rational.test.ft.object.interfaces.siebel.*;
+import com.rational.test.ft.object.interfaces.flex.*;
+import com.rational.test.ft.object.interfaces.generichtmlsubdomain.*;
+//import com.rational.test.ft.script.DatapoolScriptSupport;
+import com.rational.test.ft.script.*;
+import com.rational.test.ft.value.*;
+import com.rational.test.ft.vp.*;
+import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
+/**
+ * Descripcion : Script que lanza el framework. 
+ * Recibe el caso / modulo a ejecutar y se encarga de dicha ejecución paso a paso.
+ * Argumentos: 
+ * 0) Usuario (DE entrada - Obligatorio)
+ * 1) Clave (De entrada - Obligatorio) 
+ * 2) Ambiente (De entrada - Obligatorio - DESA/QA/PREQA) 
+ * 3) Nombre del caso (De entrada - Obligatorio - ej: CPO3/CP56)
+ * 4) Nombre del Conjunto de Datos (CD)  (De entrada - Obligatorio - CD1 CD2 CD3 etc)
+ * 5) Paso desde (De entrada - Obligatorio - Indica el paso, >1 para las reejecuciones x falla)
+ * 6) Paso hasta (De entrada - Obligatorio - Indica el paso hasta. FIN para todo). 
+ * 7) Usuario alternativo (De entrada - Opcional) 
+ * 8) Clave de usuario alternativo (De entrada - Opcional)
+ * 9) Modo (si no viene nada es real si se coloca puede ser simulacion)
+ * 10) Usuario VEP (No usado aun)
+ * 11) Clave VEP (No usado aun)
+ 
+ * Ej JVALERIO1 jvalerio1 QA CP76 CD1 1 13 NA NA simulacion / NA  
+ */
+public class CasosPruebav2 extends CasosPruebav2Helper
+{
+	public void testMain(Object[] args) throws RationalTestException
+	{
+		try {
+			ImpreEncabezadoScript(getScriptArgs(), getScriptName( ).toString());
+
+			String[] PasoFuncional;
+			PasoFuncional = new String[5];
+
+			String[] PasoEjecuta;
+			PasoEjecuta = new String[6];
+			// Param 0) Resultado (true / false) 1) Ambiente 2) paso desde 3) paso a ejecutar 4)sCasoEjecuta 5)sCasoReEjec
+
+			String[] InformarPaso;
+			InformarPaso = new String[1];
+
+			String[] LeerDatosEntrada;
+			LeerDatosEntrada =new String[4];
+			// Datos de entrada 0)OK/NOK 1) Nro CP 2) Ambiente 3)Opción (Dato o Todo) 
+
+			String[] LeerDatosSalida;
+			LeerDatosSalida =new String[3];
+			// Datos salida     0)OK/NOK 1) Nro CP 2) Ambiente 
+			
+			String[] LeerDatosSalidaTramite;
+			LeerDatosSalidaTramite =new String[4];
+			// Datos salida     0)OK/NOK 1) Nro CP 2) Ambiente 3) Tramite
+
+			String[] GrabarDatos;
+			GrabarDatos =new String[5];
+			// 0) OK/NOK 1) Nro CP 2) Ambiente 3) inicializar o Nombre variable 4)valor variable
+			
+			String[] MensError;
+			MensError = new String[4];
+			
+			String sCaso =null;
+			String sPasoDesde ;
+			String sPasoHasta ;		
+			int iPasoDesde = 1 ;
+			int iPasoHasta ;
+			String sCaso_CD;
+			String sCaso_CD_T;
+			String sNombrePaso = null; // nombre del paso del reporte
+			String sTramite = "1";
+			setNroTramite(sTramite);
+			
+			setLoginIf("NOK");
+
+			setUsuario(args[0].toString()); // Agregado para la busqueda de CM
+			setClave(args[1].toString()); // Agregado para el manejo de modulos
+			setNomAmbiente(args[2].toString());
+			sCaso = args[3].toString(); // CPnn
+			sCaso_CD= sCaso + "_" + args[4].toString(); // CPnn_CDi
+			setNroCaso(sCaso_CD);// CPnn_CDi
+			//setNroMod(iNroMod);
+			sPasoDesde = args[5].toString();
+			sPasoHasta = args[6].toString();
+			if (!sPasoDesde.toLowerCase().equals("a")) iPasoDesde =  (Integer.parseInt(sPasoDesde));
+			iPasoHasta = (Integer.parseInt(args[6].toString()));
+			setNroPasoDesde(sPasoDesde);
+			String sModo = "Real";
+			if (args.length >= 10 && args[9].toString().toLowerCase().equals("simulacion")) 
+				sModo = "simulacion";
+			
+			boolean bSimulacion = false;
+			if (sModo.equals("simulacion")) bSimulacion = true;
+			setModo(sModo);	
+			setTipoError("Bug"); // Por defecto se asume que si el caso para será por un bug identificado
+			
+			System.out.println("Modo de Ejecución:" + sModo);
+
+			// Usuario y clave alternativos
+			String sUsuarioALT = "NA";
+			String sClaveALT = "NA";
+			if (args.length >= 8 && !args[7].toString().equals("NA")) { 
+				sUsuarioALT = args[7].toString();
+				infoPaso(sCaso_CD, Tipo.DATO,"Usuario Alternativo ",sUsuarioALT);
+				System. out.println("Usuario Alternativo "+sUsuarioALT);
+
+				if (args.length >= 9 && !args[8].toString().equals("NA")) { 
+					sClaveALT = args[8].toString();
+					infoPaso(sCaso_CD, Tipo.DATO,"Clave Alternativa ",sClaveALT);
+					System. out.println("Clave Alternativa "+sClaveALT);
+					setUsuarioAlt(sUsuarioALT); 
+					setClaveAlt(sClaveALT); }}
+
+			sCaso_CD_T=sCaso_CD + "_T"+getNroTramite();
+			System.out.println("------------------------------------------------------------");
+			System.out.println("Inicio de caso de Prueba y Conjunto de Datos:" + getNroCaso());
+			System.out.println("------------------------------------------------------------");
+			
+			boolean bActualiza = true;
+			// ver si es conveniente no actualizar para un segundo modulo
+
+			if (bActualiza && !bSimulacion) { // Ver si actualizar o no los datos de entrada en simulacion 
+				System.out.println("----------------------------------");
+				System.out.println("Se actualizan los datos de entrada");
+				System.out.println("----------------------------------");
+
+				LeerDatosEntrada[1] = sCaso_CD; // CPnn_CDi
+				LeerDatosEntrada[2] = args[2].toString();
+				LeerDatosEntrada[3] = "Todo";
+				callScript("Scripts.Comun.LeerDatosEntrada",LeerDatosEntrada);
+				if  (!LeerDatosEntrada[0].toString().equals("OK")){
+					MensError[0] = "Actualizar datos entrada falló";
+					MensError[1] = args[3].toString();
+					MensError[2] = args[0].toString();
+					MensError[3] = getScriptName( );
+					callScript("Scripts.Comun.TerminarCasoError", MensError);
+				} else infoPaso(sCaso_CD_T, Tipo.PASO,"LeerDatosEntrada", "OK");
+			} else infoPaso(sCaso_CD_T, Tipo.PASO,"LeerDatosEntrada", "NE");
+
+			/** Lectura de parametros desde el data pools */
+			// Es una re-ejecución
+			if (!sPasoDesde.equals("1")) { // Es A o mayor que 1. 
+				System.out.println("----------------------------------");
+				System.out.println("Se lee el último trámite y paso");
+				System.out.println("----------------------------------");
+				LeerDatosSalida[1] = sCaso_CD; // CPnn_CDi
+				LeerDatosSalida[2] = args[2].toString();
+				callScript("Scripts.Comun.LeerDatoSalidaUltPasoEjec",LeerDatosSalida);
+				if  (!LeerDatosSalida[0].toString().equals("OK")){
+					MensError[0] = "Leer último trámite falló";
+					MensError[1] = args[3].toString();
+					MensError[2] = args[0].toString();
+					MensError[3] = getScriptName( );
+					callScript("Scripts.Comun.TerminarCasoError", MensError);
+				} else infoPaso(sCaso_CD_T, Tipo.PASO,"LeerDatoSalidaUltPasoEjec", "OK");
+				
+				System.out.println("Ultimo trámite y paso:" + getUltimoPasoOk()+getUltimoTramite());
+				if (sPasoDesde.toLowerCase().equals("a")) 
+					{
+					iPasoDesde =  (Integer.parseInt(getUltimoPasoOk()));
+					iPasoDesde = iPasoDesde + 1;
+					System.out.println("Reinicio automatico en paso :" + iPasoDesde);
+					}
+				
+				// Una vez que se sabe el tramite se lee el conjunto de datos de ese trámite
+				System.out.println("---------------------------------------");
+				System.out.println("Se leen los datos de salida del tramite");
+				System.out.println("---------------------------------------");
+				LeerDatosSalidaTramite[1] = sCaso_CD; // CPnn_CDi
+				LeerDatosSalidaTramite[2] = args[2].toString();
+				LeerDatosSalidaTramite[3] = "T" + getUltimoTramite();
+				sTramite = getUltimoTramite();
+				callScript("Scripts.Comun.LeerDatosSalida",LeerDatosSalidaTramite);
+				if  (!LeerDatosSalidaTramite[0].toString().equals("OK")){
+					MensError[0] = "Leer datos de salida del trámite falló";
+					MensError[1] = args[3].toString();
+					MensError[2] = args[0].toString();
+					MensError[3] = getScriptName( );
+					callScript("Scripts.Comun.TerminarCasoError", MensError);
+				} else infoPaso(sCaso_CD_T, Tipo.PASO,"LeerDatosSalida", "OK");
+			} 
+			// No es una re-ejecución sino una ejecución que comienza en 1
+			else {
+				//if (!bSimulacion) {
+
+					System.out.println("----------------------------------");
+					System.out.println("Se inician los datos de salida");
+					System.out.println("----------------------------------");
+					GrabarDatos[1] = sCaso_CD; // CPnn_CDi
+					GrabarDatos[2] = args[2].toString();
+					GrabarDatos[3] = "inicializar";
+					callScript("Scripts.Comun.GrabarDatosSalida",GrabarDatos);
+					if  (!GrabarDatos[0].toString().equals("OK")){
+						MensError[0] = "Grabar datos salida falló";
+						//MensError[0] = "xDefecto";
+						MensError[1] = args[3].toString();
+						MensError[2] = args[0].toString();
+						MensError[3] = getScriptName( );
+						callScript("Scripts.Comun.TerminarCasoError", MensError);
+					} else infoPaso(sCaso_CD_T, Tipo.PASO,"GrabarDatosSalida", "OK");
+				//} // Solo se graba en el DP de salida si no es simulacion
+			}
+			String sCasoPasos = sCaso + "Pasos" ; // CPnnPasos
+			String sCasoParam = sCaso + "Param" ;
+			String sCasoEjecuta = sCaso + "Ejecuta" ;
+			String sCasoErrorStop = sCaso + "ErrorStop" ;
+			String sCasoReEjec = sCaso + "ReEjec";
+
+			/**
+			 * Itera el data pools de pasos funcionales para determinar si se ejecuta o no
+			 */
+
+			// Mientras aun queden filas por recorrer 
+			int currentDatapoolRow = 0; 
+			int iNumeroPaso = 1; 
+			dpReset();
+			while (!dpDone() && !(dpString(sCasoPasos).equals("FIN")) 
+					&& !dpString(sCasoEjecuta).toLowerCase().equals("terminar")
+					&& iNumeroPaso<=iPasoHasta ) // agregado para manejo del paso hasta
+			{ 
+				// Print the current datapool row number to the playback log 
+				logInfo("Starting datapool row " + currentDatapoolRow); 
+
+				/**
+				 * Por cada paso informa estado de ejecución NE/OK o NA = 
+				 * NE= No ejecutó
+				 * NA= No aplica
+				 */
+
+				// Se analiza si el paso se debe ejecutar en el ambiente
+
+				PasoEjecuta[1] = args[2].toString(); // ambiente
+				PasoEjecuta[2] = Integer.toString(iPasoDesde); // paso desde
+				PasoEjecuta[3] = Integer.toString(iNumeroPaso); // paso a ejecutar
+				PasoEjecuta[4] = dpString(sCasoEjecuta).toLowerCase();
+				PasoEjecuta[5] = dpString(sCasoReEjec).toLowerCase();
+				System.out.println("Script a validar:" + dpString(sCasoPasos));
+				callScript("Scripts.Comun.ValidaPasoSiEjecuta",PasoEjecuta);
+				boolean bPasoEjecuta = Boolean.parseBoolean(PasoEjecuta[0].toString());
+
+				sNombrePaso="Paso"+ iNumeroPaso + ":" + dpString(sCasoPasos);
+				if (bPasoEjecuta){
+					// 0) CPnn_CDi_Tj 1) Param 2) AMbiente 3) ErrorStop 4) Paso
+					PasoFuncional [0] = sCaso_CD + "_T" + sTramite; // CPnn_CDi_Tj
+					String sCurrentTestCaseStep = Integer.toString(iNumeroPaso);
+					InformarPaso [0] = sCurrentTestCaseStep;
+					callScript("Scripts.Comun.InfomarPaso", InformarPaso);
+					PasoFuncional [1] = dpString(sCasoParam);
+					PasoFuncional[2] = args[2].toString(); // ambiente
+					PasoFuncional [3] = dpString(sCasoErrorStop).toLowerCase(); // error para o no ejecucion
+					PasoFuncional [4] = "Paso"+Integer.toString(iNumeroPaso ); // Se agrega nro de paso
+					switch (dpString(sCasoPasos)) {
+					case "fNuevoTramite":
+						//if (!bSimulacion){ // Si es simulacion no graba
+							sTramite = dpString(sCasoParam);
+							setNroTramite(sTramite); 
+							sCaso_CD_T=sCaso_CD + "_T"+getNroTramite();
+
+							GrabarDatos[1]=sCaso_CD; // CPnn_CDi
+							GrabarDatos[2]=args[2].toString(); // nro ambiente
+							GrabarDatos[3]="UltTramite"; // Nombre variable
+							GrabarDatos[4]=sTramite; // Valor de la variable (Se graba solo el digito)
+							callScript("Scripts.Comun.GrabarDatosSalida",GrabarDatos);
+							
+							// El nro de pedido anterior y el servicio se deben heredar
+							// El nroservicio ya esta seteado, se lo guarda por si hay caidas
+							setNroPedidoAnt(getNroPedido());
+							GrabarDatos[1]=sCaso_CD; // CPnn_CDi
+							GrabarDatos[2]=args[2].toString(); // nro ambiente
+							GrabarDatos[3]="T"+ getNroTramite()+"_NroPedidoAnt"; // Tx_Nombre variable 
+							GrabarDatos[4]=getNroPedido(); // Se guarda el pedido del tramite anterior
+							callScript("Scripts.Comun.GrabarDatosSalida",GrabarDatos);
+
+							GrabarDatos[1]=sCaso_CD; // CPnn_CDi
+							GrabarDatos[2]=args[2].toString(); // nro ambiente
+							GrabarDatos[3]="T"+getNroTramite()+"_NroServicio"; // Tx_Nombre variable 
+							GrabarDatos[4]=getNroServicio(); // Se guarda el servicio del tramite anterior
+							callScript("Scripts.Comun.GrabarDatosSalida",GrabarDatos);
+						//}				
+						break;
+					case "fLoginIf":
+						// Siempre se ejecuta -- en modo simulacion o no simulacion
+							callScript("Scripts.PasosFunc." + dpString(sCasoPasos),PasoFuncional);
+						break;
+					default:
+						if (!sModo.equals("simulacion"))
+						{
+							callScript("Scripts.PasosFunc." + dpString(sCasoPasos),PasoFuncional);
+						}
+						else 	
+						{
+							System.out.println("Script Name = " + dpString(sCasoPasos));
+							callScript("Scripts.PasosFunc." + "fSimulacion",PasoFuncional);
+						}
+						//if (!sModo.equals("simulacion"))
+						//{
+							setUltimoPasoOk(Integer.toString(iNumeroPaso ));
+							GrabarDatos[1]=sCaso_CD; // CPnn_CDi
+							GrabarDatos[2]=args[2].toString(); // nro ambiente
+							GrabarDatos[3]="UltPasoOK"; // Nombre variable
+							GrabarDatos[4]=getUltimoPasoOk(); // Valor de la variable
+							callScript("Scripts.Comun.GrabarDatosSalida",GrabarDatos);
+						//}
+							break;
+					}
+					infoPaso(sCaso_CD_T, Tipo.PASO,sNombrePaso, "OK");
+				}
+				else infoPaso(sCaso_CD_T, Tipo.PASO,sNombrePaso, "NE");
+
+				iNumeroPaso++;
+				currentDatapoolRow++; 
+				dpNext(); 
+			} // end del while
+
+			if (dpString(sCasoPasos).equals("FIN")) {
+				infoPaso(sCaso_CD_T, Tipo.PASO,"Fin del caso", "OK");
+				if (getTipoError().equals("NA")) setTipoError("FIN");
+				if (getMensajeError().equals("NA")) setMensajeError("FIN del caso en paso " + iNumeroPaso);
+
+				ImpreResultadoScript("Fin del caso", "OK");	} else {
+					if (dpString(sCasoEjecuta).toLowerCase().equals("terminar")) {
+						if (getTipoError().equals("NA")) setTipoError("Parada Voluntaria");
+						if (getMensajeError().equals("NA")) setMensajeError("Parada voluntaria en paso " + iNumeroPaso);
+
+						infoPaso(sCaso_CD_T, Tipo.PASO,sNombrePaso, "Se paro voluntariamente el caso usando el comando Terminar");
+						ImpreResultadoScript("Caso parado voluntariamente", "OK");} 
+					else 
+						if (iNumeroPaso>iPasoHasta) {
+							infoPaso(sCaso_CD_T, Tipo.PASO,sNombrePaso, "Se paro voluntariamente el caso en el paso hasta " + iPasoHasta);
+							if (getTipoError().equals("NA")) setTipoError("Parada x Paso Hasta");
+							if (getMensajeError().equals("NA")) setMensajeError("Parada en paso " + iNumeroPaso);
+
+							ImpreResultadoScript("Caso parado en paso hasta", "OK");
+						}
+				}	
+
+	} catch (RationalTestException e) {
+		e.printStackTrace(); }
+}
+}
+

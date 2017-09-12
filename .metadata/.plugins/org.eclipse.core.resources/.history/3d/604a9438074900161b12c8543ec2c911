@@ -1,0 +1,14 @@
+package libreria.GUI;
+
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+
+public class VentanaInicio {
+
+	public static void main(String[] args) {
+		// TODO Apéndice de método generado automáticamente
+
+	}
+
+}

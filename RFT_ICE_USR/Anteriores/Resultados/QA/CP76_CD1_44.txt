@@ -1,0 +1,42 @@
+
+---------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: CP76_CD1 Desde paso: 44 Modo:Real
+---------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+---------------------------
+CP76_CD1_T1;LeerDatosEntrada;OK;
+CP76_CD1_T1;LeerDatoSalidaUltPasoEjec;OK;
+CP76_CD1_T1;LeerDatosSalida;OK;
+CP76_CD1_T1;Paso1:fLogin;NE;
+
+
+Informe de DATOS de salida
+---------------------------
+CP76_CD1;UltimoPasoOK;47;
+CP76_CD1;UltimoTramite;2;
+CP76_CD1;T2_NroPedido;1-1735576628;
+CP76_CD1;NroServicio;10101010;
+
+
+Informe de Bugs
+-----------------
+
+
+Informe de Errores imprevistos de sistema
+-----------------
+CP76_CD1;Mensaje ME;Script=Comun.CerrarVentanasdeDialogo Línea=51 Método=inputKeys Error=La ventana no es visible Clase=com.rational.test.ft.WindowActivateFailedException Objeto=TopLevelTestObject(Ref:RemoteProxyReference{testContext:124c98050b344c, objectId:35938, testObjectClass:TopLevelTestObject});
+CP76_CD1;Mensaje ME;Script=Comun.CerrarVentanasdeDialogo Línea=51 Método=getProperty Error=CRFCP0048E: No se ha encontrado la propiedad .text. 
+La reproducción del script no se puede completar. Clase=com.rational.test.ft.PropertyNotFoundException Objeto=TopLevelTestObject(Ref:RemoteProxyReference{testContext:124c98050b344c, objectId:35944, testObjectClass:TopLevelTestObject});
+CP76_CD1;Mensaje ME;Script=Comun.CerrarVentanasdeDialogo Línea=51 Método=getProperty Error=CRFCP0048E: No se ha encontrado la propiedad .text. 
+La reproducción del script no se puede completar. Clase=com.rational.test.ft.PropertyNotFoundException Objeto=TopLevelTestObject(Ref:RemoteProxyReference{testContext:124c98050b344c, objectId:35944, testObjectClass:TopLevelTestObject});
+CP76_CD1;Mensaje UE;Script=Comun.CerrarVentanasdeDialogo Línea=0 Error=Can't find id 35940;
+CP76_CD1;Mensaje UE;Script=Comun.CerrarIE Línea=0 Error=CRFCN0018E: La línea 41 del script 41 contiene una excepción.;
+CP76_CD1;Mensaje UE;Script=Comun.Login Línea=0 Error=CRFCN0018E: La línea 30 del script 30 contiene una excepción.;
+CP76_CD1;Mensaje UE;Script=PasosFunc.fLoginIf Línea=0 Error=CRFCN0018E: La línea 47 del script 47 contiene una excepción.;
+
+----------------------------------------------------------------------------------------------------------
+Tipo Error:Bug Mensaje de Error:null
+Fin del Informe del Caso Prueba y Conj Datos: CP76_CD1
+----------------------------------------------------------------------------------------------------------

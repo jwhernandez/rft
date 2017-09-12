@@ -1,0 +1,121 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: CP32_CD1 Desde paso: 5 Modo:simulacion
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatosEntrada'                                                  'NE'                          
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'                                         'OK'                          
+'Paso    0  -  LeerDatosSalida'                                                   'OK'                          
+'Paso    1  -  fLogin'                                                            'OK'                          
+'Paso    2  -  fASRM_Login'                                                       'OK'                          
+'Paso    3  -  fASRM_ModificarEstadoServicio'                                     'NE'                          
+'Paso    4  -  fASRM_Logout'                                                      'NE'                          
+'Paso    5  -  fVista360'                                                         'OK'                          
+'Paso    6  -  fNuevoPedidoPortIn'                                                'OK'                          
+'Paso    7  -  fValidarMensaje'                                                   'OK'                          
+'Paso    8  -  fValidarEstadoPedPortIn'                                           'NE'                          
+'Paso    9  -  fASRM_Login'                                                       'OK'                          
+'Paso   10  -  fASRM_ModificarEstadoServicio'                                     'OK'                          
+'Paso   11  -  fASRM_Logout'                                                      'OK'                          
+'Paso   12  -  fVista360'                                                         'OK'                          
+'Paso   13  -  fNuevoPedidoPortIn'                                                'OK'                          
+'Paso   14  -  fValidarMensaje'                                                   'OK'                          
+'Paso   15  -  fValidarEstadoPedPortIn'                                           'NE'                          
+'Paso   16  -  fASRM_Login'                                                       'OK'                          
+'Paso   17  -  fASRM_ModificarEstadoServicio'                                     'OK'                          
+'Paso   18  -  fASRM_Logout'                                                      'OK'                          
+'Paso   19  -  fVista360'                                                         'OK'                          
+'Paso   20  -  fNuevoPedidoPortIn'                                                'OK'                          
+'Paso   21  -  fValidarMensaje'                                                   'OK'                          
+'Paso   22  -  fValidarEstadoPedPortIn'                                           'NE'                          
+'Paso   23  -  fVista360'                                                         'OK'                          
+'Paso   24  -  fNuevoPedidoPortIn'                                                'OK'                          
+'Paso   25  -  fValidarMensaje'                                                   'OK'                          
+'Paso   26  -  fCapturarPedidoPortIn'                                             'OK'                          
+'Paso   27  -  fValidarServicio'                                                  'NE'                          
+'Paso   28  -  fBuscarPedidoVentaPI'                                              'OK'                          
+'Paso   29  -  fObtenerMorosidad'                                                 'OK'                          
+'Paso   30  -  fCompraPlanCategoriaCatalogoNew'                                   'OK'                          
+'Paso   31  -  fIngresarAutenticacion'                                            'OK'                          
+'Paso   32  -  fIngresarSIM'                                                      'OK'                          
+'Paso   33  -  fCrearRED'                                                         'OK'                          
+'Paso   34  -  fValidarMensaje'                                                   'OK'                          
+'Paso   35  -  fVista360'                                                         'OK'                          
+'Paso   36  -  fCambiarPerfil'                                                    'OK'                          
+'Paso   37  -  fCrearRED'                                                         'OK'                          
+'Paso   38  -  fValidarMensaje'                                                   'OK'                          
+'Paso   39  -  fValorarTodo'                                                      'OK'                          
+'Paso   40  -  fCrearRED'                                                         'OK'                          
+'Paso   41  -  fValidarMensaje'                                                   'OK'                          
+'Paso   42  -  fSeleccionarTerminal'                                              'OK'                          
+'Paso   43  -  fCrearRED'                                                         'OK'                          
+'Paso   44  -  fValidarMensaje'                                                   'OK'                          
+'Paso   45  -  fValorarTodo'                                                      'OK'                          
+'Paso   46  -  fCrearRED'                                                         'OK'                          
+'Paso   47  -  fValidarMensaje'                                                   'OK'                          
+'Paso   48  -  fIngresarIMEI'                                                     'OK'                          
+'Paso   49  -  fCrearRED'                                                         'OK'                          
+'Paso   50  -  fValidarMensaje'                                                   'OK'                          
+'Paso   51  -  fIngresarIMEI'                                                     'OK'                          
+'Paso   52  -  fCrearRED'                                                         'OK'                          
+'Paso   53  -  fValidarMensaje'                                                   'OK'                          
+'Paso   54  -  fIngresarIMEI'                                                     'OK'                          
+'Paso   55  -  fCrearRED'                                                         'OK'                          
+'Paso   56  -  fValidarMensaje'                                                   'OK'                          
+'Paso   57  -  fGenerarCtaFact'                                                   'OK'                          
+'Paso   58  -  fCrearRED'                                                         'OK'                          
+'Paso   59  -  fValidarMensaje'                                                   'OK'                          
+'Paso   60  -  fIngresarIMEI'                                                     'OK'                          
+'Paso   61  -  fIngresarIMEI'                                                     'OK'                          
+'Paso   62  -  fIngresarIMEI'                                                     'OK'                          
+'Paso   63  -  fCrearRED'                                                         'OK'                          
+'Paso   64  -  fEsperaEstadoRED'                                                  'OK'                          
+'Paso   65  -  fValidarGenCtaFact'                                                'OK'                          
+'Paso   66  -  fValidarBtonValorarTodo'                                           'OK'                          
+'Paso   67  -  fAnularRED'                                                        'OK'                          
+'Paso   68  -  fBuscarPedidoVentaPI_Admin'                                        'OK'                          
+'Paso   69  -  fValidaNumeroServicioPI_Admin'                                     'OK'                          
+'Paso   70  -  fValidaTipoOrdenPI_Admin'                                          'OK'                          
+'Paso   71  -  fCapturaPantalla'                                                  'OK'                          
+'Paso   72  -  fLogout'                                                           'OK'                          
+'Paso   73  -  fLogin'                                                            'OK'                          
+'Paso   74  -  fBuscarPedidoVentaPI'                                              'OK'                          
+'Paso   75  -  fCancelarPedido'                                                   'OK'                          
+'Paso   76  -  fValidarMensaje'                                                   'OK'                          
+'Paso   77  -  fLogout'                                                           'OK'                          
+'Paso   78  -  fLogin'                                                            'OK'                          
+'Paso   79  -  fBuscarPedidoVentaPI'                                              'OK'                          
+'Paso   80  -  fCancelarPedido'                                                   'OK'                          
+'Paso   81  -  Fin del caso'                                                      'OK'                          
+
+
+Informe de DATOS de salida
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoPasoOK'                 '55'                          
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoTramite'                '1'                           
+'Paso    0  -  LeerDatosSalida'                    'T1_NroPedido'                 '1-1746282041'                
+'Paso    0  -  LeerDatosSalida'                    'NroServicio'                  '89840999'                    
+
+
+Informe de Bugs
+-----------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------
+Tipo Parada         = FIN
+Mensaje de Parada   = FIN del caso en paso 81
+Parada en paso	    = 81
+
+
+-----------------------------------------------------------------------------------------
+Fin del Informe del Caso Prueba_Conj Datos: CP32_CD1
+-----------------------------------------------------------------------------------------
+
+
+Informe de Errores imprevistos de sistema
+-----------------------------------------------------------------------------------------
+
+Hora de Finalizacion de la Ejecucion: 2017/02/01 16:09:02
+-----------------------------------------------------------------------------------------

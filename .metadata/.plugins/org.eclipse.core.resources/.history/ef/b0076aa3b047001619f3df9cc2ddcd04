@@ -1,0 +1,86 @@
+/**
+ * 
+ */
+package libreria;
+/**
+ * @author Fernanda
+ *
+ */
+import javax.swing.JLabel;
+import javax.swing.JFrame;
+import javax.swing.*;
+import java.awt.Component;
+import java.awt.Dimension; 
+import java.awt.Toolkit;
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+
+import libreria.GUI.Script1;
+
+public class Interfaz extends JFrame implements ActionListener{
+	
+	private JLabel texto1, texto2;
+	private JMenuBar mb;
+	private JMenu Ambiente1,Ambiente2,menu2,menu3;
+	private JMenuItem mi1,mi2,mi3,mi4;
+	
+	public Interfaz() {
+		 	setLayout(null);
+	        mb=new JMenuBar();
+	        setJMenuBar(mb);
+	        Ambiente1 =new JMenu("Ambiente PreQA");
+	        mb.add(Ambiente1);
+	        Ambiente2=new JMenu("Ambiente QA");
+	        mb.add(Ambiente2);
+
+	        /*menu2=new JMenu("Tamaño de la ventana");
+	        Ambiente1.add(menu2);
+	        menu3=new JMenu("Color de fondo");
+	        Ambiente1.add(menu3);
+	        mi1=new JMenuItem("640*480");
+	        menu2.add(mi1);
+	        mi1.addActionListener(this);
+	        mi2=new JMenuItem("1024*768");
+	        menu2.add(mi2);
+	        mi2.addActionListener(this);
+	        mi3=new JMenuItem("Rojo");
+	        menu3.add(mi3);
+	        mi3.addActionListener(this);
+	        mi4=new JMenuItem("Verde");
+	        menu3.add(mi4);
+	        mi4.addActionListener(this);
+	        */
+			this.setSize(600,600);
+			this.setVisible(true);
+			setLayout(null);
+			texto1=new JLabel("¡Hola Mundo!");
+			texto1.setBounds(100,100,200,40);
+			add(texto1);
+	}
+
+
+    public void actionPerformed(ActionEvent e) {        }
+        if (e.getSource()==Ambiente1) {
+            getContentPane().setBackground(new Color(255,0,0));
+        }
+        if (e.getSource()==Ambiente2) {
+        	texto1=new JLabel("¡Esto es verde!");
+        	add(texto1);
+            getContentPane().setBackground(new Color(0,255,0));
+        }
+    }
+	
+	
+	
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Apéndice de método generado automáticamente
+			new Interfaz();
+		}
+}
+
+
+

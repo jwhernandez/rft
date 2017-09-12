@@ -1,0 +1,97 @@
+package GUI;
+
+//IMPORTACIONES DE LAS BIBLIOTECAS
+import javax.swing.*;
+
+import java.awt.*;
+
+import org.jvnet.substance.SubstanceLookAndFeel;
+
+public class CP12{
+
+	//DEFINICION DE VARIABLES
+	private JLabel nroCuentaL,planL,IMEINuevoL, nroServicioL, IdentificacionL,IMEICoL,TituloL, Label1, Label2;
+	private JTextField nroCuentaTF, planTF, IMEINuTF, nroServicioTF, IdentificacionTF,IMEICoTF;
+	
+	public CP12()
+	{
+		//CREACION DEL FRAME
+		JFrame frame = new JFrame();
+		frame.setTitle("Automatizacion de Pruebas Regresivas");
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.pack(  );
+		frame.setSize(600, 600);
+		frame.setVisible(true);
+		frame.setLayout(new FlowLayout());      
+		frame.setResizable(false);
+		
+		//DEFINICION DEL TITULO
+		TituloL = new JLabel("Escenario 20", SwingConstants.CENTER);
+		TituloL.setFont( new Font( "Helvetica", Font.BOLD, 18));
+		Label1 = new JLabel();
+		Label2 = new JLabel();
+			
+		//DEFINICION DE PANELS
+		JPanel  panelLabel  	 = new JPanel();		JPanel  panelTF  		 = new JPanel();
+		JPanel  panelIntegracion = new JPanel();		JPanel  panelab  		 = new JPanel();
+		
+		//DEFINICION DE BOTONES
+		JButton boton1 		= new JButton();
+		JButton boton2		= new JButton();
+				
+		//INSTANCIAS DE LABEL
+		nroCuentaL 			= new JLabel("Numero de cuenta:");			planL				= new JLabel("Plan:");
+		IMEINuevoL 			= new JLabel("IMEI Nuevo:");				IMEICoL 			= new JLabel("IMEI:");
+		nroServicioL 		= new JLabel("Nuemero de Servicio:");		IdentificacionL 	= new JLabel("Identificacion:");	
+		   
+		//INSTANCIAS DE TEXTFIELD
+		nroCuentaTF 		= new JTextField();		planTF 				= new JTextField();		IMEINuTF		= new JTextField();
+		nroServicioTF 		= new JTextField();   	IdentificacionTF	= new JTextField();		IMEICoTF		= new JTextField();
+		  
+		//AGREGAR LOS LABELS AL PANEL
+		panelLabel.setLayout(new GridLayout(8,0));
+		panelLabel.add(Label1);
+		panelLabel.add(nroCuentaL);
+		panelLabel.add(planL);
+		panelLabel.add(IMEINuevoL);
+		panelLabel.add(nroServicioL);
+		panelLabel.add(IdentificacionL);
+		panelLabel.add(IMEICoL);
+		
+		//AGREGAR LOS TEXTFIELD AL PANEL
+		panelTF.setLayout(new GridLayout(8,0));
+		panelTF.add(Label2);
+		panelTF.add(nroCuentaTF);
+		panelTF.add(planTF);
+		panelTF.add(IMEINuTF);
+		panelTF.add(nroServicioTF);
+		panelTF.add(IdentificacionTF);  
+		panelTF.add(IMEICoTF);
+		 
+		//AGREGAR AMBOS PANELES PARA DISTRIBUIRLO EN COLUMNAS
+		panelIntegracion.setLayout(new GridLayout(1,1));
+		panelIntegracion.setPreferredSize(new Dimension(500,300));
+		panelIntegracion.add(panelLabel);
+		panelIntegracion.add(panelTF);
+		            
+	    //AGREGAR EL PANEL DE BOTONES
+		boton1.setText("Ejecutar");
+		boton2.setText("Cancelar");
+		panelab.setLayout(new FlowLayout());
+		panelab.setPreferredSize(new Dimension(200,100));
+		panelab.add(boton1);
+		panelab.add(boton2);
+		 
+		//AGREGAR EL PANEL AL FRAME
+		frame.add(TituloL, BorderLayout.NORTH);
+		frame.add(panelIntegracion);
+		frame.add(panelab);
+	}
+	 
+	public static void main(String[] args)  
+	{
+		new CP12();
+		SubstanceLookAndFeel.setSkin("org.jvnet.substance.skin.NebulaBrickWallSkin");
+		SubstanceLookAndFeel.setCurrentWatermark("org.jvnet.substance.watermark.SubstanceMetalWallWatermark");
+	}	
+}

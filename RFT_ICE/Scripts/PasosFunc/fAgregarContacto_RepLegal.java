@@ -24,6 +24,7 @@ public class fAgregarContacto_RepLegal extends fAgregarContacto_RepLegalHelper
 {
 	public void testMain(Object[] args) 
 	{
+		ImpreEncabezadoScript(getScriptArgs(), getScriptName( ).toString());
 		String[] Agregar_Contacto_Rep;
 		Agregar_Contacto_Rep = new String[4];
 		// 0)Identificación 1)OK/NOK

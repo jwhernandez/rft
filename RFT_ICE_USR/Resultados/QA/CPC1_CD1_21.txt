@@ -1,0 +1,129 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: CPC1_CD1 Desde paso: 21 Modo:Real
+Modulo desde Paso : 1 Hasta paso: 100
+Hora de Inicio de la Ejecucion : 2017/08/28 15:18:55
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatosEntrada'                                                  'OK'                          
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'                                         'OK'                          
+'Paso    0  -  LeerDatosSalida'                                                   'OK'                          
+'Paso    1  -  fLeerVariableCondicionanteDP'                                      'OK'                          
+'Paso    2  -  fLeerVariableCondicionanteDP'                                      'OK'                          
+'Paso    3  -  fLeerVariableCondicionanteDP'                                      'OK'                          
+'Paso    4  -  fLeerVariableCondicionanteDP'                                      'OK'                          
+'Paso    5  -  fLogin'                                                            'OK'                          
+'Paso    6  -  fVista360'                                                         'NE'                          
+'Paso    7  -  fNuevaVenta'                                                       'NE'                          
+'Paso    8  -  fBuscarPedidoVenta'                                                'NE'                          
+'Paso    9  -  fValidarAgencia'                                                   'NE'                          
+'Paso   10  -  fIngresarAutenticacion'                                            'NE'                          
+'Paso   11  -  fObtenerMorosidad'                                                 'NE'                          
+'Paso   12  -  fValidarCategoria'                                                 'NE'                          
+'Paso   13  -  fCompraPlanCategoriaCatalogoNew'                                   'NE'                          
+'Paso   14  -  fIngresarSIM'                                                      'NE'                          
+'Paso   15  -  fTerminalCliente'                                                  'NE'                          
+'Paso   16  -  fSeleccionarTerminal'                                              'NE'                          
+'Paso   17  -  fIngresarIMEI'                                                     'NE'                          
+'Paso   18  -  fIngresarIMEI'                                                     'NE'                          
+'Paso   19  -  fIngresarIMEI'                                                     'NE'                          
+'Paso   20  -  fGenerarCtaFact'                                                   'NE'                          
+'Paso   21  -  fASRM_Login'                                                       'OK'                          
+'Paso   22  -  fASRM_ModificarEstadoServicio'                                     'OK'                          
+'Paso   23  -  fASRM_Logout'                                                      'OK'                          
+'Paso   24  -  fEvaluarExpresionCondicionante'                                    'OK'                          
+'Paso   24  -  fBuscarProducto'                                                   'NA'                          
+'Paso   25  -  fEvaluarExpresionCondicionante'                                    'OK'                          
+'Paso   25  -  fBuscarProducto'                                                   'OK'                          
+'Paso   26  -  fEvaluarExpresionCondicionante'                                    'OK'                          
+'Paso   26  -  fBuscarProducto'                                                   'NA'                          
+'Paso   27  -  fNumeroEspecial'                                                   'OK'                          
+'Paso   28  -  fProximoNumero'                                                    'NA'                          
+'Paso   29  -  fValorarTodo'                                                      'OK'                          
+'Paso   30  -  fEvaluarExpresionCondicionante'                                    'OK'                          
+'Paso   30  -  fBuscarProducto'                                                   'NA'                          
+'Paso   31  -  fEvaluarExpresionCondicionante'                                    'OK'                          
+'Paso   31  -  fExpandiryBuscar'                                                  'NA'                          
+'Paso   32  -  fEvaluarExpresionCondicionante'                                    'OK'                          
+'Paso   32  -  fCheckPagoFact'                                                    'NA'                          
+'Paso   33  -  fEvaluarExpresionCondicionante'                                    'OK'                          
+'Paso   33  -  fBuscarProducto'                                                   'OK'                          
+'Paso   34  -  fEvaluarExpresionCondicionante'                                    'OK'                          
+'Paso   34  -  fExpandiryBuscar'                                                  'OK'                          
+'Paso   35  -  fEvaluarExpresionCondicionante'                                    'OK'                          
+'Paso   35  -  fCheckPagoFact'                                                    'OK'                          
+'Paso   36  -  fEvaluarExpresionCondicionante'                                    'OK'                          
+'Paso   36  -  fCheckPagoFact'                                                    'NA'                          
+'Paso   37  -  fEvaluarExpresionCondicionante'                                    'OK'                          
+'Paso   37  -  fCrearRED'                                                         'NA'                          
+'Paso   38  -  fEvaluarExpresionCondicionante'                                    'OK'                          
+'Paso   38  -  fEsperaEstadoRED'                                                  'NA'                          
+'Paso   39  -  fEvaluarExpresionCondicionante'                                    'OK'                          
+'Paso   39  -  fVEP_Login'                                                        'NA'                          
+'Paso   40  -  fEvaluarExpresionCondicionante'                                    'OK'                          
+'Paso   40  -  fVEP_PagarRED'                                                     'NA'                          
+'Paso   41  -  fEvaluarExpresionCondicionante'                                    'OK'                          
+'Paso   41  -  fVEP_Logout'                                                       'NA'                          
+'Paso   42  -  fEvaluarExpresionCondicionante'                                    'OK'                          
+'Paso   42  -  fEsperaEstadoRED'                                                  'NA'                          
+'Paso   43  -  fEnviarPedido'                                                     'OK'                          
+
+
+Informe de DATOS de salida
+-----------------------------------------------------------------------------------------
+'Paso    0  -  CasosPrueba'                        'Usuario Alternativo '         'JVALERIO1'                   
+'Paso    0  -  CasosPrueba'                        'Clave Alternativa '           'jvalerio1'                   
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoPasoOK'                 '20'                          
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoTramite'                '1'                           
+'Paso    0  -  LeerDatosSalida'                    'T1_NroPedido'                 '1-1774828002'                
+'Paso   24  -  fBuscarProducto'                    'Expresion'                    'false'                       
+'Paso   25  -  fBuscarProducto'                    'Expresion'                    'true'                        
+'Paso   26  -  fBuscarProducto'                    'Expresion'                    'false'                       
+'Paso   27  -  GrabarDatosSalida'                  'T1_NroServicio'               '89847007'                    
+'Paso   27  -  fNumeroEspecial'                    'NroServicio'                  '89847007'                    
+'Paso   30  -  fBuscarProducto'                    'Expresion'                    'false'                       
+'Paso   31  -  fExpandiryBuscar'                   'Expresion'                    'false'                       
+'Paso   32  -  fCheckPagoFact'                     'Expresion'                    'false'                       
+'Paso   33  -  fBuscarProducto'                    'Expresion'                    'true'                        
+'Paso   34  -  fExpandiryBuscar'                   'Expresion'                    'true'                        
+'Paso   35  -  fCheckPagoFact'                     'Expresion'                    'true'                        
+'Paso   36  -  fCheckPagoFact'                     'Expresion'                    'false'                       
+'Paso   37  -  fCrearRED'                          'Expresion'                    'false'                       
+'Paso   38  -  fEsperaEstadoRED'                   'Expresion'                    'false'                       
+'Paso   39  -  fVEP_Login'                         'Expresion'                    'false'                       
+'Paso   40  -  fVEP_PagarRED'                      'Expresion'                    'false'                       
+'Paso   41  -  fVEP_Logout'                        'Expresion'                    'false'                       
+'Paso   42  -  fEsperaEstadoRED'                   'Expresion'                    'false'                       
+
+
+Informe de Bugs
+-----------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------
+Tipo Parada         = Excepción en Método
+Mensaje de Parada   = Script=EsperaEstado Línea=62 Método=SetText Error=
+SetText("Enrute directo"); Error:(-1022) - System error. Debug info: Failed to execute method id 7 with args (()). Reason: Blocked. Clase=com.rational.test.ft.Domain.Siebel.SiebelMethodExecutionFailureException Objeto=siebel.SiebPicklistTestObject(Name: TipoAutenticacion, Map: TipoAutenticacion)
+Parada en paso	    = 44
+
+
+-----------------------------------------------------------------------------------------
+Fin del Informe del Caso Prueba_Conj Datos: CPC1_CD1
+-----------------------------------------------------------------------------------------
+
+
+Informe de Errores imprevistos de sistema
+-----------------------------------------------------------------------------------------
+'Paso   44  -  Accion'                             'Excepción en Método'          'Script=EsperaEstado Línea=62 Método=SetText Error=
+SetText("Enrute directo"); Error:(-1022) - System error. Debug info: Failed to execute method id 7 with args (()). Reason: Blocked. Clase=com.rational.test.ft.Domain.Siebel.SiebelMethodExecutionFailureException Objeto=siebel.SiebPicklistTestObject(Name: TipoAutenticacion, Map: TipoAutenticacion)'
+
+'Paso   44  -  Accion'                             'Excepción no esperada'        'Script=EsperaEstado Línea=0 Error=
+SetText("Enrute directo"); Error:(-1022) - System error. Debug info: Failed to execute method id 7 with args (()). Reason: Blocked.'
+
+'Paso   44  -  Accion'                             'Excepción no esperada'        'Script=fEsperaEstado Línea=0 Error=CRFCN0018E: The 62 line of the 62 script contains an exception.'
+
+
+Hora de Finalizacion de la Ejecucion: 2017/08/28 15:21:21
+-----------------------------------------------------------------------------------------

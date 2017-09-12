@@ -16,6 +16,7 @@ import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
  * Script Name   : <b>fValidacPostServicio</b>
  * Description   : Valida que Liberar Numero se encuentre habilitado y que 
  * servicio esté inhabilitado
+ * Parametros 0) IN nombre del caso 1) NA 2) IN Ambiente 3) IN ErrorStop (Si / No)
  * @since  2015/12/27
  * @author SS
  */
@@ -23,16 +24,24 @@ public class fValidacPostServicio extends fValidacPostServicioHelper
 {
 	public void testMain(Object[] args) 
 	{
+		ImpreEncabezadoScript(getScriptArgs(), getScriptName( ).toString());
 		String[] Validac;
-		Validac = new String[1];
-		// Parámetros	   : 0)  OK/NOK 
+		Validac = new String[2];
+		// Parámetros	   : 0)  OK/NOK 1) Prepago/Postpago
 
 		String[] MensError;
 		MensError = new String[4];
 	
-		/** 
-		 * Validaciones post servicio
+		/**
+		 * Itera el data pools de datos del caso para buscar la row correcta
 		 */
+		dpReset();
+		while (!dpDone() &&  !(dpString("NumeroCaso").equals(args[0]) && 
+				dpString("Ambiente").equals(args[2]))) {
+			dpNext(); 
+		} 	
+
+		Validac[1]=dpString("TipoPerfilCorrecto");
 
 		callScript("Scripts.Comun.ValidacPostServicio",Validac);
 

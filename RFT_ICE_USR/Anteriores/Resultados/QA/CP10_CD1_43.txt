@@ -1,0 +1,90 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: CP10_CD1 Desde paso: 43 Modo:Real
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+---------------------------
+CP10_CD1_T1;LeerDatosEntrada;OK;
+CP10_CD1_T1;LeerDatoSalidaUltPasoEjec;OK;
+CP10_CD1_T1;LeerDatosSalida;OK;
+CP10_CD1_T1;Paso1:fLogin;OK;
+CP10_CD1_T1;Paso2:fCambiarVIstaUsuario;NE;
+CP10_CD1_T1;Paso3:fVista360;OK;
+CP10_CD1_T1;Paso4:fValidarUnPerfil;NE;
+CP10_CD1_T1;Paso5:fBuscarActivo;OK;
+CP10_CD1_T1;Paso6:fBuscarCtaFact;OK;
+CP10_CD1_T1;Paso7:fValidarUnPerfil;NE;
+CP10_CD1_T1;Paso8:fVista360;OK;
+CP10_CD1_T1;Paso9:fBuscarActivo;OK;
+CP10_CD1_T1;Paso10:fBuscarCtaFact;OK;
+CP10_CD1_T1;Paso11:fNuevaPostvta;NE;
+CP10_CD1_T1;Paso12:fBuscarPedidoVenta;OK;
+CP10_CD1_T1;Paso13:fValidarAgencia;NE;
+CP10_CD1_T1;Paso14:fIngresarAutenticacion;NE;
+CP10_CD1_T1;Paso15:fASRM_Login;NE;
+CP10_CD1_T1;Paso16:fASRM_ModificarEstadoServicio;NE;
+CP10_CD1_T1;Paso17:fASRM_Logout;NE;
+CP10_CD1_T1;Paso18:fProximoNumero;NE;
+CP10_CD1_T1;Paso19:fValidacPostServicio;NE;
+CP10_CD1_T1;Paso20:fExpandiryBuscar;NE;
+CP10_CD1_T1;Paso21:fCheckPagoFact;NE;
+CP10_CD1_T1;Paso22:fEnviarPedido;NE;
+CP10_CD1_T1;Paso23:fValidarMensaje;NE;
+CP10_CD1_T1;Paso24:fValorarTodo;NE;
+CP10_CD1_T1;Paso25:fEnviarPedido;NE;
+CP10_CD1_T1;Paso26:fEsperaEstado;NE;
+CP10_CD1_T1;Paso27:fValidacPostEnvio1;NE;
+CP10_CD1_T1;Paso28:fVista360;OK;
+CP10_CD1_T1;Paso29:fBuscarActivo;OK;
+CP10_CD1_T1;Paso30:fBRM.FavoritoValidarCambioNum;NE;
+CP10_CD1_T1;Paso31:fCambiarVIstaUsuario;NE;
+CP10_CD1_T1;Paso32:fAdministrarTemporadas;NE;
+CP10_CD1_T1;Paso33:fCambiarVIstaUsuario;NE;
+CP10_CD1_T1;Paso34:fVista360;OK;
+CP10_CD1_T1;Paso35:fBuscarActivo;OK;
+CP10_CD1_T1;Paso36:fBuscarCtaFact;OK;
+CP10_CD1_T1;Paso37:fNuevaPostvta;NE;
+CP10_CD1_T1;Paso38:fBuscarPedidoVenta;OK;
+CP10_CD1_T1;Paso39:fPersonalizarFavorito;NE;
+CP10_CD1_T1;Paso40:fIngresarAutenticacion;NE;
+CP10_CD1_T1;Paso41:fExpandiryBuscar;NE;
+CP10_CD1_T1;Paso42:fExpandiryBuscar;NE;
+
+
+Informe de DATOS de salida
+---------------------------
+CP10_CD1;UltimoPasoOK;42;
+CP10_CD1;UltimoTramite;1;
+CP10_CD1;T1_NroPedido;1-1741107087;
+CP10_CD1;NroServicio;85976767;
+CP10_CD1_T1;NroServicio;85980202;
+CP10_CD1_T1;NroServicio;85980202;
+CP10_CD1_T1;NroCtaFact;101741013213;
+CP10_CD1_T1;NroServicio;85980202;
+CP10_CD1_T1;NroServicio;85980202;
+CP10_CD1_T1;NroCtaFact;101741013213;
+CP10_CD1_T1;NroServicio;85980202;
+CP10_CD1_T1;NroServicio;85980202;
+CP10_CD1_T1;NroServicio;85980202;
+CP10_CD1_T1;NroServicio;85980202;
+CP10_CD1_T1;NroCtaFact;101741013213;
+
+
+Informe de Bugs
+-----------------
+CP10_CD1_T1;fBuscarProducto;Producto no se encontró;
+
+
+Informe de Errores imprevistos de sistema
+------------------------------------------------
+CP10_CD1;Mensaje UE;Script=PasosFunc.fBuscarProducto Línea=0 Error=CRFCN0515E: stop() method called;
+
+CP10_CD1;Mensaje UE;Script=CasosPrueba.CasosPrueba Línea=0 Error=CRFCN0515E: stop() method called;
+
+
+----------------------------------------------------------------------------------------------------------
+Tipo Parada:UnhandledException - Mensaje de Parada: Script=PasosFunc.fBuscarProducto Línea=0 Error=CRFCN0515E: stop() method called
+- Fin del Informe del Caso Prueba_Conj Datos: CP10_CD1
+----------------------------------------------------------------------------------------------------------

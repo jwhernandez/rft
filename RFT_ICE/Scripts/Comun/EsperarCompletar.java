@@ -21,8 +21,9 @@ import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
  */
 public class EsperarCompletar extends EsperarCompletarHelper
 {
-	public void testMain(Object[] args) 
+	public void testMain(Object[] argu) 
 	{
+		ImpreEncabezadoScript(getScriptArgs(), getScriptName( ).toString());
 		int total = Integer.parseInt(args[0].toString());
 		String sPedido = NroPedido().getProperty("Text").toString();
 		for (int i=1; i<=total; i++) {
@@ -38,6 +39,7 @@ public class EsperarCompletar extends EsperarCompletarHelper
 				sleep(1);
 				}
 		}
+		ImpreResultadoScript(getScriptName( ).toString(), "Sin parametro de resultado");
 	}
 }
 

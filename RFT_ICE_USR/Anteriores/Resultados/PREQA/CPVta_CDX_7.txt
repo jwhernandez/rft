@@ -1,0 +1,53 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: CPVta_CDX Desde paso: 7 Modo:Real
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatosEntrada'                                                  'OK'                          
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'                                         'OK'                          
+'Paso    0  -  LeerDatosSalida'                                                   'OK'                          
+'Paso    1  -  fLogin'                                                            'OK'                          
+'Paso    2  -  fVista360'                                                         'NE'                          
+'Paso    3  -  fNuevaVenta'                                                       'NE'                          
+'Paso    4  -  fBuscarPedidoVenta'                                                'OK'                          
+'Paso    5  -  fObtenerMorosidad'                                                 'NE'                          
+'Paso    6  -  fIngresarAutenticacion'                                            'NE'                          
+'Paso    7  -  fCompraPlanCategoriaCatalogoNew'                                   'OK'                          
+'Paso    8  -  fTerminalCliente'                                                  'OK'                          
+
+
+Informe de DATOS de salida
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoPasoOK'                 '6'                           
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoTramite'                '1'                           
+'Paso    0  -  LeerDatosSalida'                    'T1_NroPedido'                 '1-1728879337'                
+
+
+Informe de Bugs
+-----------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------
+Tipo Parada         = Excepción en Método
+Mensaje de Parada   = Script=Ingresar_SIM_IMEI_Servicio_Admin Línea=128 Método=SetText Error=
+SetActiveControl("ICE IMSI"); Error:(1014) - Invalid argument value for method name "SetActiveControl" for argument "Control Name". Input value: "ICE IMSI". Clase=com.rational.test.ft.Domain.Siebel.SiebelInvalidArgumentsException Objeto=siebel.SiebTextTestObject(Nombre: IMSI, Correlación: ICEIMSI)
+Parada en paso	    = 9
+
+
+-----------------------------------------------------------------------------------------
+Fin del Informe del Caso Prueba_Conj Datos: CPVta_CDX
+-----------------------------------------------------------------------------------------
+
+
+Informe de Errores imprevistos de sistema
+-----------------------------------------------------------------------------------------
+'Paso    9  -  Accion'                             'Excepción en Método'          'Script=Ingresar_SIM_IMEI_Servicio_Admin Línea=128 Método=SetText Error=
+SetActiveControl("ICE IMSI"); Error:(1014) - Invalid argument value for method name "SetActiveControl" for argument "Control Name". Input value: "ICE IMSI". Clase=com.rational.test.ft.Domain.Siebel.SiebelInvalidArgumentsException Objeto=siebel.SiebTextTestObject(Nombre: IMSI, Correlación: ICEIMSI)'
+
+'Paso    9  -  Accion'                             'Excepción no esperada'        'Script=Ingresar_SIM_IMEI_Servicio_Admin Línea=0 Error=
+SetActiveControl("ICE IMSI"); Error:(1014) - Invalid argument value for method name "SetActiveControl" for argument "Control Name". Input value: "ICE IMSI".'
+
+'Paso    9  -  Accion'                             'Excepción no esperada'        'Script=fIngresar_SIM_IMEI_Servicio_Admin Línea=0 Error=CRFCN0018E: La línea 128 del script 128 contiene una excepción.'
+

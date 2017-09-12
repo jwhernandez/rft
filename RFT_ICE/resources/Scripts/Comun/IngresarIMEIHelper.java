@@ -20,17 +20,63 @@ import com.rational.test.ft.vp.IFtVerificationPoint;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
  * Script Name   : <b>IngresarIMEI</b><br>
- * Generated     : <b>2015/12/17 09:55:15</b><br>
+ * Generated     : <b>2017/02/01 3:38:09 PM</b><br>
  * Description   : Helper class for script<br>
  * Original Host : Windows 7 x86 6.1 <br>
  * 
- * @since  diciembre 17, 2015
- * @author Sandra
+ * @since  febrero 01, 2017
+ * @author rft
  */
 public abstract class IngresarIMEIHelper extends libreria.Accion
 {
 	/**
-	 * ICEIMEI: with default state.
+	 * Description: with default state.
+	 *		ClassName : SiebTextArea
+	 * 		.class : SiebTextArea
+	 * 		RepositoryName : Description
+	 */
+	protected SiebTextAreaTestObject Descripcion() 
+	{
+		return new SiebTextAreaTestObject(
+                        getMappedTestObject("Descripcion"));
+	}
+	/**
+	 * Description: with specific test context and state.
+	 *		ClassName : SiebTextArea
+	 * 		.class : SiebTextArea
+	 * 		RepositoryName : Description
+	 */
+	protected SiebTextAreaTestObject Descripcion(TestObject anchor, long flags) 
+	{
+		return new SiebTextAreaTestObject(
+                        getMappedTestObject("Descripcion"), anchor, flags);
+	}
+	
+	/**
+	 * Description: with default state.
+	 *		ClassName : SiebTextArea
+	 * 		.class : SiebTextArea
+	 * 		RepositoryName : Description
+	 */
+	protected SiebTextAreaTestObject DescripcionPI() 
+	{
+		return new SiebTextAreaTestObject(
+                        getMappedTestObject("DescripcionPI"));
+	}
+	/**
+	 * Description: with specific test context and state.
+	 *		ClassName : SiebTextArea
+	 * 		.class : SiebTextArea
+	 * 		RepositoryName : Description
+	 */
+	protected SiebTextAreaTestObject DescripcionPI(TestObject anchor, long flags) 
+	{
+		return new SiebTextAreaTestObject(
+                        getMappedTestObject("DescripcionPI"), anchor, flags);
+	}
+	
+	/**
+	 * IMEI: with default state.
 	 *		ClassName : SiebText
 	 * 		.class : SiebText
 	 * 		RepositoryName : ICE IMEI
@@ -41,7 +87,7 @@ public abstract class IngresarIMEIHelper extends libreria.Accion
                         getMappedTestObject("IMEI"));
 	}
 	/**
-	 * ICEIMEI: with specific test context and state.
+	 * IMEI: with specific test context and state.
 	 *		ClassName : SiebText
 	 * 		.class : SiebText
 	 * 		RepositoryName : ICE IMEI
@@ -53,10 +99,35 @@ public abstract class IngresarIMEIHelper extends libreria.Accion
 	}
 	
 	/**
-	 * SiebList: with default state.
-	 *		ClassName : SiebList
+	 * IMEI_PI: with default state.
+	 *		ClassName : SiebText
+	 * 		.class : SiebText
+	 * 		RepositoryName : ICE IMEI
+	 */
+	protected SiebTextTestObject IMEI_PI() 
+	{
+		return new SiebTextTestObject(
+                        getMappedTestObject("IMEI_PI"));
+	}
+	/**
+	 * IMEI_PI: with specific test context and state.
+	 *		ClassName : SiebText
+	 * 		.class : SiebText
+	 * 		RepositoryName : ICE IMEI
+	 */
+	protected SiebTextTestObject IMEI_PI(TestObject anchor, long flags) 
+	{
+		return new SiebTextTestObject(
+                        getMappedTestObject("IMEI_PI"), anchor, flags);
+	}
+	
+	/**
+	 * LineasPedido: with default state.
+	 *		ActiveRow : 9
+	 * 		ClassName : SiebList
 	 * 		.class : SiebList
 	 * 		RepositoryName : SiebList
+	 * 		SelectedRows : 9
 	 */
 	protected SiebListTestObject LineasPedido() 
 	{
@@ -64,15 +135,63 @@ public abstract class IngresarIMEIHelper extends libreria.Accion
                         getMappedTestObject("LineasPedido"));
 	}
 	/**
-	 * SiebList: with specific test context and state.
-	 *		ClassName : SiebList
+	 * LineasPedido: with specific test context and state.
+	 *		ActiveRow : 9
+	 * 		ClassName : SiebList
 	 * 		.class : SiebList
 	 * 		RepositoryName : SiebList
+	 * 		SelectedRows : 9
 	 */
 	protected SiebListTestObject LineasPedido(TestObject anchor, long flags) 
 	{
 		return new SiebListTestObject(
                         getMappedTestObject("LineasPedido"), anchor, flags);
+	}
+	
+	/**
+	 * LineasPedidoPI: with default state.
+	 *		ClassName : SiebList
+	 * 		.class : SiebList
+	 * 		RepositoryName : SiebList
+	 */
+	protected SiebListTestObject LineasPedidoPI() 
+	{
+		return new SiebListTestObject(
+                        getMappedTestObject("LineasPedidoPI"));
+	}
+	/**
+	 * LineasPedidoPI: with specific test context and state.
+	 *		ClassName : SiebList
+	 * 		.class : SiebList
+	 * 		RepositoryName : SiebList
+	 */
+	protected SiebListTestObject LineasPedidoPI(TestObject anchor, long flags) 
+	{
+		return new SiebListTestObject(
+                        getMappedTestObject("LineasPedidoPI"), anchor, flags);
+	}
+	
+	/**
+	 * SiebelPowerCommunications: with default state.
+	 *		ClassName : SiebApplication
+	 * 		.class : SiebApplication
+	 * 		RepositoryName : Siebel Power Communications
+	 */
+	protected SiebApplicationTestObject Siebel() 
+	{
+		return new SiebApplicationTestObject(
+                        getMappedTestObject("Siebel"));
+	}
+	/**
+	 * SiebelPowerCommunications: with specific test context and state.
+	 *		ClassName : SiebApplication
+	 * 		.class : SiebApplication
+	 * 		RepositoryName : Siebel Power Communications
+	 */
+	protected SiebApplicationTestObject Siebel(TestObject anchor, long flags) 
+	{
+		return new SiebApplicationTestObject(
+                        getMappedTestObject("Siebel"), anchor, flags);
 	}
 	
 	

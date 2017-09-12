@@ -17,32 +17,48 @@ import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
  * Description   : Asocia la lista especial a un pedido
  * @param 0) numero de caso 1)un digito indicando el numero de variable en el dp
  * @since  2015/12/27
- * @author Sandra
+ * @author SS
+ * ult modif 12/4/2017 se agrega opcion portin
+ * ult modif ss 18-5-2017 se agrega 2nda lista especial via param 1 = SMS o VOZ
  */
 public class fAsociarListaEspecial extends fAsociarListaEspecialHelper
 {
 	public void testMain(Object[] args) throws RationalTestException 
 	{
+		ImpreEncabezadoScript(getScriptArgs(), getScriptName( ).toString());
 		String[] MensError;
 		MensError = new String[4];
 
 		String[] ListaEsp;
-		ListaEsp = new String[3];
-		/**
-		 * @param Parámetros: 0) NOK / OK 1) Producto al cual asociar 2) Nombre de la lista
-		 */
-
-		/**
-		 * Itera el data pools de datos del caso para buscar la row correcta
-		 */
+		ListaEsp = new String[4];
+		//  @param Parámetros: 0) NOK / OK 1) Producto al cual asociar 2) Nombre de la lista 3)Tramite
+ 
 		dpReset();
 		while (!dpDone() &&  !(dpString("NumeroCaso").equals(args[0]) && 
 				dpString("Ambiente").equals(args[2]))) {
 			dpNext(); 
 		} 
 
-		ListaEsp[1] = dpString("ProductoFAVNum"); 
-		ListaEsp[2] = getNomListaEspecial(); 
+		String sParam1=args[1].toString().toLowerCase();
+		if (sParam1.equals("na"))
+		{
+				ListaEsp[1] = dpString("ProductoFAVNum");
+				ListaEsp[2] = getNomListaEspecial(); 
+		}
+		else
+		{
+			if (sParam1.equals("sms"))
+			{
+			ListaEsp[1] = dpString("ProductoFAVNum_SMS");
+			ListaEsp[2] = getNomListaEspecial_SMS(); 	
+			}
+			if (sParam1.equals("voz"))
+			{
+			ListaEsp[1] = dpString("ProductoFAVNum");
+			ListaEsp[2] = getNomListaEspecial(); 	
+			}
+		}
+		ListaEsp[3] = dpString("Tramite"); 
 		callScript("Scripts.Comun.AsociarListaEspecial", ListaEsp);
 
 		if  ((ListaEsp[0].toString().equals("NOK"))){

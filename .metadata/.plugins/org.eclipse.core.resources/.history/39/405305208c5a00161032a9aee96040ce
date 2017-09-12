@@ -1,0 +1,126 @@
+package GUI;
+
+import javax.swing.*;
+
+import org.jvnet.substance.SubstanceLookAndFeel;
+
+import java.awt.*;
+
+public class CP32 
+{
+
+	private JLabel nroCuentaL, planL, nroServicioL, SimCoL, TerminalL, IMEICoL, IMEIInL, nroServicio1L, nroServicio2L, nroServicio3L ;
+	private JTextField nroCuentaTF,planTF,SimCoTF,TerminalTF ,IMEICoTF,IMEIInTF,nroServicioTF,nroServicio1TF,nroServicio2TF ,nroServicio3TF;
+
+	public CP32()
+	{
+		//CREACION DEL FRAME
+		JFrame frame = new JFrame();
+		frame.setTitle("Automatizacion de Pruebas Regresivas");
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.pack(  );
+		frame.setSize(600, 600);
+		frame.setVisible(true);
+		frame.setLayout(new FlowLayout());      
+		frame.setResizable(false);
+
+		//DEFINICION DE PANELS
+		JPanel  panelLabel  	 = new JPanel();
+		JPanel  panelTF  		 = new JPanel();
+		JPanel  panelIntegracion = new JPanel();
+		JPanel  panelab  		 = new JPanel();
+		JPanel  panelex 		 = new JPanel();
+
+		//DEFINICION DE BOTONES
+		JButton boton1 			 = new JButton();
+		JButton boton2 			 = new JButton();
+
+		//INSTANCIAS DE LABELS
+		nroCuentaL 				 = new JLabel("Numero de cuenta");  
+		planL 					 = new JLabel("Plan");
+		SimCoL 					 = new JLabel("SIM Correcta");
+		TerminalL 				 = new JLabel("Terminal");
+		IMEICoL 				 = new JLabel("IMEI Correcto");
+		IMEIInL 				 = new JLabel("IMEI Incorrecto");
+		nroServicioL 			 = new JLabel("Nuemero de Servicio");
+		nroServicio1L 			 = new JLabel("Nuemero de Servicio 1");
+		nroServicio2L 			 = new JLabel("Nuemero de Servicio 2");
+		nroServicio3L 			 = new JLabel("Nuemero de Servicio 3");
+
+		//INSTANCIAS DE TEXTFIELD
+		nroCuentaTF 			 = new JTextField();
+		planTF 					 = new JTextField();
+		SimCoTF 				 = new JTextField();
+		TerminalTF 				 = new JTextField();
+		IMEICoTF 				 = new JTextField();
+		IMEIInTF 				 = new JTextField();
+		nroServicioTF 			 = new JTextField();
+		nroServicio1TF 			 = new JTextField();
+		nroServicio2TF 			 = new JTextField();
+		nroServicio3TF 			 = new JTextField();
+
+		//AGREGAR LOS LABELS AL PANEL
+		panelLabel.setLayout(new GridLayout(10,0));
+		panelLabel.add(nroCuentaL);
+		panelLabel.add(planL);
+		panelLabel.add(SimCoL);
+		panelLabel.add(TerminalL);
+		panelLabel.add(IMEICoL);
+		panelLabel.add(IMEIInL);
+		panelLabel.add(nroServicioL);
+		panelLabel.add(nroServicio1L);
+		panelLabel.add(nroServicio2L);
+		panelLabel.add(nroServicio3L);
+
+		//AGREGAR LOS TEXTFIELD AL PANEL
+		panelTF.setLayout(new GridLayout(10,0));
+		panelTF.add(nroCuentaTF);
+		panelTF.add(planTF);
+		panelTF.add(SimCoTF);
+		panelTF.add(TerminalTF);
+		panelTF.add(IMEICoTF);
+		panelTF.add(IMEIInTF);
+		panelTF.add(nroServicioTF);
+		panelTF.add(nroServicio1TF);
+		panelTF.add(nroServicio2TF);
+		panelTF.add(nroServicio3TF);
+		
+		//AGREGAR AMBOS PANELES PARA DISTRIBUIRLO EN COLUMNAS
+				panelIntegracion.setLayout(new GridLayout(1,1));
+				panelIntegracion.setPreferredSize(new Dimension(500,400));
+				panelIntegracion.add(panelLabel);
+				panelIntegracion.add(panelTF);
+
+				//AGREGAR AMBOS PANELES PARA DISTRIBUIRLO EN COLUMNAS
+				panelIntegracion.setLayout(new GridLayout(1,1));
+				panelIntegracion.setPreferredSize(new Dimension(500,300));
+				panelIntegracion.add(panelLabel);
+				panelIntegracion.add(panelTF);
+
+				//AGREGAR EL PANEL DE BOTONES
+				boton1.setText("Ejecutar");
+				boton2.setText("Cancelar");
+				panelab.setLayout(new FlowLayout());
+				panelab.setPreferredSize(new Dimension(200,100));
+				panelab.add(boton1);
+				panelab.add(boton2);
+				
+				//DEFINICION DEL TITULO
+				JLabel TituloL = new JLabel("Escenario 46", SwingConstants.CENTER);
+				TituloL.setFont( new Font( "Helvetica", Font.BOLD, 18));
+				
+				//AGREGAR EL PANEL AL FRAME
+				frame.add(TituloL, BorderLayout.NORTH);
+				frame.add(panelIntegracion);
+				frame.add(panelab);
+			}
+
+
+			public static void main(String[] args)  
+			{
+				new CP32();
+				SubstanceLookAndFeel.setSkin("org.jvnet.substance.skin.NebulaBrickWallSkin");
+				SubstanceLookAndFeel.setCurrentWatermark("org.jvnet.substance.watermark.SubstanceMetalWallWatermark");
+			}	
+		}
+

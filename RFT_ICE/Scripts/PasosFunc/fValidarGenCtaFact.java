@@ -15,33 +15,43 @@ import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
  * Script Name   : <b>fValidarGenCtaFact</b>
  * Description   : Valida que botón Generar Cta Facturación esté habilitado o deshabilitado
- * @Param 
+ * @Param CP32 true PREQA true
  * @since  2016/02/15
  * @author SSASTRE
  */
 public class fValidarGenCtaFact extends fValidarGenCtaFactHelper
 {
-	public void testMain(Object[] args) 
+	public void testMain(Object[] args) throws RationalTestException
 	{
-		{
-			String[] Validac;
-			Validac = new String[2];
-			// Parámetros 0) OK/FALSE 1) true /false para saber que se debe validar
+		ImpreEncabezadoScript(getScriptArgs(), getScriptName( ).toString());
+		String[] Validac;
+		Validac = new String[3];
+		// Parámetros 0) OK/NOK 1) true /false 2) Tramite
+		// True valida habilitado False valida inhabilitado
 
-			String[] MensError;
-			MensError = new String[4];
-	
-			Validac[0]=args[1].toString();
-			callScript("Scripts.Comun.ValidarGenCtaFact",Validac);
+		String[] MensError;
+		MensError = new String[4];
 
-			if  (Validac[1].toString().equals("NOK")){
-				MensError[0] = "Botón de generar cta de facturación en estado incorrecto";
-				//MensError[0] = "xDefecto";
-				MensError[1] = args[3].toString();
-				MensError[2] = args[0].toString();
-				MensError[3] = getScriptName( );
-				callScript("Scripts.Comun.TerminarCasoError", MensError);
-			}
+		/**
+		 * Itera el data pools de datos del caso para buscar la row correcta
+		 */
+		dpReset();
+		while (!dpDone() &&  !(dpString("NumeroCaso").equals(args[0]) && 
+				dpString("Ambiente").equals(args[2]))) {
+			dpNext(); 
+		} 
+
+		Validac[1]=args[1].toString();
+		Validac[2] = dpString("Tramite"); 			
+		callScript("Scripts.Comun.ValidarGenCtaFact",Validac);
+
+		if  (Validac[0].toString().equals("NOK")){
+			//MensError[0] = "Botón de generar cta de facturación en estado incorrecto";
+			MensError[0] = "xDefecto";
+			MensError[1] = args[3].toString();
+			MensError[2] = args[0].toString();
+			MensError[3] = getScriptName( );
+			callScript("Scripts.Comun.TerminarCasoError", MensError);
 		}
 	}
 }

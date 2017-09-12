@@ -1,0 +1,128 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: CP14_CD1 Desde paso: 1 Modo:Real
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatosEntrada'                                                  'OK'                          
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'                                         'OK'                          
+'Paso    0  -  GrabarDatosSalida'                                                 'OK'                          
+'Paso    1  -  fLogin'                                                            'OK'                          
+'Paso    2  -  fAdministrarTemporadas'                                            'OK'                          
+'Paso    3  -  fLogout'                                                           'OK'                          
+'Paso    4  -  fLogin'                                                            'OK'                          
+'Paso    5  -  fVista360'                                                         'OK'                          
+'Paso    6  -  fBuscarActivo'                                                     'OK'                          
+'Paso    7  -  fValidarAccionPosvta'                                              'OK'                          
+'Paso    8  -  fBuscarCtaFact'                                                    'OK'                          
+'Paso    9  -  fNuevaPostvta'                                                     'OK'                          
+'Paso   10  -  fBuscarPedidoVenta'                                                'OK'                          
+'Paso   11  -  fPersonalizar_SRV_MOV_POS'                                         'OK'                          
+'Paso   12  -  fExpandiryBuscar'                                                  'OK'                          
+'Paso   13  -  fValidarAgencia'                                                   'OK'                          
+'Paso   14  -  fExpandiryBuscar'                                                  'OK'                          
+'Paso   15  -  fValidarPrecioenPedido'                                            'OK'                          
+'Paso   16  -  fValidarAccion'                                                    'OK'                          
+'Paso   17  -  fBuscarProducto'                                                   'OK'                          
+'Paso   18  -  fExpandiryBuscar'                                                  'OK'                          
+'Paso   19  -  fExpandiryBuscar'                                                  'OK'                          
+'Paso   20  -  fPersonalizarFavorito'                                             'OK'                          
+'Paso   21  -  fExpandiryBuscar'                                                  'OK'                          
+'Paso   22  -  fExpandiryBuscar'                                                  'OK'                          
+'Paso   23  -  fExpandiryBuscar'                                                  'OK'                          
+'Paso   24  -  fExpandiryBuscar'                                                  'OK'                          
+'Paso   25  -  fCrearLE'                                                          'OK'                          
+'Paso   26  -  fAgregarNum_a_LE'                                                  'OK'                          
+'Paso   27  -  fExpandiryBuscar'                                                  'OK'                          
+'Paso   28  -  fExpandiryBuscar'                                                  'OK'                          
+'Paso   29  -  fExpandiryBuscar'                                                  'OK'                          
+'Paso   30  -  fAsociarListaEspecial'                                             'OK'                          
+'Paso   31  -  fEnviarPedido'                                                     'OK'                          
+'Paso   32  -  fValidarMensaje'                                                   'OK'                          
+'Paso   33  -  fIngresarAutenticacion'                                            'OK'                          
+'Paso   34  -  fLogout'                                                           'OK'                          
+'Paso   35  -  fLogin'                                                            'OK'                          
+'Paso   36  -  fBuscarPedidoVenta'                                                'OK'                          
+'Paso   37  -  fEnviarPedido'                                                     'OK'                          
+'Paso   38  -  fValidarMensaje'                                                   'OK'                          
+'Paso   39  -  fValorarTodo'                                                      'OK'                          
+'Paso   40  -  fEnviarPedido'                                                     'OK'                          
+'Paso   41  -  fEsperaEstado'                                                     'OK'                          
+'Paso   42  -  fValidarBtonValorarTodo'                                           'OK'                          
+'Paso   43  -  fEsperaEstado'                                                     'OK'                          
+'Paso   44  -  fVista360'                                                         'OK'                          
+'Paso   45  -  fBuscarActivo'                                                     'OK'                          
+'Paso   46  -  fBuscarPedidoenCtaCte'                                             'OK'                          
+'Paso   47  -  fBuscarCtaFact'                                                    'OK'                          
+'Paso   48  -  fBuscarProductoActivo'                                             'OK'                          
+'Paso   49  -  fExpandiryBuscarActivo'                                            'OK'                          
+'Paso   50  -  fBuscarPedidoenCtaFac'                                             'OK'                          
+'Paso   51  -  fLogout'                                                           'OK'                          
+'Paso   52  -  Fin del caso'                                                      'OK'                          
+
+
+Informe de DATOS de salida
+-----------------------------------------------------------------------------------------
+'Paso    0  -  CasosPrueba'                        'Usuario Alternativo '         'JVALERIO1'                   
+'Paso    0  -  CasosPrueba'                        'Clave Alternativa '           'jvalerio1'                   
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoPasoOK'                 '0'                           
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoTramite'                '1'                           
+'Paso    6  -  fBuscarActivo'                      'NroServicio'                  '89774114'                    
+'Paso    6  -  fBuscarActivo'                      'NroServicio'                  '89774114'                    
+'Paso    8  -  fBuscarCtaFact'                     'NroCtaFact'                   '101742551601'                
+'Paso    9  -  fNuevaPostvta'                      'NroPedido'                    '1-1742552487'                
+'Paso    9  -  GrabarDatosSalida'                  'T1_NroPedido'                 '1-1742552487'                
+'Paso   15  -  ValidarPrecioenPedido'              'PrecioInicio'                 '282con51 CRC'                
+'Paso   15  -  ValidarPrecioenPedido'              'PrecioNeto'                   '282con51 CRC'                
+'Paso   16  -  ValidarNuevaAccion'                 'Accion'                       'Nuevo'                       
+'Paso   25  -  GrabarDatosSalida'                  'T1_NomListaEspecial'          '1-1742553130'                
+'Paso   25  -  fCrearLE'                           'NomListaEspecial'             '1-1742553130'                
+'Paso   45  -  fBuscarActivo'                      'NroServicio'                  '89774114'                    
+'Paso   45  -  fBuscarActivo'                      'NroServicio'                  '89774114'                    
+'Paso   47  -  fBuscarCtaFact'                     'NroCtaFact'                   '101742551601'                
+
+
+Informe de Bugs
+-----------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------
+Tipo Parada         = FIN
+Mensaje de Parada   = FIN del caso en paso 52
+Parada en paso	    = 52
+
+
+-----------------------------------------------------------------------------------------
+Fin del Informe del Caso Prueba_Conj Datos: CP14_CD1
+-----------------------------------------------------------------------------------------
+
+
+Informe de Errores imprevistos de sistema
+-----------------------------------------------------------------------------------------
+'Paso   20  -  Accion'                             'Reconocimiento Ambiguo'       'TestObjectMethodState {AMBIGUOUS_RECOGNITION,testObjectClassName=GuiTestObject(Name: BtonNuevo, Map: BtonNuevo),method=ping,signature=()V,args=null}'
+
+'Paso   20  -  Accion'                             'Reconocimiento Ambiguo'       'Enviar'                      
+
+'Paso   20  -  Accion'                             'Reconocimiento Ambiguo'       'TestObjectMethodState {AMBIGUOUS_RECOGNITION,testObjectClassName=GuiTestObject(Name: BtonNuevo, Map: BtonNuevo),method=ping,signature=()V,args=null}'
+
+'Paso   20  -  Accion'                             'Reconocimiento Ambiguo'       'Enviar'                      
+
+'Paso   26  -  Accion'                             'Excepción en Método'          'Script=AgregarNum_a_LE Línea=113 Método=Goto Error=SiebThreadbar.Goto("Order Entry - Line Items Detail View (Sales)1"), Link name "Order Entry - Line Items Detail View (Sales)1" is not valid; Clase=com.rational.test.ft.Domain.Siebel.SiebelItemNotFoundException Objeto=siebel.SiebThreadbarTestObject(Name: Threadbar, Map: SiebThreadbar)'
+
+'Paso   31  -  Accion'                             'Reconocimiento Ambiguo'       'TestObjectMethodState {AMBIGUOUS_RECOGNITION,testObjectClassName=GuiTestObject(Name: BotonConsultaPedido, Map: BtonConsultaPedido),method=ensureObjectIsVisible,signature=null,args=null}'
+
+'Paso   31  -  Accion'                             'Reconocimiento Ambiguo'       'Consulta'                    
+
+'Paso   31  -  Accion'                             'Reconocimiento Ambiguo'       'TestObjectMethodState {AMBIGUOUS_RECOGNITION,testObjectClassName=GuiTestObject(Name: BotonConsultaPedido, Map: BtonConsultaPedido),method=ensureObjectIsVisible,signature=null,args=null}'
+
+'Paso   31  -  Accion'                             'Reconocimiento Ambiguo'       'Consulta'                    
+
+'Paso   33  -  Accion'                             'Reconocimiento Ambiguo'       'TestObjectMethodState {AMBIGUOUS_RECOGNITION,testObjectClassName=GuiTestObject(Name: BtonConsultaPedido, Map: BtonConsultaPedido),method=ensureObjectIsVisible,signature=null,args=null}'
+
+'Paso   33  -  Accion'                             'Reconocimiento Ambiguo'       'Consulta'                    
+
+'Paso   33  -  Accion'                             'Reconocimiento Ambiguo'       'TestObjectMethodState {AMBIGUOUS_RECOGNITION,testObjectClassName=GuiTestObject(Name: BtonConsultaPedido, Map: BtonConsultaPedido),method=ensureObjectIsVisible,signature=null,args=null}'
+
+'Paso   33  -  Accion'                             'Reconocimiento Ambiguo'       'Consulta'                    
+

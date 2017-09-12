@@ -1,0 +1,49 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: CPCP_CDX Desde paso: 2 Modo:Real
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatosEntrada'                                                  'OK'                          
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'                                         'OK'                          
+'Paso    0  -  LeerDatosSalida'                                                   'OK'                          
+'Paso    1  -  fLogin'                                                            'OK'                          
+'Paso    2  -  fVista360'                                                         'OK'                          
+'Paso    3  -  fBuscarActivo'                                                     'OK'                          
+
+
+Informe de DATOS de salida
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoPasoOK'                 '1'                           
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoTramite'                '1'                           
+'Paso    3  -  fBuscarActivo'                      'NroServicio'                  '87152727'                    
+'Paso    3  -  fBuscarActivo'                      'NroServicio'                  '87152727'                    
+
+
+Informe de Bugs
+-----------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------
+Tipo Parada         = Excepción en Método
+Mensaje de Parada   = Script=SeleccionarPedidoCP Línea=33 Método=getProperty Error=
+GetProperty("Text"); Error:(-1016) - Failed to create object "Siebel Power Communications.Sales Order Screen" of class "SiebScreen". Clase=com.rational.test.ft.Domain.Siebel.SiebelMethodExecutionFailureException Objeto=siebel.SiebTextTestObject(Nombre: NroPedidoCP, Correlación: NroPedidoCP)
+Parada en paso	    = 4
+
+
+-----------------------------------------------------------------------------------------
+Fin del Informe del Caso Prueba_Conj Datos: CPCP_CDX
+-----------------------------------------------------------------------------------------
+
+
+Informe de Errores imprevistos de sistema
+-----------------------------------------------------------------------------------------
+'Paso    4  -  Accion'                             'Excepción en Método'          'Script=SeleccionarPedidoCP Línea=33 Método=getProperty Error=
+GetProperty("Text"); Error:(-1016) - Failed to create object "Siebel Power Communications.Sales Order Screen" of class "SiebScreen". Clase=com.rational.test.ft.Domain.Siebel.SiebelMethodExecutionFailureException Objeto=siebel.SiebTextTestObject(Nombre: NroPedidoCP, Correlación: NroPedidoCP)'
+
+'Paso    4  -  Accion'                             'Excepción no esperada'        'Script=SeleccionarPedidoCP Línea=0 Error=
+GetProperty("Text"); Error:(-1016) - Failed to create object "Siebel Power Communications.Sales Order Screen" of class "SiebScreen".'
+
+'Paso    4  -  Accion'                             'Excepción no esperada'        'Script=fNuevoCambioPlan Línea=0 Error=CRFCN0018E: La línea 33 del script 33 contiene una excepción.'
+

@@ -1,0 +1,84 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: CP14_CD1 Desde paso: 45 Modo:Real
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+---------------------------
+CP14_CD1_T1;LeerDatosEntrada;OK;
+CP14_CD1_T1;LeerDatoSalidaUltPasoEjec;OK;
+CP14_CD1_T1;LeerDatosSalida;OK;
+CP14_CD1_T1;Paso1:fLogin;NE;
+CP14_CD1_T1;Paso2:fAdministrarTemporadas;NE;
+CP14_CD1_T1;Paso3:fLogin;OK;
+CP14_CD1_T1;Paso4:fVista360;NE;
+CP14_CD1_T1;Paso5:fBuscarActivo;NE;
+CP14_CD1_T1;Paso6:fValidarAccionPosvta;NE;
+CP14_CD1_T1;Paso7:fBuscarCtaFact;NE;
+CP14_CD1_T1;Paso8:fNuevaPostvta;NE;
+CP14_CD1_T1;Paso9:fBuscarPedidoVenta;NE;
+CP14_CD1_T1;Paso10:fPersonalizar_SRV_MOV_POS;NE;
+CP14_CD1_T1;Paso11:fExpandiryBuscar;NE;
+CP14_CD1_T1;Paso12:fValidarAgencia;NE;
+CP14_CD1_T1;Paso13:fExpandiryBuscar;NE;
+CP14_CD1_T1;Paso14:fValidarPrecioenPedido;NE;
+CP14_CD1_T1;Paso15:fValidarNuevaAccion;NE;
+CP14_CD1_T1;Paso16:fBuscarProducto;NE;
+CP14_CD1_T1;Paso17:fExpandiryBuscar;NE;
+CP14_CD1_T1;Paso18:fExpandiryBuscar;NE;
+CP14_CD1_T1;Paso19:fPersonalizarFavorito;NE;
+CP14_CD1_T1;Paso20:fExpandiryBuscar;NE;
+CP14_CD1_T1;Paso21:fExpandiryBuscar;NE;
+CP14_CD1_T1;Paso22:fExpandiryBuscar;NE;
+CP14_CD1_T1;Paso23:fExpandiryBuscar;NE;
+CP14_CD1_T1;Paso24:fCrearLE;NE;
+CP14_CD1_T1;Paso25:fAgregarNum_a_LE;NE;
+CP14_CD1_T1;Paso26:fExpandiryBuscar;NE;
+CP14_CD1_T1;Paso27:fExpandiryBuscar;NE;
+CP14_CD1_T1;Paso28:fExpandiryBuscar;NE;
+CP14_CD1_T1;Paso29:fAsociarListaEspecial;NE;
+CP14_CD1_T1;Paso30:fEnviarPedido;NE;
+CP14_CD1_T1;Paso31:fValidarMensaje;NE;
+CP14_CD1_T1;Paso32:fIngresarAutenticacion;NE;
+CP14_CD1_T1;Paso33:fEnviarPedido;NE;
+CP14_CD1_T1;Paso34:fValidarMensaje;NE;
+CP14_CD1_T1;Paso35:fValorarTodo;NE;
+CP14_CD1_T1;Paso36:fEnviarPedido;NE;
+CP14_CD1_T1;Paso37:fEsperaEstado;NE;
+CP14_CD1_T1;Paso38:fValidarBtonValorarTodo;NE;
+CP14_CD1_T1;Paso39:fEsperaEstado;NE;
+CP14_CD1_T1;Paso40:fVista360;OK;
+CP14_CD1_T1;Paso41:fBuscarActivo;OK;
+CP14_CD1_T1;Paso42:fBuscarPedidoenCtaCte;NE;
+CP14_CD1_T1;Paso43:fBuscarCtaFact;OK;
+CP14_CD1_T1;Paso44:fBuscarProductoActivo;NE;
+CP14_CD1_T1;Paso45:fExpandiryBuscarActivo;OK;
+
+
+Informe de DATOS de salida
+---------------------------
+CP14_CD1;Usuario Alternativo ;soin_sferx22;
+CP14_CD1;Clave Alternativa ;ff123456;
+CP14_CD1;UltimoPasoOK;44;
+CP14_CD1;UltimoTramite;1;
+CP14_CD1;T1_NroPedido;1-1739637817;
+CP14_CD1;T1_NomListaEspecial;1-1739639429;
+CP14_CD1_T1;NroPedido;1-1739637817;
+CP14_CD1_T1;NroServicio;89846776;
+CP14_CD1_T1;NroCtaFact;101738049616;
+
+
+Informe de Bugs
+-----------------
+
+
+Informe de Errores imprevistos de sistema
+------------------------------------------------
+CP14_CD1;Mensaje UE;Script=PasosFunc.fBuscarPedidoenCtaFac Línea=0 Error=CRFCN0672E: Error de CallScript - Throwable interceptado [com.rational.test.ft.RationalTestException: CRFCN0039E: No se ha podido encontrar la clase especificada Scripts.Comun.BuscarPedidoenCtaFac en el proyecto C:\Users\Sandra\IBM\rationalsdp\workspace\RFT_ICE] al crear script [Scripts.Comun.BuscarPedidoenCtaFac].;
+
+
+----------------------------------------------------------------------------------------------------------
+Tipo Parada:UnhandledException - Mensaje de Parada: Script=PasosFunc.fBuscarPedidoenCtaFac Línea=0 Error=CRFCN0672E: Error de CallScript - Throwable interceptado [com.rational.test.ft.RationalTestException: CRFCN0039E: No se ha podido encontrar la clase especificada Scripts.Comun.BuscarPedidoenCtaFac en el proyecto C:\Users\Sandra\IBM\rationalsdp\workspace\RFT_ICE] al crear script [Scripts.Comun.BuscarPedidoenCtaFac].
+- Fin del Informe del Caso Prueba_Conj Datos: CP14_CD1
+----------------------------------------------------------------------------------------------------------

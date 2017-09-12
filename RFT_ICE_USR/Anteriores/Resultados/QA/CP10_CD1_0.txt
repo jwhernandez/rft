@@ -1,0 +1,41 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: CP10_CD1 Desde paso: 0 Modo:Real
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatosEntrada'                                                  'OK'                          
+'Paso    0  -  GrabarDatosSalida'                                                 'OK'                          
+'Paso    1  -  fLogin'                                                            'OK'                          
+
+
+Informe de DATOS de salida
+-----------------------------------------------------------------------------------------
+'Paso    0  -  CasosPrueba'                        'Usuario Alternativo '         'JVALERIO1'                   
+'Paso    0  -  CasosPrueba'                        'Clave Alternativa '           'jvalerio1'                   
+
+
+Informe de Bugs
+-----------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------
+Tipo Parada         = Excepción en Método
+Mensaje de Parada   = Script=Vista360 Línea=49 Método=Goto Error=SiebScreenView.Goto("All Account List View", "L2"), L2 view repository name "All Account List View" is not valid; Clase=com.rational.test.ft.Domain.Siebel.SiebelItemNotFoundException Objeto=siebel.SiebScreenViewsTestObject(Name: SiebScreenViews, Map: TabsCliente)
+Parada en paso	    = 2
+
+
+-----------------------------------------------------------------------------------------
+Fin del Informe del Caso Prueba_Conj Datos: CP10_CD1
+-----------------------------------------------------------------------------------------
+
+
+Informe de Errores imprevistos de sistema
+-----------------------------------------------------------------------------------------
+'Paso    2  -  Accion'                             'Excepción en Método'          'Script=Vista360 Línea=49 Método=Goto Error=SiebScreenView.Goto("All Account List View", "L2"), L2 view repository name "All Account List View" is not valid; Clase=com.rational.test.ft.Domain.Siebel.SiebelItemNotFoundException Objeto=siebel.SiebScreenViewsTestObject(Name: SiebScreenViews, Map: TabsCliente)'
+
+'Paso    2  -  Accion'                             'Excepción no esperada'        'Script=Vista360 Línea=0 Error=SiebScreenView.Goto("All Account List View", "L2"), L2 view repository name "All Account List View" is not valid;'
+
+'Paso    2  -  Accion'                             'Excepción no esperada'        'Script=fVista360 Línea=0 Error=CRFCN0018E: The 49 line of the 49 script contains an exception.'
+

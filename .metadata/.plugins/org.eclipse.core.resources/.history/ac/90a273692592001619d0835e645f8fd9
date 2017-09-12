@@ -1,0 +1,286 @@
+package Scripts.CasosPrueba;
+import libreria.utileria.Tipo;
+import resources.Scripts.CasosPrueba.CasosPruebav1Helper;
+import resources.Scripts.CasosPrueba.CasosPruebaHelper;
+import com.rational.test.ft.*;
+import com.rational.test.ft.object.interfaces.*;
+import com.rational.test.ft.object.interfaces.WPF.*;
+import com.rational.test.ft.object.interfaces.siebel.*;
+import com.rational.test.ft.object.interfaces.generichtmlsubdomain.*;
+import com.rational.test.ft.script.*;
+import com.rational.test.ft.value.*;
+import com.rational.test.ft.vp.*;
+/**
+ * Descripcion : Ejecuta en el ambiente indicado desde paso Desde incluido, 
+ * Si no se especifica paso desde utiliza los parametros de data pool. 
+ * Para los pasos posteriores al paso desde se rige por los parametros del dp
+	 * Argumentos: 
+	 * 0)Usuario 
+	 * 1)Clave 
+	 * 2) Ambiente DESA/QA/PREQA 
+	 * 3) Nombre del caso (CPO3,CP56)
+	 * 4) true se ejecuta el login cualquier otro valor no se ejecuta el login
+	 * 5) idem logout  
+	 * 6) Paso desde (opcional) 
+	 * 7) usuario alternativo (opcional) 
+	 * 8) clave de usuario alternativo (opcional)  
+	 * 9) true o false si ejecuta la actualización de datos de entrada  (opcional)
+	 * 10) NroPedido  (opcional) 
+	 * 11) NroServicio (opcional)  
+	 * 12) NroCtaFact (opcional)  
+	 * 13) NomListaEspecial (opcional) (si hay que saltearlo colocar NA)  (opcional)
+	 * 14) fecha del movimiuento de CM si aun no se tiene task id o NA si no aplica (opcional)  
+	 * 15) Task id en caso de cambio de modalidad o NA si no aplica  (opcional)
+
+ * SS Nov 2015 -- Julio 2016 se modifican parametros
+ * Ej SOIN_JVALERIO s123456j PREQA CP03 true false 1   
+ 
+ */
+public class CasosPruebav1 extends CasosPruebav1Helper
+{
+	public void testMain(Object[] args) throws RationalTestException
+	{
+		try {
+			ImpreEncabezadoScript(getScriptArgs(), getScriptName( ).toString());
+			String[] PasoFuncional;
+			PasoFuncional = new String[5];
+			
+			String[] PasoEjecuta;
+			PasoEjecuta = new String[3];
+
+			String[] InformarPaso;
+			InformarPaso = new String[1];
+			
+			String[] LeerDatosEntrada;
+			LeerDatosEntrada =new String[4];
+			// Datos de entrada 0)OK/NOK 1) Nro CP 2) Ambiente 3)Opción (Dato o Todo) 
+
+			String[] LeerDatosSalida;
+			LeerDatosSalida =new String[3];
+			// Datos salida     0)OK/NOK 1) Nro CP 2) Ambiente 
+			
+			String[] Login;
+			Login = new String[5];
+			//0) usuario 1) clave 2)Ambiente 3) OK/NOK 4) true (indica que haga logout)
+			
+			String[] GrabarDatos;
+			GrabarDatos =new String[4];
+			// 0) OK/NOK 1) Nro CP 2) Ambiente 3) inicializar
+
+			setUsuario(args[0].toString()); // Agregado para la busqueda de CM
+			
+			String sCaso = "CP";
+			setNomAmbiente(args[2].toString());
+			
+			boolean bContinuar = true;
+			
+			/** 	
+			 * Determina el caso de venta a ejecutar
+			 */		
+			if (args.length >= 4 ) { 
+				sCaso = args[3].toString();}
+			/**
+			 * Determina si se debe ejecutar el login
+			 */
+			if ((args.length) >= 5 && (args[4].toString().equals("true"))) 
+			{ 
+				Login[0]=args[0].toString();
+				Login[1]=args[1].toString();
+				Login[2]=args[2].toString();
+				Login[4]="true"; // para que baje el FMW de siebel
+				callScript("Scripts.Comun.Login",Login);}
+
+			/**
+			 * Determina si se deben saltear pasos
+			 */
+			int iPasoDesde = 1;
+	
+			if ((args.length >= 7) && (Integer.parseInt(args[6].toString()) > 0)) { 
+				iPasoDesde =  (Integer.parseInt(args[6].toString())); }
+			
+			String sUsuarioALT = "NA";
+			String sClaveALT = "NA";
+			
+			if (args.length >= 8 && !args[7].toString().equals("NA")) { 
+				sUsuarioALT = args[7].toString();
+				infoPaso(sCaso, Tipo.DATO,"Usuario Alternativo ",sUsuarioALT);
+				System. out.println("Usuario Alternativo "+sUsuarioALT);
+	
+				if (args.length >= 9 && !args[8].toString().equals("NA")) { 
+					sClaveALT = args[8].toString();
+					infoPaso(sCaso, Tipo.DATO,"Clave Alternativa ",sClaveALT);
+					System. out.println("Clave Alternativa "+sClaveALT);
+					setUsuarioAlt(sUsuarioALT); 
+					setClaveAlt(sClaveALT); 
+					setUsuario(args[0].toString());
+					setClave(args[1].toString()); 
+				}
+			}
+
+			boolean bActualiza = true;
+			if (args.length >= 10 && args[9].toString().toLowerCase().equals("false"))  bActualiza = false; 
+			
+			if (bActualiza) { 
+				System.out.println("----------------------------------");
+				System.out.println("Se actualizan los datos de entrada");
+				System.out.println("----------------------------------");
+
+				LeerDatosEntrada[1] = sCaso;
+				LeerDatosEntrada[2] = args[2].toString();
+				LeerDatosEntrada[3] = "Todo";
+				callScript("Scripts.Comun.LeerDatosEntrada",LeerDatosEntrada);
+			}
+
+			
+			/** Lectura de parametros desde el data pools */
+			if (iPasoDesde > 1) {
+				System.out.println("----------------------------------");
+				System.out.println("Se leen los datos de salida");
+				System.out.println("----------------------------------");
+				LeerDatosSalida[1] = sCaso;
+				LeerDatosSalida[2] = args[2].toString();
+				callScript("Scripts.Comun.LeerDatosSalida",LeerDatosSalida);
+			} else {
+				System.out.println("----------------------------------");
+				System.out.println("Se inician los datos de salida");
+				System.out.println("----------------------------------");
+				GrabarDatos[1] = sCaso;
+				GrabarDatos[2] = args[2].toString();
+				GrabarDatos[3] = "inicializar";
+				callScript("Scripts.Comun.GrabarDatosSalida",GrabarDatos);
+			}
+
+			/**
+			 * Si se le pasan argumentos, sobreescriben el data pool de datos de salida
+			 */
+			
+
+			
+			if (args.length >= 11 && !args[10].toString().equals("NA")) { 
+				setNroPedido(args[10].toString());
+				infoPaso(sCaso, Tipo.DATO,"NroPedido",getNroPedido());
+				System. out.println("NroPedido"+getNroPedido());
+			}
+
+			if (args.length >= 12 && !args[11].toString().equals("NA")) { 
+				setNroServicio(args[11].toString()); 
+				infoPaso(sCaso, Tipo.DATO,"NroServicio",getNroServicio());
+				System. out.println("NroServicio"+getNroServicio());
+				}
+
+			if (args.length >= 13 && !args[12].toString().equals("NA")) { 
+				setNroCtaFact(args[12].toString()); 
+				infoPaso(sCaso, Tipo.DATO,"NroCtaFact",getNroCtaFact());
+				System. out.println("NroCtaFact"+getNroCtaFact());
+				}
+
+			if (args.length >= 14 && !args[13].toString().equals("NA")) { 
+				setNomListaEspecial(args[13].toString()); 
+				infoPaso(sCaso, Tipo.DATO,"NomListaEspecial",getNomListaEspecial());
+				System. out.println("NomListaEspecial"+getNomListaEspecial());
+			}
+			
+			if (args.length >= 15 && !args[14].toString().equals("NA")) { 
+				setFechaCM((args[14].toString())); 
+				infoPaso(sCaso, Tipo.DATO,"Fecha CM",getFechaCM());
+				System. out.println("Fecha CM"+getFechaCM());
+			}
+			if (args.length >= 16 && !args[15].toString().equals("NA")) { 
+				setTaskIdCM((args[15].toString())); 
+				infoPaso(sCaso, Tipo.DATO,"Id Task",getTaskIdCM());
+				System. out.println("Id Task"+getTaskIdCM());
+			}
+			
+			String sCasoPasos = sCaso + "Pasos" ;
+			String sCasoParam = sCaso + "Param" ;
+			String sCasoEjecuta = sCaso + "Ejecuta" ;
+			String sCasoErrorStop = sCaso + "ErrorStop" ;
+
+			/**
+			 * Itera el data pools de pasos funcionales para determinar si se ejecuta o no
+			 */
+
+			// Mientras aun queden filas por recorrer 
+
+			int currentDatapoolRow = 0; 
+			int iNumeroPaso = 1; 
+
+			dpReset();
+			
+			while (!dpDone() && !(dpString(sCasoPasos).equals("FIN"))&& bContinuar) 
+			{ 
+				// Print the current datapool row number to the playback log 
+				logInfo("Starting datapool row " + currentDatapoolRow); 
+
+	
+				/**
+				 * Por cada paso informa estado de ejecución NE/OK o NA = 
+				 * NE= No ejecutó
+				 * NA= No aplica
+				 */
+				if (iNumeroPaso >= iPasoDesde ) {
+					// Se analiza si el paso se debe ejecutar en el ambiente
+
+					if (!dpString(sCasoEjecuta).toLowerCase().equals("terminar")) 
+					{
+						PasoEjecuta[0] = args[2].toString();
+						PasoEjecuta[1] = dpString(sCasoEjecuta).toLowerCase();
+						callScript("Scripts.Comun.ValidaPasoSiEjecuta",PasoEjecuta);
+						boolean bPasoEjecuta = Boolean.parseBoolean(PasoEjecuta[2].toString());
+
+						if (bPasoEjecuta){
+							System. out.println("El paso se ejecuta " + dpString(sCasoEjecuta).toLowerCase());
+							PasoFuncional [0] = sCaso;
+							String sCurrentTestCaseStep = Integer.toString(iNumeroPaso);
+							InformarPaso [0] = sCurrentTestCaseStep;
+							callScript("Scripts.Comun.InfomarPaso", InformarPaso);
+							PasoFuncional [1] = dpString(sCasoParam);
+							PasoFuncional[2] = args[2].toString(); // ambiente
+							PasoFuncional [3] = dpString(sCasoErrorStop).toLowerCase(); // error para o no ejecucion
+							PasoFuncional [4] = Integer.toString(iNumeroPaso ); // Se agrega nro de paso
+
+							logInfo (sCasoPasos + PasoFuncional);
+							callScript("Scripts.PasosFunc." + dpString(sCasoPasos),PasoFuncional);
+							infoPaso(sCaso, Tipo.PASO,"Paso" + iNumeroPaso, "OK");
+							ImpreResultadoScript(getScriptName( ).toString(), "OK");
+						}
+						else 
+						{
+							infoPaso(sCaso, Tipo.PASO,"Paso" + iNumeroPaso, "NE");
+
+						}
+					} // end del paso no es stop
+					else bContinuar = false;
+				} else {
+					infoPaso(sCaso, Tipo.PASO,"Paso" + iNumeroPaso, "NA");
+				}
+				iNumeroPaso++;
+				currentDatapoolRow++; 
+				dpNext(); 
+			} // end del while
+			
+			if (dpString(sCasoPasos).equals("FIN")) {
+				infoPaso(sCaso, Tipo.PASO,"Fin del caso", "OK");
+				ImpreResultadoScript("Fin del caso", "OK");
+			}
+			
+			if (!bContinuar) {
+				infoPaso(sCaso, Tipo.PASO,"Paso" + iNumeroPaso, "Se paro voluntariamente el caso");
+				ImpreResultadoScript("Caso parado voluntariamente", "OK");
+			}
+			
+			/**
+			 * Determina si se debe ejecutar el logout
+			 */
+			if (args.length >= 6 && args[5].toString().equals("true") &&
+				!dpString(sCasoEjecuta).toLowerCase().equals("terminar")) { 
+				System. out.println("Se llama al script logout ");
+				//callScript("Scripts.PasosFunc.Logout", args);
+				callScript("Scripts.Comun.Logout",args);
+			}
+			
+		} catch (RationalTestException e) {
+			e.printStackTrace();
+		}
+	}
+}

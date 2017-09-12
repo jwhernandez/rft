@@ -1,0 +1,112 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: CPXX_CD1 Desde paso: 6 Modo:Real
+Modulo desde Paso : 1 Hasta paso: 200
+Hora de Inicio de la Ejecucion : 2017/09/05 10:03:25
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatosEntrada'                                                  'OK'                          
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'                                         'OK'                          
+'Paso    0  -  LeerDatosSalida'                                                   'OK'                          
+'Paso    1  -  fLogin'                                                            'OK'                          
+'Paso    2  -  fLeerVariableCondicionanteDP'                                      'NE'                          
+'Paso    3  -  fLeerVariableCondicionanteDP'                                      'NE'                          
+'Paso    4  -  fVista360'                                                         'NE'                          
+'Paso    5  -  fBuscarActivo'                                                     'NE'                          
+'Paso    6  -  fNuevoCambioPlan'                                                  'OK'                          
+'Paso    7  -  fBuscarPedidoVenta'                                                'OK'                          
+'Paso    8  -  fValidarAgencia'                                                   'OK'                          
+'Paso    9  -  fIngresarAutenticacion'                                            'OK'                          
+'Paso   10  -  fBuscarProducto'                                                   'OK'                          
+'Paso   11  -  fValidarAccion'                                                    'OK'                          
+'Paso   12  -  fBuscarProducto'                                                   'OK'                          
+'Paso   13  -  fValidarAccion'                                                    'OK'                          
+'Paso   14  -  fValidarCapturarAccionProd'                                        'OK'                          
+'Paso   15  -  fAgregarContacto_RepLegal'                                         'OK'                          
+'Paso   16  -  fBuscarProducto'                                                   'OK'                          
+'Paso   17  -  fEvaluarExpresionCondicionante'                                    'OK'                          
+'Paso   17  -  fTerminalCliente'                                                  'OK'                          
+'Paso   18  -  fEvaluarExpresionCondicionante'                                    'OK'                          
+'Paso   18  -  fSeleccionarTerminal'                                              'NA'                          
+'Paso   19  -  fEvaluarExpresionCondicionante'                                    'OK'                          
+'Paso   19  -  fIngresarIMEI'                                                     'NA'                          
+'Paso   20  -  fEvaluarExpresionCondicionante'                                    'OK'                          
+'Paso   20  -  fIngresarIMEI'                                                     'NA'                          
+'Paso   21  -  fEvaluarExpresionCondicionante'                                    'OK'                          
+'Paso   21  -  fIngresarIMEI'                                                     'NA'                          
+'Paso   22  -  fValorarTodo'                                                      'OK'                          
+'Paso   23  -  fEvaluarExpresionCondicionante'                                    'OK'                          
+'Paso   23  -  fBuscarProducto'                                                   'NA'                          
+'Paso   24  -  fEvaluarExpresionCondicionante'                                    'OK'                          
+'Paso   24  -  fExpandiryBuscar'                                                  'NA'                          
+'Paso   25  -  fEvaluarExpresionCondicionante'                                    'OK'                          
+'Paso   25  -  fCheckPagoFact'                                                    'NA'                          
+'Paso   26  -  fEvaluarExpresionCondicionante'                                    'OK'                          
+'Paso   26  -  fCrearRED'                                                         'OK'                          
+'Paso   27  -  fEvaluarExpresionCondicionante'                                    'OK'                          
+
+
+Informe de DATOS de salida
+-----------------------------------------------------------------------------------------
+'Paso    0  -  CasosPrueba'                        'Usuario Alternativo '         'JVALERIO1'                   
+'Paso    0  -  CasosPrueba'                        'Clave Alternativa '           'jvalerio1'                   
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoPasoOK'                 '5'                           
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoTramite'                '1'                           
+'Paso    6  -  fNuevoCambioPlan'                   'NroPedido'                    '1-1776374764'                
+'Paso    6  -  GrabarDatosSalida'                  'T1_NroPedido'                 '1-1776374764'                
+'Paso   11  -  ValidarNuevaAccion'                 'Accion'                       'Desconexión'                 
+'Paso   13  -  ValidarNuevaAccion'                 'Accion'                       'Nuevo'                       
+'Paso   14  -  ValidarCapturarAccionCantProd'      'Patrón buscado= PLAN CONECTADO 2 24 M KOLBI' ' Producto encontrado=PLAN CONECTADO 2 24 M KOLBI accion=Nuevo cant=null'
+'Paso   14  -  ValidarCapturarAccionCantProd'      'Patrón buscado= PLAN PROFESIONAL  4 24 M' ' Producto encontrado=PLAN PROFESIONAL  4 24 M accion=Desconexión cant=null'
+'Paso   14  -  ValidarCapturarAccionCantProd'      'Cambio de Plan '              '-Se encontraron dos productos distintos. Uno con desconexión y otro con Nuevo?OK'
+'Paso   17  -  fTerminalCliente'                   'Expresion'                    'true'                        
+'Paso   18  -  fSeleccionarTerminal'               'Expresion'                    'false'                       
+'Paso   19  -  fIngresarIMEI'                      'Expresion'                    'false'                       
+'Paso   20  -  fIngresarIMEI'                      'Expresion'                    'false'                       
+'Paso   21  -  fIngresarIMEI'                      'Expresion'                    'false'                       
+'Paso   23  -  fBuscarProducto'                    'Expresion'                    'false'                       
+'Paso   24  -  fExpandiryBuscar'                   'Expresion'                    'false'                       
+'Paso   25  -  fCheckPagoFact'                     'Expresion'                    'false'                       
+'Paso   26  -  fCrearRED'                          'Expresion'                    'true'                        
+'Paso   27  -  fEsperaEstadoRED'                   'Expresion'                    'true'                        
+
+
+Informe de Bugs
+-----------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------
+Tipo Parada         = Reconocimiento Ambiguo
+Mensaje de Parada   = Consulta
+Parada en paso	    = 27
+
+
+-----------------------------------------------------------------------------------------
+Fin del Informe del Caso Prueba_Conj Datos: CPXX_CD1
+-----------------------------------------------------------------------------------------
+
+
+Informe de Errores imprevistos de sistema
+-----------------------------------------------------------------------------------------
+'Paso    9  -  Accion'                             'Reconocimiento Ambiguo'       'TestObjectMethodState {AMBIGUOUS_RECOGNITION,testObjectClassName=GuiTestObject(Name: BtonConsultaPedido, Map: BtonConsultaPedido),method=ensureObjectIsVisible,signature=null,args=null}'
+
+'Paso    9  -  Accion'                             'Reconocimiento Ambiguo'       'Consulta'                    
+
+'Paso    9  -  Accion'                             'Reconocimiento Ambiguo'       'TestObjectMethodState {AMBIGUOUS_RECOGNITION,testObjectClassName=GuiTestObject(Name: BtonConsultaPedido, Map: BtonConsultaPedido),method=ensureObjectIsVisible,signature=null,args=null}'
+
+'Paso    9  -  Accion'                             'Reconocimiento Ambiguo'       'Consulta'                    
+
+'Paso    9  -  Accion'                             'Reconocimiento Ambiguo'       'TestObjectMethodState {AMBIGUOUS_RECOGNITION,testObjectClassName=GuiTestObject(Name: BtonConsultaPedido, Map: BtonConsultaPedido),method=ensureObjectIsVisible,signature=null,args=null}'
+
+'Paso    9  -  Accion'                             'Excepción en Método'          'Script=IngresarAutenticacion Línea=43 Método=getProperty Error=CRFCP0048E: Property .text was not found. 
+Script playback cannot be completed. Clase=com.rational.test.ft.PropertyNotFoundException Objeto=BrowserTestObject(Ref:RemoteProxyReference{testContext:1a0510004c9e8, objectId:66374, testObjectClass:BrowserTestObject})'
+
+'Paso   27  -  Accion'                             'Excepción no esperada'        'Script=fEsperaEstadoRED Línea=0 Error="Stop button was hit"'
+
+'Paso   27  -  Accion'                             'Excepción no esperada'        'Script=CasosPrueba Línea=0 Error="Stop button was hit"'
+
+
+Hora de Finalizacion de la Ejecucion: 2017/09/05 10:27:48
+-----------------------------------------------------------------------------------------

@@ -20,11 +20,11 @@ import com.rational.test.ft.vp.IFtVerificationPoint;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
  * Script Name   : <b>AdministrarLOV</b><br>
- * Generated     : <b>2016/01/15 13:28:53</b><br>
+ * Generated     : <b>2016/12/21 12:09:15</b><br>
  * Description   : Helper class for script<br>
  * Original Host : Windows 7 x86 6.1 <br>
  * 
- * @since  enero 15, 2016
+ * @since  diciembre 21, 2016
  * @author Sandra
  */
 public abstract class AdministrarLOVHelper extends libreria.Accion
@@ -76,6 +76,29 @@ public abstract class AdministrarLOVHelper extends libreria.Accion
 	}
 	
 	/**
+	 * LIC: with default state.
+	 *		ClassName : SiebText
+	 * 		.class : SiebText
+	 * 		RepositoryName : Name
+	 */
+	protected SiebTextTestObject LIC() 
+	{
+		return new SiebTextTestObject(
+                        getMappedTestObject("LIC"));
+	}
+	/**
+	 * LIC: with specific test context and state.
+	 *		ClassName : SiebText
+	 * 		.class : SiebText
+	 * 		RepositoryName : Name
+	 */
+	protected SiebTextTestObject LIC(TestObject anchor, long flags) 
+	{
+		return new SiebTextTestObject(
+                        getMappedTestObject("LIC"), anchor, flags);
+	}
+	
+	/**
 	 * TipoLOV: with default state.
 	 *		ClassName : SiebText
 	 * 		.class : SiebText
@@ -122,6 +145,29 @@ public abstract class AdministrarLOVHelper extends libreria.Accion
 	}
 	
 	/**
+	 * LineasLOV: with default state.
+	 *		ClassName : SiebList
+	 * 		.class : SiebList
+	 * 		RepositoryName : SiebList
+	 */
+	protected SiebListTestObject LineasLOV() 
+	{
+		return new SiebListTestObject(
+                        getMappedTestObject("LineasLOV"));
+	}
+	/**
+	 * LineasLOV: with specific test context and state.
+	 *		ClassName : SiebList
+	 * 		.class : SiebList
+	 * 		RepositoryName : SiebList
+	 */
+	protected SiebListTestObject LineasLOV(TestObject anchor, long flags) 
+	{
+		return new SiebListTestObject(
+                        getMappedTestObject("LineasLOV"), anchor, flags);
+	}
+	
+	/**
 	 * NewQuery: with default state.
 	 *		ClassName : SiebButton
 	 * 		.class : SiebButton
@@ -165,6 +211,37 @@ public abstract class AdministrarLOVHelper extends libreria.Accion
 	{
 		return new SiebPageTabsTestObject(
                         getMappedTestObject("Pestañas"), anchor, flags);
+	}
+	
+	/**
+	 * s_1_1_21_0_mb: with default state.
+	 *		.text : Vaciar caché
+	 * 		.href : javascript:void(0)
+	 * 		.id : s_1_1_21_0_mb
+	 * 		.title : 
+	 * 		.class : Html.A
+	 * 		.name : 
+	 * 		.classIndex : 0
+	 */
+	protected GuiTestObject VaciarCacheHTML() 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("VaciarCacheHTML"));
+	}
+	/**
+	 * s_1_1_21_0_mb: with specific test context and state.
+	 *		.text : Vaciar caché
+	 * 		.href : javascript:void(0)
+	 * 		.id : s_1_1_21_0_mb
+	 * 		.title : 
+	 * 		.class : Html.A
+	 * 		.name : 
+	 * 		.classIndex : 0
+	 */
+	protected GuiTestObject VaciarCacheHTML(TestObject anchor, long flags) 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("VaciarCacheHTML"), anchor, flags);
 	}
 	
 	

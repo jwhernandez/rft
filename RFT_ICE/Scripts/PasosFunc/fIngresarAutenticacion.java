@@ -17,17 +17,19 @@ import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
  * Parámetros	   : 0) IN nombre del caso 1) NA 2) IN Ambiente 3) IN ErrorStop (Si / No) 
  * Pre-condiciones : Estar en la vista del pedido
  * SS Nov 2015
+ * ej CP26_CD1_T1 NA QA NA NA 
  */
 public class fIngresarAutenticacion extends fIngresarAutenticacionHelper
 {
 	public void testMain(Object[] args) throws RationalTestException 
 	{
+		ImpreEncabezadoScript(getScriptArgs(), getScriptName( ).toString());
 		String[] MensError;
 		MensError = new String[4];
 		
 		String[] Tipo;
-		Tipo = new String[3];
-		//0)Tipo 1)Resultado 2)Canal
+		Tipo = new String[4];
+		//0)Resultado 1) Tipo 2)Canal 3)Tramite
 		
 		System.out.println("PasofIngresarAutenticacion");
 		
@@ -40,16 +42,15 @@ public class fIngresarAutenticacion extends fIngresarAutenticacionHelper
 			dpNext(); 
 		}
 		System.out.println("DP Usado: " + dpString("NumeroCaso")+ dpString("Ambiente"));
-		Tipo[0] = dpString("Tipo");
+		Tipo[1] = dpString("Tipo");
 		Tipo[2] = dpString("Canal"); // NA si es que no se permite en el ambiente.
-		
-		System.out.println("Tipo de autenticación a ingresar: " + Tipo[0]);
-	
+		Tipo[3] = dpString("Tramite"); // Para manejar port-int
+
 		callScript("Scripts.Comun.IngresarAutenticacion", Tipo);
-		System.out.println("Resultado de IngresarAutenticacion" + Tipo[1]);
-		if (Tipo[1].toString().equals("No Encontrado")) {	
-			MensError[0] = "Tipo autenticacion no encontrado";
-			//MensError[0] = "xDefecto";
+	
+		if (Tipo[0].toString().equals("NOK")) {	
+			//MensError[0] = "Tipo autenticacion no encontrado";
+			MensError[0] = "xDefecto";
 			MensError[1] = args[3].toString();
 			MensError[2] = args[0].toString();
 			MensError[3] = getScriptName( );

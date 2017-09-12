@@ -1,0 +1,117 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: CP76_CD1 Desde paso: 5 Modo:simulacion
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatosEntrada'                                                  'NE'                          
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'                                         'OK'                          
+'Paso    0  -  LeerDatosSalida'                                                   'OK'                          
+'Paso    1  -  fLogin'                                                            'OK'                          
+'Paso    2  -  fVista360'                                                         'NE'                          
+'Paso    3  -  fNuevaVenta'                                                       'NE'                          
+'Paso    4  -  fBuscarPedidoVenta'                                                'OK'                          
+'Paso    5  -  fObtenerMorosidad'                                                 'OK'                          
+'Paso    6  -  fIngresarAutenticacion'                                            'OK'                          
+'Paso    7  -  fCompraPlanCategoriaCatalogo'                                      'OK'                          
+'Paso    8  -  fIngresarSIM'                                                      'OK'                          
+'Paso    9  -  fGenerarCtaFact'                                                   'OK'                          
+'Paso   10  -  fSeleccionarTerminal'                                              'OK'                          
+'Paso   11  -  fValorarTodo'                                                      'OK'                          
+'Paso   12  -  fIngresarIMEI'                                                     'OK'                          
+'Paso   13  -  fIngresarIMEI'                                                     'OK'                          
+'Paso   14  -  fIngresarIMEI'                                                     'OK'                          
+'Paso   15  -  fCheckPagoFact'                                                    'OK'                          
+'Paso   16  -  fValidarDescEnProducto'                                            'OK'                          
+'Paso   17  -  fASRM_Login'                                                       'OK'                          
+'Paso   18  -  fASRM_ModificarEstadoServicio'                                     'OK'                          
+'Paso   19  -  fASRM_Logout'                                                      'OK'                          
+'Paso   20  -  fBuscarProducto'                                                   'OK'                          
+'Paso   21  -  fNumeroEspecial'                                                   'OK'                          
+'Paso   22  -  fIngresarNroServicioAdmin'                                         'NE'                          
+'Paso   23  -  fEnviarPedido'                                                     'OK'                          
+'Paso   24  -  fEsperaEstado'                                                     'OK'                          
+'Paso   25  -  fATV_Login'                                                        'OK'                          
+'Paso   26  -  fATV_BuscarTerminal_Plan'                                          'OK'                          
+'Paso   27  -  fATV_ValidarEstadoTerminal_Plan'                                   'OK'                          
+'Paso   28  -  fATV_Logout'                                                       'OK'                          
+'Paso   29  -  fNuevoTramite'                                                     'OK'                          
+'Paso   30  -  fVista360'                                                         'OK'                          
+'Paso   31  -  fBuscarActivo'                                                     'OK'                          
+'Paso   32  -  fNuevoCambioPlan'                                                  'OK'                          
+'Paso   33  -  fBuscarPedidoVenta'                                                'NE'                          
+'Paso   34  -  fObtenerMorosidad'                                                 'OK'                          
+'Paso   35  -  fIngresarAutenticacion'                                            'OK'                          
+'Paso   36  -  fAgregarContacto_RepLegal'                                         'OK'                          
+'Paso   37  -  fSeleccionarTerminal'                                              'OK'                          
+'Paso   38  -  fValorarTodo'                                                      'OK'                          
+'Paso   39  -  fIngresarIMEI'                                                     'OK'                          
+'Paso   40  -  fIngresarIMEI'                                                     'OK'                          
+'Paso   41  -  fIngresarIMEI'                                                     'OK'                          
+'Paso   42  -  fCheckPagoFact'                                                    'OK'                          
+'Paso   43  -  fValidarDescEnProducto'                                            'OK'                          
+'Paso   44  -  fATV_Login'                                                        'OK'                          
+'Paso   45  -  fATV_ModificarRegRetencion'                                        'OK'                          
+'Paso   46  -  fATV_Logout'                                                       'OK'                          
+'Paso   47  -  fEnviarPedido'                                                     'OK'                          
+'Paso   48  -  fEsperaEstado'                                                     'OK'                          
+'Paso   49  -  fATV_Login'                                                        'OK'                          
+'Paso   50  -  fATV_BuscarTerminal_Plan'                                          'OK'                          
+'Paso   51  -  fATV_ValidarEstadoTerminal_Plan'                                   'OK'                          
+'Paso   52  -  fATV_BuscarTerminal_Plan'                                          'OK'                          
+'Paso   53  -  fATV_ValidarEstadoTerminal_Plan'                                   'OK'                          
+'Paso   54  -  fATV_ValidarPosibMultas'                                           'OK'                          
+'Paso   55  -  fATV_ValidarPosibMultas'                                           'OK'                          
+'Paso   56  -  fATV_Logout'                                                       'OK'                          
+'Paso   57  -  fNuevoTramite'                                                     'OK'                          
+'Paso   58  -  fAdministrarLOV'                                                   'OK'                          
+'Paso   59  -  fVista360'                                                         'OK'                          
+'Paso   60  -  fBuscarActivo'                                                     'OK'                          
+'Paso   61  -  fNuevoCambioPlan'                                                  'OK'                          
+'Paso   62  -  fBuscarPedidoVenta'                                                'OK'                          
+'Paso   63  -  fObtenerMorosidad'                                                 'OK'                          
+'Paso   64  -  fIngresarAutenticacion'                                            'OK'                          
+'Paso   65  -  fAgregarContacto_RepLegal'                                         'OK'                          
+'Paso   66  -  fSeleccionarTerminal'                                              'OK'                          
+'Paso   67  -  fValorarTodo'                                                      'OK'                          
+'Paso   68  -  fIngresarIMEI'                                                     'OK'                          
+'Paso   69  -  fIngresarIMEI'                                                     'OK'                          
+'Paso   70  -  fIngresarIMEI'                                                     'OK'                          
+'Paso   71  -  fCheckPagoFact'                                                    'OK'                          
+'Paso   72  -  fValidarDescEnProducto'                                            'OK'                          
+'Paso   73  -  fATV_Login'                                                        'OK'                          
+'Paso   74  -  fATV_ModificarRegRetencion'                                        'OK'                          
+'Paso   75  -  fATV_Logout'                                                       'OK'                          
+'Paso   76  -  fEnviarPedido'                                                     'OK'                          
+'Paso   77  -  fEsperaEstado'                                                     'OK'                          
+'Paso   78  -  fATV_Login'                                                        'OK'                          
+'Paso   79  -  fATV_ValidarPagoMulta'                                             'OK'                          
+'Paso   80  -  fATV_ValidarPagoMulta'                                             'OK'                          
+'Paso   81  -  fATV_ValidarPosibMultas'                                           'OK'                          
+'Paso   82  -  fATV_Logout'                                                       'OK'                          
+'Paso   83  -  fLogout'                                                           'OK'                          
+'Paso   84  -  Fin del caso'                                                      'OK'                          
+
+
+Informe de DATOS de salida
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoPasoOK'                 '4'                           
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoTramite'                '1'                           
+'Paso   29  -  GrabarDatosSalida'                  'UltTramite'                   '2'                           
+'Paso   57  -  GrabarDatosSalida'                  'UltTramite'                   '3'                           
+
+
+Informe de Bugs
+-----------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------
+Tipo Parada         = FIN
+Mensaje de Parada   = FIN del caso en paso 84
+Parada en paso	    = 84
+
+
+-----------------------------------------------------------------------------------------
+Fin del Informe del Caso Prueba_Conj Datos: CP76_CD1
+-----------------------------------------------------------------------------------------

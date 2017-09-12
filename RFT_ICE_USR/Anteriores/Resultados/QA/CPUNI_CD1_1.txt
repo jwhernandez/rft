@@ -1,0 +1,46 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: CPUNI_CD1 Desde paso: 1 Modo:Real
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatosEntrada'                                                  'OK'                          
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'                                         'OK'                          
+'Paso    0  -  GrabarDatosSalida'                                                 'OK'                          
+'Paso    1  -  fLogin'                                                            'NE'                          
+'Paso    2  -  fBRM_Login'                                                        'NE'                          
+'Paso    3  -  fBRM_BuscarCliente'                                                'NE'                          
+'Paso    4  -  fBRM_FavoritoValidarCambioNum'                                     'NE'                          
+'Paso    5  -  fBRM_Logout'                                                       'NE'                          
+'Paso    6  -  fBRM_ValidarProductos'                                             'NE'                          
+'Paso    7  -  fBRM_ValidarProductos'                                             'NE'                          
+'Paso    8  -  fValidarAtributosPedido'                                           'NE'                          
+'Paso    9  -  fCompraPlanCategoriaCatalogo'                                      'NE'                          
+'Paso   10  -  fBRM_Logout'                                                       'NE'                          
+'Paso   11  -  fCrearLE_Ped'                                                      'NE'                          
+'Paso   12  -  fCrearLE_Ped'                                                      'NE'                          
+'Paso   13  -  AgregarNum_a_LE_Ped'                                               'NE'                          
+'Paso   14  -  AgregarNum_a_LE_Ped'                                               'NE'                          
+'Paso   15  -  fBRM_Login'                                                        'OK'                          
+'Paso   16  -  fBRM_BuscarCliente'                                                'OK'                          
+
+
+Informe de DATOS de salida
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoPasoOK'                 '0'                           
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoTramite'                '1'                           
+
+
+Informe de Bugs
+-----------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------
+Tipo Parada         = UnhandledException
+Mensaje de Parada   = Script=Comun.SistemasExternos.BRM_FavoritoValidarCambioNum Línea=0 Error=0 >= 0
+
+
+-----------------------------------------------------------------------------------------
+Fin del Informe del Caso Prueba_Conj Datos: CPUNI_CD1
+-----------------------------------------------------------------------------------------

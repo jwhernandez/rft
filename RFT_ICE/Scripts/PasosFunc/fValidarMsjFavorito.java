@@ -17,11 +17,13 @@ import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
  * Parámetros	   :  
  * Pre-condiciones : Estar en la vista del pedido con el mensaje desplegado
  * SS Nov 2015
+ * CP26_CD1_T1 DPM0014 QA NA NA 
  */
 public class fValidarMsjFavorito extends fValidarMsjFavoritoHelper
 {
 	public void testMain(Object[] args) throws RationalTestException 
 	{
+		ImpreEncabezadoScript(getScriptArgs(), getScriptName( ).toString());
 		String[] MsjFavorito;
 		MsjFavorito = new String[4];
 
@@ -35,8 +37,12 @@ public class fValidarMsjFavorito extends fValidarMsjFavoritoHelper
 		MsjFavorito[0]= args[1].toString();
 		MsjFavorito[3] = "BrowserScript";
 		callScript("Scripts.Comun.ValidarMensaje",MsjFavorito);
+		
+		// Se mejora para que acepte true (coincide) o Parcialmente
 
-		if  (MsjFavorito[1].toString().equals("false")){
+		// Acepta valores como Parcialmente o true
+		if  (!(MsjFavorito[1].toString().equals("true") || 
+			   MsjFavorito[1].toString().equals("Parcialmente"))) {
 			MensError[0] = "Mensaje diferente al deseado";
 			//MensError[0] = "xDefecto";
 			MensError[1] = args[3].toString();

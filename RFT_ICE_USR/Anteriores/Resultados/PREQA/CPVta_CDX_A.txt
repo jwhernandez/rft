@@ -1,0 +1,38 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: CPVta_CDX Desde paso: A Modo:Real
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+-----------------------------------------------------------------------------------------
+
+
+Informe de DATOS de salida
+-----------------------------------------------------------------------------------------
+
+
+Informe de Bugs
+-----------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------
+Tipo Parada         = Excepción no esperada
+Mensaje de Parada   = Script=LeerDatosEntrada Línea=0 Error=No se ha podido generar el XML: C:\Users\Sandra\IBM\rationalsdp\workspace\RFT_ICE\Datos\DP_DatosEntrada.rftdp. Razón: No se ha podido crear archivo: C:\Users\Sandra\IBM\rationalsdp\workspace\RFT_ICE\Datos\DP_DatosEntrada.rftdp
+¿Ha [Sandra] tiene privilegios de modificación para este archivo? .
+ No se pudo completar la grabación del script de prueba.
+Parada en paso	    = 0
+
+
+-----------------------------------------------------------------------------------------
+Fin del Informe del Caso Prueba_Conj Datos: CPVta_CDX
+-----------------------------------------------------------------------------------------
+
+
+Informe de Errores imprevistos de sistema
+-----------------------------------------------------------------------------------------
+'Paso    0  -  Accion'                             'Excepción no esperada'        'Script=LeerDatosEntrada Línea=0 Error=No se ha podido generar el XML: C:\Users\Sandra\IBM\rationalsdp\workspace\RFT_ICE\Datos\DP_DatosEntrada.rftdp. Razón: No se ha podido crear archivo: C:\Users\Sandra\IBM\rationalsdp\workspace\RFT_ICE\Datos\DP_DatosEntrada.rftdp
+¿Ha [Sandra] tiene privilegios de modificación para este archivo? .
+ No se pudo completar la grabación del script de prueba.'
+
+'Paso    0  -  Accion'                             'Excepción no esperada'        'Script=IterarCaso Línea=0 Error=null'
+

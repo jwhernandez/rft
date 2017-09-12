@@ -1,0 +1,25 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: CP010_CD1 Desde paso: A Modo:simulacion
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+-----------------------------------------------------------------------------------------
+
+
+Informe de DATOS de salida
+-----------------------------------------------------------------------------------------
+
+
+Informe de Bugs
+-----------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------
+Tipo Parada         = UnhandledException
+Mensaje de Parada   = Script=Comun.IngresarDataPoolPasos Línea=0 Error=Could not read datapool file: [C:\Users\rft\IBM\rationalsdp\workspace\RFT_ICE\ConfiguracionPasosEscenarios\DP_Pasos_CP010.rftdp]. It might be missing or be in a wrong format.
+
+
+-----------------------------------------------------------------------------------------
+Fin del Informe del Caso Prueba_Conj Datos: CP010_CD1
+-----------------------------------------------------------------------------------------

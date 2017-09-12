@@ -18,14 +18,16 @@ import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
  * Script Name   : <b>fValidarCamposServicio</b>
  * @since  2016/02/15
  * @author SSASTRE
+ * ult modif ss 25/4/2017 se agrega opcion de portin
  */
 public class fValidarCamposServicio extends fValidarCamposServicioHelper
 {
 	public void testMain(Object[] args) 
 	{
+		ImpreEncabezadoScript(getScriptArgs(), getScriptName( ).toString());
 		String[] ValCamposServ;
-		ValCamposServ = new String[3];
-		//Parámetros 0)IN producto 1)IN Editable? true o false 2)OUT OK/NOK
+		ValCamposServ = new String[4];
+		//Parámetros 0)IN producto 1)IN Editable? true o false 2)OUT OK/NOK 3)Tramite
 
 		String[] MensError;
 		MensError = new String[4];
@@ -45,6 +47,7 @@ public class fValidarCamposServicio extends fValidarCamposServicioHelper
 
 		ValCamposServ[0]=dpString("VCS_Prod"+i);
 		ValCamposServ[1]=dpString("VCS_Editable"+i);
+		ValCamposServ[3]=dpString("Tramite");
 		callScript("Scripts.Comun.ValidarCamposServicio",ValCamposServ);
 		
 		if  (ValCamposServ[2].toString().equals("NOK")){

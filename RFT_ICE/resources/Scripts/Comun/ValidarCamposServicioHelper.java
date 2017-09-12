@@ -20,12 +20,12 @@ import com.rational.test.ft.vp.IFtVerificationPoint;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
  * Script Name   : <b>ValidarCamposServicio</b><br>
- * Generated     : <b>2016/02/15 08:40:04</b><br>
+ * Generated     : <b>2017/04/25 12:00:20 PM</b><br>
  * Description   : Helper class for script<br>
  * Original Host : Windows 7 x86 6.1 <br>
  * 
- * @since  febrero 15, 2016
- * @author Sandra
+ * @since  abril 25, 2017
+ * @author rft
  */
 public abstract class ValidarCamposServicioHelper extends libreria.Accion
 {
@@ -53,7 +53,30 @@ public abstract class ValidarCamposServicioHelper extends libreria.Accion
 	}
 	
 	/**
-	 * LineasPedidos: with default state.
+	 * ICEIMSI: with default state.
+	 *		ClassName : SiebText
+	 * 		.class : SiebText
+	 * 		RepositoryName : ICE IMSI
+	 */
+	protected SiebTextTestObject IMSI_PI() 
+	{
+		return new SiebTextTestObject(
+                        getMappedTestObject("IMSI_PI"));
+	}
+	/**
+	 * ICEIMSI: with specific test context and state.
+	 *		ClassName : SiebText
+	 * 		.class : SiebText
+	 * 		RepositoryName : ICE IMSI
+	 */
+	protected SiebTextTestObject IMSI_PI(TestObject anchor, long flags) 
+	{
+		return new SiebTextTestObject(
+                        getMappedTestObject("IMSI_PI"), anchor, flags);
+	}
+	
+	/**
+	 * LineasPedido: with default state.
 	 *		ActiveRow : 9
 	 * 		ClassName : SiebList
 	 * 		.class : SiebList
@@ -66,7 +89,7 @@ public abstract class ValidarCamposServicioHelper extends libreria.Accion
                         getMappedTestObject("LineasPedido"));
 	}
 	/**
-	 * LineasPedidos: with specific test context and state.
+	 * LineasPedido: with specific test context and state.
 	 *		ActiveRow : 9
 	 * 		ClassName : SiebList
 	 * 		.class : SiebList
@@ -80,7 +103,30 @@ public abstract class ValidarCamposServicioHelper extends libreria.Accion
 	}
 	
 	/**
-	 * SIMTech: with default state.
+	 * LineasPedidoPI: with default state.
+	 *		ClassName : SiebList
+	 * 		.class : SiebList
+	 * 		RepositoryName : SiebList
+	 */
+	protected SiebListTestObject LineasPedido_PI() 
+	{
+		return new SiebListTestObject(
+                        getMappedTestObject("LineasPedido_PI"));
+	}
+	/**
+	 * LineasPedidoPI: with specific test context and state.
+	 *		ClassName : SiebList
+	 * 		.class : SiebList
+	 * 		RepositoryName : SiebList
+	 */
+	protected SiebListTestObject LineasPedido_PI(TestObject anchor, long flags) 
+	{
+		return new SiebListTestObject(
+                        getMappedTestObject("LineasPedido_PI"), anchor, flags);
+	}
+	
+	/**
+	 * Tecnologia: with default state.
 	 *		ClassName : SiebText
 	 * 		.class : SiebText
 	 * 		RepositoryName : ICE SIM Tech
@@ -91,7 +137,7 @@ public abstract class ValidarCamposServicioHelper extends libreria.Accion
                         getMappedTestObject("SIMTech"));
 	}
 	/**
-	 * SIMTech: with specific test context and state.
+	 * Tecnologia: with specific test context and state.
 	 *		ClassName : SiebText
 	 * 		.class : SiebText
 	 * 		RepositoryName : ICE SIM Tech
@@ -100,6 +146,29 @@ public abstract class ValidarCamposServicioHelper extends libreria.Accion
 	{
 		return new SiebTextTestObject(
                         getMappedTestObject("SIMTech"), anchor, flags);
+	}
+	
+	/**
+	 * ICESIMTech: with default state.
+	 *		ClassName : SiebText
+	 * 		.class : SiebText
+	 * 		RepositoryName : ICE SIM Tech
+	 */
+	protected SiebTextTestObject SIMTech_PI() 
+	{
+		return new SiebTextTestObject(
+                        getMappedTestObject("SIMTech_PI"));
+	}
+	/**
+	 * ICESIMTech: with specific test context and state.
+	 *		ClassName : SiebText
+	 * 		.class : SiebText
+	 * 		RepositoryName : ICE SIM Tech
+	 */
+	protected SiebTextTestObject SIMTech_PI(TestObject anchor, long flags) 
+	{
+		return new SiebTextTestObject(
+                        getMappedTestObject("SIMTech_PI"), anchor, flags);
 	}
 	
 	

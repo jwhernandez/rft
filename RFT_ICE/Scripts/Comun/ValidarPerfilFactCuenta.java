@@ -22,6 +22,7 @@ public class ValidarPerfilFactCuenta extends ValidarPerfilFactCuentaHelper
 {
 	public void testMain(Object[] argu) 
 	{
+		ImpreEncabezadoScript(getScriptArgs(), getScriptName( ).toString());
 		argu[1] = "OK";
 		
 		System. out.println("ValordeEntrada" + argu[0].toString()); 
@@ -31,6 +32,7 @@ public class ValidarPerfilFactCuenta extends ValidarPerfilFactCuentaHelper
 		if  (!perfilVP.performTest()){
 			argu[1] = "NOK";
 		}
+		ImpreResultadoScript(getScriptName( ).toString(), argu[1].toString());
 	}
 }
 

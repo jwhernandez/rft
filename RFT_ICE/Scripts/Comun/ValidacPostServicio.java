@@ -24,11 +24,34 @@ public class ValidacPostServicio extends ValidacPostServicioHelper
 {
 	public void testMain(Object[] argu) 
 	{
+		ImpreEncabezadoScript(getScriptArgs(), getScriptName( ).toString());
+		String[] ProductoObjetivo;
+		ProductoObjetivo = new String[4];
+		// Parámetros: 0) Nombre del producto 1) Encontrado/No Encontrado 2)posicion y 3)action code 
+
 		argu[0] = "OK";
+		switch (argu[1].toString()) {
+		case "Prepago":
+			ProductoObjetivo[0]=dpString("ServicioPrepago");
+			System.out.println("Prepago-Servicio");
+			break;
+		case "Postpago":
+			ProductoObjetivo[0]=dpString("ServicioPostpago");
+			System.out.println("Postpago-Servicio");
+			break;
+		default:  
+			System.out.println("Stop");
+			break;
+		} // end del switch
+		
+		callScript("Scripts.Comun.BuscarProducto", ProductoObjetivo);
+
 		// Chequear que "Service Id" este inhabilitado
-		System.out.println("ServiceId=" + (ServiceId().isEnabled()) + " Liberar=" + (LiberarNumero().isEnabled()));
-		logInfo("ServiceId=" + (ServiceId().isEnabled()) + " Liberar=" + (LiberarNumero().isEnabled()));
-		if (ServiceId().isEnabled()) {
+		System.out.println(//"ServiceId=" + (ServiceId().isEnabled()) + 
+				" Liberar=" + (LiberarNumero().isEnabled()));
+	//	logInfo("ServiceId=" + (ServiceId().isEnabled()));
+				//.isEnabled()) + " Liberar=" + (LiberarNumero().isEnabled()));
+		if (text_serviceId().isEnabled()) {
 			argu[0] = "NOK";
 		} else {
 			// Chequear que LiberarNumero(). este habilitado
@@ -38,7 +61,7 @@ public class ValidacPostServicio extends ValidacPostServicioHelper
 		}
 		System.out.println("ValidacPostServicio=" +argu[0]);
 		logInfo("ValidacPostServicio=" +argu[0]);
-
+		ImpreResultadoScript(getScriptName( ).toString(), argu[0].toString());
 	}
 }
 

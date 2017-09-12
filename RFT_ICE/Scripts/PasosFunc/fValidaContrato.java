@@ -22,6 +22,7 @@ public class fValidaContrato extends fValidaContratoHelper
 {
 	public void testMain(Object[] args) throws RationalTestException 
 	{
+		ImpreEncabezadoScript(getScriptArgs(), getScriptName( ).toString());
 		String[] Contrato;
 		Contrato = new String[2];
 		// Parámetros	   : 0) Activo / Inactivo / Otros 1) OK/NOK 

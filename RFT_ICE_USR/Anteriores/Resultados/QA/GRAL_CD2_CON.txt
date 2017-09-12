@@ -1,0 +1,2168 @@
+Inicio de consola en archivo
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.ConsolaaFile
+Resultado:OK
+-----------------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.IngresarDataPoolPasos
+Cantidad de argumentos:2
+Argumento 0:=null
+Argumento 1:=GRAL
+-----------------------------------------------------------
+NumeroCaso = GRAL
+Path DP Entrada = C:\Users\Sandra\IBM\rationalsdp\workspace\RFT_ICE\\ConfiguracionPasosEscenarios File de Entrada = DP_Pasos_GRAL.rftdp
+false
+false
+--------------------------------------------------------------------
+GRALPasos=fLogin
+GRALParam=NA
+GRALEjecuta=TRUE
+GRALCond=NA
+GRALErrorStop=TRUE
+GRALReEjec=Siempre
+--------------------------------------------------------------------
+GRALPasos=fIraActivoDesdeActivo
+GRALParam=DP
+GRALEjecuta=TRUE
+GRALCond=NA
+GRALErrorStop=TRUE
+GRALReEjec=1-3
+--------------------------------------------------------------------
+GRALPasos=fNuevaPostvta
+GRALParam=1
+GRALEjecuta=TRUE
+GRALCond=NA
+GRALErrorStop=TRUE
+GRALReEjec=Nunca
+--------------------------------------------------------------------
+GRALPasos=fBuscarPedidoVenta
+GRALParam=NA
+GRALEjecuta=TRUE
+GRALCond=NA
+GRALErrorStop=TRUE
+GRALReEjec=1-5
+--------------------------------------------------------------------
+GRALPasos=fCancelarPedido
+GRALParam=NA
+GRALEjecuta=TRUE
+GRALCond=NA
+GRALErrorStop=TRUE
+GRALReEjec=Nunca
+--------------------------------------------------------------------
+GRALPasos=fNuevoTramite
+GRALParam=2
+GRALEjecuta=TRUE
+GRALCond=NA
+GRALErrorStop=TRUE
+GRALReEjec=Siempre
+--------------------------------------------------------------------
+GRALPasos=fIraActivoDesdeActivo
+GRALParam=DP
+GRALEjecuta=TRUE
+GRALCond=NA
+GRALErrorStop=TRUE
+GRALReEjec=1-8
+--------------------------------------------------------------------
+GRALPasos=fNuevaPostvta
+GRALParam=1
+GRALEjecuta=TRUE
+GRALCond=NA
+GRALErrorStop=TRUE
+GRALReEjec=Nunca
+--------------------------------------------------------------------
+GRALPasos=fBuscarPedidoVenta
+GRALParam=NA
+GRALEjecuta=TRUE
+GRALCond=NA
+GRALErrorStop=TRUE
+GRALReEjec=1-10
+--------------------------------------------------------------------
+GRALPasos=fCancelarPedido
+GRALParam=NA
+GRALEjecuta=TRUE
+GRALCond=NA
+GRALErrorStop=TRUE
+GRALReEjec=Nunca
+--------------------------------------------------------------------
+GRALPasos=fNuevoTramite
+GRALParam=3
+GRALEjecuta=TRUE
+GRALCond=NA
+GRALErrorStop=TRUE
+GRALReEjec=Siempre
+--------------------------------------------------------------------
+GRALPasos=fIraActivoDesdeActivo
+GRALParam=DP
+GRALEjecuta=TRUE
+GRALCond=NA
+GRALErrorStop=TRUE
+GRALReEjec=1-13
+--------------------------------------------------------------------
+GRALPasos=fNuevaPostvta
+GRALParam=1
+GRALEjecuta=TRUE
+GRALCond=NA
+GRALErrorStop=TRUE
+GRALReEjec=Nunca
+--------------------------------------------------------------------
+GRALPasos=fBuscarPedidoVenta
+GRALParam=NA
+GRALEjecuta=TRUE
+GRALCond=NA
+GRALErrorStop=TRUE
+GRALReEjec=1-15
+--------------------------------------------------------------------
+GRALPasos=fCancelarPedido
+GRALParam=NA
+GRALEjecuta=TRUE
+GRALCond=NA
+GRALErrorStop=TRUE
+GRALReEjec=Nunca
+--------------------------------------------------------------------
+GRALPasos=FIN
+GRALParam=null
+GRALEjecuta=null
+GRALCond=null
+GRALErrorStop=false
+GRALReEjec=null
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.IngresarDataPoolPasos
+Resultado:OK
+-----------------------------------------------------------
+----------------------------------
+Se actualizan los datos de entrada
+----------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.LeerDatosEntrada
+Cantidad de argumentos:4
+Argumento 0:=null
+Argumento 1:=GRAL_CD2
+Argumento 2:=QA
+Argumento 3:=Todo
+-----------------------------------------------------------
+Path DP Entrada = C:\Users\Sandra\IBM\rationalsdp\workspace\RFT_ICE_USR\\Regresion\\QA\\ File de Entrada = GRAL_CD2.rftdp
+***********************************************************
+Tramite=1
+NumeroCaso_ConjuntoDatos_Tramite = GRAL_CD2_T1
+Ambiente = QA
+***********************************************************
+--------------------------------------------------------------------
+Dato = NroServicio
+Cantidad Variables = 1
+Valor = 10112131
+Variable1= NumeroServicio
+Dato 10112131 leido del dp = 10112131
+--------------------------------------------------------------------
+Dato = Servicio
+Cantidad Variables = 1
+Valor = Servicio de Telefonia Movil
+Variable1= Servicio
+Dato Servicio de Telefonia Movil leido del dp = Servicio de Telefonia Movil
+--------------------------------------------------------------------
+Dato = Tramite
+Cantidad Variables = 1
+Valor = PostVenta
+Variable1= Tramite
+Dato PostVenta leido del dp = PostVenta
+--------------------------------------------------------------------
+Dato = Subtramite set 1
+Cantidad Variables = 1
+Valor = Suspensión
+Variable1= Subtramite1
+Dato Suspensión leido del dp = Suspensión
+--------------------------------------------------------------------
+Dato = Subtramite set 1
+Cantidad Variables = 1
+Valor = Robo
+Variable1= Motivo1
+Dato Robo leido del dp = Robo
+--------------------------------------------------------------------
+Dato = Subtramite set 1
+Cantidad Variables = 1
+Valor = NA
+Variable1= Msj1
+Dato NA leido del dp = NA
+***********************************************************
+Tramite=2
+NumeroCaso_ConjuntoDatos_Tramite = GRAL_CD2_T2
+Ambiente = QA
+***********************************************************
+--------------------------------------------------------------------
+Dato = NroServicio
+Cantidad Variables = 1
+Valor = 10112131
+Variable1= NumeroServicio
+Dato 10112131 leido del dp = 10112131
+--------------------------------------------------------------------
+Dato = Servicio
+Cantidad Variables = 1
+Valor = Servicio de Telefonia Movil
+Variable1= Servicio
+Dato Servicio de Telefonia Movil leido del dp = Servicio de Telefonia Movil
+--------------------------------------------------------------------
+Dato = Tramite
+Cantidad Variables = 1
+Valor = PostVenta
+Variable1= Tramite
+Dato PostVenta leido del dp = PostVenta
+--------------------------------------------------------------------
+Dato = Subtramite set 1
+Cantidad Variables = 1
+Valor = Suspensión
+Variable1= Subtramite1
+Dato Suspensión leido del dp = Suspensión
+--------------------------------------------------------------------
+Dato = Subtramite set 1
+Cantidad Variables = 1
+Valor = Robo
+Variable1= Motivo1
+Dato Robo leido del dp = Robo
+--------------------------------------------------------------------
+Dato = Subtramite set 1
+Cantidad Variables = 1
+Valor = NA
+Variable1= Msj1
+Dato NA leido del dp = NA
+***********************************************************
+Tramite=3
+NumeroCaso_ConjuntoDatos_Tramite = GRAL_CD2_T3
+Ambiente = QA
+***********************************************************
+--------------------------------------------------------------------
+Dato = NroServicio
+Cantidad Variables = 1
+Valor = 10112131
+Variable1= NumeroServicio
+Dato 10112131 leido del dp = 10112131
+--------------------------------------------------------------------
+Dato = Servicio
+Cantidad Variables = 1
+Valor = Servicio de Telefonia Movil
+Variable1= Servicio
+Dato Servicio de Telefonia Movil leido del dp = Servicio de Telefonia Movil
+--------------------------------------------------------------------
+Dato = Tramite
+Cantidad Variables = 1
+Valor = PostVenta
+Variable1= Tramite
+Dato PostVenta leido del dp = PostVenta
+--------------------------------------------------------------------
+Dato = Subtramite set 1
+Cantidad Variables = 1
+Valor = Suspensión
+Variable1= Subtramite1
+Dato Suspensión leido del dp = Suspensión
+--------------------------------------------------------------------
+Dato = Subtramite set 1
+Cantidad Variables = 1
+Valor = Robo
+Variable1= Motivo1
+Dato Robo leido del dp = Robo
+--------------------------------------------------------------------
+Dato = Subtramite set 1
+Cantidad Variables = 1
+Valor = NA
+Variable1= Msj1
+Dato NA leido del dp = NA
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.LeerDatosEntrada
+Resultado:OK
+-----------------------------------------------------------
+INFOPASO
+Nombre, tipo, y valor Scripts.CasosPrueba.CasosPruebaPASOOK
+Valor OK
+Nombre antes LeerDatosEntrada
+Nombre Despues LeerDatosEntrada
+Nombre, tipo, y valor Paso    0  -  LeerDatosEntradaPASOOK
+----------------------------------
+Se lee el último trámite y paso
+----------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.LeerDatoSalidaUltPasoEjec
+Cantidad de argumentos:3
+Argumento 0:=null
+Argumento 1:=GRAL_CD2
+Argumento 2:=QA
+-----------------------------------------------------------
+DP Salida en USR=C:\Users\Sandra\IBM\rationalsdp\workspace\RFT_ICE_USR\\Regresion\\QA\\-_SeguimientoEjecucion.rftdp
+NumeroCaso = GRAL_CD2
+Ambiente = QA
+INFOPASO
+Nombre, tipo, y valor Scripts.Comun.LeerDatoSalidaUltPasoEjecDATO0
+Valor 0
+Tipo DATO
+Nombre antes Paso    0
+Nombre Despues LeerDatoSalidaUltPasoEjec
+Nombre, tipo, y valor Paso    0  -  LeerDatoSalidaUltPasoEjecDATO0
+UltimoPasoOK0
+INFOPASO
+Nombre, tipo, y valor Scripts.Comun.LeerDatoSalidaUltPasoEjecDATO1
+Valor 1
+Tipo DATO
+Nombre antes Paso    0
+Nombre Despues LeerDatoSalidaUltPasoEjec
+Nombre, tipo, y valor Paso    0  -  LeerDatoSalidaUltPasoEjecDATO1
+UltimoTramite1
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.LeerDatoSalidaUltPasoEjec
+Resultado:OK
+-----------------------------------------------------------
+INFOPASO
+Nombre, tipo, y valor Scripts.CasosPrueba.CasosPruebaPASOOK
+Valor OK
+Nombre antes LeerDatoSalidaUltPasoEjec
+Nombre Despues LeerDatoSalidaUltPasoEjec
+Nombre, tipo, y valor Paso    0  -  LeerDatoSalidaUltPasoEjecPASOOK
+Reinicio automatico en paso :1
+----------------------------------
+Se inician los datos de salida
+----------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.GrabarDatosSalida
+Cantidad de argumentos:5
+Argumento 0:=null
+Argumento 1:=GRAL_CD2
+Argumento 2:=QA
+Argumento 3:=inicializar
+Argumento 4:=null
+-----------------------------------------------------------
+NumeroCaso = GRAL_CD2
+Ambiente = QA
+Se inicializan los datos
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.GrabarDatosSalida
+Resultado:OK
+-----------------------------------------------------------
+INFOPASO
+Nombre, tipo, y valor Scripts.CasosPrueba.CasosPruebaPASOOK
+Valor OK
+Nombre antes GrabarDatosSalida
+Nombre Despues GrabarDatosSalida
+Nombre, tipo, y valor Paso    0  -  GrabarDatosSalidaPASOOK
+Script a validar:fLogin
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.ValidaPasoSiEjecuta
+Cantidad de argumentos:9
+Argumento 0:=null
+Argumento 1:=QA
+Argumento 2:=1
+Argumento 3:=1
+Argumento 4:=true
+Argumento 5:=siempre
+Argumento 6:=na
+Argumento 7:=GRAL_CD2_T1
+Argumento 8:=NA
+-----------------------------------------------------------
+Desde:0 Hasta:1000
+Se analiza si el paso es condicionante o condicionado
+Se analiza si el paso ejecuta en una re-ejecución
+GetLogin:NOK
+Paso:1 Paso desde:1
+Paso:true
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.ValidaPasoSiEjecuta
+Resultado:true
+-----------------------------------------------------------
+ 
+-------------------------------------------------
+Inicio de Paso: 1
+-------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.PasosFunc.fLogin
+Cantidad de argumentos:5
+Argumento 0:=GRAL_CD2_T1
+Argumento 1:=NA
+Argumento 2:=QA
+Argumento 3:=true
+Argumento 4:=Paso1
+-----------------------------------------------------------
+JVALERIO1
+jvalerio1
+Primera expresion true
+Segunda expresion false
+Segunda sub expresion1 false
+Segunda sub expresion2 false
+iNroPaso e iNroPasoDsede1-1
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.CerrarIE
+Cantidad de argumentos:1
+Argumento 0:=null
+-----------------------------------------------------------
+Mensaje DialogoExplorer existe?:false
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.AceptarVtnasSBL
+Cantidad de argumentos:1
+Argumento 0:=null
+-----------------------------------------------------------
+Mensaje SW_TimeOut existe?:false
+Mensaje MensajeErrorHTMLSiebel existe?:false
+Mensaje MensajeErrorBrowserScript existe?:false
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.AceptarVtnasSBL
+Resultado:OK
+-----------------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.AceptarVtnasIEBrowser
+Cantidad de argumentos:1
+Argumento 0:=null
+-----------------------------------------------------------
+Cantidad de Browsers:0
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.AceptarVtnasIEBrowser
+Resultado:Resultado OK
+-----------------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.AceptarVtnasIEBrowser
+Cantidad de argumentos:1
+Argumento 0:=OK
+-----------------------------------------------------------
+Cantidad de Browsers:0
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.AceptarVtnasIEBrowser
+Resultado:Resultado OK
+-----------------------------------------------------------
+Cantidad de objetos a cerrar:0
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.AceptarVtnasIEBrowser
+Cantidad de argumentos:1
+Argumento 0:=OK
+-----------------------------------------------------------
+Cantidad de Browsers:0
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.AceptarVtnasIEBrowser
+Resultado:Resultado OK
+-----------------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.CerrarIE
+Resultado:Resultado OK
+-----------------------------------------------------------
+Mensaje DialogoExplorer existe?:false
+Mensaje de sesión ya abierta existe?:false
+Mensaje DialogoExplorer existe?:false
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.ValidarMensaje
+Cantidad de argumentos:4
+Argumento 0:=DPM0029
+Argumento 1:=null
+Argumento 2:=null
+Argumento 3:=BrowserScript
+-----------------------------------------------------------
+Tipo: BrowserScript
+Existe Mensaje BrowserScript: false
+Resultado: No Existe
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.ValidarMensaje
+Resultado:No Existe
+-----------------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.GrabarDatosSalida
+Cantidad de argumentos:5
+Argumento 0:=OK
+Argumento 1:=GRAL_CD2
+Argumento 2:=QA
+Argumento 3:=UltPasoOK
+Argumento 4:=1
+-----------------------------------------------------------
+NumeroCaso = GRAL_CD2
+Ambiente = QA
+Se graba el dato UltPasoOK con 1
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.GrabarDatosSalida
+Resultado:OK
+-----------------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.GrabarDatoSalidaUltPasoEjec
+Cantidad de argumentos:5
+Argumento 0:=OK
+Argumento 1:=GRAL_CD2
+Argumento 2:=QA
+Argumento 3:=NA
+Argumento 4:=1
+-----------------------------------------------------------
+DP Salida en USR=C:\Users\Sandra\IBM\rationalsdp\workspace\RFT_ICE_USR\\Regresion\\QA\\-_SeguimientoEjecucion.rftdp
+NumeroCaso = GRAL_CD2
+Ambiente = QA
+Se lee: Ult Tramite=1-Ult Paso=0
+Se actualizara con: Ult Tramite=NA-Ult Paso=1
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.GrabarDatoSalidaUltPasoEjec
+Resultado:OK
+-----------------------------------------------------------
+INFOPASO
+Nombre, tipo, y valor Scripts.CasosPrueba.CasosPruebaPASOOK
+Valor OK
+Nombre antes fLogin
+Nombre Despues fLogin
+Nombre, tipo, y valor Paso    1  -  fLoginPASOOK
+Script a validar:fIraActivoDesdeActivo
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.ValidaPasoSiEjecuta
+Cantidad de argumentos:9
+Argumento 0:=true
+Argumento 1:=QA
+Argumento 2:=1
+Argumento 3:=2
+Argumento 4:=true
+Argumento 5:=1-3
+Argumento 6:=na
+Argumento 7:=GRAL_CD2_T1
+Argumento 8:=DP
+-----------------------------------------------------------
+Desde:1 Hasta:3
+Se analiza si el paso es condicionante o condicionado
+Se analiza si el paso ejecuta en una re-ejecución
+GetLogin:NOK
+Paso:2 Paso desde:1
+Paso:true
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.ValidaPasoSiEjecuta
+Resultado:true
+-----------------------------------------------------------
+ 
+-------------------------------------------------
+Inicio de Paso: 2
+-------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.PasosFunc.fIraActivoDesdeActivo
+Cantidad de argumentos:5
+Argumento 0:=GRAL_CD2_T1
+Argumento 1:=DP
+Argumento 2:=QA
+Argumento 3:=true
+Argumento 4:=Paso2
+-----------------------------------------------------------
+INFOPASO
+Nombre, tipo, y valor Scripts.PasosFunc.fIraActivoDesdeActivoDATO10112131
+Valor 10112131
+Tipo DATO
+Nombre antes Paso    2
+Nombre Despues fIraActivoDesdeActivo
+Nombre, tipo, y valor Paso    2  -  fIraActivoDesdeActivoDATO10112131
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.IraActivoDesdeActivo
+Cantidad de argumentos:2
+Argumento 0:=null
+Argumento 1:=10112131
+-----------------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.IraActivoDesdeActivo
+Resultado:Resultado OK
+-----------------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.GrabarDatosSalida
+Cantidad de argumentos:5
+Argumento 0:=OK
+Argumento 1:=GRAL_CD2
+Argumento 2:=QA
+Argumento 3:=UltPasoOK
+Argumento 4:=2
+-----------------------------------------------------------
+NumeroCaso = GRAL_CD2
+Ambiente = QA
+Se graba el dato UltPasoOK con 2
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.GrabarDatosSalida
+Resultado:OK
+-----------------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.GrabarDatoSalidaUltPasoEjec
+Cantidad de argumentos:5
+Argumento 0:=OK
+Argumento 1:=GRAL_CD2
+Argumento 2:=QA
+Argumento 3:=NA
+Argumento 4:=2
+-----------------------------------------------------------
+DP Salida en USR=C:\Users\Sandra\IBM\rationalsdp\workspace\RFT_ICE_USR\\Regresion\\QA\\-_SeguimientoEjecucion.rftdp
+NumeroCaso = GRAL_CD2
+Ambiente = QA
+Se lee: Ult Tramite=1-Ult Paso=1
+Se actualizara con: Ult Tramite=NA-Ult Paso=2
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.GrabarDatoSalidaUltPasoEjec
+Resultado:OK
+-----------------------------------------------------------
+INFOPASO
+Nombre, tipo, y valor Scripts.CasosPrueba.CasosPruebaPASOOK
+Valor OK
+Nombre antes fIraActivoDesdeActivo
+Nombre Despues fIraActivoDesdeActivo
+Nombre, tipo, y valor Paso    2  -  fIraActivoDesdeActivoPASOOK
+Script a validar:fNuevaPostvta
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.ValidaPasoSiEjecuta
+Cantidad de argumentos:9
+Argumento 0:=true
+Argumento 1:=QA
+Argumento 2:=1
+Argumento 3:=3
+Argumento 4:=true
+Argumento 5:=nunca
+Argumento 6:=na
+Argumento 7:=GRAL_CD2_T1
+Argumento 8:=1
+-----------------------------------------------------------
+Desde:0 Hasta:1000
+Se analiza si el paso es condicionante o condicionado
+Se analiza si el paso ejecuta en una re-ejecución
+GetLogin:NOK
+Paso:3 Paso desde:1
+Paso:true
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.ValidaPasoSiEjecuta
+Resultado:true
+-----------------------------------------------------------
+ 
+-------------------------------------------------
+Inicio de Paso: 3
+-------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.PasosFunc.fNuevaPostvta
+Cantidad de argumentos:5
+Argumento 0:=GRAL_CD2_T1
+Argumento 1:=1
+Argumento 2:=QA
+Argumento 3:=true
+Argumento 4:=Paso3
+-----------------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.NuevaPostvta
+Cantidad de argumentos:6
+Argumento 0:=null
+Argumento 1:=Suspensión
+Argumento 2:=Robo
+Argumento 3:=Servicio de Telefonia Movil
+Argumento 4:=null
+Argumento 5:=NA
+-----------------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.BuscarProductoActivo
+Cantidad de argumentos:6
+Argumento 0:=Servicio de Telefonia Movil
+Argumento 1:=null
+Argumento 2:=null
+Argumento 3:=null
+Argumento 4:=Si
+Argumento 5:=null
+-----------------------------------------------------------
+true
+{RecordCounter=1 - 2 of 2, ClassName=SiebApplet, IsPopupApplet=false, UIName=Activos instalados, RepositoryName=SIS OM Products & Services Root List Applet (Service) - Tiny}
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.RecordCount
+Cantidad de argumentos:5
+Argumento 0:=1 - 2 of 2
+Argumento 1:=null
+Argumento 2:=null
+Argumento 3:=null
+Argumento 4:=null
+-----------------------------------------------------------
+RecordCount pasado como argumento: 1 - 2 of 2
+Posicion del - en el record count: 2
+Posicion del of en el reord count:  6
+Posicion del + en el reord count:  -1
+SubTotal: *2*
+Total: *2*
+Desde: *1*
+Desde: 1 Subtotal: 2 Total: 2
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.RecordCount
+Resultado:1-2-2
+-----------------------------------------------------------
+-------------------------------------------------------------------
+Inicio de logica de buscar producto (1)
+Desde= 1 Subtotal= 2 Total= 2
+Producto a buscar= Servicio de Telefonia Movil
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+Producto encontrado
+-------------------------------------------------------------------
+Producto Seleccionado: Servicio de Telefonia Movil en posición: 0
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.BuscarProductoActivo
+Resultado:Encontrado
+-----------------------------------------------------------
+Mensaje a validar: NA
+NroPedido:1-1741505165
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.NuevaPostvta
+Resultado:Resultado OK
+-----------------------------------------------------------
+INFOPASO
+Nombre, tipo, y valor Scripts.PasosFunc.fNuevaPostvtaDATO1-1741505165
+Valor 1-1741505165
+Tipo DATO
+Nombre antes Paso    3
+Nombre Despues fNuevaPostvta
+Nombre, tipo, y valor Paso    3  -  fNuevaPostvtaDATO1-1741505165
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.GrabarDatosSalida
+Cantidad de argumentos:5
+Argumento 0:=null
+Argumento 1:=GRAL_CD2
+Argumento 2:=QA
+Argumento 3:=T1_NroPedido
+Argumento 4:=1-1741505165
+-----------------------------------------------------------
+NumeroCaso = GRAL_CD2
+Ambiente = QA
+Se graba el dato T1_NroPedido con 1-1741505165
+Grabar Dato Salida - Variable y Valor: T1_NroPedido=1-1741505165
+INFOPASO
+Nombre, tipo, y valor Scripts.Comun.GrabarDatosSalidaDATO1-1741505165
+Valor 1-1741505165
+Tipo DATO
+Nombre antes Paso    3
+Nombre Despues GrabarDatosSalida
+Nombre, tipo, y valor Paso    3  -  GrabarDatosSalidaDATO1-1741505165
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.GrabarDatosSalida
+Resultado:OK
+-----------------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.GrabarDatosSalida
+Cantidad de argumentos:5
+Argumento 0:=OK
+Argumento 1:=GRAL_CD2
+Argumento 2:=QA
+Argumento 3:=UltPasoOK
+Argumento 4:=3
+-----------------------------------------------------------
+NumeroCaso = GRAL_CD2
+Ambiente = QA
+Se graba el dato UltPasoOK con 3
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.GrabarDatosSalida
+Resultado:OK
+-----------------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.GrabarDatoSalidaUltPasoEjec
+Cantidad de argumentos:5
+Argumento 0:=OK
+Argumento 1:=GRAL_CD2
+Argumento 2:=QA
+Argumento 3:=NA
+Argumento 4:=3
+-----------------------------------------------------------
+DP Salida en USR=C:\Users\Sandra\IBM\rationalsdp\workspace\RFT_ICE_USR\\Regresion\\QA\\-_SeguimientoEjecucion.rftdp
+NumeroCaso = GRAL_CD2
+Ambiente = QA
+Se lee: Ult Tramite=1-Ult Paso=2
+Se actualizara con: Ult Tramite=NA-Ult Paso=3
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.GrabarDatoSalidaUltPasoEjec
+Resultado:OK
+-----------------------------------------------------------
+INFOPASO
+Nombre, tipo, y valor Scripts.CasosPrueba.CasosPruebaPASOOK
+Valor OK
+Nombre antes fNuevaPostvta
+Nombre Despues fNuevaPostvta
+Nombre, tipo, y valor Paso    3  -  fNuevaPostvtaPASOOK
+Script a validar:fBuscarPedidoVenta
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.ValidaPasoSiEjecuta
+Cantidad de argumentos:9
+Argumento 0:=true
+Argumento 1:=QA
+Argumento 2:=1
+Argumento 3:=4
+Argumento 4:=true
+Argumento 5:=1-5
+Argumento 6:=na
+Argumento 7:=GRAL_CD2_T1
+Argumento 8:=NA
+-----------------------------------------------------------
+Desde:1 Hasta:5
+Se analiza si el paso es condicionante o condicionado
+Se analiza si el paso ejecuta en una re-ejecución
+GetLogin:NOK
+Paso:4 Paso desde:1
+Paso:true
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.ValidaPasoSiEjecuta
+Resultado:true
+-----------------------------------------------------------
+ 
+-------------------------------------------------
+Inicio de Paso: 4
+-------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.PasosFunc.fBuscarPedidoVenta
+Cantidad de argumentos:5
+Argumento 0:=GRAL_CD2_T1
+Argumento 1:=NA
+Argumento 2:=QA
+Argumento 3:=true
+Argumento 4:=Paso4
+-----------------------------------------------------------
+NroPedido: 1-1741505165
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.BuscarPedidoVenta
+Cantidad de argumentos:2
+Argumento 0:=1-1741505165
+Argumento 1:=null
+-----------------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.BuscarPedidoVenta
+Resultado:OK
+-----------------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.GrabarDatosSalida
+Cantidad de argumentos:5
+Argumento 0:=OK
+Argumento 1:=GRAL_CD2
+Argumento 2:=QA
+Argumento 3:=UltPasoOK
+Argumento 4:=4
+-----------------------------------------------------------
+NumeroCaso = GRAL_CD2
+Ambiente = QA
+Se graba el dato UltPasoOK con 4
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.GrabarDatosSalida
+Resultado:OK
+-----------------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.GrabarDatoSalidaUltPasoEjec
+Cantidad de argumentos:5
+Argumento 0:=OK
+Argumento 1:=GRAL_CD2
+Argumento 2:=QA
+Argumento 3:=NA
+Argumento 4:=4
+-----------------------------------------------------------
+DP Salida en USR=C:\Users\Sandra\IBM\rationalsdp\workspace\RFT_ICE_USR\\Regresion\\QA\\-_SeguimientoEjecucion.rftdp
+NumeroCaso = GRAL_CD2
+Ambiente = QA
+Se lee: Ult Tramite=1-Ult Paso=3
+Se actualizara con: Ult Tramite=NA-Ult Paso=4
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.GrabarDatoSalidaUltPasoEjec
+Resultado:OK
+-----------------------------------------------------------
+INFOPASO
+Nombre, tipo, y valor Scripts.CasosPrueba.CasosPruebaPASOOK
+Valor OK
+Nombre antes fBuscarPedidoVenta
+Nombre Despues fBuscarPedidoVenta
+Nombre, tipo, y valor Paso    4  -  fBuscarPedidoVentaPASOOK
+Script a validar:fCancelarPedido
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.ValidaPasoSiEjecuta
+Cantidad de argumentos:9
+Argumento 0:=true
+Argumento 1:=QA
+Argumento 2:=1
+Argumento 3:=5
+Argumento 4:=true
+Argumento 5:=nunca
+Argumento 6:=na
+Argumento 7:=GRAL_CD2_T1
+Argumento 8:=NA
+-----------------------------------------------------------
+Desde:0 Hasta:1000
+Se analiza si el paso es condicionante o condicionado
+Se analiza si el paso ejecuta en una re-ejecución
+GetLogin:NOK
+Paso:5 Paso desde:1
+Paso:true
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.ValidaPasoSiEjecuta
+Resultado:true
+-----------------------------------------------------------
+ 
+-------------------------------------------------
+Inicio de Paso: 5
+-------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.PasosFunc.fCancelarPedido
+Cantidad de argumentos:5
+Argumento 0:=GRAL_CD2_T1
+Argumento 1:=NA
+Argumento 2:=QA
+Argumento 3:=true
+Argumento 4:=Paso5
+-----------------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.CancelarPedido
+Cantidad de argumentos:2
+Argumento 0:=null
+Argumento 1:=PostVenta
+-----------------------------------------------------------
+Se presionó el botón de cancelar pedido
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.CancelarPedido
+Resultado:OK
+-----------------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.GrabarDatosSalida
+Cantidad de argumentos:5
+Argumento 0:=OK
+Argumento 1:=GRAL_CD2
+Argumento 2:=QA
+Argumento 3:=UltPasoOK
+Argumento 4:=5
+-----------------------------------------------------------
+NumeroCaso = GRAL_CD2
+Ambiente = QA
+Se graba el dato UltPasoOK con 5
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.GrabarDatosSalida
+Resultado:OK
+-----------------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.GrabarDatoSalidaUltPasoEjec
+Cantidad de argumentos:5
+Argumento 0:=OK
+Argumento 1:=GRAL_CD2
+Argumento 2:=QA
+Argumento 3:=NA
+Argumento 4:=5
+-----------------------------------------------------------
+DP Salida en USR=C:\Users\Sandra\IBM\rationalsdp\workspace\RFT_ICE_USR\\Regresion\\QA\\-_SeguimientoEjecucion.rftdp
+NumeroCaso = GRAL_CD2
+Ambiente = QA
+Se lee: Ult Tramite=1-Ult Paso=4
+Se actualizara con: Ult Tramite=NA-Ult Paso=5
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.GrabarDatoSalidaUltPasoEjec
+Resultado:OK
+-----------------------------------------------------------
+INFOPASO
+Nombre, tipo, y valor Scripts.CasosPrueba.CasosPruebaPASOOK
+Valor OK
+Nombre antes fCancelarPedido
+Nombre Despues fCancelarPedido
+Nombre, tipo, y valor Paso    5  -  fCancelarPedidoPASOOK
+Script a validar:fNuevoTramite
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.ValidaPasoSiEjecuta
+Cantidad de argumentos:9
+Argumento 0:=true
+Argumento 1:=QA
+Argumento 2:=1
+Argumento 3:=6
+Argumento 4:=true
+Argumento 5:=siempre
+Argumento 6:=na
+Argumento 7:=GRAL_CD2_T1
+Argumento 8:=2
+-----------------------------------------------------------
+Desde:0 Hasta:1000
+Se analiza si el paso es condicionante o condicionado
+Se analiza si el paso ejecuta en una re-ejecución
+GetLogin:NOK
+Paso:6 Paso desde:1
+Paso:true
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.ValidaPasoSiEjecuta
+Resultado:true
+-----------------------------------------------------------
+ 
+-------------------------------------------------
+Inicio de Paso: 6
+-------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.GrabarDatosSalida
+Cantidad de argumentos:5
+Argumento 0:=OK
+Argumento 1:=GRAL_CD2
+Argumento 2:=QA
+Argumento 3:=UltTramite
+Argumento 4:=2
+-----------------------------------------------------------
+NumeroCaso = GRAL_CD2
+Ambiente = QA
+Se graba el dato UltTramite con 2
+Grabar Dato Salida - Variable y Valor: UltTramite=2
+INFOPASO
+Nombre, tipo, y valor Scripts.Comun.GrabarDatosSalidaDATO2
+Valor 2
+Tipo DATO
+Nombre antes Paso    6
+Nombre Despues GrabarDatosSalida
+Nombre, tipo, y valor Paso    6  -  GrabarDatosSalidaDATO2
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.GrabarDatosSalida
+Resultado:OK
+-----------------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.GrabarDatosSalida
+Cantidad de argumentos:5
+Argumento 0:=OK
+Argumento 1:=GRAL_CD2
+Argumento 2:=QA
+Argumento 3:=UltPasoOK
+Argumento 4:=6
+-----------------------------------------------------------
+NumeroCaso = GRAL_CD2
+Ambiente = QA
+Se graba el dato UltPasoOK con 6
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.GrabarDatosSalida
+Resultado:OK
+-----------------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.GrabarDatoSalidaUltPasoEjec
+Cantidad de argumentos:5
+Argumento 0:=OK
+Argumento 1:=GRAL_CD2
+Argumento 2:=QA
+Argumento 3:=2
+Argumento 4:=6
+-----------------------------------------------------------
+DP Salida en USR=C:\Users\Sandra\IBM\rationalsdp\workspace\RFT_ICE_USR\\Regresion\\QA\\-_SeguimientoEjecucion.rftdp
+NumeroCaso = GRAL_CD2
+Ambiente = QA
+Se lee: Ult Tramite=1-Ult Paso=5
+Se actualizara con: Ult Tramite=2-Ult Paso=6
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.GrabarDatoSalidaUltPasoEjec
+Resultado:OK
+-----------------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.GrabarDatosSalida
+Cantidad de argumentos:5
+Argumento 0:=OK
+Argumento 1:=GRAL_CD2
+Argumento 2:=QA
+Argumento 3:=T2_NroPedidoAnt
+Argumento 4:=1-1741505165
+-----------------------------------------------------------
+NumeroCaso = GRAL_CD2
+Ambiente = QA
+Se graba el dato T2_NroPedidoAnt con 1-1741505165
+Grabar Dato Salida - Variable y Valor: T2_NroPedidoAnt=1-1741505165
+INFOPASO
+Nombre, tipo, y valor Scripts.Comun.GrabarDatosSalidaDATO1-1741505165
+Valor 1-1741505165
+Tipo DATO
+Nombre antes Paso    6
+Nombre Despues GrabarDatosSalida
+Nombre, tipo, y valor Paso    6  -  GrabarDatosSalidaDATO1-1741505165
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.GrabarDatosSalida
+Resultado:OK
+-----------------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.GrabarDatosSalida
+Cantidad de argumentos:5
+Argumento 0:=OK
+Argumento 1:=GRAL_CD2
+Argumento 2:=QA
+Argumento 3:=T2_NroServicio
+Argumento 4:=10112131
+-----------------------------------------------------------
+NumeroCaso = GRAL_CD2
+Ambiente = QA
+Se graba el dato T2_NroServicio con 10112131
+Grabar Dato Salida - Variable y Valor: T2_NroServicio=10112131
+INFOPASO
+Nombre, tipo, y valor Scripts.Comun.GrabarDatosSalidaDATO10112131
+Valor 10112131
+Tipo DATO
+Nombre antes Paso    6
+Nombre Despues GrabarDatosSalida
+Nombre, tipo, y valor Paso    6  -  GrabarDatosSalidaDATO10112131
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.GrabarDatosSalida
+Resultado:OK
+-----------------------------------------------------------
+INFOPASO
+Nombre, tipo, y valor Scripts.CasosPrueba.CasosPruebaPASOOK
+Valor OK
+Nombre antes fNuevoTramite
+Nombre Despues fNuevoTramite
+Nombre, tipo, y valor Paso    6  -  fNuevoTramitePASOOK
+Script a validar:fIraActivoDesdeActivo
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.ValidaPasoSiEjecuta
+Cantidad de argumentos:9
+Argumento 0:=true
+Argumento 1:=QA
+Argumento 2:=1
+Argumento 3:=7
+Argumento 4:=true
+Argumento 5:=1-8
+Argumento 6:=na
+Argumento 7:=GRAL_CD2_T2
+Argumento 8:=DP
+-----------------------------------------------------------
+Desde:1 Hasta:8
+Se analiza si el paso es condicionante o condicionado
+Se analiza si el paso ejecuta en una re-ejecución
+GetLogin:NOK
+Paso:7 Paso desde:1
+Paso:true
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.ValidaPasoSiEjecuta
+Resultado:true
+-----------------------------------------------------------
+ 
+-------------------------------------------------
+Inicio de Paso: 7
+-------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.PasosFunc.fIraActivoDesdeActivo
+Cantidad de argumentos:5
+Argumento 0:=GRAL_CD2_T2
+Argumento 1:=DP
+Argumento 2:=QA
+Argumento 3:=true
+Argumento 4:=Paso7
+-----------------------------------------------------------
+INFOPASO
+Nombre, tipo, y valor Scripts.PasosFunc.fIraActivoDesdeActivoDATO10112131
+Valor 10112131
+Tipo DATO
+Nombre antes Paso    7
+Nombre Despues fIraActivoDesdeActivo
+Nombre, tipo, y valor Paso    7  -  fIraActivoDesdeActivoDATO10112131
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.IraActivoDesdeActivo
+Cantidad de argumentos:2
+Argumento 0:=null
+Argumento 1:=10112131
+-----------------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.IraActivoDesdeActivo
+Resultado:Resultado OK
+-----------------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.GrabarDatosSalida
+Cantidad de argumentos:5
+Argumento 0:=OK
+Argumento 1:=GRAL_CD2
+Argumento 2:=QA
+Argumento 3:=UltPasoOK
+Argumento 4:=7
+-----------------------------------------------------------
+NumeroCaso = GRAL_CD2
+Ambiente = QA
+Se graba el dato UltPasoOK con 7
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.GrabarDatosSalida
+Resultado:OK
+-----------------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.GrabarDatoSalidaUltPasoEjec
+Cantidad de argumentos:5
+Argumento 0:=OK
+Argumento 1:=GRAL_CD2
+Argumento 2:=QA
+Argumento 3:=NA
+Argumento 4:=7
+-----------------------------------------------------------
+DP Salida en USR=C:\Users\Sandra\IBM\rationalsdp\workspace\RFT_ICE_USR\\Regresion\\QA\\-_SeguimientoEjecucion.rftdp
+NumeroCaso = GRAL_CD2
+Ambiente = QA
+Se lee: Ult Tramite=2-Ult Paso=6
+Se actualizara con: Ult Tramite=NA-Ult Paso=7
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.GrabarDatoSalidaUltPasoEjec
+Resultado:OK
+-----------------------------------------------------------
+INFOPASO
+Nombre, tipo, y valor Scripts.CasosPrueba.CasosPruebaPASOOK
+Valor OK
+Nombre antes fIraActivoDesdeActivo
+Nombre Despues fIraActivoDesdeActivo
+Nombre, tipo, y valor Paso    7  -  fIraActivoDesdeActivoPASOOK
+Script a validar:fNuevaPostvta
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.ValidaPasoSiEjecuta
+Cantidad de argumentos:9
+Argumento 0:=true
+Argumento 1:=QA
+Argumento 2:=1
+Argumento 3:=8
+Argumento 4:=true
+Argumento 5:=nunca
+Argumento 6:=na
+Argumento 7:=GRAL_CD2_T2
+Argumento 8:=1
+-----------------------------------------------------------
+Desde:0 Hasta:1000
+Se analiza si el paso es condicionante o condicionado
+Se analiza si el paso ejecuta en una re-ejecución
+GetLogin:NOK
+Paso:8 Paso desde:1
+Paso:true
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.ValidaPasoSiEjecuta
+Resultado:true
+-----------------------------------------------------------
+ 
+-------------------------------------------------
+Inicio de Paso: 8
+-------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.PasosFunc.fNuevaPostvta
+Cantidad de argumentos:5
+Argumento 0:=GRAL_CD2_T2
+Argumento 1:=1
+Argumento 2:=QA
+Argumento 3:=true
+Argumento 4:=Paso8
+-----------------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.NuevaPostvta
+Cantidad de argumentos:6
+Argumento 0:=null
+Argumento 1:=Suspensión
+Argumento 2:=Robo
+Argumento 3:=Servicio de Telefonia Movil
+Argumento 4:=null
+Argumento 5:=NA
+-----------------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.BuscarProductoActivo
+Cantidad de argumentos:6
+Argumento 0:=Servicio de Telefonia Movil
+Argumento 1:=null
+Argumento 2:=null
+Argumento 3:=null
+Argumento 4:=Si
+Argumento 5:=null
+-----------------------------------------------------------
+true
+{RecordCounter=1 - 2 of 2, ClassName=SiebApplet, IsPopupApplet=false, UIName=Activos instalados, RepositoryName=SIS OM Products & Services Root List Applet (Service) - Tiny}
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.RecordCount
+Cantidad de argumentos:5
+Argumento 0:=1 - 2 of 2
+Argumento 1:=null
+Argumento 2:=null
+Argumento 3:=null
+Argumento 4:=null
+-----------------------------------------------------------
+RecordCount pasado como argumento: 1 - 2 of 2
+Posicion del - en el record count: 2
+Posicion del of en el reord count:  6
+Posicion del + en el reord count:  -1
+SubTotal: *2*
+Total: *2*
+Desde: *1*
+Desde: 1 Subtotal: 2 Total: 2
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.RecordCount
+Resultado:1-2-2
+-----------------------------------------------------------
+-------------------------------------------------------------------
+Inicio de logica de buscar producto (1)
+Desde= 1 Subtotal= 2 Total= 2
+Producto a buscar= Servicio de Telefonia Movil
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+Producto encontrado
+-------------------------------------------------------------------
+Producto Seleccionado: Servicio de Telefonia Movil en posición: 0
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.BuscarProductoActivo
+Resultado:Encontrado
+-----------------------------------------------------------
+Mensaje a validar: NA
+NroPedido:1-1741505629
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.NuevaPostvta
+Resultado:Resultado OK
+-----------------------------------------------------------
+INFOPASO
+Nombre, tipo, y valor Scripts.PasosFunc.fNuevaPostvtaDATO1-1741505629
+Valor 1-1741505629
+Tipo DATO
+Nombre antes Paso    8
+Nombre Despues fNuevaPostvta
+Nombre, tipo, y valor Paso    8  -  fNuevaPostvtaDATO1-1741505629
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.GrabarDatosSalida
+Cantidad de argumentos:5
+Argumento 0:=null
+Argumento 1:=GRAL_CD2
+Argumento 2:=QA
+Argumento 3:=T2_NroPedido
+Argumento 4:=1-1741505629
+-----------------------------------------------------------
+NumeroCaso = GRAL_CD2
+Ambiente = QA
+Se graba el dato T2_NroPedido con 1-1741505629
+Grabar Dato Salida - Variable y Valor: T2_NroPedido=1-1741505629
+INFOPASO
+Nombre, tipo, y valor Scripts.Comun.GrabarDatosSalidaDATO1-1741505629
+Valor 1-1741505629
+Tipo DATO
+Nombre antes Paso    8
+Nombre Despues GrabarDatosSalida
+Nombre, tipo, y valor Paso    8  -  GrabarDatosSalidaDATO1-1741505629
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.GrabarDatosSalida
+Resultado:OK
+-----------------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.GrabarDatosSalida
+Cantidad de argumentos:5
+Argumento 0:=OK
+Argumento 1:=GRAL_CD2
+Argumento 2:=QA
+Argumento 3:=UltPasoOK
+Argumento 4:=8
+-----------------------------------------------------------
+NumeroCaso = GRAL_CD2
+Ambiente = QA
+Se graba el dato UltPasoOK con 8
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.GrabarDatosSalida
+Resultado:OK
+-----------------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.GrabarDatoSalidaUltPasoEjec
+Cantidad de argumentos:5
+Argumento 0:=OK
+Argumento 1:=GRAL_CD2
+Argumento 2:=QA
+Argumento 3:=NA
+Argumento 4:=8
+-----------------------------------------------------------
+DP Salida en USR=C:\Users\Sandra\IBM\rationalsdp\workspace\RFT_ICE_USR\\Regresion\\QA\\-_SeguimientoEjecucion.rftdp
+NumeroCaso = GRAL_CD2
+Ambiente = QA
+Se lee: Ult Tramite=2-Ult Paso=7
+Se actualizara con: Ult Tramite=NA-Ult Paso=8
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.GrabarDatoSalidaUltPasoEjec
+Resultado:OK
+-----------------------------------------------------------
+INFOPASO
+Nombre, tipo, y valor Scripts.CasosPrueba.CasosPruebaPASOOK
+Valor OK
+Nombre antes fNuevaPostvta
+Nombre Despues fNuevaPostvta
+Nombre, tipo, y valor Paso    8  -  fNuevaPostvtaPASOOK
+Script a validar:fBuscarPedidoVenta
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.ValidaPasoSiEjecuta
+Cantidad de argumentos:9
+Argumento 0:=true
+Argumento 1:=QA
+Argumento 2:=1
+Argumento 3:=9
+Argumento 4:=true
+Argumento 5:=1-10
+Argumento 6:=na
+Argumento 7:=GRAL_CD2_T2
+Argumento 8:=NA
+-----------------------------------------------------------
+Desde:1 Hasta:10
+Se analiza si el paso es condicionante o condicionado
+Se analiza si el paso ejecuta en una re-ejecución
+GetLogin:NOK
+Paso:9 Paso desde:1
+Paso:true
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.ValidaPasoSiEjecuta
+Resultado:true
+-----------------------------------------------------------
+ 
+-------------------------------------------------
+Inicio de Paso: 9
+-------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.PasosFunc.fBuscarPedidoVenta
+Cantidad de argumentos:5
+Argumento 0:=GRAL_CD2_T2
+Argumento 1:=NA
+Argumento 2:=QA
+Argumento 3:=true
+Argumento 4:=Paso9
+-----------------------------------------------------------
+NroPedido: 1-1741505629
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.BuscarPedidoVenta
+Cantidad de argumentos:2
+Argumento 0:=1-1741505629
+Argumento 1:=null
+-----------------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.BuscarPedidoVenta
+Resultado:OK
+-----------------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.GrabarDatosSalida
+Cantidad de argumentos:5
+Argumento 0:=OK
+Argumento 1:=GRAL_CD2
+Argumento 2:=QA
+Argumento 3:=UltPasoOK
+Argumento 4:=9
+-----------------------------------------------------------
+NumeroCaso = GRAL_CD2
+Ambiente = QA
+Se graba el dato UltPasoOK con 9
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.GrabarDatosSalida
+Resultado:OK
+-----------------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.GrabarDatoSalidaUltPasoEjec
+Cantidad de argumentos:5
+Argumento 0:=OK
+Argumento 1:=GRAL_CD2
+Argumento 2:=QA
+Argumento 3:=NA
+Argumento 4:=9
+-----------------------------------------------------------
+DP Salida en USR=C:\Users\Sandra\IBM\rationalsdp\workspace\RFT_ICE_USR\\Regresion\\QA\\-_SeguimientoEjecucion.rftdp
+NumeroCaso = GRAL_CD2
+Ambiente = QA
+Se lee: Ult Tramite=2-Ult Paso=8
+Se actualizara con: Ult Tramite=NA-Ult Paso=9
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.GrabarDatoSalidaUltPasoEjec
+Resultado:OK
+-----------------------------------------------------------
+INFOPASO
+Nombre, tipo, y valor Scripts.CasosPrueba.CasosPruebaPASOOK
+Valor OK
+Nombre antes fBuscarPedidoVenta
+Nombre Despues fBuscarPedidoVenta
+Nombre, tipo, y valor Paso    9  -  fBuscarPedidoVentaPASOOK
+Script a validar:fCancelarPedido
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.ValidaPasoSiEjecuta
+Cantidad de argumentos:9
+Argumento 0:=true
+Argumento 1:=QA
+Argumento 2:=1
+Argumento 3:=10
+Argumento 4:=true
+Argumento 5:=nunca
+Argumento 6:=na
+Argumento 7:=GRAL_CD2_T2
+Argumento 8:=NA
+-----------------------------------------------------------
+Desde:0 Hasta:1000
+Se analiza si el paso es condicionante o condicionado
+Se analiza si el paso ejecuta en una re-ejecución
+GetLogin:NOK
+Paso:10 Paso desde:1
+Paso:true
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.ValidaPasoSiEjecuta
+Resultado:true
+-----------------------------------------------------------
+ 
+-------------------------------------------------
+Inicio de Paso: 10
+-------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.PasosFunc.fCancelarPedido
+Cantidad de argumentos:5
+Argumento 0:=GRAL_CD2_T2
+Argumento 1:=NA
+Argumento 2:=QA
+Argumento 3:=true
+Argumento 4:=Paso10
+-----------------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.CancelarPedido
+Cantidad de argumentos:2
+Argumento 0:=null
+Argumento 1:=PostVenta
+-----------------------------------------------------------
+Se presionó el botón de cancelar pedido
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.CancelarPedido
+Resultado:OK
+-----------------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.GrabarDatosSalida
+Cantidad de argumentos:5
+Argumento 0:=OK
+Argumento 1:=GRAL_CD2
+Argumento 2:=QA
+Argumento 3:=UltPasoOK
+Argumento 4:=10
+-----------------------------------------------------------
+NumeroCaso = GRAL_CD2
+Ambiente = QA
+Se graba el dato UltPasoOK con 10
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.GrabarDatosSalida
+Resultado:OK
+-----------------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.GrabarDatoSalidaUltPasoEjec
+Cantidad de argumentos:5
+Argumento 0:=OK
+Argumento 1:=GRAL_CD2
+Argumento 2:=QA
+Argumento 3:=NA
+Argumento 4:=10
+-----------------------------------------------------------
+DP Salida en USR=C:\Users\Sandra\IBM\rationalsdp\workspace\RFT_ICE_USR\\Regresion\\QA\\-_SeguimientoEjecucion.rftdp
+NumeroCaso = GRAL_CD2
+Ambiente = QA
+Se lee: Ult Tramite=2-Ult Paso=9
+Se actualizara con: Ult Tramite=NA-Ult Paso=10
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.GrabarDatoSalidaUltPasoEjec
+Resultado:OK
+-----------------------------------------------------------
+INFOPASO
+Nombre, tipo, y valor Scripts.CasosPrueba.CasosPruebaPASOOK
+Valor OK
+Nombre antes fCancelarPedido
+Nombre Despues fCancelarPedido
+Nombre, tipo, y valor Paso   10  -  fCancelarPedidoPASOOK
+Script a validar:fNuevoTramite
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.ValidaPasoSiEjecuta
+Cantidad de argumentos:9
+Argumento 0:=true
+Argumento 1:=QA
+Argumento 2:=1
+Argumento 3:=11
+Argumento 4:=true
+Argumento 5:=siempre
+Argumento 6:=na
+Argumento 7:=GRAL_CD2_T2
+Argumento 8:=3
+-----------------------------------------------------------
+Desde:0 Hasta:1000
+Se analiza si el paso es condicionante o condicionado
+Se analiza si el paso ejecuta en una re-ejecución
+GetLogin:NOK
+Paso:11 Paso desde:1
+Paso:true
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.ValidaPasoSiEjecuta
+Resultado:true
+-----------------------------------------------------------
+ 
+-------------------------------------------------
+Inicio de Paso: 11
+-------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.GrabarDatosSalida
+Cantidad de argumentos:5
+Argumento 0:=OK
+Argumento 1:=GRAL_CD2
+Argumento 2:=QA
+Argumento 3:=UltTramite
+Argumento 4:=3
+-----------------------------------------------------------
+NumeroCaso = GRAL_CD2
+Ambiente = QA
+Se graba el dato UltTramite con 3
+Grabar Dato Salida - Variable y Valor: UltTramite=3
+INFOPASO
+Nombre, tipo, y valor Scripts.Comun.GrabarDatosSalidaDATO3
+Valor 3
+Tipo DATO
+Nombre antes Paso   11
+Nombre Despues GrabarDatosSalida
+Nombre, tipo, y valor Paso   11  -  GrabarDatosSalidaDATO3
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.GrabarDatosSalida
+Resultado:OK
+-----------------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.GrabarDatosSalida
+Cantidad de argumentos:5
+Argumento 0:=OK
+Argumento 1:=GRAL_CD2
+Argumento 2:=QA
+Argumento 3:=UltPasoOK
+Argumento 4:=11
+-----------------------------------------------------------
+NumeroCaso = GRAL_CD2
+Ambiente = QA
+Se graba el dato UltPasoOK con 11
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.GrabarDatosSalida
+Resultado:OK
+-----------------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.GrabarDatoSalidaUltPasoEjec
+Cantidad de argumentos:5
+Argumento 0:=OK
+Argumento 1:=GRAL_CD2
+Argumento 2:=QA
+Argumento 3:=3
+Argumento 4:=11
+-----------------------------------------------------------
+DP Salida en USR=C:\Users\Sandra\IBM\rationalsdp\workspace\RFT_ICE_USR\\Regresion\\QA\\-_SeguimientoEjecucion.rftdp
+NumeroCaso = GRAL_CD2
+Ambiente = QA
+Se lee: Ult Tramite=2-Ult Paso=10
+Se actualizara con: Ult Tramite=3-Ult Paso=11
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.GrabarDatoSalidaUltPasoEjec
+Resultado:OK
+-----------------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.GrabarDatosSalida
+Cantidad de argumentos:5
+Argumento 0:=OK
+Argumento 1:=GRAL_CD2
+Argumento 2:=QA
+Argumento 3:=T3_NroPedidoAntAnt
+Argumento 4:=1-1741505165
+-----------------------------------------------------------
+NumeroCaso = GRAL_CD2
+Ambiente = QA
+Se graba el dato T3_NroPedidoAntAnt con 1-1741505165
+Grabar Dato Salida - Variable y Valor: T3_NroPedidoAntAnt=1-1741505165
+INFOPASO
+Nombre, tipo, y valor Scripts.Comun.GrabarDatosSalidaDATO1-1741505165
+Valor 1-1741505165
+Tipo DATO
+Nombre antes Paso   11
+Nombre Despues GrabarDatosSalida
+Nombre, tipo, y valor Paso   11  -  GrabarDatosSalidaDATO1-1741505165
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.GrabarDatosSalida
+Resultado:OK
+-----------------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.GrabarDatosSalida
+Cantidad de argumentos:5
+Argumento 0:=OK
+Argumento 1:=GRAL_CD2
+Argumento 2:=QA
+Argumento 3:=T3_NroPedidoAnt
+Argumento 4:=1-1741505629
+-----------------------------------------------------------
+NumeroCaso = GRAL_CD2
+Ambiente = QA
+Se graba el dato T3_NroPedidoAnt con 1-1741505629
+Grabar Dato Salida - Variable y Valor: T3_NroPedidoAnt=1-1741505629
+INFOPASO
+Nombre, tipo, y valor Scripts.Comun.GrabarDatosSalidaDATO1-1741505629
+Valor 1-1741505629
+Tipo DATO
+Nombre antes Paso   11
+Nombre Despues GrabarDatosSalida
+Nombre, tipo, y valor Paso   11  -  GrabarDatosSalidaDATO1-1741505629
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.GrabarDatosSalida
+Resultado:OK
+-----------------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.GrabarDatosSalida
+Cantidad de argumentos:5
+Argumento 0:=OK
+Argumento 1:=GRAL_CD2
+Argumento 2:=QA
+Argumento 3:=T3_NroServicio
+Argumento 4:=10112131
+-----------------------------------------------------------
+NumeroCaso = GRAL_CD2
+Ambiente = QA
+Se graba el dato T3_NroServicio con 10112131
+Grabar Dato Salida - Variable y Valor: T3_NroServicio=10112131
+INFOPASO
+Nombre, tipo, y valor Scripts.Comun.GrabarDatosSalidaDATO10112131
+Valor 10112131
+Tipo DATO
+Nombre antes Paso   11
+Nombre Despues GrabarDatosSalida
+Nombre, tipo, y valor Paso   11  -  GrabarDatosSalidaDATO10112131
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.GrabarDatosSalida
+Resultado:OK
+-----------------------------------------------------------
+INFOPASO
+Nombre, tipo, y valor Scripts.CasosPrueba.CasosPruebaPASOOK
+Valor OK
+Nombre antes fNuevoTramite
+Nombre Despues fNuevoTramite
+Nombre, tipo, y valor Paso   11  -  fNuevoTramitePASOOK
+Script a validar:fIraActivoDesdeActivo
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.ValidaPasoSiEjecuta
+Cantidad de argumentos:9
+Argumento 0:=true
+Argumento 1:=QA
+Argumento 2:=1
+Argumento 3:=12
+Argumento 4:=true
+Argumento 5:=1-13
+Argumento 6:=na
+Argumento 7:=GRAL_CD2_T3
+Argumento 8:=DP
+-----------------------------------------------------------
+Desde:1 Hasta:13
+Se analiza si el paso es condicionante o condicionado
+Se analiza si el paso ejecuta en una re-ejecución
+GetLogin:NOK
+Paso:12 Paso desde:1
+Paso:true
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.ValidaPasoSiEjecuta
+Resultado:true
+-----------------------------------------------------------
+ 
+-------------------------------------------------
+Inicio de Paso: 12
+-------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.PasosFunc.fIraActivoDesdeActivo
+Cantidad de argumentos:5
+Argumento 0:=GRAL_CD2_T3
+Argumento 1:=DP
+Argumento 2:=QA
+Argumento 3:=true
+Argumento 4:=Paso12
+-----------------------------------------------------------
+INFOPASO
+Nombre, tipo, y valor Scripts.PasosFunc.fIraActivoDesdeActivoDATO10112131
+Valor 10112131
+Tipo DATO
+Nombre antes Paso   12
+Nombre Despues fIraActivoDesdeActivo
+Nombre, tipo, y valor Paso   12  -  fIraActivoDesdeActivoDATO10112131
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.IraActivoDesdeActivo
+Cantidad de argumentos:2
+Argumento 0:=null
+Argumento 1:=10112131
+-----------------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.IraActivoDesdeActivo
+Resultado:Resultado OK
+-----------------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.GrabarDatosSalida
+Cantidad de argumentos:5
+Argumento 0:=OK
+Argumento 1:=GRAL_CD2
+Argumento 2:=QA
+Argumento 3:=UltPasoOK
+Argumento 4:=12
+-----------------------------------------------------------
+NumeroCaso = GRAL_CD2
+Ambiente = QA
+Se graba el dato UltPasoOK con 12
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.GrabarDatosSalida
+Resultado:OK
+-----------------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.GrabarDatoSalidaUltPasoEjec
+Cantidad de argumentos:5
+Argumento 0:=OK
+Argumento 1:=GRAL_CD2
+Argumento 2:=QA
+Argumento 3:=NA
+Argumento 4:=12
+-----------------------------------------------------------
+DP Salida en USR=C:\Users\Sandra\IBM\rationalsdp\workspace\RFT_ICE_USR\\Regresion\\QA\\-_SeguimientoEjecucion.rftdp
+NumeroCaso = GRAL_CD2
+Ambiente = QA
+Se lee: Ult Tramite=3-Ult Paso=11
+Se actualizara con: Ult Tramite=NA-Ult Paso=12
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.GrabarDatoSalidaUltPasoEjec
+Resultado:OK
+-----------------------------------------------------------
+INFOPASO
+Nombre, tipo, y valor Scripts.CasosPrueba.CasosPruebaPASOOK
+Valor OK
+Nombre antes fIraActivoDesdeActivo
+Nombre Despues fIraActivoDesdeActivo
+Nombre, tipo, y valor Paso   12  -  fIraActivoDesdeActivoPASOOK
+Script a validar:fNuevaPostvta
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.ValidaPasoSiEjecuta
+Cantidad de argumentos:9
+Argumento 0:=true
+Argumento 1:=QA
+Argumento 2:=1
+Argumento 3:=13
+Argumento 4:=true
+Argumento 5:=nunca
+Argumento 6:=na
+Argumento 7:=GRAL_CD2_T3
+Argumento 8:=1
+-----------------------------------------------------------
+Desde:0 Hasta:1000
+Se analiza si el paso es condicionante o condicionado
+Se analiza si el paso ejecuta en una re-ejecución
+GetLogin:NOK
+Paso:13 Paso desde:1
+Paso:true
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.ValidaPasoSiEjecuta
+Resultado:true
+-----------------------------------------------------------
+ 
+-------------------------------------------------
+Inicio de Paso: 13
+-------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.PasosFunc.fNuevaPostvta
+Cantidad de argumentos:5
+Argumento 0:=GRAL_CD2_T3
+Argumento 1:=1
+Argumento 2:=QA
+Argumento 3:=true
+Argumento 4:=Paso13
+-----------------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.NuevaPostvta
+Cantidad de argumentos:6
+Argumento 0:=null
+Argumento 1:=Suspensión
+Argumento 2:=Robo
+Argumento 3:=Servicio de Telefonia Movil
+Argumento 4:=null
+Argumento 5:=NA
+-----------------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.BuscarProductoActivo
+Cantidad de argumentos:6
+Argumento 0:=Servicio de Telefonia Movil
+Argumento 1:=null
+Argumento 2:=null
+Argumento 3:=null
+Argumento 4:=Si
+Argumento 5:=null
+-----------------------------------------------------------
+true
+{RecordCounter=1 - 2 of 2, ClassName=SiebApplet, IsPopupApplet=false, UIName=Activos instalados, RepositoryName=SIS OM Products & Services Root List Applet (Service) - Tiny}
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.RecordCount
+Cantidad de argumentos:5
+Argumento 0:=1 - 2 of 2
+Argumento 1:=null
+Argumento 2:=null
+Argumento 3:=null
+Argumento 4:=null
+-----------------------------------------------------------
+RecordCount pasado como argumento: 1 - 2 of 2
+Posicion del - en el record count: 2
+Posicion del of en el reord count:  6
+Posicion del + en el reord count:  -1
+SubTotal: *2*
+Total: *2*
+Desde: *1*
+Desde: 1 Subtotal: 2 Total: 2
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.RecordCount
+Resultado:1-2-2
+-----------------------------------------------------------
+-------------------------------------------------------------------
+Inicio de logica de buscar producto (1)
+Desde= 1 Subtotal= 2 Total= 2
+Producto a buscar= Servicio de Telefonia Movil
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+Producto encontrado
+-------------------------------------------------------------------
+Producto Seleccionado: Servicio de Telefonia Movil en posición: 0
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.BuscarProductoActivo
+Resultado:Encontrado
+-----------------------------------------------------------
+Mensaje a validar: NA
+NroPedido:1-1741506093
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.NuevaPostvta
+Resultado:Resultado OK
+-----------------------------------------------------------
+INFOPASO
+Nombre, tipo, y valor Scripts.PasosFunc.fNuevaPostvtaDATO1-1741506093
+Valor 1-1741506093
+Tipo DATO
+Nombre antes Paso   13
+Nombre Despues fNuevaPostvta
+Nombre, tipo, y valor Paso   13  -  fNuevaPostvtaDATO1-1741506093
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.GrabarDatosSalida
+Cantidad de argumentos:5
+Argumento 0:=null
+Argumento 1:=GRAL_CD2
+Argumento 2:=QA
+Argumento 3:=T3_NroPedido
+Argumento 4:=1-1741506093
+-----------------------------------------------------------
+NumeroCaso = GRAL_CD2
+Ambiente = QA
+Se graba el dato T3_NroPedido con 1-1741506093
+Grabar Dato Salida - Variable y Valor: T3_NroPedido=1-1741506093
+INFOPASO
+Nombre, tipo, y valor Scripts.Comun.GrabarDatosSalidaDATO1-1741506093
+Valor 1-1741506093
+Tipo DATO
+Nombre antes Paso   13
+Nombre Despues GrabarDatosSalida
+Nombre, tipo, y valor Paso   13  -  GrabarDatosSalidaDATO1-1741506093
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.GrabarDatosSalida
+Resultado:OK
+-----------------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.GrabarDatosSalida
+Cantidad de argumentos:5
+Argumento 0:=OK
+Argumento 1:=GRAL_CD2
+Argumento 2:=QA
+Argumento 3:=UltPasoOK
+Argumento 4:=13
+-----------------------------------------------------------
+NumeroCaso = GRAL_CD2
+Ambiente = QA
+Se graba el dato UltPasoOK con 13
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.GrabarDatosSalida
+Resultado:OK
+-----------------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.GrabarDatoSalidaUltPasoEjec
+Cantidad de argumentos:5
+Argumento 0:=OK
+Argumento 1:=GRAL_CD2
+Argumento 2:=QA
+Argumento 3:=NA
+Argumento 4:=13
+-----------------------------------------------------------
+DP Salida en USR=C:\Users\Sandra\IBM\rationalsdp\workspace\RFT_ICE_USR\\Regresion\\QA\\-_SeguimientoEjecucion.rftdp
+NumeroCaso = GRAL_CD2
+Ambiente = QA
+Se lee: Ult Tramite=3-Ult Paso=12
+Se actualizara con: Ult Tramite=NA-Ult Paso=13
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.GrabarDatoSalidaUltPasoEjec
+Resultado:OK
+-----------------------------------------------------------
+INFOPASO
+Nombre, tipo, y valor Scripts.CasosPrueba.CasosPruebaPASOOK
+Valor OK
+Nombre antes fNuevaPostvta
+Nombre Despues fNuevaPostvta
+Nombre, tipo, y valor Paso   13  -  fNuevaPostvtaPASOOK
+Script a validar:fBuscarPedidoVenta
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.ValidaPasoSiEjecuta
+Cantidad de argumentos:9
+Argumento 0:=true
+Argumento 1:=QA
+Argumento 2:=1
+Argumento 3:=14
+Argumento 4:=true
+Argumento 5:=1-15
+Argumento 6:=na
+Argumento 7:=GRAL_CD2_T3
+Argumento 8:=NA
+-----------------------------------------------------------
+Desde:1 Hasta:15
+Se analiza si el paso es condicionante o condicionado
+Se analiza si el paso ejecuta en una re-ejecución
+GetLogin:NOK
+Paso:14 Paso desde:1
+Paso:true
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.ValidaPasoSiEjecuta
+Resultado:true
+-----------------------------------------------------------
+ 
+-------------------------------------------------
+Inicio de Paso: 14
+-------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.PasosFunc.fBuscarPedidoVenta
+Cantidad de argumentos:5
+Argumento 0:=GRAL_CD2_T3
+Argumento 1:=NA
+Argumento 2:=QA
+Argumento 3:=true
+Argumento 4:=Paso14
+-----------------------------------------------------------
+NroPedido: 1-1741506093
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.BuscarPedidoVenta
+Cantidad de argumentos:2
+Argumento 0:=1-1741506093
+Argumento 1:=null
+-----------------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.BuscarPedidoVenta
+Resultado:OK
+-----------------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.GrabarDatosSalida
+Cantidad de argumentos:5
+Argumento 0:=OK
+Argumento 1:=GRAL_CD2
+Argumento 2:=QA
+Argumento 3:=UltPasoOK
+Argumento 4:=14
+-----------------------------------------------------------
+NumeroCaso = GRAL_CD2
+Ambiente = QA
+Se graba el dato UltPasoOK con 14
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.GrabarDatosSalida
+Resultado:OK
+-----------------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.GrabarDatoSalidaUltPasoEjec
+Cantidad de argumentos:5
+Argumento 0:=OK
+Argumento 1:=GRAL_CD2
+Argumento 2:=QA
+Argumento 3:=NA
+Argumento 4:=14
+-----------------------------------------------------------
+DP Salida en USR=C:\Users\Sandra\IBM\rationalsdp\workspace\RFT_ICE_USR\\Regresion\\QA\\-_SeguimientoEjecucion.rftdp
+NumeroCaso = GRAL_CD2
+Ambiente = QA
+Se lee: Ult Tramite=3-Ult Paso=13
+Se actualizara con: Ult Tramite=NA-Ult Paso=14
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.GrabarDatoSalidaUltPasoEjec
+Resultado:OK
+-----------------------------------------------------------
+INFOPASO
+Nombre, tipo, y valor Scripts.CasosPrueba.CasosPruebaPASOOK
+Valor OK
+Nombre antes fBuscarPedidoVenta
+Nombre Despues fBuscarPedidoVenta
+Nombre, tipo, y valor Paso   14  -  fBuscarPedidoVentaPASOOK
+Script a validar:fCancelarPedido
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.ValidaPasoSiEjecuta
+Cantidad de argumentos:9
+Argumento 0:=true
+Argumento 1:=QA
+Argumento 2:=1
+Argumento 3:=15
+Argumento 4:=true
+Argumento 5:=nunca
+Argumento 6:=na
+Argumento 7:=GRAL_CD2_T3
+Argumento 8:=NA
+-----------------------------------------------------------
+Desde:0 Hasta:1000
+Se analiza si el paso es condicionante o condicionado
+Se analiza si el paso ejecuta en una re-ejecución
+GetLogin:NOK
+Paso:15 Paso desde:1
+Paso:true
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.ValidaPasoSiEjecuta
+Resultado:true
+-----------------------------------------------------------
+ 
+-------------------------------------------------
+Inicio de Paso: 15
+-------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.PasosFunc.fCancelarPedido
+Cantidad de argumentos:5
+Argumento 0:=GRAL_CD2_T3
+Argumento 1:=NA
+Argumento 2:=QA
+Argumento 3:=true
+Argumento 4:=Paso15
+-----------------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.CancelarPedido
+Cantidad de argumentos:2
+Argumento 0:=null
+Argumento 1:=PostVenta
+-----------------------------------------------------------
+Se presionó el botón de cancelar pedido
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.CancelarPedido
+Resultado:OK
+-----------------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.GrabarDatosSalida
+Cantidad de argumentos:5
+Argumento 0:=OK
+Argumento 1:=GRAL_CD2
+Argumento 2:=QA
+Argumento 3:=UltPasoOK
+Argumento 4:=15
+-----------------------------------------------------------
+NumeroCaso = GRAL_CD2
+Ambiente = QA
+Se graba el dato UltPasoOK con 15
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.GrabarDatosSalida
+Resultado:OK
+-----------------------------------------------------------
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Inicio de script:Scripts.Comun.GrabarDatoSalidaUltPasoEjec
+Cantidad de argumentos:5
+Argumento 0:=OK
+Argumento 1:=GRAL_CD2
+Argumento 2:=QA
+Argumento 3:=NA
+Argumento 4:=15
+-----------------------------------------------------------
+DP Salida en USR=C:\Users\Sandra\IBM\rationalsdp\workspace\RFT_ICE_USR\\Regresion\\QA\\-_SeguimientoEjecucion.rftdp
+NumeroCaso = GRAL_CD2
+Ambiente = QA
+Se lee: Ult Tramite=3-Ult Paso=14
+Se actualizara con: Ult Tramite=NA-Ult Paso=15
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Scripts.Comun.GrabarDatoSalidaUltPasoEjec
+Resultado:OK
+-----------------------------------------------------------
+INFOPASO
+Nombre, tipo, y valor Scripts.CasosPrueba.CasosPruebaPASOOK
+Valor OK
+Nombre antes fCancelarPedido
+Nombre Despues fCancelarPedido
+Nombre, tipo, y valor Paso   15  -  fCancelarPedidoPASOOK
+INFOPASO
+Nombre, tipo, y valor Scripts.CasosPrueba.CasosPruebaPASOOK
+Valor OK
+Nombre antes Fin del caso
+Nombre Despues Fin del caso
+Nombre, tipo, y valor Paso   15  -  Fin del casoPASOOK
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Fin de script:Fin del caso
+Resultado:OK
+-----------------------------------------------------------
+Paso    0  -  LeerDatosEntrada; ;OK;
+Paso    0  -  LeerDatoSalidaUltPasoEjec; ;OK;
+Paso    0  -  GrabarDatosSalida; ;OK;
+Paso    1  -  fLogin; ;OK;
+Paso    2  -  fIraActivoDesdeActivo; ;OK;
+Paso    3  -  fNuevaPostvta; ;OK;
+Paso    4  -  fBuscarPedidoVenta; ;OK;
+Paso    5  -  fCancelarPedido; ;OK;
+Paso    6  -  fNuevoTramite; ;OK;
+Paso    7  -  fIraActivoDesdeActivo; ;OK;
+Paso    8  -  fNuevaPostvta; ;OK;
+Paso    9  -  fBuscarPedidoVenta; ;OK;
+Paso   10  -  fCancelarPedido; ;OK;
+Paso   11  -  fNuevoTramite; ;OK;
+Paso   12  -  fIraActivoDesdeActivo; ;OK;
+Paso   13  -  fNuevaPostvta; ;OK;
+Paso   14  -  fBuscarPedidoVenta; ;OK;
+Paso   15  -  fCancelarPedido; ;OK;
+Paso   15  -  Fin del caso; ;OK;
+DATOS
+Paso    0  -  LeerDatoSalidaUltPasoEjec;UltimoPasoOK;0;
+Paso    0  -  LeerDatoSalidaUltPasoEjec;UltimoTramite;1;
+Paso    2  -  fIraActivoDesdeActivo;NroServicio;10112131;
+Paso    3  -  fNuevaPostvta;NroPedido;1-1741505165;
+Paso    3  -  GrabarDatosSalida;T1_NroPedido;1-1741505165;
+Paso    6  -  GrabarDatosSalida;UltTramite;2;
+Paso    6  -  GrabarDatosSalida;T2_NroPedidoAnt;1-1741505165;
+Paso    6  -  GrabarDatosSalida;T2_NroServicio;10112131;
+Paso    7  -  fIraActivoDesdeActivo;NroServicio;10112131;
+Paso    8  -  fNuevaPostvta;NroPedido;1-1741505629;
+Paso    8  -  GrabarDatosSalida;T2_NroPedido;1-1741505629;
+Paso   11  -  GrabarDatosSalida;UltTramite;3;
+Paso   11  -  GrabarDatosSalida;T3_NroPedidoAntAnt;1-1741505165;
+Paso   11  -  GrabarDatosSalida;T3_NroPedidoAnt;1-1741505629;
+Paso   11  -  GrabarDatosSalida;T3_NroServicio;10112131;
+Paso   12  -  fIraActivoDesdeActivo;NroServicio;10112131;
+Paso   13  -  fNuevaPostvta;NroPedido;1-1741506093;
+Paso   13  -  GrabarDatosSalida;T3_NroPedido;1-1741506093;

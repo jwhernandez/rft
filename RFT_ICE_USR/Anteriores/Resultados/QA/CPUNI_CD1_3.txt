@@ -1,0 +1,34 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: CPUNI_CD1 Desde paso: 3 Modo:Real
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+---------------------------
+CPUNI_CD1_T1;LeerDatosEntrada;OK;
+CPUNI_CD1_T1;LeerDatoSalidaUltPasoEjec;OK;
+CPUNI_CD1_T1;LeerDatosSalida;OK;
+CPUNI_CD1_T1;Paso1:fLogin;OK;
+CPUNI_CD1_T1;Paso2:fValidarActivoEstadoenActivo;NE;
+CPUNI_CD1_T1;Paso3:fBuscarProductoActivo;NE;
+CPUNI_CD1_T1;Fin del caso;OK;
+
+
+Informe de DATOS de salida
+---------------------------
+CPUNI_CD1;UltimoPasoOK;2;
+CPUNI_CD1;UltimoTramite;1;
+
+
+Informe de Bugs
+-----------------
+
+
+Informe de Errores imprevistos de sistema
+------------------------------------------------
+
+----------------------------------------------------------------------------------------------------------
+Tipo Parada:FIN - Mensaje de Parada: FIN del caso en paso 4
+- Fin del Informe del Caso Prueba_Conj Datos: CPUNI_CD1
+----------------------------------------------------------------------------------------------------------

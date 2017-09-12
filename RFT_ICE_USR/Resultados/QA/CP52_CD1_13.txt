@@ -1,0 +1,61 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: CP52_CD1 Desde paso: 13 Modo:Real
+Modulo desde Paso : 1 Hasta paso: 200
+Hora de Inicio de la Ejecucion : 2017/09/06 15:22:55
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatosEntrada'                                                  'OK'                          
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'                                         'OK'                          
+'Paso    0  -  LeerDatosSalida'                                                   'OK'                          
+'Paso    1  -  fLogin'                                                            'OK'                          
+'Paso    2  -  fVista360'                                                         'NE'                          
+'Paso    3  -  fBuscarActivo'                                                     'NE'                          
+'Paso    4  -  fBuscarCtaFact'                                                    'NE'                          
+'Paso    5  -  fNuevaPostvta'                                                     'NE'                          
+'Paso    6  -  fBuscarPedidoVenta'                                                'OK'                          
+'Paso    7  -  fIngresarAutenticacion'                                            'NE'                          
+'Paso    8  -  fValidarAccion'                                                    'NE'                          
+'Paso    9  -  fValidarNroServicio_SIM_IMEI'                                      'NE'                          
+'Paso   10  -  fValidarMotivoPedido'                                              'NE'                          
+'Paso   11  -  fIngresarIMEI'                                                     'NE'                          
+'Paso   12  -  fExpandiryBuscar'                                                  'OK'                          
+'Paso   13  -  fValidarAccion'                                                    'OK'                          
+'Paso   14  -  fValorarTodo'                                                      'OK'                          
+'Paso   15  -  fEnviarPedido'                                                     'OK'                          
+
+
+Informe de DATOS de salida
+-----------------------------------------------------------------------------------------
+'Paso    0  -  CasosPrueba'                        'Usuario Alternativo '         'JVALERIO1'                   
+'Paso    0  -  CasosPrueba'                        'Clave Alternativa '           'jvalerio1'                   
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoPasoOK'                 '12'                          
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoTramite'                '1'                           
+'Paso    0  -  LeerDatosSalida'                    'T1_NroPedido'                 '1-1776516486'                
+'Paso    0  -  LeerDatosSalida'                    'T1_NroCtaFact'                '101775737110'                
+'Paso   13  -  ValidarNuevaAccion'                 'Accion'                       'Nuevo'                       
+
+
+Informe de Bugs
+-----------------------------------------------------------------------------------------
+'Paso   16  -  fValidarMensaje'                    'Mensaje diferente al deseado'
+
+-----------------------------------------------------------------------------------------
+Tipo Parada         = Bug
+Mensaje de Parada   = Mensaje diferente al deseado
+Parada en paso	    = 16
+
+
+-----------------------------------------------------------------------------------------
+Fin del Informe del Caso Prueba_Conj Datos: CP52_CD1
+-----------------------------------------------------------------------------------------
+
+
+Informe de Errores imprevistos de sistema
+-----------------------------------------------------------------------------------------
+
+Hora de Finalizacion de la Ejecucion: 2017/09/06 15:25:19
+-----------------------------------------------------------------------------------------

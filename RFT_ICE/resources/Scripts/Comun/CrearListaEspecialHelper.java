@@ -20,17 +20,48 @@ import com.rational.test.ft.vp.IFtVerificationPoint;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
  * Script Name   : <b>CrearListaEspecial</b><br>
- * Generated     : <b>2016/01/15 11:51:52</b><br>
+ * Generated     : <b>2016/12/21 12:30:22</b><br>
  * Description   : Helper class for script<br>
  * Original Host : Windows 7 x86 6.1 <br>
  * 
- * @since  enero 15, 2016
+ * @since  diciembre 21, 2016
  * @author Sandra
  */
 public abstract class CrearListaEspecialHelper extends libreria.Accion
 {
 	/**
-	 * Arbol_lista: with default state.
+	 * BtonNuevo: with default state.
+	 *		.text : Nuevo
+	 * 		.id : s_2_1_8_0_mb
+	 * 		.href : javascript:void(0)
+	 * 		.title : 
+	 * 		.class : Html.A
+	 * 		.name : 
+	 * 		.classIndex : 0
+	 */
+	protected GuiTestObject BtonNuevo() 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("BtonNuevo"));
+	}
+	/**
+	 * BtonNuevo: with specific test context and state.
+	 *		.text : Nuevo
+	 * 		.id : s_2_1_8_0_mb
+	 * 		.href : javascript:void(0)
+	 * 		.title : 
+	 * 		.class : Html.A
+	 * 		.name : 
+	 * 		.classIndex : 0
+	 */
+	protected GuiTestObject BtonNuevo(TestObject anchor, long flags) 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("BtonNuevo"), anchor, flags);
+	}
+	
+	/**
+	 * LineasPedido: with default state.
 	 *		ActiveRow : 9
 	 * 		ClassName : SiebList
 	 * 		.class : SiebList
@@ -43,7 +74,7 @@ public abstract class CrearListaEspecialHelper extends libreria.Accion
                         getMappedTestObject("LineasPedido"));
 	}
 	/**
-	 * Arbol_lista: with specific test context and state.
+	 * LineasPedido: with specific test context and state.
 	 *		ActiveRow : 9
 	 * 		ClassName : SiebList
 	 * 		.class : SiebList
@@ -100,6 +131,87 @@ public abstract class CrearListaEspecialHelper extends libreria.Accion
 	{
 		return new SiebListTestObject(
                         getMappedTestObject("ListaEspecial"), anchor, flags);
+	}
+	
+	/**
+	 * LE: with default state.
+	 *		.id : 
+	 * 		.title : 
+	 * 		.class : Html.TABLE
+	 * 		.caption : 
+	 * 		.classIndex : 0
+	 */
+	protected StatelessGuiSubitemTestObject Listas() 
+	{
+		return new StatelessGuiSubitemTestObject(
+                        getMappedTestObject("Listas"));
+	}
+	/**
+	 * LE: with specific test context and state.
+	 *		.id : 
+	 * 		.title : 
+	 * 		.class : Html.TABLE
+	 * 		.caption : 
+	 * 		.classIndex : 0
+	 */
+	protected StatelessGuiSubitemTestObject Listas(TestObject anchor, long flags) 
+	{
+		return new StatelessGuiSubitemTestObject(
+                        getMappedTestObject("Listas"), anchor, flags);
+	}
+	
+	/**
+	 * LogoICE: with default state.
+	 *		.alt : Con tecnología Siebel
+	 * 		.id : 
+	 * 		.src : RegularExpression(http://.*\/ecommunications_esn/images/ebus\.gif)
+	 * 		.title : 
+	 * 		.class : Html.IMG
+	 * 		.name : 
+	 * 		.classIndex : 0
+	 */
+	protected StatelessGuiSubitemTestObject LogoICE() 
+	{
+		return new StatelessGuiSubitemTestObject(
+                        getMappedTestObject("LogoICE"));
+	}
+	/**
+	 * LogoICE: with specific test context and state.
+	 *		.alt : Con tecnología Siebel
+	 * 		.id : 
+	 * 		.src : RegularExpression(http://.*\/ecommunications_esn/images/ebus\.gif)
+	 * 		.title : 
+	 * 		.class : Html.IMG
+	 * 		.name : 
+	 * 		.classIndex : 0
+	 */
+	protected StatelessGuiSubitemTestObject LogoICE(TestObject anchor, long flags) 
+	{
+		return new StatelessGuiSubitemTestObject(
+                        getMappedTestObject("LogoICE"), anchor, flags);
+	}
+	
+	/**
+	 * SiebMenu: with default state.
+	 *		ClassName : SiebMenu
+	 * 		.class : SiebMenu
+	 * 		RepositoryName : SiebMenu
+	 */
+	protected SiebMenuTestObject Menu() 
+	{
+		return new SiebMenuTestObject(
+                        getMappedTestObject("Menu"));
+	}
+	/**
+	 * SiebMenu: with specific test context and state.
+	 *		ClassName : SiebMenu
+	 * 		.class : SiebMenu
+	 * 		RepositoryName : SiebMenu
+	 */
+	protected SiebMenuTestObject Menu(TestObject anchor, long flags) 
+	{
+		return new SiebMenuTestObject(
+                        getMappedTestObject("Menu"), anchor, flags);
 	}
 	
 	/**
@@ -195,7 +307,34 @@ public abstract class CrearListaEspecialHelper extends libreria.Accion
 	}
 	
 	/**
-	 * SiebScreenViews: with default state.
+	 * NumerosMenu: with default state.
+	 *		.id : 
+	 * 		.title : 
+	 * 		.class : Html.TABLE
+	 * 		.caption : 
+	 * 		.classIndex : 0
+	 */
+	protected StatelessGuiSubitemTestObject NumerosMenu() 
+	{
+		return new StatelessGuiSubitemTestObject(
+                        getMappedTestObject("NumerosMenu"));
+	}
+	/**
+	 * NumerosMenu: with specific test context and state.
+	 *		.id : 
+	 * 		.title : 
+	 * 		.class : Html.TABLE
+	 * 		.caption : 
+	 * 		.classIndex : 0
+	 */
+	protected StatelessGuiSubitemTestObject NumerosMenu(TestObject anchor, long flags) 
+	{
+		return new StatelessGuiSubitemTestObject(
+                        getMappedTestObject("NumerosMenu"), anchor, flags);
+	}
+	
+	/**
+	 * TabsCliente: with default state.
 	 *		ClassName : SiebScreenViews
 	 * 		.class : SiebScreenViews
 	 * 		RepositoryName : SiebScreenViews
@@ -206,7 +345,7 @@ public abstract class CrearListaEspecialHelper extends libreria.Accion
                         getMappedTestObject("Pestañas"));
 	}
 	/**
-	 * SiebScreenViews: with specific test context and state.
+	 * TabsCliente: with specific test context and state.
 	 *		ClassName : SiebScreenViews
 	 * 		.class : SiebScreenViews
 	 * 		RepositoryName : SiebScreenViews
@@ -264,28 +403,32 @@ public abstract class CrearListaEspecialHelper extends libreria.Accion
 	}
 	
 	/**
-	 * Tabla HTML DIV de Numeros de Lista Especial: with default state.
-	 *		.id : s_S_A3_div
+	 * SiebelBar: with default state.
+	 *		.docclassIndex : 1
+	 * 		.id : 
 	 * 		.title : 
-	 * 		.class : Html.DIV
+	 * 		.class : Html.FRAME
+	 * 		.name : _sweviewbar
 	 * 		.classIndex : 1
 	 */
-	protected GuiTestObject TablaHTMLDIVdeNumListaEsp() 
+	protected StatelessGuiSubitemTestObject SiebelBar() 
 	{
-		return new GuiTestObject(
-                        getMappedTestObject("TablaHTMLDIVdeNumListaEsp"));
+		return new StatelessGuiSubitemTestObject(
+                        getMappedTestObject("SiebelBar"));
 	}
 	/**
-	 * Tabla HTML DIV de Numeros de Lista Especial: with specific test context and state.
-	 *		.id : s_S_A3_div
+	 * SiebelBar: with specific test context and state.
+	 *		.docclassIndex : 1
+	 * 		.id : 
 	 * 		.title : 
-	 * 		.class : Html.DIV
+	 * 		.class : Html.FRAME
+	 * 		.name : _sweviewbar
 	 * 		.classIndex : 1
 	 */
-	protected GuiTestObject TablaHTMLDIVdeNumListaEsp(TestObject anchor, long flags) 
+	protected StatelessGuiSubitemTestObject SiebelBar(TestObject anchor, long flags) 
 	{
-		return new GuiTestObject(
-                        getMappedTestObject("TablaHTMLDIVdeNumListaEsp"), anchor, flags);
+		return new StatelessGuiSubitemTestObject(
+                        getMappedTestObject("SiebelBar"), anchor, flags);
 	}
 	
 	/**

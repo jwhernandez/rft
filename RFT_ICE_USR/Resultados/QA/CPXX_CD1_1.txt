@@ -1,0 +1,56 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: CPXX_CD1 Desde paso: 1 Modo:Real
+Modulo desde Paso : 1 Hasta paso: 200
+Hora de Inicio de la Ejecucion : 2017/09/05 09:50:13
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatosEntrada'                                                  'OK'                          
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'                                         'OK'                          
+'Paso    0  -  GrabarDatosSalida'                                                 'OK'                          
+'Paso    0  -  ResetVariablesCondicionantes'                                      'OK'                          
+'Paso    1  -  fLogin'                                                            'OK'                          
+'Paso    2  -  fLeerVariableCondicionanteDP'                                      'OK'                          
+'Paso    3  -  fLeerVariableCondicionanteDP'                                      'OK'                          
+'Paso    4  -  fVista360'                                                         'OK'                          
+'Paso    5  -  fBuscarActivo'                                                     'OK'                          
+
+
+Informe de DATOS de salida
+-----------------------------------------------------------------------------------------
+'Paso    0  -  CasosPrueba'                        'Usuario Alternativo '         'JVALERIO1'                   
+'Paso    0  -  CasosPrueba'                        'Clave Alternativa '           'jvalerio1'                   
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoPasoOK'                 '0'                           
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoTramite'                '1'                           
+'Paso    5  -  fBuscarActivo'                      'NroServicio'                  '89846777'                    
+
+
+Informe de Bugs
+-----------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------
+Tipo Parada         = Objeto no encontrado
+Mensaje de Parada   = TestObjectMethodState {OBJECT_NOT_FOUND,testObjectClassName=StatelessGuiSubitemTestObject(Name: EncabezadoPedidoHTML, Map: Consulta),method=ping,signature=()V,args=null}
+Parada en paso	    = 6
+
+
+-----------------------------------------------------------------------------------------
+Fin del Informe del Caso Prueba_Conj Datos: CPXX_CD1
+-----------------------------------------------------------------------------------------
+
+
+Informe de Errores imprevistos de sistema
+-----------------------------------------------------------------------------------------
+'Paso    6  -  Accion'                             'Objeto no encontrado'         'TestObjectMethodState {OBJECT_NOT_FOUND,testObjectClassName=StatelessGuiSubitemTestObject(Name: EncabezadoPedidoHTML, Map: Consulta),method=ping,signature=()V,args=null}'
+
+'Paso    6  -  Accion'                             'Excepción no esperada'        'Script=SeleccionarPedidoCP Línea=0 Error=CRFCN0661W: The recognition score of the found object does not qualify the object as a match.
+ Looking for [StatelessGuiSubitemTestObject(Name: EncabezadoPedidoHTML, Map: Consulta)], best failing candidate score was [10000] with best failing description [{.id=, .title=, .caption=, .classIndex=1}]'
+
+'Paso    6  -  Accion'                             'Excepción no esperada'        'Script=fNuevoCambioPlan Línea=0 Error=CRFCN0018E: The 30 line of the 30 script contains an exception.'
+
+
+Hora de Finalizacion de la Ejecucion: 2017/09/05 10:03:03
+-----------------------------------------------------------------------------------------

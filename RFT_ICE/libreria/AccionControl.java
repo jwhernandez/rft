@@ -1,24 +1,45 @@
+// Ultima Modificacion Reporte 22-11-2016
 package libreria;
-
+import java.awt.Robot;
+import java.awt.image.BufferedImage;
+import java.io.FileOutputStream;
 import java.util.Enumeration;
 
+import com.rational.test.ft.object.interfaces.GuiTestObject;
 import com.rational.test.ft.object.interfaces.IWindow;
 import com.rational.test.ft.object.interfaces.TestObject;
 import com.rational.test.ft.script.RationalTestScript;
 import com.rational.test.ft.vp.ITestData;
 import com.rational.test.ft.vp.ITestDataTable;
 import com.rational.test.ft.vp.ITestDataText;
+import com.sun.image.codec.jpeg.JPEGCodec;
+import com.sun.image.codec.jpeg.JPEGImageEncoder;
+import java.awt.Rectangle;
 
 public class AccionControl extends RationalTestScript {
 
-	private String nombreScritp;
-	private String nombreObjeto;
 	private ITestDataTable tabla = null;
 	private IWindow[] ventana = null;
 
-	public AccionControl() {
-		this.nombreObjeto = "";
-		this.nombreScritp = "";
+	/**Método Imprime encabezado de un script técnico.
+	 */
+	public void ImpreEncabezadoScriptControl(Object[] Argumentos, String NombreScript) {
+		System.out.println("-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-" );
+		System.out.println("Inicio de script:" + NombreScript);
+		System.out.println("Cantidad de argumentos:" + Argumentos.length);
+		for (int i=0; i< Argumentos.length; i++) {
+			System.out.println("Argumento " + i + ":=" + Argumentos[i]);	
+		}
+		System.out.println("-----------------------------------------------------------" );
+	}
+	
+	/**Método Imprime resultado de un script técnico.
+	 */
+	public void ImpreResultadoScriptControl(String NombreScript, String Resultado) {
+		System.out.println("-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-" );
+		System.out.println("Fin de script:" + NombreScript);
+		System.out.println("Resultado:" + Resultado);
+		System.out.println("-----------------------------------------------------------" );
 	}
 	
 	/**Método retorno el nombre del caso de prueba en ejecucion.
@@ -27,17 +48,13 @@ public class AccionControl extends RationalTestScript {
      */
 	public static String getNombreCPControl() {
 		// RationalTestScript.getTopScriptName();
-		String nombre = getTopScript().getScriptCaller()
-				.getScriptName();
+		String nombre = getTopScript().getScriptCaller().getScriptName();
 		if (!nombre.contains(".")) {
 			return nombre;
-
 		} else {
-			
 			String[] nombreCompleto = nombre.split("\\.");
 			nombre = nombreCompleto[nombreCompleto.length-1];
-			return nombre;
-
+			return null;
 		}
 	}
 	/**Método retorno el nombre del paso correspondiente al caso de prueba de prueba en ejecucion.
@@ -49,17 +66,12 @@ public class AccionControl extends RationalTestScript {
 		String nombre = getTopScriptName();
 		if (!nombre.contains(".")) {
 			return nombre;
-
 		} else {
-			
 			String[] nombreCompleto = nombre.split("\\.");
 			nombre = nombreCompleto[nombreCompleto.length-1];
 			return nombre;
-
 		}
 	}
-	
-	
 
 	/**Método para obtener la fila y la columna a la que pertenece el texto buscado. 
      * @params tablaRecibida, textoBuscar
@@ -78,64 +90,66 @@ public class AccionControl extends RationalTestScript {
 					}
 				}
 			}
-
 		}
-
 		return null;
-
 	}
 	
-
+	/**Método para obtener el valor en la fila y la columna recibida. 
+	 * @params tablaRecibida, fila, columna
+	 * @return string valor de la celda
+	 * ss 15 03 2017
+	 */
+	public String obtenerValorEnFilaColumnaTablaControl(TestObject tablaRecibida,
+			int fila, int columna) {
+		String texto = "";
+		tabla = (ITestDataTable) tablaRecibida.getTestData("contents");
+		texto = tabla.getCell(fila, columna).toString();
+		return texto;
+	}
+	
 	/**Método para obtener la fila y la columna a la que pertenece el texto buscado. 
-     * @params tablaRecibida, textoBuscar
-     * @return int[] {fila, columna,indice}
+     * @params tablaRecibida, textoBuscar, 
+     * @return int[] {fila, columna,indice}  
      */
-	public int[] obtenerFilaColumnaObjCellControl(TestObject table,
-			String nombreObjeto) {
-
+	public int[] obtenerFilaColumnaObjCellControl(TestObject table, String nombreObjeto) {
 		Enumeration<String> testDataTypes = table.getTestDataTypes().keys();
 
 		while (testDataTypes.hasMoreElements()) {
 
 			String testDataType = testDataTypes.nextElement();
-			//System.out.println(testDataType);
 
 			ITestData iData = table.getTestData(testDataType);
 
+			System.out.println("Objeto buscado " + nombreObjeto);
+
 			if (iData instanceof ITestDataTable) {
-				ITestDataTable iDataTable = (ITestDataTable) table
-						.getTestData(testDataType);
+				ITestDataTable iDataTable = (ITestDataTable) table.getTestData(testDataType);
 
 				int rows = iDataTable.getRowCount();
-				int cols = iDataTable.getColumnCount();
 
 				for (int row = 0; row <= rows; row++) {
 					for (int col = 0; col < 2; col++) {
 						String cell ="";
 						cell = iDataTable.getCell(row, col).toString();
+						System.out.println(iDataTable.getPropertyKeys()[4]+iDataTable.getPropertyKeys()[5]+iDataTable.getPropertyKeys()[6]);
+						System.out.println("Objeto leido " + cell);
+						
 						if (!cell.isEmpty()) {
 							if (cell.equals((nombreObjeto))) {
+								System.out.println("Objeto Encontrado");
 								int index = (int) iDataTable.getRowIndex(atRow(row));
 								int[] filaColumnaIndice = { row, col,index};
 								return filaColumnaIndice;
-
 							}
-
 						}
-
 					}
-
 				}
-
 			} else if (iData instanceof ITestDataText) {
-				ITestDataText iText = (ITestDataText) iData;
-				String text = iText.getText();
 				return null;
 				// System.out.println(text + "Me imprimo\n\n");
 			}
 		}
 		return null;
-
 	}
 	
 	/**Método para obtener todo el contenido de una tabla, ya esté visible o no.  
@@ -209,22 +223,26 @@ public class AccionControl extends RationalTestScript {
 		}
 		return false;
 	}
-	
-	
-	private String getNombreScritp() {
-		return nombreScritp;
-	}
 
-	private void setNombreScritp(String nombreScritp) {
-		this.nombreScritp = nombreScritp;
+	/**
+	 * Método Capturar una pantalla
+	 * @params String
+	 * @return boolean
+	 */
+	public void CapturarPantallaControl(String filename, Rectangle area) {
+		ventana = RationalTestScript.getTopWindows();
+		try {
+			BufferedImage capture = null;
+			Robot robot = new Robot();
+			capture = robot.createScreenCapture(area);
+			FileOutputStream out = new FileOutputStream(filename);
+			JPEGImageEncoder encoder = JPEGCodec.createJPEGEncoder(out);
+			encoder.encode(capture);
+			out.flush();
+			out.close();
+		}
+		catch (Exception e) {
+			System.out.println("Exepcion ");
+		}
 	}
-
-	private String getNombreObjeto() {
-		return nombreObjeto;
-	}
-
-	private void setNombreObjeto(String nombreObjeto) {
-		this.nombreObjeto = nombreObjeto;
-	}
-
 }

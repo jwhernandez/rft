@@ -1,0 +1,91 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: CPC1_CD1 Desde paso: 14 Modo:Real
+Modulo desde Paso : 1 Hasta paso: 100
+Hora de Inicio de la Ejecucion : 2017/08/28 15:41:47
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatosEntrada'                                                  'OK'                          
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'                                         'OK'                          
+'Paso    0  -  LeerDatosSalida'                                                   'OK'                          
+'Paso    1  -  fLeerVariableCondicionanteDP'                                      'OK'                          
+'Paso    2  -  fLeerVariableCondicionanteDP'                                      'OK'                          
+'Paso    3  -  fLeerVariableCondicionanteDP'                                      'OK'                          
+'Paso    4  -  fLeerVariableCondicionanteDP'                                      'OK'                          
+'Paso    5  -  fLogin'                                                            'OK'                          
+'Paso    6  -  fVista360'                                                         'NE'                          
+'Paso    7  -  fNuevaVenta'                                                       'NE'                          
+'Paso    8  -  fBuscarPedidoVenta'                                                'NE'                          
+'Paso    9  -  fValidarAgencia'                                                   'NE'                          
+'Paso   10  -  fIngresarAutenticacion'                                            'NE'                          
+'Paso   11  -  fObtenerMorosidad'                                                 'NE'                          
+'Paso   12  -  fValidarCategoria'                                                 'NE'                          
+'Paso   13  -  fCompraPlanCategoriaCatalogoNew'                                   'NE'                          
+'Paso   14  -  fIngresarSIM'                                                      'OK'                          
+'Paso   15  -  fEvaluarExpresionCondicionante'                                    'OK'                          
+'Paso   15  -  fTerminalCliente'                                                  'NA'                          
+'Paso   16  -  fEvaluarExpresionCondicionante'                                    'OK'                          
+'Paso   16  -  fSeleccionarTerminal'                                              'OK'                          
+'Paso   17  -  fIngresarIMEI'                                                     'OK'                          
+'Paso   18  -  fEvaluarExpresionCondicionante'                                    'OK'                          
+'Paso   18  -  fIngresarIMEI'                                                     'OK'                          
+'Paso   19  -  fEvaluarExpresionCondicionante'                                    'OK'                          
+'Paso   19  -  fIngresarIMEI'                                                     'OK'                          
+'Paso   20  -  fGenerarCtaFact'                                                   'OK'                          
+'Paso   21  -  fASRM_Login'                                                       'OK'                          
+'Paso   22  -  fASRM_ModificarEstadoServicio'                                     'OK'                          
+'Paso   23  -  fASRM_Logout'                                                      'OK'                          
+'Paso   24  -  fEvaluarExpresionCondicionante'                                    'OK'                          
+'Paso   24  -  fBuscarProducto'                                                   'NA'                          
+'Paso   25  -  fEvaluarExpresionCondicionante'                                    'OK'                          
+
+
+Informe de DATOS de salida
+-----------------------------------------------------------------------------------------
+'Paso    0  -  CasosPrueba'                        'Usuario Alternativo '         'JVALERIO1'                   
+'Paso    0  -  CasosPrueba'                        'Clave Alternativa '           'jvalerio1'                   
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoPasoOK'                 '13'                          
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoTramite'                '1'                           
+'Paso    0  -  LeerDatosSalida'                    'T1_NroPedido'                 '1-1774840102'                
+'Paso   15  -  fTerminalCliente'                   'Expresion'                    'false'                       
+'Paso   16  -  fSeleccionarTerminal'               'Expresion'                    'true'                        
+'Paso   18  -  fIngresarIMEI'                      'Expresion'                    'true'                        
+'Paso   19  -  fIngresarIMEI'                      'Expresion'                    'true'                        
+'Paso   24  -  fBuscarProducto'                    'Expresion'                    'false'                       
+'Paso   25  -  fBuscarProducto'                    'Expresion'                    'true'                        
+
+
+Informe de Bugs
+-----------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------
+Tipo Parada         = Excepción no esperada
+Mensaje de Parada   = Script=GenerarCtaFact Línea=0 Error=CRFCN0784E: Application under test (AUT) is not responding while performing the action : PerformAction on control siebel.SiebButtonTestObject(Name: GenCtaFact, Map: GenCtaFact).Try playing back again after restarting AUT. If the problem persists, avoid performing the above action.
+Parada en paso	    = 25
+
+
+-----------------------------------------------------------------------------------------
+Fin del Informe del Caso Prueba_Conj Datos: CPC1_CD1
+-----------------------------------------------------------------------------------------
+
+
+Informe de Errores imprevistos de sistema
+-----------------------------------------------------------------------------------------
+'Paso   20  -  Accion'                             'Excepción no esperada'        'Script=GenerarCtaFact Línea=0 Error=CRFCN0784E: Application under test (AUT) is not responding while performing the action : PerformAction on control siebel.SiebButtonTestObject(Name: GenCtaFact, Map: GenCtaFact).Try playing back again after restarting AUT. If the problem persists, avoid performing the above action.'
+
+'Paso   20  -  Accion'                             'Excepción no esperada'        'Script=fGenerarCtaFact Línea=0 Error=Application under test (AUT) is not responding. It is recommended to retry after restarting the application. If the problem persists, avoid recording/playing back on the specific control'
+
+'Paso   25  -  Accion'                             'Excepción en Método'          'Script=BuscarProducto Línea=151 Método=ActivateRow Error=
+ActivateRow("0"); Error:(-1022) - System error. Debug info: Failed to execute method id 24 with args ((0)). Reason: Blocked. Clase=com.rational.test.ft.Domain.Siebel.SiebelMethodExecutionFailureException Objeto=siebel.SiebListTestObject(Name: LineasPedido, Map: LineasPedido)'
+
+'Paso   25  -  Accion'                             'Excepción no esperada'        'Script=BuscarProducto Línea=0 Error=
+ActivateRow("0"); Error:(-1022) - System error. Debug info: Failed to execute method id 24 with args ((0)). Reason: Blocked.'
+
+'Paso   25  -  Accion'                             'Excepción no esperada'        'Script=fBuscarProducto Línea=0 Error=CRFCN0018E: The 151 line of the 151 script contains an exception.'
+
+
+Hora de Finalizacion de la Ejecucion: 2017/08/28 15:48:10
+-----------------------------------------------------------------------------------------

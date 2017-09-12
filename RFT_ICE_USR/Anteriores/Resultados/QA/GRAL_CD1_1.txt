@@ -1,0 +1,30 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: GRAL_CD1 Desde paso: 1 Modo:Real
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+---------------------------
+GRAL_CD1_T1;LeerDatosEntrada;OK;
+GRAL_CD1_T1;GrabarDatosSalida;OK;
+GRAL_CD1_T1;Paso1:fValidarAccion;OK;
+GRAL_CD1_T1;Fin del caso;OK;
+
+
+Informe de DATOS de salida
+---------------------------
+
+
+Informe de Bugs
+-----------------
+GRAL_CD1_T1;fValidarAccion;Validar acción falló;
+
+
+Informe de Errores imprevistos de sistema
+------------------------------------------------
+
+----------------------------------------------------------------------------------------------------------
+Tipo Parada:FIN - Mensaje de Parada: FIN del caso en paso 2
+- Fin del Informe del Caso Prueba_Conj Datos: GRAL_CD1
+----------------------------------------------------------------------------------------------------------

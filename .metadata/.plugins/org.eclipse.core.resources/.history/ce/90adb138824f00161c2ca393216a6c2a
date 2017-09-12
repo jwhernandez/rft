@@ -1,0 +1,116 @@
+package GUI;
+
+import javax.swing.*;
+
+import java.awt.event.*;
+import java.awt.*;
+import java.io.IOException;
+
+
+public class CP03 extends JMenuBar{
+
+	private JLabel nroCuentaL, planL, nroServicioL, SimInL, SimCoL, TerminalL, IMEICoL, IMEIInL;
+	private JTextField nroCuentaTF, planTF, nroServicioTF, SimInTF, SimCoTF, TerminalTF, IMEICoTF, IMEIInTF;
+	
+	public CP03(){
+	      JFrame frame = new JFrame();
+	      frame.setTitle("Automatizacion de Pruebas Regresivas");
+	      frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	      //frame.setJMenuBar(new CP03(  ));
+	      frame.pack(  );
+	      frame.setSize(600, 600);
+	      frame.setVisible(true);
+		  JPanel panelLabel  = new JPanel();
+	      JPanel panelTF  = new JPanel();
+	      JPanel panelIntegracion  = new JPanel();
+	      JPanel panelab  = new JPanel();
+	      JPanel panelex = new JPanel();
+	    
+	      JTextField text1 = new JTextField();
+	      JTextField text2 = new JTextField();
+	      JTextField text3 = new JTextField();
+	      JTextField text4 = new JTextField();
+	      JButton boton1 = new JButton();
+	      JButton boton2 = new JButton();
+
+
+	      String[] bookTitles = new String[] {"Paso 1", "Paso 8",
+                "Paso 12", "Paso 15"};
+
+	      JComboBox<String> bookList = new JComboBox<>(bookTitles);
+	      
+	      // Imprime en consola los datos seleccionados por el combo box
+	      String selectedBook = (String) bookList.getSelectedItem();
+	      System.out.println("You seleted the book: " + selectedBook);
+
+	      frame.setLayout(new FlowLayout());      
+	      frame.setResizable(false);
+	        
+	    //Instanciar los labels
+	      nroCuentaL = new JLabel();
+	      nroCuentaL.setText("Numero de cuenta");
+	      
+	      planL = new JLabel();
+	      planL.setText("Plan");
+	      
+	      nroServicioL = new JLabel();
+	      nroServicioL.setText("Nuemero de Servicio");
+	      
+	      SimInL = new JLabel();
+	      SimInL.setText("SIM Incorrecta");
+	      
+	      SimCoL = new JLabel();
+	      SimCoL.setText("SIM Correcta");
+	      
+	      TerminalL = new JLabel();
+	      TerminalL.setText("Terminal");
+	      
+	      IMEICoL = new JLabel();
+	      IMEICoL.setText("IMEI Correcto");
+	      
+	      IMEIInL = new JLabel();
+	      IMEIInL.setText("IMEI Incorrecto");
+	      
+	      panelLabel.setLayout(new GridLayout(8,0));
+	      panelLabel.add(nroCuentaL);
+	      panelLabel.add(planL);
+	      panelLabel.add(nroServicioL);
+	      panelLabel.add(SimInL);
+	      panelLabel.add(SimCoL);
+	      panelLabel.add(TerminalL);
+	      panelLabel.add(IMEICoL);
+	      panelLabel.add(IMEIInL);
+	        
+	      panelTF.setLayout(new GridLayout(4,0));
+	      panelTF.add(nroCuentaTF);
+	      panelTF.add(planTF);
+	      panelTF.add(nroServicioTF);
+	      panelTF.add(SimInTF);
+	      panelTF.add(SimCoTF);
+	      panelTF.add(TerminalTF);
+	      panelTF.add(IMEICoTF);
+	      panelTF.add(IMEIInTF);
+	      
+	      panelIntegracion.setLayout(new GridLayout(1,1));
+	      panelIntegracion.setPreferredSize(new Dimension(400,100));
+	      panelIntegracion.add(panelLabel);
+	      panelIntegracion.add(panelTF);
+	                
+	      panelab.setLayout(new FlowLayout());
+	      panelab.setPreferredSize(new Dimension(200,50));
+	      panelab.add(boton1);
+	      panelab.add(boton2);
+	        
+	      panelex.setLayout(new GridLayout(2,0));
+	      panelex.add(panelIntegracion);
+	      panelex.add(panelab);
+	      panelex.setBackground(Color.cyan);
+	      panelex.setBounds(0, 100, 600, 500); 
+	      
+	      boton1.setText("Aceptar");
+	      boton2.setText("Cancelar");
+	      //boton1.addActionListener(this);
+	      
+	      frame.add(panelex);
+	}
+}

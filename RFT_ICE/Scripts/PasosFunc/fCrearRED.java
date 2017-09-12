@@ -18,17 +18,29 @@ import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
  * @Param Nombre del caso
  * @since  2015/12/27
  * @author SS
+ * CP32_CD1_T1 NA QA true 20
  */
 public class fCrearRED extends fCrearREDHelper
 {
 	public void testMain(Object[] args) 
 	{
+		ImpreEncabezadoScript(getScriptArgs(), getScriptName( ).toString());
 		String[] MensError;
 		MensError = new String[4];
 
 		String[] RED;
-		RED = new String[1];
-
+		RED = new String[2];
+		
+		/**
+		 * Itera el data pools de datos del caso para buscar la row correcta
+		 */
+		dpReset();
+		while (!dpDone() &&  !(dpString("NumeroCaso").equals(args[0]) && 
+				dpString("Ambiente").equals(args[2]))) {
+			dpNext(); 
+		} 	
+		
+		RED[1] = dpString("Tramite");
 		callScript("Scripts.Comun.CrearRED", RED);
 		if (RED[0].toString().equals("No creado")) {
 			//MensError[0] = "Red no creado";

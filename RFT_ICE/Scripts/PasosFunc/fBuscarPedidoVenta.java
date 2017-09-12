@@ -14,20 +14,21 @@ import com.rational.test.ft.value.*;
 import com.rational.test.ft.vp.*;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
- * Description   : Functional Test Script
+ * Description   : Busca el numero de pedido 
  * Script Name   : <b>BuscarPedidoVenta</b>
  * @author Sandra
  * @since  2016/01/19
  */
 public class fBuscarPedidoVenta extends fBuscarPedidoVentaHelper
 {
-	public void testMain(Object[] args) 
+	public void testMain(Object[] args) throws RationalTestException 
 	{
-//		String[] MensError;
-//		MensError = new String[4];
+		ImpreEncabezadoScript(getScriptArgs(), getScriptName( ).toString());
+		String[] MensError;
+		MensError = new String[4];
 		
 		String[] BuscPedVta;
-		BuscPedVta = new String[1];
+		BuscPedVta = new String[2];
 
 		BuscPedVta[0]= getNroPedido();
 		System.out.println("NroPedido: " + getNroPedido());
@@ -35,14 +36,14 @@ public class fBuscarPedidoVenta extends fBuscarPedidoVentaHelper
 		
 		callScript("Scripts.Comun.BuscarPedidoVenta", BuscPedVta);
 
-//		if (BuscPedVta[1].toString().equals("NOK")) {
-//			MensError[0] = "Pedido Venta no encontrado";
-//						MensError[0] = "xDefecto";
-//		MensError[1] = args[3].toString();
-//		MensError[2] = args[0].toString();
-//		MensError[3] = getScriptName( );
-//			callScript("Scripts.Comun.TerminarCasoError", MensError);
-//		}
+		if (BuscPedVta[1].toString().equals("NOK")) {
+			//	MensError[0] = "Pedido Venta no encontrado";
+			MensError[0] = "xDefecto";
+			MensError[1] = args[3].toString();
+			MensError[2] = args[0].toString();
+			MensError[3] = getScriptName( );
+			callScript("Scripts.Comun.TerminarCasoError", MensError);
+		}
 	}
 }
 

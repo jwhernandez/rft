@@ -24,6 +24,7 @@ public class fValidaContacto_RepLegal extends fValidaContacto_RepLegalHelper
 {
 	public void testMain(Object[] args) 
 	{
+		ImpreEncabezadoScript(getScriptArgs(), getScriptName( ).toString());
 		String[] Contacto_Rep;
 		Contacto_Rep = new String[4];
 

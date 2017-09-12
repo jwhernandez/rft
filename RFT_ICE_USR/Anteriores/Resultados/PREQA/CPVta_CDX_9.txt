@@ -1,0 +1,59 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: CPVta_CDX Desde paso: 9 Modo:Real
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatosEntrada'                                                  'OK'                          
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'                                         'OK'                          
+'Paso    0  -  LeerDatosSalida'                                                   'OK'                          
+'Paso    1  -  fLogin'                                                            'OK'                          
+'Paso    2  -  fVista360'                                                         'NE'                          
+'Paso    3  -  fNuevaVenta'                                                       'NE'                          
+'Paso    4  -  fBuscarPedidoVenta'                                                'OK'                          
+'Paso    5  -  fObtenerMorosidad'                                                 'NE'                          
+'Paso    6  -  fIngresarAutenticacion'                                            'NE'                          
+'Paso    7  -  fCompraPlanCategoriaCatalogoNew'                                   'NE'                          
+'Paso    8  -  fTerminalCliente'                                                  'NE'                          
+'Paso    9  -  fIngresar_SIM_IMEI_Servicio_Admin'                                 'OK'                          
+'Paso   10  -  fGenerarCtaFact'                                                   'OK'                          
+'Paso   11  -  fValorarTodo'                                                      'OK'                          
+'Paso   12  -  fEnviarPedido'                                                     'OK'                          
+
+
+Informe de DATOS de salida
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoPasoOK'                 '8'                           
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoTramite'                '1'                           
+'Paso    0  -  LeerDatosSalida'                    'T1_NroPedido'                 '1-1728879337'                
+'Paso    9  -  GrabarDatosSalida'                  'T1_NroServicio'               '10000550'                    
+'Paso    9  -  fIngresar_SIM_IMEI_Servicio_Admin'  'NroServicio'                  '10000550'                    
+
+
+Informe de Bugs
+-----------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------
+Tipo Parada         = Excepción en Método
+Mensaje de Parada   = Script=EsperaEstado Línea=62 Método=SetText Error=
+SetText("Documentos"); Error:(-1022) - System error. Debug info: Failed to execute method id 7 with args (()). Reason: Blocked. Clase=com.rational.test.ft.Domain.Siebel.SiebelMethodExecutionFailureException Objeto=siebel.SiebPicklistTestObject(Nombre: TipoAutenticacion, Correlación: TipoAutenticacion)
+Parada en paso	    = 13
+
+
+-----------------------------------------------------------------------------------------
+Fin del Informe del Caso Prueba_Conj Datos: CPVta_CDX
+-----------------------------------------------------------------------------------------
+
+
+Informe de Errores imprevistos de sistema
+-----------------------------------------------------------------------------------------
+'Paso   13  -  Accion'                             'Excepción en Método'          'Script=EsperaEstado Línea=62 Método=SetText Error=
+SetText("Documentos"); Error:(-1022) - System error. Debug info: Failed to execute method id 7 with args (()). Reason: Blocked. Clase=com.rational.test.ft.Domain.Siebel.SiebelMethodExecutionFailureException Objeto=siebel.SiebPicklistTestObject(Nombre: TipoAutenticacion, Correlación: TipoAutenticacion)'
+
+'Paso   13  -  Accion'                             'Excepción no esperada'        'Script=EsperaEstado Línea=0 Error=
+SetText("Documentos"); Error:(-1022) - System error. Debug info: Failed to execute method id 7 with args (()). Reason: Blocked.'
+
+'Paso   13  -  Accion'                             'Excepción no esperada'        'Script=fEsperaEstado Línea=0 Error=CRFCN0018E: La línea 62 del script 62 contiene una excepción.'
+

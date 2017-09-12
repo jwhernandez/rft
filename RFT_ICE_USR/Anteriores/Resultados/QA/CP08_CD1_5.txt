@@ -1,0 +1,42 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: CP08_CD1 Desde paso: 5 Modo:Real
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+---------------------------
+CP08_CD1_T1;LeerDatosEntrada;OK;
+CP08_CD1_T1;LeerDatoSalidaUltPasoEjec;OK;
+CP08_CD1_T1;LeerDatosSalida;OK;
+CP08_CD1_T1;Paso1:fLogin;OK;
+CP08_CD1_T1;Paso2:fVista360;OK;
+CP08_CD1_T1;Paso3:fBuscarActivo;OK;
+CP08_CD1_T1;Paso4:fBuscarCtaFact;OK;
+CP08_CD1_T1;Paso5:fNuevaPostvta;OK;
+CP08_CD1_T1;Paso5:fNuevaPostvta;Se paro voluntariamente el caso en el paso hasta 5;
+
+
+Informe de DATOS de salida
+---------------------------
+CP08_CD1;UltimoPasoOK;4;
+CP08_CD1;UltimoTramite;1;
+CP08_CD1_T1;NroServicio;89654111;
+CP08_CD1_T1;NroServicio;89654111;
+CP08_CD1_T1;NroCtaFact;101740332264;
+CP08_CD1_T1;NroPedido;1-1741218095;
+CP08_CD1;T1_NroPedido;1-1741218095;
+CP08_CD1;UltPasoOK;5;
+
+
+Informe de Bugs
+-----------------
+
+
+Informe de Errores imprevistos de sistema
+------------------------------------------------
+
+----------------------------------------------------------------------------------------------------------
+Tipo Parada:Parada x Paso Hasta - Mensaje de Parada: Parada en paso 6
+- Fin del Informe del Caso Prueba_Conj Datos: CP08_CD1
+----------------------------------------------------------------------------------------------------------

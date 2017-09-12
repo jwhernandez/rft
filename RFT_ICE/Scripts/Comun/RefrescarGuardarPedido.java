@@ -15,14 +15,21 @@ import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
  * Descripción: Graba para evitar transacciones largas sin commit
  * Autor: Ale Fabale
+ * @Param res Tramite
  */
 public class RefrescarGuardarPedido extends RefrescarGuardarPedidoHelper
 {
-	public void testMain(Object[] args) 
+	public void testMain(Object[] argu) 
 	{
+		ImpreEncabezadoScript(getScriptArgs(), getScriptName( ).toString());
 		SiebApplication().processKeyboardAccelerator("Ctrl+S");
-		SiebApplication().processKeyboardAccelerator("Alt+Enter");
 		
+		argu[0]="NOK";
+		String sTramite = argu[1].toString().toLowerCase();
+		
+		if (!sTramite.equals("portin")) Menu().select(atPath("WriteRecord")); // Se agrega porque en la VM de juli no funciona el short-cut
+		if (sTramite.equals("portin"))  MenuPI().select(atPath("WriteRecord"));
+		argu[0]="OK";
 	}
 }
 

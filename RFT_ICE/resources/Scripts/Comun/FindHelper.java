@@ -7,7 +7,7 @@
 // file will be lost when automatically updated.
 
 package resources.Scripts.Comun;
-
+import libreria.Accion;
 import com.rational.test.ft.object.interfaces.*;
 import com.rational.test.ft.object.interfaces.SAP.*;
 import com.rational.test.ft.object.interfaces.WPF.*;
@@ -20,14 +20,14 @@ import com.rational.test.ft.vp.IFtVerificationPoint;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
  * Script Name   : <b>Find</b><br>
- * Generated     : <b>2016/01/14 08:30:32</b><br>
+ * Generated     : <b>2016/03/30 08:32:10</b><br>
  * Description   : Helper class for script<br>
  * Original Host : Windows 7 x86 6.1 <br>
  * 
- * @since  enero 14, 2016
+ * @since  marzo 30, 2016
  * @author Sandra
  */
-public abstract class FindHelper extends RationalTestScript
+public abstract class FindHelper extends libreria.Accion
 {
 	/**
 	 * SWISpecialRatingProfileView: with default state.

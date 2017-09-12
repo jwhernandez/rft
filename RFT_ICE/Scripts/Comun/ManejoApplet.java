@@ -29,12 +29,12 @@ public class ManejoApplet extends ManejoAppletHelper
 	 */
 	public void testMain(Object[] args) 
 	{
-		System.out.println(VistaListaEspecial().getChildren()[0]);
-		System.out.println(VistaListaEspecial().getChildren()[0].getProperties());
-		ISiebTestObject ISiebObj = (ISiebTestObject)  VistaListaEspecial().getChildren()[0];
-		ISiebObj.submit("Select", "SWI Special Rating Items List Applet");
-		System.out.println(VistaListaEspecial().getChildren()[0].getProperties());
-		System.out.println("***" +VistaListaEspecial().activeApplet());
+//		System.out.println(VistaListaEspecial().getChildren()[0]);
+//		System.out.println(VistaListaEspecial().getChildren()[0].getProperties());
+//		ISiebTestObject ISiebObj = (ISiebTestObject)  VistaListaEspecial().getChildren()[0];
+//		ISiebObj.submit("Select", "SWI Special Rating Items List Applet");
+//		System.out.println(VistaListaEspecial().getChildren()[0].getProperties());
+//		System.out.println("***" +VistaListaEspecial().activeApplet());
 
 	}
 }

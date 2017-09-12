@@ -1,0 +1,47 @@
+
+---------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: CP76_CD1 Desde paso: 21
+---------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+---------------------------
+CP76_CD1_T1;LeerDatosEntrada;OK;
+CP76_CD1_T1;LeerDatoSalidaUltPasoEjec;OK;
+CP76_CD1_T1;LeerDatosSalida;OK;
+CP76_CD1_T1;Paso1:fLogin;OK;
+CP76_CD1_T1;Paso2:fVista360;OK;
+CP76_CD1_T1;Paso3:fValidarPerfilFactCuenta;NE;
+CP76_CD1_T1;Paso4:fCrearPerfilFacCuenta;NE;
+CP76_CD1_T1;Paso5:fNuevaVenta;NE;
+CP76_CD1_T1;Paso6:fBuscarPedidoVenta;OK;
+CP76_CD1_T1;Paso7:fObtenerMorosidad;NE;
+CP76_CD1_T1;Paso8:fIngresarAutenticacion;NE;
+CP76_CD1_T1;Paso9:fCompraPlanCatalogo;NE;
+CP76_CD1_T1;Paso10:fIngresarSIM;NE;
+CP76_CD1_T1;Paso11:fGenerarCtaFact;NE;
+CP76_CD1_T1;Paso12:fSeleccionarTerminal;NE;
+CP76_CD1_T1;Paso13:fValorarTodo;NE;
+CP76_CD1_T1;Paso14:fIngresarIMEI;NE;
+CP76_CD1_T1;Paso15:fIngresarIMEI;NE;
+CP76_CD1_T1;Paso16:fBuscarProducto;NE;
+CP76_CD1_T1;Paso17:fExpandiryBuscar;NE;
+CP76_CD1_T1;Paso18:fIngresarIMEI;NE;
+CP76_CD1_T1;Paso19:fCheckPagoFactura;NE;
+CP76_CD1_T1;Paso20:fIngresarNroServicioAdmin;NE;
+CP76_CD1_T1;Paso21:fEnviarPedido;OK;
+
+
+Informe de DATOS de salida
+---------------------------
+CP76_CD1;UltimoPasoOK;2;
+CP76_CD1;UltimoTramite;1;
+CP76_CD1;NroPedido;1-1735047671;
+
+
+Informe de Errores
+-----------------
+
+-------------------------------------------------------------------
+Fin del Informe del Caso Prueba y Conj Datos: CP76_CD1
+-------------------------------------------------------------------

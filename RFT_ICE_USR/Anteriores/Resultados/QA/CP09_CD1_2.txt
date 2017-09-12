@@ -1,0 +1,141 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: CP09_CD1 Desde paso: 2 Modo:Real
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatosEntrada'                                                  'OK'                          
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'                                         'OK'                          
+'Paso    0  -  LeerDatosSalida'                                                   'OK'                          
+'Paso    1  -  fLogin'                                                            'OK'                          
+'Paso    2  -  fValidarActivoEstadoenActivo'                                      'OK'                          
+'Paso    3  -  fIraActivoDesdeActivo'                                             'OK'                          
+'Paso    4  -  fNuevaPostvta'                                                     'OK'                          
+'Paso    5  -  fNuevaPostvta'                                                     'OK'                          
+'Paso    6  -  fBuscarPedidoVenta'                                                'OK'                          
+'Paso    7  -  fValidarAgencia'                                                   'OK'                          
+'Paso    8  -  fIngresarAutenticacion'                                            'OK'                          
+'Paso    9  -  fIngresarIMEI'                                                     'OK'                          
+'Paso   10  -  fTerminalCliente'                                                  'OK'                          
+'Paso   11  -  fIngresarSIM'                                                      'OK'                          
+'Paso   12  -  fExpandiryBuscar'                                                  'OK'                          
+'Paso   13  -  fCheckPagoFact'                                                    'OK'                          
+'Paso   14  -  fValidarAccion'                                                    'OK'                          
+'Paso   15  -  fExpandiryBuscar'                                                  'OK'                          
+'Paso   16  -  fCheckPagoFact'                                                    'OK'                          
+'Paso   17  -  fValidarAccion'                                                    'OK'                          
+'Paso   18  -  fExpandiryBuscar'                                                  'OK'                          
+'Paso   19  -  fCheckPagoFact'                                                    'OK'                          
+'Paso   20  -  fValidarAccion'                                                    'OK'                          
+'Paso   21  -  fEnviarPedido'                                                     'OK'                          
+'Paso   22  -  fValidarMensaje'                                                   'OK'                          
+'Paso   23  -  fValorarTodo'                                                      'OK'                          
+'Paso   24  -  fExpandiryBuscar'                                                  'OK'                          
+'Paso   25  -  fCheckPagoFact'                                                    'OK'                          
+'Paso   26  -  fExpandiryBuscar'                                                  'OK'                          
+'Paso   27  -  fCheckPagoFact'                                                    'OK'                          
+'Paso   28  -  fExpandiryBuscar'                                                  'OK'                          
+'Paso   29  -  fCheckPagoFact'                                                    'OK'                          
+'Paso   30  -  fEnviarPedido'                                                     'OK'                          
+'Paso   31  -  fEsperaEstado'                                                     'OK'                          
+'Paso   32  -  fValidacPostEnvio1'                                                'OK'                          
+'Paso   33  -  fValidacPostEnvio2'                                                'OK'                          
+'Paso   34  -  fVista360'                                                         'OK'                          
+'Paso   35  -  fBuscarActivo'                                                     'OK'                          
+'Paso   36  -  fValidarUnPerfil'                                                  'OK'                          
+'Paso   37  -  fBuscarCtaFact'                                                    'OK'                          
+'Paso   38  -  fValidarUnPerfil'                                                  'OK'                          
+'Paso   39  -  fBuscarProductoActivo'                                             'OK'                          
+'Paso   40  -  fValidarActivoEstadoyMotivoenCtaFact'                                'OK'                          
+'Paso   41  -  fBuscarProductoActivo'                                             'OK'                          
+'Paso   42  -  fValidarActivoEstadoyMotivoenCtaFact'                                'OK'                          
+'Paso   43  -  fValidarActivoSIMenCtaFact'                                        'OK'                          
+'Paso   44  -  fASRM_Login'                                                       'OK'                          
+'Paso   45  -  fASRM_ConsultaEstadoSIM'                                           'OK'                          
+'Paso   46  -  fASRM_ConsultaEstadoSIM'                                           'OK'                          
+'Paso   47  -  fASRM_Logout'                                                      'OK'                          
+'Paso   48  -  fLogout'                                                           'OK'                          
+
+
+Informe de DATOS de salida
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoPasoOK'                 '1'                           
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoTramite'                '1'                           
+'Paso    3  -  fIraActivoDesdeActivo'              'NroServicio'                  '89773883'                    
+'Paso    5  -  fNuevaPostvta'                      'NroPedido'                    '1-1742554218'                
+'Paso    5  -  GrabarDatosSalida'                  'T1_NroPedido'                 '1-1742554218'                
+'Paso   14  -  ValidarNuevaAccion'                 'Accion'                       'Nuevo'                       
+'Paso   17  -  ValidarNuevaAccion'                 'Accion'                       'Nuevo'                       
+'Paso   20  -  ValidarNuevaAccion'                 'Accion'                       'Nuevo'                       
+'Paso   35  -  fBuscarActivo'                      'NroServicio'                  '89773883'                    
+'Paso   35  -  fBuscarActivo'                      'NroServicio'                  '89773883'                    
+'Paso   37  -  fBuscarCtaFact'                     'NroCtaFact'                   '101742540655'                
+'Paso   40  -  ValidarActivoEstadoyMotivoenCtaFact' 'Estado'                       'Activo'                      
+'Paso   42  -  ValidarActivoEstadoyMotivoenCtaFact' 'Estado'                       'Activo'                      
+'Paso   43  -  ValidarActivoSIMenCtaFact'          'SIM'                          '89506010911111297012'        
+
+
+Informe de Bugs
+-----------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------
+Tipo Parada         = Excepción no esperada
+Mensaje de Parada   = Script=DB_Validar Línea=0 Error=Problema de compilación no resuelto: 
+	oracle no se puede resolver en un tipo
+
+Parada en paso	    = 49
+
+
+-----------------------------------------------------------------------------------------
+Fin del Informe del Caso Prueba_Conj Datos: CP09_CD1
+-----------------------------------------------------------------------------------------
+
+
+Informe de Errores imprevistos de sistema
+-----------------------------------------------------------------------------------------
+'Paso    8  -  Accion'                             'Reconocimiento Ambiguo'       'TestObjectMethodState {AMBIGUOUS_RECOGNITION,testObjectClassName=GuiTestObject(Name: BtonConsultaPedido, Map: BtonConsultaPedido),method=ensureObjectIsVisible,signature=null,args=null}'
+
+'Paso    8  -  Accion'                             'Reconocimiento Ambiguo'       'Consulta'                    
+
+'Paso    8  -  Accion'                             'Reconocimiento Ambiguo'       'TestObjectMethodState {AMBIGUOUS_RECOGNITION,testObjectClassName=GuiTestObject(Name: BtonConsultaPedido, Map: BtonConsultaPedido),method=ensureObjectIsVisible,signature=null,args=null}'
+
+'Paso    8  -  Accion'                             'Reconocimiento Ambiguo'       'Consulta'                    
+
+'Paso   10  -  Accion'                             'Reconocimiento Ambiguo'       'TestObjectMethodState {AMBIGUOUS_RECOGNITION,testObjectClassName=GuiTestObject(Name: BtonConsultaPedido, Map: BtonConsultaPedido),method=ping,signature=()V,args=null}'
+
+'Paso   10  -  Accion'                             'Reconocimiento Ambiguo'       'Consulta'                    
+
+'Paso   10  -  Accion'                             'Reconocimiento Ambiguo'       'TestObjectMethodState {AMBIGUOUS_RECOGNITION,testObjectClassName=GuiTestObject(Name: BtonConsultaPedido, Map: BtonConsultaPedido),method=ping,signature=()V,args=null}'
+
+'Paso   10  -  Accion'                             'Reconocimiento Ambiguo'       'Consulta'                    
+
+'Paso   21  -  Accion'                             'Reconocimiento Ambiguo'       'TestObjectMethodState {AMBIGUOUS_RECOGNITION,testObjectClassName=GuiTestObject(Name: BotonConsultaPedido, Map: BtonConsultaPedido),method=ensureObjectIsVisible,signature=null,args=null}'
+
+'Paso   21  -  Accion'                             'Reconocimiento Ambiguo'       'Consulta'                    
+
+'Paso   21  -  Accion'                             'Reconocimiento Ambiguo'       'TestObjectMethodState {AMBIGUOUS_RECOGNITION,testObjectClassName=GuiTestObject(Name: BotonConsultaPedido, Map: BtonConsultaPedido),method=ensureObjectIsVisible,signature=null,args=null}'
+
+'Paso   21  -  Accion'                             'Reconocimiento Ambiguo'       'Consulta'                    
+
+'Paso   30  -  Accion'                             'Reconocimiento Ambiguo'       'TestObjectMethodState {AMBIGUOUS_RECOGNITION,testObjectClassName=GuiTestObject(Name: BotonConsultaPedido, Map: BtonConsultaPedido),method=ensureObjectIsVisible,signature=null,args=null}'
+
+'Paso   30  -  Accion'                             'Reconocimiento Ambiguo'       'Consulta'                    
+
+'Paso   30  -  Accion'                             'Reconocimiento Ambiguo'       'TestObjectMethodState {AMBIGUOUS_RECOGNITION,testObjectClassName=GuiTestObject(Name: BotonConsultaPedido, Map: BtonConsultaPedido),method=ensureObjectIsVisible,signature=null,args=null}'
+
+'Paso   30  -  Accion'                             'Reconocimiento Ambiguo'       'Consulta'                    
+
+'Paso   49  -  Accion'                             'Excepción no esperada'        'Script=DB_Validar Línea=0 Error=Problema de compilación no resuelto: 
+	oracle no se puede resolver en un tipo
+'
+
+'Paso   49  -  Accion'                             'Excepción no esperada'        'Script=fDB_Validar Línea=0 Error=Problema de compilación no resuelto: 
+	oracle no se puede resolver en un tipo
+'
+
+'Paso   49  -  Accion'                             'Excepción no esperada'        'Script=CasosPrueba Línea=0 Error=Problema de compilación no resuelto: 
+	oracle no se puede resolver en un tipo
+'
+

@@ -1,0 +1,62 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: GRAL_CD2 Desde paso: 1 Modo:Real
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatosEntrada'                                                  'OK'                          
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'                                         'OK'                          
+'Paso    0  -  GrabarDatosSalida'                                                 'OK'                          
+'Paso    1  -  fLogin'                                                            'OK'                          
+'Paso    2  -  fIraActivoDesdeActivo'                                             'OK'                          
+'Paso    3  -  fNuevaPostvta'                                                     'OK'                          
+'Paso    4  -  fBuscarPedidoVenta'                                                'OK'                          
+'Paso    5  -  fCancelarPedido'                                                   'OK'                          
+'Paso    6  -  fNuevoTramite'                                                     'OK'                          
+'Paso    7  -  fIraActivoDesdeActivo'                                             'OK'                          
+'Paso    8  -  fNuevaPostvta'                                                     'OK'                          
+'Paso    9  -  fBuscarPedidoVenta'                                                'OK'                          
+'Paso   10  -  fCancelarPedido'                                                   'OK'                          
+'Paso   11  -  fNuevoTramite'                                                     'OK'                          
+'Paso   12  -  fIraActivoDesdeActivo'                                             'OK'                          
+'Paso   13  -  fNuevaPostvta'                                                     'OK'                          
+'Paso   14  -  fBuscarPedidoVenta'                                                'OK'                          
+'Paso   15  -  fCancelarPedido'                                                   'OK'                          
+'Paso   15  -  Fin del caso'                                                      'OK'                          
+
+
+Informe de DATOS de salida
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoPasoOK'                 '0'                           
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoTramite'                '1'                           
+'Paso    2  -  fIraActivoDesdeActivo'              'NroServicio'                  '10112131'                    
+'Paso    3  -  fNuevaPostvta'                      'NroPedido'                    '1-1741505165'                
+'Paso    3  -  GrabarDatosSalida'                  'T1_NroPedido'                 '1-1741505165'                
+'Paso    6  -  GrabarDatosSalida'                  'UltTramite'                   '2'                           
+'Paso    6  -  GrabarDatosSalida'                  'T2_NroPedidoAnt'              '1-1741505165'                
+'Paso    6  -  GrabarDatosSalida'                  'T2_NroServicio'               '10112131'                    
+'Paso    7  -  fIraActivoDesdeActivo'              'NroServicio'                  '10112131'                    
+'Paso    8  -  fNuevaPostvta'                      'NroPedido'                    '1-1741505629'                
+'Paso    8  -  GrabarDatosSalida'                  'T2_NroPedido'                 '1-1741505629'                
+'Paso   11  -  GrabarDatosSalida'                  'UltTramite'                   '3'                           
+'Paso   11  -  GrabarDatosSalida'                  'T3_NroPedidoAntAnt'           '1-1741505165'                
+'Paso   11  -  GrabarDatosSalida'                  'T3_NroPedidoAnt'              '1-1741505629'                
+'Paso   11  -  GrabarDatosSalida'                  'T3_NroServicio'               '10112131'                    
+'Paso   12  -  fIraActivoDesdeActivo'              'NroServicio'                  '10112131'                    
+'Paso   13  -  fNuevaPostvta'                      'NroPedido'                    '1-1741506093'                
+'Paso   13  -  GrabarDatosSalida'                  'T3_NroPedido'                 '1-1741506093'                
+
+
+Informe de Bugs
+-----------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------
+Tipo Parada         = FIN
+Mensaje de Parada   = FIN del caso en paso 16
+
+
+-----------------------------------------------------------------------------------------
+Fin del Informe del Caso Prueba_Conj Datos: GRAL_CD2
+-----------------------------------------------------------------------------------------

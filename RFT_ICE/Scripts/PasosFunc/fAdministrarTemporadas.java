@@ -23,6 +23,7 @@ public class fAdministrarTemporadas extends fAdministrarTemporadasHelper
 {
 	public void testMain(Object[] args) throws RationalTestException 
 	{
+		ImpreEncabezadoScript(getScriptArgs(), getScriptName( ).toString());
 		String[] MensError;
 		MensError = new String[4];
 
@@ -48,28 +49,28 @@ public class fAdministrarTemporadas extends fAdministrarTemporadasHelper
 		Temporadas[1] = dpString("Tempo_Accion"+i); 
 		logInfo (getScriptName( ) + Temporadas);
 		
-		switch (args[2].toString()) {
-		case "PREQA":
+		switch (Temporadas[1].toString()) {
+		case "Apagar":
+		case "Encender":
 			callScript("Scripts.Comun.AdministrarTemporadas", Temporadas);
-			if  ((Temporadas[3].toString().equals("OK"))){
+			if  ((Temporadas[2].toString().equals("OK"))){
 				bError = false; 			
 			}
 			break;
-		case "QA":
-			callScript("Scripts.Comun.AdministrarTemporadasQA", Temporadas);
+		case "Consultar":
+			callScript("Scripts.Comun.AdministrarTemporadas", Temporadas);
 			if ((Temporadas[2].toString().equals("OK")) && 
 				(Temporadas[3].toString().equals(dpString("Tempo_Valor"+i))))	{
 					bError = false; 
 				}
-			break;
-		case "DESA":
 			break;
 		default:  
 			break;
 		}  
 
 		if  (bError){
-			MensError[0] = "xDefecto";// ""Problemas con administración de la Temporada"
+			//MensError[0] = "xDefecto";// ""Problemas con administración de la Temporada"
+			MensError[0] = "Problemas con administración de la Temporada";
 			MensError[1] = args[3].toString();
 			MensError[2] = args[0].toString();
 			MensError[3] = getScriptName( );

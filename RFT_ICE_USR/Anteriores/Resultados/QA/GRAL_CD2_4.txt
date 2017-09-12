@@ -1,0 +1,38 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: GRAL_CD2 Desde paso: 4 Modo:Real
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+---------------------------
+GRAL_CD2_T1;LeerDatosEntrada;OK;
+GRAL_CD2_T1;LeerDatoSalidaUltPasoEjec;OK;
+GRAL_CD2_T1;LeerDatosSalida;OK;
+GRAL_CD2_T1;Paso1:fLogin;OK;
+GRAL_CD2_T1;Paso2:fIraActivoDesdeActivo;NE;
+GRAL_CD2_T1;Paso3:fNuevaPostvta;NE;
+GRAL_CD2_T1;Paso4:fBuscarPedidoVenta;OK;
+GRAL_CD2_T1;Paso5:fCancelarPedido;OK;
+
+
+Informe de DATOS de salida
+---------------------------
+GRAL_CD2;UltimoPasoOK;3;
+GRAL_CD2;UltimoTramite;1;
+GRAL_CD2;T1_NroPedido;1-1740057097;
+
+
+Informe de Bugs
+-----------------
+
+
+Informe de Errores imprevistos de sistema
+------------------------------------------------
+GRAL_CD2;Mensaje UE;Script=Comun.GrabarDatosSalida Línea=0 Error=null;
+
+
+----------------------------------------------------------------------------------------------------------
+Tipo Parada:UnhandledException - Mensaje de Parada: Script=Comun.GrabarDatosSalida Línea=0 Error=null
+- Fin del Informe del Caso Prueba_Conj Datos: GRAL_CD2
+----------------------------------------------------------------------------------------------------------

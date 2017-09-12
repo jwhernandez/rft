@@ -1,0 +1,51 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: CP09_CD1 Desde paso: 16 Modo:Real
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+---------------------------
+CP09_CD1_T1;LeerDatosEntrada;OK;
+CP09_CD1_T1;LeerDatoSalidaUltPasoEjec;OK;
+CP09_CD1_T1;LeerDatosSalida;OK;
+CP09_CD1_T1;Paso1:fLogin;OK;
+CP09_CD1_T1;Paso2:fValidarActivoSuspendido;NE;
+CP09_CD1_T1;Paso3:fIraActivoDesdeActivo;NE;
+CP09_CD1_T1;Paso4:fNuevaPostvta;NE;
+CP09_CD1_T1;Paso5:fNuevaPostvta;NE;
+CP09_CD1_T1;Paso6:fBuscarPedidoVenta;OK;
+CP09_CD1_T1;Paso7:fValidarAgencia;NE;
+CP09_CD1_T1;Paso8:fIngresarAutenticacion;NE;
+CP09_CD1_T1;Paso9:fIngresarIMEI;NE;
+CP09_CD1_T1;Paso10:fIngresarSIM;NE;
+CP09_CD1_T1;Paso11:fExpandiryBuscar;NE;
+CP09_CD1_T1;Paso12:fCheckPagoFact;NE;
+CP09_CD1_T1;Paso13:fExpandiryBuscar;NE;
+CP09_CD1_T1;Paso14:fCheckPagoFact;NE;
+CP09_CD1_T1;Paso15:fExpandiryBuscar;NE;
+
+
+Informe de DATOS de salida
+---------------------------
+CP09_CD1;UltimoPasoOK;15;
+CP09_CD1;UltimoTramite;1;
+CP09_CD1;T1_NroPedido;1-1739982138;
+
+
+Informe de Bugs
+-----------------
+CP09_CD1_T1;fCheckPagoFact;Chequeo de tilde a factura falló;
+
+
+Informe de Errores imprevistos de sistema
+------------------------------------------------
+CP09_CD1;Mensaje UE;Script=PasosFunc.fCheckPagoFact Línea=0 Error=CRFCN0515E: stop() method called;
+
+CP09_CD1;Mensaje UE;Script=CasosPrueba.CasosPrueba Línea=0 Error=CRFCN0515E: stop() method called;
+
+
+----------------------------------------------------------------------------------------------------------
+Tipo Parada:UnhandledException - Mensaje de Parada: Script=PasosFunc.fCheckPagoFact Línea=0 Error=CRFCN0515E: stop() method called
+- Fin del Informe del Caso Prueba_Conj Datos: CP09_CD1
+----------------------------------------------------------------------------------------------------------

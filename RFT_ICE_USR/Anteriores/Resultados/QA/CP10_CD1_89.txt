@@ -1,0 +1,116 @@
+
+-----------------------------------------------------------------------------------------
+Inicio del Informe del Caso Prueba y Conj Datos: CP10_CD1 Desde paso: 89 Modo:Real
+-----------------------------------------------------------------------------------------
+
+
+Informe de PASOS Ejecutados
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatosEntrada'                                                  'OK'                          
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'                                         'OK'                          
+'Paso    0  -  LeerDatosSalida'                                                   'OK'                          
+'Paso    1  -  fBRM_Login'                                                        'NE'                          
+'Paso    2  -  fBRM_BuscarCliente'                                                'NE'                          
+'Paso    3  -  fBRM_FavoritoValidarCambioNum'                                     'NE'                          
+'Paso    4  -  fBRM_Logout'                                                       'NE'                          
+'Paso    5  -  fLogin'                                                            'OK'                          
+'Paso    6  -  fCambiarVIstaUsuario'                                              'NE'                          
+'Paso    7  -  fVista360'                                                         'NE'                          
+'Paso    8  -  fValidarUnPerfil'                                                  'NE'                          
+'Paso    9  -  fBuscarActivo'                                                     'NE'                          
+'Paso   10  -  fBuscarCtaFact'                                                    'NE'                          
+'Paso   11  -  fValidarUnPerfil'                                                  'NE'                          
+'Paso   12  -  fVista360'                                                         'NE'                          
+'Paso   13  -  fBuscarActivo'                                                     'NE'                          
+'Paso   14  -  fBuscarCtaFact'                                                    'NE'                          
+'Paso   15  -  fNuevaPostvta'                                                     'NE'                          
+'Paso   16  -  fBuscarPedidoVenta'                                                'NE'                          
+'Paso   17  -  fValidarAgencia'                                                   'NE'                          
+'Paso   18  -  fIngresarAutenticacion'                                            'NE'                          
+'Paso   19  -  fASRM_Login'                                                       'NE'                          
+'Paso   20  -  fASRM_ModificarEstadoServicio'                                     'NE'                          
+'Paso   21  -  fASRM_Logout'                                                      'NE'                          
+'Paso   22  -  fProximoNumero'                                                    'NE'                          
+'Paso   23  -  fValidacPostServicio'                                              'NE'                          
+'Paso   24  -  fExpandiryBuscar'                                                  'NE'                          
+'Paso   25  -  fCheckPagoFact'                                                    'NE'                          
+'Paso   26  -  fEnviarPedido'                                                     'NE'                          
+'Paso   27  -  fValidarMensaje'                                                   'NE'                          
+'Paso   28  -  fValorarTodo'                                                      'NE'                          
+'Paso   29  -  fEnviarPedido'                                                     'NE'                          
+'Paso   30  -  fEsperaEstado'                                                     'NE'                          
+'Paso   31  -  fValidacPostEnvio1'                                                'NE'                          
+'Paso   32  -  fVista360'                                                         'NE'                          
+'Paso   33  -  fBuscarActivo'                                                     'NE'                          
+'Paso   34  -  fBRM_Login'                                                        'NE'                          
+'Paso   35  -  fBRM.FavoritoValidarCambioNum'                                     'NE'                          
+'Paso   36  -  fBRM_Logout'                                                       'NE'                          
+'Paso   37  -  fCambiarVIstaUsuario'                                              'NE'                          
+'Paso   38  -  fAdministrarTemporadas'                                            'NE'                          
+'Paso   39  -  fCambiarVIstaUsuario'                                              'NE'                          
+'Paso   40  -  fVista360'                                                         'NE'                          
+'Paso   41  -  fBuscarActivo'                                                     'NE'                          
+'Paso   42  -  fBuscarCtaFact'                                                    'NE'                          
+'Paso   43  -  fNuevaPostvta'                                                     'NE'                          
+'Paso   44  -  fBuscarPedidoVenta'                                                'NE'                          
+'Paso   45  -  fPersonalizarFavorito'                                             'NE'                          
+'Paso   46  -  fIngresarAutenticacion'                                            'NE'                          
+'Paso   47  -  fExpandiryBuscar'                                                  'NE'                          
+'Paso   48  -  fExpandiryBuscar'                                                  'NE'                          
+'Paso   49  -  fExpandiryBuscar'                                                  'NE'                          
+'Paso   50  -  fBuscarProducto'                                                   'NE'                          
+'Paso   51  -  fBuscarProducto'                                                   'NE'                          
+'Paso   52  -  fBuscarProducto'                                                   'NE'                          
+'Paso   53  -  fCrearLE'                                                          'NE'                          
+'Paso   54  -  fBuscarPedidoVenta'                                                'NE'                          
+'Paso   55  -  fExpandiryBuscar'                                                  'NE'                          
+'Paso   56  -  fExpandiryBuscar'                                                  'NE'                          
+'Paso   57  -  fExpandiryBuscar'                                                  'NE'                          
+'Paso   58  -  fAsociarListaEspecial'                                             'NE'                          
+'Paso   59  -  fValidarMensaje'                                                   'NE'                          
+'Paso   60  -  fAgregarNum_a_LE'                                                  'NE'                          
+'Paso   61  -  fAgregarNum_a_LE'                                                  'NE'                          
+'Paso   62  -  fAgregarNum_a_LE'                                                  'NE'                          
+'Paso   63  -  fAgregarNum_a_LE'                                                  'NE'                          
+'Paso   64  -  fAgregarNum_a_LE'                                                  'NE'                          
+'Paso   65  -  fExpandiryBuscar'                                                  'NE'                          
+'Paso   66  -  fExpandiryBuscar'                                                  'NE'                          
+'Paso   67  -  fExpandiryBuscar'                                                  'NE'                          
+'Paso   68  -  fValidarPrecioenPedido'                                            'NE'                          
+'Paso   69  -  fBuscarProducto'                                                   'NE'                          
+'Paso   70  -  fExpandiryBuscar'                                                  'NE'                          
+'Paso   71  -  fExpandiryBuscar'                                                  'NE'                          
+'Paso   72  -  fCheckPagoFact'                                                    'NE'                          
+'Paso   73  -  fCheckPagoFact'                                                    'NE'                          
+'Paso   74  -  fEnviarPedido'                                                     'NE'                          
+'Paso   75  -  fValidarMensaje'                                                   'NE'                          
+'Paso   76  -  fBuscarProducto'                                                   'NE'                          
+'Paso   77  -  fExpandiryBuscar'                                                  'NE'                          
+'Paso   78  -  fExpandiryBuscar'                                                  'NE'                          
+'Paso   79  -  fExpandiryBuscar'                                                  'NE'                          
+'Paso   80  -  fAsociarListaEspecial'                                             'NE'                          
+'Paso   81  -  fValorarTodo'                                                      'NE'                          
+'Paso   82  -  fEnviarPedido'                                                     'NE'                          
+'Paso   83  -  fEsperaEstado'                                                     'NE'                          
+'Paso   84  -  fBuscarProducto'                                                   'NE'                          
+'Paso   85  -  fExpandiryBuscar'                                                  'NE'                          
+'Paso   86  -  fExpandiryBuscar'                                                  'NE'                          
+
+
+Informe de DATOS de salida
+-----------------------------------------------------------------------------------------
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoPasoOK'                 '88'                          
+'Paso    0  -  LeerDatoSalidaUltPasoEjec'          'UltimoTramite'                '1'                           
+
+
+Informe de Bugs
+-----------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------
+Tipo Parada         = UnhandledException
+Mensaje de Parada   = Script=CasosPrueba.CasosPrueba Línea=0 Error=null
+
+
+-----------------------------------------------------------------------------------------
+Fin del Informe del Caso Prueba_Conj Datos: CP10_CD1
+-----------------------------------------------------------------------------------------

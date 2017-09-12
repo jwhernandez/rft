@@ -20,15 +20,84 @@ import com.rational.test.ft.vp.IFtVerificationPoint;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
  * Script Name   : <b>Login</b><br>
- * Generated     : <b>2016/01/29 17:08:37</b><br>
+ * Generated     : <b>2017/02/14 1:00:52 PM</b><br>
  * Description   : Helper class for script<br>
  * Original Host : Windows 7 x86 6.1 <br>
  * 
- * @since  enero 29, 2016
- * @author Sandra
+ * @since  febrero 14, 2017
+ * @author rft
  */
 public abstract class LoginHelper extends libreria.Accion
 {
+	/**
+	 * Aceptar: with default state.
+	 *		.text : Aceptar
+	 * 		.class : Html.DialogButton
+	 * 		.classIndex : 0
+	 */
+	protected GuiTestObject AceptarUsarSesion() 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("AceptarUsarSesion"));
+	}
+	/**
+	 * Aceptar: with specific test context and state.
+	 *		.text : Aceptar
+	 * 		.class : Html.DialogButton
+	 * 		.classIndex : 0
+	 */
+	protected GuiTestObject AceptarUsarSesion(TestObject anchor, long flags) 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("AceptarUsarSesion"), anchor, flags);
+	}
+	
+	/**
+	 * IESiebel: with default state.
+	 *		.class : Html.HtmlBrowser
+	 * 		.browserName : MS Internet Explorer
+	 * 		.documentName : RegularExpression(http.*\/ecommunications_esn/star.*)
+	 * 		.processName : iexplore.exe
+	 */
+	protected BrowserTestObject BrowserIE() 
+	{
+		return new BrowserTestObject(
+                        getMappedTestObject("BrowserIE"));
+	}
+	/**
+	 * IESiebel: with specific test context and state.
+	 *		.class : Html.HtmlBrowser
+	 * 		.browserName : MS Internet Explorer
+	 * 		.documentName : RegularExpression(http.*\/ecommunications_esn/star.*)
+	 * 		.processName : iexplore.exe
+	 */
+	protected BrowserTestObject BrowserIE(TestObject anchor, long flags) 
+	{
+		return new BrowserTestObject(
+                        getMappedTestObject("BrowserIE"), anchor, flags);
+	}
+	
+	/**
+	 * DialogoExplorerPredeterminado: with default state.
+	 *		.class : Html.Dialog
+	 * 		.caption : RegularExpression((Configurar Windows Internet Explorer|Set Up Windows Internet  ...
+	 */
+	protected TopLevelTestObject DialogoExplorer() 
+	{
+		return new TopLevelTestObject(
+                        getMappedTestObject("DialogoExplorer"));
+	}
+	/**
+	 * DialogoExplorerPredeterminado: with specific test context and state.
+	 *		.class : Html.Dialog
+	 * 		.caption : RegularExpression((Configurar Windows Internet Explorer|Set Up Windows Internet  ...
+	 */
+	protected TopLevelTestObject DialogoExplorer(TestObject anchor, long flags) 
+	{
+		return new TopLevelTestObject(
+                        getMappedTestObject("DialogoExplorer"), anchor, flags);
+	}
+	
 	/**
 	 * LoginButton: with default state.
 	 *		.text : 
@@ -63,7 +132,7 @@ public abstract class LoginHelper extends libreria.Accion
 	}
 	
 	/**
-	 * LogoOracle: with default state.
+	 * LogoICE: with default state.
 	 *		.alt : Con tecnología Siebel
 	 * 		.id : 
 	 * 		.src : RegularExpression(http://.*\/ecommunications_esn/images/ebus\.gif)
@@ -72,13 +141,13 @@ public abstract class LoginHelper extends libreria.Accion
 	 * 		.name : 
 	 * 		.classIndex : 0
 	 */
-	protected StatelessGuiSubitemTestObject LogoOracle() 
+	protected StatelessGuiSubitemTestObject LogoICE() 
 	{
 		return new StatelessGuiSubitemTestObject(
-                        getMappedTestObject("LogoOracle"));
+                        getMappedTestObject("LogoICE"));
 	}
 	/**
-	 * LogoOracle: with specific test context and state.
+	 * LogoICE: with specific test context and state.
 	 *		.alt : Con tecnología Siebel
 	 * 		.id : 
 	 * 		.src : RegularExpression(http://.*\/ecommunications_esn/images/ebus\.gif)
@@ -87,10 +156,10 @@ public abstract class LoginHelper extends libreria.Accion
 	 * 		.name : 
 	 * 		.classIndex : 0
 	 */
-	protected StatelessGuiSubitemTestObject LogoOracle(TestObject anchor, long flags) 
+	protected StatelessGuiSubitemTestObject LogoICE(TestObject anchor, long flags) 
 	{
 		return new StatelessGuiSubitemTestObject(
-                        getMappedTestObject("LogoOracle"), anchor, flags);
+                        getMappedTestObject("LogoICE"), anchor, flags);
 	}
 	
 	/**
@@ -122,6 +191,52 @@ public abstract class LoginHelper extends libreria.Accion
 	{
 		return new TextGuiTestObject(
                         getMappedTestObject("Password"), anchor, flags);
+	}
+	
+	/**
+	 * MensajeBrowserScript: with default state.
+	 *		.text : RegularExpression(.*)
+	 * 		.class : Html.DialogStatic
+	 * 		.classIndex : 1
+	 */
+	protected GuiTestObject SesionYaAbierta() 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("SesionYaAbierta"));
+	}
+	/**
+	 * MensajeBrowserScript: with specific test context and state.
+	 *		.text : RegularExpression(.*)
+	 * 		.class : Html.DialogStatic
+	 * 		.classIndex : 1
+	 */
+	protected GuiTestObject SesionYaAbierta(TestObject anchor, long flags) 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("SesionYaAbierta"), anchor, flags);
+	}
+	
+	/**
+	 * Siebel: with default state.
+	 *		.title : Siebel Communications
+	 * 		.class : Html.HtmlDocument
+	 * 		.url : RegularExpression(http.*\/ecommunications_esn/star.*)
+	 */
+	protected DocumentTestObject SiebelCommunications_Login() 
+	{
+		return new DocumentTestObject(
+                        getMappedTestObject("SiebelCommunications_Login"));
+	}
+	/**
+	 * Siebel: with specific test context and state.
+	 *		.title : Siebel Communications
+	 * 		.class : Html.HtmlDocument
+	 * 		.url : RegularExpression(http.*\/ecommunications_esn/star.*)
+	 */
+	protected DocumentTestObject SiebelCommunications_Login(TestObject anchor, long flags) 
+	{
+		return new DocumentTestObject(
+                        getMappedTestObject("SiebelCommunications_Login"), anchor, flags);
 	}
 	
 	/**
